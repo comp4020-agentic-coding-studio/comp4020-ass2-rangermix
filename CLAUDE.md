@@ -4,30 +4,50 @@ Rules for any agent writing in this repo. They exist because this course makes
 an argument, and an agent left to its own defaults will quietly write the
 opposite one.
 
+`docs/course-design.md` is the settled specification --- the twelve weeks, the
+assessment scheme, the calendar, the cast, the visual system. This file is the
+rules. Read both before writing anything.
+
 ## The argument
 
 SLOP1562 teaches the social protocol of the neurotypical majority as what it
 is: a large, undocumented, inconsistently implemented legacy system that its
 own users cannot describe and did not design. The course reverse-engineers it
-so that students can interoperate with it deliberately.
+so that anyone can interoperate with it deliberately.
 
 One sentence governs every page:
 
-> The protocol is undocumented, not obvious; the student is a minority
-> implementation, not a broken one.
+> The protocol is undocumented, not obvious; a minority implementation is not a
+> broken one.
 
 Everything on this site serves that sentence or gets cut.
+
+## Who the course is for
+
+Anyone who wants the protocol made explicit. Autistic and otherwise divergent
+students, who were never handed the implicit version --- and neurotypical
+students who run the protocol fluently and cannot describe a line of it, which
+is its own reason to enrol.
+
+This is not a remedial course and it must never read as one. Nobody is here
+because something is wrong with them. They are here because the specification
+is missing, and some people find that intolerable.
+
+The class is mixed by design. That is what makes week 11 work: the shared
+vocabulary a mixed group builds over twelve weeks is the course's actual thesis
+demonstrated rather than asserted. Never write a page that addresses only one
+side of the room.
 
 ## Both registers, always
 
 The course is sincere and satirical at the same time, and neither is a coating
-on the other. They come from one observation: the majority's social conventions
-are arbitrary and inefficient, and being outnumbered is what gets the other
+on the other. They come from one observation: the majority's conventions are
+arbitrary and inefficient, and being outnumbered is what gets the other
 implementations classed as disorders.
 
-- **Sincere** means a first-year autistic student can act on the page. Concrete
-  scripts, named failure modes, real timings, actual sentences they can say.
-  If a section teaches nothing usable, it is decoration --- cut it.
+- **Sincere** means a first-year can act on the page. Concrete scripts, named
+  failure modes, real timings, actual sentences they can say. If a section
+  teaches nothing usable, it is decoration --- cut it.
 - **Satirical** means the deadpan holds: this is a systems course, the subject
   matter is a protocol, and the documentation problem is treated as a genuine
   engineering scandal.
@@ -35,15 +55,23 @@ implementations classed as disorders.
 Never resolve the tension by picking one. A page that is only funny is a sketch;
 a page that is only earnest is a wellbeing pamphlet. Neither is the course.
 
+**The one sanctioned exception is week 10.** Its section on what disclosure does
+to your past drops the protocol register entirely for four paragraphs, then
+snaps back. That shift is deliberate and load-bearing: a course arguing the
+protocol framing is a *tool* has to be able to put the tool down. Do not
+"fix" the inconsistency, do not restore the metaphor, and do not soften the
+snap-back line. If a check or a reviewer flags it as tonal drift, the answer is
+that it is intentional, and the answer is in this file.
+
 ## What the satire is aimed at
 
 At the protocol, at the absence of its specification, and at the institutions
 that call that absence a deficit in the reader.
 
 Never at the student. Never at autistic, ADHD or otherwise divergent people, and
-never at the majority as individuals --- they inherited the protocol too, and
-they cannot read it either. The joke is that nobody wrote it down and everybody
-insists it is self-evident.
+never at neurotypical people as individuals --- they inherited the protocol too,
+and they cannot read it either. The joke is that nobody wrote it down and
+everybody insists it is self-evident.
 
 ## Vocabulary
 
@@ -62,25 +90,85 @@ Never write, outside a clearly-marked quotation of someone else's framing:
 Say what is true instead: a protocol mismatch, a cost, an undocumented
 expectation, a minority implementation.
 
-Identity-first language (`autistic student`) is the default, because that is
-what this course's constituency asked for. Do not "correct" it to person-first.
+Identity-first language (`autistic student`) is the default. Do not "correct"
+it to person-first. Do not use it as though every student is autistic.
 
 ## Outcomes
 
-The course's outcome is fluency plus choice: the student can read the protocol,
-can run it when running it is worth the cost, and can decline it knowing what
-declining costs. Masking is taught as a budget with a real price, never as an
-aspiration and never as a moral failure.
+Fluency plus choice: the student can read the protocol, can run it when running
+it is worth the cost, and can decline it knowing what declining costs. Masking
+is taught as a budget with a real price, never as an aspiration and never as a
+moral failure.
 
 Never write an outcome that amounts to becoming ordinary, passing, or being
 indistinguishable. That is the outcome this course was built to refuse.
 
-## Twelve weeks, one argument
+## The content pipeline
 
-Each week must do something the other eleven do not, and must move the argument
-from reading the protocol, to implementing parts of it, to negotiating it.
-A week that could be swapped with another week without anyone noticing is a
-failed week. If asked to add a week, say which existing week it steals from.
+Content is built in this order, and never out of it:
+
+1. **Research the topic.** Find what is actually known, from the literature.
+2. **Produce the reading list and a short review.** What the sources say, where
+   they disagree, and what survives into teaching.
+3. **Decide what gets delivered.** The review justifies the week's content; the
+   week does not go looking for sources afterwards to decorate a conclusion.
+4. **Write the week** --- lecture, lab, `spec` block.
+5. **Build the slides** from the written week, not in parallel with it.
+
+Skipping step 1 or 2 and backfilling citations is the failure this order exists
+to prevent. If a week's content cannot be traced back to its review, it is not
+finished.
+
+## Alignment
+
+**Within a week:** the lecture, the lab, the readings and the deck say the same
+thing in four registers. The lab explores by doing what the lecture argued. A
+deck slide that contradicts its lecture is a bug.
+
+**Across the course:** each week does something the other eleven do not, and
+moves the argument from reading the protocol, to implementing parts of it, to
+negotiating it. A week that could be swapped with another without anyone
+noticing is a failed week. Terminology introduced in one week is reused exactly
+in later weeks, never re-coined. If asked to add a week, say which existing week
+it steals from.
+
+## Citations
+
+- Every concept a lecture introduces that came from research cites its source.
+- **Verify every citation against the actual paper before it ships.** Never cite
+  from memory, never infer an author, year, venue or finding, and never let a
+  plausible-sounding reference through unchecked. A fabricated citation in a
+  course that argues for documentation is the worst available failure.
+- If a source cannot be verified, cut the claim or state it as the course's own
+  observation rather than dressing it as research.
+- The `readings` collection extends past what the slides cover, but every entry
+  must earn its place against the week it hangs off. A reading list padded for
+  length is worse than a short one.
+
+## Conventions
+
+- The weekly contact hour is a **Lab**: students go and try the week's protocol,
+  method or topic in the room. `sessionLabels` in `src/site-config.ts` carries
+  the visible name; the collection key, URL and API path stay `sessions`.
+- The course is **SLOP1562**; on campus it is **NT 101**. Use the nickname where
+  a person would, not in formal positions.
+- **Every week's page carries a `spec:` block** in the same register the course
+  teaches: lines a reader can check on themselves without asking the teacher.
+  The form is the argument --- a course that tells you to specify things and
+  does not specify itself is making the majority's exact mistake.
+- `related:` edges connect weeks to their readings. Declare each edge once, on
+  whichever side is convenient.
+
+## Visual system
+
+Standards-document structure, hand-drawn execution: numbered clauses, sequence
+diagrams, conformance tables --- all of it drawn as though sketched by hand in
+the margin of an RFC. Jittered strokes, a handwriting face against monospace,
+nothing mechanically straight.
+
+The pairing is the thesis in visual form: rigorous specification, provisional
+and human in the execution. Never let it drift to either pole --- a clean
+corporate diagram loses the argument, and pure whimsy loses the rigour.
 
 ## Prose
 
@@ -97,7 +185,8 @@ failed week. If asked to add a week, say which existing week it steals from.
 
 - `pnpm check` must pass before any change is called done. It runs the build,
   which runs axe, the link checker and the ref resolver. Do not report success
-  without running it.
+  without running it, and do not read an exit code from a wrapper --- read the
+  command's own output.
 - `pnpm check:evidence` gates submission. Every `STARTER_CONTENT` marker must be
   gone with the fragment it marked, not just the comment.
 - Content refs are `<collection>/<slug>` and the key is the address --- file,
