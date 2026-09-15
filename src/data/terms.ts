@@ -273,4 +273,16 @@ export const terms: Term[] = [
     definition:
       "A written agreement between two people: clauses, who concedes each, how either checks it, and a signal for flagging a mismatch.",
   },
+  {
+    term: "open issue",
+    week: 12,
+    definition:
+      "A known problem logged and deliberately left out of scope, with where its documentation starts. This course has three: romance, persuasion, power.",
+  },
+  {
+    term: "errata",
+    week: 12,
+    definition:
+      "The known issues in the course's own models, published so they can be tested rather than trusted.",
+  },
 ];

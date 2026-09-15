@@ -314,24 +314,24 @@ reader can rerun.
 
 Every week runs the same pipeline, and each has one thing no other week has.
 
-- [ ] **Research.** Search the literature (Crossref, Semantic Scholar, OpenAlex,
+- [x] **Research.** Search the literature (Crossref, Semantic Scholar, OpenAlex,
   PubMed). For each candidate, read the abstract or full text and confirm the
   specific claim the week would make. Candidates below are **unverified leads,
   not citations**: cut any that don't hold, and never state a number the
   source doesn't state.
-- [ ] **Review.** `docs/research/week-NN.md`: the question; the sources with
+- [x] **Review.** `docs/research/week-NN.md`: the question; the sources with
   what each was checked against; what they say; where they disagree; what
   survives into teaching, and what the course states as its own observation
   rather than research.
-- [ ] **Readings.** 2--4 entries, annotated; `pnpm check:readings` clean.
-- [ ] **Lecture** `week-NN.mdx`: argument in both registers, concrete scripts
+- [x] **Readings.** 2--4 entries, annotated; `pnpm check:readings` clean.
+- [x] **Lecture** `week-NN.mdx`: argument in both registers, concrete scripts
   and timings, the signature artefact, in-text citations to its readings, 3--5
   spec lines a student can check on themselves, `related:` to its lab and
   readings.
-- [ ] **Lab** `week-NN.md`: what to bring, a timed run sheet, what leaves the
+- [x] **Lab** `week-NN.md`: what to bring, a timed run sheet, what leaves the
   room, 2--4 spec lines; for weeks 2--12, the journal prompt.
-- [ ] **Glossary** terms introduced this week, added to `src/data/terms.ts`.
-- [ ] `pnpm check`; that week's tests green; commit and push.
+- [x] **Glossary** terms introduced this week, added to `src/data/terms.ts`.
+- [x] `pnpm check`; that week's tests green; commit and push.
 
 | Week | Title | Signature artefact (this week only) | Lab | Leads to check |
 | --- | --- | --- | --- | --- |
@@ -355,6 +355,14 @@ Week 10 carries the approved register break from `docs/course-design.md`
 Week to week, the terms must hold: *protocol*, *implementation*, *subroutine*,
 *timeout*, *repair*, *budget*, *runbook*, *rate limit*, *interoperation*. Introduce
 each once, in the week the table puts it, and reuse it exactly.
+
+**As built:** all twelve weeks landed in pipeline order, each with a review in
+`docs/research/`. Leads cut during research: Schegloff & Sacks 1973, Jefferson
+1980, Brown & Levinson's face specifics, Sprecher et al. 2013, Petty &
+Cacioppo 1986, Sala et al. 2023, Hall's hour figures. Two harness rules were
+added while writing, after repeated failures: a study's vivid details are
+claims, and uncited "most people" frequency statements are claims. New sketch
+primitives: `TimingLine` (week 4) and `StateMachine` (week 5).
 
 ### Task 16: Assessments
 
