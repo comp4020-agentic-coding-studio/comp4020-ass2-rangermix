@@ -31,5 +31,5 @@ export const siteConfig = defineSiteConfig({
 
   licence: "CC-BY-NC-SA-4.0",
   socialImage: "/src/assets/images/card.png",
-  socialImageAlt: `A preview card for ${courseMeta.code}: ${courseMeta.title}`,
+  socialImageAlt: `${courseMeta.code}, NT 101: Undocumented Protocols. A hand-drawn sequence diagram of the handshake “How are you?”, “Good, you?”, beside the line “The protocol is undocumented, not obvious.”`,
 });

@@ -412,12 +412,16 @@ create `field-journal.md`, `protocol-specification.md`,
 
 ### Task 19: Art and starter cleanup
 
-- [ ] `scripts/render-card.ts`: 1200×630 PNG, the handshake drawing plus the
+- [x] `scripts/render-card.ts`: 1200×630 PNG, the handshake drawing plus the
   code and title outlined as paths (no runtime font dependency in librsvg),
   written to `src/assets/images/card.png`; `socialImageAlt` describes it.
-- [ ] Delete `hero-home.avif` and both portraits; `git grep STARTER_CONTENT`
+- [x] Delete `hero-home.avif` and both portraits; `git grep STARTER_CONTENT`
   returns nothing.
-- [ ] `pnpm check:evidence`: only `PROCESS.md` failures remain. Commit.
+- [x] `pnpm check:evidence`: only `PROCESS.md` failures remain. Commit.
+
+**As built:** text rasterised through sharp silently fell back to a sans-serif
+on macOS, so the card outlines Kalam into paths with opentype.js, pinned to
+1.3.4 because 2.0.0 emitted NaN path data for some glyphs.
 
 ### Task 20: Verification pass
 
