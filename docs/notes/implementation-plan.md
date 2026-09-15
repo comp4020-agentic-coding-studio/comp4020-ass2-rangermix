@@ -444,9 +444,9 @@ claims in assessment briefs and one unmarked diagnosing example; all fixed.
 
 ### Task 21: Evidence for the student's PROCESS.md
 
-- [ ] `docs/notes/process-evidence.md`: the decisions in order, each with its
+- [x] `docs/notes/process-evidence.md`: the decisions in order, each with its
   commit hash and the reason, the harness changes and what prompted them, and
   the checks and which promise each protects. It is source material for the
   student's own 400--600 words, not a draft of them.
-- [ ] Report what `check:evidence` still needs (PROCESS.md), and that shipping
+- [x] Report what `check:evidence` still needs (PROCESS.md), and that shipping
   (`/ship` makes the repo public) is the student's call.
