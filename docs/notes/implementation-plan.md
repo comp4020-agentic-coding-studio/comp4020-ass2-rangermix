@@ -377,11 +377,11 @@ create `field-journal.md`, `protocol-specification.md`,
 | Interoperation Report | 12 | 20 | `2027-05-30T23:59:00+10:00` | negotiated across the labs of weeks 9--11 |
 | Personal Protocol Document *or* Neurotypical Interaction Field Experiment | 12 | 30 | `2027-06-13T23:59:00+10:00` | two routes; the experiment's ethics reflection is graded |
 
-- [ ] Each brief: the provocation as a blockquote, what to submit, a
+- [x] Each brief: the provocation as a blockquote, what to submit, a
   `marking:` block (weights sum to 100), and spec lines. Field Journal: the
   four-part entry format; no penalty for grammar, spelling or presentation; AI
   talk allowed, writing yours; no word limit. Related to the weeks each draws on.
-- [ ] `pnpm check`: `spec/assessment.test.ts` green. Commit.
+- [x] `pnpm check`: `spec/assessment.test.ts` green. Commit.
 
 ### Task 17: People, policies, home, glossary, 404
 

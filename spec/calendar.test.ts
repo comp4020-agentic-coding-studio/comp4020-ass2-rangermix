@@ -21,7 +21,9 @@ const CALENDAR: [week: number, lecture: string, lab: string][] = [
   [12, "2027-05-25", "2027-05-27"],
 ];
 
-const BREAK = { from: "2027-04-10", to: "2027-04-25" };
+// Monday 12 April to the Sunday before week 8. The weekend of 10--11 April
+// still belongs to week 7: its Field Journal entry is due on Sunday the 11th.
+const BREAK = { from: "2027-04-12", to: "2027-04-25" };
 const day = (value: unknown) => String(value).slice(0, 10);
 
 describe("the course record", () => {
