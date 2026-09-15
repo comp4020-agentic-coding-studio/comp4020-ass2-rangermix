@@ -361,3 +361,21 @@
   font-family: var(--nt-mono);
   font-size: var(--at-font-size-sm);
 }
+
+/* ---- Week 10's register break ----------------------------------------- */
+
+/* The one place the course puts its tool down. For four paragraphs the page
+   stops being a specification, so it stops looking like one: no clause marks,
+   no pencil, no margin, just larger plain text with room around it. The next
+   line, "Right. Mechanics.", returns to the ordinary column. Deliberate, and
+   recorded in CLAUDE.md; do not "fix" it. */
+.register-break {
+  margin-block: var(--at-spacing-2xl);
+  max-width: 34rem;
+  font-size: 1.12em;
+  line-height: 1.75;
+}
+
+.register-break p {
+  margin-block: 0 1.1em;
+}

@@ -226,4 +226,27 @@ export const terms: Term[] = [
     definition:
       "A one-turn repair for going past a rate limit: name it lightly and return to a lower level.",
   },
+  {
+    term: "the five audiences",
+    week: 10,
+    definition:
+      "Disability services, a tutor, a group partner, a friend, an employer: five different disclosure transactions, each with its own return and cost.",
+  },
+  {
+    term: "partial disclosure",
+    week: 10,
+    definition:
+      "Disclosing a need without the label: “I process written instructions much better than verbal ones.” It changes one thing the other person knows, and nothing else.",
+  },
+  {
+    term: "the timing trap",
+    week: 10,
+    definition:
+      "A disclosure that arrives after a problem gets heard as an explanation of it, and an explanation after a problem sounds like an excuse. The way out is early, low-stakes disclosure of needs.",
+  },
+  {
+    term: "irreversibility",
+    week: 10,
+    definition: "Once told, a disclosure can't be taken back, and the listener re-reads the past through it.",
+  },
 ];
