@@ -1,0 +1,136 @@
+---
+title: "Payload and Envelope"
+description: "Indirect speech, hints and implicature: a protocol that breaks its own published maxims on purpose, and calls it politeness."
+week: 3
+date: 2027-03-09
+teachers:
+  - wren-aldous-kemp
+spec:
+  - "For any line in §4’s decoder, you can name the maxim it bends and say its payload out loud in plain words."
+  - "You can ask someone for the payload of an ambiguous invitation without implying they were being evasive."
+  - "You can explain, using plausible deniability, why a hint can cost the listener less than a direct request."
+  - "You can give an example of over-decoding: treating a sentence as an envelope when there was nothing inside it."
+related:
+  - sessions/week-03
+  - readings/grice-1975-logic-conversation
+  - readings/pinker-2008-indirect-speech
+---
+
+import MarginNote from "../../components/sketch/MarginNote.astro";
+
+"We should get coffee sometime."
+
+Is that a request to schedule coffee? If you've ever replied "sure, Thursday
+at 10?" and watched the other person's face do something complicated, you
+already know the answer. If you've never once wondered, you already know it
+too, and you couldn't say how.
+
+This week gives you the how.
+
+## The specification the protocol claims to follow
+
+The closest thing the protocol has to published documentation was written by
+the philosopher Paul Grice. He proposed a Cooperative Principle: make your
+contribution "such as is required, at the stage at which it occurs, by the
+accepted purpose or direction of the talk exchange". Under it sit four
+categories of maxim (Grice, 1975):
+
+| Category | The maxims, in Grice's words |
+| --- | --- |
+| Quantity | "Make your contribution as informative as is required (for the current purposes of the exchange)." "Do not make your contribution more informative than is required." |
+| Quality | "Do not say what you believe to be false." "Do not say that for which you lack adequate evidence." |
+| Relation | "Be relevant." |
+| Manner | "Be perspicuous": avoid obscurity, avoid ambiguity, be brief, be orderly. |
+
+Read that as a spec, and the majority's protocol fails it constantly. "We
+should get coffee sometime" gives no time, no place and no commitment. It is
+less informative than it would need to be if it were a plan.
+
+Grice saw this coming. A page after the maxims, he notes that there are other
+maxims, "such as 'Be polite'", that also generate meaning beyond what is
+said. And he says that stating his maxims as though talk existed to exchange
+information is "too narrow".
+
+<MarginNote label="Known issue">
+  The author of the specification filed the bug report in the same paragraph.
+</MarginNote>
+
+So the protocol has a published spec, and a known exception the author flagged
+himself: politeness is allowed to override the other four. Nobody told you
+which one wins.
+
+## Payload and envelope
+
+Two terms for the rest of the semester.
+
+- The **payload** is what the speaker needs you to understand or do.
+- The **envelope** is how it's wrapped: the words chosen instead of the
+  payload, and the maxim those words bend to get there.
+
+Grice ties his maxims to what he calls *conversational implicature*: meaning
+that gets across without being said. The course's working version is this.
+When a sentence visibly bends a maxim, assume the speaker is still being
+cooperative, and ask why a cooperative person would bend that one. The answer
+is usually the payload.
+
+## Why anyone sends an envelope
+
+If the payload is the point, why not send it bare?
+
+Pinker, Nowak and Lee give three reasons (Pinker et al., 2008). First, an
+indirect request offers **plausible deniability**: a cooperative listener can
+accept it, and an unwilling one can decline without either of you having to
+acknowledge a refusal. Second, talk does two jobs at once. It carries
+information, and it negotiates what kind of relationship two people have. A
+bare request can renegotiate the relationship when all you wanted was the
+salt. Third, an explicit statement becomes common knowledge between you, in a
+way a hint never does, even when both of you knew exactly what was meant.
+
+That last reason is why "we both knew" and "you said it" are different events
+under this protocol.
+
+## The decoder
+
+Worked examples, each checked against the principle above. The entries are the
+course's, not a research table; test them in the lab and in your journal.
+
+| Utterance | Maxim bent | Payload | Expected response |
+| --- | --- | --- | --- |
+| "We should get coffee sometime." | Quantity: no time, no place | I'd like us to be on friendly terms. | "Yes, definitely." No calendar required. |
+| "No worries if not!" | Quality: there may well be worries | I'd like this, and I'm giving you a painless exit. | Do it, or decline with thanks, quickly. |
+| "Is it cold in here?" | Relation: a question about temperature, asked of a person | Could the window be closed? | "Want me to shut the window?" |
+| "Interesting idea." (in a meeting) | Quantity: no content | I'm not convinced. | "What would it need to work for you?" |
+| "I'll let you go." | Relation: framed as a favour to you | I'd like to end this call. | "Okay, talk soon." |
+| "Just circling back on this." (email) | Quantity: no new information | This is late. | A date, or the thing. |
+
+## Decoding from both ends
+
+**If you decode by reading the words**, the table is a lookup until the
+pattern becomes automatic, and it may never need to. When a sentence might be
+an envelope and the stakes matter, ask for the payload. Asking isn't an
+accusation if you take the blame for the ambiguity:
+
+> "Do you mean coffee as a plan, or as a nice thing to say? Either's fine. I
+> just want to know whether to put it in my calendar."
+
+**If you decode without noticing**, the table is you, slowed down. Your
+exercise this week runs the other way: send one payload bare, to someone who
+would rather have it that way, and notice what it costs you to do it.
+
+Sending a payload bare is always valid. Under Pinker et al.'s account, it also
+changes the relationship a little, because it creates common knowledge where
+a hint wouldn't. That is a cost, not a mistake. Sometimes it's worth paying.
+You can lower it by saying you're choosing directness: "I'm going to be
+literal, because I'd rather not get this wrong."
+
+## Over-decoding
+
+The failure the table doesn't show is hearing an envelope where there's
+nothing inside. "Is it cold in here?" is sometimes just a question about the
+temperature. Treating every sentence as a hint is as nonconforming as
+treating none as one, and more tiring.
+
+The course's rule of thumb: decode when a maxim is *visibly* bent, and the
+listener is plainly expected to do something about it. Otherwise, take the
+words at face value, and let the speaker send a second, clearer envelope if
+they need to. Under this protocol, they will.

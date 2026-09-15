@@ -72,4 +72,26 @@ export const terms: Term[] = [
     definition:
       "If a sentence would still be true of the person while they are asleep, it is about the person, not the exchange. Rewrite it.",
   },
+  {
+    term: "payload",
+    week: 3,
+    definition: "What a speaker needs you to understand or do.",
+  },
+  {
+    term: "envelope",
+    week: 3,
+    definition:
+      "How a payload is wrapped: the words used instead of it, and the conversational maxim those words bend to get there.",
+  },
+  {
+    term: "plausible deniability",
+    week: 3,
+    definition:
+      "Pinker, Nowak and Lee's account of why envelopes are sent: an indirect request can be declined without either side acknowledging a refusal.",
+  },
+  {
+    term: "over-decoding",
+    week: 3,
+    definition: "Treating a sentence as an envelope when there was no payload inside it.",
+  },
 ];
