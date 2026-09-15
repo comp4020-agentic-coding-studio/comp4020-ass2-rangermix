@@ -195,6 +195,9 @@ corporate diagram loses the argument, and pure whimsy loses the rigour.
   deployed base path. Use markdown links or the theme's components.
 - Never edit generated JSON under `dist/`.
 - Commit in steps that a reader can follow, with messages saying why, not what.
+- Commit and push as you work, straight to `main` unless the user asks for a
+  branch. Unpushed work can't deploy and can be lost: the first two commits
+  here spent two days stranded as patch files.
 - The platform is fixed and documented in `README.md`, and the
   [course website](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/)
   publishes this deliverable's brief and spec. Read both before you plan or
