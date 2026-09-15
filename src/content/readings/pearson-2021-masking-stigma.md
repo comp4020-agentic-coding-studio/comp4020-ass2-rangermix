@@ -13,4 +13,4 @@ checked:
   on: "2026-09-15"
 ---
 
-Pearson and Rose, the latter an autistic advocate, situate masking in its social context: a response to stigma and to the way autism has been narrated. Their “illusion of choice” is the counterweight week 6 needs. A budget is only a budget if you get to decide how to spend it, so the ledger records the pressure as well as the price.
+Pearson and Rose situate masking in its social context: a response to stigma and to the way autism has been narrated. Their “illusion of choice” is the counterweight week 6 needs. A budget is only a budget if you get to decide how to spend it, so the ledger records the pressure as well as the price.

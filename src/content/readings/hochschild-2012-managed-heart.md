@@ -1,10 +1,10 @@
 ---
 title: "The Managed Heart: Commercialization of Human Feeling"
-description: "The book that named emotional labour: flight attendants paid to be “nicer than natural”, and what it does to them."
+description: "The book on emotional labour: flight attendants paid to be “nicer than natural”, and what it does to them."
 authors:
   - "Hochschild, A. R."
 year: 2012
-venue: "University of California Press (updated edition; first published 1983)"
+venue: "University of California Press (2012 edition)"
 kind: book
 doi: "10.1525/9780520951853"
 checked:

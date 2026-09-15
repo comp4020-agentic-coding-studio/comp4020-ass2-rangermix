@@ -130,4 +130,34 @@ export const terms: Term[] = [
     definition:
       "A named, bounded part of the protocol you can run on purpose: the handshake, repair, an apology. Weeks 6 and 7 count what each one costs.",
   },
+  {
+    term: "masking",
+    week: 6,
+    definition:
+      "Running a subroutine you wouldn't run by default, so that you will be read a particular way. The research word is camouflaging.",
+  },
+  {
+    term: "ledger",
+    week: 6,
+    definition:
+      "A record of masked subroutines: context, what each bought, its cost in recovery hours, and the pressure it was run under.",
+  },
+  {
+    term: "recovery hours",
+    week: 6,
+    definition:
+      "The ledger's planning unit: an honest estimate of how long a subroutine takes to recover from. A guess, not a measured price.",
+  },
+  {
+    term: "switching charge",
+    week: 6,
+    definition:
+      "The ledger line for changing how much you mask between contexts, which carries a cost of its own.",
+  },
+  {
+    term: "budget",
+    week: 6,
+    definition:
+      "What you can spend on masked subroutines before recovery runs out. Masking is taught as a budget: never an aspiration, never a failing.",
+  },
 ];
