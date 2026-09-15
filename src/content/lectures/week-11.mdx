@@ -1,0 +1,149 @@
+---
+title: "Interoperation, Not Conversion"
+description: "When two implementations meet, the loss happens between them, not inside either one. So the fix is bilateral, and this class has been demonstrating it since week 1."
+week: 11
+date: 2027-05-18
+teachers:
+  - wren-aldous-kemp
+spec:
+  - "You can describe the diffusion-chain result, and say where in the chain the information was lost."
+  - "Your draft bilateral protocol has at least one clause each partner conceded, and a way for either of you to flag a mismatch."
+  - "You can name a rapport signal you rely on, and explain why someone not sending it might not mean what you assume."
+  - "You can explain the difference between interoperation and conversion with an example from your own semester."
+related:
+  - sessions/week-11
+  - readings/crompton-2020-information-transfer
+  - readings/sheppard-2016-reading-minds
+  - readings/debrabander-2019-first-impressions
+  - readings/rifai-2022-rapport-markers
+  - readings/crompton-2020-autistic-relationships
+  - readings/mitchell-2021-double-empathy-development
+  - readings/milton-2012-double-empathy
+---
+
+import MarginNote from "../../components/sketch/MarginNote.astro";
+
+In week 2, the double empathy problem was a theory: when two people of
+different implementations misunderstand each other, the misunderstanding is
+mutual (Milton, 2012). This week is the evidence, and what to do with it.
+
+## Where the loss happens
+
+Crompton and colleagues built **diffusion chains** of eight people. The first
+person heard a story and retold it to the second, who retold it to the third,
+and so on down the chain. Some chains were all autistic, some all
+non-autistic, and some mixed (Crompton, Ropar et al., 2020).
+
+| Chain | Detail retained along the chain | Rapport between people |
+| --- | --- | --- |
+| All autistic | no significant difference from non-autistic chains | higher than mixed |
+| All non-autistic | no significant difference from autistic chains | higher than mixed |
+| Mixed | declined significantly more steeply | lower |
+
+Read the table as an engineer would. Information survived **within** either
+implementation. It degraded fastest **across** them. If autistic people
+simply lacked the ability to share information, the all-autistic chains would
+have done worst. They didn't.
+
+<MarginNote label="Root cause">
+  Packet loss at the boundary between two implementations. Neither endpoint
+  is faulty.
+</MarginNote>
+
+## Misreading runs in both directions
+
+Sheppard and colleagues filmed people reacting to events, then asked
+non-autistic observers to work out which event each person had experienced.
+Observers were **less accurate for autistic people**. Yet autistic people were
+rated **just as expressive** for most of the events, and their reactions were
+described differently. Their reactions differed; they were not reduced
+(Sheppard et al., 2016).
+
+DeBrabander and colleagues then asked autistic observers too. Autistic and
+non-autistic raters made similar trait judgements of autistic adults. The
+difference was what came next: for autistic raters, those judgements **didn't
+reduce their interest in interacting**, as they did for non-autistic raters
+(DeBrabander et al., 2019).
+
+So both implementations notice the difference. What varies is whether the
+difference counts against someone.
+
+## Rapport signals are implementation-specific
+
+Rifai and colleagues went back to the diffusion-chain videos and coded two
+candidate signals of rapport: **mutual gaze** and **backchannelling**
+(the "mm-hm", the nod). In mixed pairs, less of both went with lower rapport.
+But in autistic pairs, **less backchannelling went with higher rapport**
+(Rifai et al., 2022).
+
+The visible signs that someone is engaged are part of an implementation, not a
+universal readout. A listener who never says "mm-hm" may be the most engaged
+person in the room, by their own implementation's measure. A listener who says
+it constantly may be running a masking subroutine from week 6.
+
+## Who pays for the mismatch
+
+When 12 autistic adults described time with neurotypical friends and family,
+they talked about being in a minority, and about **conforming to what the other
+people were used to** in order to spend time with them. With autistic people,
+they described belonging, and being able to be themselves (Crompton, Hallett
+et al., 2020).
+
+Mitchell, Sheppard and Cassidy set out how that compounds. The majority's
+misreadings, and what people do because of them, push autistic people towards
+isolation over years. That damages their mental health, and it costs everyone
+else what they would have contributed (Mitchell et al., 2021).
+
+Which brings the course to its thesis.
+
+## Interoperation, not conversion
+
+**Conversion** is when one implementation replaces itself to talk to the
+other. It is the default solution, and the pressure to convert falls on the
+minority, as week 6's ledger and its pressure column showed. It can go the other way too: telling a
+colleague to "just be direct" and expecting them to rebuild their whole
+implementation for you.
+
+**Interoperation** is when two implementations agree a shared protocol for the
+exchange at hand: what each side will send, what each will accept, and how
+either one flags a mismatch. Both sides concede something, and neither side
+replaces itself.
+
+| Question | Conversion | Interoperation |
+| --- | --- | --- |
+| Who changes | one side, entirely | both sides, partly |
+| Scope | everywhere, indefinitely | this exchange, this relationship |
+| When it breaks | silently, as a mismatch someone blames on themselves | out loud, with an agreed signal |
+| What it costs | the week 6 ledger, for one person | a few clauses each |
+
+## The bilateral protocol
+
+This is the artefact at the centre of your Interoperation Report. A worked
+example, from two fictional lab partners. Alex backchannels constantly,
+hints, and answers fast. Sam answers slowly, speaks directly, and rarely says
+"mm-hm".
+
+| # | Clause | Who concedes | How either of us checks it |
+| --- | --- | --- | --- |
+| 1 | Sam can answer a question by message within 24 hours, rather than on the spot. | Alex: immediacy | Did any question go unanswered past a day? |
+| 2 | Alex puts requests in writing, stated directly. | Alex: the envelope | Is every request in the doc a question? |
+| 3 | Silence on a call isn't disagreement. Either of us can say "still thinking". | both: the timeout | Did either of us read a silence as a no? |
+| 4 | Sam says "sounds good" out loud when agreeing, even though it feels redundant. | Sam: one token | Did Alex have to ask whether Sam agreed? |
+| 5 | Either of us can say "mismatch" to flag a misunderstanding, with no explanation owed. | both | Did we use it, and did it work? |
+
+Clause 5 is the one that makes the others safe. It turns a mismatch from
+something one person privately blames themselves for into a word both people
+agreed to say.
+
+## This room is the worked example
+
+For eleven weeks, a deliberately mixed class has been building vocabulary:
+*payload*, *timeout*, *repair initiator*, *rate limit*, *ledger*, *mismatch*.
+The words aren't anyone's native implementation. They're a shared protocol,
+negotiated one week at a time, that lets people who run the majority protocol
+fluently and people who never got it handed to them talk about the same
+exchange in the same terms.
+
+That was the argument all along, and the course's glossary is its record. The
+fix for a mismatch is bilateral. You don't have to take that on trust; you've
+been using it since week 2.

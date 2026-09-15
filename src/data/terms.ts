@@ -249,4 +249,28 @@ export const terms: Term[] = [
     week: 10,
     definition: "Once told, a disclosure can't be taken back, and the listener re-reads the past through it.",
   },
+  {
+    term: "interoperation",
+    week: 11,
+    definition:
+      "Two implementations agreeing a shared protocol for the exchange at hand: what each sends, what each accepts, and how either flags a mismatch. Both concede something; neither replaces itself.",
+  },
+  {
+    term: "conversion",
+    week: 11,
+    definition:
+      "One implementation replacing itself to talk to another: everywhere, indefinitely, with the cost landing in one person's week 6 ledger.",
+  },
+  {
+    term: "rapport signals",
+    week: 11,
+    definition:
+      "The visible signs taken to show engagement, such as mutual gaze and backchannelling. Implementation-specific, not a universal readout.",
+  },
+  {
+    term: "bilateral protocol",
+    week: 11,
+    definition:
+      "A written agreement between two people: clauses, who concedes each, how either checks it, and a signal for flagging a mismatch.",
+  },
 ];
