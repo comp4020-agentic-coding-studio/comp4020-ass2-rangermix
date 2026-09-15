@@ -402,13 +402,13 @@ create `field-journal.md`, `protocol-specification.md`,
 
 ### Task 18: Decks, weeks 1 and 2
 
-- [ ] Replace `week-01.deck.mdx`; create `week-02.deck.mdx`. Built from the
+- [x] Replace `week-01.deck.mdx`; create `week-02.deck.mdx`. Built from the
   written lecture: same argument, same diagrams (`SequenceDiagram` imported
   into the deck), speaker notes in ```` ```notes ```` fences. At least eight
   slides each. Set `slides:` on both lectures.
-- [ ] `theme.css`: handwriting annotations, sketch frames, the `quote` and
+- [x] `theme.css`: handwriting annotations, sketch frames, the `quote` and
   `impact` classes in the house style, colours from tokens only.
-- [ ] In the browser, check every slide at both viewports for fit. Commit.
+- [x] In the browser, check every slide at both viewports for fit. Commit.
 
 ### Task 19: Art and starter cleanup
 

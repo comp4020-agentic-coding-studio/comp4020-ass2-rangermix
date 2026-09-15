@@ -1,48 +1,176 @@
 ---
-title: Opening lecture
-description: The placeholder deck — replace it with a real deck for your course
+title: "NT 101, Week 1: Introduction + The Opening Handshake"
+description: "The week 1 lecture deck: the course's thesis, and “how are you?” specified."
 ---
 
-# Opening lecture
+import SequenceDiagram from "../components/sketch/SequenceDiagram.astro";
+import MarginNote from "../components/sketch/MarginNote.astro";
 
-{/* STARTER_CONTENT: replace this deck, then remove this comment. */}
+{/* _class: banner */}
 
-Replace this deck. It is here to show that slides are part of the site, built
-from the same markdown as everything else.
+# The Opening Handshake
+
+SLOP1562, week 1. On campus, NT 101.
+
+```notes
+- Welcome. Don't explain the course yet. Start with the corridor.
+```
 
 ---
 
-## Slides are markdown
+## Someone says "how are you?"
 
-A `---` starts a new slide. Everything else is ordinary markdown: headings,
-lists, links, tables, images, fenced code.
+You have about a second to reply.
 
-- one idea per slide
-- the fewest words that carry it
-- the deck is a performance artefact, so it can say things a page wouldn't
+The correct reply is not an answer.
+
+```notes
+- Pause here. Let the room notice that everyone already knows this, and nobody was told.
+- Some of the room run this without a thought. Some have noticed for years that it has rules. Both are in the right course.
+```
 
 ---
 
 {/* _class: impact */}
 
-# A slide class
+The protocol is undocumented, not obvious; a minority implementation is not a broken one.
 
-`{/* _class: impact */}` fills the slide with the brand colour. `quote`,
-`banner` and `centered` are the others the theme styles.
+```notes
+- The governing sentence. Every week serves it or gets cut.
+```
 
 ---
 
-## What else is here
+## Not a remedial course
 
-```sh
-pnpm dev
-pnpm check
+- No standard to be brought up to; only a majority
+- The outcome is **fluency plus choice**
+- Read the protocol, run a part when it's worth the cost, decline a part knowing what declining costs
+
+```notes
+- Say explicitly: the outcome is not becoming indistinguishable from anybody.
+- "Some weeks you'll run more of it, some weeks less. Both are passing grades."
 ```
 
-The second command proves the deck compiles with the rest of the site. Use the
-first to inspect every slide at the desktop and phone marking viewports; slide
-fit and legibility are visual judgements.
+---
 
-The [astromotion](https://github.com/ANUcybernetics/astromotion) README has the
-rest of the syntax: speaker notes, backgrounds, QR codes, fragments, and
-components hydrated per slide.
+## The documentation exists
+
+Schegloff set out to "ascertain rules" for how conversations open, and named properties like *conditional relevance*.
+
+<span class="source">Schegloff (1968), American Anthropologist 70(6), 1075–1095</span>
+
+<MarginNote label="Where the documentation is">Twenty-one pages. Nobody was handed them.</MarginNote>
+
+```notes
+- The engineering scandal: the protocol has documentation, and it was never shipped to its users.
+- Only the abstract was checked. Name the term; don't define it from the paper.
+```
+
+---
+
+## Talk whose job is the relationship
+
+"Phatic communion": Malinowski's 1920s term for talk that maintains the connection rather than carrying information.
+
+It's better understood as negotiated than as a fixed, empty type.
+
+<span class="source">Coupland, Coupland & Robinson (1992), Language in Society 21(2)</span>
+
+```notes
+- "You aren't being asked for data. You're being asked to confirm the connection is up."
+```
+
+---
+
+<SequenceDiagram
+  actors={["A", "B"]}
+  seed="deck week 1 handshake"
+  caption="The opening handshake between acquaintances in passing."
+  messages={[
+    { from: 0, to: 1, label: "How are you?" },
+    { from: 1, to: 0, label: "Good, you?", note: "a token, not a status report", gold: true },
+    { from: 0, to: 1, label: "Yeah, good." },
+    { from: 1, to: 0, label: "(both keep walking)", dashed: true },
+  ]}
+/>
+
+```notes
+- Walk the diagram top to bottom. The dashed line is the move nobody says out loud.
+```
+
+---
+
+## Valid replies
+
+| Reply | Token | Returns it? | Closes? |
+| --- | --- | --- | --- |
+| Good, you? | positive | yes | after one more turn |
+| Not bad, you? | neutral | yes | after one more turn |
+| Yeah, fine. | neutral | no | immediately |
+| Surviving. | a joke | no | if said lightly |
+
+The reply SHOULD return the request when there's time for one more turn.
+
+```notes
+- Deadpan the RFC 2119 keywords. Don't wink.
+```
+
+---
+
+{/* _class: quote */}
+
+"Honestly, I've had a rough week. I haven't slept properly since Tuesday…"
+
+A **correct answer** to the question as asked, and a **nonconforming reply** under this protocol.
+
+```notes
+- It isn't wrong; it's a different message. It switches the listener into hearing about troubles, which they hadn't budgeted for.
+- "Some of you have watched someone's face change after this and not known why. That's why."
+```
+
+---
+
+## When it's a real question
+
+The asker:
+
+- **stops moving**
+- **asks twice** ("no, how are you actually?")
+- **asks somewhere private**
+
+These are the course's working rules, not a finding. Thursday's lab tests them.
+
+---
+
+## Why nobody handed it to you
+
+If you run the handshake without effort, the spec read as the obvious. That's because you've run it ten thousand times, not because it is simple.
+
+If it's felt strange for years, you were right that it had rules. That's a documentation problem, not a problem with you.
+
+```notes
+- Speak to both halves of the room here, one after the other, without ranking them.
+```
+
+---
+
+## How the course runs
+
+- **Tuesday**: a lecture writes down part of the protocol
+- **Thursday**: a lab tests it in the room
+- **Sunday**, from week 2: a Field Journal entry
+
+Read (1–4). Implement (5–7). Negotiate (8–11). Horizon (12).
+
+---
+
+{/* _class: centered */}
+
+## Check yourself against this week
+
+Can you give a reply that closes the exchange, and say which type it was?
+
+Can you name a setting where "how are you?" is a real question?
+
+Can you see the branch while you're standing at it?
