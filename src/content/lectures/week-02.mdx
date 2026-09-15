@@ -20,6 +20,7 @@ related:
 ---
 
 import MarginNote from "../../components/sketch/MarginNote.astro";
+import Form from "../../components/sketch/Form.astro";
 
 Last week we wrote down the handshake. This week asks two questions the
 handshake raises. Why did nobody write it down before? And when the handshake
@@ -102,6 +103,18 @@ good engineering retrospective:
 2. **The rule you inferred.** Written so someone who wasn't there could run it.
 3. **The test.** A second time you checked the rule, including if it failed.
 4. **The rule now.** Revised or held, and why.
+
+<Form
+  heading="Field Journal entry --- one exchange, eleven times a semester"
+  caption="The entry as a form. Most of the writing is in the first box: the exchange, before any interpretation of it."
+  seed="week 2 field note form"
+  sections={[
+    { label: "1. What happened", hint: "one exchange; people by role, not name", lines: 4 },
+    { label: "2. The rule you inferred", hint: "runnable by someone who wasn't there", lines: 2 },
+    { label: "3. The test", hint: "a second instance, failures included", lines: 2 },
+    { label: "4. The rule now", hint: "revised or held, and why", lines: 2 },
+  ]}
+/>
 
 One discipline makes the format work: **describe the exchange before you
 interpret it.** Sasson's observers judged style in seconds, and the judgement

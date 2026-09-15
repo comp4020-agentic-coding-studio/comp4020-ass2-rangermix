@@ -1,0 +1,102 @@
+---
+// A blank form, drawn: numbered sections with ruled lines to write on.
+//
+// Week 2 asks for a field-note entry eleven times over the semester, and a
+// numbered list tells a reader the four parts without showing them the thing
+// they will be filling in. The form does the opposite, so the page carries
+// both: the list says what each part is for, the form says what it looks like
+// on the page and how much of it is writing.
+import { box, line, rng } from "../../lib/sketch";
+
+export interface Section {
+  label: string;
+  hint?: string;
+  /** Ruled lines to leave for writing. */
+  lines: number;
+}
+
+interface Props {
+  sections: Section[];
+  heading?: string;
+  caption: string;
+  seed?: string;
+}
+
+const { sections, heading, caption, seed = caption } = Astro.props;
+const r = rng(seed);
+
+const width = 520;
+const boxX = 46;
+const boxW = width - boxX - 24;
+const ruleGap = 22;
+// Wide enough that two boxes' overshooting corners don't run into each other.
+const gap = 28;
+const top = heading ? 46 : 18;
+
+let cursor = top;
+const drawn = sections.map((section) => {
+  const labelBaseline = cursor + 26;
+  const firstRule = cursor + (section.hint ? 62 : 44);
+  const height = firstRule - cursor + section.lines * ruleGap + 6;
+  const frame = box(boxX, cursor, boxW, height, r);
+  const rules = Array.from({ length: section.lines }, (_, k) =>
+    // Ruled lines stop short of the frame on both sides, as a printed form's do.
+    line(boxX + 18, firstRule + k * ruleGap, boxX + boxW - 18, firstRule + k * ruleGap, r, 0.45),
+  );
+  const at = cursor;
+  cursor += height + gap;
+  return {
+    ...section,
+    at,
+    labelBaseline,
+    hintBaseline: labelBaseline + 20,
+    frame,
+    rules,
+  };
+});
+
+const height = cursor - gap + 26;
+const id = `form-${Math.abs([...seed].reduce((h, c) => (h * 31 + c.charCodeAt(0)) | 0, 7)).toString(36)}`;
+---
+
+<figure class="sketch form" aria-labelledby={`${id}-caption`}>
+  <svg
+    viewBox={`0 0 ${width} ${height}`}
+    style={`max-width: ${width}px`}
+    role="img"
+    aria-labelledby={`${id}-title`}
+    aria-describedby={`${id}-sections`}
+  >
+    <title id={`${id}-title`}>{caption}</title>
+    {heading && <text class="note" x={boxX} y={top - 14}>{heading}</text>}
+    {
+      drawn.map((section) => (
+        <g>
+          <path class="ink" d={section.frame} />
+          <text class="doc-line" x={boxX + 18} y={section.labelBaseline}>
+            {section.label}
+          </text>
+          {section.hint && (
+            <text class="note" x={boxX + 18} y={section.hintBaseline}>
+              {section.hint}
+            </text>
+          )}
+          {section.rules.map((d) => (
+            <path class="graphite" d={d} />
+          ))}
+        </g>
+      ))
+    }
+  </svg>
+  <ol class="visually-hidden" id={`${id}-sections`}>
+    {
+      sections.map((section) => (
+        <li>
+          {section.label}
+          {section.hint ? `: ${section.hint}` : ""}
+        </li>
+      ))
+    }
+  </ol>
+  <figcaption id={`${id}-caption`}>{caption}</figcaption>
+</figure>

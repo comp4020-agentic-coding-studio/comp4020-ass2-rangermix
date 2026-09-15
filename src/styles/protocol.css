@@ -292,6 +292,20 @@
   font-size: 14px;
 }
 
+/* A line of a specimen document: smaller than an actor label, because a
+   specimen is a block of them and they have to fit the drawn frame. */
+.sketch .doc-line {
+  fill: currentColor;
+  font-family: var(--nt-mono);
+  font-size: 15px;
+}
+
+.sketch .doc-line-gold {
+  fill: var(--nt-gold);
+  font-family: var(--nt-mono);
+  font-size: 15px;
+}
+
 .sketch figcaption {
   margin-block-start: var(--at-spacing-sm);
   color: var(--at-text-secondary);
