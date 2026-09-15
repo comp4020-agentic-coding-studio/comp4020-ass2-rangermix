@@ -1,0 +1,160 @@
+---
+title: "NT 101, Week 3: Payload and Envelope"
+description: "The week 3 lecture deck: the spec the protocol claims to follow, the exception its author filed himself, and how to decode an envelope from either end."
+---
+
+import MarginNote from "../components/sketch/MarginNote.astro";
+
+{/* _class: banner */}
+
+# Payload and Envelope
+
+Week 3. Indirect speech, and the spec that breaks itself on purpose.
+
+```notes
+- Open with the sentence, not the theory. Say it flatly and wait: "We should get coffee sometime."
+- Ask who has replied "sure, Thursday at 10?" Don't make it a show of hands if the room is tense; just leave the pause.
+```
+
+---
+
+## "We should get coffee sometime."
+
+A request to schedule coffee?
+
+If you've answered with a day and a time and watched the other face do something complicated, you know.
+
+If you've never once wondered, you know too --- and you couldn't say how.
+
+```notes
+- Both halves of the room have the same information here and only one of them can state it. That asymmetry is the week.
+```
+
+---
+
+## There is a published spec
+
+Grice's Cooperative Principle, and four categories of maxim under it.
+
+| Category | The maxim, in short |
+| --- | --- |
+| Quantity | as informative as required, no more |
+| Quality | don't say what you believe false |
+| Relation | be relevant |
+| Manner | be perspicuous |
+
+<span class="source">Grice (1975), Syntax and Semantics 3, 41–58</span>
+
+```notes
+- Read it as a spec and the protocol fails it constantly. "We should get coffee sometime" has no time, no place, no commitment.
+```
+
+---
+
+## The author filed the bug himself
+
+Alongside the maxims, Grice notes others --- "such as 'Be polite'" --- that also generate meaning beyond what is said.
+
+And that stating the maxims as though talk existed to exchange information is "too narrow".
+
+<MarginNote label="Known issue">The author of the specification filed the bug report in the same paragraph.</MarginNote>
+
+```notes
+- So: a published spec, plus a known exception the author flagged. Politeness is allowed to override the other four.
+- Nobody told you which one wins. That's the documentation problem, exactly.
+```
+
+---
+
+{/* _class: impact */}
+
+Payload: what the speaker needs you to understand or do.
+
+Envelope: how it's wrapped, and the maxim those words bend to get there.
+
+```notes
+- These two terms run to week 12. Introduce them once, here, and use them exactly.
+```
+
+---
+
+## Why anyone sends an envelope
+
+- **Plausible deniability** --- a cooperative listener accepts, an unwilling one declines, and neither has to name a refusal
+- Talk does **two jobs**: carries information, and negotiates the relationship
+- An explicit statement becomes **common knowledge**; a hint never does
+
+<span class="source">Pinker, Nowak & Lee (2008), Proceedings of the National Academy of Sciences 105(3)</span>
+
+```notes
+- The third one is why "we both knew" and "you said it" are different events under this protocol.
+```
+
+---
+
+## The decoder
+
+| Utterance | Maxim bent | Payload |
+| --- | --- | --- |
+| "We should get coffee sometime." | Quantity: no time, no place | I'd like us to be on friendly terms. |
+| "No worries if not!" | Quality: there may well be worries | I'd like this, and here's a painless exit. |
+| "Is it cold in here?" | Relation: temperature, asked of a person | Could the window be closed? |
+| "Interesting idea." | Quantity: no content | I'm not convinced. |
+| "Just circling back on this." | Quantity: no new information | This is late. |
+
+These are the course's entries, not a research table. Test them in the lab.
+
+```notes
+- Take one column at a time down the table, not one row. The maxim column is the transferable part.
+```
+
+---
+
+## Decoding from both ends
+
+**If you decode by reading the words**: it's a lookup until it isn't. When the stakes matter, ask for the payload --- and take the blame for the ambiguity.
+
+> "Do you mean coffee as a plan, or as a nice thing to say? Either's fine. I just want to know whether to put it in my calendar."
+
+**If you decode without noticing**: your exercise runs the other way. Send one payload bare, and notice what it costs you.
+
+```notes
+- Say the script out loud, at speed, so they hear that it's sayable. It is four seconds long.
+- Speak to both halves in turn, and don't rank them.
+```
+
+---
+
+## Sending it bare is always valid
+
+It also changes the relationship a little, because it creates common knowledge where a hint wouldn't.
+
+That's a cost, not a mistake. Sometimes it's worth paying.
+
+You can lower it by naming the choice: *"I'm going to be literal, because I'd rather not get this wrong."*
+
+---
+
+## Over-decoding
+
+Sometimes "is it cold in here?" is a question about the temperature.
+
+Treating every sentence as a hint is as nonconforming as treating none as one, and more tiring.
+
+**The rule of thumb:** decode when a maxim is *visibly* bent and you're plainly expected to do something. Otherwise take the words at face value --- and let them send a second, clearer envelope.
+
+```notes
+- Under this protocol, they will. That's the reassuring half: the sender retries.
+```
+
+---
+
+{/* _class: centered */}
+
+## Check yourself against this week
+
+Can you name the maxim a line bends, and say its payload in plain words?
+
+Can you ask for a payload without implying evasion?
+
+Can you give an example of over-decoding?

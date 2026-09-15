@@ -12,4 +12,4 @@ checked:
   on: "2026-09-15"
 ---
 
-Grice's Cooperative Principle and its maxims of Quantity, Quality, Relation and Manner are the closest thing the protocol has to a published spec. On the same page, Grice notes that other maxims “such as ‘Be polite’” also generate implicature. Week 3 is built on that aside: the protocol lets politeness overrule the other four, and never says so. The course checked the passage that sets out the maxims (pp. 45–47) against the text.
+Grice's Cooperative Principle and its maxims of Quantity, Quality, Relation and Manner are the closest thing the protocol has to a published spec. In the same passage, Grice notes that other maxims “such as ‘Be polite’” also generate implicature. Week 3 is built on that aside: the protocol lets politeness overrule the other four, and never says so. The course checked the passage that sets out the maxims (pp. 45–47) against the text.
