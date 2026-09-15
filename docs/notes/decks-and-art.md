@@ -35,8 +35,8 @@ step 5). Each deck:
 - [x] Week 8 --- Institutional Protocols
 - [x] Week 9 --- Escalation Rates
 - [x] Week 10 --- Disclosure (carries the register break; see below)
-- [ ] Week 11 --- Interoperation, Not Conversion
-- [ ] Week 12 --- Advanced Topics and Further Study
+- [x] Week 11 --- Interoperation, Not Conversion
+- [x] Week 12 --- Advanced Topics and Further Study
 
 **Week 10's deck carries the register break.** The lecture drops the protocol
 register for four paragraphs and snaps back with "Right. Mechanics." The deck

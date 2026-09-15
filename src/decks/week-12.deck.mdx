@@ -1,0 +1,153 @@
+---
+title: "NT 101, Week 12: Advanced Topics and Further Study"
+description: "The week 12 lecture deck: three open issues logged rather than taught, the course's own errata, and the capstone's two routes."
+---
+
+import MarginNote from "../components/sketch/MarginNote.astro";
+
+{/* _class: banner */}
+
+# Open Issues
+
+Week 12. Advanced topics, logged rather than taught.
+
+```notes
+- Standards documents end with the problems the authors know about and decided not to solve in this version. So does this course.
+```
+
+---
+
+## Why three things are out of scope
+
+Each one runs on top of **everything** the course documented --- handshakes, envelopes, timing, repair, masking, disclosure, rate limits --- all at once.
+
+Each is high-stakes enough that a first-year course would teach it badly in one week.
+
+And in each, running the protocol *on purpose* raises questions this course can't settle for you.
+
+```notes
+- That's the honest reason, and it's why this week sketches rather than teaches. Say it as a limitation, not as modesty.
+```
+
+---
+
+## OI-1: Romance
+
+**Status:** open. **Out of scope because:** every earlier week at once, with the highest cost of error.
+
+Five styles of communicating romantic interest --- traditional, physical, sincere, playful, polite --- from over five thousand adults. Physical, sincere and playful correlated with more dating success.
+
+<span class="source">Hall et al. (2010), Communication Quarterly 58(4)</span>
+
+```notes
+- The inventory measures how people say they signal interest, not what receivers understand. That gap matters.
+- The course's inference, not the paper's: if there are five styles, "I can't tell when someone's flirting" is sometimes a style mismatch. Week 3's decoder handles sincere well and playful badly.
+```
+
+---
+
+## OI-2: Persuasion
+
+**Status:** open. **Out of scope because:** the protocol used deliberately to move someone, where the ethics are the hard part.
+
+Research on compliance organised around three goals people already pursue: seeing things **accurately**, keeping their **relationships**, feeling good about **themselves**.
+
+Much of the influence described is subtle, indirect, and outside the target's awareness.
+
+<span class="source">Cialdini & Goldstein (2004), Annual Review of Psychology 55</span>
+
+<MarginNote label="Security note">A protocol that works outside awareness is, by definition, an attack surface.</MarginNote>
+
+```notes
+- Everything in weeks 1 to 11 can be used to persuade. This course taught it so they could interoperate.
+- That's why the Field Experiment's ethics reflection is graded, not an appendix.
+```
+
+---
+
+## OI-3: Power
+
+**Status:** open, and **contested**. **Out of scope because:** it changes every other parameter, and the research is still arguing.
+
+Elevated power activates **approach**: more positive affect, more automatic processing, more disinhibited behaviour.
+
+Reduced power activates **inhibition**: more attention to threat and to **other people's interests**, more controlled processing.
+
+<span class="source">Keltner, Gruenfeld & Anderson (2003), Psychological Review 110(2)</span>
+
+```notes
+- The account has drawn published criticism. Treat it as a proposal, not a settled result, and say so.
+```
+
+---
+
+{/* _class: impact */}
+
+If that proposal holds even partly: whoever holds less power runs more of the protocol.
+
+```notes
+- They attend more to the other person, inhibit more, and pay week 6's costs more often.
+- Week 11's finding that conversion falls on the minority is the same shape. The connection is the course's; the proposal is theirs.
+```
+
+---
+
+## Errata
+
+| # | Model | Known issue |
+| --- | --- | --- |
+| E-1 | The timeout (wk 4) | not a hard number; "by about 700 ms a no is more likely", nothing sharper |
+| E-2 | Recovery hours (wk 6) | a planning unit, not a measured price |
+| E-3 | The depth scale (wk 9) | the course's model; the levels haven't been tested as levels |
+| E-4 | Partial disclosure (wk 10) | a synthesis, not a tested intervention |
+| E-5 | The branch signals (wk 1) | working rules, checked only in this course's labs |
+
+```notes
+- A specification that publishes no known issues is either very new or not being honest.
+- Each row is a testable question for a journal entry or a capstone.
+```
+
+---
+
+## What the course documented
+
+- **Read** the protocol --- the handshake, why nobody wrote it down, envelopes, the clock
+- **Implement** selectively --- repair, masking as a budget, a runbook
+- **Negotiate** with it --- institutions, closeness, disclosure, other implementations
+- **Horizon** --- this page
+
+---
+
+{/* _class: impact */}
+
+The outcome was never that you become indistinguishable from anyone.
+
+Fluency plus choice.
+
+```notes
+- Read the protocol, run a part when it's worth the cost, decline a part knowing what declining costs.
+- This is the last thing the room hears in a lecture. Don't rush it, and don't add to it.
+```
+
+---
+
+## The capstone
+
+Due **Sunday 13 June, 23:59** --- two weeks after teaching ends, on purpose. Two routes, equal weight:
+
+- **Personal Protocol Document.** What you run, what you decline, what you need from others, with the costs attached.
+- **Neurotypical Interaction Field Experiment.** Vary one parameter deliberately, record what comes back, report it straight, with a graded ethics reflection.
+
+Thursday's lab is the clinic for both.
+
+---
+
+{/* _class: centered */}
+
+## Check yourself against this week
+
+For each open issue: the reading where its documentation starts, and one reason it's out of scope?
+
+Have you chosen your route and written its first paragraph?
+
+Can you name an entry in the errata and say how you'd test it?

@@ -234,12 +234,16 @@ must be replaced or deliberately removed.
   portraits.
 - **Glossary:** each protocol term with the week that introduces it, published
   at `/glossary/`.
+- **Every week has a deck**, built from its written lecture, at `/decks/week-NN/`
+  and linked from the lecture's `slides:`. The design first scoped decks to
+  weeks 1 and 2; a lecture without slides turned out to be the one artefact of a
+  week that had no second register, so all twelve have one.
 
 ## Still open
 
-- Reading list and literature review for all twelve weeks; every citation
-  verified against the source before it ships.
-- Decks for weeks 1 and 2.
-- Cast entries, home page, policies page, glossary.
 - `PROCESS.md`, 400--600 words, every claim citing a real commit --- the
   student's own account, and not for an agent to write.
+
+Settled and built since this list was first written: the reading list and the
+twelve literature reviews, with every citation checked against its source; the
+decks; the cast, home page, policies page and glossary.
