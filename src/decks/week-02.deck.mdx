@@ -4,6 +4,7 @@ description: "The week 2 lecture deck: why the protocol's runners can't describe
 ---
 
 import MarginNote from "../components/sketch/MarginNote.astro";
+import Form from "../components/sketch/Form.astro";
 
 {/* _class: banner */}
 
@@ -80,6 +81,24 @@ The course's claim is narrow: a minority implementation of a convention is not a
 4. **The rule now**: revised or held, and why
 
 Describe the exchange **before** you interpret it.
+
+---
+
+<Form
+  heading="Field Journal entry --- eleven times a semester"
+  seed="deck week 2 field note form"
+  caption="The entry as a form. The first box is twice the others."
+  sections={[
+    { label: "1. What happened", hint: "one exchange; people by role", lines: 4 },
+    { label: "2. The rule you inferred", hint: "runnable by someone who wasn't there", lines: 2 },
+    { label: "3. The test", hint: "a second instance, failures included", lines: 2 },
+    { label: "4. The rule now", hint: "revised or held, and why", lines: 2 },
+  ]}
+/>
+
+```notes
+- The shape is the instruction: most of the writing is the exchange, before any interpretation of it.
+```
 
 ---
 

@@ -4,6 +4,7 @@ description: "The week 11 lecture deck: the diffusion-chain evidence, misreading
 ---
 
 import MarginNote from "../components/sketch/MarginNote.astro";
+import Chain from "../components/sketch/Chain.astro";
 
 {/* _class: banner */}
 
@@ -25,6 +26,23 @@ Eight people. The first hears a story and retells it to the second, who retells 
 Some chains all autistic. Some all non-autistic. Some mixed.
 
 <span class="source">Crompton, Ropar et al. (2020), Autism 24(7)</span>
+
+---
+
+<Chain
+  seed="deck week 11 diffusion chains"
+  caption="The method. The only thing that changes between chains is who is in them."
+  chains={[
+    { label: "all autistic", members: ["A", "A", "A", "A", "A", "A", "A", "A"] },
+    { label: "all non-autistic", members: ["N", "N", "N", "N", "N", "N", "N", "N"] },
+    { label: "mixed: both, in one chain", members: ["", "", "", "", "", "", "", ""], gold: true },
+  ]}
+/>
+
+```notes
+- The mixed chain's seats are blank on purpose: the order people sat in isn't a detail this course checked.
+- Results on the next slide, not in the picture.
+```
 
 ---
 

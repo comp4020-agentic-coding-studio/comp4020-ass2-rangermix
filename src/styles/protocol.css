@@ -12,10 +12,15 @@
  * Unlayered on purpose: the theme's own styles sit in cascade layers, so these
  * win without specificity fights. */
 
+/* Both faces and the ink carry their own fallbacks, because a deck page is not
+   a site page: astromotion emits only the fonts named in `fontVariables` and
+   none of the theme's `--at-font-*` or `--at-text` tokens, so on a slide
+   `var(--at-font-mono)` resolves to nothing and every monospace label in a
+   diagram silently became the body sans. */
 :root {
   --nt-hand: var(--font-kalam, "Kalam"), "Segoe Print", "Bradley Hand", cursive;
-  --nt-mono: var(--at-font-mono);
-  --nt-ink: var(--at-text);
+  --nt-mono: var(--at-font-mono, var(--font-roboto-mono, "Roboto Mono")), ui-monospace, monospace;
+  --nt-ink: var(--at-text, currentColor);
   /* Annotation ink: the brand bronze on paper, a lifted gold at night. Both
      clear 4.5:1 against their surfaces. */
   --nt-pencil: light-dark(var(--at-secondary), oklch(from var(--at-primary) 84% 0.08 h));

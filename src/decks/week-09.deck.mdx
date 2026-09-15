@@ -4,6 +4,7 @@ description: "The week 9 lecture deck: hours as the clock, disclosure as the eng
 ---
 
 import MarginNote from "../components/sketch/MarginNote.astro";
+import DepthLadder from "../components/sketch/DepthLadder.astro";
 
 {/* _class: banner */}
 
@@ -108,6 +109,26 @@ Step up one at a time, and wait for them to step before you step again.
 
 ```notes
 - Now go back to both openings. The queue went 0 to 3 in one turn with no step in between. The three conversations stayed at 1, and nobody stepped.
+```
+
+---
+
+<DepthLadder
+  at={2}
+  windowNote="anywhere in here is conforming"
+  seed="deck week 9 depth ladder"
+  caption="Their last turn was level 2. Levels 1 to 3 are all conforming."
+  levels={[
+    { label: "logistics, weather, the course" },
+    { label: "low-stakes preferences" },
+    { label: "experiences, small difficulties" },
+    { label: "ongoing struggles, values, family" },
+    { label: "fears, health, what few people know" },
+  ]}
+/>
+
+```notes
+- Trace the café queue on the drawing: level 0 to level 3 is two rungs past the window.
 ```
 
 ---

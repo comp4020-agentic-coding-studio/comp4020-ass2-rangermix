@@ -4,6 +4,7 @@ description: "The week 12 lecture deck: three open issues logged rather than tau
 ---
 
 import MarginNote from "../components/sketch/MarginNote.astro";
+import Register from "../components/sketch/Register.astro";
 
 {/* _class: banner */}
 
@@ -27,6 +28,23 @@ And in each, running the protocol *on purpose* raises questions this course can'
 
 ```notes
 - That's the honest reason, and it's why this week sketches rather than teaches. Say it as a limitation, not as modesty.
+```
+
+---
+
+<Register
+  heading="SLOP1562 --- open issues at end of semester"
+  seed="deck week 12 open issues"
+  caption="Three issues, none closed, one still being argued about."
+  issues={[
+    { id: "OI-1", title: "Romance", status: "OPEN" },
+    { id: "OI-2", title: "Persuasion", status: "OPEN" },
+    { id: "OI-3", title: "Power", status: "OPEN / CONTESTED", contested: true },
+  ]}
+/>
+
+```notes
+- This is the slide the course has been building towards: a register, stamped, with the course's own name on it.
 ```
 
 ---
