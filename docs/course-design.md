@@ -215,6 +215,18 @@ conformance tables --- drawn by hand. Jittered SVG strokes, a handwriting face
 against monospace, nothing mechanically straight. Applies to the hero, the
 social card, on-page diagrams and the deck theme.
 
+Drawings are build-time SVG from one seeded-jitter module, and the same drawing
+appears on a week's page and its deck. The primitives are a sequence diagram, a
+timing line, a state machine, a margin note, an envelope, a blank form, a depth
+ladder, a diffusion chain and an open-issues register. A week gets a drawing
+when it shows a mechanism its prose can't; where the week's signature artefact
+is already a populated table, it stays a table.
+
+No raster illustrations and no borrowed visual idiom: the satire is carried in
+the course's own hand --- a stamped status, a pencilled margin note, a deadpan
+caption under a rigorous drawing --- and is aimed at the protocol, never the
+student.
+
 `pnpm check:evidence` rejects the starter artwork, so the hero and social card
 must be replaced or deliberately removed.
 
