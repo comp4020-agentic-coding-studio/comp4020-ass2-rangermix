@@ -26,7 +26,10 @@ const boxW = 150;
 const boxH = 58;
 const colX = [40, width - 40 - boxW];
 const rowGap = 150;
-const top = 30;
+// Room above the first row for a horizontal transition's label, which sits
+// there rather than in the gap between two boxes: the gap is 140px wide and
+// these labels are longer than that, so a centred label ran into both boxes.
+const top = 46;
 const pos = states.map((_, i) => ({ x: colX[i % 2], y: top + Math.floor(i / 2) * rowGap }));
 const height = top + Math.ceil(states.length / 2) * rowGap - rowGap + boxH + 40;
 const centre = (i: number) => ({ x: pos[i].x + boxW / 2, y: pos[i].y + boxH / 2 });
@@ -52,15 +55,15 @@ const drawnTransitions = transitions.map((t) => {
     y2 = b.y - (boxH / 2 + 10) * dir;
   }
   const { shaft, head } = arrow(x1, y1, x2, y2, r);
-  // A label sits beside a vertical arrow and under a horizontal one, so it
-  // never lies on top of the stroke it names.
+  // A label sits beside a vertical arrow, and above the row for a horizontal
+  // one, so it never lies on top of the stroke it names or inside a box.
   const horizontal = a.y === b.y;
   return {
     ...t,
     shaft,
     head,
     lx: horizontal ? (x1 + x2) / 2 : (x1 + x2) / 2 + 12,
-    ly: horizontal ? y1 + 30 : (y1 + y2) / 2 + 6,
+    ly: horizontal ? y1 - 37 : (y1 + y2) / 2 + 6,
     anchor: horizontal ? "middle" : "start",
   };
 });
