@@ -141,6 +141,12 @@ it steals from.
   course that argues for documentation is the worst available failure.
 - If a source cannot be verified, cut the claim or state it as the course's own
   observation rather than dressing it as research.
+- **A study's details are claims too.** What participants were asked to do, the
+  famous example everyone repeats, a number from the results: if the check
+  recorded in `docs/research/` didn't reach that detail, it doesn't go on the
+  page. The vivid illustration is the part most likely to be remembered rather
+  than read. Before a week ships, read each cited sentence against its row in
+  the review.
 - The `readings` collection extends past what the slides cover, but every entry
   must earn its place against the week it hangs off. A reading list padded for
   length is worse than a short one.
