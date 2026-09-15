@@ -19,6 +19,7 @@ related:
 ---
 
 import MarginNote from "../../components/sketch/MarginNote.astro";
+import DepthLadder from "../../components/sketch/DepthLadder.astro";
 
 You've had three good conversations with someone from your lab. Really good
 ones. And yet it isn't a friendship, and you can't tell what's missing.
@@ -89,6 +90,20 @@ are ours, not the literature's; test them in your journal.
 
 **The rule:** match the other person's last level, plus or minus one. Step up
 one level at a time, and wait for them to step before you step again.
+
+<DepthLadder
+  at={2}
+  windowNote="anywhere in here is conforming"
+  seed="week 9 depth ladder"
+  caption="The rule as a shape. Their last turn was level 2, so levels 1 to 3 are all conforming replies; level 4 is two rungs in one step."
+  levels={[
+    { label: "logistics, weather, the course" },
+    { label: "low-stakes preferences" },
+    { label: "experiences, small difficulties" },
+    { label: "ongoing struggles, values, family" },
+    { label: "fears, health, what few people know" },
+  ]}
+/>
 
 That's why the café-queue divorce landed strangely. It went from level 0 to
 level 3 in one turn, with no step from the listener in between. And it's why
