@@ -147,6 +147,11 @@ it steals from.
   page. The vivid illustration is the part most likely to be remembered rather
   than read. Before a week ships, read each cited sentence against its row in
   the review.
+- **"Most people" is a finding.** "Most students miss this", "people usually
+  take it well", "this surprises people": each is an empirical claim about
+  behaviour, and none is free. Cite it, turn it into the course's rule ("the
+  easiest part to leave out"), or cut it. Uncited frequency words read as
+  research to a first-year, which is exactly the problem.
 - The `readings` collection extends past what the slides cover, but every entry
   must earn its place against the week it hangs off. A reading list padded for
   length is worse than a short one.
