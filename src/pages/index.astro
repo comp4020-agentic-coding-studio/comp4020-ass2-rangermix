@@ -10,6 +10,7 @@ import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
 
 const lectures = (await getPublishedCollection("lectures")).sort((a, b) => a.data.week - b.data.week);
+const readingCount = (await getPublishedCollection("readings")).length;
 const parts: { name: string; summary: string; weeks: CollectionEntry<"lectures">[] }[] = [
   { name: "I. Read the protocol", summary: "Write down what everyone runs and nobody describes.", weeks: lectures.slice(0, 4) },
   { name: "II. Implement selectively", summary: "Run parts of it on purpose, and count what they cost.", weeks: lectures.slice(4, 7) },
@@ -120,7 +121,7 @@ const parts: { name: string; summary: string; weeks: CollectionEntry<"lectures">
       <p>Four tasks, what each is worth, and every deadline.</p>
     </Card>
     <Card title="Readings" href="/readings/">
-      <p>Forty-three sources, each checked against the source itself.</p>
+      <p>{readingCount} sources, each checked against the source itself.</p>
     </Card>
     <Card title="Glossary" href="/glossary/">
       <p>The vocabulary the class builds, and the week each term arrives.</p>
@@ -139,21 +140,12 @@ const parts: { name: string; summary: string; weeks: CollectionEntry<"lectures">
   }
 
   .home-hero {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--at-spacing-lg);
-    align-items: center;
     margin-block: var(--at-spacing-xl) var(--at-spacing-2xl);
   }
 
-  @media (min-width: 60rem) {
-    .home-hero {
-      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
-    }
-  }
-
   .home-thesis {
-    margin: 0;
+    margin: 0 0 var(--at-spacing-md);
+    max-width: 34rem;
     color: var(--at-heading);
     font-size: 1.5rem;
     font-weight: 400;
