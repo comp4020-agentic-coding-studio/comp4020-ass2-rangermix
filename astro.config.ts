@@ -1,4 +1,4 @@
-import { defineConfig } from "astro/config";
+import { defineConfig, fontProviders } from "astro/config";
 import courseGraph from "astro-course-university";
 import universityTheme from "astro-theme-university";
 import { astromotion, deckRemarkPlugins } from "astromotion";
@@ -12,6 +12,20 @@ const { site, base } = resolveDeployment(process.env, gitOrigin);
 export default defineConfig({
   site,
   base,
+  // The course's one addition to the theme's type: a handwriting face for the
+  // margin --- annotations, diagram labels, marked quotations --- set against
+  // the theme's monospace for clause numbers and timings. The theme renders
+  // every registered font on every page; astromotion needs it named below.
+  fonts: [
+    {
+      name: "Kalam",
+      cssVariable: "--font-kalam",
+      provider: fontProviders.google(),
+      weights: [400, 700],
+      styles: ["normal"],
+      subsets: ["latin"],
+    },
+  ],
   // Pages build as directories, so every route URL ends in a slash. Saying so
   // explicitly makes Astro emit matching links, which keeps the canonical URL
   // and what a visitor clicks in agreement --- otherwise each click costs a
@@ -22,7 +36,13 @@ export default defineConfig({
       defaultLayout: "src/layouts/PageLayout.astro",
       // The whole brand choice: three colour tokens and a set of lockups. Keep
       // institutional brand packages and assets out of this fictional site.
-      brandCss: "astro-theme-slop/slop.css",
+      brandCss: [
+        "astro-theme-slop/slop.css",
+        // Not brand: the course's visual system, layered on the brand tokens
+        // and taking every colour from them. Listed here because this is the
+        // one hook that reaches every page, detail routes and decks included.
+        "/src/styles/protocol.css",
+      ],
       imageFormat: "avif",
       llmsTxt: true,
       // The theme owns the markdown plugin chain, so astromotion's slide
@@ -45,7 +65,7 @@ export default defineConfig({
     // name.
     astromotion({
       theme: "./src/decks/theme.css",
-      fontVariables: ["--font-public-sans"],
+      fontVariables: ["--font-public-sans", "--font-roboto-mono", "--font-kalam"],
     }),
   ],
 });

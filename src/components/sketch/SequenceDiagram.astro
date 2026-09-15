@@ -1,0 +1,148 @@
+---
+// A protocol exchange drawn as a sequence diagram, in pencil.
+//
+// Lifelines run down from each party; each message is an arrow between them in
+// the order it happens. `dashed` marks a message the protocol expects but
+// nobody says out loud; `gold` marks the one the diagram is about. The same
+// exchange is written out as an ordered list for anyone not looking at the
+// picture.
+import { arrow, box, dashed as dashedLine, line, rng } from "../../lib/sketch";
+
+export interface Message {
+  from: number;
+  to: number;
+  label: string;
+  note?: string;
+  timing?: string;
+  dashed?: boolean;
+  gold?: boolean;
+}
+
+interface Props {
+  actors: string[];
+  messages: Message[];
+  caption: string;
+  seed?: string;
+}
+
+const { actors, messages, caption, seed = caption } = Astro.props;
+const r = rng(seed);
+
+const gutter = 90;
+const spacing = actors.length > 2 ? 240 : 300;
+const width = gutter * 2 + spacing * (actors.length - 1);
+const top = 64;
+const rowHeight = messages.some((m) => m.note) ? 96 : 72;
+const firstRow = top + 62;
+const height = firstRow + rowHeight * messages.length + 16;
+const xOf = (actor: number) => gutter + spacing * actor;
+
+const id = `seq-${Math.abs([...seed].reduce((h, c) => (h * 31 + c.charCodeAt(0)) | 0, 7)).toString(36)}`;
+
+const heads = actors.map((name, i) => {
+  const w = Math.max(84, name.length * 11 + 28);
+  return { name, x: xOf(i), box: box(xOf(i) - w / 2, 12, w, 38, r) };
+});
+const lifelines = actors.map((_, i) => line(xOf(i), top - 8, xOf(i), height - 8, r, 0.6));
+
+const rows = messages.map((m, i) => {
+  const y = firstRow + rowHeight * i;
+  const x1 = xOf(m.from);
+  const x2 = xOf(m.to);
+  const self = m.from === m.to;
+  const inset = 10;
+  const direction = Math.sign(x2 - x1) || 1;
+  const start = self ? x1 : x1 + inset * direction;
+  const end = self ? x1 : x2 - inset * direction;
+  let shaft: string;
+  let head: string;
+  if (self) {
+    const loop = 56;
+    shaft = [line(x1, y - 14, x1 + loop, y - 14, r), line(x1 + loop, y - 14, x1 + loop, y + 12, r)].join(" ");
+    const a = arrow(x1 + loop, y + 12, x1 + 8, y + 12, r);
+    shaft += ` ${a.shaft}`;
+    head = a.head;
+  } else {
+    const a = arrow(start, y, end, y, r);
+    head = a.head;
+    shaft = m.dashed ? dashedLine(start, y, end, y, r) : a.shaft;
+  }
+  const labelX = self ? x1 + 70 : (x1 + x2) / 2;
+  return { ...m, y, shaft, head, labelX, anchor: self ? "start" : "middle" };
+});
+---
+
+<figure class="sketch sequence" aria-labelledby={`${id}-caption`}>
+  {/* Three parties don't fit a phone at a legible size, so the drawing keeps
+      its size and scrolls sideways; the region takes focus so the keyboard
+      can scroll it too. */}
+  <div
+    class={actors.length > 2 ? "sketch-scroll sketch-wide" : "sketch-scroll"}
+    tabindex={actors.length > 2 ? 0 : undefined}
+    role={actors.length > 2 ? "region" : undefined}
+    aria-label={actors.length > 2 ? `${caption} (scrolls sideways)` : undefined}
+  >
+    <svg
+      viewBox={`0 0 ${width} ${height}`}
+      style={`max-width: ${width}px`}
+      role="img"
+      aria-labelledby={`${id}-title`}
+      aria-describedby={`${id}-steps`}
+    >
+      <title id={`${id}-title`}>{caption}</title>
+      {lifelines.map((d) => <path class="graphite" d={d} />)}
+      {
+        heads.map((head) => (
+          <g>
+            <path class="ink" d={head.box} />
+            <text class="actor" x={head.x} y={37} text-anchor="middle">
+              {head.name}
+            </text>
+          </g>
+        ))
+      }
+      {
+        rows.map((row) => (
+          <g>
+            <path class={row.gold ? "gold" : "ink"} d={row.shaft} />
+            <path class={row.gold ? "gold" : "ink"} d={row.head} />
+            <text class="label" x={row.labelX} y={row.y - 12} text-anchor={row.anchor}>
+              {row.label}
+            </text>
+            {row.note && (
+              <text class="note" x={row.labelX} y={row.y + 26} text-anchor={row.anchor}>
+                {row.note}
+              </text>
+            )}
+            {row.timing && (
+              <text class="timing" x={8} y={row.y + 5}>
+                {row.timing}
+              </text>
+            )}
+          </g>
+        ))
+      }
+    </svg>
+  </div>
+  <ol class="visually-hidden" id={`${id}-steps`}>
+    {
+      messages.map((m) => (
+        <li>
+          {actors[m.from]} to {actors[m.to]}: {m.label}
+          {m.dashed ? " (expected, not said aloud)" : ""}
+          {m.timing ? ` (${m.timing})` : ""}
+          {m.note ? `. ${m.note}` : ""}
+        </li>
+      ))
+    }
+  </ol>
+  <figcaption id={`${id}-caption`}>{caption}</figcaption>
+</figure>
+
+<style>
+  @media (max-width: 36rem) {
+    .sketch-wide svg {
+      min-width: 34rem;
+    }
+  }
+</style>

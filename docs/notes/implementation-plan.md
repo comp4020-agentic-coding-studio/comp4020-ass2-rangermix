@@ -267,22 +267,30 @@ behind it. `MarginNote.astro`: an aside in the handwriting face, floated into
 the margin at desktop and inline at phone width. `HeroSketch.astro`: home-page
 drawing of the opening handshake.
 
-- [ ] **Step 1:** load `frontend-design:frontend-design`; settle the
+- [x] **Step 1:** load `frontend-design:frontend-design`; settle the
   handwriting face against the monospace (legible at 16 px on a phone, reads as
   a person's hand in an RFC margin) and the scale.
-- [ ] **Step 2:** write `sketch.ts`: deterministic (same seed, same drawing on
+- [x] **Step 2:** write `sketch.ts`: deterministic (same seed, same drawing on
   every build, so diffs stay quiet), wobble proportional to length.
-- [ ] **Step 3:** register the font in `astro.config.ts` `fonts:` with
+- [x] **Step 3:** register the font in `astro.config.ts` `fonts:` with
   `fontProviders.google()`, and add its variable to astromotion `fontVariables`.
-- [ ] **Step 4:** `protocol.css`: `.protocol-doc` h2 counters as `§N`;
+- [x] **Step 4:** `protocol.css`: `.protocol-doc` h2 counters as `§N`;
   `[data-quoted]` styled as marked-up foreign text (handwritten quotation marks
   and a hand-drawn underline, colour from `--at-text-secondary`); spec lists as
   checkbox clauses in the monospace; table frames; margin notes. Colours only
   from `--at-*` tokens. Check contrast in both schemes.
-- [ ] **Step 5:** build the primitives, import `protocol.css` from
+- [x] **Step 5:** build the primitives, import `protocol.css` from
   `PageLayout.astro`, and try a scratch diagram in week 1.
-- [ ] **Step 6:** in the browser at 1920×1080 and 390×844, light and dark:
+- [x] **Step 6:** in the browser at 1920×1080 and 390×844, light and dark:
   no horizontal page scroll, labels legible, axe clean in the build. Commit.
+
+**As built (deviations):** no `SketchTable` --- the theme already wraps every
+markdown table in a scroll container, so a drawn frame would scroll away with
+the content; tables get the monospace header instead. `HeroSketch` moves to
+Task 17 with the home page it belongs to. Diagrams cap at their natural width
+(labels were oversized at desktop); three-party diagrams keep their size on a
+phone and scroll sideways in a focusable region. Verified at 1920×1080 and
+390×844 with a scratch week that was not committed.
 
 ### Task 3: Readings verification tool
 

@@ -1,0 +1,363 @@
+/* NT 101's visual system: a standards document, drawn by hand.
+ *
+ * Structure comes from RFCs --- numbered clauses, conformance checklists,
+ * sequence diagrams. Execution comes from a pencil: wobbling rules, boxes that
+ * overshoot their corners, notes in a hand in the margin. Rigour in the
+ * structure, provisional in the stroke; neither pole on its own.
+ *
+ * Every colour is a theme token, so light and dark follow the site toggle. The
+ * strokes are masks over a token-coloured fill rather than coloured SVGs, for
+ * the same reason. The mask shapes come from src/lib/sketch.ts.
+ *
+ * Unlayered on purpose: the theme's own styles sit in cascade layers, so these
+ * win without specificity fights. */
+
+:root {
+  --nt-hand: var(--font-kalam, "Kalam"), "Segoe Print", "Bradley Hand", cursive;
+  --nt-mono: var(--at-font-mono);
+  --nt-ink: var(--at-text);
+  /* Annotation ink: the brand bronze on paper, a lifted gold at night. Both
+     clear 4.5:1 against their surfaces. */
+  --nt-pencil: light-dark(var(--at-secondary), oklch(from var(--at-primary) 84% 0.08 h));
+  --nt-graphite: light-dark(var(--at-tertiary), oklch(from var(--at-tertiary) 76% 0.02 h));
+  --nt-gold: var(--at-primary);
+
+  --sketch-rule: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='10' viewBox='0 0 320 10'%3E%3Cpath d='M0.1 4.3Q194.8 6.5 319.3 4.5 M0.5 4.3Q127.8 5.3 319.2 5.2' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
+  --sketch-frame: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpath d='M4.9 9.7Q50.9 9.8 112.3 9.9 M5.6 10.3Q61.9 10.1 112.1 10.3 M109.8 4.9Q110.8 57.6 109.6 114.7 M110 5Q110.1 66.9 109.8 115.2 M114.1 109.6Q55.7 110.8 6.8 110.4 M114 110.1Q74.5 109.4 6.6 109.8 M9.8 113.5Q9.2 66.9 9.7 6.6 M10.2 113.7Q9.9 51.7 10.2 6.5' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
+  --sketch-tick: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22'%3E%3Cpath d='M-0.8 2.7Q8.9 3.5 21.8 3.3 M-0.7 3Q9 3.2 21.9 3.1 M19.3 -0.4Q18.6 10.4 19.2 22.1 M18.8 -0.5Q19.1 9.9 19 22.1 M23.6 19.2Q11.1 18.9 -1.8 19 M23.8 18.8Q9 18.6 -1.7 19.1 M3 20.9Q2.8 7.1 3 -0.9 M2.9 20.9Q2.6 9 3.2 -1' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+  --sketch-bracket: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='240' viewBox='0 0 10 240'%3E%3Cpath d='M4.2 0.2Q3.5 116.3 4.3 240.2 M5.6 0.2Q5.1 127.8 5.4 239.6' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+/* ---- Clauses ------------------------------------------------------------ */
+
+/* A week's page is a specification, so its sections are clauses a reader can
+   cite: "see §3". Numbered because they are referenced, not to decorate. */
+.protocol-doc {
+  counter-reset: clause;
+}
+
+.protocol-doc:not(.lab-doc) > h2 {
+  counter-increment: clause;
+  counter-reset: subclause;
+  position: relative;
+}
+
+.protocol-doc:not(.lab-doc) > h3 {
+  counter-increment: subclause;
+}
+
+.protocol-doc:not(.lab-doc) > h2::before,
+.protocol-doc:not(.lab-doc) > h3::before {
+  display: block;
+  margin-block-end: 0.15em;
+  color: var(--nt-pencil);
+  font-family: var(--nt-mono);
+  font-size: 0.55em;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.protocol-doc:not(.lab-doc) > h2::before {
+  content: "§" counter(clause);
+}
+
+.protocol-doc:not(.lab-doc) > h3::before {
+  content: "§" counter(clause) "." counter(subclause);
+  font-size: 0.7em;
+}
+
+/* With a margin to hang in, the clause number moves out of the text column. */
+@media (min-width: 75rem) {
+  .protocol-doc:not(.lab-doc) > h2::before,
+  .protocol-doc:not(.lab-doc) > h3::before {
+    position: absolute;
+    inset-inline-end: calc(100% + 2.6rem);
+    inset-block-start: 0.7em;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .protocol-doc:not(.lab-doc) > h3 {
+    position: relative;
+  }
+}
+
+.protocol-doc hr {
+  height: 10px;
+  border: 0;
+  margin-block: var(--at-spacing-2xl);
+  background: var(--nt-graphite);
+  mask: var(--sketch-rule) repeat-x center / 320px 10px;
+}
+
+.protocol-doc code {
+  font-family: var(--nt-mono);
+}
+
+.protocol-doc th {
+  font-family: var(--nt-mono);
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.protocol-doc td {
+  vertical-align: top;
+}
+
+/* ---- Someone else's words ------------------------------------------------ */
+
+/* A marked quotation of a framing the course refuses: set in the margin hand
+   between drawn quotation marks, with an editor's wavy underline. A reader can
+   see at a glance that this is being quoted, not said. */
+[data-quoted] {
+  color: var(--nt-pencil);
+  text-decoration: underline wavy var(--nt-graphite);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25em;
+}
+
+[data-quoted]::before,
+[data-quoted]::after {
+  font-family: var(--nt-hand);
+  font-size: 1.15em;
+  line-height: 0;
+}
+
+[data-quoted]::before {
+  content: "“";
+}
+
+[data-quoted]::after {
+  content: "”";
+}
+
+/* ---- The spec: a checklist in a hand-drawn frame ------------------------- */
+
+.spec-list {
+  position: relative;
+  margin-block: var(--at-spacing-2xl);
+  padding: var(--at-spacing-lg) var(--at-spacing-lg) var(--at-spacing-sm);
+  border: 1px solid var(--nt-graphite);
+}
+
+@supports (-webkit-mask-box-image: none) {
+  .spec-list {
+    border: 0;
+  }
+
+  .spec-list::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--nt-graphite);
+    -webkit-mask-box-image: var(--sketch-frame) 24 / 24px round;
+    pointer-events: none;
+  }
+}
+
+.spec-list h2 {
+  margin-block-start: 0;
+  font-size: var(--at-font-size-h3);
+}
+
+.spec-list > p {
+  color: var(--at-text-secondary);
+  font-size: 0.95em;
+}
+
+.spec-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.spec-list li {
+  position: relative;
+  margin-block: 0.7rem;
+  padding-inline-start: 2.2rem;
+}
+
+.spec-list li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-start: 0.2em;
+  width: 1.3rem;
+  height: 1.3rem;
+  background: var(--nt-ink);
+  mask: var(--sketch-tick) center / contain no-repeat;
+}
+
+/* ---- Margin notes ------------------------------------------------------- */
+
+.margin-note {
+  position: relative;
+  margin-block: var(--at-spacing-lg);
+  padding-inline-start: 1.1rem;
+  color: var(--nt-pencil);
+  font-family: var(--nt-hand);
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+
+.margin-note::before {
+  content: "";
+  position: absolute;
+  inset-block: 0.1em;
+  inset-inline-start: 0;
+  width: 10px;
+  background: var(--nt-pencil);
+  mask: var(--sketch-bracket) repeat-y center / 10px 240px;
+}
+
+.margin-note p {
+  margin: 0;
+}
+
+/* At desktop the note leaves the column for the margin beside the paragraph
+   it follows, where a reviewer's pencil would put it. */
+@media (min-width: 75rem) {
+  .margin-note {
+    float: inline-end;
+    clear: inline-end;
+    width: 14rem;
+    margin-block: 0.3rem 1rem;
+    margin-inline-end: -17rem;
+    transform: rotate(-1.2deg);
+  }
+}
+
+/* ---- Figures ------------------------------------------------------------ */
+
+.sketch {
+  margin-block: var(--at-spacing-xl);
+  margin-inline: 0;
+}
+
+.sketch-scroll {
+  overflow-x: auto;
+}
+
+.sketch svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  color: var(--nt-ink);
+}
+
+.sketch .ink {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.sketch .gold {
+  fill: none;
+  stroke: var(--nt-gold);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+}
+
+.sketch .graphite {
+  fill: none;
+  stroke: var(--nt-graphite);
+  stroke-width: 1.3;
+  stroke-linecap: round;
+}
+
+.sketch .label {
+  fill: currentColor;
+  font-family: var(--nt-hand);
+  font-size: 22px;
+}
+
+.sketch .actor {
+  fill: currentColor;
+  font-family: var(--nt-mono);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.sketch .note {
+  fill: var(--nt-pencil);
+  font-family: var(--nt-hand);
+  font-size: 18px;
+}
+
+.sketch .timing {
+  fill: var(--nt-graphite);
+  font-family: var(--nt-mono);
+  font-size: 14px;
+}
+
+.sketch figcaption {
+  margin-block-start: var(--at-spacing-sm);
+  color: var(--at-text-secondary);
+  font-size: var(--at-font-size-sm);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* ---- Page furniture ----------------------------------------------------- */
+
+.week-meta {
+  color: var(--at-text-secondary);
+  font-family: var(--nt-mono);
+  font-size: var(--at-font-size-sm);
+}
+
+.week-readings ul,
+.reading-list {
+  padding: 0;
+  list-style: none;
+}
+
+.week-readings li,
+.reading-list li {
+  margin-block: var(--at-spacing-md);
+}
+
+.week-readings li p {
+  margin-block: 0.25rem 0;
+  color: var(--at-text-secondary);
+  font-size: 0.95em;
+}
+
+.citation cite {
+  font-style: italic;
+}
+
+.reading-facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.35rem 1.25rem;
+}
+
+.reading-facts dt {
+  color: var(--at-text-secondary);
+  font-family: var(--nt-mono);
+  font-size: var(--at-font-size-sm);
+}
+
+.reading-facts dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.submission-schedule ol {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: 0.25rem 1.5rem;
+  padding-inline-start: 1.5rem;
+  font-family: var(--nt-mono);
+  font-size: var(--at-font-size-sm);
+}

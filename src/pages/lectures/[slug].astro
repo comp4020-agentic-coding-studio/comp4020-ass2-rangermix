@@ -28,7 +28,7 @@ const relatedCollections = graphCollections.filter((key) => key !== "readings");
     <strong>Lecture, {formatCourseDate(lecture.data.date)}</strong>
     {lecture.data.slides && (
       <>
-        {" · "}
+        <br />
         <a href={withBase(lecture.data.slides)}>Open the slides</a>
       </>
     )}
