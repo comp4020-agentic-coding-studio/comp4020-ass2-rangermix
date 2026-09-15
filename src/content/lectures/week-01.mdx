@@ -1,0 +1,179 @@
+---
+title: "Introduction + The Opening Handshake"
+description: "Here is “how are you?”, and here is its specification, written down in one lecture after a lifetime of nobody writing it down."
+week: 1
+date: 2027-02-23
+teachers:
+  - wren-aldous-kemp
+slides: /decks/week-01/
+spec:
+  - "Asked “how are you?” in a corridor, you can give a reply that closes the exchange, and you know which of the reply types in §3 you used."
+  - "You can say what “how are you?” usually requests instead of information, and name one setting where it is a real question."
+  - "You can explain in one sentence why this course calls the protocol undocumented rather than obvious."
+  - "You can recognise the honest-status-report branch while you are in it, and decide whether to take it."
+related:
+  - sessions/week-01
+  - readings/schegloff-1968-openings
+  - readings/coupland-1992-how-are-you
+---
+
+import SequenceDiagram from "../../components/sketch/SequenceDiagram.astro";
+import MarginNote from "../../components/sketch/MarginNote.astro";
+
+Someone says "how are you?" in a corridor. You have about a second to reply,
+and the correct reply is not an answer.
+
+Everyone in this room has run that exchange thousands of times. Some of you
+run it without a thought and couldn't state one rule it follows. Some of you
+have spent years noticing that it has rules, and that nobody will tell you what
+they are. This course is for both of you. By the end of this lecture the rules
+will be written down.
+
+## What this course is
+
+SLOP1562 treats the social protocol of the neurotypical majority as what it
+is: a large, undocumented, inconsistently implemented legacy system. Its own
+users can't describe it, and none of them designed it. For twelve weeks we
+reverse-engineer it, so that anyone can interoperate with it on purpose.
+
+One sentence runs the semester:
+
+> The protocol is undocumented, not obvious; a minority implementation is not
+> a broken one.
+
+Two things follow, and both matter on day one.
+
+This is not a remedial course. Nobody is here to be brought up to a standard,
+because there is no standard, only a majority. You are here because the
+specification is missing and you have noticed. Some of you noticed because the
+protocol never quite ran for you. Some of you noticed because it runs so
+smoothly that you couldn't explain it to someone who asked.
+
+The outcome is not that you become indistinguishable from anybody. It is
+**fluency plus choice**. You will be able to read the protocol, run a part of
+it when running it is worth what it costs, and decline a part of it knowing
+what declining costs. Some weeks you will decide to run more of it. Some weeks
+less. Both are passing grades.
+
+## The documentation exists
+
+In 1968, Emanuel Schegloff published an attempt to "ascertain rules" for how
+conversations open, and named some of the properties those rules have
+(Schegloff, 1968). One is called *conditional relevance*. It's in *American
+Anthropologist*, volume 70, issue 6.
+
+<MarginNote label="Where the documentation is">
+  Pages 1075–1095. Twenty-one pages. Nobody was handed them.
+</MarginNote>
+
+So the rules are not unknowable. Researchers have been writing them down for
+over fifty years. They were written for other researchers, in a register
+nobody outside the field reads, and then everyone went on behaving as if the
+rules were self-evident. This is the engineering scandal the course is named
+for. The protocol has documentation. It was never shipped to the users.
+
+There is a word for the kind of talk we start with. "Phatic communion" is
+Malinowski's term, from the 1920s, for talk whose job is the relationship
+rather than the information (Coupland, Coupland & Robinson, 1992). "How are
+you?" is the flagship example. You aren't being asked for data. You're being
+asked to confirm that the connection is up.
+
+## The handshake, specified
+
+Here is the exchange as the majority implementation runs it between two people
+who know each other slightly, passing in a corridor.
+
+<SequenceDiagram
+  actors={["A", "B"]}
+  caption="The opening handshake between acquaintances in passing. The dashed line is the move nobody says out loud: both continue walking."
+  messages={[
+    { from: 0, to: 1, label: "How are you?" },
+    { from: 1, to: 0, label: "Good, you?", note: "a token, not a status report", gold: true },
+    { from: 0, to: 1, label: "Yeah, good." },
+    { from: 1, to: 0, label: "(both keep walking)", dashed: true },
+  ]}
+/>
+
+Written as clauses, in the register a standards document would use:
+
+### The request
+
+"How are you?", "How's it going?", "You alright?", "How've you been?" and
+"Hey, how are things?" are, in passing, **the same message**. None of them
+requests information. Each one requests a single acknowledgement that the
+relationship is in working order.
+
+### Valid replies
+
+A valid reply is a **positive or neutral token**, optionally followed by the
+request **returned**:
+
+| Reply | Token | Returns the request? | Closes the exchange? |
+| --- | --- | --- | --- |
+| Good, you? | positive | yes | after one more turn |
+| Not bad, you? | neutral | yes | after one more turn |
+| Yeah, fine. | neutral | no | yes, immediately |
+| Can't complain. | neutral | no | yes, immediately |
+| Surviving. | mildly negative, played as a joke | no | yes, if said lightly |
+
+The reply SHOULD return the request when there's time for one more turn, and
+MAY skip it when both people are clearly moving on. A returned request MUST be
+answered with a token too. That is the "Yeah, good" in the diagram, and it
+ends the exchange.
+
+### The branch nobody takes
+
+"Honestly, I've had a rough week. I haven't slept properly since Tuesday and I
+think I might fail the stats quiz" is a **correct answer to the question as
+asked**, and a **nonconforming reply** under this protocol.
+
+It isn't wrong. It is a different message. It switches the other person from
+a two-second handshake into listening to troubles, which they hadn't budgeted
+time for, and the corridor was not the room for it. Some of you have taken
+this branch and watched the other person's face change without knowing why.
+That's why.
+
+The branch is sometimes worth taking. The course's position is that you
+should be able to see it while you're standing at the fork.
+
+### When it is a real question
+
+The question is negotiated, not fixed (Coupland, Coupland & Robinson, 1992).
+The same words become a real enquiry when the setting makes them one. A doctor
+asking at the start of an appointment usually means it. So does a friend who
+stops walking, asks again ("no, how are you actually?"), or asks in a
+different room from the usual one.
+
+The signals this course uses: the asker **stops moving**, **asks twice**, or
+**asks somewhere private**. These are the course's working rules, not a
+research finding. Week 1's lab tests them.
+
+## Why nobody handed it to you
+
+Week 2 takes this properly. The short version: the people who run this
+protocol fluently can't see it. It was never written down for them either;
+they learned it by running it, and a rule you've never seen broken is a rule
+you don't know you have.
+
+That explains the room. If you run the handshake without effort, the spec
+above probably read as a description of the obvious. It is obvious to you
+because you've run it ten thousand times, not because it is simple. If you've
+found the handshake strange for years, you were right that it has rules. You
+were never told them. That's a documentation problem, not a problem with you.
+
+## How the course runs
+
+- **Tuesday**, a lecture like this one argues something about the protocol and
+  writes part of it down.
+- **Thursday**, the lab checks the argument in the room. Labs have run sheets
+  with timings; nothing in one is sprung on you.
+- **Sunday**, from week 2, you turn in a Field Journal entry: one exchange you
+  observed, the rule you inferred, a test of it, and the rule as it now stands.
+
+The twelve weeks come in four parts. Weeks 1--4 **read** the protocol. Weeks
+5--7 **implement** selected parts and count the cost. Weeks 8--11
+**negotiate** with it: institutions, closeness, disclosure, and other
+implementations. Week 12 points at what the course leaves out.
+
+Every week ends with lines you can check yourself against, and this one ends
+below.
