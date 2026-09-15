@@ -1,0 +1,131 @@
+---
+// The week 3 metaphor, drawn: what was said on the outside, what was meant on
+// the slip inside, and a pencilled note between them for whatever the week is
+// pointing at --- the maxim bent, or the need being sent.
+//
+// Week 10 reuses it for partial disclosure, where the point is what stays out
+// of the envelope: `withheld` draws a second slip in dashes below the one that
+// gets sent.
+//
+// Lines are passed in already broken, because SVG text doesn't wrap and a
+// component that guessed at line breaks would break them differently as soon
+// as the type scale moved.
+import { arrow, box, dashed, line, rng } from "../../lib/sketch";
+
+interface Props {
+  utterance: string[];
+  annotation: string;
+  payload: string[];
+  withheld?: string;
+  caption: string;
+  seed?: string;
+}
+
+const { utterance, annotation, payload, withheld, caption, seed = caption } = Astro.props;
+const r = rng(seed);
+
+const width = 520;
+const envX = 70;
+const envW = 380;
+const envY = 40;
+const flapDepth = 68;
+const lineHeight = 27;
+// The first line clears the flap's point; the envelope grows so the last line
+// never falls through its bottom edge.
+const firstLine = envY + flapDepth + 32;
+const envH = flapDepth + 32 + (utterance.length - 1) * lineHeight + 22;
+const mid = envX + envW / 2;
+
+const envelope = box(envX, envY, envW, envH, r);
+// The flap: two creases from the top corners down to a point, as a closed
+// envelope shows it.
+const flap = `${line(envX, envY, mid, envY + flapDepth, r)} ${line(envX + envW, envY, mid, envY + flapDepth, r)}`;
+
+// The note sits under the envelope rather than across the flap: inside the
+// triangle it collided with the creases, and would collide again at any
+// length the caller happened to pass.
+const noteY = envY + envH + 30;
+const slipTop = envY + envH + 96;
+const slipX = 34;
+const slipW = width - slipX * 2;
+const slipH = 34 + payload.length * 28;
+const slip = box(slipX, slipTop, slipW, slipH, r);
+const open = arrow(mid, noteY + 14, mid, slipTop - 12, r);
+
+const heldTop = slipTop + slipH + 52;
+const heldH = 62;
+const held = withheld
+  ? [
+      dashed(slipX, heldTop, slipX + slipW, heldTop, r),
+      dashed(slipX + slipW, heldTop, slipX + slipW, heldTop + heldH, r),
+      dashed(slipX + slipW, heldTop + heldH, slipX, heldTop + heldH, r),
+      dashed(slipX, heldTop + heldH, slipX, heldTop, r),
+    ].join(" ")
+  : null;
+
+const height = (withheld ? heldTop + heldH : slipTop + slipH) + 28;
+const id = `env-${Math.abs([...seed].reduce((h, c) => (h * 31 + c.charCodeAt(0)) | 0, 7)).toString(36)}`;
+---
+
+<figure class="sketch envelope" aria-labelledby={`${id}-caption`}>
+  <svg
+    viewBox={`0 0 ${width} ${height}`}
+    style={`max-width: ${width}px`}
+    role="img"
+    aria-labelledby={`${id}-title`}
+    aria-describedby={`${id}-parts`}
+  >
+    <title id={`${id}-title`}>{caption}</title>
+    <path class="ink" d={envelope} />
+    <path class="graphite" d={flap} />
+    {
+      utterance.map((row, i) => (
+        <text class="label" x={mid} y={firstLine + i * lineHeight} text-anchor="middle">
+          {row}
+        </text>
+      ))
+    }
+    <text class="timing" x={mid} y={noteY} text-anchor="middle">{annotation}</text>
+    <path class="gold" d={open.shaft} />
+    <path class="gold" d={open.head} />
+    <text class="note" x={mid + 16} y={(noteY + slipTop) / 2 + 4} text-anchor="start">opens to</text>
+    <path class="ink" d={slip} />
+    {
+      payload.map((row, i) => (
+        <text class="actor" x={mid} y={slipTop + 36 + i * 28} text-anchor="middle">
+          {row}
+        </text>
+      ))
+    }
+    {held && <path class="graphite" d={held} />}
+    {
+      withheld && (
+        <>
+          <text class="actor" x={mid} y={heldTop + 38} text-anchor="middle">
+            {withheld}
+          </text>
+          <text class="note" x={mid} y={heldTop - 16} text-anchor="middle">
+            never posted --- stays yours
+          </text>
+        </>
+      )
+    }
+  </svg>
+  <dl class="visually-hidden" id={`${id}-parts`}>
+    <dt>On the envelope</dt>
+    <dd>{utterance.join(" ")}</dd>
+    <dt>Noted on it</dt>
+    <dd>{annotation}</dd>
+    <dt>Payload inside</dt>
+    <dd>{payload.join(" ")}</dd>
+    {
+      withheld && (
+        <>
+          <dt>Kept back, never sent</dt>
+          <dd>{withheld}</dd>
+        </>
+      )
+    }
+  </dl>
+  <figcaption id={`${id}-caption`}>{caption}</figcaption>
+</figure>

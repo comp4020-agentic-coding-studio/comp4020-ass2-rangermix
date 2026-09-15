@@ -18,6 +18,7 @@ related:
 ---
 
 import MarginNote from "../../components/sketch/MarginNote.astro";
+import Envelope from "../../components/sketch/Envelope.astro";
 
 "We should get coffee sometime."
 
@@ -73,6 +74,13 @@ that gets across without being said. The course's working version is this.
 When a sentence visibly bends a maxim, assume the speaker is still being
 cooperative, and ask why a cooperative person would bend that one. The answer
 is usually the payload.
+
+<Envelope
+  utterance={["“We should get coffee", "sometime.”"]}
+  annotation="bends Quantity: no time, no place"
+  payload={["I'd like us to be", "on friendly terms."]}
+  caption="One line, opened. The words are the envelope; underneath is the maxim they bend to get the payload across."
+/>
 
 ## Why anyone sends an envelope
 
