@@ -202,4 +202,28 @@ export const terms: Term[] = [
     definition:
       "A worked example of a message that meets its specification, with each clause it satisfies labelled.",
   },
+  {
+    term: "disclosure",
+    week: 9,
+    definition:
+      "Telling someone something about yourself. The engine of closeness: disclosing, being disclosed to, and liking feed each other.",
+  },
+  {
+    term: "depth scale",
+    week: 9,
+    definition:
+      "The course's five levels of disclosure, from logistics (0) to things few people know (4). A working model, not a research instrument.",
+  },
+  {
+    term: "rate limit",
+    week: 9,
+    definition:
+      "The pace of escalation the other person can match: stay within one level of their last disclosure, step up one level at a time, and wait for them to step.",
+  },
+  {
+    term: "step-down",
+    week: 9,
+    definition:
+      "A one-turn repair for going past a rate limit: name it lightly and return to a lower level.",
+  },
 ];
