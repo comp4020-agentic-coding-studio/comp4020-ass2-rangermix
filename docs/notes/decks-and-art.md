@@ -32,8 +32,8 @@ step 5). Each deck:
 - [x] Week 5 --- Error Handling and Repair
 - [x] Week 6 --- Masking: Cost Accounting
 - [x] Week 7 --- Emergency: Overload, Shutdown, Recovery
-- [ ] Week 8 --- Institutional Protocols
-- [ ] Week 9 --- Escalation Rates
+- [x] Week 8 --- Institutional Protocols
+- [x] Week 9 --- Escalation Rates
 - [ ] Week 10 --- Disclosure (carries the register break; see below)
 - [ ] Week 11 --- Interoperation, Not Conversion
 - [ ] Week 12 --- Advanced Topics and Further Study
