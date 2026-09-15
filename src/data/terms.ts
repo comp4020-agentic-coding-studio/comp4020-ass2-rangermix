@@ -160,4 +160,34 @@ export const terms: Term[] = [
     definition:
       "What you can spend on masked subroutines before recovery runs out. Masking is taught as a budget: never an aspiration, never a failing.",
   },
+  {
+    term: "overload",
+    week: 7,
+    definition:
+      "Input arriving faster than it can be processed. Recovered from in hours. The course's distinction, not a research definition.",
+  },
+  {
+    term: "shutdown",
+    week: 7,
+    definition:
+      "Output stopping: words are hard to find, messages go unanswered. Recovered from in a day or so. The course's distinction, not a research definition.",
+  },
+  {
+    term: "autistic burnout",
+    week: 7,
+    definition:
+      "Defined with autistic adults: chronic exhaustion, loss of skills, reduced tolerance to stimulus, from cumulative load with no way to get relief. Distinct from depression and from work burnout.",
+  },
+  {
+    term: "runbook",
+    week: 7,
+    definition:
+      "Decisions made in advance, by the version of you who can make them, for the version who can't: early signs, first actions, pre-written messages, who gets told, what gets dropped, recovery.",
+  },
+  {
+    term: "recovery experiences",
+    week: 7,
+    definition:
+      "Sonnentag and Fritz's four kinds of recovery from work: detachment, relaxation, mastery and control. A planning checklist, not a treatment.",
+  },
 ];
