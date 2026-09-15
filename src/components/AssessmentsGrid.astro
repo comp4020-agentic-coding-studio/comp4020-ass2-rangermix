@@ -18,9 +18,10 @@ const visible = assessments.sort((a, b) => a.data.week - b.data.week || a.data.d
           <p>
             <small>
               {submissions.length > 0
-                ? `Weekly, ${formatDueDay(submissions[0])} to ${formatDueDay(submissions.at(-1)!)}`
-                : `Due ${formatDueDay(assessment.data.due)}`}{" "}
-              · Weight: {assessment.data.weight}%{assessment.data.draft && " · Draft"}
+                ? `Weekly, ${formatDueDay(submissions[0])} to ${formatDueDay(submissions.at(-1)!)}. `
+                : `Due ${formatDueDay(assessment.data.due)}. `}
+              {`Worth ${assessment.data.weight}%.`}
+              {assessment.data.draft && " Draft."}
             </small>
           </p>
         </Card>

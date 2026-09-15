@@ -385,20 +385,20 @@ create `field-journal.md`, `protocol-specification.md`,
 
 ### Task 17: People, policies, home, glossary, 404
 
-- [ ] **People:** delete both starter entries and portraits. Create three
+- [x] **People:** delete both starter entries and portraits. Create three
   staff, with contact lines that model week 8's institutional protocol: who to
   email for what, a subject-line format, expected reply time. Reassign
   `teachers:` refs across the weeks.
-- [ ] **Policies:** prerequisite (three references, what they attest), the
+- [x] **Policies:** prerequisite (three references, what they attest), the
   no-diagnosis clause verbatim, extensions (framed with the week 6 budget),
   best ten of eleven, AI use, adjustments (a need can be stated without a label,
   from week 10), how to ask for help, integrity.
-- [ ] **Home:** `HeroSketch`, the governing sentence, what you will do, who it
+- [x] **Home:** `HeroSketch`, the governing sentence, what you will do, who it
   is for (both sides of the room), the four parts I--IV, outcomes from the
   course record, cards to Lectures, Labs, Readings, Assessment, Glossary.
-- [ ] **Glossary page** from `src/data/terms.ts`, each term linked to its week.
-- [ ] **404:** drop the hero; a deadpan line in the protocol register.
-- [ ] `pnpm check`; the policies test green. Commit.
+- [x] **Glossary page** from `src/data/terms.ts`, each term linked to its week.
+- [x] **404:** drop the hero; a deadpan line in the protocol register.
+- [x] `pnpm check`; the policies test green. Commit.
 
 ### Task 18: Decks, weeks 1 and 2
 
