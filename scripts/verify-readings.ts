@@ -63,7 +63,10 @@ export function compare(reading: Reading, work: CrossrefWork): string[] {
   const main = normalise(work.title?.[0] ?? "");
   const full = normalise([work.title?.[0], ...(work.subtitle ?? [])].filter(Boolean).join(" "));
   const ours = normalise(reading.title);
-  if (!(ours === main || ours === full || (main.length > 0 && ours.startsWith(main)))) {
+  // Crossref sometimes keeps a subtitle the citation drops, or a footnote
+  // marker ("Sequencing in Conversational Openings 1") the citation shouldn't.
+  const footnote = main.replace(/ \d$/, "");
+  if (!(ours === main || ours === full || ours === footnote || (main.length > 0 && ours.startsWith(main)))) {
     problems.push(`title: frontmatter "${reading.title}" / Crossref "${work.title?.[0]}${work.subtitle?.length ? `: ${work.subtitle[0]}` : ""}"`);
   }
 

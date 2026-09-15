@@ -1,6 +1,16 @@
 import { describe, expect, it } from "vitest";
 import { deficitRegister } from "./support/deficit-register";
-import { htmlPages, readPage, visibleText } from "./support/site";
+import { htmlPages, nodesOf, readPage, visibleText } from "./support/site";
+
+// A cited work's title is someone else's words wherever it appears --- the
+// reading's own heading, a link to it --- so every reading title is treated as
+// quoted. Kapp et al. may call their paper "Deficit, difference, or both?"; the
+// course quoting that title is not the course saying "deficit".
+const readingTitles = nodesOf("readings")
+  .map((n) => n.title)
+  .sort((a, b) => b.length - a.length);
+const withoutCitedTitles = (text: string) =>
+  readingTitles.reduce((rest, title) => rest.split(title).join(" "), text);
 
 // CLAUDE.md, "Vocabulary": the deficit register is the frame this course exists
 // to refuse, so no page may speak in it except to quote someone else. This is
@@ -60,7 +70,7 @@ describe("every built page", () => {
   });
 
   it.each(pages)("%s stays out of the deficit register", (page) => {
-    const text = visibleText(readPage(page), { withoutQuotations: true });
+    const text = withoutCitedTitles(visibleText(readPage(page), { withoutQuotations: true }));
     const hits = deficitRegister(text).map((hit) => `${hit.term}: "…${hit.excerpt}…"`);
     expect(hits, "quote someone else's framing with data-quoted, or say what is true").toEqual([]);
   });
