@@ -35,10 +35,10 @@ except you, and your tutor if you ask them to.
 | 0:38--0:50 | Groups post their widest spread to the board. The room looks for the subroutines everyone finds cheap, and the ones where a zero and a five sat at the same table. |
 | 0:50--1:00 | **Plan one decline.** Pick a row from your ledger to decline once before next Tuesday. Write its expected cost beside it. |
 
-## What the board usually shows
+## What to look for on the board
 
-In most rooms, some subroutines cost almost everyone almost nothing, and a few
-split the room completely. Those splits are week 6's argument happening in
+Look for subroutines that cost almost everyone almost nothing, and for any that
+split a table between a zero and a five. The splits, if the room has them, are week 6's argument happening in
 front of you: different implementations, same output, different price. They're
 also why "just make eye contact" is advice that costs its giver nothing.
 

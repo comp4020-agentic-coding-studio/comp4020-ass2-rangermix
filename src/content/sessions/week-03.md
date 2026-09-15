@@ -31,8 +31,8 @@ screen.
 
 ## What to notice
 
-In most groups, some payloads arrive intact in someone's envelope and get lost
-in someone else's. That is the room finding out that the envelopes aren't
+Watch for a payload that arrives intact in one person's envelope and gets lost
+in someone else's. If it happens, that is the room finding out that the envelopes aren't
 shared. People wrap differently, and decoders are tuned to their own style of
 wrapping. Keep hold of that: it's week 11's argument, arriving early.
 
