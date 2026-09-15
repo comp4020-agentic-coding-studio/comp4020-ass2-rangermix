@@ -19,6 +19,7 @@ related:
 ---
 
 import MarginNote from "../../components/sketch/MarginNote.astro";
+import Register from "../../components/sketch/Register.astro";
 
 Standards documents end with a section called something like *Open Issues*:
 the problems the authors know about, have decided not to solve in this
@@ -39,6 +40,17 @@ questions the course isn't equipped to settle for you. That's the honest
 reason, and the reason week 12 sketches rather than teaches.
 
 ## Open issues
+
+<Register
+  heading="SLOP1562 --- open issues at end of semester"
+  seed="week 12 open issues"
+  caption="The register itself. Three issues, none of them closed, and one the research is still arguing about."
+  issues={[
+    { id: "OI-1", title: "Romance", status: "OPEN" },
+    { id: "OI-2", title: "Persuasion", status: "OPEN" },
+    { id: "OI-3", title: "Power", status: "OPEN / CONTESTED", contested: true },
+  ]}
+/>
 
 ### OI-1: Romance
 

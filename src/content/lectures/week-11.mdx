@@ -23,6 +23,7 @@ related:
 ---
 
 import MarginNote from "../../components/sketch/MarginNote.astro";
+import Chain from "../../components/sketch/Chain.astro";
 
 In week 2, the double empathy problem was a theory: when two people of
 different implementations misunderstand each other, the misunderstanding is
@@ -34,6 +35,16 @@ Crompton and colleagues built **diffusion chains** of eight people. The first
 person heard a story and retold it to the second, who retold it to the third,
 and so on down the chain. Some chains were all autistic, some all
 non-autistic, and some mixed (Crompton, Ropar et al., 2020).
+
+<Chain
+  seed="week 11 diffusion chains"
+  caption="The method: the same task down three chains of eight, where the only thing that changes is who is in them. A = autistic, N = non-autistic; the mixed chain's seats are left unmarked because the order people sat in isn't a detail this course checked. What survived each chain is in the table below, not in the picture."
+  chains={[
+    { label: "all autistic", members: ["A", "A", "A", "A", "A", "A", "A", "A"] },
+    { label: "all non-autistic", members: ["N", "N", "N", "N", "N", "N", "N", "N"] },
+    { label: "mixed: both, in one chain", members: ["", "", "", "", "", "", "", ""], gold: true },
+  ]}
+/>
 
 | Chain | Detail retained along the chain | Rapport between people |
 | --- | --- | --- |

@@ -1,0 +1,103 @@
+---
+// The diffusion-chain method, drawn: one person hears a story and retells it
+// to the next, eight along, in chains of three different compositions.
+//
+// This draws the *method*, not the results. What detail survived each chain is
+// a measured finding and lives in the week's table, cited; a picture with a
+// line that thinned as it travelled would look like data the course does not
+// have. The shape worth seeing is that the only thing changed between chains
+// is who is in them.
+import { arrow, box, rng } from "../../lib/sketch";
+
+export interface Chain {
+  label: string;
+  /** One short mark per person in the chain, in order. */
+  members: string[];
+  /** Marks the chain the week's finding is about. */
+  gold?: boolean;
+}
+
+interface Props {
+  chains: Chain[];
+  caption: string;
+  seed?: string;
+}
+
+const { chains, caption, seed = caption } = Astro.props;
+const r = rng(seed);
+
+const width = 520;
+const first = 46;
+const spacing = 56;
+const nodeHalf = 13;
+const rowGap = 92;
+const top = 66;
+
+const drawn = chains.map((chain, row) => {
+  const y = top + row * rowGap;
+  return {
+    ...chain,
+    y,
+    nodes: chain.members.map((mark, i) => ({
+      mark,
+      x: first + i * spacing,
+      d: box(first + i * spacing - nodeHalf, y - nodeHalf, nodeHalf * 2, nodeHalf * 2, r),
+    })),
+    hops: chain.members.slice(0, -1).map((_, i) => {
+      const from = first + i * spacing + nodeHalf + 4;
+      const to = first + (i + 1) * spacing - nodeHalf - 6;
+      return arrow(from, y, to, y, r);
+    }),
+  };
+});
+
+const height = top + (chains.length - 1) * rowGap + 52;
+const id = `chain-${Math.abs([...seed].reduce((h, c) => (h * 31 + c.charCodeAt(0)) | 0, 7)).toString(36)}`;
+---
+
+<figure class="sketch chain" aria-labelledby={`${id}-caption`}>
+  <svg
+    viewBox={`0 0 ${width} ${height}`}
+    style={`max-width: ${width}px`}
+    role="img"
+    aria-labelledby={`${id}-title`}
+    aria-describedby={`${id}-chains`}
+  >
+    <title id={`${id}-title`}>{caption}</title>
+    <text class="note" x={first - 8} y={top - 40}>a story goes in here, and is retold along the chain</text>
+    {
+      drawn.map((chain) => (
+        <g>
+          <text class="timing" x={first - 14} y={chain.y - 24}>
+            {chain.label}
+          </text>
+          {chain.hops.map((hop) => (
+            <g>
+              <path class={chain.gold ? "gold" : "graphite"} d={hop.shaft} />
+              <path class={chain.gold ? "gold" : "graphite"} d={hop.head} />
+            </g>
+          ))}
+          {chain.nodes.map((node) => (
+            <g>
+              <path class="ink" d={node.d} />
+              <text class="timing" x={node.x} y={chain.y + 5} text-anchor="middle">
+                {node.mark}
+              </text>
+            </g>
+          ))}
+        </g>
+      ))
+    }
+  </svg>
+  <ul class="visually-hidden" id={`${id}-chains`}>
+    {
+      chains.map((chain) => (
+        <li>
+          {chain.label}: a chain of {chain.members.length} people, each retelling the story to the
+          next.
+        </li>
+      ))
+    }
+  </ul>
+  <figcaption id={`${id}-caption`}>{caption}</figcaption>
+</figure>
