@@ -7,7 +7,7 @@ weight: 30
 marking:
   mode: holistic
   description:
-    "Marked as a whole against the route you chose, using the criteria set out in the brief. For the Field Experiment, the ethics reflection is a third of the mark and is judged on its own terms: a strong experiment with a thin reflection cannot reach the top band."
+    "Marked as a whole against the route you chose, using the criteria set out in the brief. For the Field Experiment, the ethics reflection carries 35% of the mark and is judged on its own terms: a strong experiment with a thin reflection cannot reach the top band."
 spec:
   - "You have chosen one route and said which at the top of the submission."
   - "Personal Protocol Document: it has three sections, what I run, what I decline and what I need from others, and every item in them has its cost written beside it."
@@ -39,7 +39,7 @@ failures. And it states needs the way week 10 taught: needs, not labels.
 
 **What you submit.** A document in three sections, **what I run**, **what I
 decline** and **what I need from others**, drawing on at least three Field
-Journal entries. Length is whatever it needs; most are 1500 to 2500 words.
+Journal entries. Length is whatever it needs; aim for 1500 to 2500 words.
 
 **Marked on:** specificity (35%); costs recorded honestly for runs and declines
 alike (30%); needs stated as needs (20%); grounding in your journal (15%).
@@ -61,8 +61,8 @@ majority does to minority implementations continuously without calling it an
 experiment, is a real point. It isn't sufficient on its own.
 
 **What you submit.** A report with hypothesis, method, results, discussion and
-ethics reflection, drawing on at least three Field Journal entries. Most run to
-2000 to 3000 words.
+ethics reflection, drawing on at least three Field Journal entries. Aim for 2000
+to 3000 words.
 
 **Marked on:** design and a single controlled parameter (25%); honest reporting,
 including against-hypothesis results (25%); discussion using the course's terms

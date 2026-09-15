@@ -425,15 +425,22 @@ on macOS, so the card outlines Kalam into paths with opentype.js, pinned to
 
 ### Task 20: Verification pass
 
-- [ ] `pnpm check` green from a clean `dist/`.
-- [ ] Browser, 1920×1080 and 390×844, light and dark: the home page, weeks
+- [x] `pnpm check` green from a clean `dist/`.
+- [x] Browser, 1920×1080 and 390×844, light and dark: the home page, weeks
   1, 6 and 10, a lab, each assessment, the deck, policies, readings, glossary.
   Keyboard through the nav and the deck. No horizontal page scroll.
-- [ ] Read every page against CLAUDE.md, looking for the failures no test can
+- [x] Read every page against CLAUDE.md, looking for the failures no test can
   catch: a page addressing one side of the room, an outcome that amounts to
   passing, a week that could swap with another, a sentence that could open any
   page. Fix at the harness level if a failure repeats.
-- [ ] Commit fixes with the reason each was needed.
+- [x] Commit fixes with the reason each was needed.
+
+**As built:** every one of the 85 built pages was loaded in a 390px iframe and
+measured: no horizontal overflow outside the scroll containers the design
+allows (diagrams, tables). Spot-checked by screenshot at 1920×1080 and
+390×844, light and dark: home, weeks 1, 2, 4, 5, 6 and 10, a lab, the decks.
+The prose scan for loaded vocabulary and frequency claims found three length
+claims in assessment briefs and one unmarked diagnosing example; all fixed.
 
 ### Task 21: Evidence for the student's PROCESS.md
 

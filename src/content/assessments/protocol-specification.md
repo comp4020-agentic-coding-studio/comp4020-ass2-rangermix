@@ -73,7 +73,8 @@ A single document, with these sections:
    checkable. "The closer is polite" isn't.
 8. **Known issues.**
 
-Length is whatever the specification needs. Most fit in two to four pages.
+Length is whatever the specification needs. Aim for two to four pages, and go
+longer only if the subroutine demands it.
 Grammar and presentation aren't marked beyond whether the specification can be
 read.
 
