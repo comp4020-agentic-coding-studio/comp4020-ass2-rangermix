@@ -218,12 +218,28 @@ social card, on-page diagrams and the deck theme.
 `pnpm check:evidence` rejects the starter artwork, so the hero and social card
 must be replaced or deliberately removed.
 
+## Modelling
+
+- **The week's page is the lecture.** Both the lecture and the Lab carry a
+  `spec:` block; the lecture's says what a student can now check on
+  themselves, the Lab's what leaves the room.
+- **The Field Journal is one assessment entry** (`week: 2`, 30%) whose `due` is
+  its last Sunday and whose `submissions:` lists all eleven timestamps.
+- **The capstone is one entry** carrying both routes, so the weights sum to 100.
+- **Every deadline is 23:59 Canberra time**, with the offset that is true on
+  the day: `+11:00` up to Sun 28 Mar and for Fri 2 Apr, `+10:00` from Sun 4 Apr,
+  when daylight saving ends.
+- **Outcomes** live in the course record's `learningOutcomes`.
+- **Cast:** three fictional staff, a convenor and two tutors, with no
+  portraits.
+- **Glossary:** each protocol term with the week that introduces it, published
+  at `/glossary/`.
+
 ## Still open
 
-- Reading list and literature review for all twelve weeks (**not started**;
-  every citation to be verified against the actual paper before it ships).
-- Decks for weeks 1 and 2; more as the course fills in.
-- `spec/` tests: deficit-vocabulary ban, twelve-week coverage, weights summing
-  to 100, `slides:` paths resolving, the no-diagnosis clause present.
-- Cast entries, home page, policies page.
-- `PROCESS.md`, 400--600 words, every claim citing a real commit.
+- Reading list and literature review for all twelve weeks; every citation
+  verified against the source before it ships.
+- Decks for weeks 1 and 2.
+- Cast entries, home page, policies page, glossary.
+- `PROCESS.md`, 400--600 words, every claim citing a real commit --- the
+  student's own account, and not for an agent to write.

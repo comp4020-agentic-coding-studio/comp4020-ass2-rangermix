@@ -2,25 +2,29 @@
 import { getPublishedCollection } from "astro-course-university/content";
 import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
-import { formatCourseDate } from "../lib/dates";
+import { formatDueDay, submissionsOf } from "../lib/submissions";
 
 const assessments = await getPublishedCollection("assessments");
-const visible = assessments.sort((a, b) => a.data.week - b.data.week);
+const visible = assessments.sort((a, b) => a.data.week - b.data.week || a.data.due.getTime() - b.data.due.getTime());
 ---
 
 <CardGrid columns={2}>
   {
-    visible.map((assessment) => (
-      <Card headingLevel="h2" title={assessment.data.title} href={`/assessments/${assessment.id}/`}>
-        {assessment.data.description && <p>{assessment.data.description}</p>}
-        {assessment.data.weight != null && (
+    visible.map((assessment) => {
+      const submissions = submissionsOf(assessment.data);
+      return (
+        <Card headingLevel="h2" title={assessment.data.title} href={`/assessments/${assessment.id}/`}>
+          {assessment.data.description && <p>{assessment.data.description}</p>}
           <p>
             <small>
-              Due {formatCourseDate(assessment.data.due)} · Weight: {assessment.data.weight}%{assessment.data.draft && " · Draft"}
+              {submissions.length > 0
+                ? `Weekly, ${formatDueDay(submissions[0])} to ${formatDueDay(submissions.at(-1)!)}`
+                : `Due ${formatDueDay(assessment.data.due)}`}{" "}
+              · Weight: {assessment.data.weight}%{assessment.data.draft && " · Draft"}
             </small>
           </p>
-        )}
-      </Card>
-    ))
+        </Card>
+      );
+    })
   }
 </CardGrid>

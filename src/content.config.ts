@@ -70,6 +70,37 @@ export const collections = {
       .loose(),
   }),
 
+  // One source per entry, hung off the weeks that use it by `related:`. The
+  // `checked` record is not decoration: a citation that was never checked
+  // against its source looks exactly like one that was, so every entry says
+  // what it was read against and when. `pnpm check:readings` re-checks the
+  // DOIs against Crossref.
+  readings: defineCollection({
+    loader: courseNodeLoader("readings"),
+    schema: courseNodeSchema
+      .extend({
+        authors: z.array(z.string().trim().min(2)).min(1),
+        year: z.number().int().min(1900).max(2027),
+        venue: z.string().trim().min(2),
+        kind: z.enum(["article", "book", "chapter"]),
+        doi: z
+          .string()
+          .regex(/^10\.\d{4,9}\/\S+$/)
+          .optional(),
+        url: z.url().optional(),
+        checked: z.object({
+          against: z.enum(["full text", "abstract", "publisher record"]),
+          on: z.iso.date(),
+        }),
+      })
+      .loose()
+      .superRefine((reading, ctx) => {
+        if (!reading.doi && !reading.url) {
+          ctx.addIssue({ code: "custom", path: ["doi"], message: "a reading needs a DOI or a URL" });
+        }
+      }),
+  }),
+
   people: defineCollection({
     loader: courseNodeLoader("people"),
     schema: ({ image }) =>

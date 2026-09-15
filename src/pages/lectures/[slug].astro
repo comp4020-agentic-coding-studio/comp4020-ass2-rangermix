@@ -2,9 +2,11 @@
 import { render } from "astro:content";
 import { getPublishedCollection } from "astro-course-university/content";
 import RelatedContent from "astro-course-university/components/RelatedContent.astro";
+import SpecList from "astro-course-university/components/SpecList.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import { withBase } from "astro-theme-university/url";
 import TeachingTeam from "../../components/TeachingTeam.astro";
+import WeekReadings from "../../components/WeekReadings.astro";
 import { formatCourseDate } from "../../lib/dates";
 import { graphCollections, siteConfig } from "../../site-config";
 
@@ -16,12 +18,29 @@ export async function getStaticPaths() {
 const { lecture } = Astro.props;
 const { Content } = await render(lecture);
 const title = `Week ${lecture.data.week}: ${lecture.data.title}`;
+// Readings get their own formatted block above, so the related list below
+// carries only the lab, the assessments and the neighbouring weeks.
+const relatedCollections = graphCollections.filter((key) => key !== "readings");
 ---
 
 <ContentLayout title={title} description={lecture.data.description} {...siteConfig}>
-  <p><strong>{formatCourseDate(lecture.data.date)}</strong></p>
-  {lecture.data.slides && <p><a href={withBase(lecture.data.slides)}>Open the slides</a></p>}
-  <Content />
+  <p class="week-meta">
+    <strong>Lecture, {formatCourseDate(lecture.data.date)}</strong>
+    {lecture.data.slides && (
+      <>
+        {" · "}
+        <a href={withBase(lecture.data.slides)}>Open the slides</a>
+      </>
+    )}
+  </p>
+  <article class="protocol-doc">
+    <Content />
+  </article>
+  <SpecList spec={lecture.data.spec} heading="Check yourself against this week">
+    Lines you can check on yourself, without asking anyone. If one is still
+    false by Sunday, that is your next journal entry.
+  </SpecList>
+  <WeekReadings lecture={lecture} />
   <TeachingTeam teachers={lecture.data.teachers} />
-  <RelatedContent entry={lecture} collections={graphCollections} />
+  <RelatedContent entry={lecture} collections={relatedCollections} />
 </ContentLayout>

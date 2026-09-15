@@ -1,0 +1,60 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getPublishedCollection, getRelatedEntries } from "astro-course-university/content";
+import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import { withBase } from "astro-theme-university/url";
+import Citation from "../../components/Citation.astro";
+import { siteConfig } from "../../site-config";
+
+const readings = await getPublishedCollection("readings");
+
+// A reading lists under the first week that uses it; later weeks that return
+// to it say so on the reading's own page.
+const byWeek = new Map<number, { lecture: CollectionEntry<"lectures">; readings: CollectionEntry<"readings">[] }>();
+for (const reading of readings) {
+  const lectures = (await getRelatedEntries(reading, ["lectures"])) as CollectionEntry<"lectures">[];
+  const first = lectures.sort((a, b) => a.data.week - b.data.week)[0];
+  if (!first) continue;
+  const group = byWeek.get(first.data.week) ?? { lecture: first, readings: [] };
+  group.readings.push(reading);
+  byWeek.set(first.data.week, group);
+}
+const weeks = [...byWeek.entries()].sort(([a], [b]) => a - b);
+for (const [, group] of weeks) {
+  group.readings.sort((a, b) => a.data.year - b.data.year || a.data.title.localeCompare(b.data.title));
+}
+---
+
+<ContentLayout
+  title="Readings"
+  description="Where the course's claims come from, week by week. Every entry was checked against the source itself before it went on this list."
+  {...siteConfig}
+>
+  <p>
+    The protocol has no specification, so nobody can hand you one. What exists
+    is a scattered literature --- linguistics, psychology, sociology, and
+    autistic researchers writing about their own experience --- that
+    documents pieces of it. This list is the pieces the course uses. Each entry
+    says why it is here, and records what it was checked against, because a
+    course that complains about missing documentation does not get to invent
+    its own.
+  </p>
+  {
+    weeks.map(([week, group]) => (
+      <section aria-labelledby={`readings-week-${week}`}>
+        <h2 id={`readings-week-${week}`}>
+          <a href={withBase(`/lectures/${group.lecture.id}/`)}>
+            Week {week}: {group.lecture.data.title}
+          </a>
+        </h2>
+        <ul class="reading-list">
+          {group.readings.map((reading) => (
+            <li>
+              <Citation reading={reading} link />
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</ContentLayout>

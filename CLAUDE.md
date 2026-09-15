@@ -155,9 +155,19 @@ it steals from.
 - **Every week's page carries a `spec:` block** in the same register the course
   teaches: lines a reader can check on themselves without asking the teacher.
   The form is the argument --- a course that tells you to specify things and
-  does not specify itself is making the majority's exact mistake.
+  does not specify itself is making the majority's exact mistake. The week's
+  page is the lecture (`lectures/week-NN`); the Lab (`sessions/week-NN`)
+  carries its own spec for what leaves the room. No spec line repeats across
+  weeks: a line that fits any week specifies none of them.
 - `related:` edges connect weeks to their readings. Declare each edge once, on
   whichever side is convenient.
+- To name someone else's framing --- a clinic's word, a paper's title --- mark
+  it: `<span data-quoted>` inline, `<cite>` for a title. The vocabulary test
+  skips marked quotations and nothing else, and the site styles them so a
+  reader can see whose words they are.
+- A week's literature review lives in `docs/research/week-NN.md`, and each
+  reading's page carries the paragraph from it that says why the reading is on
+  the list.
 
 ## Visual system
 

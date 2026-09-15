@@ -1,0 +1,54 @@
+---
+import { render } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import { getPublishedCollection, getRelatedEntries } from "astro-course-university/content";
+import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import { withBase } from "astro-theme-university/url";
+import Citation from "../../components/Citation.astro";
+import { formatCourseDate } from "../../lib/dates";
+import { siteConfig } from "../../site-config";
+
+export async function getStaticPaths() {
+  const readings = await getPublishedCollection("readings");
+  return readings.map((reading) => ({ params: { slug: reading.id }, props: { reading } }));
+}
+
+const { reading } = Astro.props;
+const { Content } = await render(reading);
+const { doi, url, checked, kind } = reading.data;
+const href = doi ? `https://doi.org/${doi}` : url!;
+const weeks = ((await getRelatedEntries(reading, ["lectures"])) as CollectionEntry<"lectures">[]).sort(
+  (a, b) => a.data.week - b.data.week,
+);
+const kindLabel = { article: "Journal article", book: "Book", chapter: "Book chapter" }[kind];
+---
+
+<ContentLayout title={reading.data.title} description={reading.data.description} {...siteConfig}>
+  <p class="reading-citation"><Citation reading={reading} /></p>
+  <dl class="reading-facts">
+    <dt>Type</dt>
+    <dd>{kindLabel}</dd>
+    <dt>Find it</dt>
+    <dd><a href={href}>{doi ? `doi.org/${doi}` : href}</a></dd>
+    <dt>Checked</dt>
+    <dd>Against the {checked.against}, {formatCourseDate(checked.on)}</dd>
+  </dl>
+  <h2>Why it is on the list</h2>
+  <Content />
+  {
+    weeks.length > 0 && (
+      <section aria-labelledby="used-in">
+        <h2 id="used-in">Used in</h2>
+        <ul>
+          {weeks.map((lecture) => (
+            <li>
+              <a href={withBase(`/lectures/${lecture.id}/`)}>
+                Week {lecture.data.week}: {lecture.data.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+</ContentLayout>

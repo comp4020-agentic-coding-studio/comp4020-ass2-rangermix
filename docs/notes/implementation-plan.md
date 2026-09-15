@@ -139,7 +139,7 @@ create `src/pages/readings/index.astro`, `src/pages/readings/[slug].astro`,
 - assessment pass-through `submissions?: string[]` (ISO timestamps with offset)
 - `sessionLabels = { singular: "Lab", plural: "Labs" }`
 
-- [ ] **Step 1: course record.** Extend the schema and fill it from the design doc.
+- [x] **Step 1: course record.** Extend the schema and fill it from the design doc.
 
 ```ts
 // in slopCourseMetaSchema's strictObject
@@ -169,7 +169,7 @@ export const courseMeta = slopCourseMetaSchema.parse({
 }) satisfies CourseMetaInput;
 ```
 
-- [ ] **Step 2: labels, nav, graph collections.**
+- [x] **Step 2: labels, nav, graph collections.**
 
 ```ts
 export const sessionLabels = { singular: "Lab", plural: "Labs" } as const;
@@ -183,7 +183,7 @@ export const graphCollections = ["sessions", "assessments", "lectures", "people"
 { text: "Policies", href: "/policies/" },
 ```
 
-- [ ] **Step 3: readings schema** in `src/content.config.ts`.
+- [x] **Step 3: readings schema** in `src/content.config.ts`.
 
 ```ts
 readings: defineCollection({
@@ -206,7 +206,7 @@ readings: defineCollection({
 }),
 ```
 
-- [ ] **Step 4: week page.** In `lectures/[slug].astro`, wrap `<Content />` in
+- [x] **Step 4: week page.** In `lectures/[slug].astro`, wrap `<Content />` in
   `<article class="protocol-doc">`, then render
   `<SpecList spec={lecture.data.spec} heading="Check yourself against this week">`
   with the preamble "Lines you can check on yourself, without asking anyone.
@@ -216,24 +216,24 @@ readings: defineCollection({
   heading: "What you leave the lab with". Sessions index drops the template
   paragraph about labels.
 
-- [ ] **Step 5: readings pages.** Index grouped by week (a reading used in
+- [x] **Step 5: readings pages.** Index grouped by week (a reading used in
   several weeks lists under its first), each entry `<Citation>` + link. Detail
   page: citation, a "Find it" link (`https://doi.org/<doi>` or `url`), "Checked
   against the <against> on <date>", body annotation, related weeks.
   `Citation` renders `Authors (year). <cite>Title</cite>. Venue.` with the
   title in `<cite>` so a quoted title never trips the vocabulary test.
 
-- [ ] **Step 6: submission schedules.** Assessment page: when
+- [x] **Step 6: submission schedules.** Assessment page: when
   `data.submissions` exists, render "Submitted weekly" and an ordered list of
   `formatCourseDate` dates with "23:59". Grid card: "Weekly, first due … last
   due …" instead of a single due date.
 
-- [ ] **Step 7: record the decisions.** `CLAUDE.md` Conventions: the lecture
+- [x] **Step 7: record the decisions.** `CLAUDE.md` Conventions: the lecture
   is the week's page; labs carry their own spec; quote framing with
   `data-quoted`/`<cite>`; reviews in `docs/research/`. `docs/course-design.md`
   "Still open": strike what this plan settled.
 
-- [ ] **Step 8: verify and commit.** `pnpm check`. Expect typecheck clean and
+- [x] **Step 8: verify and commit.** `pnpm check`. Expect typecheck clean and
   the build to pass. Calendar and weeks tests stay red until content exists.
   Commit, push.
 

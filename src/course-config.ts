@@ -19,6 +19,9 @@ export const slopCourseMetaSchema = z
     endDate: z.iso.date(),
     description: z.string().trim().min(80).max(300),
     tags: z.array(z.string().trim().min(2).max(24)).min(1).max(3),
+    // The catalogue's course contract already defines this field; the Slop
+    // record admits it so a course can say what a student leaves able to do.
+    learningOutcomes: z.array(z.string().trim().min(20).max(200)).min(3).max(6).optional(),
   })
   .superRefine((course, ctx) => {
     const codeLevel = Number(course.code.at(4));
@@ -44,19 +47,29 @@ export const slopCourseMetaSchema = z
 // this API contract when the course is published.
 //
 // The code's last three digits were assigned to this repo when it was
-// provisioned, and no other course in the cohort has them. Change the first
-// digit to your course's level (and `level` to match); keep the other three.
-// STARTER_CONTENT: replace this course record, then remove this comment.
+// provisioned, and no other course in the cohort has them. The first digit is
+// the level: 1, because the course assumes no prior study.
+//
+// endDate is the capstone deadline, not the last teaching day (Thu 27 May):
+// the capstone is due two weeks after teaching ends, on purpose, and
+// spec/data-integrity.test.ts fails any due date after endDate.
 export const courseMeta = slopCourseMetaSchema.parse({
   code: "SLOP1562",
-  title: "Course Title Goes Here",
+  title: "Undocumented Protocols: Field Methods in Neurotypical Interoperation",
   session: "Semester 1",
   year: 2027,
   level: 1,
   startDate: "2027-02-22",
-  endDate: "2027-05-28",
+  endDate: "2027-06-13",
   description:
-    "One concise paragraph explaining what this course is, who it is for, " +
-    "and why somebody would choose to spend a semester taking it.",
-  tags: ["replace me"],
+    "The social protocol everyone runs has no specification, no changelog and no " +
+    "maintainer who will admit to writing it. Twelve weeks observing it, documenting " +
+    "it, testing the documentation, and deciding which parts of it you will run.",
+  tags: ["social protocol", "field methods", "communication"],
+  learningOutcomes: [
+    "Document one part of the social protocol precisely enough that someone who does not run it could implement it.",
+    "Run a documented subroutine on purpose when it is worth running, and put a number on what it cost.",
+    "Decline a subroutine knowing what declining costs, and say in plain words what you are doing instead.",
+    "Negotiate a working protocol with someone whose implementation differs from yours, and write down what each side conceded.",
+  ],
 }) satisfies CourseMetaInput;

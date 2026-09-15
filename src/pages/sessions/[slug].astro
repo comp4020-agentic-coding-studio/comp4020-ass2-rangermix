@@ -22,11 +22,13 @@ const { Content } = await render(session);
   description={session.data.description}
   {...siteConfig}
 >
-  <p><strong>{formatCourseDate(session.data.date)}</strong></p>
-  <Content />
-  <SpecList spec={session.data.spec}>
-    What you bring to the session. Written so a reader can tell whether it has
-    been met without asking you.
+  <p class="week-meta"><strong>{sessionLabels.singular}, {formatCourseDate(session.data.date)}</strong></p>
+  <article class="protocol-doc lab-doc">
+    <Content />
+  </article>
+  <SpecList spec={session.data.spec} heading="What you leave the lab with">
+    Each line is something you can check before you walk out. None of them
+    needs a teacher to confirm it.
   </SpecList>
   <TeachingTeam teachers={session.data.teachers} />
   <RelatedContent entry={session} collections={graphCollections} />
