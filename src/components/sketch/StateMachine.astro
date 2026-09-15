@@ -1,0 +1,99 @@
+---
+// A state machine drawn by hand: states as boxes on a two-column grid, reading
+// left to right and top to bottom, with labelled transitions between them. Two
+// columns keeps a four-state machine legible at phone width without scrolling.
+import { arrow, box, rng } from "../../lib/sketch";
+
+interface Transition {
+  from: number;
+  to: number;
+  label: string;
+  gold?: boolean;
+}
+
+interface Props {
+  states: string[];
+  transitions: Transition[];
+  caption: string;
+  seed?: string;
+}
+
+const { states, transitions, caption, seed = caption } = Astro.props;
+const r = rng(seed);
+
+const width = 520;
+const boxW = 150;
+const boxH = 58;
+const colX = [40, width - 40 - boxW];
+const rowGap = 150;
+const top = 30;
+const pos = states.map((_, i) => ({ x: colX[i % 2], y: top + Math.floor(i / 2) * rowGap }));
+const height = top + Math.ceil(states.length / 2) * rowGap - rowGap + boxH + 40;
+const centre = (i: number) => ({ x: pos[i].x + boxW / 2, y: pos[i].y + boxH / 2 });
+
+const drawnStates = states.map((name, i) => ({ name, ...pos[i], d: box(pos[i].x, pos[i].y, boxW, boxH, r) }));
+
+const drawnTransitions = transitions.map((t) => {
+  const a = centre(t.from);
+  const b = centre(t.to);
+  let x1: number, y1: number, x2: number, y2: number;
+  if (a.y === b.y) {
+    const dir = Math.sign(b.x - a.x);
+    x1 = a.x + (boxW / 2 + 6) * dir;
+    x2 = b.x - (boxW / 2 + 10) * dir;
+    y1 = a.y - 6;
+    y2 = b.y - 6;
+  } else {
+    const dir = Math.sign(b.y - a.y);
+    const shift = a.x === b.x ? 0 : Math.sign(b.x - a.x) * 40;
+    x1 = a.x + shift;
+    y1 = a.y + (boxH / 2 + 6) * dir;
+    x2 = b.x - shift;
+    y2 = b.y - (boxH / 2 + 10) * dir;
+  }
+  const { shaft, head } = arrow(x1, y1, x2, y2, r);
+  // A label sits beside a vertical arrow and under a horizontal one, so it
+  // never lies on top of the stroke it names.
+  const horizontal = a.y === b.y;
+  return {
+    ...t,
+    shaft,
+    head,
+    lx: horizontal ? (x1 + x2) / 2 : (x1 + x2) / 2 + 12,
+    ly: horizontal ? y1 + 30 : (y1 + y2) / 2 + 6,
+    anchor: horizontal ? "middle" : "start",
+  };
+});
+const id = `state-${Math.abs([...seed].reduce((h, c) => (h * 31 + c.charCodeAt(0)) | 0, 7)).toString(36)}`;
+---
+
+<figure class="sketch state-machine" aria-labelledby={`${id}-caption`}>
+  <svg viewBox={`0 0 ${width} ${height}`} style={`max-width: ${width}px`} role="img" aria-labelledby={`${id}-title`} aria-describedby={`${id}-steps`}>
+    <title id={`${id}-title`}>{caption}</title>
+    {
+      drawnStates.map((s) => (
+        <g>
+          <path class="ink" d={s.d} />
+          <text class="actor" x={s.x + boxW / 2} y={s.y + boxH / 2 + 6} text-anchor="middle">
+            {s.name}
+          </text>
+        </g>
+      ))
+    }
+    {
+      drawnTransitions.map((t) => (
+        <g>
+          <path class={t.gold ? "gold" : "ink"} d={t.shaft} />
+          <path class={t.gold ? "gold" : "ink"} d={t.head} />
+          <text class="note" x={t.lx} y={t.ly} text-anchor={t.anchor}>
+            {t.label}
+          </text>
+        </g>
+      ))
+    }
+  </svg>
+  <ol class="visually-hidden" id={`${id}-steps`}>
+    {transitions.map((t) => <li>From {states[t.from]} to {states[t.to]}: {t.label}</li>)}
+  </ol>
+  <figcaption id={`${id}-caption`}>{caption}</figcaption>
+</figure>

@@ -1,0 +1,156 @@
+---
+title: "Error Handling and Repair"
+description: "Misunderstanding happens about once every 1.4 minutes, in every language anyone has checked. The protocol has a subroutine for it, and a separate one for offence."
+week: 5
+date: 2027-03-23
+teachers:
+  - wren-aldous-kemp
+spec:
+  - "When you mishear or half-understand something, you can ask the most specific repair question available instead of a bare “what?”, and you have done it at least once this week."
+  - "You can say “sorry, what?” without apologising for having said it, and explain why it counts as protocol rather than failure."
+  - "You can list the parts of the course’s apology template from memory, and say why one part is the easiest to leave out."
+  - "You can accept someone else’s repair or apology in a single turn, and carry on."
+related:
+  - sessions/week-05
+  - readings/schegloff-1977-self-repair
+  - readings/dingemanse-2015-repair-universals
+  - readings/dingemanse-2013-huh
+  - readings/lewicki-2016-apologies
+---
+
+import StateMachine from "../../components/sketch/StateMachine.astro";
+import MarginNote from "../../components/sketch/MarginNote.astro";
+
+"Meet you Thursday."
+
+"This Thursday?"
+
+"Next Thursday."
+
+Three turns, one misunderstanding, fixed before anyone noticed there was a
+problem. That exchange is this week's subject. It is the protocol's error
+handling, and it is running constantly.
+
+## Repair is infrastructure
+
+Conversation has built-in machinery for trouble with speaking, hearing and
+understanding. Schegloff, Jefferson and Sacks called it the **organisation of
+repair**, and found a strong skew within it: speakers fix their own trouble far
+more often than anyone else fixes it for them (Schegloff et al., 1977).
+
+So the protocol gives the speaker the first chance. "Meet you Thursday, I mean
+next Thursday" happens before a listener has to say anything.
+
+How often does the listener have to say something? Dingemanse and colleagues
+went through 48.5 hours of conversation in twelve languages from eight
+language families. They found 2053 cases of a listener signalling trouble: **one
+about every 1.4 minutes**, in every language sampled (Dingemanse et al.,
+2015).
+
+<MarginNote label="Uptime">
+  If your conversations have gone ninety seconds without a repair, the logs
+  are not complete.
+</MarginNote>
+
+Misunderstanding isn't an exception condition. It's steady-state traffic.
+
+## Three ways to say you didn't get it
+
+The same study found three kinds of **repair initiator**, the move a listener
+makes to flag trouble. Every language sampled had all three (Dingemanse et
+al., 2015):
+
+| Type | What it does | Example |
+| --- | --- | --- |
+| Open request | Flags trouble without saying where. | "Huh?" / "Sorry, what?" |
+| Restricted request | Asks about one specific part. | "Who?" / "Which Thursday?" |
+| Restricted offer | Offers a guess and asks for confirmation. | "She had a boy?" / "This Thursday?" |
+
+And the rule that decides between them: **people choose the most specific
+initiator available**. It costs both sides least. A restricted offer
+("This Thursday?") means the speaker only has to say yes, or give one word. An
+open request means they have to repeat everything.
+
+That is the week's first sincere instruction. When you've half-understood,
+**say the part you got**. "Sorry, you want the draft *by* Friday, or *on*
+Friday?" repairs faster than "what?", and it shows the speaker exactly which
+part you did catch.
+
+## "Huh?" is a word
+
+When you haven't understood any of it, the open request is correct. It is a
+real word, not a failure to produce one. Dingemanse, Torreira and Enfield
+found "huh?" in much the same form and function across ten languages, far
+more alike than chance would explain. It is learnt, not an involuntary noise,
+and it exists because every language needs a way to say "I didn't get that"
+(Dingemanse et al., 2013).
+
+If "sorry, what?" makes you wince, you are embarrassed by a universal feature
+of human language. The "sorry" is optional.
+
+## The repair subroutine
+
+The course's diagram of the pattern. The sources describe the moves; the
+state machine is ours.
+
+<StateMachine
+  caption="Repair as a state machine. Most loops take one pass: an initiator, a fix, and the conversation carries on."
+  states={["Trouble", "Initiated", "Carry on", "Repaired"]}
+  transitions={[
+    { from: 0, to: 1, label: "most specific initiator" },
+    { from: 1, to: 3, label: "speaker fixes it", gold: true },
+    { from: 3, to: 2, label: "one-turn accept" },
+    { from: 0, to: 2, label: "self-repair" },
+  ]}
+/>
+
+The step people skip is the last one. A repair is accepted in **one turn**
+("got it", "ah, next Thursday") and the conversation carries on. Apologising
+for the misunderstanding, from either side, turns a one-turn repair into a
+three-turn one, and moves the conversation's attention from Thursday to the
+two of you.
+
+## When the error is an offence
+
+Mishearing a day is cheap. Letting someone down isn't, and the protocol
+switches to a different subroutine: the apology.
+
+Apologies have parts. Lewicki, Polin and Lount tested six components drawn
+from earlier research, alone and combined. **Apologies with more components
+were rated more effective**, and some components counted for more than others.
+Apologies for failures of competence ("I got the time wrong") also landed
+better than apologies for failures of integrity ("I lied about it") (Lewicki et
+al., 2016).
+
+We read their abstract, not the full paper, so the course won't claim which
+component matters most. Here is the course's template, with its parts named:
+
+| Part | Sounds like |
+| --- | --- |
+| Name what happened | "I didn't send my section before the meeting." |
+| Say it was yours | "That's on me, not the deadline." |
+| Say what it cost them | "You had to present without it." |
+| Say what happens now | "It's in the doc now, and I'll send the next one a day early." |
+| Offer a fix | "Want me to take the Q&A next time?" |
+
+The part that's easiest to leave out is **what it cost them**. Without it, an
+apology is about you; with it, the other person knows you saw what happened
+from their side.
+
+Two things the template doesn't contain: "but", and an explanation that runs
+longer than the apology. An explanation is allowed. Put it after the apology,
+and only if you're asked.
+
+## Receiving repair
+
+Both subroutines have a receiving side, and it is just as undocumented.
+
+- Someone corrects a misunderstanding of yours: **update and carry on**. "Oh,
+  next Thursday. Great." No apology needed; nothing went wrong.
+- Someone apologises to you: **accept in one turn**, if you can mean it.
+  "Thanks for saying that. We're fine." If you can't mean it yet, "Thanks. I
+  need a bit of time" is a conforming reply.
+
+The subroutine this course is named for, in a way, is the one nobody documents
+because everyone assumes it's a matter of character. It isn't. It's error
+handling, with a spec, and now you have it.

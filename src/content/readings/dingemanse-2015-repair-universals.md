@@ -19,7 +19,7 @@ venue: "PLOS ONE, 10(9), e0136100"
 kind: article
 doi: "10.1371/journal.pone.0136100"
 checked:
-  against: abstract
+  against: full text
   on: "2026-09-15"
 ---
 

@@ -112,4 +112,22 @@ export const terms: Term[] = [
     definition:
       "A sound or phrase that fills a gap to mean “still here, thinking”: “hm, let me think about that.” A standing hold token, said once, resets the timeout for a whole relationship.",
   },
+  {
+    term: "repair",
+    week: 5,
+    definition:
+      "The protocol's error handling for trouble in speaking, hearing or understanding. Routine: a listener flags trouble about once every 1.4 minutes.",
+  },
+  {
+    term: "repair initiator",
+    week: 5,
+    definition:
+      "The move that flags trouble. Open request (“huh?”), restricted request (“which Thursday?”), or restricted offer (“this Thursday?”). Choose the most specific available.",
+  },
+  {
+    term: "subroutine",
+    week: 5,
+    definition:
+      "A named, bounded part of the protocol you can run on purpose: the handshake, repair, an apology. Weeks 6 and 7 count what each one costs.",
+  },
 ];
