@@ -42,4 +42,34 @@ export const terms: Term[] = [
     definition:
       "The course's outcome: able to read the protocol, run a part of it when running it is worth the cost, and decline a part of it knowing what declining costs.",
   },
+  {
+    term: "background expectancies",
+    week: 2,
+    definition:
+      "Garfinkel's term for the unstated assumptions an ordinary situation runs on. They show only when breached, which is why the protocol's fluent runners can't state it.",
+  },
+  {
+    term: "double empathy problem",
+    week: 2,
+    definition:
+      "Milton's name for a misunderstanding between people of different implementations: it is mutual, a problem of reciprocity, not one party's missing capacity.",
+  },
+  {
+    term: "mismatch",
+    week: 2,
+    definition:
+      "A failure between two implementations. It has two sides by definition, and a note that records only one is incomplete.",
+  },
+  {
+    term: "field note",
+    week: 2,
+    definition:
+      "A four-part record: what happened, the rule you inferred, the test, the rule now. It describes an exchange; it does not diagnose a person.",
+  },
+  {
+    term: "asleep test",
+    week: 2,
+    definition:
+      "If a sentence would still be true of the person while they are asleep, it is about the person, not the exchange. Rewrite it.",
+  },
 ];
