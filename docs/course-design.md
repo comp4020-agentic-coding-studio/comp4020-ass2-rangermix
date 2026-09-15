@@ -13,7 +13,7 @@ where it was written, so **none of it is build-verified**.
 | Nickname | **NT 101** |
 | Session | Semester 1, 2027 |
 | Teaching | Tuesday lecture, Thursday lab |
-| Period | 22 Feb 2027 -- 11 Jun 2027 |
+| Period | 22 Feb 2027 -- 13 Jun 2027 |
 | Weekly hour | **Lab** |
 | Tags | social protocol, field methods, communication |
 
@@ -48,8 +48,11 @@ someone who can read the protocol and teach it.
 
 ## Calendar
 
-Weeks 1--7 run 22 Feb -- 9 Apr. **Mid-semester break: week of 12 Apr.** Weeks
-8--12 run 19 Apr -- 21 May.
+Weeks 1--7 run 22 Feb -- 9 Apr. **Mid-semester break: two weeks, 12 -- 23 Apr.**
+Weeks 8--12 run 26 Apr -- 28 May, where teaching ends. The capstone is due
+after that, at 23:59 on Sun 13 Jun, so the course record's `endDate` is
+`2027-06-13`, not the last teaching day: `spec/data-integrity.test.ts` fails on
+any due date after `endDate`.
 
 | Week | Lecture (Tue) | Lab (Thu) |
 | --- | --- | --- |
@@ -61,11 +64,12 @@ Weeks 1--7 run 22 Feb -- 9 Apr. **Mid-semester break: week of 12 Apr.** Weeks
 | 6 | 30 Mar | 1 Apr |
 | 7 | 6 Apr | 8 Apr |
 | | *break* | |
-| 8 | 20 Apr | 22 Apr |
-| 9 | 27 Apr | 29 Apr |
-| 10 | 4 May | 6 May |
-| 11 | 11 May | 13 May |
-| 12 | 18 May | 20 May |
+| | *break* | |
+| 8 | 27 Apr | 29 Apr |
+| 9 | 4 May | 6 May |
+| 10 | 11 May | 13 May |
+| 11 | 18 May | 20 May |
+| 12 | 25 May | 27 May |
 
 Tuesday/Thursday teaching keeps every session clear of Easter Monday (29 Mar)
 and the ANZAC Day holiday (observed Mon 26 Apr), both Mondays in 2027.
@@ -154,18 +158,21 @@ text:
 
 | Task | Weight | Week | Due |
 | --- | --- | --- | --- |
+| Field Journal | 30% | 2--12 | Weekly, Sundays 23:59 |
 | Protocol Specification | 20% | 6 | Fri 2 Apr 2027 |
-| Field Journal | 30% | 12 | Fri 21 May 2027 |
-| Interoperation Report | 20% | 12 | Fri 28 May 2027 |
-| Personal Protocol Document *or* Neurotypical Interaction Field Experiment | 30% | 12 | Fri 11 Jun 2027 |
+| Interoperation Report | 20% | 12 | Sun 30 May 2027, 23:59 |
+| Personal Protocol Document *or* Neurotypical Interaction Field Experiment | 30% | 12 | Sun 13 Jun 2027, 23:59 |
 
 **Protocol Specification.** Document one social subroutine as though it were an
 undocumented API, with conformance tests.
 
-**Field Journal.** At least one entry per week, weeks 2--12. Eleven entries
-available at 3% each, **best ten count** --- one week is redeemable, because a
-course that teaches a cost budget and then punishes one bad week is not taking
-its own week 6 seriously. No word limit: 50 words or 5000 are both acceptable.
+**Field Journal.** Turned in weekly, weeks 2--12, with at least one entry each
+time. Each week's submission is due at 23:59 on that week's Sunday: 7, 14, 21
+and 28 Mar; 4 and 11 Apr; then 2, 9, 16, 23 and 30 May. Nothing is due over the
+break. Eleven submissions at 3% each, **best ten count** --- one week is
+redeemable, because a course that teaches a cost budget and then punishes one
+bad week is not taking its own week 6 seriously. No word limit: 50 words or 5000
+are both acceptable.
 **No penalty for grammar, spelling or presentation.** Talk to an AI as much as
 you like; the writing must be yours, which is exactly why the format is
 unconstrained --- a fixed word count is what makes generated text convenient.
