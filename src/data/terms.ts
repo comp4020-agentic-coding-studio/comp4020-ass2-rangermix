@@ -94,4 +94,22 @@ export const terms: Term[] = [
     week: 3,
     definition: "Treating a sentence as an envelope when there was no payload inside it.",
   },
+  {
+    term: "latency",
+    week: 4,
+    definition:
+      "The gap between the end of one turn and the start of the next. Ordinarily of the order of 200 ms.",
+  },
+  {
+    term: "timeout",
+    week: 4,
+    definition:
+      "The point at which a listener stops waiting and starts inferring meaning from a gap. Not a hard number; by 700 ms a no is more likely than a yes, and listeners have learned it.",
+  },
+  {
+    term: "hold token",
+    week: 4,
+    definition:
+      "A sound or phrase that fills a gap to mean “still here, thinking”: “hm, let me think about that.” A standing hold token, said once, resets the timeout for a whole relationship.",
+  },
 ];
