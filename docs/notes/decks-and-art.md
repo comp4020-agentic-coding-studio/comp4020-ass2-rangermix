@@ -27,9 +27,9 @@ step 5). Each deck:
 
 ### Status
 
-- [ ] Week 3 --- Payload and Envelope
-- [ ] Week 4 --- Latency and Turn-Taking
-- [ ] Week 5 --- Error Handling and Repair
+- [x] Week 3 --- Payload and Envelope
+- [x] Week 4 --- Latency and Turn-Taking
+- [x] Week 5 --- Error Handling and Repair
 - [ ] Week 6 --- Masking: Cost Accounting
 - [ ] Week 7 --- Emergency: Overload, Shutdown, Recovery
 - [ ] Week 8 --- Institutional Protocols

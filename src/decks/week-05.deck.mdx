@@ -1,0 +1,202 @@
+---
+title: "NT 101, Week 5: Error Handling and Repair"
+description: "The week 5 lecture deck: repair as steady-state traffic, the three initiators, “huh?” as a word, and the apology's parts."
+---
+
+import StateMachine from "../components/sketch/StateMachine.astro";
+import MarginNote from "../components/sketch/MarginNote.astro";
+
+{/* _class: banner */}
+
+# Error Handling and Repair
+
+Week 5. The subroutine that runs constantly, and the separate one for offence.
+
+```notes
+- Open by performing the three turns. Two voices, fast, no framing.
+```
+
+---
+
+## Three turns
+
+— "Meet you Thursday."
+
+— "This Thursday?"
+
+— "Next Thursday."
+
+One misunderstanding, fixed before anyone noticed there was a problem.
+
+```notes
+- Nobody in that exchange apologised. Nobody had to. Hold that for the end of the hour.
+```
+
+---
+
+## The speaker gets first go
+
+Conversation has built-in machinery for trouble with speaking, hearing and understanding: the **organisation of repair**.
+
+A strong skew inside it: speakers fix their own trouble far more often than anyone else fixes it for them.
+
+<span class="source">Schegloff, Jefferson & Sacks (1977), Language 53(2)</span>
+
+```notes
+- So "Meet you Thursday, I mean next Thursday" happens before a listener has to say anything.
+```
+
+---
+
+## Once every 1.4 minutes
+
+48.5 hours of conversation, twelve languages, eight language families.
+
+**2053** cases of a listener signalling trouble --- about one every **1.4 minutes**, in every language sampled.
+
+<span class="source">Dingemanse et al. (2015), PLOS ONE 10(9)</span>
+
+<MarginNote label="Uptime">If your conversations have gone ninety seconds without a repair, the logs are not complete.</MarginNote>
+
+---
+
+{/* _class: impact */}
+
+Misunderstanding isn't an exception condition.
+
+It's steady-state traffic.
+
+```notes
+- This is the reframe the week turns on. Let it sit before moving to the table.
+```
+
+---
+
+## Three ways to say you didn't get it
+
+| Type | What it does | Example |
+| --- | --- | --- |
+| Open request | flags trouble, not where | "Huh?" / "Sorry, what?" |
+| Restricted request | asks about one part | "Who?" / "Which Thursday?" |
+| Restricted offer | offers a guess | "This Thursday?" |
+
+Every language sampled had all three --- and people choose the **most specific initiator available**.
+
+<span class="source">Dingemanse et al. (2015), PLOS ONE 10(9)</span>
+
+```notes
+- Most specific costs both sides least. A restricted offer means the speaker says one word; an open request means they repeat everything.
+```
+
+---
+
+## So: say the part you got
+
+> "Sorry, you want the draft *by* Friday, or *on* Friday?"
+
+Repairs faster than "what?", and shows the speaker exactly which part you caught.
+
+```notes
+- This is the week's first sincere instruction, and the one to actually practise.
+```
+
+---
+
+## "Huh?" is a word
+
+Found in much the same form and function across ten languages --- far more alike than chance would explain.
+
+Learnt, not an involuntary noise. It exists because every language needs a way to say *I didn't get that*.
+
+<span class="source">Dingemanse, Torreira & Enfield (2013), PLoS ONE 8(11)</span>
+
+```notes
+- So if "sorry, what?" makes you wince, you're embarrassed by a universal feature of human language.
+- The "sorry" is optional. Say that line flatly and move on.
+```
+
+---
+
+<StateMachine
+  seed="deck week 5 repair"
+  caption="Repair as a state machine. Most loops take one pass."
+  states={["Trouble", "Initiated", "Carry on", "Repaired"]}
+  transitions={[
+    { from: 0, to: 1, label: "most specific initiator" },
+    { from: 1, to: 3, label: "speaker fixes it", gold: true },
+    { from: 3, to: 2, label: "one-turn accept" },
+    { from: 0, to: 2, label: "self-repair" },
+  ]}
+/>
+
+```notes
+- The sources describe the moves; the machine is the course's.
+- The step people skip is the last one.
+```
+
+---
+
+## Accept in one turn
+
+"Got it." / "Ah, next Thursday."
+
+Apologising for a misunderstanding --- from either side --- turns a one-turn repair into a three-turn one.
+
+And it moves the conversation's attention from Thursday to the two of you.
+
+---
+
+## When the error is an offence
+
+Mishearing a day is cheap. Letting someone down isn't, and the protocol switches subroutines.
+
+Six apology components tested, alone and combined: **apologies with more components were rated more effective**, and some counted for more than others.
+
+<span class="source">Lewicki, Polin & Lount (2016), Negotiation and Conflict Management Research 9(2)</span>
+
+```notes
+- We read the abstract, not the full paper, so the course won't claim which component matters most.
+```
+
+---
+
+## The apology template
+
+| Part | Sounds like |
+| --- | --- |
+| Name what happened | "I didn't send my section before the meeting." |
+| Say it was yours | "That's on me, not the deadline." |
+| **Say what it cost them** | "You had to present without it." |
+| Say what happens now | "It's in the doc now, and I'll send the next one early." |
+| Offer a fix | "Want me to take the Q&A next time?" |
+
+The easiest part to leave out is the third one.
+
+```notes
+- Without it, an apology is about you. With it, they know you saw it from their side.
+- Two things not in the template: "but", and an explanation longer than the apology.
+```
+
+---
+
+## Receiving it
+
+- Someone corrects you: **update and carry on.** "Oh, next Thursday. Great." Nothing went wrong.
+- Someone apologises: **accept in one turn**, if you can mean it. "Thanks for saying that. We're fine."
+- If you can't mean it yet: "Thanks. I need a bit of time" is conforming.
+
+```notes
+- Everyone assumes this one is a matter of character. It isn't. It's error handling, with a spec.
+```
+
+---
+
+{/* _class: centered */}
+
+## Check yourself against this week
+
+Have you used the most specific initiator available, at least once, this week?
+
+Can you say "sorry, what?" without apologising for having said it?
+
+Can you list the template's parts, and say which is easiest to leave out?

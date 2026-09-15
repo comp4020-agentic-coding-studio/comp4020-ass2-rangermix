@@ -1,0 +1,190 @@
+---
+title: "NT 101, Week 4: Latency and Turn-Taking"
+description: "The week 4 lecture deck: the protocol's clock, the timeout nobody published, who it misfires on, and the hold token."
+---
+
+import TimingLine from "../components/sketch/TimingLine.astro";
+import SequenceDiagram from "../components/sketch/SequenceDiagram.astro";
+import MarginNote from "../components/sketch/MarginNote.astro";
+
+{/* _class: banner */}
+
+# Latency and Turn-Taking
+
+Week 4. The gap before a reply, and what it is read as.
+
+```notes
+- Do the cold open as performance. Ask the question, then hold a full second and a half of silence before you answer yourself.
+```
+
+---
+
+## "Want to come to the thing on Friday?"
+
+*…Yeah, maybe.*
+
+The asker has already heard **no**.
+
+Not because of "maybe", which came last. Because of the pause, which came first.
+
+```notes
+- That's the whole week in one exchange. The content was a yes; the timing overrode it.
+```
+
+---
+
+## A system with no referee
+
+Nobody hands out turns. No chair, no queue, no published order.
+
+Turn-taking is **locally managed** and **party-administered** --- run by the people talking, turn by turn.
+
+<span class="source">Sacks, Schegloff & Jefferson (1974), Language 50(4)</span>
+
+<MarginNote label="Systems note">A distributed system with no coordinator and no documentation, still agreeing on timing.</MarginNote>
+
+---
+
+## The clock
+
+<TimingLine
+  max={1500}
+  seed="deck week 4 clock"
+  caption="The gap before a reply, in milliseconds."
+  bands={[{ from: 700, to: 1500, label: "timeout: a no is more likely" }]}
+  marks={[
+    { at: 200, label: "ordinary gap", note: "about 200 ms", gold: true },
+    { at: 600, label: "planning a reply", note: "over 600 ms" },
+  ]}
+/>
+
+<span class="source">Levinson & Torreira (2015); Kendrick & Torreira (2015)</span>
+
+```notes
+- Both numbers can only be true if listeners start composing before the speaker finishes, by predicting the end of the turn.
+- So the clock assumes you began answering while the question was still being asked. Wait for the whole question and you are already late.
+```
+
+---
+
+## It holds across languages
+
+Ten languages, from major world languages to small indigenous communities: conversations avoid overlap and keep the silence short.
+
+Averages differed --- every language's fell within **250 ms** of the cross-language mean.
+
+<span class="source">Stivers et al. (2009), Proceedings of the National Academy of Sciences 106(26)</span>
+
+```notes
+- The authors suggest people are sensitive enough to these small tempo differences to experience them as large differences in style.
+```
+
+---
+
+## The undocumented timeout
+
+Replies in telephone calls: acceptances and rejections mostly came at similar speeds.
+
+Once a gap reached **700 ms or more**, rejections clearly outnumbered acceptances.
+
+<span class="source">Kendrick & Torreira (2015), Discourse Processes 52(4)</span>
+
+```notes
+- So listeners aren't being unfair. They're right, on average. A long gap has usually come before a refusal.
+- The course's term for it: the timeout. Not a hard number --- the point where a listener stops waiting and starts inferring.
+```
+
+---
+
+<SequenceDiagram
+  actors={["Asker", "Responder"]}
+  seed="deck week 4 same yes"
+  caption="The same “yes”, heard differently."
+  messages={[
+    { from: 0, to: 1, label: "Coming on Friday?" },
+    { from: 1, to: 0, label: "Yes!", timing: "~200 ms", note: "heard: yes" },
+    { from: 0, to: 1, label: "Coming on Friday?" },
+    { from: 1, to: 0, label: "…yes.", timing: "1.5 s", note: "heard: a reluctant yes", gold: true },
+  ]}
+/>
+
+```notes
+- Same word. Same person. The gap did all the work.
+```
+
+---
+
+## Who the timeout misfires on
+
+A statistical inference misfires on everyone it wasn't built from. A long gap might mean reluctance. It might also mean:
+
+- translating from another language
+- being taught to consider a question before answering
+- processing spoken language at your own pace
+- choosing between two answers that are both yes
+
+```notes
+- None of those is a no, and the timeout reads all of them as one.
+```
+
+---
+
+{/* _class: impact */}
+
+Before you conclude, ask.
+
+"No pressure either way. Is that a yes?"
+
+```notes
+- The week's only rule aimed at listeners. It costs one turn.
+- If you're the fast one in the conversation, this is your instruction, not theirs.
+```
+
+---
+
+## Hold tokens
+
+Fill the gap with a sound that means *I'm still here, and I'm thinking*.
+
+| Situation | Hold token |
+| --- | --- |
+| A question you want to think about | "Hm, let me think about that." |
+| An invitation you need to check | "Oh, nice. Let me just check my week." |
+| A hard question in a tutorial | "Good question. Give me a second." |
+| When you know you'll take a while | "Mm." |
+
+The scripts are the course's. The reason they work is Kendrick and Torreira's: what gets read is the *empty* gap.
+
+---
+
+## The standing hold token
+
+Said once, early, without apology:
+
+> "I sometimes take a second to answer. A pause from me isn't a no."
+
+That resets the clock for a whole relationship.
+
+The course's recommendation, not a tested finding. Week 11 is why it works better between people who agreed on it.
+
+---
+
+## When turns collide
+
+- "Sorry, go ahead."
+- "No, you go."
+- "You first. Mine can wait."
+
+Cheap, and most listeners register it as considerate. Week 5 does repair properly.
+
+---
+
+{/* _class: centered */}
+
+## Check yourself against this week
+
+Roughly how long is an ordinary gap, and where does a long one start to be heard as reluctance?
+
+Have you used your hold token, in your own words, this week?
+
+Can you explain the listener's inference without saying they're being unfair?
