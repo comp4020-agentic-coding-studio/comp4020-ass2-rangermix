@@ -297,13 +297,13 @@ phone and scroll sideways in a focusable region. Verified at 1920×1080 and
 **Files:** create `scripts/verify-readings.ts`; modify `package.json`
 (`"check:readings": "node scripts/verify-readings.ts"`, devDependency `yaml`).
 
-- [ ] **Step 1:** parse each `src/content/readings/*.md` frontmatter. For a DOI,
+- [x] **Step 1:** parse each `src/content/readings/*.md` frontmatter. For a DOI,
   fetch `https://api.crossref.org/works/<doi>` and compare the normalised title
   (case, punctuation, subtitle separator), the year (`issued`), and the first
   author's family name against the frontmatter. Print one line per reading:
   `✓`, `✗ <field>: frontmatter X / Crossref Y`, or `! no DOI --- check <url>
   by hand`. Exit 1 on any `✗`.
-- [ ] **Step 2:** run it against one known-good and one deliberately wrong
+- [x] **Step 2:** run it against one known-good and one deliberately wrong
   entry in a temp dir, and confirm it catches the wrong one. Commit.
 
 It stays out of `pnpm check` on purpose: a test that depends on Crossref being
