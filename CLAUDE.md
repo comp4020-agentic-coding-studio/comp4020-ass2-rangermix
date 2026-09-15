@@ -212,3 +212,23 @@ course cannot ship without. Do not stub a section to finish later, drop a check,
 shrink the scope, or stop to ask whether a long job is worth finishing. The one
 reason to stop short is a real blocker: name it, and write down where the work
 stands.
+
+## Memory and agent communication
+
+Prefer files to context. A conversation gets compacted, ends, or happens in a
+cloud session this clone never sees, and the repo is the only memory every
+session shares. Anything the next session or another agent needs is written to
+a file here, committed and pushed with the work it describes.
+
+- Settled decisions go in `docs/course-design.md`. Working state goes in
+  `docs/notes/`, one file per topic: which citations have been checked against
+  the paper and which have not, and what is blocked and why. A check recorded
+  only in a conversation looks exactly like a check nobody did.
+- Agents talk through files. Give a subagent or a parallel session its brief as
+  a file and have it write its result to one; the message only says which file
+  to read. A finding that lives only in a message is gone with the session that
+  sent it.
+- Keep project state out of machine-local memory under `~/.claude`: it never
+  reaches a cloud session, and `PROCESS.md` cannot cite it.
+- The repo goes public when it ships, notes included. Write nothing in one that
+  can't be.
