@@ -202,3 +202,13 @@ corporate diagram loses the argument, and pure whimsy loses the rigour.
   [course website](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/)
   publishes this deliverable's brief and spec. Read both before you plan or
   build.
+
+## No time limit
+
+Nothing in this repo is on the clock, so never trade a step for speed. The slow
+work --- reading the literature and checking each citation against the paper
+--- is what an agent watching the clock cuts first, and it is the work this
+course cannot ship without. Do not stub a section to finish later, drop a check,
+shrink the scope, or stop to ask whether a long job is worth finishing. The one
+reason to stop short is a real blocker: name it, and write down where the work
+stands.
