@@ -190,4 +190,16 @@ export const terms: Term[] = [
     definition:
       "Sonnentag and Fritz's four kinds of recovery from work: detachment, relaxation, mastery and control. A planning checklist, not a treatment.",
   },
+  {
+    term: "register",
+    week: 8,
+    definition:
+      "How formal or casual a message is. Institutions run on an undocumented register, and how casual an email was explained a large share of how instructors judged the student.",
+  },
+  {
+    term: "specimen",
+    week: 8,
+    definition:
+      "A worked example of a message that meets its specification, with each clause it satisfies labelled.",
+  },
 ];
