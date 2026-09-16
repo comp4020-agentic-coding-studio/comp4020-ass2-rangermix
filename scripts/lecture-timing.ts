@@ -64,8 +64,9 @@ function classify(slide: string): keyof typeof SLIDE_MINUTES {
   const cls = slide.match(/\{\/\*\s*_class:\s*([a-z-]+)\s*\*\/\}/)?.[1];
   if (cls && cls in SLIDE_MINUTES) return cls as keyof typeof SLIDE_MINUTES;
   if (EXERCISE.test(slide)) return "exercise";
-  // A slide whose body is a component call is a drawing.
-  if (/^\s*<(SequenceDiagram|StateMachine|TimingLine|Envelope|Form|DepthLadder|Chain|Register)\b/m.test(slide)) {
+  // A slide whose body is a figure --- a drawing or a photographic plate ---
+  // gets walked through rather than glanced at.
+  if (/^\s*<(SequenceDiagram|StateMachine|TimingLine|Envelope|Form|DepthLadder|Chain|Register|Plate)\b/m.test(slide)) {
     return "diagram";
   }
   if (/^\|.*\|$/m.test(slide)) return "table";

@@ -1,11 +1,13 @@
 ---
 title: "NT 101, Week 4: Latency and Turn-Taking"
-description: "The week 4 lecture deck: the protocol's clock, the timeout nobody published, who it misfires on, and the hold token."
+description: "The week 4 lecture deck: the protocol's clock, the timeout nobody published, the experiment that set the gap on purpose, and the hold token."
 ---
 
 import TimingLine from "../components/sketch/TimingLine.astro";
 import SequenceDiagram from "../components/sketch/SequenceDiagram.astro";
 import MarginNote from "../components/sketch/MarginNote.astro";
+import Plate from "../components/Plate.astro";
+import exchange from "../assets/images/sourced/exchange-montreal-1897.jpg";
 
 {/* _class: banner */}
 
@@ -15,6 +17,7 @@ Week 4. The gap before a reply, and what it is read as.
 
 ```notes
 - Do the cold open as performance. Ask the question, then hold a full second and a half of silence before you answer yourself.
+- Two hours, break at the hour. Say when.
 ```
 
 ---
@@ -33,6 +36,18 @@ Not because of "maybe", which came last. Because of the pause, which came first.
 
 ---
 
+## Where we were
+
+Week 1 ended on a dial: obligation to reply comes in degrees, and turn design is one of the things that sets it.
+
+This week the dial gets a unit. **Milliseconds.**
+
+```notes
+- Deliberate callback. The vocabulary has to compound or it isn't a course.
+```
+
+---
+
 ## A system with no referee
 
 Nobody hands out turns. No chair, no queue, no published order.
@@ -41,33 +56,26 @@ Turn-taking is **locally managed** and **party-administered** --- run by the peo
 
 <span class="source">Sacks, Schegloff & Jefferson (1974), Language 50(4)</span>
 
-<MarginNote label="Systems note">A distributed system with no coordinator and no documentation, still agreeing on timing.</MarginNote>
-
 ---
 
-## The clock
-
-<TimingLine
-  max={1500}
-  seed="deck week 4 clock"
-  caption="The gap before a reply, in milliseconds."
-  bands={[{ from: 700, to: 1500, label: "timeout: a no is more likely" }]}
-  marks={[
-    { at: 200, label: "ordinary gap", note: "about 200 ms", gold: true },
-    { at: 600, label: "planning a reply", note: "over 600 ms" },
-  ]}
+<Plate
+  src={exchange}
+  alt="A long hall in a Montreal telephone exchange in the late 1890s, two facing banks of switchboards with about twenty operators at each, and one supervisor at a desk in the aisle."
+  caption="A manual exchange, Montreal, late 1890s."
+  title="Telephone exchange Montreal, Cassell & Co."
+  href="https://commons.wikimedia.org/wiki/File:Telephone_exchange_Montreal_QE3_33.jpg"
+  licence="public domain"
+  date="between 1897 and 1899"
 />
 
-<span class="source">Levinson & Torreira (2015); Kendrick & Torreira (2015)</span>
-
 ```notes
-- Both numbers can only be true if listeners start composing before the speaker finishes, by predicting the end of the turn.
-- So the clock assumes you began answering while the question was still being asked. Wait for the whole question and you are already late.
+- Forty operators connecting calls in parallel, each holding one conversation's timing in their head. One supervisor. No clock anyone is watching.
+- And here's the joke: this is the EASIER system. These operators were trained, paid and given a manual. The protocol in your tutorial does the same trick with none of those.
 ```
 
 ---
 
-## It holds across languages
+## The clock
 
 Ten languages, from major world languages to small indigenous communities: conversations avoid overlap and keep the silence short.
 
@@ -81,6 +89,52 @@ Averages differed --- every language's fell within **250 ms** of the cross-langu
 
 ---
 
+## Two numbers that shouldn't both be true
+
+A typical gap between turns: **about 200 ms.**
+
+Planning and producing even a short utterance: **over 600 ms.**
+
+<span class="source">Levinson & Torreira (2015), Frontiers in Psychology 6</span>
+
+```notes
+- Let the room sit with the contradiction before you resolve it. Ask them how both can hold.
+```
+
+---
+
+## A range, not a number
+
+Kendrick puts the ordinary transition at **~100--300 ms** --- and warns that this "estimate of central tendency **hides a wealth of complex variation**".
+
+Things like the type of turn being answered move the timing.
+
+<span class="source">Kendrick (2015), Frontiers in Psychology 6, 250</span>
+
+```notes
+- Treat every number in this lecture as a middle, not a rule. Week 12's errata says exactly this about the timeout; now they know whose finding it is.
+```
+
+---
+
+<TimingLine
+  max={1500}
+  seed="deck week 4 clock"
+  caption="The gap before a reply, in milliseconds."
+  bands={[{ from: 700, to: 1500, label: "timeout: a no is more likely" }]}
+  marks={[
+    { at: 200, label: "ordinary gap", note: "about 200 ms", gold: true },
+    { at: 600, label: "planning a reply", note: "over 600 ms" },
+  ]}
+/>
+
+```notes
+- The resolution: listeners start composing before the speaker finishes, by predicting where the turn will end.
+- So the clock assumes you began answering while the question was still being asked. Wait for the whole question and you are already late.
+```
+
+---
+
 ## The undocumented timeout
 
 Replies in telephone calls: acceptances and rejections mostly came at similar speeds.
@@ -90,8 +144,20 @@ Once a gap reached **700 ms or more**, rejections clearly outnumbered acceptance
 <span class="source">Kendrick & Torreira (2015), Discourse Processes 52(4)</span>
 
 ```notes
-- So listeners aren't being unfair. They're right, on average. A long gap has usually come before a refusal.
+- Even small departures from a normal gap made a plain "yes" less likely.
 - The course's term for it: the timeout. Not a hard number --- the point where a listener stops waiting and starts inferring.
+```
+
+---
+
+## They aren't being unfair
+
+Across thousands of conversations, a long gap has usually come before a refusal.
+
+So a long gap gets heard as one on its way. Listeners are **right, on average.**
+
+```notes
+- This matters for the tone of the whole week. Nobody is the villain. The inference is sound and it still lands on the wrong people.
 ```
 
 ---
@@ -114,9 +180,83 @@ Once a gap reached **700 ms or more**, rejections clearly outnumbered acceptance
 
 ---
 
+## Now the other experiment
+
+Kendrick and Torreira **watched** real calls. Roberts, Margutti and Takano **set** the gap and measured what listeners concluded.
+
+<span class="source">Roberts, Margutti & Takano (2011), Discourse Processes 48(5)</span>
+
+```notes
+- Observation versus manipulation. Say why that distinction earns a second source: one tells you what co-occurs, the other tells you what the listener infers.
+```
+
+---
+
+## The design
+
+| Varied | Levels |
+| --- | --- |
+| Silence before the reply | **0 ms · 600 ms · 1200 ms** |
+| Kind of turn replied to | a request · an assessment |
+| Listener's language | American English · Italian · Japanese |
+
+Telephone conversations modelled on a real call between friends. Native speakers rated, in their home countries, how **willing** the replier seemed.
+
+---
+
+## Result one
+
+Ratings of willingness **fell significantly as the silence got longer** ---
+
+in **every one** of the three language groups.
+
+```notes
+- So reading a pause as reluctance is not an English-speaker's quirk. It appears to be what listeners generally do.
+```
+
+---
+
+## Result two
+
+The groups' **means differed significantly**. Different expectations for agreement.
+
+The **direction** of the effect was shared. The **amount** was not.
+
+<MarginNote label="Configuration">Same inference everywhere. Different threshold on every install.</MarginNote>
+
+---
+
+{/* _class: impact */}
+
+The inference is general. The calibration is local.
+
+```notes
+- Every listener runs a threshold they learned from the people around them, and applies it to whoever is in front of them.
+- This is the strongest evidence in the course for its own argument. Say that out loud.
+```
+
+---
+
+## In the room: guess the gap (7 min)
+
+Stopwatch on your phone. In threes:
+
+1. One asks an ordinary question.
+2. One answers after a deliberate pause.
+3. One times the gap, and writes what the pause **read as** *before* looking at the number.
+
+Four rounds. Change who pauses. Then compare guesses with times.
+
+```notes
+- Most rooms find the ordering is right and the absolute numbers are badly wrong.
+- That's the point, and it's the debrief: you are a good comparator and a terrible clock. That is the instrument the protocol runs on.
+```
+
+---
+
 ## Who the timeout misfires on
 
-A statistical inference misfires on everyone it wasn't built from. A long gap might mean reluctance. It might also mean:
+A long gap might mean reluctance. It might also mean:
 
 - translating from another language
 - being taught to consider a question before answering
@@ -125,6 +265,7 @@ A statistical inference misfires on everyone it wasn't built from. A long gap mi
 
 ```notes
 - None of those is a no, and the timeout reads all of them as one.
+- A statistical inference misfires on everyone it wasn't built from.
 ```
 
 ---
@@ -137,14 +278,77 @@ Before you conclude, ask.
 
 ```notes
 - The week's only rule aimed at listeners. It costs one turn.
-- If you're the fast one in the conversation, this is your instruction, not theirs.
+```
+
+---
+
+## And what Roberts et al. lets you say to yourself
+
+Your threshold is not the correct one. It's **yours** --- learned locally.
+
+There are whole countries of people whose threshold is set somewhere else.
+
+The person pausing in front of you is **not running your configuration**.
+
+```notes
+- Deliver this to the half of the room that has been read as reluctant their whole life. It is the most useful sentence in the week.
+```
+
+---
+
+## Now read it the other way
+
+Kendrick analysed **169 other-initiations of repair** --- the moves people make to flag they didn't catch something.
+
+Those moves are themselves slow: most came after gaps of about **700 ms**. The turn whose job is flagging trouble does *not* obey the fast rule.
+
+Specific ones came **faster** than vague ones. The rare ones that corrected an error came **without delay**.
+
+<span class="source">Kendrick (2015), Frontiers in Psychology 6, 250</span>
+
+```notes
+- Hold the 700 ms. Same figure as the timeout, arrived at from a completely different direction.
+- The "specific comes faster" result is week 5's rule with a number under it. Flag it forward.
+```
+
+---
+
+## What the extra time is for
+
+In those gaps, speakers appear to be **using** the time:
+
+- catching up on a turn they only half-registered
+- producing a facial signal
+- **giving the other person the chance to fix it themselves**
+
+<MarginNote label="Read the other way">Some of the silence aimed at you is patience.</MarginNote>
+
+---
+
+{/* _class: impact */}
+
+Some of the pauses in your conversations are someone waiting to see whether you want to take the sentence back.
+
+```notes
+- This is invisible if you've been taught that all silence is judgement. Say it slowly.
+- It is also the bridge into week 5: what happens next is repair.
 ```
 
 ---
 
 ## Hold tokens
 
-Fill the gap with a sound that means *I'm still here, and I'm thinking*.
+If you need more time than the clock gives, fill the gap with a sound that means *I'm still here, and I'm thinking*.
+
+The gap the listener would have read is no longer empty.
+
+```notes
+- The scripts are the course's. The reason they work is Kendrick and Torreira's: what gets read is the EMPTY gap.
+```
+
+---
+
+## Four of them
 
 | Situation | Hold token |
 | --- | --- |
@@ -153,7 +357,20 @@ Fill the gap with a sound that means *I'm still here, and I'm thinking*.
 | A hard question in a tutorial | "Good question. Give me a second." |
 | When you know you'll take a while | "Mm." |
 
-The scripts are the course's. The reason they work is Kendrick and Torreira's: what gets read is the *empty* gap.
+---
+
+## In the room: say it out loud (8 min)
+
+A hold token you have never said is not a hold token.
+
+In pairs: your partner asks you four questions from the list on the board. Each time, **use a token before answering** --- and use a different one each time.
+
+Then pick the one that sounded like you, and write it down. That is the one you own.
+
+```notes
+- Insist on out loud. The whole failure mode is that people know the script and have never heard it in their own voice.
+- Go round and listen. "Mm" is the one people skip and the one that works in a seminar.
+```
 
 ---
 
@@ -179,12 +396,22 @@ Cheap, and most listeners register it as considerate. Week 5 does repair properl
 
 ---
 
+## Thursday: the stopwatch lab
+
+Measure real gaps in paired talk. Then try the hold token on someone who doesn't know you're doing it.
+
+```notes
+- Remind them the lab has a run sheet and a seated version. Nothing is sprung.
+```
+
+---
+
 {/* _class: centered */}
 
 ## Check yourself against this week
 
-Roughly how long is an ordinary gap, and where does a long one start to be heard as reluctance?
+Roughly how long is an ordinary gap, and where does a long one start to read as reluctance?
 
-Have you used your hold token, in your own words, this week?
+Have you used your hold token, in your own words, out loud?
 
-Can you explain the listener's inference without saying they're being unfair?
+What stayed the same across the three language groups, and what differed?

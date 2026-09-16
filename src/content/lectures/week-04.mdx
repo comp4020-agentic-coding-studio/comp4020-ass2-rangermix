@@ -11,8 +11,12 @@ spec:
   - "You have a hold token in your own words, and have used it at least once this week."
   - "When someone pauses before answering you, you can hold off reading the pause as a no, and ask instead."
   - "You can explain why listeners read a delay as refusal without saying they are being unfair."
+  - "You can say what stayed the same and what differed across the three language groups in §4, and why that matters to someone whose gaps run long."
+  - "You can name one thing a speaker might be doing by leaving a longer gap, other than refusing."
 related:
   - sessions/week-04
+  - readings/kendrick-2015-repair-timing
+  - readings/roberts-2011-silence-valence
   - readings/sacks-1974-turn-taking
   - readings/stivers-2009-turn-taking-universals
   - readings/levinson-2015-timing-turn-taking
@@ -21,6 +25,7 @@ related:
 
 import TimingLine from "../../components/sketch/TimingLine.astro";
 import SequenceDiagram from "../../components/sketch/SequenceDiagram.astro";
+import MarginNote from "../../components/sketch/MarginNote.astro";
 import Plate from "../../components/Plate.astro";
 import exchange from "../../assets/images/sourced/exchange-montreal-1897.jpg";
 
@@ -72,6 +77,13 @@ numbers can only both be true if listeners start preparing their reply *before*
 the speaker finishes, by predicting where the turn will end (Levinson &
 Torreira, 2015).
 
+Kendrick puts the ordinary transition at a **range of about 100--300 ms**, and
+adds the warning this course keeps having to repeat: that estimate of central
+tendency "hides a wealth of complex variation", because things like the type of
+turn being responded to move the timing (Kendrick, 2015). So treat every number
+in this lecture as a middle, not a rule. Week 12's errata says the same thing
+about the timeout, and now you know whose finding it is.
+
 <TimingLine
   max={1500}
   caption="The gap before a reply, in milliseconds. Numbers from Levinson & Torreira (2015) and Kendrick & Torreira (2015); the timeout band is the course's name for where the inference begins."
@@ -115,6 +127,40 @@ decides to run it.
   ]}
 />
 
+## The inference is general. The calibration is local.
+
+Kendrick and Torreira watched real calls and found that long gaps tend to come
+before rejections. That is an observation. Roberts, Margutti and Takano did
+the other experiment: they **set** the gap and measured what listeners
+concluded from it (Roberts et al., 2011).
+
+Telephone conversations, modelled on a real call between friends, were
+manipulated so the reply came after **0 ms, 600 ms or 1200 ms**. Each version
+was crossed with two kinds of turn to respond to --- a request and an
+assessment. Native speakers of **American English, Italian and Japanese**,
+each in their own country, rated how willing the replier seemed to comply or
+to agree.
+
+Two results, and the week turns on the second one.
+
+**First:** ratings of willingness **fell significantly as the silence got
+longer, in every one of the three language groups.** Reading a pause as
+reluctance is not an English-speaker's quirk. It appears to be what listeners
+generally do.
+
+**Second:** the groups' **means differed significantly** from each other ---
+different expectations for agreement. The direction of the effect was shared.
+The amount was not.
+
+<MarginNote label="Configuration">
+  Same inference everywhere. Different threshold on every install.
+</MarginNote>
+
+So the timeout is real, and it is **calibrated**. Every listener is running a
+threshold they learned from the people around them, and applying it to whoever
+is in front of them. That is the mechanism behind the next section, and it is
+why the next section is not a complaint about unfairness.
+
 ## Who the timeout misfires on
 
 A statistical inference misfires on everyone it wasn't built from. A long gap
@@ -129,6 +175,50 @@ None of those is a no, and the listener's timeout reads all of them as one.
 If you're the fast one in a conversation, the course's instruction is the
 week's only rule aimed at listeners: **before you conclude, ask.** "No
 pressure either way. Is that a yes?" costs one turn.
+
+And note what Roberts et al. licenses you to say to yourself. Your threshold
+is not the correct one; it is **yours**, learned locally, and there are whole
+countries of people whose is set elsewhere. The person pausing in front of you
+is not running your configuration.
+
+### In the room --- guess the gap (7 min)
+
+Get a stopwatch on your phone. In threes: one person asks an ordinary
+question, one answers after a deliberate pause, and the third times the gap
+and writes down what the pause *read as* before looking at the number.
+
+Do it four times, and change who pauses. Then compare the guesses with the
+times.
+
+Most rooms find the guesses are ordered correctly and the absolute numbers are
+badly wrong. That is the point: you are a good comparator and a terrible
+clock, which is exactly the instrument the protocol runs on.
+
+## A gap can be given, not only read
+
+So far the gap is something that happens to you and gets misread. Kendrick's
+study of **169 other-initiations of repair** --- the moves people make to flag
+that they didn't catch something --- shows the other half.
+
+Those moves are themselves slow. The most frequent came after gaps of about
+**700 ms**, which is to say the turn whose job is flagging trouble does *not*
+obey the fast-transition rule. Within them, initiations that pointed at the
+specific trouble came after **shorter** gaps than vague ones, and the rare ones
+that straight-up corrected an error came **without delay** (Kendrick, 2015).
+
+And here is the part worth carrying out of this room. Kendrick's analysis of
+what happens in those gaps suggests the extra time is being **used**: to catch
+up on a turn you only half-registered, to produce a facial signal --- and
+**to give the other person the chance to fix it themselves.**
+
+<MarginNote label="Read the other way">
+  Some of the silence aimed at you is patience.
+</MarginNote>
+
+That is a courtesy with a cost, and it is invisible if you have been taught
+that all silence is judgement. Some of the pauses in your conversations are
+someone waiting to see whether you want to take the sentence back before they
+have to say anything about it. Week 5 is what happens next.
 
 ## Hold tokens
 
