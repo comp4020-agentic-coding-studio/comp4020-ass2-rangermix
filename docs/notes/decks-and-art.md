@@ -179,7 +179,11 @@ gained and is the record of which weeks have been through the pipeline again.
       you actually get when you ask a fluent user why, why "it's obvious" is a
       report about the speaker, and the famous effect the week declines to
       lean on; three exercises; a complete worked journal entry; 105.1 min
-- [ ] Weeks 3, 10, 11, 12 --- untouched, 58--73 min short.
+- [x] Week 3 --- Lee & Pinker (2010), Keysar & Henly (2002) and Chevallier et
+      al. (2010): what an envelope marks, who is wrong when one misses, and
+      whether the decoder is missing at all; three exercises; the maxim-to-
+      payload rule under the worked table; 103.0 min
+- [ ] Weeks 10, 11, 12 --- untouched, 58--73 min short.
 
 ### Rules learned
 
