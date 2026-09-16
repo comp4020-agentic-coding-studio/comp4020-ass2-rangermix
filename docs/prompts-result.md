@@ -6,19 +6,25 @@ for `PROCESS.md`, like `docs/notes/process-evidence.md`, and not a draft of it.
 
 - **Prompts are verbatim.** Slash commands and the answers to a clarifying
   question are included, because they changed what got built.
+- **Timestamps are when each prompt was sent**, read from Claude Code's session
+  transcripts rather than estimated, in Canberra time (AEST, UTC+10; daylight
+  saving hadn't started).
 - **Responses are curated** --- cut to the decisions and results, not the tool
   output.
 - **Every hash below comes from `git log`**, not from memory. The session's
   full range is
   [`07cea35...849a75d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/compare/07cea35...849a75d).
-- Commits from `0310bfe` onward were made after this conversation's earlier
-  turns were compacted, so their "result" summaries are taken from the commit
-  messages rather than from the transcript. The end state at the bottom was
-  re-checked with the tools, not copied from those messages.
+- **The work ran across two Claude Code sessions.** Everything up to `399b641`
+  came from the first (`58785399`). Commits `0310bfe` to `849a75d` came from a
+  second (`c14c47e2`), opened by the prompt in section 6, so their "result"
+  summaries are taken from those commit messages. The end state at the bottom
+  was re-checked with the tools, not copied from them.
 
 ---
 
 ## 1. Budget check
+
+*Sent 2026-09-15 23:07:03 AEST*
 
 > `/comp4020:balance`
 
@@ -29,6 +35,8 @@ Thursday 9:00 am Canberra time. No files changed.
 ---
 
 ## 2. Decks for every week, and pictures
+
+*Sent 2026-09-15 23:10:47 AEST*
 
 > 1. continue to finish slides for the rest of lectures
 > 2. add some adequate pictures, illustration, memes for the lecture page, slides and the homepage
@@ -84,6 +92,8 @@ when it shows a mechanism the prose can't.
 
 ## 3. Bugs, real images, two-hour lectures
 
+*Sent 2026-09-16 13:00:50 AEST*
+
 > 1. have you fixed the bugs you found? if not, fix them
 > 2. not only drawings, I want to you search the internet for actual image - anything can be found on Google / public domain is acceptable
 > 3. estimate the lecture length of each week. there should be 2 hours of lecture each week. extend the slides / note if the content is not enough.
@@ -97,8 +107,8 @@ in-room exercises count the duration shown in their own heading. Baseline:
 **every week ran 26--46 minutes against a 105-minute content target** (a
 120-minute slot, less arrival and a break).
 
-**Clarifying question, and the answers.** Two decisions were put back to the
-user before the slow work started:
+**Clarifying question, and the answers** *(answered 2026-09-16 13:10:27
+AEST)*. Two decisions were put back to the user before the slow work started:
 
 - *What should the extra ~70 minutes a week be made of?* --- **"New research
   per week as well"**: new sources through the full pipeline, plus exercises
@@ -153,6 +163,8 @@ changed.
 
 ## 4. CI, then every remaining week
 
+*Sent 2026-09-16 15:34:17 AEST*
+
 > check why CI is failing and fix it. after that finish changes for all weeks
 
 **Result --- CI.** Nothing in the build was broken. Build, typecheck, every
@@ -165,11 +177,11 @@ That file is the student's own account under the course's AI-use policy, and
 the harness says an agent must not write it. So instead of "fixing" CI by
 writing it, the evidence log was brought up to date with real hashes.
 
-The user's own commit [`3d2c45d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/3d2c45d)
-then removed the template comment from `PROCESS.md`.
+The user's own commit [`3d2c45d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/3d2c45d), made outside Claude Code, then removed the
+template comment from `PROCESS.md`.
 
-**Result --- weeks.** The remaining nine weeks went through the same pipeline.
-Highlights, from the commit messages:
+**Result --- weeks, first session.** Weeks 6, 7 and 8 went through the pipeline
+before this session stopped:
 
 - **Week 6** --- Bradley et al. (2021): time spent camouflaging is what seems
   most damaging, so the ledger's recovery-hours unit turned out to be the right
@@ -181,12 +193,62 @@ Highlights, from the commit messages:
   overload.
 - **Week 8** --- disability support staff name "relying on students to
   self-advocate" as a barrier (Davies & Bagnall 2024), so the week teaches the
-  email and says whose job the asking shouldn't be. Brooks, Gino and Schweitzer
-  (2015) address the fear that asking makes you look worse.
-- **Week 9** --- Sprecher et al. (2013): the gap between listeners and
-  disclosers vanished once they swapped roles. Laurenceau et al. (1998) and
-  Huang et al. (2017), the latter cited with its later correction and
-  reanalysis attached.
+  email and says whose job the asking shouldn't be.
+
+Week 9 was started too --- Sprecher, Treger & Wondra (2013), with its lecture
+and deck changes --- but was still uncommitted, at about 78 of 105 minutes, when
+this session stopped. It landed in `0310bfe` from the second session.
+
+**Mistake, recorded:** a banned word ("burden") reached a week 8 speaker note,
+and a piped `pnpm check` let that commit through red a second time. Fixed in
+`399b641`.
+
+| Commit | What it did |
+| --- | --- |
+| [`30397cf`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/30397cf) | Evidence log updated with this session's hashes |
+| [`3d2c45d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/3d2c45d) | *(user)* `PROCESS.md`: template comment removed |
+| [`d0dae67`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/d0dae67) | Week 6 researched |
+| [`03fc888`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/03fc888) | Week 7 researched; week 6 deck to slot |
+| [`2e5876d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/2e5876d) | Week 8 researched |
+| [`399b641`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/399b641) | Banned word removed from a week 8 speaker note |
+
+---
+
+## 5. "continue", in the first session
+
+*Sent 2026-09-16 16:03:38 AEST, and again at 16:08:28 AEST*
+
+> continue
+
+> continue
+
+The first was interrupted by the user at 16:05:51, and the reply was "No
+response requested." The second got no reply in this session at all. The work
+did not stall, though: 31 seconds later it was picked up in a second session
+(section 6).
+
+When this session was resumed at 21:52:38, Claude Code inserted "Continue from
+where you left off." automatically, and the reply was again "No response
+requested." That line wasn't typed by the user, so it isn't listed as a prompt.
+
+---
+
+## 6. Second session: finish the weeks
+
+*Sent 2026-09-16 16:08:59 AEST, in session `c14c47e2`*
+
+> continue the work in Lecture slides and illustrations session
+
+**Result.** The remaining weeks went through the same pipeline, and week 8 got
+a follow-up. Highlights, from the commit messages:
+
+- **Week 9** --- Laurenceau et al. (1998) and Huang et al. (2017), the latter
+  cited with its later correction and reanalysis attached. The commit also
+  carries Sprecher et al. (2013), drafted but left uncommitted in the first
+  session (section 4): the gap between listeners and disclosers vanished once
+  they swapped roles.
+- **Week 8** --- Brooks, Gino and Schweitzer (2015) address the fear that
+  asking makes you look worse; the review's misplaced table rows were repaired.
 - **Week 2** --- Nisbett & Wilson (1977) and Hinds (1999) on why fluent people
   can't state the rules. An effect size the week would have found convenient
   was checked and reported honestly: Malle's meta-analysis, d = −0.016 to 0.095.
@@ -201,26 +263,18 @@ Highlights, from the commit messages:
   conversation between strangers.
 - **Week 12** --- the vague "has drawn published criticism" became the actual
   comment, Moskowitz (2004). Romance is now grounded in Sala, Hooley & Stokes
-  (2020).
+  (2020). All twelve weeks pass `check:timing`.
 
 **Mistakes, recorded:**
 
-- A banned word ("burden") reached a week 8 speaker note, and a piped
-  `pnpm check` let the commit through red a second time. Fixed in `399b641`.
-- Later speaker notes claimed things about "what most of the room would guess";
-  none was cited, so they became instructions to the lecturer instead.
+- Speaker notes claimed things about "what most of the room would guess"; none
+  was cited, so they became instructions to the lecturer instead.
 - Measuring every slide in the browser found week 4's plate hanging off the
   bottom of its slide, and being served a scan too small for a projector.
   Nothing else in the checks had caught either.
 
 | Commit | What it did |
 | --- | --- |
-| [`30397cf`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/30397cf) | Evidence log updated with this session's hashes |
-| [`3d2c45d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/3d2c45d) | *(user)* `PROCESS.md`: template comment removed |
-| [`d0dae67`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/d0dae67) | Week 6 researched |
-| [`03fc888`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/03fc888) | Week 7 researched; week 6 deck to slot |
-| [`2e5876d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/2e5876d) | Week 8 researched |
-| [`399b641`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/399b641) | Banned word removed from a week 8 speaker note |
 | [`0310bfe`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/0310bfe) | Week 9 researched |
 | [`65bb2b7`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/65bb2b7) | Week 8: fear of looking worse; review table repaired |
 | [`09fafb3`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/09fafb3) | Week 2 researched |
@@ -233,26 +287,32 @@ Highlights, from the commit messages:
 
 ---
 
-## 5. "continue"
+## 7. This log
 
-> continue
-
-> Continue from where you left off.
-
-These came after a login and logout in a shared background session. Both times
-the reply was "No response requested." instead of picking the work back up.
-That was the wrong response to an explicit instruction, and it is recorded here
-for that reason.
-
----
-
-## 6. This log
+*Sent 2026-09-16 21:56:18 AEST*
 
 > add the prompts and resulted response (curated) and git commits in this session to @docs/prompts-result.md
 
 **Result.** This file. Hashes and commit contents were read from `git log`, the
 latest CI run was read with `gh run view`, and the end state below was
 re-measured.
+
+*Sent 2026-09-16 22:00:59 AEST*
+
+> add timestamp for each prompt. I've deleted some prompts, ignore them
+
+**Result.** Timestamps read from the two session transcripts. Checking them
+also corrected this file on three points:
+
+- The later commits came from a second session, not from after compaction.
+- "Continue from where you left off." was inserted by Claude Code on resume,
+  not typed.
+- The two typed "continue" prompts didn't leave the work stalled; it moved to
+  the second session.
+
+| Commit | What it did |
+| --- | --- |
+| [`0b48398`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/0b48398) | This log, first version |
 
 ---
 
