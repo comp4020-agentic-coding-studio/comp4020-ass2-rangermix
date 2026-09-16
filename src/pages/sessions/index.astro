@@ -1,18 +1,23 @@
 ---
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import { withBase } from "astro-theme-university/url";
 import SessionsGrid from "../../components/SessionsGrid.astro";
+import { labMeeting } from "../../data/timetable";
 import { sessionLabels, siteConfig } from "../../site-config";
 ---
 
 <ContentLayout
   title={sessionLabels.plural}
-  description="Thursday, every teaching week: an hour to go and try the week's protocol in the room, with a stopwatch and a notebook."
+  description="Thursday 14:00 to 15:00, every teaching week: an hour to go and try the week's protocol in the room, with a stopwatch and a notebook."
   {...siteConfig}
 >
   <p>
-    The lecture argues something on Tuesday. The lab checks it on Thursday.
-    Every lab has a run sheet with timings, says what to bring, and ends with
-    lines you can check yourself against before you leave the room.
+    The lecture argues something on Tuesday. The lab checks it on Thursday,
+    {` ${labMeeting.start} to ${labMeeting.end}`} in {labMeeting.venue}. Every
+    lab has a run sheet with timings, says what to bring, and ends with lines
+    you can check yourself against before you leave the room.
+    The <a href={withBase("/timetable/")}>timetable</a> has the dates, and the
+    two weeks that don't stay in the room.
   </p>
   <SessionsGrid />
 </ContentLayout>

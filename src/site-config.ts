@@ -21,6 +21,9 @@ export const siteConfig = defineSiteConfig({
   name: "Slop University",
 
   links: [
+    // Before the lectures on purpose: the first thing a student needs is where
+    // to be and when, and that is the one page no course writes down in full.
+    { text: "Timetable", href: "/timetable/" },
     { text: "Lectures", href: "/lectures/" },
     { text: sessionLabels.plural, href: "/sessions/" },
     { text: "Readings", href: "/readings/" },

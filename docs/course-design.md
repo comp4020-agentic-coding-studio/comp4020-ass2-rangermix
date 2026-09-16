@@ -12,7 +12,7 @@ where it was written, so **none of it is build-verified**.
 | Title | Undocumented Protocols: Field Methods in Neurotypical Interoperation |
 | Nickname | **NT 101** |
 | Session | Semester 1, 2027 |
-| Teaching | Tuesday lecture, Thursday lab |
+| Teaching | Tuesday lecture 14:00--16:00, Thursday lab 14:00--15:00 |
 | Period | 22 Feb 2027 -- 13 Jun 2027 |
 | Weekly hour | **Lab** |
 | Tags | social protocol, field methods, communication |
@@ -73,6 +73,50 @@ any due date after `endDate`.
 
 Tuesday/Thursday teaching keeps every session clear of Easter Monday (29 Mar)
 and the ANZAC Day holiday (observed Mon 26 Apr), both Mondays in 2027.
+
+## Where and when
+
+| | |
+| --- | --- |
+| Lecture | Tuesday 14:00--16:00, Theatre 1, Applied Interaction Building |
+| Lab | Thursday 14:00--15:00, Room 2.14, the same building |
+| Field Journal | Sunday 23:59, weeks 2--12 |
+| Contact | three hours a week |
+
+Two hours for the lecture and one for the lab. The hour is what the labs were
+already built to: every run sheet in `sessions` runs 0:00 to 1:00.
+
+All of it lives on one page, `/timetable/`, **first in the navigation, before
+Lectures**: where to be and when is what a student needs before anything else
+on the site is any use. The page carries the identity facts, the week's shape,
+the twelve-week calendar, every deadline, the break, the public holidays and
+who to ask. The *rules* --- extensions, adjustments, AI use, observing people
+--- stay on the policies page and are linked from it, never restated, so there
+is one place each fact is true.
+
+**The calendar is generated, never retyped.** The page reads its dates from the
+lectures, the labs and the assessments, the Field Journal's eleven
+`submissions:` included, so a week that moves moves there too.
+`spec/timetable.test.ts` fails if any teaching date or deadline in the course
+API is missing from it.
+
+**The undocumented half of a timetable is the point.** A timetable hands you a
+room and a start time and leaves you to infer everything else, which is this
+course's subject matter happening to the course itself. So the page writes down
+what is usually inferred: 14:00 means 14:00 and not ten past; the lecture breaks
+at 15:00 for ten minutes, announced in advance rather than called when the room
+looks tired; you can leave by the back door without explaining; lectures are
+recorded and captioned by Wednesday morning, with nothing to ask for and no
+reason to give; labs are not recorded, because week 1's rule about observing
+people applies to the room you are sitting in; weeks 1 and 2 are the only labs
+that leave it; nothing is expected before the first lecture; and attendance is
+not marked, though from week 9 the lab is where the report partner is.
+
+Four public holidays fall inside the teaching weeks: Canberra Day (Mon 8 Mar),
+Good Friday (Fri 26 Mar), Easter Monday (Mon 29 Mar) and ANZAC Day, observed
+(Mon 26 Apr). None is a Tuesday or a Thursday, which is the reason for the
+pattern; `spec/timetable.test.ts` re-derives each weekday rather than taking the
+page's word for it.
 
 ## The twelve weeks
 
@@ -258,4 +302,4 @@ must be replaced or deliberately removed.
 
 Settled and built since this list was first written: the reading list and the
 twelve literature reviews, with every citation checked against its source; the
-decks; the cast, home page, policies page and glossary.
+decks; the cast, home page, policies page and glossary; the timetable.
