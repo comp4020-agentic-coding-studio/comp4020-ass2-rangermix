@@ -196,12 +196,60 @@ change shown on the page rather than quietly swapped (`bf79a3e`).
   commit untracks Playwright scratch screenshots swept in by a broad
   `git add`.
 
+## Session: filling the two-hour slot (weeks 2, 3, 8--12)
+
+Twelve lecture decks existed and none of them filled the two hours the week is
+timetabled for; `pnpm check:timing` measured the gap at 26--46 minutes per week.
+Week 1 had already been taken to 96.7 minutes. This session did the remaining
+eleven weeks' worth that were still short, in the pipeline's order each time:
+search, verify the abstract, write the review row, write the reading entry,
+write the lecture, then build the deck from the written lecture.
+
+**All twelve weeks now pass `check:timing`, running 96.0--105.1 minutes.**
+
+| Commit | Week | What the new research changed |
+| --- | --- | --- |
+| `0310bfe` | 9 | Laurenceau et al. (1998) and Huang et al. (2017). The depth scale had no field for whether a step *landed*; responsiveness is it. Huang arrives with a 2025 correction notice and a 2019 published dispute, so the week teaches a finding **with its maintenance record** --- the course's argument, from the research side |
+| `65bb2b7` | 8 | Brooks, Gino & Schweitzer (2015). The week answered "they'll say no" and not the louder fear, that asking makes you look worse. Their three moderators are the week's only advice about *who* to write to |
+| `09fafb3` | 2 | Nisbett & Wilson (1977), Hinds (1999), Malle (2006). The week was one sentence from justifying the asleep test with the actor--observer asymmetry; 173 studies put it near zero, so the rule is now labelled as the course's own |
+| `f67fdc1` | 3 | Lee & Pinker (2010), Keysar & Henly (2002), Chevallier et al. (2010). Moves the fault to the end that sent the hint: speakers overestimate being understood, overhearers don't |
+| `9a231ee` | 10 | Quinn & Chaudoir (2009), Corrigan & Matthews (2003). The week priced telling and nothing else. Anticipated stigma is a belief an *environment* produces, so it is the measurement under week 8's structural recommendation |
+| `0f1678a` | 11 | Alkhaldi et al. (2019), Morrison et al. (2020). Readability correlated with favourability *independent of diagnosis*; and in a real five-minute conversation the judgement travelled to both groups while the withdrawal didn't |
+| `cffe562` | 12 | Sala et al. (2020), Moskowitz (2004). "Contested" replaced by the actual comment, whose objection is that the claim isn't testable as written --- now the standard the course's own errata are measured against |
+
+Fifteen new readings, every one verified against a retrievable abstract
+(PubMed, OpenAlex or Crossref) and every one passing `pnpm check:readings`.
+Three candidates were cut for having no retrievable abstract and the cuts are
+recorded in the reviews rather than dropped: Sprecher et al.'s *Taking turns*,
+Cho & Keltner (2019), and Petty & Cacioppo --- the last named on week 12's own
+"where to start reading" table as the entry point it could not check.
+
+### Three failures worth citing, because no check would have caught two of them
+
+- **The convenient citation.** Week 2 wanted the actor--observer asymmetry to
+  justify the asleep test. Checking it first is what produced the better week:
+  the rule is now the course's own, and the one condition the effect survived
+  under --- negative events --- is the condition every field note is written in.
+- **A re-coined list.** Week 12's deck grew four "ethics rules" for the field
+  experiment. The lab has carried four ethics *questions* since it was written,
+  and the capstone brief cites them by name. Two competing four-item lists in
+  one week is exactly what the harness's reuse-terms rule exists to stop, and
+  `pnpm check` is blind to it.
+- **Frequency claims in speaker notes.** Four notes across weeks 9, 10 and 12
+  claimed what most of a room would guess or do. Notes are content; each is now
+  an instruction to the lecturer instead.
+
+`spec/inclusive-language.test.ts` caught two of mine directly: "over-correct
+... treating you carefully" in a week 10 table, and "nothing here was a cure
+for anything" in week 12 --- written to *reject* the framing and still a build
+failure. "A convention is not a condition" is shorter and lands harder.
+
 ### What CI says, and what it is waiting for
 
-As of `bf79a3e`, the `check` job's only failing step is **`check:evidence`**,
+As of `cffe562`, the `check` job's only failing step is **`check:evidence`**,
 on three counts: this repo's `PROCESS.md` is still the template, and the
 template's two example hashes (`a1b2c3d`, `e4f5a6b`) don't resolve. Build,
-typecheck, all 327 spec tests and the `deploy` job pass, and the deployed site
+typecheck, all 393 spec tests and the `deploy` job pass, and the deployed site
 verifies online.
 
 That gate closes when **you** write `PROCESS.md`. Nothing in this file is a
