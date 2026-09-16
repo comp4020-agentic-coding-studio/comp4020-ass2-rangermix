@@ -4,8 +4,15 @@ A curated record of this session: each prompt as it was typed, a trimmed
 version of what came back, and the commits it produced. It is source material
 for `PROCESS.md`, like `docs/notes/process-evidence.md`, and not a draft of it.
 
-- **Prompts are verbatim.** Slash commands and the answers to a clarifying
-  question are included, because they changed what got built.
+- **Prompts are verbatim.** The answers to a clarifying question are included,
+  because they changed what got built.
+- **Omitted: prompts that are only "continue" or only a slash command.** They
+  carry no instruction of their own, so they get no section. Any work they
+  resumed is filed under the prompt that asked for it. That includes "continue
+  the work in Lecture slides and illustrations session", which picked up
+  section 3's task in a second session. A prompt that says "continue" and then
+  gives a new instruction, like section 1's, is kept. A line Claude Code
+  inserts on resume isn't a prompt either.
 - **Timestamps are when each prompt was sent**, read from Claude Code's session
   transcripts rather than estimated, in Canberra time (AEST, UTC+10; daylight
   saving hadn't started).
@@ -16,25 +23,13 @@ for `PROCESS.md`, like `docs/notes/process-evidence.md`, and not a draft of it.
   [`07cea35...849a75d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/compare/07cea35...849a75d).
 - **The work ran across two Claude Code sessions.** Everything up to `399b641`
   came from the first (`58785399`). Commits `0310bfe` to `849a75d` came from a
-  second (`c14c47e2`), opened by the prompt in section 6, so their "result"
+  second (`c14c47e2`), which resumed section 3's task, so their "result"
   summaries are taken from those commit messages. The end state at the bottom
   was re-checked with the tools, not copied from them.
 
 ---
 
-## 1. Budget check
-
-*Sent 2026-09-15 23:07:03 AEST*
-
-> `/comp4020:balance`
-
-**Result.** Queried the course proxy's `/api/me` with the key already in the
-environment: the week's spend was well under the weekly cap, with the reset due
-Thursday 9:00 am Canberra time. No files changed.
-
----
-
-## 2. Decks for every week, and pictures
+## 1. Decks for every week, and pictures
 
 *Sent 2026-09-15 23:10:47 AEST*
 
@@ -90,7 +85,7 @@ when it shows a mechanism the prose can't.
 
 ---
 
-## 3. Bugs, real images, two-hour lectures
+## 2. Bugs, real images, two-hour lectures
 
 *Sent 2026-09-16 13:00:50 AEST*
 
@@ -161,7 +156,7 @@ changed.
 
 ---
 
-## 4. CI, then every remaining week
+## 3. CI, then every remaining week
 
 *Sent 2026-09-16 15:34:17 AEST*
 
@@ -181,7 +176,7 @@ The user's own commit [`3d2c45d`](https://github.com/comp4020-agentic-coding-stu
 template comment from `PROCESS.md`.
 
 **Result --- weeks, first session.** Weeks 6, 7 and 8 went through the pipeline
-before this session stopped:
+before the first session stopped:
 
 - **Week 6** --- Bradley et al. (2021): time spent camouflaging is what seems
   most damaging, so the ledger's recovery-hours unit turned out to be the right
@@ -197,7 +192,7 @@ before this session stopped:
 
 Week 9 was started too --- Sprecher, Treger & Wondra (2013), with its lecture
 and deck changes --- but was still uncommitted, at about 78 of 105 minutes, when
-this session stopped. It landed in `0310bfe` from the second session.
+the first session stopped. It landed in `0310bfe` from the second session.
 
 **Mistake, recorded:** a banned word ("burden") reached a week 8 speaker note,
 and a piped `pnpm check` let that commit through red a second time. Fixed in
@@ -212,40 +207,14 @@ and a piped `pnpm check` let that commit through red a second time. Fixed in
 | [`2e5876d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/2e5876d) | Week 8 researched |
 | [`399b641`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/399b641) | Banned word removed from a week 8 speaker note |
 
----
-
-## 5. "continue", in the first session
-
-*Sent 2026-09-16 16:03:38 AEST, and again at 16:08:28 AEST*
-
-> continue
-
-> continue
-
-The first was interrupted by the user at 16:05:51, and the reply was "No
-response requested." The second got no reply in this session at all. The work
-did not stall, though: 31 seconds later it was picked up in a second session
-(section 6).
-
-When this session was resumed at 21:52:38, Claude Code inserted "Continue from
-where you left off." automatically, and the reply was again "No response
-requested." That line wasn't typed by the user, so it isn't listed as a prompt.
-
----
-
-## 6. Second session: finish the weeks
-
-*Sent 2026-09-16 16:08:59 AEST, in session `c14c47e2`*
-
-> continue the work in Lecture slides and illustrations session
-
-**Result.** The remaining weeks went through the same pipeline, and week 8 got
-a follow-up. Highlights, from the commit messages:
+**Result --- weeks, second session.** The same task was resumed in a second
+session (`c14c47e2`). The remaining weeks went through the same pipeline, and
+week 8 got a follow-up. Highlights, from the commit messages:
 
 - **Week 9** --- Laurenceau et al. (1998) and Huang et al. (2017), the latter
   cited with its later correction and reanalysis attached. The commit also
   carries Sprecher et al. (2013), drafted but left uncommitted in the first
-  session (section 4): the gap between listeners and disclosers vanished once
+  session (above): the gap between listeners and disclosers vanished once
   they swapped roles.
 - **Week 8** --- Brooks, Gino and Schweitzer (2015) address the fear that
   asking makes you look worse; the review's misplaced table rows were repaired.
@@ -287,7 +256,7 @@ a follow-up. Highlights, from the commit messages:
 
 ---
 
-## 7. This log
+## 4. This log
 
 *Sent 2026-09-16 21:56:18 AEST*
 
@@ -302,17 +271,22 @@ re-measured.
 > add timestamp for each prompt. I've deleted some prompts, ignore them
 
 **Result.** Timestamps read from the two session transcripts. Checking them
-also corrected this file on three points:
+also corrected this file: the later commits came from a second session, not
+from after compaction; and Sprecher et al. was drafted in the first session but
+committed in the second.
 
-- The later commits came from a second session, not from after compaction.
-- "Continue from where you left off." was inserted by Claude Code on resume,
-  not typed.
-- The two typed "continue" prompts didn't leave the work stalled; it moved to
-  the second session.
+*Sent 2026-09-16 22:32:17 AEST*
+
+> ignore all "continue" and slash command only prompts. add that rule to the file.
+
+**Result.** The rule is stated at the top of this file. The budget check and
+every "continue" prompt lost their sections, and the second session's work was
+filed under section 3, whose task it finished.
 
 | Commit | What it did |
 | --- | --- |
 | [`0b48398`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/0b48398) | This log, first version |
+| [`db09d15`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/db09d15) | Timestamps added; two-session split corrected |
 
 ---
 
