@@ -24,7 +24,7 @@ const SLIDE_MINUTES = {
   centered: 2.0, // the closing checklist
   diagram: 3.5, // walked through, not glanced at
   table: 3.0, // a column at a time
-  exercise: 0, // carries its own explicit timing; counted separately
+  exercise: 0, // carries its own visible timing; counted separately
   content: 2.5, // prose, bullets, a claim and its source
 } as const;
 
@@ -43,7 +43,7 @@ export interface SlideEstimate {
   kind: keyof typeof SLIDE_MINUTES;
   minutes: number;
   noteLines: number;
-  /** Minutes declared by an `_exercise: N min` marker on the slide. */
+  /** Minutes the slide's own heading gives the room. */
   declared?: number;
 }
 
@@ -63,7 +63,7 @@ export interface WeekEstimate {
 function classify(slide: string): keyof typeof SLIDE_MINUTES {
   const cls = slide.match(/\{\/\*\s*_class:\s*([a-z-]+)\s*\*\/\}/)?.[1];
   if (cls && cls in SLIDE_MINUTES) return cls as keyof typeof SLIDE_MINUTES;
-  if (/_exercise:/.test(slide)) return "exercise";
+  if (EXERCISE.test(slide)) return "exercise";
   // A slide whose body is a component call is a drawing.
   if (/^\s*<(SequenceDiagram|StateMachine|TimingLine|Envelope|Form|DepthLadder|Chain|Register)\b/m.test(slide)) {
     return "diagram";
@@ -89,8 +89,13 @@ function noteLinesOf(slide: string): number {
   );
 }
 
+// An in-room exercise announces its own length on the slide, so the room can
+// pace itself. That visible figure is the one counted here: a hidden marker
+// beside it would be a second copy to keep in step.
+const EXERCISE = /^#{2,3}\s+In the room.*?\((\d+(?:\.\d+)?)\s*min\)/m;
+
 function declaredExercise(slide: string): number | undefined {
-  const m = slide.match(/_exercise:\s*(\d+(?:\.\d+)?)\s*min/);
+  const m = slide.match(EXERCISE);
   return m ? Number(m[1]) : undefined;
 }
 

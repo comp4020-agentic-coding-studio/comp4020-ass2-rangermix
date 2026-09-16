@@ -1,6 +1,6 @@
 ---
 title: "NT 101, Week 1: Introduction + The Opening Handshake"
-description: "The week 1 lecture deck: the course's thesis, and “how are you?” specified."
+description: "The week 1 lecture deck: the course's thesis, what counts as a greeting at all, “how are you?” specified, and why a reply is owed by degrees."
 ---
 
 import SequenceDiagram from "../components/sketch/SequenceDiagram.astro";
@@ -14,6 +14,7 @@ SLOP1562, week 1. On campus, NT 101.
 
 ```notes
 - Welcome. Don't explain the course yet. Start with the corridor.
+- Two hours with a break at the hour. Say when the break is, now, so nobody has to wonder.
 ```
 
 ---
@@ -37,6 +38,7 @@ The protocol is undocumented, not obvious; a minority implementation is not a br
 
 ```notes
 - The governing sentence. Every week serves it or gets cut.
+- Read it twice. It is the whole argument and it is on every page of the site.
 ```
 
 ---
@@ -44,27 +46,77 @@ The protocol is undocumented, not obvious; a minority implementation is not a br
 ## Not a remedial course
 
 - No standard to be brought up to; only a majority
-- The outcome is **fluency plus choice**
-- Read the protocol, run a part when it's worth the cost, decline a part knowing what declining costs
+- Nobody is here because something is wrong with them
+- You are here because the specification is missing, and you noticed
 
 ```notes
-- Say explicitly: the outcome is not becoming indistinguishable from anybody.
-- "Some weeks you'll run more of it, some weeks less. Both are passing grades."
+- Two ways to have noticed: the protocol never quite ran for you, or it runs so smoothly you couldn't explain it to someone who asked.
+- Name both, in that order, and don't rank them.
+```
+
+---
+
+{/* _class: impact */}
+
+The outcome is fluency plus choice.
+
+```notes
+- Read the protocol. Run a part when it's worth the cost. Decline a part knowing what declining costs.
+- Say explicitly: the outcome is not becoming indistinguishable from anybody. Some weeks you'll run more of it, some less. Both are passing grades.
+```
+
+---
+
+## How a week runs
+
+- **Tuesday** --- a lecture writes part of the protocol down
+- **Thursday** --- a lab checks it in the room, with a run sheet and timings
+- **Sunday**, from week 2 --- a Field Journal entry
+
+Nothing in a lab is sprung on you.
+
+```notes
+- The run sheet promise matters to a lot of people in this room. Make it explicitly.
+```
+
+---
+
+## Four parts, twelve weeks
+
+| Weeks | Part | What you do |
+| --- | --- | --- |
+| 1--4 | Read | write down what everyone runs and nobody describes |
+| 5--7 | Implement | run parts on purpose, and count the cost |
+| 8--11 | Negotiate | institutions, closeness, disclosure, other implementations |
+| 12 | Horizon | what the course leaves out, and where to read on |
+
+```notes
+- Point out that week 12 is a list of open issues, not a summary. This course ends like a standards document.
 ```
 
 ---
 
 ## The documentation exists
 
-Schegloff set out to "ascertain rules" for how conversations open, and named properties like *conditional relevance*.
+In 1968 Emanuel Schegloff published an attempt to "ascertain rules" for how conversations open, and named properties those rules have --- one is *conditional relevance*.
 
 <span class="source">Schegloff (1968), American Anthropologist 70(6), 1075–1095</span>
 
 <MarginNote label="Where the documentation is">Twenty-one pages. Nobody was handed them.</MarginNote>
 
 ```notes
-- The engineering scandal: the protocol has documentation, and it was never shipped to its users.
-- Only the abstract was checked. Name the term; don't define it from the paper.
+- Only the abstract was checked. Name the term; don't define it from the paper. You will come back to why in the second half.
+```
+
+---
+
+{/* _class: impact */}
+
+The protocol has documentation. It was never shipped to its users.
+
+```notes
+- This is the engineering scandal the course is named for.
+- Researchers have been writing the rules down for over fifty years, for other researchers, in a register nobody outside the field reads.
 ```
 
 ---
@@ -73,12 +125,93 @@ Schegloff set out to "ascertain rules" for how conversations open, and named pro
 
 "Phatic communion": Malinowski's 1920s term for talk that maintains the connection rather than carrying information.
 
-It's better understood as negotiated than as a fixed, empty type.
+Better understood as **negotiated** than as a fixed, empty type.
 
 <span class="source">Coupland, Coupland & Robinson (1992), Language in Society 21(2)</span>
 
 ```notes
 - "You aren't being asked for data. You're being asked to confirm the connection is up."
+- Their data is elderly patients answering a scripted "how are you?" in medical interviews --- a setting where it might be a real question. Hold that.
+```
+
+---
+
+## First, a prior question
+
+What is the thing we are about to specify?
+
+The greetings literature kept asserting properties of greetings --- no real content, purely expressive --- without agreeing what counted as one.
+
+```notes
+- This is the question a standards body asks before writing a clause, and the course is going to model it.
+```
+
+---
+
+## Six criteria
+
+Duranti proposed **six criteria** for identifying a greeting exchange across languages and speech communities, so the claims could be tested instead of repeated.
+
+<span class="source">Duranti (1997), Journal of Linguistic Anthropology 7(1), 63–97</span>
+
+```notes
+- We read the abstract, not the paper. Do not list the six; say so out loud, because the room should see the course obeying its own citation rule.
+```
+
+---
+
+{/* _class: impact */}
+
+If you can't say what would count as an instance, you can't check any claim you make about it.
+
+```notes
+- That is the difference between a specification and an opinion, and it is the method for all twelve weeks.
+```
+
+---
+
+## Then he went and looked
+
+Applying the criteria in a speech community in Western Samoa: **four types** of greeting exchange.
+
+They break the standard claim. These greetings are **not devoid of propositional content**, and need not be "expressive" acts.
+
+People use them to **search for new information** and to **sanction social behaviour**.
+
+<span class="source">Duranti (1997)</span>
+
+```notes
+- Again: four types, and the course doesn't list them, because the abstract doesn't.
+- The finding that survives is the one that matters here.
+```
+
+---
+
+{/* _class: impact */}
+
+One implementation's greeting is not greeting.
+
+<MarginNote label="Scope note">The corridor handshake carries no information. That's a fact about this protocol, not about greeting.</MarginNote>
+
+```notes
+- Somewhere else, the same slot in the same sequence is used to ask something and get an answer.
+- The majority's version is local. It is also the one this building runs, which is why we specify it.
+```
+
+---
+
+## In the room: is it a greeting? (6 min)
+
+In pairs. Decide, and say what test you used.
+
+1. A nod across a lecture theatre. No words, no reply.
+2. "Alright?" shouted across a road, and they keep walking.
+3. A barista saying "hi, how are you, what can I get you?" as one unit.
+4. Two people who pass four times in a day and greet once.
+
+```notes
+- No answer key. The point is that they had to invent a criterion to decide, which is what Duranti did.
+- Take two answers from the room, not ten. Ask for the criterion, not the verdict.
 ```
 
 ---
@@ -97,6 +230,21 @@ It's better understood as negotiated than as a fixed, empty type.
 
 ```notes
 - Walk the diagram top to bottom. The dashed line is the move nobody says out loud.
+- Four messages, about four seconds, and every one of them is doing work.
+```
+
+---
+
+## The request
+
+"How are you?" · "How's it going?" · "You alright?" · "How've you been?" · "Hey, how are things?"
+
+In passing, these are **the same message**.
+
+None requests information. Each requests one acknowledgement that the relationship is in working order.
+
+```notes
+- Five wordings, one payload. That distinction is next week's vocabulary arriving early; don't name it yet.
 ```
 
 ---
@@ -108,12 +256,26 @@ It's better understood as negotiated than as a fixed, empty type.
 | Good, you? | positive | yes | after one more turn |
 | Not bad, you? | neutral | yes | after one more turn |
 | Yeah, fine. | neutral | no | immediately |
+| Can't complain. | neutral | no | immediately |
 | Surviving. | a joke | no | if said lightly |
 
-The reply SHOULD return the request when there's time for one more turn.
+```notes
+- Go down the Token column first, then the Closes column. The two columns are the whole table.
+```
+
+---
+
+## In the register of a standards document
+
+The reply **SHOULD** return the request when there's time for one more turn.
+
+It **MAY** skip the return when both are clearly moving on.
+
+A returned request **MUST** be answered with a token too.
 
 ```notes
-- Deadpan the RFC 2119 keywords. Don't wink.
+- Deadpan the RFC 2119 keywords. Don't wink. The joke only works played straight.
+- The MUST is the "yeah, good" in the diagram. It is what ends the exchange.
 ```
 
 ---
@@ -131,6 +293,18 @@ A **correct answer** to the question as asked, and a **nonconforming reply** und
 
 ---
 
+## The branch is sometimes worth taking
+
+The course's position is not "don't take it".
+
+It is that you should be able to **see the fork while you're standing at it**.
+
+```notes
+- This is the shape of every recommendation in the course: here is the cost, here is the choice, you decide.
+```
+
+---
+
 ## When it's a real question
 
 The asker:
@@ -141,27 +315,110 @@ The asker:
 
 These are the course's working rules, not a finding. Thursday's lab tests them.
 
+```notes
+- Say "not a finding" plainly. If the lab breaks these, that is a result and it goes on the site.
+```
+
+---
+
+## Why do you owe a reply at all?
+
+Everything so far assumes the opening **obliges** you. The course hasn't earned that yet.
+
+Schegloff has a term nearby --- *conditional relevance* --- but we only read the abstract, so it stays a name.
+
+```notes
+- This is the honest gap, and the room should watch you close it rather than paper over it.
+```
+
+---
+
+## The puzzle, taken directly
+
+What is it about some turns that reliably gets a response --- and when is someone **accountable** for not giving one?
+
+Two inherited answers:
+
+- **Linguistic**: interrogativity does it. A question is a question.
+- **Sociological**: the social action does it.
+
+Each has merit. **Neither settles it.**
+
+<span class="source">Stivers & Rossano (2010), Research on Language and Social Interaction 43(1)</span>
+
+---
+
+## What they argue instead
+
+- Different actions mobilise a response **to different degrees**
+- Speakers **design turns** with response-mobilising features
+- Those features hold a recipient **more or less accountable** for replying
+- Position, action and turn design each contribute
+
+<span class="source">Stivers & Rossano (2010)</span>
+
+```notes
+- We read the abstract, so don't list their features. The existence of the gradient is what changes this week's advice.
+```
+
+---
+
+{/* _class: impact */}
+
+Obligation is not a switch. It's a dial.
+
+---
+
+## Which cuts both ways
+
+**If replies are hard for you:** you may have been treating every opening as maximum obligation. Many are turned down low. A nod answers a nod. You can match the level you were given.
+
+**If replies are automatic for you:** you have a dial you didn't know you were turning. When you actually want an answer, you can turn it up on purpose instead of hoping.
+
+```notes
+- Deliver these as two separate addresses to two halves of one room, and give the second one equal weight.
+```
+
+---
+
+## In the room: turn the dial (8 min)
+
+In pairs, take *"You've been quiet this week."* and say it twice.
+
+1. Once so a reply is **hard to withhold** --- stop moving, use their name, ask again, leave the silence.
+2. Once so a reply is **easy to skip** --- in passing, over your shoulder, with an exit in it: "no need to answer that."
+
+Then swap, and name **what you changed**.
+
+```notes
+- The examples are the course's, not the paper's. Say so.
+- Collect the changes on the board: position, wording, timing, body. That list is the week's real artefact, and week 4 measures it in milliseconds.
+```
+
 ---
 
 ## Why nobody handed it to you
 
-If you run the handshake without effort, the spec read as the obvious. That's because you've run it ten thousand times, not because it is simple.
+If you run the handshake without effort, the spec read as the obvious. That's because you've run it ten thousand times, not because it's simple.
 
 If it's felt strange for years, you were right that it had rules. That's a documentation problem, not a problem with you.
 
 ```notes
 - Speak to both halves of the room here, one after the other, without ranking them.
+- Week 2 does the mechanism: a rule you've never seen broken is a rule you don't know you have.
 ```
 
 ---
 
-## How the course runs
+## Thursday: corridor capture
 
-- **Tuesday**: a lecture writes down part of the protocol
-- **Thursday**: a lab tests it in the room
-- **Sunday**, from week 2: a Field Journal entry
+Log ten real openings: the words, the reply type, and whether it **closed** or **branched**.
 
-Read (1–4). Implement (5–7). Negotiate (8–11). Horizon (12).
+Words, not people. No names, no descriptions, no recording.
+
+```notes
+- Mention the edge-of-the-room version now, not on Thursday: logging only what you overhear from a seat by the door counts the same.
+```
 
 ---
 
@@ -171,6 +428,6 @@ Read (1–4). Implement (5–7). Negotiate (8–11). Horizon (12).
 
 Can you give a reply that closes the exchange, and say which type it was?
 
-Can you name a setting where "how are you?" is a real question?
+Can you say a sentence twice --- once hard to refuse, once easy to skip --- and name what you changed?
 
-Can you see the branch while you're standing at it?
+Can you say why "the reply is a token" is a claim about *this* protocol?
