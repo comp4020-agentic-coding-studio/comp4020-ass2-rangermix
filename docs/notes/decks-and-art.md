@@ -183,7 +183,14 @@ gained and is the record of which weeks have been through the pipeline again.
       al. (2010): what an envelope marks, who is wrong when one misses, and
       whether the decoder is missing at all; three exercises; the maxim-to-
       payload rule under the worked table; 103.0 min
-- [ ] Weeks 10, 11, 12 --- untouched, 58--73 min short.
+- [x] Week 10 --- Quinn & Chaudoir (2009) and Corrigan & Matthews (2003): the
+      other side of the ledger, and levels rather than a switch; two exercises;
+      the study-design table; 101.7 min. **Every addition sits before the
+      register break or after "Right. Mechanics."** The exercise that first
+      landed immediately before the break was moved back one slide, so the
+      break is entered from a quiet conceptual slide rather than out of a
+      show of hands.
+- [ ] Weeks 11, 12 --- untouched, 68 and 73 min short.
 
 ### Rules learned
 

@@ -239,6 +239,12 @@ export const terms: Term[] = [
       "A one-turn repair for going past a rate limit: name it lightly and return to a lower level.",
   },
   {
+    term: "anticipated stigma",
+    week: 10,
+    definition:
+      "What you expect would happen if people knew. Distinct from the effort of concealing, and the thing that predicted distress across thirteen concealable identities.",
+  },
+  {
     term: "the five audiences",
     week: 10,
     definition:
