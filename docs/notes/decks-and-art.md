@@ -172,9 +172,9 @@ gained and is the record of which weeks have been through the pipeline again.
 - [x] Week 9 --- Laurenceau et al. (1998) and Huang et al. (2017), plus the
       correction and the published dispute attached to Huang; two new terms
       (*responsiveness*, *follow-up question*); a second exercise; 104.8 min
-- [ ] Week 8 --- researched and expanded, but still 11.5 min short at 93.5. It
-      is the one expanded week the check still flags. Needs roughly one more
-      source or one more in-room exercise.
+- [x] Week 8 --- Brooks, Gino & Schweitzer (2015): the fear that asking makes
+      you look worse, and the three moderators that tell you *who* to write to;
+      103.9 min
 - [ ] Weeks 2, 3, 10, 11, 12 --- untouched, all 58--79 min short.
 
 ### Rules learned

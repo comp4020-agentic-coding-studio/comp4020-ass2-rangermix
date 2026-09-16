@@ -10,14 +10,14 @@ request for help or an extension request? It never says.
 | Stephens, Houser & Cowan (2009), R U able to meat me: the impact of students' overly casual email messages to instructors, *Communication Education* 58(3) | abstract (OpenAlex), 2026-09-15 | casual versus formal email accounted for 48--64% of the variance in instructors' affect towards the student, the student's credibility, and attitude to the message; it also affected willingness to agree to a meeting; instructors are bothered more than students; unsigned emails and shortcuts like "RU" bother instructors more than students |
 | Flynn & Lake (2008), If you need help, just ask: underestimating compliance with direct requests for help, *Journal of Personality and Social Psychology* 95(1) | abstract (OpenAlex), 2026-09-15 | people underestimated by as much as 50% how likely others were to agree to a direct request for help; help-seekers attend to the helper's cost of saying yes and underweight the social cost of saying no |
 | Gurbuz, Hanley & Riby (2019), University students with autism: the social and academic experiences of university in the UK, *JADD* 49(2) | abstract (OpenAlex), 2026-09-15 | 26 autistic and 158 non-autistic students; autistic students reported more social challenges and mental-health difficulties, more thoughts of withdrawing, and academic strengths |
+| Davies & Bagnall (2024), "A good transition is just key": the views and experiences of disability support staff..., *Autism in Adulthood* 7(2), 155--170 | abstract (OpenAlex, full text of the structured abstract; re-verified against the API independently of the discovery brief), 2026-09-16 | semi-structured interviews with **11 disability support staff at seven UK universities**, content analysis plus reflexive thematic analysis. Staff described transition as an **ongoing process rather than an event**; reported academic (in-class adjustments) and non-academic (social groups) supports; and **acknowledged barriers including lacking resources and "relying on students to self-advocate their needs"** --- the plain-language summary puts it as having "relied too much on students asking for what they need". Three recommendation themes: comprehensive preparation and sustained support; positive communication between stakeholders; an accessible and inclusive university culture. **Universal design** named as a way to alleviate pressure on individual services. Authors' stated limitation: **staff perspectives only** |
+| Martino, Brantley & Scarpa (2025), The role of self-advocacy and self-determination in positive adjustment for autistic adolescents and young adults: a mini-review, *Frontiers in Child and Adolescent Psychiatry* 4, 1542543 | abstract (OpenAlex; re-verified independently), 2026-09-16 | mini-review; findings "point to **encouraging associations**" of self-advocacy and self-determination with **educational and employment outcomes**, socialisation, relationship development, identity development, self-concept and quality of life. The hedge is the authors' own; these are associations in a short review, not a demonstrated effect of instruction |
+| Brooks, Gino & Schweitzer (2015), Smart people ask for (my) advice: seeking advice boosts perceptions of competence, *Management Science* 61(6), 1421--1435 | abstract (Crossref, full publisher abstract), 2026-09-16 | people are **reticent to seek advice for fear of appearing incompetent**, and the authors state plainly that **"this fear, however, is misplaced"**: people perceive those who seek advice as **more competent** than those who do not. Three moderators: the effect is stronger **when the task is difficult** rather than easy, when advice is sought **from that person personally** rather than from others, and when advice is sought **from experts** rather than from non-experts or not at all |
 
 Checked and cut:
 
 - **Bohns & Flynn (2010), "Why didn't you just ask?"** No abstract and no open
   full text.
-
-| Davies & Bagnall (2024), "A good transition is just key": the views and experiences of disability support staff..., *Autism in Adulthood* 7(2), 155--170 | abstract (OpenAlex, full text of the structured abstract; re-verified against the API independently of the discovery brief), 2026-09-16 | semi-structured interviews with **11 disability support staff at seven UK universities**, content analysis plus reflexive thematic analysis. Staff described transition as an **ongoing process rather than an event**; reported academic (in-class adjustments) and non-academic (social groups) supports; and **acknowledged barriers including lacking resources and "relying on students to self-advocate their needs"** --- the plain-language summary puts it as having "relied too much on students asking for what they need". Three recommendation themes: comprehensive preparation and sustained support; positive communication between stakeholders; an accessible and inclusive university culture. **Universal design** named as a way to alleviate pressure on individual services. Authors' stated limitation: **staff perspectives only** |
-| Martino, Brantley & Scarpa (2025), The role of self-advocacy and self-determination in positive adjustment for autistic adolescents and young adults: a mini-review, *Frontiers in Child and Adolescent Psychiatry* 4, 1542543 | abstract (OpenAlex; re-verified independently), 2026-09-16 | mini-review; findings "point to **encouraging associations**" of self-advocacy and self-determination with **educational and employment outcomes**, socialisation, relationship development, identity development, self-concept and quality of life. The hedge is the authors' own; these are associations in a short review, not a demonstrated effect of instruction |
 
 ## What the sources say
 
@@ -44,8 +44,26 @@ a better email, which risks reading as "the fix is for you to get better at
 asking". These staff recommend the opposite fix --- universal design, and a
 culture where fewer individual adjustments are needed. The week now carries
 both, in that order: here is the script, because it works this semester; and
-here is who thinks the burden is misplaced, because they are the people
-carrying the other end of it.
+here is who says the asking should not be the student's job alone,
+because they are the people on the other end of it.
+
+Brooks et al. answers a fear the week had been leaving unaddressed. Flynn and
+Lake cover "they will say no". This covers the other one, which is closer to
+why an email stays in drafts: *they will think less of me for asking.* The
+answer is a measured effect in the opposite direction, and the authors say the
+fear is misplaced in those words.
+
+The moderators are the part that changes the advice rather than merely
+reassuring. Seeking advice read as most competent when the task was **hard**,
+when the advice was sought from that person **personally**, and when the person
+asked was an **expert**. Read as instructions, those are three edits to an
+email: ask about the part that is genuinely difficult, ask *them* rather than
+broadcasting, and ask the person who actually knows. Week 8's seven clauses
+already produce two of those by accident; now the week says why.
+
+The scope is a set of experiments about perceived competence, mostly in work
+and decision-making settings rather than universities, and the week says so
+rather than implying a tutor was ever studied.
 
 Martino et al. is why an hour on scripts is defensible at all: self-advocacy
 is associated with educational and employment outcomes. Their own hedge
@@ -77,6 +95,11 @@ small (26).
   stakeholders. Week 8 teaches the script *and* says this.
 - **Asking well is associated with outcomes that matter** (Martino et al.),
   with the authors' hedge kept intact.
+- **The fear that asking makes you look worse runs the wrong way** (Brooks et
+  al.), and the paper says the fear is misplaced in its own words.
+- **Who you ask and how hard the thing is both matter** (Brooks et al.'s three
+  moderators). This is the week's one piece of advice about *choosing* the
+  recipient rather than formatting the message.
 - Week 8's seven email clauses, the extension template and the office-hours
   opener remain **the course's own**, tested only in this course's labs.
 
