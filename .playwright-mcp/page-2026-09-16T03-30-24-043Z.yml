@@ -1,0 +1,248 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - navigation "Main" [ref=e3]:
+    - generic [ref=e4]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /comp4020-ass2-rangermix/
+        - img "Slop University" [ref=e7]
+      - list [ref=e9]:
+        - listitem [ref=e10]:
+          - link "Lectures" [ref=e11] [cursor=pointer]:
+            - /url: /comp4020-ass2-rangermix/lectures/
+        - listitem [ref=e12]:
+          - link "Labs" [ref=e13] [cursor=pointer]:
+            - /url: /comp4020-ass2-rangermix/sessions/
+        - listitem [ref=e14]:
+          - link "Readings" [ref=e15] [cursor=pointer]:
+            - /url: /comp4020-ass2-rangermix/readings/
+        - listitem [ref=e16]:
+          - link "Assessment" [ref=e17] [cursor=pointer]:
+            - /url: /comp4020-ass2-rangermix/assessments/
+        - listitem [ref=e18]:
+          - link "People" [ref=e19] [cursor=pointer]:
+            - /url: /comp4020-ass2-rangermix/people/
+        - listitem [ref=e20]:
+          - link "Policies" [ref=e21] [cursor=pointer]:
+            - /url: /comp4020-ass2-rangermix/policies/
+      - button "Search (Cmd+K)" [ref=e22] [cursor=pointer]
+  - main [ref=e25]:
+    - 'heading "Week 4: Latency and Turn-Taking" [level=1] [ref=e26]'
+    - paragraph [ref=e27]: The gap before a reply is measured in milliseconds, and listeners have learned what long ones usually mean. An undocumented timeout, documented.
+    - paragraph [ref=e28]:
+      - strong [ref=e29]: Lecture, 16 March 2027
+      - link "Open the slides" [ref=e30] [cursor=pointer]:
+        - /url: /comp4020-ass2-rangermix/decks/week-04/
+    - article [ref=e31]:
+      - paragraph [ref=e32]: “Want to come to the thing on Friday?”
+      - paragraph [ref=e33]: A pause. ”…Yeah, maybe.”
+      - paragraph [ref=e34]: "The person who asked has already heard “no”. Not because of “maybe”, which came last, but because of the pause, which came first. This week is about that pause: how long the protocol allows, what a longer one means, and what to do when you need more time than the protocol gives."
+      - heading "A system with no referee" [level=2] [ref=e35]:
+        - text: A system with no referee
+        - link [aria-hidden] [ref=e36] [cursor=pointer]:
+          - /url: "#a-system-with-no-referee"
+          - text: "#"
+      - paragraph [ref=e37]:
+        - text: Nobody hands out turns in a conversation. There is no chair, no queue and no published order, and yet everyone keeps time. Sacks, Schegloff and Jefferson described turn-taking as
+        - strong [ref=e38]: locally managed
+        - text: and
+        - strong [ref=e39]: party-administered
+        - text: ": the people talking run it themselves, turn by turn (Sacks et al., 1974)."
+      - paragraph [ref=e40]: A distributed system with no coordinator and no documentation still has to agree on timing. It does, remarkably precisely.
+      - figure [ref=e41]:
+        - img "A long hall in a Montreal telephone exchange in the late 1890s. Two facing banks of switchboards run the length of the room, with about twenty operators at each, headsets on, reaching up into the jackfields. One supervisor sits at a desk in the aisle between them." [ref=e42]
+        - generic [ref=e43]:
+          - text: A manual exchange, Montreal, in the late 1890s. Forty operators connecting calls in parallel, each holding one conversation's timing in their head. The room has one supervisor and no clock that anyone is watching.
+          - generic [ref=e44]:
+            - link "Telephone exchange Montreal, Cassell & Co." [ref=e45] [cursor=pointer]:
+              - /url: https://commons.wikimedia.org/wiki/File:Telephone_exchange_Montreal_QE3_33.jpg
+            - text: ", between 1897 and 1899 — public domain"
+      - paragraph [ref=e46]: The exchange above is the analogy, and the joke is that it is the easier system. Its operators were trained, paid and given a manual. The protocol in your tutorial runs the same trick with none of those.
+      - heading "The clock" [level=2] [ref=e47]:
+        - text: The clock
+        - link [aria-hidden] [ref=e48] [cursor=pointer]:
+          - /url: "#the-clock"
+          - text: "#"
+      - paragraph [ref=e49]: Across ten languages, from major world languages to small indigenous communities, conversations avoid overlapping talk and keep the silence between turns short. Average gaps differed between languages, but every language’s average fell within 250 ms of the cross-language mean (Stivers et al., 2009). The authors suggest that people are sensitive enough to these small tempo differences to experience them as large differences in style.
+      - paragraph [ref=e50]:
+        - text: How short is short? A typical gap between turns is
+        - strong [ref=e51]: of the order of 200 ms
+        - text: . Planning and producing even a short utterance takes
+        - strong [ref=e52]: over 600 ms
+        - text: . The two numbers can only both be true if listeners start preparing their reply
+        - emphasis [ref=e53]: before
+        - text: the speaker finishes, by predicting where the turn will end (Levinson & Torreira, 2015).
+      - figure "The gap before a reply, in milliseconds. Numbers from Levinson & Torreira (2015) and Kendrick & Torreira (2015); the timeout band is the course's name for where the inference begins." [ref=e54]:
+        - img "The gap before a reply, in milliseconds. Numbers from Levinson & Torreira (2015) and Kendrick & Torreira (2015); the timeout band is the course's name for where the inference begins." [ref=e55]:
+          - generic [ref=e57]: "timeout: a no is more likely"
+          - generic [ref=e64]: "0"
+          - generic [ref=e65]: "500"
+          - generic [ref=e66]: "1000"
+          - generic [ref=e67]: "1500"
+          - generic [ref=e68]: ms
+          - generic [ref=e69]:
+            - generic [ref=e71]: ordinary gap
+            - generic [ref=e72]: about 200 ms
+          - generic [ref=e73]:
+            - generic [ref=e75]: planning a reply
+            - generic [ref=e76]: over 600 ms
+        - list [ref=e77]:
+          - listitem [ref=e78]: "200 ms: ordinary gap, about 200 ms"
+          - listitem [ref=e79]: "600 ms: planning a reply, over 600 ms"
+          - listitem [ref=e80]: "700 to 1500 ms: timeout: a no is more likely"
+      - paragraph [ref=e82]: So the protocol’s clock assumes you started composing your answer while the question was still being asked. Anyone who waits to hear the whole question before thinking about it is, by that clock, already late.
+      - heading "The undocumented timeout" [level=2] [ref=e83]:
+        - text: The undocumented timeout
+        - link [aria-hidden] [ref=e84] [cursor=pointer]:
+          - /url: "#the-undocumented-timeout"
+          - text: "#"
+      - paragraph [ref=e85]:
+        - text: Here is why a pause sounds like no. Kendrick and Torreira measured replies in telephone calls. Most acceptances and rejections came at similar speeds. But once a gap reached
+        - strong [ref=e86]: 700 ms or more
+        - text: ", rejections clearly outnumbered acceptances, and even small departures from a normal gap made a plain “yes” less likely (Kendrick & Torreira, 2015)."
+      - paragraph [ref=e87]: Listeners have learned the pattern. They aren’t being unfair; they’re right, on average. Across thousands of conversations, a long gap has usually come before a refusal, so a long gap is heard as one on its way.
+      - paragraph [ref=e88]:
+        - text: The course calls this the
+        - strong [ref=e89]: timeout
+        - text: ": the point at which a listener stops simply waiting and starts inferring meaning from the gap. It isn’t a hard number. The research supports “about 200 ms is ordinary, and by 700 ms a no is more likely than a yes”. Past that, the inference runs whether or not anyone decides to run it."
+      - 'figure "The same “yes”, heard differently. Top: inside the ordinary gap. Bottom: past the timeout, where the listener is already preparing for a no." [ref=e90]':
+        - 'img "The same “yes”, heard differently. Top: inside the ordinary gap. Bottom: past the timeout, where the listener is already preparing for a no." [ref=e92]':
+          - generic [ref=e95]: Asker
+          - generic [ref=e98]: Responder
+          - generic [ref=e101]: Coming on Friday?
+          - generic [ref=e105]:
+            - generic [ref=e108]: Yes!
+            - generic [ref=e109]: "heard: yes"
+            - generic [ref=e110]: ~200 ms
+          - generic [ref=e111]: Coming on Friday?
+          - generic [ref=e115]:
+            - generic [ref=e118]: …yes.
+            - generic [ref=e119]: "heard: a reluctant yes"
+            - generic [ref=e120]: 1.5 s
+        - list [ref=e121]:
+          - listitem [ref=e122]: "Asker to Responder: Coming on Friday?"
+          - listitem [ref=e123]: "Responder to Asker: Yes! (~200 ms). heard: yes"
+          - listitem [ref=e124]: "Asker to Responder: Coming on Friday?"
+          - listitem [ref=e125]: "Responder to Asker: …yes. (1.5 s). heard: a reluctant yes"
+      - heading "Who the timeout misfires on" [level=2] [ref=e127]:
+        - text: Who the timeout misfires on
+        - link [aria-hidden] [ref=e128] [cursor=pointer]:
+          - /url: "#who-the-timeout-misfires-on"
+          - text: "#"
+      - paragraph [ref=e129]: "A statistical inference misfires on everyone it wasn’t built from. A long gap might mean reluctance. It might also mean:"
+      - list [ref=e130]:
+        - listitem [ref=e131]: the person is translating from another language;
+        - listitem [ref=e132]: they were taught to consider a question before answering it;
+        - listitem [ref=e133]: they process spoken language at their own pace and need the whole sentence;
+        - listitem [ref=e134]: they’re choosing between two answers that are both yes.
+      - paragraph [ref=e135]:
+        - text: "None of those is a no, and the listener’s timeout reads all of them as one. If you’re the fast one in a conversation, the course’s instruction is the week’s only rule aimed at listeners:"
+        - strong [ref=e136]: before you conclude, ask.
+        - text: “No pressure either way. Is that a yes?” costs one turn.
+      - heading "Hold tokens" [level=2] [ref=e137]:
+        - text: Hold tokens
+        - link [aria-hidden] [ref=e138] [cursor=pointer]:
+          - /url: "#hold-tokens"
+          - text: "#"
+      - paragraph [ref=e139]:
+        - text: "If you need more time than the clock gives, the protocol has a documented way to take it, even though nobody documented it: fill the gap with a sound that means"
+        - emphasis [ref=e140]: I’m still here, and I’m thinking
+        - text: . The gap the listener would have read is no longer empty.
+      - paragraph [ref=e141]: "The scripts are the course’s. The reason they work is Kendrick and Torreira’s: what gets read is the empty gap, and a hold token fills it."
+      - table [ref=e143]:
+        - rowgroup [ref=e144]:
+          - row [ref=e145]:
+            - columnheader "Situation" [ref=e146]
+            - columnheader "Hold token" [ref=e147]
+        - rowgroup [ref=e148]:
+          - row [ref=e149]:
+            - cell "A question you want to think about" [ref=e150]
+            - cell "“Hm, let me think about that.”" [ref=e151]
+          - row [ref=e152]:
+            - cell "An invitation you’re keen on but need to check" [ref=e153]
+            - cell "“Oh, nice. Let me just check my week.”" [ref=e154]
+          - row [ref=e155]:
+            - cell "A hard question in a tutorial" [ref=e156]
+            - cell "“Good question. Give me a second.”" [ref=e157]
+          - row [ref=e158]:
+            - cell "Anything, when you know you’ll take a while" [ref=e159]
+            - cell "“Mm.”" [ref=e160]
+      - paragraph [ref=e161]:
+        - text: A
+        - strong [ref=e162]: standing hold token
+        - text: resets the clock for a whole relationship. Said once, early and without apology, “I sometimes take a second to answer. A pause from me isn’t a no” tells the other person to switch their timeout off. That is the course’s recommendation, not a tested finding. Week 11 is about why it tends to work better between people who have agreed on it.
+      - heading "When turns collide" [level=2] [ref=e163]:
+        - text: When turns collide
+        - link [aria-hidden] [ref=e164] [cursor=pointer]:
+          - /url: "#when-turns-collide"
+          - text: "#"
+      - paragraph [ref=e165]: "The protocol avoids overlap, but it happens. When two people start at once, one of them stops, and a quick repair puts the conversation back:"
+      - list [ref=e166]:
+        - listitem [ref=e167]: “Sorry, go ahead.”
+        - listitem [ref=e168]: “No, you go.”
+        - listitem [ref=e169]: “You first. Mine can wait.”
+      - paragraph [ref=e170]: Whoever says one of those first has made a small, cheap move that most listeners register as considerate. Week 5 covers repair properly. This is the preview.
+    - region "Check yourself against this week" [ref=e171]:
+      - heading "Check yourself against this week" [level=2] [ref=e172]
+      - paragraph [ref=e173]: Lines you can check on yourself, without asking anyone. If one is still false by Sunday, that is your next journal entry.
+      - list [ref=e174]:
+        - listitem [ref=e175]: You can say roughly how long an ordinary gap between turns is, and roughly where a longer gap starts to be heard as reluctance.
+        - listitem [ref=e176]: You have a hold token in your own words, and have used it at least once this week.
+        - listitem [ref=e177]: When someone pauses before answering you, you can hold off reading the pause as a no, and ask instead.
+        - listitem [ref=e178]: You can explain why listeners read a delay as refusal without saying they are being unfair.
+    - region [ref=e179]:
+      - heading "Readings" [level=2] [ref=e180]
+      - list [ref=e181]:
+        - listitem [ref=e182]:
+          - generic [ref=e183]:
+            - text: Sacks, H., Schegloff, E. A. & Jefferson, G. (1974).
+            - link "A simplest systematics for the organization of turn-taking for conversation" [ref=e184] [cursor=pointer]:
+              - /url: /comp4020-ass2-rangermix/readings/sacks-1974-turn-taking/
+            - text: . Language, 50(4), 696–735.
+          - paragraph [ref=e185]: "The classic account of who speaks next, and when: a system run locally, by the people talking, with nobody in charge."
+        - listitem [ref=e186]:
+          - generic [ref=e187]:
+            - text: Stivers, T. et al. (2009).
+            - link "Universals and cultural variation in turn-taking in conversation" [ref=e188] [cursor=pointer]:
+              - /url: /comp4020-ass2-rangermix/readings/stivers-2009-turn-taking-universals/
+            - text: . Proceedings of the National Academy of Sciences, 106(26), 10587–10592.
+          - paragraph [ref=e189]: "Ten languages, one timing system: everyone avoids overlap and minimises silence, and the differences are smaller than they feel."
+        - listitem [ref=e190]:
+          - generic [ref=e191]:
+            - text: Kendrick, K. H. & Torreira, F. (2015).
+            - 'link "The Timing and Construction of Preference: A Quantitative Study" [ref=e192] [cursor=pointer]':
+              - /url: /comp4020-ass2-rangermix/readings/kendrick-2015-timing-preference/
+            - text: . Discourse Processes, 52(4), 255–289.
+          - paragraph [ref=e193]: "Why a pause sounds like no: only gaps of 700 ms or more held clearly more rejections than acceptances."
+        - listitem [ref=e194]:
+          - generic [ref=e195]:
+            - text: Levinson, S. C. & Torreira, F. (2015).
+            - link "Timing in turn-taking and its implications for processing models of language" [ref=e196] [cursor=pointer]:
+              - /url: /comp4020-ass2-rangermix/readings/levinson-2015-timing-turn-taking/
+            - text: . Frontiers in Psychology, 6, 731.
+          - paragraph [ref=e197]: Gaps between turns are about 200 ms; planning a sentence takes over 600 ms. So listeners start answering before you finish.
+    - region [ref=e198]:
+      - heading "Teaching team" [level=2] [ref=e199]
+      - list [ref=e200]:
+        - listitem [ref=e201]:
+          - link "Tamsin Oyelaran-Hart" [ref=e202] [cursor=pointer]:
+            - /url: /comp4020-ass2-rangermix/people/tamsin-oyelaran-hart/
+          - text: ", Tutor"
+    - complementary "Related" [ref=e203]:
+      - heading "Related" [level=2] [ref=e204]
+      - list [ref=e205]:
+        - listitem [ref=e206]:
+          - link "Stopwatch Lab" [ref=e207] [cursor=pointer]:
+            - /url: /comp4020-ass2-rangermix/sessions/week-04/
+  - contentinfo [ref=e208]:
+    - generic [ref=e209]:
+      - separator [ref=e210]
+      - paragraph [ref=e211]:
+        - text: Unless otherwise indicated, this site is licensed under a
+        - link "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International" [ref=e212] [cursor=pointer]:
+          - /url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+        - text: licence.
+      - separator [ref=e213]
+      - navigation "Legal" [ref=e214]:
+        - generic [aria-hidden] [ref=e215]: "|"
+        - button "Switch to dark theme" [ref=e216] [cursor=pointer]

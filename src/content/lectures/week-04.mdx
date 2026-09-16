@@ -21,6 +21,8 @@ related:
 
 import TimingLine from "../../components/sketch/TimingLine.astro";
 import SequenceDiagram from "../../components/sketch/SequenceDiagram.astro";
+import Plate from "../../components/Plate.astro";
+import exchange from "../../assets/images/sourced/exchange-montreal-1897.jpg";
 
 "Want to come to the thing on Friday?"
 
@@ -40,6 +42,20 @@ people talking run it themselves, turn by turn (Sacks et al., 1974).
 
 A distributed system with no coordinator and no documentation still has to
 agree on timing. It does, remarkably precisely.
+
+<Plate
+  src={exchange}
+  alt="A long hall in a Montreal telephone exchange in the late 1890s. Two facing banks of switchboards run the length of the room, with about twenty operators at each, headsets on, reaching up into the jackfields. One supervisor sits at a desk in the aisle between them."
+  caption="A manual exchange, Montreal, in the late 1890s. Forty operators connecting calls in parallel, each holding one conversation's timing in their head. The room has one supervisor and no clock that anyone is watching."
+  title="Telephone exchange Montreal, Cassell & Co."
+  href="https://commons.wikimedia.org/wiki/File:Telephone_exchange_Montreal_QE3_33.jpg"
+  licence="public domain"
+  date="between 1897 and 1899"
+/>
+
+The exchange above is the analogy, and the joke is that it is the easier
+system. Its operators were trained, paid and given a manual. The protocol in
+your tutorial runs the same trick with none of those.
 
 ## The clock
 

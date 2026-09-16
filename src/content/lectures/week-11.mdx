@@ -24,6 +24,8 @@ related:
 
 import MarginNote from "../../components/sketch/MarginNote.astro";
 import Chain from "../../components/sketch/Chain.astro";
+import Plate from "../../components/Plate.astro";
+import arpanet from "../../assets/images/sourced/arpanet-map-1977.png";
 
 In week 2, the double empathy problem was a theory: when two people of
 different implementations misunderstand each other, the misunderstanding is
@@ -120,6 +122,16 @@ implementation for you.
 exchange at hand: what each side will send, what each will accept, and how
 either one flags a mismatch. Both sides concede something, and neither side
 replaces itself.
+
+<Plate
+  src={arpanet}
+  alt="A drafted logical map of the ARPANET from March 1977: dozens of labelled boxes for machines of many different makes --- PDP-10, PDP-11, IBM 360 and 370, Honeywell H6180, Univac 1108 --- joined by lines, with satellite circuits reaching to Hawaii, to NORSAR in Norway, and to London. A note at the foot reads that no claim can be made for the map's accuracy."
+  caption="The ARPANET, March 1977. Every box is a different make of computer, and none of them was replaced to join. They interoperated: an agreed protocol at the boundary, and each machine kept its own architecture behind it. Read the note at the foot, too — this map documents its own unreliability, which is more than the social protocol manages."
+  title="Arpanet logical map, March 1977"
+  href="https://commons.wikimedia.org/wiki/File:Arpanet_logical_map,_march_1977.png"
+  licence="public domain"
+  date="March 1977"
+/>
 
 | Question | Conversion | Interoperation |
 | --- | --- | --- |
