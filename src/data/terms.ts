@@ -221,6 +221,18 @@ export const terms: Term[] = [
       "The pace of escalation the other person can match: stay within one level of their last disclosure, step up one level at a time, and wait for them to step.",
   },
   {
+    term: "responsiveness",
+    week: 9,
+    definition:
+      "Whether the person who disclosed came away feeling received. The field the depth scale doesn't have, and a partial mediator between disclosure and intimacy.",
+  },
+  {
+    term: "follow-up question",
+    week: 9,
+    definition:
+      "A question that picks up what the other person just said, as opposed to one that switches topic. A turn that costs no disclosure of your own.",
+  },
+  {
     term: "step-down",
     week: 9,
     definition:

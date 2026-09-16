@@ -161,8 +161,21 @@ material. So each week gets
 
 ### Status
 
+Re-run `pnpm check:timing` for the live figures; this list says what each week
+gained and is the record of which weeks have been through the pipeline again.
+
 - [x] Week 1 --- Duranti (1997) and Stivers & Rossano (2010); two exercises; 96.7 min
-- [ ] Weeks 2--12
+- [x] Week 4 --- 96.3 min
+- [x] Week 5 --- 97.2 min
+- [x] Week 6 --- 99.6 min
+- [x] Week 7 --- 96.0 min
+- [x] Week 9 --- Laurenceau et al. (1998) and Huang et al. (2017), plus the
+      correction and the published dispute attached to Huang; two new terms
+      (*responsiveness*, *follow-up question*); a second exercise; 104.8 min
+- [ ] Week 8 --- researched and expanded, but still 11.5 min short at 93.5. It
+      is the one expanded week the check still flags. Needs roughly one more
+      source or one more in-room exercise.
+- [ ] Weeks 2, 3, 10, 11, 12 --- untouched, all 58--79 min short.
 
 ### Rules learned
 
@@ -172,6 +185,24 @@ material. So each week gets
   names the count and not the contents, and says on the slide that it is doing
   so. That is the citation rule applied to the course itself, and it turns out
   to teach better than a fabricated list would.
+- **Trim to the target, don't only add to it.** Week 9's first pass overshot
+  105 by six minutes, and the fix was not to shorten a slide but to find what
+  had become redundant: a setup slide whose question the next slide answered,
+  and a second rendering of the four signals three slides after the first. The
+  same rule the drawings follow --- a second copy of rows that already exist
+  shows nothing --- applies to slides.
+- **The speaker notes are content, and the frequency rule reaches them.** Two
+  notes in week 9's deck claimed what most of the room would guess and which
+  signal is most common. Neither was cited, both read as findings to whoever
+  reads the notes, and both were rewritten as instructions to the lecturer.
+- **A paper's correction notice and its published critique are teachable.**
+  Huang et al. (2017) carries a 2025 correction from an independent audit, a
+  2019 reanalysis disputing its speed-dating study, and the authors' reply. In
+  a course about missing specifications, citing a finding *with* its
+  maintenance record is the argument rather than a caveat on it --- and it
+  forces the honest version: the course takes the lab studies, repeats the
+  critique's point that a second date is a proxy for liking rather than liking,
+  and does not adjudicate a model it has not run.
 - **A new source should change the advice, not decorate it.** Stivers and
   Rossano earned their place because obligation-as-a-gradient changes what the
   week tells both halves of the room to do. A source that only restates what
