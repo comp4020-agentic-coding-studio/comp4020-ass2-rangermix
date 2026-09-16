@@ -111,6 +111,22 @@ turned up by opening a page and looking at it.
   diffusion-chain *method*, not the results: a line that visibly thinned as it
   travelled would look like a measurement. The mixed chain's seats are left
   unmarked because the review recorded the compositions, not the seating order.
+- **Two plate bugs, both invisible to every check in the repo.** Auditing all
+  twelve decks in the browser --- measuring each slide's visible descendants
+  against its 720px box --- found week 4's photographic plate overflowing the
+  bottom by 306px, caption and all. `Plate.astro` sets `width: 100%; height:
+  auto`, which is right in an article column and wrong on a 1280px slide. The
+  deck stylesheet now gives a plate the same height budget the drawings have.
+  The second bug was in the same line: the component's `sizes` hint describes
+  the article column, so a slide was being served the 543px variant of a
+  1920px scan and stretching it. `Plate` now takes a `sizes` prop and the two
+  deck plates pass `50vw`, which fetches ~960px instead.
+  *Method note for the next session:* count only visible descendants. The first
+  pass flagged five slides, and four were the `visually-hidden` text
+  equivalents the primitives pair with their SVGs --- clipped to 1px, invisible,
+  and outside the section box by design. Skip any element under a clipped or
+  `.visually-hidden` ancestor. And let lazy images load before you screenshot;
+  an unloaded plate is a black rectangle that looks exactly like a styling bug.
 - **Geometry is only checkable by looking.** Every drawing here had at least one
   collision or clipped line that built cleanly, passed axe, and was obviously
   wrong on screen. Text overflowing a fixed box was the recurring one, so each

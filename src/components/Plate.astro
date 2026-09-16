@@ -30,13 +30,29 @@ interface Props {
   /** Date of the original, where the record gives one. */
   date?: string;
   widths?: number[];
+  /** Layout hint for which generated width to fetch. The default describes the
+   *  article column. A deck is a 1280px slide scaled to fill the screen, so a
+   *  plate on a slide is displayed far wider than 34rem and must say so, or the
+   *  browser fetches the column-sized bitmap and stretches it on the projector. */
+  sizes?: string;
 }
 
-const { src, alt, caption, title, href, licence, author, date, widths = [520, 780, 1040] } = Astro.props;
+const {
+  src,
+  alt,
+  caption,
+  title,
+  href,
+  licence,
+  author,
+  date,
+  widths = [520, 780, 1040],
+  sizes = "(min-width: 60rem) 34rem, 92vw",
+} = Astro.props;
 ---
 
 <figure class="plate">
-  <Image src={src} alt={alt} widths={widths} sizes="(min-width: 60rem) 34rem, 92vw" loading="lazy" />
+  <Image src={src} alt={alt} widths={widths} sizes={sizes} loading="lazy" />
   <figcaption>
     {caption}
     <span class="plate-source">

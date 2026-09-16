@@ -28,6 +28,29 @@
   text-align: center;
 }
 
+/* A plate needs the same height budget a drawing gets, for the same reason and
+   with the opposite sign. On the site the scan is capped by the text column it
+   sits in; a slide is 1280 wide, so `width: 100%` on a landscape scan resolves
+   to a height well past the 720px box and the caption falls off the bottom.
+   Giving the image a height and letting the width follow puts the provenance
+   back on the slide, which is the whole point of printing it. */
+.reveal .plate {
+  margin: 0.5rem auto 0;
+}
+
+.reveal .plate img {
+  width: auto !important;
+  max-width: 100% !important;
+  height: 470px !important;
+  object-fit: contain;
+  margin-inline: auto;
+}
+
+.reveal .plate figcaption {
+  font-size: 0.55em;
+  text-align: center;
+}
+
 /* Margin notes can't float into a margin a slide doesn't have. */
 .reveal .margin-note {
   float: none;
