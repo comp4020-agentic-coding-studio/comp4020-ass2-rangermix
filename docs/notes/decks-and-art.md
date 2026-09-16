@@ -190,7 +190,12 @@ gained and is the record of which weeks have been through the pipeline again.
       landed immediately before the break was moved back one slide, so the
       break is entered from a quiet conceptual slide rather than out of a
       show of hands.
-- [ ] Weeks 11, 12 --- untouched, 68 and 73 min short.
+- [x] Week 11 --- Alkhaldi et al. (2019) and Morrison et al. (2020): the
+      mechanism joining misreading to being liked less, and the five-minute
+      conversation where the judgement travelled but the withdrawal didn't;
+      three exercises; the ARPANET plate moved onto the deck; a limits section
+      before the thesis; 103.3 min
+- [ ] Week 12 --- untouched, 73 min short.
 
 ### Rules learned
 
