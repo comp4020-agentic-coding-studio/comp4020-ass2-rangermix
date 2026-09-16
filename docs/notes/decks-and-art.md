@@ -195,7 +195,13 @@ gained and is the record of which weeks have been through the pipeline again.
       conversation where the judgement travelled but the withdrawal didn't;
       three exercises; the ARPANET plate moved onto the deck; a limits section
       before the thesis; 103.3 min
-- [ ] Week 12 --- untouched, 73 min short.
+- [x] Week 12 --- Sala et al. (2020) and Moskowitz (2004): OI-1 asked of the
+      people concerned, and OI-3's "contested" replaced by the actual comment;
+      two exercises; the ethics questions previewed from the lab rather than
+      re-coined; 104.3 min
+
+**All twelve weeks now pass `pnpm check:timing`**, running 96.0--105.1 minutes
+against the 105-minute target. Job 3 is done.
 
 ### Rules learned
 
@@ -230,6 +236,17 @@ gained and is the record of which weeks have been through the pipeline again.
   labelled as the course's own, and the one condition the effect did survive
   under --- negative events --- happens to be the condition every field note is
   written in.
+- **Never re-coin something a later week already settled.** Week 12's deck
+  grew a table of four "ethics rules" for the field experiment --- and the lab
+  has carried four ethics *questions* since it was written, which the capstone
+  brief cites by name. Two competing four-item lists in the same week is
+  exactly the failure the harness's "reuse terms exactly" rule exists to catch,
+  and nothing in `pnpm check` would have found it. Check the lab and the
+  assessment briefs before adding a list to a lecture.
+- **The vocabulary test is right about negations too.** "Nothing here was a
+  cure for anything" was written to reject the framing and still failed the
+  build. Saying what is true --- "a convention is not a condition" --- is
+  shorter and lands harder, which is the argument the test is enforcing.
 - **A new source should change the advice, not decorate it.** Stivers and
   Rossano earned their place because obligation-as-a-gradient changes what the
   week tells both halves of the room to do. A source that only restates what
