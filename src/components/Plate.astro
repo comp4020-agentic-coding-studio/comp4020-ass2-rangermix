@@ -25,12 +25,14 @@ interface Props {
   href: string;
   /** Exactly what the source's licence field says. */
   licence: string;
+  /** Required by an attribution licence; the record's own credit. */
+  author?: string;
   /** Date of the original, where the record gives one. */
   date?: string;
   widths?: number[];
 }
 
-const { src, alt, caption, title, href, licence, date, widths = [520, 780, 1040] } = Astro.props;
+const { src, alt, caption, title, href, licence, author, date, widths = [520, 780, 1040] } = Astro.props;
 ---
 
 <figure class="plate">
@@ -38,7 +40,7 @@ const { src, alt, caption, title, href, licence, date, widths = [520, 780, 1040]
   <figcaption>
     {caption}
     <span class="plate-source">
-      <a href={href} rel="noopener">{title}</a>{date ? `, ${date}` : ""} — {licence}
+      <a href={href} rel="noopener">{title}</a>{author ? `, by ${author}` : ""}{date ? `, ${date}` : ""} — {licence}
     </span>
   </figcaption>
 </figure>

@@ -23,6 +23,8 @@ related:
 
 import SequenceDiagram from "../../components/sketch/SequenceDiagram.astro";
 import MarginNote from "../../components/sketch/MarginNote.astro";
+import Plate from "../../components/Plate.astro";
+import signalCode from "../../assets/images/sourced/signal-code-flags.png";
 
 Someone says "how are you?" in a corridor. You have about a second to reply,
 and the correct reply is not an answer.
@@ -75,6 +77,26 @@ over fifty years. They were written for other researchers, in a register
 nobody outside the field reads, and then everyone went on behaving as if the
 rules were self-evident. This is the engineering scandal the course is named
 for. The protocol has documentation. It was never shipped to the users.
+
+Compare a protocol that was.
+
+<Plate
+  src={signalCode}
+  alt="A chart of the International Code of Signals. For each letter A to Z and the numerals, three encodings side by side: a coloured signal flag, the flag-semaphore arm positions, and the Morse pattern. The last row carries control signals: three Substitute pennants, Code, Cancel and Numerals."
+  caption="The International Code of Signals: one meaning, three encodings, issued to every ship that needed it. Note the last row. Somebody sat down and specified Cancel, and three Substitute signals for repeating a flag you have only one of. Week 5 is about exactly that, and the social protocol never published its version."
+  title="International Code of Signals"
+  href="https://commons.wikimedia.org/wiki/File:International_Code_of_Signals.svg"
+  author="Michi83"
+  licence="CC BY-SA 4.0"
+  date="chart drawn 2026"
+/>
+
+Two ships from countries with no shared language can agree a course of action
+from a flag hoist, because the code was written down, printed, and put aboard
+both of them. Nobody expects a sailor to intuit *Cancel*. Somewhere in a
+building on this campus, two people who share a first language are going to
+misread each other this afternoon, and the reason is that their protocol never
+got the same treatment.
 
 There is a word for the kind of talk we start with. "Phatic communion" is
 Malinowski's term, from the 1920s, for talk whose job is the relationship
