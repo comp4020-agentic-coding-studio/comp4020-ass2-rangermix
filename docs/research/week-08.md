@@ -16,6 +16,9 @@ Checked and cut:
 - **Bohns & Flynn (2010), "Why didn't you just ask?"** No abstract and no open
   full text.
 
+| Davies & Bagnall (2024), "A good transition is just key": the views and experiences of disability support staff..., *Autism in Adulthood* 7(2), 155--170 | abstract (OpenAlex, full text of the structured abstract; re-verified against the API independently of the discovery brief), 2026-09-16 | semi-structured interviews with **11 disability support staff at seven UK universities**, content analysis plus reflexive thematic analysis. Staff described transition as an **ongoing process rather than an event**; reported academic (in-class adjustments) and non-academic (social groups) supports; and **acknowledged barriers including lacking resources and "relying on students to self-advocate their needs"** --- the plain-language summary puts it as having "relied too much on students asking for what they need". Three recommendation themes: comprehensive preparation and sustained support; positive communication between stakeholders; an accessible and inclusive university culture. **Universal design** named as a way to alleviate pressure on individual services. Authors' stated limitation: **staff perspectives only** |
+| Martino, Brantley & Scarpa (2025), The role of self-advocacy and self-determination in positive adjustment for autistic adolescents and young adults: a mini-review, *Frontiers in Child and Adolescent Psychiatry* 4, 1542543 | abstract (OpenAlex; re-verified independently), 2026-09-16 | mini-review; findings "point to **encouraging associations**" of self-advocacy and self-determination with **educational and employment outcomes**, socialisation, relationship development, identity development, self-concept and quality of life. The hedge is the authors' own; these are associations in a short review, not a demonstrated effect of instruction |
+
 ## What the sources say
 
 The format of an email to a tutor is an undocumented protocol, and violating
@@ -29,6 +32,24 @@ because they forget that saying no is socially costly for the other person too.
 Autistic students report the social parts of university as the hard parts,
 and the academic parts as strengths (Gurbuz et al.). The friction is at the
 interface, not in the work.
+
+Davies & Bagnall is the week's premise stated from inside the institution.
+Week 8 opens by observing that the university publishes a forty-page
+assessment policy and nothing about how to ask a tutor a question. Here are
+the staff who run the support service naming the same gap as a barrier in
+their own practice: they rely on students to self-advocate, and they say so.
+
+It also forces a correction the week needed. Week 8 teaches students to write
+a better email, which risks reading as "the fix is for you to get better at
+asking". These staff recommend the opposite fix --- universal design, and a
+culture where fewer individual adjustments are needed. The week now carries
+both, in that order: here is the script, because it works this semester; and
+here is who thinks the burden is misplaced, because they are the people
+carrying the other end of it.
+
+Martino et al. is why an hour on scripts is defensible at all: self-advocacy
+is associated with educational and employment outcomes. Their own hedge
+("encouraging associations", in a mini-review) travels with the claim.
 
 ## Where they disagree
 
@@ -48,6 +69,16 @@ small (26).
 - The university documents everything except how to ask for help. Deadpan,
   and backed by Stephens et al.'s finding that instructors and students
   disagree about the rules.
+
+- **The institution knows it relies on you asking** (Davies & Bagnall). The
+  barrier is named by support staff, not inferred by this course.
+- **The staff's own fix is structural, not personal** (Davies & Bagnall):
+  universal design, sustained support, better communication between
+  stakeholders. Week 8 teaches the script *and* says this.
+- **Asking well is associated with outcomes that matter** (Martino et al.),
+  with the authors' hedge kept intact.
+- Week 8's seven email clauses, the extension template and the office-hours
+  opener remain **the course's own**, tested only in this course's labs.
 
 ## Stated as the course's own observation, not research
 
