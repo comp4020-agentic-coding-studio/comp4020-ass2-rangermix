@@ -1,0 +1,468 @@
+---
+// The logistics page: every fixed point in the semester, and the conventions a
+// timetable normally leaves for a student to infer.
+//
+// The calendar is built from the content, never retyped: the dates come from
+// each lecture's and lab's own `date`, and the deadlines from the assessments,
+// including the Field Journal's eleven `submissions:`. A week that moves moves
+// here too.
+import { getPublishedCollection } from "astro-course-university/content";
+import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import { withBase } from "astro-theme-university/url";
+import { courseMeta } from "../../course-config";
+import { submissionsOf } from "../../lib/submissions";
+import {
+  contactHours,
+  journalDeadline,
+  labMeeting,
+  lectureMeeting,
+  midSemesterBreak,
+  publicHolidays,
+} from "../../data/timetable";
+import { sessionLabels, siteConfig } from "../../site-config";
+
+const lectures = (await getPublishedCollection("lectures")).sort((a, b) => a.data.week - b.data.week);
+const labs = (await getPublishedCollection("sessions")).sort((a, b) => a.data.week - b.data.week);
+const assessments = (await getPublishedCollection("assessments")).sort(
+  (a, b) => a.data.due.getTime() - b.data.due.getTime(),
+);
+const labFor = new Map(labs.map((lab) => [lab.data.week, lab]));
+
+// A course date is a bare day: read it in UTC so no viewer's clock moves it.
+const dayFormat = new Intl.DateTimeFormat("en-AU", {
+  weekday: "short",
+  day: "numeric",
+  month: "short",
+  timeZone: "UTC",
+});
+// A deadline is a timestamp: read it on the Canberra wall clock, so "Sunday
+// 23:59" stays a Sunday across April's daylight-saving change.
+const dueFormat = new Intl.DateTimeFormat("en-AU", {
+  weekday: "short",
+  day: "numeric",
+  month: "short",
+  timeZone: "Australia/Canberra",
+});
+// The same deadline without its weekday, for a range that has already said
+// which day of the week it lands on.
+const bareDueFormat = new Intl.DateTimeFormat("en-AU", {
+  day: "numeric",
+  month: "short",
+  timeZone: "Australia/Canberra",
+});
+const longFormat = new Intl.DateTimeFormat("en-AU", { dateStyle: "long", timeZone: "UTC" });
+const canberraDay = new Intl.DateTimeFormat("en-CA", {
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+  timeZone: "Australia/Canberra",
+});
+
+// "Tue, 23 Feb" is how en-AU prints it; a timetable column is tighter without
+// the comma.
+const courseDay = (date: Date) => dayFormat.format(date).replace(",", "");
+const dueDay = (date: Date) => dueFormat.format(date).replace(",", "");
+const isoOf = (date: Date) => date.toISOString().slice(0, 10);
+const shiftDays = (iso: string, days: number) =>
+  new Date(new Date(`${iso}T00:00:00Z`).getTime() + days * 86_400_000);
+const longDay = (iso: string) => longFormat.format(new Date(`${iso}T00:00:00Z`));
+
+// Every dated obligation in the course, each one a row somewhere below. The
+// Field Journal contributes eleven; every other assessment contributes one.
+interface Deadline {
+  id: string;
+  title: string;
+  at: Date;
+  day: string;
+}
+const deadlines: Deadline[] = assessments.flatMap((assessment) => {
+  const dates = submissionsOf(assessment.data);
+  return (dates.length > 0 ? dates : [assessment.data.due]).map((at) => ({
+    id: assessment.id,
+    title: assessment.data.title,
+    at,
+    day: canberraDay.format(at),
+  }));
+});
+
+// A deadline belongs to the teaching week it falls in: Monday before the
+// lecture to the Sunday after the lab. Anything past the last Sunday belongs
+// to the row after teaching ends, which is where the capstone lands.
+const weeks = lectures.map((lecture) => {
+  const lectureDay = isoOf(lecture.data.date);
+  const monday = isoOf(shiftDays(lectureDay, -1));
+  const sunday = isoOf(shiftDays(lectureDay, 5));
+  return {
+    week: lecture.data.week,
+    lecture,
+    lab: labFor.get(lecture.data.week),
+    due: deadlines.filter((d) => d.day >= monday && d.day <= sunday),
+  };
+});
+const lastSunday = isoOf(shiftDays(isoOf(lectures.at(-1)!.data.date), 5));
+const afterTeaching = deadlines.filter((d) => d.day > lastSunday);
+
+// In a table cell the capstone goes by the course's own word for it. Its title
+// names two routes that carry equal weight, and printing only the first of them
+// in a four-column row would quietly retire the other.
+const calendarLabel = (deadline: Deadline) =>
+  deadline.id === "personal-protocol-document" ? "Capstone" : deadline.title;
+const journalTitle = assessments.find((a) => submissionsOf(a.data).length > 0)?.data.title;
+const journalCount = deadlines.filter((d) => d.title === journalTitle).length;
+---
+
+<ContentLayout
+  title="Timetable"
+  description="Every fixed point in the semester: when the lecture and the lab meet, where, the conventions the rooms run on, and every deadline between February and June."
+  {...siteConfig}
+>
+  <p>
+    A timetable usually gives you a room, a start time, and nothing else. It
+    does not say whether 14:00 means 14:00, whether you may leave at the break,
+    or which of the two doors is the one people use. Those rules exist. Nobody
+    writes them down, and you are expected to have worked them out by week two.
+  </p>
+  <p>This is the version with the rest of it written down.</p>
+
+  <h2>The course</h2>
+  <div class="at-table-wrap">
+    <table class="tt-facts">
+      <tbody>
+        <tr>
+          <th scope="row">Code</th>
+          <td>{courseMeta.code}, called NT 101 by everyone who takes it</td>
+        </tr>
+        <tr>
+          <th scope="row">Session</th>
+          <td>{courseMeta.session}, {courseMeta.year}</td>
+        </tr>
+        <tr>
+          <th scope="row">Teaching</th>
+          <td>
+            {longDay(isoOf(lectures[0].data.date))} to {longDay(isoOf(labs.at(-1)!.data.date))},
+            twelve weeks with a fortnight's break in the middle
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Contact</th>
+          <td>{contactHours} hours a week, in the two meetings below</td>
+        </tr>
+        <tr>
+          <th scope="row">Last deadline</th>
+          <td>{longDay(courseMeta.endDate)}, 23:59</td>
+        </tr>
+        <tr>
+          <th scope="row">Entry</th>
+          <td>
+            Three references, no prior study, and <a href={withBase("/policies/")}>no diagnosis</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>The week</h2>
+  <div class="at-table-wrap">
+    <table class="tt-week">
+      <thead>
+        <tr>
+          <th scope="col">What</th>
+          <th scope="col">When</th>
+          <th scope="col">Where</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><a href={withBase("/lectures/")}>{lectureMeeting.kind}</a></th>
+          <td>{lectureMeeting.day} {lectureMeeting.start}&ndash;{lectureMeeting.end}</td>
+          <td>{lectureMeeting.venue}</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href={withBase("/sessions/")}>{labMeeting.kind}</a></th>
+          <td>{labMeeting.day} {labMeeting.start}&ndash;{labMeeting.end}</td>
+          <td>{labMeeting.venue}</td>
+        </tr>
+        <tr>
+          <th scope="row">
+            <a href={withBase("/assessments/field-journal/")}>Field Journal</a>
+          </th>
+          <td>{journalDeadline.day} {journalDeadline.time}, weeks 2 to 12</td>
+          <td>Wherever you are</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>
+    The gaps between the three are the point. Tuesday writes a part of the
+    protocol down; you get two days to watch for it in the wild; Thursday tests
+    the writing in the room; and you get three more days to catch it happening
+    to you before the journal entry is due. Then the next lecture argues with
+    what you found.
+  </p>
+
+  <h2>What a timetable doesn't usually say</h2>
+  <ol class="tt-clauses">
+    <li>
+      <strong>14:00 means 14:00.</strong> Some courses run an unwritten five or
+      ten minutes of grace at the start. This one doesn't, because a convention
+      nobody states costs whoever wasn't told it: they either sit alone for ten
+      minutes or walk in late in front of everyone.
+    </li>
+    <li>
+      <strong>The lecture breaks at 15:00 for ten minutes.</strong> It's on a
+      slide, at a fixed time, rather than being called when the room looks
+      tired. You can tell in advance when you'll next be able to move.
+    </li>
+    <li>
+      <strong>You can leave and come back.</strong> No explanation, no apology,
+      no catching anyone's eye on the way out. Use the door at the back; the one
+      by the lectern puts you in front of the room. Theatre 1's back row and
+      both aisle ends are kept clear, so leaving costs you nothing but the walk.
+    </li>
+    <li>
+      <strong>Lectures are recorded and captioned</strong>, and go up by
+      Wednesday morning. You don't have to ask for the recording, and you don't
+      have to say why you want it.
+    </li>
+    <li>
+      <strong>Labs are not recorded.</strong> Week 1's rule for observing people
+      &mdash; write down words, not people &mdash; applies to the room you are
+      sitting in as much as to the corridor outside it.
+    </li>
+    <li>
+      <strong>Two labs leave the room.</strong> Weeks 1 and 2 start in {
+        labMeeting.venue.split(",")[0]
+      } and go out into the building; the other ten stay put. Every lab also has
+      a version you can do from the edge of the room, and you don't have to say
+      why you're doing it.
+    </li>
+    <li>
+      <strong>Nothing is expected before the first lecture.</strong> No reading,
+      nothing to buy, nothing to have looked up. Each week's page says what to
+      bring to that week.
+    </li>
+    <li>
+      <strong>Nobody takes a roll.</strong> Attendance isn't marked, in either
+      meeting. From week 9 the lab is where your Interoperation Report partner
+      is, though, so a lab you'll miss is worth one message to them and your
+      tutor beforehand &mdash; which is the week 8 specimen, used for real.
+    </li>
+  </ol>
+
+  <h2>The semester</h2>
+  <p>
+    Every lecture is a {lectureMeeting.day}, every lab a {labMeeting.day}, and
+    every deadline 23:59 Canberra time.
+  </p>
+  <div class="at-table-wrap">
+    <table class="tt-calendar">
+      <thead>
+        <tr>
+          <th scope="col">Week</th>
+          <th scope="col">Lecture, {lectureMeeting.start}</th>
+          <th scope="col">{sessionLabels.singular}, {labMeeting.start}</th>
+          <th scope="col">Due</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          weeks.map((row) => (
+            <>
+              {row.week === midSemesterBreak.beforeWeek && (
+                <tr class="tt-break">
+                  <th scope="row">&mdash;</th>
+                  <td colspan="3">
+                    Mid-semester break, {longDay(midSemesterBreak.from)} to{" "}
+                    {longDay(midSemesterBreak.to)}. Nothing is scheduled and nothing is due.
+                  </td>
+                </tr>
+              )}
+              <tr>
+                <th scope="row">{row.week}</th>
+                <td>
+                  <span class="tt-date">{courseDay(row.lecture.data.date)}</span>
+                  <a href={withBase(`/lectures/${row.lecture.id}/`)}>{row.lecture.data.title}</a>
+                </td>
+                <td>
+                  {row.lab && (
+                    <>
+                      <span class="tt-date">{courseDay(row.lab.data.date)}</span>
+                      <a href={withBase(`/sessions/${row.lab.id}/`)}>{row.lab.data.title}</a>
+                    </>
+                  )}
+                </td>
+                <td>
+                  {row.due.length === 0 ? (
+                    <span class="tt-none">&mdash;</span>
+                  ) : (
+                    row.due.map((d) => (
+                      <span class="tt-due">
+                        <span class="tt-date">{dueDay(d.at)}</span>
+                        <a href={withBase(`/assessments/${d.id}/`)}>{calendarLabel(d)}</a>
+                      </span>
+                    ))
+                  )}
+                </td>
+              </tr>
+            </>
+          ))
+        }
+        {
+          afterTeaching.length > 0 && (
+            <tr>
+              <th scope="row">&mdash;</th>
+              <td colspan="2">Teaching has finished.</td>
+              <td>
+                {afterTeaching.map((d) => (
+                  <span class="tt-due">
+                    <span class="tt-date">{dueDay(d.at)}</span>
+                    <a href={withBase(`/assessments/${d.id}/`)}>{calendarLabel(d)}</a>
+                  </span>
+                ))}
+              </td>
+            </tr>
+          )
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <h3>The break</h3>
+  <p>
+    {longDay(midSemesterBreak.from)} to {longDay(midSemesterBreak.to)}: no
+    lecture, no lab, no deadline. Week {midSemesterBreak.afterWeek} hands you a
+    runbook for overload and recovery on the Tuesday before it starts, which is
+    not an accident.
+  </p>
+
+  <h3>Public holidays</h3>
+  <p>
+    Four fall inside the teaching weeks: {
+      publicHolidays.map((holiday, index) => (
+        <>
+          {index > 0 && (index === publicHolidays.length - 1 ? " and " : ", ")}
+          {holiday.name} ({courseDay(new Date(`${holiday.date}T00:00:00Z`))})
+        </>
+      ))
+    }. None of them is a {lectureMeeting.day} or a {labMeeting.day}. That is why
+    the course meets on a {lectureMeeting.day} and a {labMeeting.day}.
+  </p>
+  <p>
+    One journal deadline, Sunday 28 March, is Easter Sunday. It stays where it
+    is, and the journal drops your lowest week, so a Sunday you spend somewhere
+    else is already paid for.
+  </p>
+
+  <h2>Deadlines</h2>
+  <p>
+    Four tasks. The Field Journal is turned in {journalCount} times and the
+    other three once each, every one of them at 23:59 Canberra time. What each
+    task asks for, and how it's marked, is on the <a href={withBase("/assessments/")}>assessment page</a>.
+  </p>
+  <ul class="tt-deadlines">
+    {
+      assessments.map((assessment) => {
+        const dates = submissionsOf(assessment.data);
+        return (
+          <li>
+            <a href={withBase(`/assessments/${assessment.id}/`)}>{assessment.data.title}</a>
+            <span class="tt-meta">
+              {dates.length > 0
+                ? `${dates.length} Sundays, ${bareDueFormat.format(dates[0])} to ${bareDueFormat.format(dates.at(-1)!)}`
+                : dueDay(assessment.data.due)}
+              {` · ${assessment.data.weight}%`}
+            </span>
+          </li>
+        );
+      })
+    }
+  </ul>
+  <p>
+    Everything is turned in on the course's submission page, not by email. If a
+    deadline is going to collide with something, ask for an extension before it
+    passes: seven days, once per task, no documentation and no reason required.
+    The <a href={withBase("/policies/")}>policies page</a> has the rest, including
+    what to do when you need longer.
+  </p>
+
+  <h2>Who to ask, and when</h2>
+  <ul class="tt-people">
+    <li>
+      <a href={withBase("/people/wren-aldous-kemp/")}>Dr Wren Aldous-Kemp</a>,
+      convenor. Office hours Wednesday 14:00&ndash;15:00, no booking. Assessment,
+      extensions, adjustments, and anything a tutor couldn't settle.
+    </li>
+    <li>
+      <a href={withBase("/people/tamsin-oyelaran-hart/")}>Tamsin Oyelaran-Hart</a>,
+      tutor for the labs of weeks 1 to 7, and the journal.
+    </li>
+    <li>
+      <a href={withBase("/people/jonah-paskett/")}>Jonah Paskett</a>, tutor for
+      the labs of weeks 8 to 12, the report partnerships, and the capstone.
+    </li>
+  </ul>
+  <p>
+    Email subject line: <code>[NT101] topic: one-line request</code>. Replies
+    within two working days. The last ten minutes of any lab is also a fine time
+    to ask, and so is the ten-minute break in the lecture. Using the escalation
+    path on the <a href={withBase("/policies/")}>policies page</a> is not rude.
+  </p>
+</ContentLayout>
+
+<style>
+  .tt-facts th,
+  .tt-week th[scope="row"] {
+    white-space: nowrap;
+    text-align: start;
+  }
+
+  .tt-facts th {
+    width: 9rem;
+  }
+
+  .tt-clauses li {
+    margin-block: 0.6rem;
+  }
+
+  .tt-calendar th[scope="row"] {
+    font-family: var(--at-font-mono);
+    text-align: start;
+  }
+
+  .tt-date {
+    display: block;
+    color: var(--at-text-secondary);
+    font-family: var(--at-font-mono);
+    font-size: var(--at-font-size-sm);
+    white-space: nowrap;
+  }
+
+  .tt-due {
+    display: block;
+    margin-block-end: 0.4rem;
+  }
+
+  .tt-due:last-child {
+    margin-block-end: 0;
+  }
+
+  .tt-none {
+    color: var(--at-text-secondary);
+  }
+
+  .tt-break td {
+    color: var(--at-text-secondary);
+  }
+
+  .tt-deadlines li,
+  .tt-people li {
+    margin-block: 0.5rem;
+  }
+
+  .tt-meta {
+    display: block;
+    color: var(--at-text-secondary);
+    font-family: var(--at-font-mono);
+    font-size: var(--at-font-size-sm);
+  }
+</style>
