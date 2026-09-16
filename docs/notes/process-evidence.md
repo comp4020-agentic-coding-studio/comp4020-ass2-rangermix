@@ -119,3 +119,91 @@ fixed at the harness level rather than retried".
 - `1d4e50f`, `20f1503`: the harness and design written in a cloud session that
   couldn't push, and arrived as patch files; `abf69e8` is the rule that came
   out of it.
+
+## 7. Second session: decks for every week, plates, and the two-hour slot
+
+Three asks, in order: a deck for all twelve weeks; real photographs beside the
+drawings; and every lecture sized to the two hours it is timetabled for.
+
+### Decks, weeks 3--12
+
+`39434d2` · `95abdb0` · `d3bf8b4` · `2d298d0` · `2e8444d` · `0813e48`
+
+Built from each written lecture, never beside it. `0813e48` also strikes the
+design doc's "decks for weeks 1 and 2" and records why all twelve need one.
+Week 10's deck carries the register break as three plain slides with the
+snap-back on its own, and its speaker notes say the shift is deliberate ---
+a deck being the likeliest place for someone to smooth it out (`2e8444d`).
+
+### Drawings, and what they cost to get right
+
+`1d09cd0` · `73b6276` · `711c079` · `4e47384` · `458c068` · `5b8aac0` · `9ba883f`
+
+Five new primitives (`Envelope`, `Form`, `DepthLadder`, `Chain`, `Register`),
+nine of twelve weeks, plus the home page. `9ba883f` records the rule that
+decided placement --- a drawing earns its place when it shows a mechanism the
+prose can't --- and why weeks 6, 7 and 8 keep tables instead. Two drawings were
+written and deleted to establish that.
+
+**Three bugs in already-shipped work, none visible to `pnpm check`:**
+
+- `--nt-mono` resolved to nothing on every deck, so every monospace label in a
+  diagram had been falling back to the body sans since the decks shipped
+  (`5b8aac0`).
+- `StateMachine` put horizontal transition labels inside its boxes; week 5's
+  diagram had been unreadable (`458c068`).
+- Week 3 asserted a page position neither the lecture, the reading nor the
+  recorded check supported (`39434d2`).
+
+### Photographs, with provenance
+
+`8f81af5` · `2f4891b`
+
+Four plates, each licence read off the Commons API rather than a search
+result, committed rather than hotlinked: a Montreal manual exchange (week 4),
+Mission Control during Apollo 13 (week 7), the 1977 ARPANET map (week 11), and
+the International Code of Signals (week 1). `scripts/commons.py` does the
+lookup; `docs/notes/image-provenance.md` records each licence verbatim and
+says plainly that anything not clearly free would be marked as such, because
+this repo goes public on ship.
+
+### The two-hour gap
+
+`cf0953b` · `4b12e25` · `01372a6` · `bf79a3e`
+
+`scripts/lecture-timing.ts` (`pnpm check:timing`) estimates each week's
+runtime by slide type rather than word count. **Baseline: every week ran
+26--46 minutes against a 105-minute content target.** It stays out of
+`pnpm check` for the same reason `check:readings` does.
+
+Weeks 1, 4 and 5 rebuilt to ~96 minutes each, through the pipeline in order,
+with seven new sources --- every abstract re-verified against Crossref or
+OpenAlex rather than taken from the discovery brief. The briefs themselves are
+in `docs/notes/research-briefs/`, and they record what was truncated and what
+is UNVERIFIED; two week 4 candidates stay cut on exactly that ground.
+
+**The find worth citing:** week 5's apology template was wrong. Kirchhoff,
+Wagner & Strack (2012) list an attempt at explanation among the four elements
+that mattered for a severe offence, and the week had banned explanation
+outright; the template also had no "I'm sorry" in it. Both fixed, with the
+change shown on the page rather than quietly swapped (`bf79a3e`).
+
+### Also in this session
+
+- `d6c8b08`: `pnpm test` was collecting a git worktree's copy of the suite
+  from under `.claude/worktrees/`, including a test file uncommitted there.
+  The gate is now scoped to this tree and that work was left alone. The same
+  commit untracks Playwright scratch screenshots swept in by a broad
+  `git add`.
+
+### What CI says, and what it is waiting for
+
+As of `bf79a3e`, the `check` job's only failing step is **`check:evidence`**,
+on three counts: this repo's `PROCESS.md` is still the template, and the
+template's two example hashes (`a1b2c3d`, `e4f5a6b`) don't resolve. Build,
+typecheck, all 327 spec tests and the `deploy` job pass, and the deployed site
+verifies online.
+
+That gate closes when **you** write `PROCESS.md`. Nothing in this file is a
+draft of it --- the hashes above are here so the citations are a paste rather
+than an archaeology job.
