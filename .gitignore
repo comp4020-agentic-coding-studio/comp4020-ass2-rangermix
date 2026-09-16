@@ -38,3 +38,6 @@ mise.local.toml
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# Playwright MCP scratch output (screenshots, page snapshots)
+.playwright-mcp/
