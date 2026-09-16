@@ -175,7 +175,11 @@ gained and is the record of which weeks have been through the pipeline again.
 - [x] Week 8 --- Brooks, Gino & Schweitzer (2015): the fear that asking makes
       you look worse, and the three moderators that tell you *who* to write to;
       103.9 min
-- [ ] Weeks 2, 3, 10, 11, 12 --- untouched, all 58--79 min short.
+- [x] Week 2 --- Nisbett & Wilson (1977), Hinds (1999) and Malle (2006): what
+      you actually get when you ask a fluent user why, why "it's obvious" is a
+      report about the speaker, and the famous effect the week declines to
+      lean on; three exercises; a complete worked journal entry; 105.1 min
+- [ ] Weeks 3, 10, 11, 12 --- untouched, 58--73 min short.
 
 ### Rules learned
 
@@ -203,6 +207,13 @@ gained and is the record of which weeks have been through the pipeline again.
   forces the honest version: the course takes the lab studies, repeats the
   critique's point that a second date is a proxy for liking rather than liking,
   and does not adjudicate a model it has not run.
+- **Check the citation that would be most convenient first.** Week 2 was one
+  sentence away from justifying the asleep test with the actor--observer
+  asymmetry, which a meta-analysis of 173 studies puts at roughly zero. Finding
+  that out produced a better week than the shortcut would have: the rule is now
+  labelled as the course's own, and the one condition the effect did survive
+  under --- negative events --- happens to be the condition every field note is
+  written in.
 - **A new source should change the advice, not decorate it.** Stivers and
   Rossano earned their place because obligation-as-a-gradient changes what the
   week tells both halves of the room to do. A source that only restates what
