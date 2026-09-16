@@ -18,13 +18,15 @@ for `PROCESS.md`, like `docs/notes/process-evidence.md`, and not a draft of it.
   saving hadn't started).
 - **Responses are curated** --- cut to the decisions and results, not the tool
   output.
-- **Every hash below comes from `git log`**, not from memory. The session's
-  full range is
-  [`07cea35...849a75d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/compare/07cea35...849a75d).
+- **Every hash below comes from `git log`**, not from memory. The work's full
+  range is
+  [`07cea35...849a75d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/compare/07cea35...849a75d);
+  this log's own commits follow it.
 - **The work ran across two Claude Code sessions.** Everything up to `399b641`
   came from the first (`58785399`). Commits `0310bfe` to `849a75d` came from a
-  second (`c14c47e2`), which resumed section 3's task, so their "result"
-  summaries are taken from those commit messages. The end state at the bottom
+  second (`c14c47e2`), which resumed section 3's task. Their results were first
+  read back from the commit messages; that session later rewrote them from its
+  own transcript (section 4). The end state at the bottom
   was re-checked with the tools, not copied from them.
 
 ---
@@ -208,39 +210,76 @@ and a piped `pnpm check` let that commit through red a second time. Fixed in
 | [`399b641`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/399b641) | Banned word removed from a week 8 speaker note |
 
 **Result --- weeks, second session.** The same task was resumed in a second
-session (`c14c47e2`). The remaining weeks went through the same pipeline, and
-week 8 got a follow-up. Highlights, from the commit messages:
+session (`c14c47e2`), prompted only by "continue". It found week 9 drafted but
+uncommitted at 78.2 minutes, and week 8 committed but still 11.5 minutes short,
+then took every remaining week through the pipeline. Sixteen readings landed
+--- fifteen new, plus the first session's Sprecher et al. draft --- each checked
+against an abstract on PubMed, OpenAlex or Crossref. Three glossary terms were
+added: *responsiveness*, *follow-up question* and *anticipated stigma*.
 
-- **Week 9** --- Laurenceau et al. (1998) and Huang et al. (2017), the latter
-  cited with its later correction and reanalysis attached. The commit also
-  carries Sprecher et al. (2013), drafted but left uncommitted in the first
-  session (above): the gap between listeners and disclosers vanished once
-  they swapped roles.
-- **Week 8** --- Brooks, Gino and Schweitzer (2015) address the fear that
-  asking makes you look worse; the review's misplaced table rows were repaired.
-- **Week 2** --- Nisbett & Wilson (1977) and Hinds (1999) on why fluent people
-  can't state the rules. An effect size the week would have found convenient
-  was checked and reported honestly: Malle's meta-analysis, d = −0.016 to 0.095.
-- **Week 3** --- Lee & Pinker (2010); Keysar & Henly (2002), which puts
-  measured error on the sender's side; Chevallier et al. (2010), which found no
-  group difference.
-- **Week 10** --- Quinn & Chaudoir (2009) price the cost of *not* disclosing,
-  and Corrigan & Matthews (2003) supply disclosure as levels. The register break
-  is untouched.
-- **Week 11** --- Alkhaldi et al. (2019): readability and favourability,
-  independent of diagnosis. Morrison et al. (2020): a real five-minute
-  conversation between strangers.
-- **Week 12** --- the vague "has drawn published criticism" became the actual
-  comment, Moskowitz (2004). Romance is now grounded in Sala, Hooley & Stokes
-  (2020). All twelve weeks pass `check:timing`.
+| Week | Before | After | What the new sources changed |
+| --- | --- | --- | --- |
+| 9 | 78.2 | 104.8 | Laurenceau et al. (1998): the depth scale had no field for whether a step *landed*. Huang et al. (2017): follow-up questions raise liking, and people don't expect them to. Huang was checked with its record attached --- a 2025 correction after an independent audit, Kluger & Malloy's 2019 reanalysis, the authors' reply --- and the week teaches it that way. Also Sprecher et al. (2013), from the first session |
+| 8 | 93.5 | 103.9 | Brooks, Gino & Schweitzer (2015): the louder fear, that asking makes you look worse, runs the wrong way, and its moderators say *who* to write to |
+| 2 | 26.4 | 105.1 | Nisbett & Wilson (1977): asking a fluent user "why" gets a plausible theory, and their accuracy condition became the week's interview technique. Hinds (1999): more expertise, worse prediction of a novice's difficulty, resistant to warning. Malle (2006): the actor--observer asymmetry the asleep test nearly leaned on averages d = −0.016 to 0.095, so the rule is now labelled the course's own |
+| 3 | 32.8 | 103.0 | Lee & Pinker (2010): an envelope marks what the sender is unsure of. Keysar & Henly (2002): speakers overestimate being understood; overhearers don't. Chevallier et al. (2010): predicted a group difference in scalar inference and found none |
+| 10 | 46.4 | 101.7 | Quinn & Chaudoir (2009): the cost of *not* telling tracks anticipated stigma, a belief an environment produces. Corrigan & Matthews (2003): disclosure as levels. Everything new sits outside the register break |
+| 11 | 36.6 | 103.3 | Alkhaldi et al. (2019): readability predicted favourability independent of diagnosis. Morrison et al. (2020): in a real five-minute conversation both groups made the same judgement, and only one group's interest in meeting again followed it |
+| 12 | 31.7 | 104.3 | Moskowitz (2004) replaces "has drawn published criticism" with the actual comment. Sala, Hooley & Stokes (2020) ground romance in what autistic and non-autistic participants said themselves |
+
+Minutes are `pnpm check:timing` estimates against the 105-minute target.
+
+Cut for want of a retrievable abstract, and recorded as cut in the reviews:
+Sprecher et al.'s *Taking turns* (a different 2013 paper, re-checked and still
+unreadable) and Cho & Keltner (2019), the later update OI-3 most wanted.
+
+Repaired in earlier work along the way: the first session's new rows in the
+week 8 and week 9 reviews sat below their tables instead of in them; week 9's
+review cited one 2013 Sprecher paper while listing "Sprecher et al. (2013)" as
+cut, without saying they were different papers; and week 8's review still used
+a banned word.
+
+**Clarifying question, and the answer** *(answered 2026-09-16 16:53:35 AEST)*.
+Two Chrome browsers were connected, and the visual check had to run in one.
+*Which Chrome should drive the visual check of the new deck slides?* ---
+**"Browser 1 (macOS)"**. It changed no content, but it is where the audit ran
+that found the plate bugs.
+
+**Result --- checked by looking.** Every slide of all twelve decks was measured
+against its 720px box, and the seven rewritten lecture pages and the fifteen
+newly researched reading pages were loaded at 390px wide. The pages were clean.
+The decks had two faults, both dating from the plates added in `8f81af5`, and
+neither was visible to the build, axe, the link checker or the spec tests:
+week 4's plate hung 306px off the bottom of its slide, and plates on slides were
+fetched at 543px wide from scans of 1000 and 1920px. Both were fixed in
+`849a75d`.
 
 **Mistakes, recorded:**
 
-- Speaker notes claimed things about "what most of the room would guess"; none
-  was cited, so they became instructions to the lecturer instead.
-- Measuring every slide in the browser found week 4's plate hanging off the
-  bottom of its slide, and being served a scan too small for a projector.
-  Nothing else in the checks had caught either.
+- Five uncited claims about what "most" of a room would guess or do were
+  caught before they shipped. Two were in the first session's week 9
+  speaker-note draft; three were written in this one --- speaker notes in weeks
+  10 and 12, and a line of week 10's lecture ("every year the list is mostly
+  about the room"). Each became an instruction to the lecturer, or a count of
+  that room only.
+- A week 12 slide invented four "ethics rules" for the field experiment. The
+  lab has had four ethics *questions* since it was written, and the capstone
+  brief cites them by name. No check could see two competing lists; reading the
+  lab did, and the slide now previews the lab's questions.
+- The vocabulary test failed two of my own sentences: "they over-correct, and
+  start treating you carefully" (week 10), and "nothing here was a cure for
+  anything" (week 12), written to reject the framing and still banned.
+- Week 9's first pass overshot to 111.1 minutes. It was trimmed by cutting two
+  redundant slides, not by shortening the rest.
+- Week 10's new exercise first landed on the slide directly before the register
+  break, so the break would have been entered from a show of hands. It moved
+  back one slide.
+- A guessed DOI for *Taking turns* resolved to an unrelated paper. It never
+  shipped; the identifier was settled by title search, and the review says so.
+- The browser audit's first pass flagged five slides, and four of them were
+  only the visually hidden text equivalents the drawings carry. Separately, a
+  screenshot taken before a lazy image loaded showed a black box that looked
+  like a styling bug. Both were caught before anything was changed.
 
 | Commit | What it did |
 | --- | --- |
@@ -283,10 +322,25 @@ committed in the second.
 every "continue" prompt lost their sections, and the second session's work was
 filed under section 3, whose task it finished.
 
+*Sent 2026-09-16 22:34:46 AEST*
+
+> check @docs/prompts-result.md and add all from this session
+
+**Result.** Sent to the second session (`c14c47e2`), the one that did section 3's
+later work, so its results there are now first-hand rather than read back from
+commit messages: minutes before and after for each week, the sources cut, the
+repairs to earlier work, the clarifying answer, and the mistakes the commit
+messages left out. Timestamps come from that session's transcript. The
+"continue" that started it and a `/model` command are omitted under the rule
+above. `39205d9` was missing from the table below and is added. This edit's own
+commit is the next one in `git log`, since a file can't cite the hash of the
+commit that contains it.
+
 | Commit | What it did |
 | --- | --- |
 | [`0b48398`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/0b48398) | This log, first version |
 | [`db09d15`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/db09d15) | Timestamps added; two-session split corrected |
+| [`39205d9`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/39205d9) | Continue-only and slash-command-only prompts dropped |
 
 ---
 
@@ -295,7 +349,12 @@ filed under section 3, whose task it finished.
 - **Decks:** 12 of 12 weeks.
 - **Timing (`pnpm check:timing`):** all twelve weeks 96.0--105.1 minutes; 0 of
   12 more than 10 minutes short of the 105-minute target.
-- **Readings:** 71, each checked against its source before it shipped.
+- **Readings:** 71, each checked against its source before it shipped; 16 of
+  them landed in the second session.
+- **Layout, measured in the browser:** no slide in any of the twelve decks
+  extends past its 720px box, and no rewritten lecture page or new reading
+  scrolls sideways at 390px. Measured after `849a75d`; every commit since
+  touches only this file.
 - **Plates:** 4, all public domain or CC BY-SA, with provenance recorded.
 - **CI:** the build, spec and deploy jobs pass. `check:evidence` still fails,
   now only because `PROCESS.md` cites the template's example hashes `a1b2c3d`
