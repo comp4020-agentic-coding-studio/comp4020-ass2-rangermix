@@ -33,6 +33,7 @@ Commit URLs take the form
 | Every week specifies itself; no spec line reused across weeks | `spec/weeks.test.ts`; `CLAUDE.md` convention | `7752322`, `021ded8` |
 | The weekly hour is a Lab, and students never see "session" | `spec/weeks.test.ts` | `7752322` |
 | Each week has a signature artefact no other week has | the plan's week table; judged by a person, not tested | `ac46812` |
+| The course's own logistics are documented, not inferred, and the calendar is generated rather than retyped | `/timetable/` first in the navigation; `spec/timetable.test.ts` | `e85fa3f` |
 
 ## 2. Failures fixed at the harness level, not retried
 
