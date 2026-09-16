@@ -122,3 +122,57 @@ turned up by opening a page and looking at it.
   correct in `dist/` read as unchanged in the browser until the page was loaded
   with a cache-busting query. Worth remembering before concluding a style fix
   didn't work.
+
+## Job 3: two hours per week
+
+Added after the first two jobs, when the user pointed out that a week's
+lecture is timetabled for two hours and none of these decks filled one.
+
+`pnpm check:timing` (`scripts/lecture-timing.ts`) estimates each week's
+runtime. It classifies every slide by what delivering it costs --- a title
+slide is a minute, a sequence diagram walked through top to bottom is three
+and a half, a table is three --- and adds time for speaker-note lines, which
+are things said aloud that aren't on the slide. In-room exercises announce
+their own length in their heading, and that visible figure is what gets
+counted; a hidden marker beside it would be a second copy to keep in step.
+
+The figures are planning numbers, not a finding about lecturing. They are
+there so "this week is short" is a claim someone can re-run and argue with.
+
+**Target:** 105 minutes of content in a 120-minute slot, leaving arrival, a
+mid-lecture break and overrun.
+
+**Baseline, before any of this:** every week ran 26--46 minutes. All twelve
+were short, by about 70 minutes each.
+
+### What the extra time is made of
+
+The user chose the slow path: new research per week as well as applied
+material. So each week gets
+
+1. **new sources**, through the pipeline in order --- search, read the
+   abstract, confirm the specific claim, write the review row, write the
+   reading entry, and only then write slides;
+2. **in-room exercises**, seated and short, and deliberately *not* what
+   Thursday's lab does. The lab goes out and collects; the lecture exercises
+   rehearse a script or force a criterion;
+3. **worked examples** and a **recap of the terms** the week builds on, which
+   is also what makes "reuse the vocabulary exactly" checkable in the room.
+
+### Status
+
+- [x] Week 1 --- Duranti (1997) and Stivers & Rossano (2010); two exercises; 96.7 min
+- [ ] Weeks 2--12
+
+### Rules learned
+
+- **Do not reproduce a list the abstract only counts.** Duranti proposes six
+  criteria and finds four types of Samoan greeting; Stivers and Rossano name
+  response-mobilising features. Only the abstracts were read, so the course
+  names the count and not the contents, and says on the slide that it is doing
+  so. That is the citation rule applied to the course itself, and it turns out
+  to teach better than a fabricated list would.
+- **A new source should change the advice, not decorate it.** Stivers and
+  Rossano earned their place because obligation-as-a-gradient changes what the
+  week tells both halves of the room to do. A source that only restates what
+  the week already said would be padding with a DOI on it.

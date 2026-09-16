@@ -11,6 +11,7 @@
     "check": "pnpm typecheck && pnpm test",
     "check:evidence": "node scripts/check-evidence.ts",
     "check:readings": "node scripts/verify-readings.ts",
+    "check:timing": "node scripts/lecture-timing.ts",
     "test": "pnpm build && vitest run spec",
     "test:template": "vitest run scripts"
   },
