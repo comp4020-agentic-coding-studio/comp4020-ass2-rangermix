@@ -28,7 +28,10 @@ export const siteConfig = defineSiteConfig({
     { text: sessionLabels.plural, href: "/sessions/" },
     { text: "Readings", href: "/readings/" },
     { text: "Assessment", href: "/assessments/" },
-    { text: "People", href: "/people/" },
+    // Six items is what fits beside the logo on one row; a seventh drops the
+    // whole list to a second row at every desktop width. People made room for
+    // the timetable, whose "Who to ask" section links each of them, the way
+    // Glossary made room earlier. spec/timetable.test.ts holds the count.
     { text: "Policies", href: "/policies/" },
   ],
 

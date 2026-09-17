@@ -39,6 +39,15 @@ describe("the timetable", () => {
     }
   });
 
+  // Measured, not a style rule: at every desktop width the navigation sits in
+  // an 864px column beside the logo, and a seventh item drops the whole list
+  // to a second row. It happened twice --- Glossary, then this page --- and was
+  // found by eye both times, so the count is held here instead.
+  it("keeps the navigation to the six items that fit beside the logo", () => {
+    const menu = readPage("index.html").match(/<ul[^>]*id="at-nav-menu"[\s\S]*?<\/ul>/)?.[0] ?? "";
+    expect((menu.match(/<a\b/g) ?? []).length).toBe(6);
+  });
+
   it("says when each of the week's three fixed points is, and where two of them are", () => {
     expect(text).toMatch(/Tuesday 14:00.16:00/);
     expect(text).toMatch(/Thursday 14:00.15:00/);
