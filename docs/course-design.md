@@ -84,7 +84,12 @@ and the ANZAC Day holiday (observed Mon 26 Apr), both Mondays in 2027.
 | Contact | three hours a week |
 
 Two hours for the lecture and one for the lab. The hour is what the labs were
-already built to: every run sheet in `sessions` runs 0:00 to 1:00.
+already built to: every run sheet in `sessions` runs 0:00 to 1:00. The two
+hours are what `pnpm check:timing` sizes each deck against: 105 minutes of
+content in the 120-minute slot, the rest being arrival, the break at 15:00 and
+overrun. The speaker notes on the first slide of weeks 1, 4 and 5 already say
+the break is at the hour and to announce it, which is the timetable's second
+clause.
 
 All of it lives on one page, `/timetable/`, **first in the navigation, before
 Lectures**: where to be and when is what a student needs before anything else
