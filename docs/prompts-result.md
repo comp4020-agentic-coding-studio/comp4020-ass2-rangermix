@@ -1,4 +1,4 @@
-# Prompts and results --- second build session (15--16 September 2026)
+# Prompts and results --- second build session (15--17 September 2026)
 
 A curated record of this session: each prompt as it was typed, a trimmed
 version of what came back, and the commits it produced. It is source material
@@ -22,12 +22,14 @@ for `PROCESS.md`, like `docs/notes/process-evidence.md`, and not a draft of it.
   range is
   [`07cea35...849a75d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/compare/07cea35...849a75d);
   this log's own commits follow it.
-- **The work ran across two Claude Code sessions.** Everything up to `399b641`
+- **The work ran across three Claude Code sessions.** Everything up to `399b641`
   came from the first (`58785399`). Commits `0310bfe` to `849a75d` came from a
   second (`c14c47e2`), which resumed section 3's task. Their results were first
   read back from the commit messages; that session later rewrote them from its
-  own transcript (section 4). The end state at the bottom
-  was re-checked with the tools, not copied from them.
+  own transcript (section 4). A third (`88d4d4e6`) ran beside the first from
+  16 September, in a git worktree, and built the timetable (section 5); its
+  section was written by that session from its own transcript. The end state at
+  the bottom was re-checked with the tools, not copied from them.
 
 ---
 
@@ -344,6 +346,143 @@ commit that contains it.
 
 ---
 
+## 5. The timetable
+
+A third session (`88d4d4e6`), started six minutes after section 2's prompt and
+run beside it. Background sessions have to work in a git worktree, so this one
+did, under `.claude/worktrees/timetable-page`. That worktree is the one section
+2 found `pnpm test` collecting tests from.
+
+*Sent 2026-09-16 13:06:50 AEST*
+
+> add a dedicated timetable page before Lectures. The page should contain all course logistic information. Lectures will be on 2-4pm Tuesday, labs will be on 2-3pm Thursday.
+
+**Result --- the page.** `/timetable/`, first in the navigation, carrying:
+
+- the course facts;
+- the week's three fixed points: Tuesday 14:00--16:00 in Theatre 1, Thursday
+  14:00--15:00 in Room 2.14, and the journal at Sunday 23:59;
+- the twelve-week calendar with the break;
+- every deadline;
+- the public holidays;
+- who to ask, and when.
+
+The rules themselves --- extensions, adjustments, AI use, observing people ---
+stay on the policies page and are linked, not restated, so each fact has one
+place where it's true. The rooms are new fiction for a fictional university,
+and are settled in the design doc.
+
+**The calendar is generated, never retyped.** Its dates come from the lectures,
+the labs and the assessments, the journal's eleven `submissions:` included. A
+hand-kept second copy of the dates is the failure this course is about.
+`spec/timetable.test.ts` fails if any date or deadline in the course API is
+missing from the page.
+
+**The middle of the page is the argument in its own register.** A timetable
+gives you a room and a start time, and leaves the rest to inference. So eight
+numbered clauses write the rest down:
+
+- 14:00 means 14:00, not ten past.
+- The lecture breaks at 15:00 for ten minutes, announced in advance.
+- You can leave by the back door without explaining.
+- Lectures are recorded and captioned, with nothing to ask for.
+- Labs aren't recorded, because week 1's rule about observing people applies
+  to the room too.
+- Weeks 1 and 2 are the only labs that leave the room.
+- Nothing is expected before the first lecture.
+- Nobody takes a roll, though from week 9 the lab is where your report partner
+  is.
+
+**Checked rather than assumed:**
+
+- The page says four public holidays fall inside the teaching weeks and none is
+  a Tuesday or a Thursday. Each date was computed (Easter from the Gregorian
+  computus), and the test re-derives each weekday instead of trusting the page.
+- Sunday 28 March, a journal deadline, is Easter Sunday; the page says so.
+- The capstone's title names two routes of equal weight, so in a calendar cell
+  it's "Capstone" rather than a truncation that names only the first route.
+
+**Mistakes, recorded:**
+
+- Astro dropped the space before three inline links that began a new source
+  line, rendering "on theassessment page". The link checker and axe both
+  passed; reading the rendered text found it.
+- The hand-written tables lacked the theme's `.at-table-wrap`, so the page
+  scrolled sideways at 390px (568px of content). Measured in the browser, and
+  fixed by adding the wrapper that markdown tables get automatically.
+- `wide` on `ContentLayout` was tried for the calendar, and turned out to do
+  nothing in this theme version. It was removed rather than left as a
+  misleading prop.
+- The design doc first cited `scripts/lecture-timing.ts`, which existed only as
+  an untracked file from the session running alongside. The reference was cut
+  before commit, and restored once the script was committed on `main`
+  (`a9dbb61`).
+- The work was pushed to a branch, `worktree-timetable-page`, not merged into
+  `main`. The harness says to work on `main`, but background sessions aren't
+  allowed to push there. It sat unmerged while `main` moved 26 commits on.
+
+*Sent 2026-09-17 10:29:16 AEST*
+
+> check @docs/prompts-result.md and add all from this session
+
+**Result --- catching up with `main`.** This file exists only on `main`, and
+the timetable had never reached it. So a fresh branch, `timetable-on-main`,
+was cut from `origin/main`, and the two timetable commits were cherry-picked
+onto it (the originals, `e85fa3f` and `30bb49d`, are superseded). The only
+file both sessions had edited was `docs/notes/process-evidence.md`, in
+different sections. Git merged it cleanly, and the merged result was still
+read rather than trusted.
+
+Checked on the combined tree:
+
+- `pnpm check` exited 0 when run directly, not through a pipe.
+- `pnpm check:timing` still has 0 of 12 weeks short.
+- The two sessions had settled the lecture break independently and agree: the
+  speaker notes on the first slide of weeks 1, 4 and 5 say "break at the hour"
+  and to announce it, and the timetable's second clause says 15:00, announced.
+  The design doc now ties the two together.
+
+**Result --- a regression found by looking.** Measuring the navigation
+against the deployed site showed that adding the timetable had made seven
+items. A seventh item drops the whole link list to a second row under the logo
+at every desktop width, because the nav sits in an 864px column whatever the
+viewport. It's the bug `2f66a99` fixed for Glossary, reintroduced, and it had
+passed the build, axe and every spec test.
+
+Two fixes put the links back on one row at 1920, 1280 and 1024. Squeezing all
+seven in meant no gap and 0.4rem padding, restyling the theme until the links
+nearly touch. The other was moving one item out of the nav, as `2f66a99` did.
+People came out, because the timetable's "Who to ask, and when" links each of
+the three staff and the home page keeps its People card. Having been found by
+eye twice, the nav count is now a spec check.
+
+**Mistakes, recorded:**
+
+- The first desktop screenshot of the timetable already showed the nav's links
+  on a second row, and it wasn't noticed until this pass.
+- The first measurement of the fix still reported "wraps" with only six items,
+  because it also required the search button on the logo's row. The deployed
+  site already puts search on the second row. Measuring the deployed site with
+  the same code exposed the faulty test before anything was changed on the
+  strength of it.
+- A preview server from the first prompt was still running the next morning.
+  The process is `astro.mjs preview`, so `pkill -f "astro preview"` missed it,
+  once on each prompt. It was confirmed to be serving this worktree's current
+  build before being used, and was stopped by PID.
+
+Minutes aren't affected: nothing here changed a lecture or a deck.
+
+| Commit | What it did |
+| --- | --- |
+| [`55928a1`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/55928a1) | `/timetable/`, `src/data/timetable.ts`, `spec/timetable.test.ts`; times on the home, lecture and lab pages; design doc settles where and when |
+| [`4bd5203`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/4bd5203) | Evidence log row for the timetable decision |
+| [`a9dbb61`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/a9dbb61) | Design doc ties the two-hour slot to `pnpm check:timing` |
+| [`0deedfc`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/0deedfc) | People's nav slot to the timetable; nav held at six by a spec check |
+
+This edit's own commit is the next one in `git log`.
+
+---
+
 ## End state, as checked when this file was written
 
 - **Decks:** 12 of 12 weeks.
@@ -353,10 +492,19 @@ commit that contains it.
   them landed in the second session.
 - **Layout, measured in the browser:** no slide in any of the twelve decks
   extends past its 720px box, and no rewritten lecture page or new reading
-  scrolls sideways at 390px. Measured after `849a75d`; every commit since
-  touches only this file.
+  scrolls sideways at 390px. Measured after `849a75d`. The timetable commits
+  since then touch four pages: `/timetable/`, the home page and the lecture and
+  lab listings. Those four were re-measured after `0deedfc`, with no sideways
+  scroll at 390px, and the navigation's links on the logo's row at 1920, 1280
+  and 1024.
+- **Timetable:** `/timetable/`, first of six navigation items. Its 8 spec
+  tests pass, part of 402 in `pnpm check`, run on `main` plus the section 5
+  commits.
 - **Plates:** 4, all public domain or CC BY-SA, with provenance recorded.
 - **CI:** the build, spec and deploy jobs pass. `check:evidence` still fails,
   now only because `PROCESS.md` cites the template's example hashes `a1b2c3d`
   and `e4f5a6b`. It goes green when those citations are replaced with real
-  commits --- the tables above are there for that.
+  commits --- the tables above are there for that. CI runs on pushes to `main`
+  and on pull requests, so section 5's branch hasn't been through it. Locally,
+  on that branch, `check:evidence` fails on the same two hashes and nothing
+  else.
