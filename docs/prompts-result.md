@@ -11,8 +11,8 @@ a draft of it.
   carry no instruction of their own, so they get no section. Any work they
   resumed is filed under the prompt that asked for it. That includes "continue
   the work in Lecture slides and illustrations session", which picked up
-  section 4's task in a second session. A prompt that says "continue" and then
-  gives a new instruction, like section 2's, is kept. A line Claude Code
+  section 5's task in a second session. A prompt that says "continue" and then
+  gives a new instruction, like section 3's, is kept. A line Claude Code
   inserts on resume isn't a prompt either.
 - **Timestamps are when each prompt was sent**, read from Claude Code's session
   transcripts rather than estimated, in Canberra time (AEST, UTC+10; daylight
@@ -22,16 +22,18 @@ a draft of it.
 - **Every hash below comes from `git log`**, not from memory. The work's full
   range is
   [`07cea35...849a75d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/compare/07cea35...849a75d);
-  this log's own commits follow it. Section 1 predates that range.
-- **The work ran across three Claude Code sessions.** Section 1 is the design
+  this log's own commits follow it. Sections 1 and 2 predate that range.
+- **The work ran across four Claude Code sessions.** Section 1 is the design
   session (`cacd7730`), which settled the course and wrote the harness before
   any of it was built; its own commits never reached `main`, for the reason
-  recorded there. Sections 2 to 4: everything up to `399b641` came from the
-  first build session (`58785399`). Commits `0310bfe` to `849a75d` came from a
-  second (`c14c47e2`), which resumed section 4's task. Their results were first
-  read back from the commit messages; that session later rewrote them from its
-  own transcript (section 5). The end state at the bottom
-  was re-checked with the tools, not copied from them.
+  recorded there. Section 2 is the handoff session (`c0104c7d`), which put
+  those commits on `main`, corrected the calendar and planned the build.
+  Sections 3 to 5: everything up to `399b641` came from the first build session
+  (`58785399`). Commits `0310bfe` to `849a75d` came from a second (`c14c47e2`),
+  which resumed section 5's task. Their results were first read back from the
+  commit messages; that session later rewrote them from its own transcript
+  (section 6). The end state at the bottom was re-checked with the tools, not
+  copied from them.
 
 ---
 
@@ -239,8 +241,10 @@ rather than implying otherwise.
   than retry them.
 
 **Commits.** This session's two commits never reached `main`: push was denied
-throughout, and the work travelled as patches instead. Equivalent commits on
-`main` carry the same messages and content.
+throughout, and the work travelled as patches instead. Section 2 applied them,
+so the commits on `main` carry the same messages and content, except that
+`1d4e50f` also keeps the pointer to `README.md` and the course website that
+resolving its conflict preserved.
 
 | Commit on `main` | What it did |
 | --- | --- |
@@ -249,7 +253,179 @@ throughout, and the work travelled as patches instead. Equivalent commits on
 
 ---
 
-## 2. Decks for every week, and pictures
+## 2. The design lands locally, and its calendar is corrected
+
+*Sent 2026-09-15 00:20:55 AEST*
+
+> apply git patches and resolve conflicts
+
+**Result.** An earlier `git am` was still open, stopped on the first patch with
+nothing applied. It was aborted and re-run with a three-way merge. The first
+patch conflicted in `CLAUDE.md`: it replaces the starter's placeholder note,
+which the local commit `be2b647` had already cut down to a pointer at
+`README.md` and the course website. The harness was taken whole and the pointer
+kept as its last working rule. It went there because the second patch edits
+nothing at the end of the file, so that patch then applied without a conflict
+of its own.
+
+---
+
+*Sent 2026-09-15 00:28:47 AEST*
+
+> read https://claude.ai/code/session_01L4hWWjsLE8es6qoYSJWVv9
+
+**Result.** The link was the design session's transcript on claude.ai. The
+desktop app's session tools couldn't open it, so it was read in the user's
+signed-in Chrome, scrolled through until every message had loaded. Its handoff
+notes were checked against the repo rather than repeated:
+
+- Nothing had been build-verified.
+- The design doc ended the course period on 11 Jun, but `src/course-config.ts`
+  still said 28 May.
+- `CLAUDE.md` named `spec/inclusive-language.test.ts`, which didn't exist.
+- The patches were meant for `claude/nifty-planck-ijr2i5`, a branch that only
+  ever existed in the cloud session, so the commits stayed on `main`.
+
+**Clarifying question, and the answer** *(answered 2026-09-15 00:30:01 AEST)*.
+Two Chrome browsers were connected. *Which one should open the claude.ai
+session?* --- **"Browser 2 (macOS)"**. It changed no content.
+
+**Mistake, recorded:** the date note was passed on as "the end date in the
+config is out of date", with an offer to change it. The config was right and
+the design doc's calendar was wrong, which the next prompt pointed out.
+
+---
+
+*Sent 2026-09-15 12:02:00 AEST*
+
+> ending at 2027-05-28 should give 14 weeks from 22 Feb, including 12 teaching weeks and 2 break weeks, no?
+
+**Result --- the calendar.** Yes. Monday 22 Feb to Friday 28 May 2027 is exactly
+fourteen weeks, checked with `cal` rather than counted. The starter's period
+already held twelve teaching weeks and a two-week break. The design doc had used
+a one-week break (the week of 12 Apr), left 24--28 May empty, set the capstone
+for 11 Jun, and proposed stretching `endDate` to cover a gap its own calendar
+had made. So the fix went into the calendar: a two-week break, 12--23 Apr, and
+weeks 8--12 moved to 26 Apr -- 28 May, still on Tuesdays and Thursdays and so
+still clear of the ANZAC Day holiday.
+
+`spec/data-integrity.test.ts` fails any due date after `endDate`, so the late
+deadlines were proposed inside the period: the Interoperation Report on 21 May,
+the Field Journal and the capstone on 28 May.
+
+---
+
+*Sent 2026-09-15 13:07:29 AEST*
+
+> let capstone due on 13 Jun 23:59
+
+**Result.** The capstone is due Sun 13 Jun 2027, 23:59. What that implies was
+spelled out rather than left for the test to find: `endDate` moves after all, to
+13 Jun, for the capstone alone, and teaching still ends on 28 May. The design
+doc now says so beside the calendar. The config was left for when the course
+record gets written, and the frontmatter form the date will need was noted:
+`2027-06-13T23:59:00+10:00`, since Canberra has no daylight saving in June.
+
+---
+
+*Sent 2026-09-15 14:19:57 AEST*
+
+> Field Journal should turn in once a week from week 2 - 12
+
+**Result.** Submitted weekly, due 23:59 on the Sunday of each of weeks 2--12,
+with nothing due over the break; the best ten of eleven still count. No day was
+given, so Sunday was chosen to match the capstone and to leave Thursday's lab
+plus a weekend to test a rule. Two things were flagged rather than changed:
+week 5's deadline falls on Easter Sunday, left because best-ten already covers
+one missed week, and the Interoperation Report's 21 May date had lost its
+reason.
+
+**Mistake, recorded:** that 21 May date was this session's own suggestion, made
+before reading the report's brief. The brief runs the partner work over the
+labs of weeks 9--11, which put the report due the day after the last lab.
+
+---
+
+*Sent 2026-09-15 14:24:07 AEST*
+
+> move to 30 May 23:59
+
+**Result.** The Interoperation Report is due Sun 30 May 2027, 23:59, in week 12:
+ten days after the last partner lab, at the same time as week 12's journal
+submission, and inside `endDate`.
+
+---
+
+*Sent 2026-09-15 15:06:12 AEST*
+
+> commit and push. add to both user and project harness that commit and push as you work, and work on main directly unless required by user otherwise.
+
+**Result.** The calendar and assessment changes were committed and pushed. The
+rule then went into both harnesses: `CLAUDE.md` gained a working rule citing the
+stranded patch files as its reason, and a new `~/.claude/CLAUDE.md` got the same
+rule as two lines. That second file lives on this machine only, so no commit can
+cite it.
+
+This clone's first `pnpm install` fetched all four GitHub-hosted dependencies
+that returned 403 in the design session, and `pnpm check` then passed here for
+the first time: types with 0 errors and 0 warnings, 16 pages with no axe
+violations or broken links, and the one supplied spec test. Its output was
+written to a log and read, not taken from a wrapper's exit status. CI stays off while the repo is
+private, so from then on that local check was the only feedback loop.
+
+---
+
+*Sent 2026-09-15 15:21:27 AEST*
+
+> what's the plan and next step? anything requires attention in the course design before you start?
+
+**Result.** The brief and spec were read on the course website first, as the
+harness requires. The deadline was noon on Monday 21 Sep 2026, with no late
+submissions. Three findings needed a decision:
+
+- The design session had said visual treatment was 20% of the mark. It isn't:
+  the 20% is *working deployed artefact*, and the brief says restyling isn't
+  required.
+- `CLAUDE.md` promised a vocabulary test that didn't exist, and banning single
+  words would fail the design's own sentences, like "the fix is bilateral".
+- The accommodations policy had been agreed in the design session as written
+  straight, without the satire, but that was never recorded, and the harness
+  let only week 10 drop the satire.
+
+Smaller ones: the Protocol Specification was the only deadline without a time;
+the Field Journal should be a single assessment entry, since eleven 3% entries
+would total 103% and couldn't express best ten; the Interoperation Report's
+partner work runs through the week 10 disclosure lab, so nobody should have to
+disclose to a partner; and `PROCESS.md` is the student's own account, so the
+agent would keep a decision log with commit links instead of drafting it.
+
+The plan put foundations first --- the course record, the Lab label, the
+`readings` collection, spec tests before any content, and a dated skeleton ---
+then weeks 1 and 2 as a slice for review, then weeks 3--12, then the remaining
+pages, `/ship` and `PROCESS.md`. To fit six days, it suggested keeping the
+starter's look and giving weeks 3--12 less depth than weeks 1 and 2.
+
+**What became of it**, from the record rather than from this session. Neither
+of those two suggestions was taken. The harness gained a rule against shrinking
+scope or stubbing sections to finish sooner
+([`44d5b99`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/44d5b99)),
+and the hand-drawn visual system was built
+([`dbbe203`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/dbbe203)).
+The vocabulary test was written with the ambiguity handled: it bans *fix*,
+*treat*, *correct* and *cure* only when a person is the object, and it skips
+marked quotations
+([`7752322`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/7752322)).
+
+| Commit | What it did |
+| --- | --- |
+| [`1d4e50f`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/1d4e50f) | First patch applied; `CLAUDE.md` conflict resolved, keeping the `README.md` pointer |
+| [`20f1503`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/20f1503) | Second patch applied without conflict |
+| [`167eebc`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/167eebc) | Calendar fitted to the fourteen-week period; weekly journal; report and capstone dates |
+| [`abf69e8`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/abf69e8) | Commit and push as you work, straight to `main` |
+
+---
+
+## 3. Decks for every week, and pictures
 
 *Sent 2026-09-15 23:10:47 AEST*
 
@@ -305,7 +481,7 @@ when it shows a mechanism the prose can't.
 
 ---
 
-## 3. Bugs, real images, two-hour lectures
+## 4. Bugs, real images, two-hour lectures
 
 *Sent 2026-09-16 13:00:50 AEST*
 
@@ -376,7 +552,7 @@ changed.
 
 ---
 
-## 4. CI, then every remaining week
+## 5. CI, then every remaining week
 
 *Sent 2026-09-16 15:34:17 AEST*
 
@@ -513,7 +689,7 @@ fetched at 543px wide from scans of 1000 and 1920px. Both were fixed in
 
 ---
 
-## 5. This log
+## 6. This log
 
 *Sent 2026-09-16 21:56:18 AEST*
 
@@ -538,13 +714,13 @@ committed in the second.
 
 **Result.** The rule is stated at the top of this file. The budget check and
 every "continue" prompt lost their sections, and the second session's work was
-filed under section 4, whose task it finished.
+filed under section 5, whose task it finished.
 
 *Sent 2026-09-16 22:34:46 AEST*
 
 > check @docs/prompts-result.md and add all from this session
 
-**Result.** Sent to the second session (`c14c47e2`), the one that did section 4's
+**Result.** Sent to the second session (`c14c47e2`), the one that did section 5's
 later work, so its results there are now first-hand rather than read back from
 commit messages: minutes before and after for each week, the sources cut, the
 repairs to earlier work, the clarifying answer, and the mistakes the commit
@@ -558,7 +734,9 @@ commit that contains it.
 | --- | --- |
 | [`0b48398`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/0b48398) | This log, first version |
 | [`db09d15`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/db09d15) | Timestamps added; two-session split corrected |
+| [`39205d9`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/39205d9) | Continue-only and slash-command-only prompts dropped |
 | [`1a67350`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/1a67350) | The second session's results, written from its own record |
+| [`3fa484a`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/3fa484a) | The design session, logged first-hand as section 1 |
 
 *Sent 2026-09-17 17:31:04 AEST*
 
@@ -582,6 +760,29 @@ Its own two commits are cited as the equivalent pair on `main`, since the
 originals were never pushed --- push was denied for the whole session, and the
 work moved as `git format-patch` output instead. The "continue" prompt and an
 interrupted resend are omitted under the rule above.
+
+*Sent 2026-09-17 17:51:29 AEST*
+
+> check @docs/prompts-result.md and add all from this session
+
+**Result.** Section 2. Sent to the handoff session (`c0104c7d`), which put the
+design session's commits on `main`, corrected the calendar and planned the
+build. That work sat between the design session and the first build commit and
+had no section of its own. Its timestamps place it second, so the later sections are
+renumbered again, from 2--5 to 3--6, with their cross-references updated, and
+the sessions bullet now counts four sessions.
+
+Prompts, times and the clarifying answer were read from that session's
+transcript. The section records two mistakes no commit message mentions, and
+says what the commits that followed did with the plan's suggestions.
+
+Checking the file turned up two faults in it, both fixed. The previous edit,
+`3fa484a`, dropped `39205d9`'s row from the table above, though the entry sent
+at 22:34:46 still says that row was added; the row is back, and `3fa484a` has
+one too. Section 1 said the commits on `main` carry the same content as the design
+session's, but `1d4e50f` also keeps the pointer to `README.md` and the course
+website, and section 1 now says so. This edit's own commit is the next one in
+`git log`.
 
 ---
 
