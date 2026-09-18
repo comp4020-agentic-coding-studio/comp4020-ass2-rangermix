@@ -56,6 +56,11 @@ Each entry has four parts, the shape of a good engineering retrospective:
 3. **The test.** A second time you checked the rule, including if it failed.
 4. **The rule now.** Revised or held, and why.
 
+Checking a rule does not require changing your behaviour: you can observe a
+second exchange while choosing to run or decline a subroutine. A prediction
+about what *would* have happened is worth recording, labelled as a prediction;
+it does not replace the observed second instance.
+
 A short example, from week 4's material:
 
 > **What happened.** Tuesday, group meeting of five. I asked "can everyone do
@@ -65,13 +70,17 @@ A short example, from week 4's material:
 > **The rule.** In this group, a yes after a noticeable pause means "probably
 > not, but I don't want to say so in front of everyone."
 >
-> **The test.** Friday, I asked the same person one-to-one, by message: "Is
-> Thursday actually good for you? Totally fine if not." Reply: "Honestly Monday
-> is better."
+> **The test.** Friday, I asked the same person one-to-one, by message: "Are
+> Thursdays usually good for you? Totally fine if not." Reply: "Honestly Monday
+> is better." That was follow-up on the first episode. At Friday's group meeting, I
+> asked whether people could stay ten more minutes. Another member paused,
+> then said yes. I checked: "Do you need to go? Fine if you do." They said,
+> "No, I was adding up the time," and stayed for the ten minutes.
 >
-> **The rule now.** Revised: a delayed yes is a reason to check availability
-> again, with an explicit exit. This test does not tell me whether being in
-> front of the group caused the pause.
+> **The rule now.** The second delayed yes did not predict a refusal. I'll
+> check availability once, with an explicit exit, rather than decode the
+> pause as a no. Neither episode tells me whether being in front of the group
+> caused the pause.
 
 ## What you submit
 

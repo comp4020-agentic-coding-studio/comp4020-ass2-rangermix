@@ -31,11 +31,12 @@ Checked and cut:
 
 Each area is a protocol layered on the ones the course has already
 documented. Romantic interest is signalled in styles, not one code (Hall et
-al.), so "can't read flirting" partly means someone is running a different
-style. Influence works mostly through goals people already have, and mostly
-below awareness (Cialdini & Goldstein). Power changes how much of the
-protocol a person has to run: the less power, the more attention to other
-people's interests and the more inhibition (Keltner et al.).
+al.). The course suggests style mismatch as one possible reason someone
+cannot read a signal; the inventory does not test receivers' understanding.
+Cialdini & Goldstein describe influence as often subtle, indirect and outside
+awareness, organised around goals people already have. Keltner et al. propose
+that elevated power activates approach and reduced power activates inhibition;
+the methodological challenge below belongs beside that proposal.
 
 Sala et al. fix a real gap in OI-1, which had been resting entirely on a
 general-population inventory of how people say they flirt. Their result is the
@@ -45,11 +46,10 @@ and both named interpersonal conflict as a barrier. The difference the authors
 report is that autistic participants specifically highlighted **uncertainty**
 about relationships and communication.
 
-Same destination, different obstacle, and the obstacle has a name the course
-has already used twice. Week 3: an envelope marks a place where the sender is
-uncertain. Week 9: the rate limit is what you run when you don't know the other
-person's next step. OI-1 doesn't need new machinery, which is a better argument
-for the course's structure than any claim it could make about romance.
+Uncertainty is a reason to revisit the course's earlier questions about what a
+sender knows and how two people agree a pace. These are possible starting
+points for students, not evidence that the envelope or depth model resolves
+the challenges the participants described.
 
 Moskowitz turns OI-3's "contested" label from a gesture into a citation, and
 the shape of the objection is worth more to this course than the objection.
@@ -66,8 +66,10 @@ teaches it as the model for its own errata.
 
 These are starting points, not a debate. One caution matters: the Flirting
 Styles Inventory measures self-reported style, not what receivers understand.
-Another: Keltner et al. drew a published comment (Moskowitz, 2004, found in
-research but not read), so the approach--inhibition account is contested.
+Another: Keltner et al. drew a published comment (Moskowitz, 2004). Its abstract
+was checked on 2026-09-16, as recorded above; the full comment was not read.
+The abstract supports the methodological objection and the existence of
+proposed designs, without supplying all their details.
 
 ## What survives into teaching
 
@@ -76,13 +78,14 @@ research but not read), so the approach--inhibition account is contested.
 - The course's closing point about power: the protocol's costs fall unevenly.
   Keltner et al.'s inhibition side reads as "whoever holds less power runs more
   of the protocol". That echoes week 6's ledger and week 11's minority cost.
-  The connection is the course's; the finding is theirs.
+  The connection is the course's and is conditional on the contested proposal;
+  it is not an independently measured distribution of protocol costs.
 - Each open issue names a reading to start from and one question the student
   could turn into the capstone field experiment.
-- **Both groups want the same things from intimacy** (Sala et al.), name the
-  same enablers, and differ in the obstacle --- uncertainty, for the autistic
-  participants. OI-1 therefore points back at weeks 3 and 9 rather than
-  introducing anything new.
+- **Both groups named shared enablers of intimacy** (Sala et al.), while the
+  autistic participants specifically highlighted uncertainty. Keep the sample
+  and qualitative scope; weeks 3 and 9 offer questions to revisit, not a
+  tested remedy for that uncertainty.
 - **OI-3's contest is methodological** (Moskowitz): the designs could not
   isolate the specific effects each half of the proposal asserts. The week uses
   it as the worked example of a good erratum --- one that names the test.
@@ -91,3 +94,19 @@ research but not read), so the approach--inhibition account is contested.
 
 - The open-issues register format and every "why this is out of scope" note.
 - The link from power to the week 6 and week 11 costs.
+- The field-experiment ethics check: ordinary behaviour depends on the people
+  and setting; identify possible costs, stopping conditions and repair. Being
+  noticed does not by itself make a variation ordinary or unacceptable, and
+  there is no universal eye-contact minimum.
+- The depth scale and recovery ledger need checking against experience.
+  Consistent use alone does not validate their order or ranking. A pacing
+  agreement may still be useful without retaining the numerical ±1 rule.
+
+## Teaching correction, 2026-09-18
+
+Corrected the stale statement that Moskowitz was unread: its abstract was
+checked, not its full text. Kept the power argument conditional and the
+romantic-intimacy applications as course proposals. Aligned contextual ethics
+and the status of unvalidated models with the live course. The source checks
+above retain their original dates and access levels; no new full-paper check
+or resolution of the later power debate is claimed.

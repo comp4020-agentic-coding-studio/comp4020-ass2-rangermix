@@ -38,7 +38,15 @@ These checks cover the follow-up to the assignment review:
 | --- | --- |
 | `student-instructions.test.ts` | The last pre-break lab names both adjacent journal deadlines from the calendar; numbered lecture references point to their intended headings; ordinary pages have a main heading. |
 | `timetable.test.ts` | Every teaching date and deadline appears, times and rooms are stated, and the timetable is reachable from every ordinary page. |
+| `lecture-timing.test.ts` | Imports do not swallow title slides; the rough model counts five-second transitions, two-minute ordinary slides and explicit activities without note inflation; displaced breaks fail the 45–55-minute placement check; both output modes use the same planning rules. |
+| `teaching-schedule.test.ts` | Each lab has a contiguous 50-minute run sheet with its clock times; every deck passes the rough core/break-placement checks, displays the fixed break and ends in an optional discussion question with the 15:55 stop. |
 | `submission.test.ts` | The timetable and all assessment briefs link to a built submission guide; it states that uploads are unavailable, links every task and the help policies, and does not offer a nonfunctional upload form. |
 
 Run `pnpm check` to build the current content before testing it. Running
 Vitest alone reads the last build, which may predate an edit.
+
+The timing estimate is a planning check for a fictional course, not evidence
+of classroom delivery. The user-approved schedule requires no rehearsal.
+Exercise validity, privacy and whether a worked example demonstrates its
+rubric still require a content review; passing string or structure checks
+does not settle those questions.

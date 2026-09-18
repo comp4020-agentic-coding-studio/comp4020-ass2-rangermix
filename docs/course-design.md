@@ -1,8 +1,10 @@
 # SLOP1562 --- settled design
 
 Every decision fixed so far. `CLAUDE.md` holds the rules; this holds the spec.
-Nothing here is built yet: no dependency in this repo installs in the session
-where it was written, so **none of it is build-verified**.
+The site is built and deployed. The applied editorial revision passed 425
+specifications on 18 September 2026; later verification belongs in the dated
+implementation notes. The schedule below incorporates the user's subsequent
+revision for this fictional course.
 
 ## Identity
 
@@ -12,7 +14,7 @@ where it was written, so **none of it is build-verified**.
 | Title | Undocumented Protocols: Field Methods in Neurotypical Interoperation |
 | Nickname | **NT 101** |
 | Session | Semester 1, 2027 |
-| Teaching | Tuesday lecture 14:00--16:00, Thursday lab 14:00--15:00 |
+| Teaching | Tuesday lecture 14:05--15:55 at latest, Thursday lab 14:05--14:55 |
 | Period | 22 Feb 2027 -- 13 Jun 2027 |
 | Weekly hour | **Lab** |
 | Tags | social protocol, field methods, communication |
@@ -78,18 +80,33 @@ and the ANZAC Day holiday (observed Mon 26 Apr), both Mondays in 2027.
 
 | | |
 | --- | --- |
-| Lecture | Tuesday 14:00--16:00, Theatre 1, Applied Interaction Building |
-| Lab | Thursday 14:00--15:00, Room 2.14, the same building |
+| Lecture | Tuesday 14:05--15:55 at latest, Theatre 1, Applied Interaction Building |
+| Lab | Thursday 14:05--14:55, Room 2.14, the same building |
 | Field Journal | Sunday 23:59, weeks 2--12 |
-| Contact | three hours a week |
+| Room bookings | Tuesday 14:00--16:00 and Thursday 14:00--15:00 |
 
-Two hours for the lecture and one for the lab. The hour is what the labs were
-already built to: every run sheet in `sessions` runs 0:00 to 1:00. The two
-hours are what `pnpm check:timing` sizes each deck against: 105 minutes of
-content in the 120-minute slot, the rest being arrival, the break at 15:00 and
-overrun. The speaker notes on the first slide of weeks 1, 4 and 5 already say
-the break is at the hour and to announce it, which is the timetable's second
-clause.
+Lectures start at **14:05**, break at **14:55–15:05**, and finish their core
+material around **15:40**: about **85 minutes of content**. The remaining time
+is contingency or optional discussion of the deck's final open-ended question,
+ending by **15:55**. The clock fixes the break even if an earlier activity runs
+long. Every deck includes a visible break/resume slide and ends with its
+discussion question. No required self-check depends on that optional period.
+
+`pnpm check:timing` uses a deliberately rough model: **five seconds per title
+or transition, two minutes per ordinary slide, and the stated time for an
+activity**. Notes add no time. Breaks and optional discussion do not contribute
+to the core estimate. The nominal target is 85 minutes with a disclosed
+75–95-minute planning band. Place the break at a useful boundary within
+45–55 estimated core minutes; the report shows each side of it. The displayed
+clock time remains 14:55–15:05 regardless of this estimation tolerance.
+This is a fictional course and no rehearsal is required. Do not add a demand
+for observed classroom delivery to its acceptance criteria.
+
+Every lab run sheet covers **0:00 to 0:50**, relative to **14:05**. Finish at
+**14:55**, leaving the last five minutes of the booking for departure. Extend
+a lab to a 90- or 120-minute booking only if its necessary work cannot fit;
+update the timetable, run sheets and specifications together. The current
+activities fit the one-hour booking with fifty working minutes.
 
 All of it lives on one page, `/timetable/`, **first in the navigation, before
 Lectures**: where to be and when is what a student needs before anything else
@@ -119,9 +136,10 @@ routes and the prototype's stated availability.
 **The undocumented half of a timetable is the point.** A timetable hands you a
 room and a start time and leaves you to infer everything else, which is this
 course's subject matter happening to the course itself. So the page writes down
-what is usually inferred: 14:00 means 14:00 and not ten past; the lecture breaks
-at 15:00 for ten minutes, announced in advance rather than called when the room
-looks tired; you can leave by the back door without explaining; lectures are
+what is usually inferred: teaching starts five minutes into the booking; the
+lecture breaks at 14:55 and resumes at 15:05; core teaching ends around 15:40
+and any discussion ends by 15:55; you can leave by the back door without
+explaining; lectures are
 recorded and captioned by Wednesday morning, with nothing to ask for and no
 reason to give; labs are not recorded, because week 1's rule about observing
 people applies to the room you are sitting in; weeks 1 and 2 are the only labs
@@ -188,7 +206,8 @@ employer, each with its own return and its own cost.
 
 **Partial disclosure** is the week's most useful and least-taught idea: you can
 disclose a *need* without the *label*. "I process written instructions much
-better than verbal ones" buys the accommodation without the rest.
+better than verbal ones" requests an adjustment without naming a diagnosis.
+It does not guarantee how the request will be received or what will be granted.
 
 **The register break** is the sanctioned exception in `CLAUDE.md`. Approved
 text:
@@ -282,10 +301,11 @@ ladder, a diffusion chain and an open-issues register. A week gets a drawing
 when it shows a mechanism its prose can't; where the week's signature artefact
 is already a populated table, it stays a table.
 
-No raster illustrations and no borrowed visual idiom: the satire is carried in
-the course's own hand --- a stamped status, a pencilled margin note, a deadpan
-caption under a rigorous drawing --- and is aimed at the protocol, never the
-student.
+The diagrams use the course's own hand: a stamped status, a pencilled margin
+note, a deadpan caption under a rigorous drawing. Historical photographs and
+documents may accompany them when they explain a concrete comparison; source
+and licence records live in `docs/notes/image-provenance.md`. The satire is
+aimed at the protocol, never the student.
 
 `pnpm check:evidence` rejects the starter artwork, so the hero and social card
 must be replaced or deliberately removed.

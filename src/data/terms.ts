@@ -64,7 +64,7 @@ export const terms: Term[] = [
     term: "field note",
     week: 2,
     definition:
-      "A four-part record: what happened, the rule you inferred, the test, the rule now. It describes an exchange; it does not diagnose a person.",
+      "A four-part record: what happened, the rule you inferred, a test on a second exchange, the rule now. It describes an exchange; it does not diagnose a person. Predictions about what would have happened stay labelled as predictions.",
   },
   {
     term: "asleep test",
@@ -116,7 +116,7 @@ export const terms: Term[] = [
     term: "repair",
     week: 5,
     definition:
-      "The protocol's error handling for trouble in speaking, hearing or understanding. Routine: a listener flags trouble about once every 1.4 minutes.",
+      "The protocol's error handling for trouble in speaking, hearing or understanding. In the twelve-language study used in week 5, a listener flagged trouble about once every 1.4 minutes.",
   },
   {
     term: "repair initiator",
@@ -140,25 +140,25 @@ export const terms: Term[] = [
     term: "ledger",
     week: 6,
     definition:
-      "A record of masked subroutines: context, what each bought, its cost in recovery hours, and the pressure it was run under.",
+      "Five columns: subroutine, context, what it bought, cost in recovery hours, and pressure — chosen, expected or enforced. A switching row names the from/to contexts; its pressure may be “n/a — transition” when no separate social demand applies. Blank is not a pressure value.",
   },
   {
     term: "recovery hours",
     week: 6,
     definition:
-      "The ledger's planning unit: an honest estimate of how long a subroutine takes to recover from. A guess, not a measured price.",
+      "The ledger's planning unit: your estimate of recovery time after a subroutine in a particular context. Revise it against experience. Time spent camouflaging and recovery time are different quantities; the research supplies no conversion.",
   },
   {
     term: "switching charge",
     week: 6,
     definition:
-      "The ledger line for changing how much you mask between contexts, which carries a cost of its own.",
+      "A separate ledger estimate for changing how much you mask between contexts. Record the from/to contexts and any cost you noticed; this is not a fixed fee that everyone pays. No switch observed is a valid entry.",
   },
   {
     term: "budget",
     week: 6,
     definition:
-      "What you can spend on masked subroutines before recovery runs out. Masking is taught as a budget: never an aspiration, never a failing.",
+      "A plan for which subroutines to run or decline, using estimated costs, recovery time and the pressure on each choice. Keep a subroutine when declining costs more than you can afford. Masking is never an aspiration or a failing.",
   },
   {
     term: "overload",
@@ -176,7 +176,7 @@ export const terms: Term[] = [
     term: "autistic burnout",
     week: 7,
     definition:
-      "Defined with autistic adults: chronic exhaustion, loss of skills, reduced tolerance to stimulus, from cumulative load with no way to get relief. Distinct from depression and from work burnout.",
+      "Defined with autistic adults as chronic exhaustion, loss of skills and reduced tolerance to stimulus, linked to cumulative load and barriers to relief. The studies distinguish it from depression and from work burnout.",
   },
   {
     term: "runbook",
@@ -206,19 +206,19 @@ export const terms: Term[] = [
     term: "disclosure",
     week: 9,
     definition:
-      "Telling someone something about yourself. The engine of closeness: disclosing, being disclosed to, and liking feed each other.",
+      "Telling someone something about yourself. Research links disclosure and liking, but another person's disclosure does not oblige you to match it.",
   },
   {
     term: "depth scale",
     week: 9,
     definition:
-      "The course's five levels of disclosure, from logistics (0) to things few people know (4). A working model, not a research instrument.",
+      "The course's five levels of disclosure, from logistics (0) to things few people know (4). A model for discussing voluntary escalation; neither the levels nor their order have been validated as a research instrument.",
   },
   {
     term: "rate limit",
     week: 9,
     definition:
-      "The pace of escalation the other person can match: stay within one level of their last disclosure, step up one level at a time, and wait for them to step.",
+      "For voluntary escalation, the course suggests staying within one level of the other person's last disclosure, stepping up one level at a time and waiting. Holding a lower level, stepping down or passing is always available; their disclosure sets no minimum for yours. The numerical rule is untested.",
   },
   {
     term: "responsiveness",
@@ -242,7 +242,7 @@ export const terms: Term[] = [
     term: "anticipated stigma",
     week: 10,
     definition:
-      "What you expect would happen if people knew. Distinct from the effort of concealing; one of four predictors of distress in the study covering thirteen concealable identities.",
+      "What you expect would happen if people knew. Distinct from concealment effort or disclosure status; one of four predictors of distress in the study covering thirteen concealable identities. It does not measure the price of telling versus not telling.",
   },
   {
     term: "the five audiences",
@@ -265,7 +265,7 @@ export const terms: Term[] = [
   {
     term: "irreversibility",
     week: 10,
-    definition: "Once told, a disclosure can't be taken back, and the listener re-reads the past through it.",
+    definition: "Once told, a disclosure cannot reliably be taken back. It can change how the listener reads earlier exchanges; you do not control that reading.",
   },
   {
     term: "interoperation",

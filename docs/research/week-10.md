@@ -25,28 +25,31 @@ review names the gap and the research field's own bias towards "disclose"
 (Thompson-Hodgetts et al.). Chaudoir & Fisher explain why disclosure can help
 at all, and why the discloser's goal changes what happens.
 
-Quinn and Chaudoir supply the half of the ledger this week did not have. Every
-other source prices **telling**. This one measures the state of not having
-told, and finds it is not free: across 13 different concealable identities,
-distress tracked how much stigma a person **anticipated**, how central and how
-salient the identity was, and how devalued it is culturally. In their second
-study, anticipated stigma and cultural stigma were related directly to
-self-reported health.
+Quinn and Chaudoir studied people with concealable stigmatised identities.
+Across 13 identities, distress tracked anticipated stigma, centrality,
+salience and cultural devaluation. In their second study, anticipated stigma
+and cultural stigma were directly related to self-reported health. The checked
+record does not compare the counterfactual costs of telling and not telling,
+or establish that every participant was in a state of not having told.
 
-The important nuance for teaching is what the predictor *is*. It is not
-concealment as an activity and it is not disclosure; it is **what you expect
-would happen if people knew**. So two students concealing exactly the same
-thing, with the same effort, are not carrying the same load --- and the
-difference between them is a belief about other people, which is a thing an
-environment produces. That makes it week 6's ledger with a line item nobody had
-named, and it keeps the cost of the undisclosed state from being invisible in
-a week otherwise made of reasons to be careful.
+Anticipated stigma means **what you expect would happen if people knew**.
+It is distinct from concealment effort and disclosure status, and it is one
+of four predictors rather than a complete explanation of distress. The course
+uses it to ask about expected reactions. It does not infer a controlled
+two-student comparison or an environmental cause from the association.
+
+In the decision exercise, keep expected consequences of telling in the telling
+column. Record ongoing costs experienced while keeping something private
+separately, including worry if present. Anticipated stigma may matter to both,
+but an expected rejection after telling is not itself an observed cost of
+not telling. A department's adjustment policy is a proposal to test for its
+effect on expectations; this study does not measure that intervention.
 
 The associative-stigma comparison is worth stating carefully: people whose
 stigma came by association reported less distress, and the analysis attributes
-that difference entirely to lower anticipated stigma, centrality and salience.
-The course reads that as evidence the three mediators are doing real work,
-not as a claim about anyone's family.
+that difference to lower anticipated stigma, centrality and salience through
+full statistical mediation. That model does not by itself establish causal
+effects of changing those variables, or a conclusion about anyone's family.
 
 Corrigan and Matthews are on the list for one structural point: disclosure is
 **a set of levels, not a switch**. The paper closes with a review of levels of
@@ -74,13 +77,12 @@ teaches the disagreement, not a verdict.
   Chaudoir & Fisher's point that disclosure changes social information, and
   lets the student choose which information. The course's own synthesis; no
   source tests it directly.
-- **Not telling has a measured cost, and it is not the effort of concealing**
-  (Quinn & Chaudoir): distress tracked anticipated stigma, centrality, salience
-  and cultural devaluation. The week uses it to make the decision two-sided
-  instead of a catalogue of risks on one side only.
-- **Anticipated stigma is a belief about an environment**, which is why the
-  week can say that a department that makes disclosure ordinary changes the
-  number without anybody disclosing anything.
+- **Four predictors of distress, not a measured price of concealment**
+  (Quinn & Chaudoir): anticipated stigma, centrality, salience and cultural
+  devaluation. Distinguish these from disclosure status and concealment effort.
+- **Institutional changes might affect expected reactions.** This is a
+  course proposal to test, not an effect established for adjustment policies
+  by Quinn & Chaudoir.
 - **Disclosure has levels rather than an on switch** (Corrigan & Matthews), and
   the course's five audiences and partial disclosure are one way of cutting it,
   not the way.
@@ -93,3 +95,13 @@ teaches the disagreement, not a verdict.
 - The register break, word for word as settled in `docs/course-design.md`.
 - The five-audience table's return and cost entries.
 - All scripts.
+- The two-column decision exercise and the proposal to test whether changes
+  in institutional practice alter students' expected reactions to disclosure.
+
+## Teaching correction, 2026-09-18
+
+Removed the interpretation of Quinn & Chaudoir as a test of concealment costs
+or departmental interventions. Separated predicted disclosure consequences
+from experienced costs while keeping something private. The source checks
+above retain their original dates and access levels; no new full-paper check
+or intervention evidence is claimed. The protected register break is unchanged.

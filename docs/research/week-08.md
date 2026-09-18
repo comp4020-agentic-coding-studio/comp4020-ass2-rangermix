@@ -26,12 +26,15 @@ it has a measured cost: impressions of the student's credibility, and a real
 effect on whether the request is granted. Instructors and students disagree on
 how much it matters, which is the definition of an undocumented expectation.
 
-People who need help assume they'll be refused far more often than they are,
-because they forget that saying no is socially costly for the other person too.
+In Flynn and Lake's studies, help-seekers underestimated agreement to direct
+requests and underweighted the helper's social cost of saying no. That gives
+students a question to check about their own estimates, not a verdict that
+every expected refusal is an overestimate.
 
-Autistic students report the social parts of university as the hard parts,
-and the academic parts as strengths (Gurbuz et al.). The friction is at the
-interface, not in the work.
+Autistic students in Gurbuz et al. reported more social challenges alongside
+academic strengths. That does not establish an absence of academic difficulty.
+The course uses the result to discuss demands around academic work, including
+the email, office door and group chat.
 
 Davies & Bagnall is the week's premise stated from inside the institution.
 Week 8 opens by observing that the university publishes a forty-page
@@ -43,9 +46,9 @@ It also forces a correction the week needed. Week 8 teaches students to write
 a better email, which risks reading as "the fix is for you to get better at
 asking". These staff recommend the opposite fix --- universal design, and a
 culture where fewer individual adjustments are needed. The week now carries
-both, in that order: here is the script, because it works this semester; and
-here is who says the asking should not be the student's job alone,
-because they are the people on the other end of it.
+both: scripts students can try, and staff recommendations that the asking
+should not fall on the student's initiative alone. Neither the study nor the
+mini-review below tests this course's script as an intervention.
 
 Brooks et al. answers a fear the week had been leaving unaddressed. Flynn and
 Lake cover "they will say no". This covers the other one, which is closer to
@@ -53,8 +56,8 @@ why an email stays in drafts: *they will think less of me for asking.* The
 answer is a measured effect in the opposite direction, and the authors say the
 fear is misplaced in those words.
 
-The moderators are the part that changes the advice rather than merely
-reassuring. Seeking advice read as most competent when the task was **hard**,
+The moderators inform the course's advice without guaranteeing a response.
+The effect on perceived competence was stronger when the task was **hard**,
 when the advice was sought from that person **personally**, and when the person
 asked was an **expert**. Read as instructions, those are three edits to an
 email: ask about the part that is genuinely difficult, ask *them* rather than
@@ -65,9 +68,9 @@ The scope is a set of experiments about perceived competence, mostly in work
 and decision-making settings rather than universities, and the week says so
 rather than implying a tutor was ever studied.
 
-Martino et al. is why an hour on scripts is defensible at all: self-advocacy
-is associated with educational and employment outcomes. Their own hedge
-("encouraging associations", in a mini-review) travels with the claim.
+Martino et al. links self-advocacy with educational and employment outcomes.
+Their own hedge ("encouraging associations", in a mini-review) travels with
+the claim; it is not evidence that teaching these scripts produces those outcomes.
 
 ## Where they disagree
 
@@ -80,8 +83,9 @@ small (26).
 - The email to a tutor has a specification. The course publishes one:
   subject line, greeting, one request, the context needed, a date, a
   signature.
-- Ask directly. The odds of a yes are better than your estimate (Flynn &
-  Lake).
+- Make a request specific enough to answer. Flynn & Lake's participants
+  underestimated agreement; ask what evidence supports your own estimate
+  rather than assuming it must have the same bias.
 - Extensions and office hours are institutional subroutines with templates;
   the policies page and the people page model them.
 - The university documents everything except how to ask for help. Deadpan,
@@ -93,18 +97,27 @@ small (26).
 - **The staff's own fix is structural, not personal** (Davies & Bagnall):
   universal design, sustained support, better communication between
   stakeholders. Week 8 teaches the script *and* says this.
-- **Asking well is associated with outcomes that matter** (Martino et al.),
-  with the authors' hedge kept intact.
-- **The fear that asking makes you look worse runs the wrong way** (Brooks et
-  al.), and the paper says the fear is misplaced in its own words.
+- **Self-advocacy has encouraging associations with outcomes** (Martino et
+  al.). The review does not test the seven-clause template.
+- **Advice-seekers were perceived as more competent in the studied settings**
+  (Brooks et al.). Keep the three moderators and the setting limits; this is
+  not a promise about a particular tutor.
 - **Who you ask and how hard the thing is both matter** (Brooks et al.'s three
   moderators). This is the week's one piece of advice about *choosing* the
   recipient rather than formatting the message.
 - Week 8's seven email clauses, the extension template and the office-hours
-  opener remain **the course's own**, tested only in this course's labs.
+  opener remain **the course's own**, offered for testing in its labs.
 
 ## Stated as the course's own observation, not research
 
 - The templates' exact wording.
 - The group-work protocol (roles, a written agreement at the first meeting).
 - The "one request per email" rule.
+
+## Teaching correction, 2026-09-18
+
+Removed blanket claims about the reader's refusal estimate and about academic
+work being free of difficulty. Kept the distinction between source findings,
+institutional recommendations and untested course scripts. The source checks
+above retain their original dates and access levels; no new full-paper check
+or successful classroom trial is claimed.

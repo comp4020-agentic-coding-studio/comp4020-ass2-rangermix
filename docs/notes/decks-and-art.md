@@ -141,6 +141,11 @@ turned up by opening a page and looking at it.
 
 ## Job 3: two hours per week
 
+Historical record: the estimates and weights below describe the earlier
+implementation. The user's 18 September follow-up replaces them with the
+schedule and rough model in `docs/plans/2026-09-18-course-consistency.md`.
+Use the current timing command for current numbers.
+
 Added after the first two jobs, when the user pointed out that a week's
 lecture is timetabled for two hours and none of these decks filled one.
 

@@ -1,6 +1,6 @@
 ---
 title: Conformance Tests for Email
-description: "Write three institutional messages from scenario cards, then a partner runs the seven-clause email specification against them as a test suite."
+description: "Write three institutional messages, then test the tutor email against seven clauses and the other two against their own requirements."
 week: 8
 date: 2027-04-29
 teachers:
@@ -11,8 +11,8 @@ spec:
   - "Every clause your partner failed has been rewritten, or has a written reason why breaking it was the right call."
 ---
 
-Today you run Tuesday's seven-clause email specification against three
-messages.
+Today you write three messages. The tutor email gets Tuesday's seven-clause
+checklist; the extension request and group opener have their own checks.
 
 ## Before the lab
 
@@ -21,13 +21,29 @@ semester, with names removed. It will get tested in round 3, if you want it to.
 
 ## Run sheet
 
+Times below run from the 14:05 start; finish at 14:55.
+
 | Time | What happens |
 | --- | --- |
-| 0:00--0:05 | Pairs, and a deck of scenario cards (*you don't understand part of an assignment brief*; *you'll miss the deadline because of a family event*; *your group hasn't met yet and it's week 9*). |
-| 0:05--0:25 | **Write.** From three cards: a tutor email, an extension request, and a group-work opener. |
-| 0:25--0:40 | **Test.** Swap. Your partner runs the seven clauses on your tutor email and writes **pass** or **fail** beside each. For the extension request: is there a date? Is it under 120 words? For the group opener: does it propose all five agreement items? |
-| 0:40--0:50 | **Fix.** Rewrite every failure, or write one line on why the clause shouldn't apply to this message. |
-| 0:50--1:00 | Optional round 3: test a real, anonymised sent email. Then, as a room, which clause failed most often? |
+| 0:00--0:03 | Form pairs and read the three fictional cards below. |
+| 0:03--0:18 | **Write.** Five minutes per card: a tutor email, an extension request, and a group-work opener. |
+| 0:18--0:31 | **Test.** Swap. Your partner records **pass** or **fail** for each of the tutor email's seven clauses. For the extension request: is there a date, and is it under 120 words? For the group opener: does it propose all five agreement items? |
+| 0:31--0:41 | **Fix.** Rewrite every failure, or write one line on why the clause shouldn't apply to this message. |
+| 0:41--0:50 | Optional: test a real, anonymised sent email. Otherwise compare one justified exception. Use the last two minutes to record one change and why you made it. |
+
+### The three cards
+
+1. **Tutor email.** You are drafting an Interoperation Report clause: "We reply
+   promptly." The brief requires a checkable clause. Ask Jonah for feedback on
+   your proposed replacement, "reply by 18:00 on the next weekday", before
+   your partnership meeting on Friday. Use a fictional name and student number.
+2. **Extension request.** A family commitment has interrupted your report work.
+   The report is due 30 May; you are halfway through and want until 2 June.
+   Ask Wren before the deadline. No invented personal history is needed.
+3. **Group opener.** A fictional three-person group has agreed to work together
+   but nothing else. Propose roles, a channel, a reply time, a decision rule,
+   and what happens when someone goes quiet. Mark these as proposals for the
+   others to accept or change.
 
 ## Why "the right call" is allowed
 

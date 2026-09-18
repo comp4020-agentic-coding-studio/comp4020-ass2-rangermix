@@ -1,6 +1,6 @@
 ---
 title: "Effects of self-disclosure role on liking, closeness, and other impressions in get-acquainted interactions"
-description: "Listeners liked their partners more than disclosers did --- and the difference vanished the moment they swapped roles. Reciprocity, run as an experiment."
+description: "Listeners reported more liking after the first interaction; the difference disappeared after both participants had taken both roles."
 authors:
   - "Sprecher, S."
   - "Treger, S."

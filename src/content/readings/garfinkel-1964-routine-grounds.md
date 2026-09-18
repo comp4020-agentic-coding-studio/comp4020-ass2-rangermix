@@ -1,6 +1,6 @@
 ---
 title: "Studies of the Routine Grounds of Everyday Activities"
-description: "Why the people who run the protocol can't describe it: the rules are background, and only show when someone breaks one."
+description: "Ordinary interaction rests on background expectations; breaching them can make those expectations visible."
 authors:
   - "Garfinkel, H."
 year: 1964

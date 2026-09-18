@@ -45,23 +45,26 @@ Checked and cut:
 
 ## What the sources say
 
-Closeness has a mechanism and a clock. The mechanism is disclosure: being
-disclosed to and disclosing both raise liking (Collins & Miller). Escalating
-disclosure produces closeness faster than small talk does, even between
-strangers in a lab (Aron et al.). The clock is hours spent together, and the
-kind of time matters (Hall).
+Collins and Miller report three disclosure--liking effects: intimate
+disclosers are liked more, people disclose more to people they already like,
+and people come to like someone they have disclosed to. The effects depend on
+the kind of disclosure and setting. Aron's structured tasks increased
+closeness relative to small talk over 45 minutes. Hall associates hours
+together and the kind of shared time with closeness, without giving this
+course a threshold that a friendship must cross before disclosure.
 
-Sprecher et al. is the experiment the week was missing. Collins and Miller
-established by meta-analysis that people come to like those they have
-disclosed *to*; this randomly assigns the roles and finds the same thing in a
-first meeting --- listeners liked their partners more than disclosers did.
+Sprecher et al. compares randomly assigned roles in a first meeting: listeners
+reported more liking for their partners than disclosers did after the first
+interaction. That is a different comparison from Collins and Miller's finding
+that disclosing can increase the discloser's liking. Do not call it a
+replication of that effect or confuse liking someone with being liked by them.
 
-The result the course actually needed is the next clause: **the difference
-disappeared once the pair swapped roles.** That is reciprocity, measured. It
-means a one-sided exchange leaves the two people feeling differently about it,
-and that taking the other turn is what closes the gap. The course's
-plus-or-minus-one rule had been justified by reasoning about cost; this is
-evidence that stepping is what puts two people in the same conversation.
+The differences disappeared after the second interaction, when each person
+had taken both roles. The study gives the course a way to discuss who gets to
+talk and who gets to listen. It does **not** test the five-level depth scale,
+a plus-or-minus-one window, or a requirement that both people disclose more.
+Nor does the checked abstract describe an instantaneous measurement at the
+moment they switched roles.
 
 Note the scope: unacquainted undergraduates, a structured task, two
 interactions. It says nothing about how depth paces over months, which is
@@ -89,7 +92,8 @@ argument in one sentence.
 
 Laurenceau et al.'s method is also worth naming in the room: an
 event-contingent diary, filled in immediately after each interaction, over one
-or two weeks. That is what the Field Journal is.
+or two weeks. The Field Journal can borrow the habit of noting an exchange
+promptly, but its weekly four-part retrospective is not that study's method.
 
 ## Where they disagree
 
@@ -111,36 +115,37 @@ The course does not adjudicate a social relations model it has not run. It
 takes three things from the exchange: the finding in the two lab studies,
 which the critique does not reanalyse; the caution that **a second date is a
 proxy for liking, not liking**; and the dyad-variance point, which is a claim a
-student can test in a journal --- whether you ask questions may depend less on
-you than on who you are with.
+student can explore in a journal --- whether question-asking changes with the
+pairing as well as with the person. A few journal entries do not estimate the
+study's variance components.
 
 ## What survives into teaching
 
-- *Rate limit* is the week's term: a disclosure pace the other person can
-  match. Escalation works when both sides move in steps (Aron et al.'s tasks
-  "gradually escalate").
-- Disclosure runs both ways, and receiving it also builds liking (Collins &
-  Miller). Asking a question the other person can answer is also a move.
-- Friendship costs hours, and the protocol expects them before depth (Hall).
-  This week says so directly, for a student wondering why a friendship hasn't
-  arrived after three conversations.
+- *Rate limit* is the course's proposed guide to **voluntary escalation**.
+  Aron's tasks gradually escalated, but neither they nor Sprecher validate
+  the course's numerical rule. Holding a lower level, stepping down or
+  passing remains available; another person's disclosure sets no minimum.
+- Keep Collins & Miller's three effects distinct. A follow-up question can
+  also continue an exchange without requiring a matching disclosure.
+- Hours together and the kind of time were associated with closeness (Hall).
+  Do not turn that into a disclosure prerequisite or a timetable for a
+  particular friendship.
 - Aron et al. are also the basis for the lab's structured exercise, in a
   reduced, low-intensity form.
-- **Listening is a move** (Sprecher et al.), and in a first meeting it is the
-  role that gains more liking --- which is Collins & Miller's third effect
-  produced experimentally.
-- **Reciprocity is what resolves the asymmetry** (Sprecher et al.): the
-  difference between roles vanished after the switch. The course's rule that
-  both people must step now rests on a result rather than on reasoning.
+- **Listeners reported more liking after the first interaction** (Sprecher
+  et al.); the differences disappeared after both people had taken both roles.
+  This is a result about reported impressions in a structured task, not
+  evidence for a minimum disclosure obligation or the ±1 rule.
 - **Listening went with greater perceived similarity** (Sprecher et al.).
 - **Responsiveness is the missing field** (Laurenceau et al.): intimacy in a
   single interaction is both people's disclosure, partially mediated by whether
   the discloser perceived their partner as responsive. The depth scale gains a
   second question --- did it land? --- and the week says plainly that the scale
   never had one.
-- **Emotion outranked facts** (Laurenceau et al., Study 2). The course's
-  cheapest escalation step is therefore not a higher rung: it is the same
-  sentence with the feeling attached.
+- **Emotional disclosure predicted intimacy more strongly than factual
+  disclosure** (Laurenceau et al., Study 2). Adding a feeling to an existing
+  topic is a course example students may choose to try, not a measured claim
+  that this is the cheapest move for every person.
 - **The follow-up question is a documented move** (Huang et al.), it raises
   liking through perceived responsiveness, and **its users do not expect it
   to.** The week teaches it as a script, with its dispute attached.
@@ -151,11 +156,19 @@ you than on who you are with.
 
 ## Stated as the course's own observation, not research
 
-- The rate-limit table (depth by stage, and "match depth plus or minus one
-  level").
+- The five-level table and suggested ±1 window for voluntary escalation,
+  with holding, stepping down and passing always available.
 - Signals that you have exceeded the rate limit, and the repair when you have.
 - Any specific number of hours.
 - The reading of Huang et al.'s correction notice as a worked example of a
   maintained specification. The correction is real and quoted; the comparison
   to the social protocol, which has no such record, is the course's joke and is
   marked as the course's own.
+
+## Teaching correction, 2026-09-18
+
+Separated the Sprecher role comparison from Collins & Miller's effects and
+removed the claim that it validates the depth scale or stepping rule. Qualified
+Hall's hours, the Field Journal method comparison and the interpretation of
+pairing variance. The evidence tables, correction/reply records and original
+source-check dates are unchanged; no new full-paper verification is claimed.

@@ -17,11 +17,12 @@ longer one mean to the listener?
 
 ## What the sources say
 
-The protocol's timing is tight and nearly universal. The typical gap is about
-200 ms. That is less than it takes to plan a sentence, so listeners start
-preparing their reply before the speaker finishes. Once a gap reaches around
-700 ms, a "no" becomes clearly more likely than a "yes". So a listener who has
-heard a lot of conversation will read a long pause as a refusal on its way.
+The studies describe short ordinary gaps, of the order of 200 ms, and
+cross-language differences within the reported range. Planning an utterance
+takes longer, so listeners prepare before the prior turn ends. In Kendrick
+and Torreira's telephone data, gaps of 700 ms or more contained clearly more
+rejections than acceptances. This is a pattern in those responses, not a
+deadline or a way to identify what one person's pause means.
 
 Kendrick supplies two things the week was missing. First, a cited range rather
 than a single figure --- ~100--300 ms --- together with the author's own
@@ -59,10 +60,9 @@ calibrated locally.
 - Why a pause reads as disagreement: listeners have learned, correctly, that
   long gaps come before refusals. The inference is statistical, and it misfires
   on anyone whose long gap means thinking.
-- Hold tokens. If you need more than a few hundred milliseconds, the protocol
-  accepts an audible placeholder ("hm, let me think"). The script is the
-  course's; the reason it works is that it fills the gap a listener would
-  otherwise read (Kendrick & Torreira).
+- Hold tokens are the course's proposed scripts: an audible placeholder gives
+  a listener something besides an empty gap to interpret. The cited studies
+  do not test whether these scripts prevent a refusal inference.
 - **The inference is general; the calibration is local** (Roberts, Margutti &
   Takano). Every group read longer silence as less willingness, and every
   group set the dial somewhere slightly different. This is the strongest
@@ -80,7 +80,17 @@ calibrated locally.
 
 ## Stated as the course's own observation, not research
 
-- The specific hold-token scripts, and the claim that saying up front "I take
-  a second to answer" resets a listener's timeout.
+- The specific hold-token scripts and the proposal to explain one's pauses in
+  advance. Whether either helps is a question for practice, not a promised
+  reset of another person's inference.
 - Anything about autistic processing time specifically. No verified source
   was found this week, and the course does not assert one.
+
+## Teaching correction, 2026-09-18
+
+The lab's yes-only trials compare perceived willingness across delays and
+hold-token conditions. They cannot test the proportion of rejections after
+700 ms because they contain no rejections. Keep that question separate from
+the corpus finding, and treat classroom stopwatch readings as rough measures.
+The source checks retain their original dates and access levels; this correction
+does not claim a new verification or a successful hold-token intervention.

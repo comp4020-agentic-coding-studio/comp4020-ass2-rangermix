@@ -14,34 +14,58 @@ export interface Meeting {
   /** 24-hour, Canberra time, the way a timetable prints it. */
   start: string;
   end: string;
+  /** Room booking, including the five minutes at either end. */
+  slotStart: string;
+  slotEnd: string;
   /** Said out loud, for prose that shouldn't read as a table. */
   length: string;
   venue: string;
 }
 
+export const lectureSchedule = {
+  start: "14:05",
+  breakStart: "14:55",
+  breakEnd: "15:05",
+  coreEnd: "15:40",
+  end: "15:55",
+} as const;
+
+export const minutesBetween = (from: string, to: string): number => {
+  const minutes = (time: string) => {
+    const [hours, mins] = time.split(":").map(Number);
+    return hours * 60 + mins;
+  };
+  return minutes(to) - minutes(from);
+};
+
 export const lectureMeeting: Meeting = {
   kind: "Lecture",
   day: "Tuesday",
-  start: "14:00",
-  end: "16:00",
-  length: "two hours",
+  start: lectureSchedule.start,
+  end: lectureSchedule.end,
+  slotStart: "14:00",
+  slotEnd: "16:00",
+  length: "up to one hour and fifty minutes, including the break",
   venue: "Theatre 1, Applied Interaction Building",
 };
 
 export const labMeeting: Meeting = {
   kind: "Lab",
   day: "Thursday",
-  start: "14:00",
-  end: "15:00",
-  length: "one hour",
+  start: "14:05",
+  end: "14:55",
+  slotStart: "14:00",
+  slotEnd: "15:00",
+  length: "fifty minutes",
   venue: "Room 2.14, Applied Interaction Building",
 };
 
 /** The third fixed point of the week, and the only one you keep alone. */
 export const journalDeadline = { day: "Sunday", time: "23:59" } as const;
 
-/** Contact hours a week, which is what the catalogue means by the number. */
-export const contactHours = 3;
+/** Reserved room hours; the working times above leave time to arrive and leave. */
+export const contactHours = [lectureMeeting, labMeeting]
+  .reduce((sum, meeting) => sum + minutesBetween(meeting.slotStart, meeting.slotEnd), 0) / 60;
 
 /**
  * Nothing is scheduled between these dates: no lecture, no lab, no deadline.

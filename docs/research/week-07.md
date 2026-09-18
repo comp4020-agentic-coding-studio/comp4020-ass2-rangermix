@@ -18,13 +18,15 @@ and what helps recovery?
 
 Autistic burnout is defined by the people who have it, and the definitions
 agree: exhaustion, withdrawal, lost skills, lower tolerance. Both studies say
-it is not the same thing as work burnout or depression. The cause is load that
-accumulates with no relief, and masking is named as a contributor. Recovery
-comes from less load, acceptance, and permission to stop masking.
+it is not the same thing as work burnout or depression. Participants linked it
+to cumulative load and barriers to relief, and named masking as a contributor.
+They associated recovery with reduced expectations, acceptance and support,
+and doing things in an autistic way, including unmasking.
 
-For everyone in the room, the occupational recovery literature separates four
-recovery experiences: detachment, relaxation, mastery and control. The course
-uses them as a checklist for the break.
+The occupational recovery literature separates four recovery experiences:
+detachment, relaxation, mastery and control. The course offers these as a
+planning checklist for anyone in the room to try. The study does not establish
+that the checklist works for everyone or treats autistic burnout.
 
 Phung et al. corrects the week rather than supporting it. The lecture
 separates three states --- overload, shutdown, burnout --- and admits only the
@@ -53,23 +55,27 @@ and that autistic adults in it felt misunderstood.
 ## What survives into teaching
 
 - Overload (this afternoon), shutdown (this evening) and burnout (this
-  semester) are different time scales. The course uses the terms plainly and
-  cites the definition only for burnout, the one with research behind it.
+  semester) are the course's planning time scales, not recovery deadlines or
+  a research taxonomy. The specific burnout definition is sourced separately.
 - *Runbook* is the week's term: decisions made in advance, while you can make
   them, for the moment you can't.
 - Pre-written messages, because composing a message costs exactly what is
   running out.
-- Recovery needs load removed, not rest added on top of the same load
-  (Raymaker et al.), and the break is when that happens.
-- Detachment, relaxation, mastery and control as a recovery checklist that
-  works for everyone (Sonnentag & Fritz).
+- Participants' accounts of relief include reduced expectations and support
+  (Raymaker et al.). The course uses these accounts when asking what can be
+  dropped from a full week; it does not promise that the semester break is
+  enough for recovery.
+- Detachment, relaxation, mastery and control as planning vocabulary drawn
+  from work-recovery research (Sonnentag & Fritz), not a validated treatment
+  or a guarantee for every student.
 
 - **Shutdown is a named phenomenon, not the course's coinage** (Phung et al.),
   and **inertia** and **meltdown** are named beside it. The course's
   three-scale model omits two, and the week says so instead of presenting its
   taxonomy as complete.
-- **BIMS is emotional, cognitive and physical at once** (Phung et al.), which
-  is why a runbook that only addresses mood would miss most of it.
+- **The eight young participants described emotional, cognitive and physical
+  components of BIMS** (Phung et al.). The course uses those as prompts for
+  noticing demands, without turning the small study into a prevalence claim.
 - **Sensory load is measurable and comparable** (Strömberg et al.): autistic
   participants reported greater discomfort with background sound than
   non-autistic participants in the same setting.
@@ -86,3 +92,10 @@ and that autistic adults in it felt misunderstood.
   of suicide, that is an emergency for a person, not a protocol. Raymaker et
   al. and Higgins et al. both report suicidality, which is why the page says
   so plainly and points to support.
+
+## Teaching correction, 2026-09-18
+
+Removed the claim that the four recovery experiences work for everyone and
+kept the time scales as planning labels. Recovery accounts and the course's
+runbook remain distinct from tested interventions. The source checks above
+retain their original dates and access levels; no new full-paper check is claimed.

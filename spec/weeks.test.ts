@@ -41,9 +41,17 @@ describe("the weekly contact hour is a Lab", () => {
     expect(pageFor(id)).toMatch(/<h1[^>]*>\s*Week \d+ Lab:/);
   });
 
-  it("never shows a student the template's word for it", () => {
+  it("uses the course's name in page titles, navigation and meeting labels", () => {
     for (const id of ["sessions", ...labs.map((n) => n.id)]) {
-      const text = visibleText(readPage(join(id, "index.html")));
+      const html = readPage(join(id, "index.html"));
+      // A fictional example may mention a "study session". The promise is
+      // about course labels, not a ban on that ordinary word in teaching prose.
+      const labels = [
+        ...(html.match(/<(title|h1|nav)\b[^>]*>[\s\S]*?<\/\1>/g) ?? []),
+        ...(html.match(/<p\b[^>]*class="week-meta"[^>]*>[\s\S]*?<\/p>/g) ?? []),
+      ];
+      expect(labels.length, `${id} has rendered course labels`).toBeGreaterThan(0);
+      const text = visibleText(labels.join(" "));
       expect(text, id).not.toMatch(/\bsessions?\b/i);
     }
   });
@@ -67,6 +75,16 @@ describe("weeks and their readings", () => {
 
 describe("slides", () => {
   const withSlides = lectures.filter((n) => typeof n.meta?.slides === "string");
+
+  it("gives every deck a working course favicon", () => {
+    expect(existsSync(join(DIST, "favicon.svg"))).toBe(true);
+    for (const lecture of withSlides) {
+      const html = readPage(join(String(lecture.meta!.slides), "index.html"));
+      const icon = html.match(/<link\b[^>]*rel="icon"[^>]*href="([^"]+)"/);
+      expect(icon, `${lecture.id}: a deck icon avoids the browser's root-path fallback`).not.toBeNull();
+      expect(icon![1]).toMatch(/\/favicon\.svg$/);
+    }
+  });
 
   it("at least one lecture carries a deck", () => {
     expect(withSlides.length).toBeGreaterThanOrEqual(1);

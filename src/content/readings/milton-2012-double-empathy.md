@@ -12,4 +12,4 @@ checked:
   on: "2026-09-15"
 ---
 
-Milton reframes difficulties between autistic and non-autistic people as a question of reciprocity and mutuality, not a capacity one party lacks. Four pages, and the idea every later week leans on. Read it alongside week 11's readings, which put numbers on what Milton argued.
+Milton reframes difficulties between autistic and non-autistic people as a question of reciprocity and mutuality, not a capacity one party lacks. The idea carries through the later weeks. Read it alongside week 11's studies of information transfer, judgements and rapport. Those studies address different parts of the problem; they do not test every implication of the theory or the course's bilateral protocol.

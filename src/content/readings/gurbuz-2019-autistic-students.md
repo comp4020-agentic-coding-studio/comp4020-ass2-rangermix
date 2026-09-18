@@ -14,4 +14,4 @@ checked:
   on: "2026-09-15"
 ---
 
-Compared with 158 non-autistic students, 26 autistic students reported more challenges with the social side of university, more mental-health difficulty and more thoughts of withdrawing, alongside academic strengths. Week 8 takes the shape of the finding: the friction sits at the institutional interface, not in the work itself.
+Compared with 158 non-autistic students, 26 autistic students reported more challenges with the social side of university, more mental-health difficulty and more thoughts of withdrawing, alongside academic strengths. Week 8 asks what demands the email, office door and group chat add around the academic work. Reporting academic strengths does not establish that the work itself presents no difficulties.

@@ -40,7 +40,8 @@ What survives on both sides: the course's real objection was never to
 explaining, it was to an explanation that **runs longer than the apology** or
 arrives before the ownership does, where it reads as an excuse. So the template
 now carries an explanation, placed after the ownership and kept shorter than
-it. The ban has become a constraint, which is what it should have been.
+the apology. Those placement and length constraints are the course's proposal,
+not a tested ordering from the abstract.
 
 The template also gained a plain statement of apology --- "I'm sorry" --- which
 it embarrassingly lacked, and which Study 2 found relevant. Caveat kept in
@@ -72,18 +73,19 @@ both as two severities of the same error-handling system.
   The course's apology template lists its parts without claiming a research
   ranking.
 
-- **Apologising has a measured effect, and the situation beats the person**
-  (Fehr et al.). Apology *r* = .42 across 175 studies, and situational
-  constructs accounted for more variance than victims' dispositions. This is
-  the evidence for the week's closing claim that repair is error handling and
-  not a matter of character --- a claim the week had been making unsupported.
-- **Gender and age barely matter** (Fehr et al.): *r* = .01 and *r* = .06.
-  Useful for retiring two folk theories in one sentence.
+- **Apology is associated with forgiveness** (Fehr et al.): *r* = .42 in a
+  meta-analysis of 175 studies. Situational constructs accounted for more
+  variance than victims' dispositions. That supports attending to the
+  situation; it does not rank the causes of a particular person's response
+  or prove the course's scripts cause forgiveness.
+- **Gender was non-significant and age negligible in that meta-analysis**
+  (Fehr et al.): *r* = .01 and *r* = .06. Keep the scope with the figures.
 - **More parts, more forgiveness, especially when it was bad** (Kirchhoff et
   al.), and the route is anger reduction.
-- **The most specific repair initiator is also the fastest** (Kendrick).
-  Week 5's "say the part you got" rule had been the course's own reasoning
-  about cost; the timing result sits underneath it.
+- **Initiations locating trouble specifically followed shorter gaps than
+  vague ones** (Kendrick); the rare outright corrections came without delay.
+  This is not a finding that every more-specific phrase is faster, nor a
+  measurement of the classroom drill's complete repair-turn count.
 
 ## Stated as the course's own observation, not research
 
@@ -91,3 +93,11 @@ both as two severities of the same error-handling system.
   the course's diagram of the pattern, not a model from the papers.
 - The specific apology template and its wording.
 - "The only subroutine nobody will document": the course's joke, not a finding.
+
+## Teaching correction, 2026-09-18
+
+Aligned Fehr's interpretation with explained variance and correlation rather
+than a causal ranking of people versus situations. Qualified the Kendrick
+comparison and separated the course's template constraints from the findings.
+The source checks above retain their original dates and access levels; no new
+full-paper verification was performed.

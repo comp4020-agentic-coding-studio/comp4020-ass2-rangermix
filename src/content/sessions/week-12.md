@@ -21,18 +21,20 @@ Bring your Field Journal. Its entries are the raw material for either route.
 
 ## Run sheet
 
+Times below run from the 14:05 start; finish at 14:55.
+
 | Time | What happens |
 | --- | --- |
-| 0:00--0:10 | **Choose a route.** Read back through your journal. A recurring subroutine could give you a parameter to test; recurring costs could guide your Personal Protocol Document. Tell a tutor your choice. |
-| 0:10--0:35 | **Experiment track: ethics review.** Pairs of experimenters review each other's proposed parameter against the four questions below. **Document track: three headings.** Write one line under each heading, using at least two entries from your journal. |
-| 0:35--0:50 | Swap tracks for feedback: an experimenter reads a document's three lines; a document writer reads an experiment's ethics answers. Fresh eyes on the other route. |
-| 0:50--1:00 | Write the first paragraph of your capstone before you leave. Any paragraph. It's easier to revise one than to start one. |
+| 0:00--0:07 | **Choose a route.** Read back through your journal. A recurring subroutine could supply a parameter; recurring costs could guide a Personal Protocol Document. Tell a tutor your choice. |
+| 0:07--0:27 | **Experiment track:** take turns reviewing both proposals against all four questions below; each author records their own answers. **Document track:** write one line under each heading, using at least two journal entries. If no decline is affordable, state that constraint. |
+| 0:27--0:38 | Exchange feedback across routes where possible. If one route has no participants, swap with another person on your route and use the lecture's worked example for the other. Everyone checks one experiment's four answers and one document's three headings. |
+| 0:38--0:50 | Write a first paragraph. Use the final three minutes to record the next step and bring any unresolved ethics question to a tutor before running an experiment. |
 
 ## The four ethics questions
 
 For any Field Experiment parameter:
 
-1. **Is it ordinary?** Would the variation pass as something people do anyway,
+1. **Is it ordinary here?** Is this something people do in this setting,
    like a longer pause, a direct request instead of a hint, or not returning
    "how are you?"
 2. **Who is it on?** Strangers in a queue, classmates, friends? Why is that
@@ -41,6 +43,10 @@ For any Field Experiment parameter:
    and how would you notice?
 4. **What stops it?** At what point do you stop varying and repair, and what
    is the repair?
+
+Someone noticing the variation is information for questions 3 and 4, not an
+automatic failure or an instruction to hide it. Consider the people and the
+situation; there is no universal minimum amount of eye contact.
 
 The deadpan answer to all four, that the majority does this to minority
 implementations continuously without calling it an experiment, is a real point.

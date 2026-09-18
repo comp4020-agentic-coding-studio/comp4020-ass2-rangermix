@@ -49,11 +49,21 @@ describe("the timetable", () => {
   });
 
   it("says when each of the week's three fixed points is, and where two of them are", () => {
-    expect(text).toMatch(/Tuesday 14:00.16:00/);
-    expect(text).toMatch(/Thursday 14:00.15:00/);
+    expect(text).toMatch(/Tuesday 14:05.15:55/);
+    expect(text).toMatch(/Thursday 14:05.14:55/);
     expect(text).toContain("Sunday 23:59");
     expect(text).toContain("Theatre 1, Applied Interaction Building");
     expect(text).toContain("Room 2.14, Applied Interaction Building");
+  });
+
+  it("distinguishes booked time, core teaching, the fixed break and optional discussion", () => {
+    expect(text).toMatch(/14:00.16:00/);
+    expect(text).toMatch(/14:00.15:00/);
+    expect(text).toContain("14:55–15:05");
+    expect(text).toContain("15:40");
+    expect(text).toMatch(/discussion[\s\S]*15:55/i);
+    expect(text).not.toContain("14:00 means 14:00");
+    expect(text).not.toMatch(/\d{2}:\d{2}\.?[A-Za-z]/);
   });
 
   it("carries every lecture and lab, with its date and a link to it", () => {

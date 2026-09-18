@@ -12,4 +12,4 @@ checked:
   on: "2026-09-15"
 ---
 
-In adults who had recently moved and in first-year students followed over nine weeks, hours spent together were associated with becoming closer. Leisure time and everyday talk predicted closeness. Week 9 uses it to say plainly that the protocol expects hours before depth. The paper's specific hour figures are in its full text, which the course could not access, so the course doesn't quote them.
+In adults who had recently moved and in first-year students followed over nine weeks, hours spent together were associated with becoming closer. Leisure time and everyday talk predicted closeness. Week 9 uses that association to ask what opportunities people have to spend time together. It does not supply a timetable for a particular friendship or an hours-before-disclosure rule. The paper's specific hour figures are in its full text, which the course could not access, so the course doesn't quote them.

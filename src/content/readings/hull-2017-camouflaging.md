@@ -18,4 +18,4 @@ checked:
   on: "2026-09-15"
 ---
 
-Hull and colleagues built a three-stage model from interviews: people mask to fit in and to connect, they do it through a mix of masking and compensating techniques, and it costs them exhaustion and threats to how they see themselves. Week 6's ledger has the same three columns: what a subroutine buys, how it is run, and what it costs.
+Hull and colleagues built a three-stage model from autistic adults' accounts: people mask to fit in and to connect, they do it through a mix of masking and compensating techniques, and it costs them exhaustion and threats to how they see themselves. Week 6 uses those questions about purpose, action and consequence in its own ledger. Its five columns add context and pressure and use estimated recovery hours for planning; that format is the course's, not the paper's instrument.

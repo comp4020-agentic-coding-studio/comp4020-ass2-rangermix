@@ -1,13 +1,13 @@
 ---
 title: The Negotiation, Round Three
-description: "Finish your bilateral protocol with your partner, audit which of the course’s terms crossed the room, and present one clause you both conceded on."
+description: "Finish your bilateral protocol, compare your accounts of the negotiation, and audit which course terms you used outside class."
 week: 11
 date: 2027-05-20
 teachers:
   - jonah-paskett
 spec:
   - "Your bilateral protocol is in its final form: at least four clauses, each with who concedes and how either of you checks it."
-  - "Your group has listed which course terms its members used outside class this semester, and with whom."
+  - "Your group has recorded which course terms its members used outside class, including ‘none’ where that is the answer; people are described by role, not name."
   - "You and your partner have each written, separately, what you conceded and what held, ready for the report."
 ---
 
@@ -20,13 +20,15 @@ Bring your revised clauses from week 10.
 
 ## Run sheet
 
+Times below run from the 14:05 start; finish at 14:55.
+
 | Time | What happens |
 | --- | --- |
-| 0:00--0:25 | **Final round.** With your partner: go through every clause. For each one, did it hold this week? If not, revise it or drop it. Add the lecture's columns: who concedes, and how either of you checks it. Make sure you have a mismatch signal (clause 5 in the lecture's example, or your own). |
-| 0:25--0:35 | Separately: write what you conceded, what the other person conceded, and what held. Don't compare yet. |
-| 0:35--0:40 | Now compare. Where do your two accounts of who conceded what disagree? Note it; don't resolve it. Report both accounts. |
-| 0:40--0:52 | **Vocabulary audit.** Groups of six, pairs mixed. List every course term someone in the group has used outside class this semester, who they used it with, and whether the other person picked it up. |
-| 0:52--1:00 | Each pair reads one clause both partners conceded on to the room. |
+| 0:00--0:22 | **Final round.** Review each draft clause against this week's use: held, revised or dropped, with the reason. Finish at least four clauses with who concedes and how each is checked. Include a mismatch signal; test it aloud once with a fictional misunderstanding. |
+| 0:22--0:30 | Separately: write what you conceded, what you understand the other person conceded, and what held. Don't compare yet. |
+| 0:30--0:35 | Compare the two accounts. Note disagreements without forcing one shared account; each report can describe both. |
+| 0:35--0:44 | **Vocabulary audit.** Join another pair. Each person names up to two course terms used outside class, the other person's role, and what response they actually observed. "None" is a valid result. |
+| 0:44--0:50 | Each pair reads one checkable clause to the other pair, who try one counterexample. Use the final two minutes to save the protocol and separate notes. |
 
 ## Why the accounts might disagree
 

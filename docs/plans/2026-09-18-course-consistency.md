@@ -32,7 +32,7 @@ Fix the journal's second-instance example and any other affected assessment inst
 
 ## 4. Integration and specifications
 
-Insert a visible break/resume slide in every completed deck at the nearest useful boundary to 50 estimated minutes. Add source/rendered specs for each deck's final optional question, break times, contiguous 50-minute lab run sheets and preserved protected text. Review semantic corrections against an explicit finding-to-resolution checklist; avoid brittle tests that merely duplicate revised prose. Check numbered section references after all content edits.
+Insert a visible break/resume slide in every completed deck at the nearest useful boundary to 50 estimated minutes, allowing five minutes either side for a sensible slide/activity boundary. Check that placement as well as the overall 75–95-minute planning band. Add source/rendered specs for each deck's final optional question, break times, contiguous 50-minute lab run sheets and preserved protected text. Review semantic corrections against an explicit finding-to-resolution checklist; avoid brittle tests that merely duplicate revised prose. Check numbered section references after all content edits.
 
 ## 5. Verify and checkpoint
 

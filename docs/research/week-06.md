@@ -27,12 +27,13 @@ non-autistic students camouflage too, with distress attached (O'Loghlen &
 Lang), and whole occupations are paid to manage their feelings on display
 (Hochschild).
 
-Bradley et al. is the week's most important source and it arrived after the
-lecture was written, which is worth recording. The course had invented a
-ledger that prices masking in **recovery hours** --- time --- on nothing but
-reasoning. Bradley et al.'s participants were asked about frequency and length
-of time, and the abstract's conclusion is that time spent camouflaging is what
-seems to be most damaging. The week's unit was a guess and the guess holds.
+Bradley et al. was added after the first lecture draft, which had already
+introduced **recovery hours** as a ledger unit. The abstract discusses the
+frequency and length of time spent camouflaging, and concludes that time spent
+camouflaging seems most damaging. **Time spent camouflaging is not time needed
+to recover.** The study supplies no conversion between them and does not
+validate the ledger's unit. Recovery hours remain a planning estimate to
+revise against experience.
 
 Their second theme also matters more than it looks. The course's position ---
 that masking buys real things and the course will never tell a student to stop
@@ -64,22 +65,26 @@ O'Loghlen & Lang plus Hochschild; it now has a psychometric result too.
 
 - Masking is a subroutine you can run, with a cost you can estimate. The week
   never presents it as an aspiration or as a failing.
-- The ledger: what each masked subroutine buys and what it costs, per
-  context. Switching contexts has its own cost (Cage & Troxell-Whitman).
+- The ledger: subroutine, context, what it bought, estimated recovery hours
+  and pressure (chosen, expected or enforced). A switching row records the
+  from/to contexts and any transition cost noticed. Its pressure can be
+  **n/a — transition** when no separate social demand applies. Cage &
+  Troxell-Whitman's association prompts recording switches; it does not give
+  every switch a measured price.
 - The room is mixed: everyone runs some managed performance, and the costs
   differ by implementation (O'Loghlen & Lang; Hochschild).
 - Choice is constrained by stigma (Pearson & Rose). The ledger records the
   pressure alongside the cost.
 
-- **Time is the damaging axis** (Bradley et al.). Not the number of
-  subroutines, not their difficulty --- the hours. The ledger's unit is the
-  right one, and the week now says whose finding that is.
+- **Time spent camouflaging appears in participants' accounts of harm**
+  (Bradley et al.). Keep that finding separate from estimated recovery time;
+  it does not establish that number or difficulty of subroutines is irrelevant.
 - **The benefits are real and were named by participants** (Bradley et al.):
   access to social spaces, protection from harm, survival in a world designed
   for the majority.
 - **The cause named is society's lack of acceptance** (Bradley et al.), which
   is the ledger's pressure column. Their lay summary goes further than the
-  course ever did: reducing the pressure would benefit everyone in society.
+  course ever did: reducing the pressure **could** benefit everyone in society.
 - **Camouflaging is measurable, and measures the same way in both groups**
   (Hull et al.): three factors, 25 items, measurement invariance across
   diagnostic group. The course does **not** name the three factors, because
@@ -87,6 +92,17 @@ O'Loghlen & Lang plus Hochschild; it now has a psychometric result too.
 
 ## Stated as the course's own observation, not research
 
-- The ledger format and its units: an hour of recovery per subroutine is a
-  planning unit, not a measured quantity.
+- The ledger format and its units: estimates may differ by subroutine,
+  context and person. There is no fixed recovery price and no guaranteed
+  ranking of weeks merely because the same unit is used consistently.
 - The weekly budget framing that week 7 builds on.
+- Either running or declining can be the reasoned choice. No affordable
+  decline, no observed switch, or fewer observed rows is an honest result;
+  label hypothetical comparisons separately from what happened.
+
+## Teaching correction, 2026-09-18
+
+Removed the earlier interpretation that Bradley validated recovery hours.
+Aligned the five-column ledger, switching exception and choice of running or
+declining with the live teaching. The source checks above retain their original
+dates and access levels; no new full-paper verification was performed.

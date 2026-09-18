@@ -1,0 +1,342 @@
+{
+  "base": "http://localhost:4321/comp4020-ass2-rangermix/",
+  "results": [
+    {
+      "week": 1,
+      "kind": "break",
+      "viewport": "1440x900",
+      "slide": 24,
+      "clipped": false
+    },
+    {
+      "week": 1,
+      "kind": "discussion",
+      "viewport": "1440x900",
+      "slide": 35,
+      "clipped": false
+    },
+    {
+      "week": 2,
+      "kind": "break",
+      "viewport": "1440x900",
+      "slide": 24,
+      "clipped": false
+    },
+    {
+      "week": 2,
+      "kind": "discussion",
+      "viewport": "1440x900",
+      "slide": 34,
+      "clipped": false
+    },
+    {
+      "week": 3,
+      "kind": "break",
+      "viewport": "1440x900",
+      "slide": 23,
+      "clipped": false
+    },
+    {
+      "week": 3,
+      "kind": "discussion",
+      "viewport": "1440x900",
+      "slide": 33,
+      "clipped": false
+    },
+    {
+      "week": 4,
+      "kind": "break",
+      "viewport": "1440x900",
+      "slide": 21,
+      "clipped": false
+    },
+    {
+      "week": 4,
+      "kind": "discussion",
+      "viewport": "1440x900",
+      "slide": 35,
+      "clipped": false
+    },
+    {
+      "week": 5,
+      "kind": "break",
+      "viewport": "1440x900",
+      "slide": 23,
+      "clipped": false
+    },
+    {
+      "week": 5,
+      "kind": "discussion",
+      "viewport": "1440x900",
+      "slide": 34,
+      "clipped": false
+    },
+    {
+      "week": 6,
+      "kind": "break",
+      "viewport": "1440x900",
+      "slide": 24,
+      "clipped": false
+    },
+    {
+      "week": 6,
+      "kind": "discussion",
+      "viewport": "1440x900",
+      "slide": 35,
+      "clipped": false
+    },
+    {
+      "week": 7,
+      "kind": "break",
+      "viewport": "1440x900",
+      "slide": 25,
+      "clipped": false
+    },
+    {
+      "week": 7,
+      "kind": "discussion",
+      "viewport": "1440x900",
+      "slide": 36,
+      "clipped": false
+    },
+    {
+      "week": 8,
+      "kind": "break",
+      "viewport": "1440x900",
+      "slide": 26,
+      "clipped": false
+    },
+    {
+      "week": 8,
+      "kind": "discussion",
+      "viewport": "1440x900",
+      "slide": 36,
+      "clipped": false
+    },
+    {
+      "week": 9,
+      "kind": "break",
+      "viewport": "1440x900",
+      "slide": 24,
+      "clipped": false
+    },
+    {
+      "week": 9,
+      "kind": "discussion",
+      "viewport": "1440x900",
+      "slide": 36,
+      "clipped": false
+    },
+    {
+      "week": 10,
+      "kind": "break",
+      "viewport": "1440x900",
+      "slide": 24,
+      "clipped": false
+    },
+    {
+      "week": 10,
+      "kind": "discussion",
+      "viewport": "1440x900",
+      "slide": 35,
+      "clipped": false
+    },
+    {
+      "week": 11,
+      "kind": "break",
+      "viewport": "1440x900",
+      "slide": 22,
+      "clipped": false
+    },
+    {
+      "week": 11,
+      "kind": "discussion",
+      "viewport": "1440x900",
+      "slide": 34,
+      "clipped": false
+    },
+    {
+      "week": 12,
+      "kind": "break",
+      "viewport": "1440x900",
+      "slide": 23,
+      "clipped": false
+    },
+    {
+      "week": 12,
+      "kind": "discussion",
+      "viewport": "1440x900",
+      "slide": 34,
+      "clipped": false
+    },
+    {
+      "week": 1,
+      "kind": "break",
+      "viewport": "844x390",
+      "slide": 24,
+      "clipped": false
+    },
+    {
+      "week": 1,
+      "kind": "discussion",
+      "viewport": "844x390",
+      "slide": 35,
+      "clipped": false
+    },
+    {
+      "week": 2,
+      "kind": "break",
+      "viewport": "844x390",
+      "slide": 24,
+      "clipped": false
+    },
+    {
+      "week": 2,
+      "kind": "discussion",
+      "viewport": "844x390",
+      "slide": 34,
+      "clipped": false
+    },
+    {
+      "week": 3,
+      "kind": "break",
+      "viewport": "844x390",
+      "slide": 23,
+      "clipped": false
+    },
+    {
+      "week": 3,
+      "kind": "discussion",
+      "viewport": "844x390",
+      "slide": 33,
+      "clipped": false
+    },
+    {
+      "week": 4,
+      "kind": "break",
+      "viewport": "844x390",
+      "slide": 21,
+      "clipped": false
+    },
+    {
+      "week": 4,
+      "kind": "discussion",
+      "viewport": "844x390",
+      "slide": 35,
+      "clipped": false
+    },
+    {
+      "week": 5,
+      "kind": "break",
+      "viewport": "844x390",
+      "slide": 23,
+      "clipped": false
+    },
+    {
+      "week": 5,
+      "kind": "discussion",
+      "viewport": "844x390",
+      "slide": 34,
+      "clipped": false
+    },
+    {
+      "week": 6,
+      "kind": "break",
+      "viewport": "844x390",
+      "slide": 24,
+      "clipped": false
+    },
+    {
+      "week": 6,
+      "kind": "discussion",
+      "viewport": "844x390",
+      "slide": 35,
+      "clipped": false
+    },
+    {
+      "week": 7,
+      "kind": "break",
+      "viewport": "844x390",
+      "slide": 25,
+      "clipped": false
+    },
+    {
+      "week": 7,
+      "kind": "discussion",
+      "viewport": "844x390",
+      "slide": 36,
+      "clipped": false
+    },
+    {
+      "week": 8,
+      "kind": "break",
+      "viewport": "844x390",
+      "slide": 26,
+      "clipped": false
+    },
+    {
+      "week": 8,
+      "kind": "discussion",
+      "viewport": "844x390",
+      "slide": 36,
+      "clipped": false
+    },
+    {
+      "week": 9,
+      "kind": "break",
+      "viewport": "844x390",
+      "slide": 24,
+      "clipped": false
+    },
+    {
+      "week": 9,
+      "kind": "discussion",
+      "viewport": "844x390",
+      "slide": 36,
+      "clipped": false
+    },
+    {
+      "week": 10,
+      "kind": "break",
+      "viewport": "844x390",
+      "slide": 24,
+      "clipped": false
+    },
+    {
+      "week": 10,
+      "kind": "discussion",
+      "viewport": "844x390",
+      "slide": 35,
+      "clipped": false
+    },
+    {
+      "week": 11,
+      "kind": "break",
+      "viewport": "844x390",
+      "slide": 22,
+      "clipped": false
+    },
+    {
+      "week": 11,
+      "kind": "discussion",
+      "viewport": "844x390",
+      "slide": 34,
+      "clipped": false
+    },
+    {
+      "week": 12,
+      "kind": "break",
+      "viewport": "844x390",
+      "slide": 23,
+      "clipped": false
+    },
+    {
+      "week": 12,
+      "kind": "discussion",
+      "viewport": "844x390",
+      "slide": 34,
+      "clipped": false
+    }
+  ],
+  "errors": []
+}

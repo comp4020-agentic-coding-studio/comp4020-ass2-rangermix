@@ -1,11 +1,10 @@
 ---
-// The week 9 depth scale as a ladder, with the step-one-at-a-time rule drawn
-// around it.
+// The week 9 depth scale as a ladder, with a suggested window for voluntary
+// escalation. The window never creates a minimum disclosure obligation.
 //
 // The scale itself is a table on the page and reads fine as one. What a table
-// can't show is the rule: match their last level, plus or minus one. Here the
-// rung they are on is marked, and the window you may step into is drawn around
-// it, so the rule is a shape rather than a sentence to remember.
+// can't show is the nearby window: their last level, plus or minus one. The
+// caption keeps holding a lower level, stepping down and passing available.
 //
 // The rungs carry no examples on purpose. The table above the drawing already
 // has them, and a second copy inside the picture crowded the window note off
@@ -26,6 +25,7 @@ interface Props {
 }
 
 const { levels, at, windowNote, caption, seed = caption } = Astro.props;
+const choiceNote = "The window guides voluntary escalation. Holding a lower level, stepping down or passing is always available.";
 const r = rng(seed);
 
 const width = 520;
@@ -72,9 +72,10 @@ const id = `ladder-${Math.abs([...seed].reduce((h, c) => (h * 31 + c.charCodeAt(
     style={`max-width: ${width}px`}
     role="img"
     aria-labelledby={`${id}-title`}
-    aria-describedby={`${id}-levels`}
+    aria-describedby={`${id}-levels ${id}-choice`}
   >
     <title id={`${id}-title`}>{caption}</title>
+    <desc id={`${id}-choice`}>{choiceNote}</desc>
     <path class="graphite" d={win} />
     <text class="note" x={width - 16} y={winTop - 10} text-anchor="end">{windowNote}</text>
     <path class="ink" d={rails} />
@@ -98,10 +99,10 @@ const id = `ladder-${Math.abs([...seed].reduce((h, c) => (h * 31 + c.charCodeAt(
         <li>
           Level {rung.n}: {rung.label}
           {rung.gold ? " (the level their last turn was at)" : ""}
-          {!rung.gold && rung.n >= lowest && rung.n <= highest ? " (inside the window)" : ""}
+          {!rung.gold && rung.n >= lowest && rung.n <= highest ? " (inside the suggested window)" : ""}
         </li>
       ))
     }
   </ol>
-  <figcaption id={`${id}-caption`}>{caption}</figcaption>
+  <figcaption id={`${id}-caption`}>{caption} {choiceNote}</figcaption>
 </figure>

@@ -40,9 +40,8 @@ an envelope appears. The strategic speaker hints because they don't know
 whether the hearer is co-operative or antagonistic, and a veiled request can be
 taken up by one and ignored by the other. Read as a diagnostic, that is far
 more useful to a student than "people are indirect to be polite": **an envelope
-marks a place where the sender is uncertain of the answer.** Where the answer is
-certain and safe, the protocol goes direct. And their higher-order case covers
-the rest of it --- even when both people know the answer, the hint keeps the
+can mark a place where the sender is uncertain of the answer.** Their
+higher-order case also explains indirectness when willingness is known: the hint keeps the
 request out of common knowledge, off the record, and out of what anyone could
 repeat later.
 
@@ -92,9 +91,9 @@ al. why anyone sends one.
 - **A hint stays off the record even when both people know** (Lee & Pinker's
   higher-order deniability: preempting certainty, gossip and common knowledge).
   This is why "we both knew" and "you said it" are different events.
-- **The sender is the one who is wrong about clarity** (Keysar & Henly). The
-  week's centre of gravity moves: a missed hint is a sender who underestimated
-  their own ambiguity, not a listener who failed a test.
+- **Speakers can overestimate their clarity** (Keysar & Henly). The experiment
+  gives a reason to question the sender's confidence; it does not establish
+  who caused every missed hint. Check both sides of an exchange.
 - **The decoder is not missing** (Chevallier et al.), for the one inference
   type they tested, in an experiment whose authors expected the opposite.
 
@@ -107,3 +106,9 @@ al. why anyone sends one.
 - The rule that a direct reply to an indirect request is valid but
   renegotiates the relationship. That is the course's application of Pinker
   et al.'s argument, not something they tested.
+
+## Teaching correction, 2026-09-18
+
+Kept uncertainty and speaker overconfidence as supported explanations without
+making either a universal diagnosis of an exchange. The source-verification
+record above is unchanged; no additional paper access is claimed.

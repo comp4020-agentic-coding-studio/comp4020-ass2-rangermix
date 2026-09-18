@@ -13,4 +13,4 @@ checked:
   on: "2026-09-15"
 ---
 
-Sonnentag and Fritz distinguished four recovery experiences: psychological detachment, relaxation, mastery and control. The research is about employees unwinding from ordinary work stress, and the course does not claim it applies to burnout. Week 7 uses the four as a checklist for planning the mid-semester break.
+Sonnentag and Fritz distinguished four recovery experiences: psychological detachment, relaxation, mastery and control. The research is about employees unwinding from ordinary work stress. Week 7 uses the four as prompts for planning the mid-semester break, not as evidence that the checklist treats or prevents autistic burnout.

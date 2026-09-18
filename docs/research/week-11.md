@@ -18,26 +18,29 @@ and what does the evidence say about fixing it from one side versus both?
 
 ## What the sources say
 
-The evidence now backs Milton's 2012 theory (week 2). Information survives
-within either neurotype and degrades between them (Crompton et al., peer
-transfer). Autistic people's reactions are misread by others rather than
+The evidence is consistent with the mismatch account introduced through
+Milton's 2012 theory (week 2). Detail declined more steeply in mixed than
+same-neurotype diffusion chains (Crompton et al., peer transfer). The checked
+record compares chain conditions; it does not locate the extra loss at
+particular links, and the mixed chain's seating order was not verified.
+Autistic people's reactions are misread by others rather than
 missing (Sheppard et al.). Even the signals of rapport are
 implementation-specific: what counts as "engaged" in one pairing is noise in
 another (Rifai et al.). The cost of the mismatch lands mostly on the minority,
 who conform to be included (Crompton et al., relationships), with long-term
 consequences (Mitchell et al.).
 
-Alkhaldi et al. supply the mechanism the week was asserting without one. Week 2
-says style is judged before substance; this week says reactions are misread.
-What connects them is a measured correlation: **how readable a person was
-predicted how favourably they were rated, and it did so independently of
-diagnosis.** So the unfavourable judgement is not attached to a category. It
-tracks a property of the reading --- and a property of the reading has two
-parties in it.
+Alkhaldi et al. reports a possible link between readability and unfavourable
+ratings. **Readability correlated with favourability, independent of target
+diagnosis.** The study also found more favourable ratings for neurotypical
+targets. The correlation does not eliminate that group difference or establish
+that diagnostic category was unrelated to judgement. The course uses the
+result to ask how a reading depends on both people; it is not a demonstrated
+mechanism explaining every unfavourable impression.
 
 Two details keep it honest. The effect held whether or not perceivers were told
-what the target was reacting to, which rules out the easiest benign
-explanation. And the authors state, in the abstract, that other interpretations
+what the target was reacting to. That manipulation does not make the
+correlation causal. The authors state, in the abstract, that other interpretations
 of the correlation are possible. The course repeats that hedge rather than
 upgrading a correlation into a cause.
 
@@ -76,13 +79,15 @@ same shape.
 - *Interoperation*, the week's term: two implementations agreeing a shared
   protocol for the exchange at hand, as opposed to *conversion*, where one
   implementation replaces itself.
-- The breakdown is in the mismatch, so the fix is bilateral. Every source
-  above locates the loss between people, not inside one of them.
+- Several studies find that outcomes differ with the pairing or chain
+  condition. The course proposes negotiating a bilateral protocol in response;
+  the sources do not test this document format as an intervention.
 - Rapport markers are implementation-specific (Rifai et al.). Negotiating
   which markers count is part of interoperating.
-- **Readability predicts favourability, independent of diagnosis** (Alkhaldi et
-  al.). This is the week's mechanism and it is two-sided by construction: how
-  readable someone is depends on who is doing the reading.
+- **Readability correlated with favourability, independent of target
+  diagnosis** (Alkhaldi et al.). Retain both the group difference and the
+  authors' alternative-interpretations caveat. The two-party framing is the
+  course's interpretation of this result.
 - **The judgement travels; the withdrawal doesn't** (Morrison et al.). Autistic
   and non-autistic partners rated autistic adults similarly, and only the
   non-autistic partners' interest in meeting again followed the rating.
@@ -96,4 +101,12 @@ same shape.
 
 - The bilateral protocol document format and the lab's negotiation procedure.
 - The claim that a mixed room with shared terms interoperates better. It is
-  the course's thesis, demonstrated in the room, not a tested finding.
+  the course's thesis to test in the room, not an already demonstrated finding.
+
+## Teaching correction, 2026-09-18
+
+Restored the distinction between Alkhaldi's correlation and the diagnostic-group
+difference. Limited the diffusion-chain claim to the checked chain-condition
+comparison and kept the bilateral document as a course proposal. The source
+checks above retain their original dates and access levels; no new link-level
+analysis, full-paper verification or classroom effectiveness claim is made.

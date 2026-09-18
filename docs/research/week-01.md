@@ -65,9 +65,9 @@ undermines Coupland et al.; both make the week's claim narrower and safer.
 - The documentation exists; it was never handed to anyone who needed it. The
   course's opening joke is a citation: *American Anthropologist* 70(6),
   pages 1075--1095.
-- "How are you?" usually requests relationship maintenance, not a status report
-  (Coupland et al.). Whether it is a real question is itself negotiated:
-  context decides, and a clinic is a context where it may be one.
+- "How are you?" can do relationship work rather than request a status report
+  (Coupland et al.). Its function is negotiated; the medical-interview setting
+  in that study does not establish how often the corridor version is a token.
 - Schegloff's term *conditional relevance* is introduced by name only. The
   course does not define it from Schegloff's text, which was not read.
 - **A greeting is a category with criteria, not a vibe** (Duranti). Six of
@@ -83,6 +83,12 @@ undermines Coupland et al.; both make the week's claim narrower and safer.
 ## Stated as the course's own observation, not research
 
 - The concrete specification of the handshake: the standard reply ("good,
-  you?"), the return, the timing, and the branch nobody takes, which is
-  answering honestly at length.
+  you?"), the return, the timing, and the branch into a longer answer. These
+  are working examples for the lab, not universal greeting rules.
 - The failure modes and the lab's corridor protocol.
+
+## Teaching correction, 2026-09-18
+
+Narrowed the corridor/greeting interpretation to the checked scope. The source
+checks above retain their original dates and access levels; no new full-paper
+verification was performed for this correction.

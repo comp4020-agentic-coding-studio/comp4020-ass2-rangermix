@@ -1,6 +1,6 @@
 ---
 title: "Living with a concealable stigmatized identity: The impact of anticipated stigma, centrality, salience, and cultural stigma on psychological distress and health"
-description: "What predicts the cost of not having told isn't the concealing. It's what you expect would happen if people knew."
+description: "Anticipated stigma, identity centrality, salience and cultural stigma predicted distress among people with concealable identities."
 authors:
   - "Quinn, D. M."
   - "Chaudoir, S. R."
@@ -17,4 +17,4 @@ Three hundred people holding thirteen different concealable stigmatised identiti
 
 Anticipated stigma means **what you expect would happen if people knew**. It is distinct from the effort of concealment or whether you have disclosed. Students keeping the same thing to themselves can anticipate different reactions from the people around them.
 
-Week 10 uses anticipated stigma when considering the costs of both disclosure and concealment. For institutions, it prompts a question: what makes students expect disclosure to be costly, and what can the institution change?
+Week 10 uses anticipated stigma when considering the costs of both disclosure and concealment. The study does not establish how much distress would change if a person disclosed instead of keeping something private. The lecture's ledger separates predicted consequences from costs already experienced. For institutions, it prompts a question: what makes students expect disclosure to be costly, and what can the institution change?

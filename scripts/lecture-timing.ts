@@ -1,51 +1,40 @@
-// Estimate how long each week's lecture runs, and say which weeks don't fill
-// their two-hour slot.
-//
-// A deck's runtime isn't its word count: a title slide is ten seconds, a
-// sequence diagram walked through top to bottom is four minutes, and a
-// speaker note is a line a lecturer says out loud that isn't on the slide at
-// all. So the estimate classifies each slide and adds time for its notes.
-//
-// The numbers below are this course's planning figures, not a finding about
-// lecturing. They exist so that "this week is short" is a claim someone can
-// re-run and argue with, rather than a feeling.
+// Rough planning estimate for this fictional course: ordinary slides take
+// two minutes, titles/transitions five seconds, and activities their stated
+// duration. Notes do not buy additional minutes. The fixed break and optional
+// final discussion are outside core time. These are assumptions, not measured
+// delivery. The user-approved plan needs no rehearsal.
 //
 // Usage: node scripts/lecture-timing.ts [--json]
 
-import { readdirSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, realpathSync } from "node:fs";
 import { join } from "node:path";
+import { lectureMeeting, lectureSchedule, minutesBetween } from "../src/data/timetable.ts";
 
 /** Minutes a slide takes to deliver, by what kind of slide it is. */
 const SLIDE_MINUTES = {
-  banner: 1.0, // the title: welcome the room and go
-  impact: 1.5, // one sentence, said slowly, left up
-  quote: 2.0, // read it out, then unpack it
-  hand: 1.5, // an aside in the handwriting face
-  centered: 2.0, // the closing checklist
-  diagram: 3.5, // walked through, not glanced at
-  table: 3.0, // a column at a time
+  banner: 5 / 60,
+  transition: 5 / 60,
+  impact: 2,
+  quote: 2,
+  hand: 2,
+  centered: 2,
+  diagram: 2,
+  table: 2,
   exercise: 0, // carries its own visible timing; counted separately
-  content: 2.5, // prose, bullets, a claim and its source
+  content: 2,
+  break: 0, // fixed clock time, not teaching
+  discussion: 0, // optional use of contingency, not needed for the core target
 } as const;
 
-/** A speaker-note line is something said aloud that isn't on the slide. */
-const MINUTES_PER_NOTE_LINE = 0.4;
-
-/** Words a lecturer gets through in a minute, talking to a room. */
-const WORDS_PER_MINUTE = 140;
-
 /** The slot this course is timetabled into. */
-export const SLOT_MINUTES = 120;
-/** Content target: the slot, less arrival, a mid-lecture break and overrun. */
-export const TARGET_MINUTES = 105;
-
-export interface SlideEstimate {
-  kind: keyof typeof SLIDE_MINUTES;
-  minutes: number;
-  noteLines: number;
-  /** Minutes the slide's own heading gives the room. */
-  declared?: number;
-}
+export const SLOT_MINUTES = minutesBetween(lectureMeeting.slotStart, lectureMeeting.slotEnd);
+export const FIRST_HALF_MINUTES = minutesBetween(lectureSchedule.start, lectureSchedule.breakStart);
+export const TARGET_MINUTES = FIRST_HALF_MINUTES
+  + minutesBetween(lectureSchedule.breakEnd, lectureSchedule.coreEnd);
+/** A rough estimate may be ten minutes either side of the nominal target. */
+export const PLANNING_TOLERANCE = 10;
+/** Leave room for a sensible slide/activity boundary around the fixed break. */
+export const BREAK_TOLERANCE = 5;
 
 export interface WeekEstimate {
   week: string;
@@ -53,7 +42,8 @@ export interface WeekEstimate {
   deckMinutes: number;
   exerciseMinutes: number;
   lectureWords: number;
-  lectureMinutes: number;
+  beforeBreakMinutes: number;
+  afterBreakMinutes: number;
   /** The figure to plan against: the deck, which is what gets delivered. */
   totalMinutes: number;
   shortfall: number;
@@ -61,9 +51,11 @@ export interface WeekEstimate {
 }
 
 function classify(slide: string): keyof typeof SLIDE_MINUTES {
+  const timing = slide.match(/\{\/\*\s*timing:\s*(transition|break|discussion)\s*\*\/\}/)?.[1];
+  if (timing) return timing as "transition" | "break" | "discussion";
+  if (EXERCISE.test(slide)) return "exercise";
   const cls = slide.match(/\{\/\*\s*_class:\s*([a-z-]+)\s*\*\/\}/)?.[1];
   if (cls && cls in SLIDE_MINUTES) return cls as keyof typeof SLIDE_MINUTES;
-  if (EXERCISE.test(slide)) return "exercise";
   // A slide whose body is a figure --- a drawing or a photographic plate ---
   // gets walked through rather than glanced at.
   if (/^\s*<(SequenceDiagram|StateMachine|TimingLine|Envelope|Form|DepthLadder|Chain|Register|Plate)\b/m.test(slide)) {
@@ -74,20 +66,14 @@ function classify(slide: string): keyof typeof SLIDE_MINUTES {
 }
 
 /** Strip the frontmatter, then split on the slide separator. */
-function slidesOf(source: string): string[] {
-  const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, "");
+export function slidesOf(source: string): string[] {
+  const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, "")
+    // Remove the declarations, not the title sharing their first slide block.
+    .replace(/^import(?:\s+[\s\S]*?\s+from)?\s+["'][^"'\r\n]+["'];?[ \t]*(?:\r?\n|$)/gm, "");
   return body
     .split(/^---\s*$/m)
     .map((s) => s.trim())
-    .filter((s) => s !== "" && !/^import\s/.test(s.split("\n")[0] ?? ""));
-}
-
-function noteLinesOf(slide: string): number {
-  const fences = [...slide.matchAll(/```notes\r?\n([\s\S]*?)```/g)];
-  return fences.reduce(
-    (n, m) => n + m[1].split("\n").filter((l) => l.trim().startsWith("-")).length,
-    0,
-  );
+    .filter((s) => s !== "");
 }
 
 // An in-room exercise announces its own length on the slide, so the room can
@@ -116,16 +102,24 @@ export function estimateWeek(week: string, deckSource: string, lectureSource: st
   const byKind: Record<string, number> = {};
   let deckMinutes = 0;
   let exerciseMinutes = 0;
+  let beforeBreak = 0;
+  let afterBreak = 0;
+  let pastBreak = false;
 
   for (const slide of slides) {
     const kind = classify(slide);
     byKind[kind] = (byKind[kind] ?? 0) + 1;
-    const declared = declaredExercise(slide);
-    if (kind === "exercise" || declared !== undefined) {
-      exerciseMinutes += declared ?? 0;
+    if (kind === "break") {
+      pastBreak = true;
       continue;
     }
-    deckMinutes += SLIDE_MINUTES[kind] + noteLinesOf(slide) * MINUTES_PER_NOTE_LINE;
+    if (kind === "discussion") continue;
+    const declared = declaredExercise(slide);
+    const minutes = declared ?? SLIDE_MINUTES[kind];
+    if (declared !== undefined) exerciseMinutes += declared;
+    else deckMinutes += minutes;
+    if (pastBreak) afterBreak += minutes;
+    else beforeBreak += minutes;
   }
 
   const lectureWords = wordsOf(lectureSource.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, ""));
@@ -137,11 +131,28 @@ export function estimateWeek(week: string, deckSource: string, lectureSource: st
     deckMinutes: Math.round(deckMinutes * 10) / 10,
     exerciseMinutes,
     lectureWords,
-    lectureMinutes: Math.round((lectureWords / WORDS_PER_MINUTE) * 10) / 10,
+    beforeBreakMinutes: Math.round(beforeBreak * 10) / 10,
+    afterBreakMinutes: Math.round(afterBreak * 10) / 10,
     totalMinutes,
     shortfall: Math.round((TARGET_MINUTES - totalMinutes) * 10) / 10,
     byKind,
   };
+}
+
+/** The same validation is used by human-readable and JSON CLI output. */
+export function timingIssues(weeks: WeekEstimate[]): string[] {
+  return weeks.flatMap((week) => {
+    const issues: string[] = [];
+    if (Math.abs(week.shortfall) > PLANNING_TOLERANCE) {
+      issues.push(`${week.week}: ${week.totalMinutes} core minutes is outside the ${TARGET_MINUTES - PLANNING_TOLERANCE}–${TARGET_MINUTES + PLANNING_TOLERANCE} planning band.`);
+    }
+    if (week.byKind.break !== 1) issues.push(`${week.week}: expected one fixed break slide.`);
+    else if (Math.abs(week.beforeBreakMinutes - FIRST_HALF_MINUTES) > BREAK_TOLERANCE) {
+      issues.push(`${week.week}: the break follows ${week.beforeBreakMinutes} estimated core minutes; place it within ${FIRST_HALF_MINUTES - BREAK_TOLERANCE}–${FIRST_HALF_MINUTES + BREAK_TOLERANCE} minutes.`);
+    }
+    if (week.byKind.discussion !== 1) issues.push(`${week.week}: expected one optional discussion slide.`);
+    return issues;
+  });
 }
 
 const DECKS = join(import.meta.dirname, "..", "src", "decks");
@@ -161,24 +172,28 @@ export function estimateAll(): WeekEstimate[] {
     });
 }
 
-if (process.argv[1] && import.meta.filename === process.argv[1]) {
+// Node resolves import.meta.filename through symlinks, while argv may retain
+// them (for example macOS temporary directories). Compare the actual files.
+if (process.argv[1] && existsSync(process.argv[1]) && import.meta.filename === realpathSync(process.argv[1])) {
   const all = estimateAll();
+  const issues = timingIssues(all);
   if (process.argv.includes("--json")) {
     console.log(JSON.stringify(all, null, 2));
   } else {
     const pad = (s: string | number, n: number) => String(s).padStart(n);
-    console.log(`Target: ${TARGET_MINUTES} min of content in a ${SLOT_MINUTES} min slot.\n`);
-    console.log("week      slides  deck  exercise  total  shortfall  lecture prose");
+    console.log(`Rough core target: ${TARGET_MINUTES} min; planning band ${TARGET_MINUTES - PLANNING_TOLERANCE}–${TARGET_MINUTES + PLANNING_TOLERANCE} min in a ${SLOT_MINUTES} min booking.`);
+    console.log(`Start ${lectureSchedule.start}; break ${lectureSchedule.breakStart}–${lectureSchedule.breakEnd}; core ends around ${lectureSchedule.coreEnd}; optional discussion stops by ${lectureSchedule.end}.`);
+    console.log(`Place the break at a useful boundary within ${FIRST_HALF_MINUTES - BREAK_TOLERANCE}–${FIRST_HALF_MINUTES + BREAK_TOLERANCE} estimated core minutes.`);
+    console.log("Five seconds per title/transition, two minutes per ordinary slide; activities use their stated time. Notes add no time. Break/discussion excluded.\n");
+    console.log("week      slides  deck  activity  core  to target  before break  after break");
     for (const w of all) {
-      const flag = w.shortfall > 10 ? "  SHORT" : "";
+      const flag = Math.abs(w.shortfall) > PLANNING_TOLERANCE ? "  CHECK" : "";
       console.log(
-        `${w.week}  ${pad(w.slides, 6)}  ${pad(w.deckMinutes, 4)}  ${pad(w.exerciseMinutes, 8)}  ${pad(w.totalMinutes, 5)}  ${pad(w.shortfall, 9)}  ${pad(w.lectureWords + "w", 8)}${flag}`,
+        `${w.week}  ${pad(w.slides, 6)}  ${pad(w.deckMinutes, 4)}  ${pad(w.exerciseMinutes, 8)}  ${pad(w.totalMinutes, 4)}  ${pad(w.shortfall, 9)}  ${pad(w.beforeBreakMinutes, 12)}  ${pad(w.afterBreakMinutes, 11)}${flag}`,
       );
     }
-    const short = all.filter((w) => w.shortfall > 10);
-    console.log(
-      `\n${short.length} of ${all.length} weeks are more than 10 min short of ${TARGET_MINUTES} min.`,
-    );
-    if (short.length) process.exitCode = 1;
+    console.log(`\n${issues.length} planning issue(s) across ${all.length} weeks.`);
   }
+  for (const issue of issues) console.error(issue);
+  if (issues.length) process.exitCode = 1;
 }

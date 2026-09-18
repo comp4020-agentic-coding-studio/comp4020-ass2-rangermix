@@ -1,6 +1,6 @@
 ---
 title: "The road to forgiveness: A meta-analytic synthesis of its situational and dispositional correlates"
-description: "175 studies on whether people forgive: apology r = .42, anger r = -.41, and the situation matters more than the victim's personality."
+description: "175 studies on forgiveness: apology r = .42, anger r = -.41; situational constructs explained more variance than victims' dispositions."
 authors:
   - "Fehr, R."
   - "Gelfand, M. J."

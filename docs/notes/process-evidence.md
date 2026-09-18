@@ -170,6 +170,11 @@ this repo goes public on ship.
 
 ### The two-hour gap
 
+Historical record: the figures in this section describe the earlier model.
+The user's 18 September follow-up replaces it with an 85-minute core target,
+two-minute ordinary slides and five-second transitions. See
+`docs/plans/2026-09-18-course-consistency.md` and the current timing command.
+
 `cf0953b` · `4b12e25` · `01372a6` · `bf79a3e`
 
 `scripts/lecture-timing.ts` (`pnpm check:timing`) estimates each week's

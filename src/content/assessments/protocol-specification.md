@@ -39,6 +39,10 @@ can I just…" interruption in a tutorial; asking a stranger to swap seats;
 splitting a bill. A row from your week 6 ledger is a strong candidate, because
 you already know what it costs.
 
+Documenting a subroutine does not oblige you to run it. You may use exchanges
+you observed while choosing to run or decline it; keep observation separate
+from predictions about an option you did not take.
+
 A subroutine too big to specify (a first date, a job interview) is a sign
 you're writing week 12's open issues, not this.
 

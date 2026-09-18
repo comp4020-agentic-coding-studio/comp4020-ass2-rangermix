@@ -19,8 +19,8 @@ it?
 ## What the sources say
 
 Garfinkel explains the missing documentation. The rules a person runs are
-background expectancies, so they are invisible to the person running them
-until someone breaks one. Nobody specifies what they cannot see.
+background expectancies that fluent users may leave unstated. Breaching one
+can make it visible when people try to restore the expected interaction.
 
 Milton relocates the failure. When an autistic and a non-autistic person
 misunderstand each other, the misunderstanding is mutual. Treating it as one
@@ -38,26 +38,27 @@ Nisbett and Wilson supply the half of the mechanism Garfinkel doesn't. Garfinkel
 says the rule is invisible because it is background. Nisbett and Wilson say that
 when you ask anyway, you still get an answer --- constructed from a plausible
 theory of what probably caused the behaviour, rather than read off the process
-itself. That is why interviewing a fluent user does not recover the protocol:
-the failure is not reticence and not bad memory, it is that the report was never
-introspective to begin with.
+itself. A fluent user's explanation can therefore be a plausible theory rather
+than a reliable report of the process. The account still needs checking against
+what happened; the review does not make every interview answer inaccurate.
 
 The useful clause is the last one, and it is easy to miss under the famous
 claim: reports **can** be accurate, when the influential stimulus is salient and
-a plausible cause. Read as method, that is an instruction about how to ask.
-"Why do people say 'how are you'?" invites a theory. "You just said 'good,
-you?' --- what would have happened if you'd said 'terrible'?" points at a
-salient thing that just occurred. The week's interview technique now has a
-reason behind it rather than a preference.
+a plausible cause. The course uses that condition to suggest questions about
+specific exchanges. "What did they say after you replied 'good, you?'" asks
+for a report of an event. "What would have happened if you'd said 'terrible'?"
+asks for a prediction. Starting from a salient event does not turn that
+counterfactual into an observation. Record each kind separately and check the
+prediction against a later exchange if one occurs.
 
 Hinds adds the other half. Even where the fluent user can tell you something,
-they are a poor judge of what it costs someone who is not fluent: in both her
-studies, more expertise went with worse prediction of how long a novice would
-take, and the debiasing techniques did not repair it. The finding that does the
-most work here is the third one --- that intermediate expertise predicted more
-accurately. The person who learned the thing recently is the better guide, and
-that is an argument for how this room is arranged rather than a compliment to
-anyone in it.
+they may misjudge novice performance: in both studies, more expertise went
+with worse prediction of how long a novice would take at a complex technical
+task, and experts resisted the debiasing techniques. The checked abstract does
+not identify those techniques as merely warning experts about the bias. The
+authors suggest intermediate expertise may give better estimates. Asking a
+classmate who remembers learning a convention is the course's teaching
+proposal, not a tested result about social expertise.
 
 Malle is on the list to stop the course from leaning on something that isn't
 there. The obvious justification for a field-note rule is the actor--observer
@@ -67,11 +68,10 @@ that asymmetry averages out to approximately nothing. The course therefore does
 **not** cite it as the reason for the asleep test.
 
 What survives is narrower and, for this week, sharper: the asymmetry did hold
-for **negative** events, and reversed for positive ones. A field note is written
-when something did not go smoothly. So the one condition under which the effect
-appears is the condition a journal entry is almost always written in --- which
-is a reason to keep the rule and a reason not to claim more than the meta-analysis
-supports.
+for **negative** events, and reversed for positive ones. That distinction is
+relevant when a field note concerns an exchange that went badly, but journals
+can also record ordinary or successful exchanges. The asleep test remains a
+course rule, not a direct consequence of this meta-analysis.
 
 ## Where they disagree
 
@@ -103,18 +103,17 @@ supports.
   how it came across.
 - Field notes describe; they don't diagnose. The before/after rewrite
   exercise comes from here.
-- **Asking a fluent user "why" produces a theory, not the rule** (Nisbett &
-  Wilson), and the week teaches the interview technique their accuracy
-  condition implies: point at a salient thing that just happened.
-- **Fluency makes you a worse estimator of what it costs someone else**
-  (Hinds), and telling the expert about the bias did not fix it. The week uses
-  this in both directions: it is why "it's obvious" is unreliable evidence, and
-  why the classmate who learned it last year is a better source than the one
-  who never had to.
+- **An explanation can be a theory rather than an observation** (Nisbett &
+  Wilson). Ask about a specific exchange, label counterfactual answers as
+  predictions, and check the account. The question alone guarantees neither
+  accuracy nor access to the mental process.
+- **Expertise did not guarantee accurate novice-time estimates** (Hinds).
+  Keep the technical-task scope and resistance-to-debiasing formulation.
+  Trying a recently taught classmate as a source is the course's suggestion.
 - **The actor--observer asymmetry is not the reason for the asleep test**
   (Malle). The week states the meta-analytic numbers, keeps the rule as the
-  course's own, and keeps the one condition the effect survived under, which
-  happens to be the condition a field note is written in.
+  course's own, and distinguishes the negative-event finding without assuming
+  every field note concerns a negative event.
 
 ## Stated as the course's own observation, not research
 
@@ -123,3 +122,10 @@ supports.
 - The "diagnosing sentence" test used in the lab.
 - The asleep test itself. It is a rule of thumb this course invented, and after
   Malle the week says so explicitly rather than borrowing authority for it.
+
+## Teaching correction, 2026-09-18
+
+Separated observed reports from counterfactual predictions, removed an
+unverified description of Hinds's debiasing intervention, and qualified the
+social application and negative-event framing. The source checks above retain
+their original dates and access levels; no new full-paper check is claimed.

@@ -16,6 +16,7 @@ import {
   journalDeadline,
   labMeeting,
   lectureMeeting,
+  lectureSchedule,
   midSemesterBreak,
   publicHolidays,
 } from "../../data/timetable";
@@ -118,7 +119,7 @@ const journalCount = deadlines.filter((d) => d.title === journalTitle).length;
 >
   <p>
     A timetable usually gives you a room, a start time, and nothing else. It
-    does not say whether 14:00 means 14:00, whether you may leave at the break,
+    does not say whether the room booking is the teaching time, whether you may leave at the break,
     or which of the two doors is the one people use.
   </p>
   <p>This is the version with the rest of it written down.</p>
@@ -143,8 +144,8 @@ const journalCount = deadlines.filter((d) => d.title === journalTitle).length;
           </td>
         </tr>
         <tr>
-          <th scope="row">Contact</th>
-          <td>{contactHours} hours a week, in the two meetings below</td>
+          <th scope="row">Room bookings</th>
+          <td>{contactHours} hours reserved each week; working times below</td>
         </tr>
         <tr>
           <th scope="row">Last deadline</th>
@@ -192,6 +193,12 @@ const journalCount = deadlines.filter((d) => d.title === journalTitle).length;
     </table>
   </div>
   <p>
+    The rooms are booked Tuesday {lectureMeeting.slotStart}&ndash;{lectureMeeting.slotEnd}{" "}
+    and Thursday {labMeeting.slotStart}&ndash;{labMeeting.slotEnd}. Teaching starts
+    five minutes into each booking and finishes at least five minutes before
+    it ends. Those minutes belong to getting through the door.
+  </p>
+  <p>
     Tuesday writes a part of the protocol down; you get two days to watch for it in the wild; Thursday tests
     the writing in the room; and you get three more days to catch it happening
     to you before the journal entry is due. Use what you find to revise the rule.
@@ -200,13 +207,24 @@ const journalCount = deadlines.filter((d) => d.title === journalTitle).length;
   <h2>What a timetable doesn't usually say</h2>
   <ol class="tt-clauses">
     <li>
-      <strong>14:00 means 14:00.</strong> There is no unwritten five- or
-      ten-minute grace period.
+      <strong>Teaching starts at {lectureSchedule.start}.</strong> The five minutes
+      after the room opens are written into the timetable; nobody has to infer them.
     </li>
     <li>
-      <strong>The lecture breaks at 15:00 for ten minutes.</strong> It's on a
-      slide, at a fixed time, rather than being called when the room looks
-      tired. You can tell in advance when you'll next be able to move.
+      <strong>The lecture break is {lectureSchedule.breakStart}&ndash;{lectureSchedule.breakEnd}.</strong>{" "}
+      Every deck has a break slide with the resume time. The clock sets the
+      break; a discussion running long does not move it.
+    </li>
+    <li>
+      <strong>The core material ends around {lectureSchedule.coreEnd}.</strong>{" "}
+      The remaining time is contingency. Every deck ends with an open-ended
+      question to discuss if there is time left. Discussion is optional and
+      finishes by {lectureSchedule.end}; no self-check depends on staying for it.
+    </li>
+    <li>
+      <strong>Labs run {labMeeting.start}&ndash;{labMeeting.end}.</strong>{" "}
+      Each run sheet covers fifty minutes from the start of teaching. The last
+      five minutes of the room booking are for leaving, not one more task.
     </li>
     <li>
       <strong>You can leave and come back.</strong> No explanation, no apology,
