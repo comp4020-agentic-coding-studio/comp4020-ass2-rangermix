@@ -45,3 +45,14 @@
 - At 844×390, the week 1 deck's body text rendered at about 15px and its table
   text at about 12px. Landscape is usable; this does not replace the assignment's
   specified 390×844 portrait check. No deck styles were changed.
+- Checkpoint `a7ba995` was pushed to `main` and deployed successfully. Its CI
+  build and spec step passed; the process-evidence step failed on the existing
+  placeholder commit references `a1b2c3d` and `e4f5a6b`, outside this follow-up.
+- No LMS destination was supplied, so the second checkpoint uses the proposed
+  clearly labelled prototype guide. Nine submission checks failed before the
+  guide and its links were added. Afterwards, `pnpm check` passed 425 specs and
+  built 125 pages, with no type, accessibility or link errors.
+- Chrome at both marking viewports followed all six entry points to the guide,
+  followed its extension-policy anchor, and reached times and rooms through
+  the timetable navigation. No browser exceptions or document overflow were
+  observed. The guide's unavailable-upload notice was visible in both layouts.

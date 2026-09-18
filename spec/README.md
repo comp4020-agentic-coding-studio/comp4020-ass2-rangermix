@@ -29,3 +29,16 @@ survive a change of approach, or of stack.
 A green suite here is backpressure, not a mark: your tutor verifies what you
 deployed against the published spec at the crit, and keeping your own tests
 green is how you arrive with no surprises.
+
+## Student instructions and logistics
+
+These checks cover the follow-up to the assignment review:
+
+| Spec | Promise it checks |
+| --- | --- |
+| `student-instructions.test.ts` | The last pre-break lab names both adjacent journal deadlines from the calendar; numbered lecture references point to their intended headings; ordinary pages have a main heading. |
+| `timetable.test.ts` | Every teaching date and deadline appears, times and rooms are stated, and the timetable is reachable from every ordinary page. |
+| `submission.test.ts` | The timetable and all assessment briefs link to a built submission guide; it states that uploads are unavailable, links every task and the help policies, and does not offer a nonfunctional upload form. |
+
+Run `pnpm check` to build the current content before testing it. Running
+Vitest alone reads the last build, which may predate an edit.

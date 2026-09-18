@@ -76,7 +76,7 @@ A short example, from week 4's material:
 
 ## What you submit
 
-One file per week to the course page, containing at least one entry. Write as
+One file per week, containing at least one entry. Write as
 much as you need: **fifty words or five thousand are both fine**. There is no
 word limit and no minimum.
 

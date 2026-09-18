@@ -105,6 +105,17 @@ lectures, the labs and the assessments, the Field Journal's eleven
 `spec/timetable.test.ts` fails if any teaching date or deadline in the course
 API is missing from it.
 
+**Submission instructions have a destination.** `/submissions/` is linked
+from the timetable, the assessment index and every assessment brief. This
+static course prototype has no live LMS or upload service, so the guide says
+that explicitly before describing the intended hand-in and receipt process.
+It links back to the briefs for requirements and dates, and to the policies
+for extensions and upload problems. Do not invent a working LMS address or
+add a form that appears to accept work without storing it. The timetable
+links the extension policy rather than restating a blanket rule that would
+contradict the Field Journal's exception. `spec/submission.test.ts` holds these
+routes and the prototype's stated availability.
+
 **The undocumented half of a timetable is the point.** A timetable hands you a
 room and a start time and leaves you to infer everything else, which is this
 course's subject matter happening to the course itself. So the page writes down
