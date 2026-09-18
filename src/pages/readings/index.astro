@@ -27,7 +27,7 @@ for (const [, group] of weeks) {
 
 <ContentLayout
   title="Readings"
-  description="Where the course's claims come from, week by week. Every entry was checked against the source itself before it went on this list."
+  description="Where the course's claims come from, week by week, with a record of what was checked."
   {...siteConfig}
 >
   <p>
@@ -35,9 +35,7 @@ for (const [, group] of weeks) {
     is a scattered literature --- linguistics, psychology, sociology, and
     autistic researchers writing about their own experience --- that
     documents pieces of it. This list is the pieces the course uses. Each entry
-    says why it is here, and records what it was checked against, because a
-    course that complains about missing documentation does not get to invent
-    its own.
+    says why it is here and records what it was checked against.
   </p>
   {
     weeks.map(([week, group]) => (

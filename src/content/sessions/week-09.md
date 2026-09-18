@@ -26,8 +26,8 @@ follow-up question, no face. This is a lab rule, and it is also the first
 clause every pair starts with: **either of us can decline a topic without
 explaining why.**
 
-No card in this room goes above level 2. Level 3 and 4 conversations are for
-people who've put the hours in, and a lab partnership hasn't yet.
+No card in this room goes above level 2. You have been assigned a lab
+partner, not agreed to discuss your family or health.
 
 ## Run sheet
 

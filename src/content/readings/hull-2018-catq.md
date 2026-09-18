@@ -20,4 +20,4 @@ checked:
 
 Before this there were no self-report measures of camouflaging at all. The CAT-Q was developed from autistic adults' own experiences rather than from a clinician's model, and administered to 354 autistic and 478 non-autistic adults. Exploratory factor analysis suggested three factors across 25 items, with good model fit on confirmatory analysis, internal consistency of α = 0.94 and preliminary test–retest reliability of r = 0.77.
 
-Week 6 uses it for one thing above all: the measurement invariance analyses demonstrated equivalent factor structures **across diagnostic group as well as gender**. The same instrument measures the same construct the same way whether or not the respondent is autistic — which is the evidence for the week's claim that everyone in the room keeps a ledger and what differs is the price. The week does not name the three factors, because the abstract does not.
+The measurement invariance analyses demonstrated equivalent factor structures **across diagnostic group as well as gender**. Week 6 uses this when discussing camouflaging across groups. The week does not name the three factors, because the abstract does not.

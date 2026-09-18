@@ -13,4 +13,4 @@ checked:
   on: "2026-09-15"
 ---
 
-Sonnentag and Fritz distinguished four recovery experiences: psychological detachment, relaxation, mastery and control. The research is about employees unwinding from ordinary work stress, and the course does not claim it applies to burnout. Week 7 uses the four as a checklist for planning the mid-semester break, which works for everyone in the room.
+Sonnentag and Fritz distinguished four recovery experiences: psychological detachment, relaxation, mastery and control. The research is about employees unwinding from ordinary work stress, and the course does not claim it applies to burnout. Week 7 uses the four as a checklist for planning the mid-semester break.

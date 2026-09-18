@@ -1,6 +1,6 @@
 ---
 title: "NT 101, Week 5: Error Handling and Repair"
-description: "The week 5 lecture deck: repair as steady-state traffic, the three initiators, “huh?” as a word, and an apology template the evidence made this course correct."
+description: "The week 5 lecture deck: repair as steady-state traffic, the three initiators, “huh?” as a word, and the corrected apology template."
 ---
 
 import StateMachine from "../components/sketch/StateMachine.astro";
@@ -80,7 +80,7 @@ Misunderstanding isn't an exception condition.
 It's steady-state traffic.
 
 ```notes
-- This is the reframe the week turns on. Let it sit before moving to the table.
+- Pause before moving to the table.
 ```
 
 ---
@@ -107,21 +107,21 @@ Every language sampled had all three --- and people choose the **most specific i
 
 > "Sorry, you want the draft *by* Friday, or *on* Friday?"
 
-Repairs faster than "what?", and shows the speaker exactly which part you caught.
+Shows the speaker exactly which part you caught.
 
 ```notes
-- This is the week's first sincere instruction and the one to actually practise.
+- Have students say the example aloud.
 ```
 
 ---
 
-## And "faster" is literal
+## When repair begins
 
 169 other-initiations of repair, timed. Those that **located the trouble specifically** arrived after **shorter gaps** than those that didn't.
 
 The rare ones that simply **corrected an error** arrived **without delay**.
 
-Most repair initiations came after gaps of about **700 ms**.
+The most frequent gap before a repair initiation was about **700 ms**.
 
 <span class="source">Kendrick (2015), Frontiers in Psychology 6, 250</span>
 
@@ -151,7 +151,7 @@ Learnt, not an involuntary noise. It exists because every language needs a way t
 <span class="source">Dingemanse, Torreira & Enfield (2013), PLoS ONE 8(11)</span>
 
 ```notes
-- So if "sorry, what?" makes you wince, you're embarrassed by a universal feature of human language.
+- "Sorry, what?" is a repair request.
 - The "sorry" is optional. Say that line flatly and move on.
 ```
 
@@ -159,7 +159,7 @@ Learnt, not an involuntary noise. It exists because every language needs a way t
 
 <StateMachine
   seed="deck week 5 repair"
-  caption="Repair as a state machine. Most loops take one pass."
+  caption="Repair as a state machine: initiate, repair, carry on."
   states={["Trouble", "Initiated", "Carry on", "Repaired"]}
   transitions={[
     { from: 0, to: 1, label: "most specific initiator" },
@@ -171,7 +171,7 @@ Learnt, not an involuntary noise. It exists because every language needs a way t
 
 ```notes
 - The sources describe the moves; the machine is the course's.
-- The step people skip is the last one.
+- Point out the last step: accept the repair, then carry on.
 ```
 
 ---
@@ -196,7 +196,7 @@ Six rounds, swapping. Count how many took one turn to fix.
 
 ```notes
 - The no-bare-what rule is the whole exercise. It forces them to name the part they got, which is the skill.
-- Debrief on the ones that took more than one turn. Usually the mumble was at the start of the sentence.
+- Debrief on the ones that took more than one turn. Did the mumble's position make a difference?
 ```
 
 ---
@@ -205,10 +205,10 @@ Six rounds, swapping. Count how many took one turn to fix.
 
 Speakers fix their own trouble far more often than listeners fix it for them --- and that is a *design* property, not politeness.
 
-It means the cheapest repair is the one that never needs you to speak. Which is why the 700 ms gap exists at all.
+Leaving a gap can give the speaker time to repair the problem without a prompt.
 
 ```notes
-- Tie the three findings together here: self-repair preferred, initiations slow, delay makes room. They are one mechanism seen three ways.
+- Compare the three findings: who repairs the trouble, how long the gap is, and what the gap can allow.
 ```
 
 ---
@@ -222,11 +222,11 @@ It means the cheapest repair is the one that never needs you to speak. Which is 
 | "This Thursday?" | say yes, or one word | 2, sometimes 1 |
 | (silence, 700 ms) | notice and self-repair | 1 |
 
-The course's table, from the sources' findings. Read the right-hand column downwards.
+The course's proposed cost table. Test the turn counts in the repair drill.
 
 ```notes
 - This is the argument for specificity in one shape: every step down the table costs the other person less.
-- The last row is the one nobody teaches, and it is free.
+- The last row needs no spoken repair request; it still depends on the speaker noticing the trouble.
 ```
 
 ---
@@ -254,7 +254,7 @@ And the link between completeness and forgiveness was **mediated by anger reduct
 <span class="source">Kirchhoff, Wagner & Strack (2012), Peace and Conflict 18(2)</span>
 
 ```notes
-- So a fuller apology isn't a performance of sincerity. It does a job: it brings the anger down, and forgiveness follows that.
+- Keep the claim tied to the vignette scenarios and the reported role of anger reduction.
 ```
 
 ---
@@ -271,7 +271,7 @@ For a more severe offence, Study 2 found these particularly relevant:
 <span class="source">Kirchhoff, Wagner & Strack (2012)</span>
 
 ```notes
-- Read the fourth one twice, then stop. The next slide is the course eating its own words.
+- Read the fourth one twice, then stop.
 ```
 
 ---
@@ -283,7 +283,7 @@ Earlier versions of this course told you to keep explanation out of an apology.
 That was too strong.
 
 ```notes
-- Say it plainly. Do not soften it, and do not skip it --- a course that publishes errata in week 12 has to be able to do this in week 5.
+- State the correction before introducing the revised template.
 ```
 
 ---
@@ -304,7 +304,7 @@ Two rows are new.
 
 ```notes
 - "I'm sorry" was missing entirely, which is faintly absurd for an apology template.
-- The explanation is now in, with two constraints that are the course's own and were the real objection all along.
+- The explanation is now in, with two constraints that are the course's own.
 ```
 
 ---
@@ -315,7 +315,7 @@ Two rows are new.
 
 **Shorter** than the apology.
 
-An explanation that arrives first, or runs long, is heard as an excuse --- which is a claim about how it lands, not about your honesty.
+An explanation that arrives first, or runs long, can be heard as an excuse.
 
 ---
 
@@ -360,11 +360,11 @@ Meta-analysis: **175 studies, 26,006 participants**, on whether one person forgi
 
 Situational constructs accounted for greater variance in forgiveness than victims' dispositions.
 
-<MarginNote label="Closing the loop">The situation beats the disposition. Which is to say: it's a protocol.</MarginNote>
+<MarginNote label="Closing the loop">The situation belongs in the bug report.</MarginNote>
 
 ```notes
-- What you do and say after an error matters more than who the other person happens to be.
-- This is the evidence for the claim this week used to assert and couldn't support. Nobody has to be a naturally graceful apologiser.
+- Use the comparison as a reason to examine the situation, not to rank causes for a particular apology.
+- Separate the association from a guarantee: an apology can matter without ensuring forgiveness.
 ```
 
 ---
@@ -386,7 +386,7 @@ On your own, four minutes: write a real apology you owe, or owed, using the corr
 Then, in pairs, six minutes: swap only the **"what it cost them"** line, and say whether your partner's line is about them or about the writer.
 
 ```notes
-- Nobody reads the whole thing out. Say that twice --- the exercise fails if people write a safe one.
+- Say clearly that only the cost line is shared; nobody reads the whole apology out.
 - The cost line is the only part swapped because it's the part that decides whether the apology is about them.
 ```
 
@@ -399,7 +399,7 @@ Then, in pairs, six minutes: swap only the **"what it cost them"** line, and say
 - If you can't mean it yet: "Thanks. I need a bit of time" is conforming.
 
 ```notes
-- Everyone assumes this one is a matter of character. It isn't. It's error handling, with a spec --- and now, with a meta-analysis.
+- Say both acceptance scripts aloud, including the option to ask for time.
 ```
 
 ---
@@ -408,12 +408,12 @@ Then, in pairs, six minutes: swap only the **"what it cost them"** line, and say
 
 - **repair** --- the machinery, not an admission of failure
 - **repair initiator** --- the move that flags trouble, in three types
-- the **one-turn accept** --- the step people skip
+- the **one-turn accept** --- acknowledge the repair and carry on
 
 All three come back in week 9, when the thing needing repair is how *deep* a conversation went.
 
 ```notes
-- Point at the glossary. Terms get introduced once and reused exactly; this is that promise being kept in public.
+- Point students to the three glossary entries.
 ```
 
 ---

@@ -22,10 +22,7 @@ related:
 
 > Decide what you'll run. Or run one thing on purpose, and find out.
 
-The course has been building towards this for twelve weeks. Its outcome was
-never that you become indistinguishable from anyone. It was **fluency plus
-choice**. The capstone is where you exercise the choice, in one of two ways.
-Both routes carry the same weight.
+Choose one of the two routes below. Both carry the same weight.
 
 ## Route A: Personal Protocol Document
 
@@ -70,5 +67,5 @@ including against-hypothesis results (25%); discussion using the course's terms
 
 ## When it's due
 
-**Sunday 13 June 2027, 23:59** Canberra time: two weeks after teaching ends, on
-purpose. Week 12's lab is the clinic for both routes.
+**Sunday 13 June 2027, 23:59** Canberra time: two weeks after teaching ends.
+Week 12's lab is the clinic for both routes.

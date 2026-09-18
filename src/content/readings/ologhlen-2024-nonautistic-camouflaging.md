@@ -13,4 +13,4 @@ checked:
   on: "2026-09-15"
 ---
 
-284 non-autistic undergraduates reported social camouflaging, and more camouflaging went with more psychological distress. The course takes the finding, not the paper's framing of competence: masking is a practice most of the room runs, at costs that differ by implementation. That is what makes the week 6 ledger a whole-class exercise.
+284 non-autistic undergraduates reported social camouflaging, and more camouflaging went with more psychological distress. Week 6 includes these accounts alongside those of autistic participants when introducing the ledger. It does not adopt the paper's framing of competence.

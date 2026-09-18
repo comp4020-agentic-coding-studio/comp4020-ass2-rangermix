@@ -11,8 +11,8 @@ spec:
   - "Every clause your partner failed has been rewritten, or has a written reason why breaking it was the right call."
 ---
 
-Tuesday's specimens are a specification. A specification you can't test isn't
-one, so today the room runs the tests.
+Today you run Tuesday's seven-clause email specification against three
+messages.
 
 ## Before the lab
 
@@ -38,6 +38,6 @@ clause is a fail. That's also the standard for your Protocol Specification.
 
 ## What leaves the room
 
-Three messages that pass their tests, and a clause you now know you tend to
-break. Your journal rule for Sunday is how that clause got broken in a real
-email, and what came back.
+Three messages that pass their tests, with any exceptions explained. For
+Sunday's journal, check one clause against a real email and the reply it got.
+Did the clause help, or did the exchange give you a reason to revise it?

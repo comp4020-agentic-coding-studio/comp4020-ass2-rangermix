@@ -13,14 +13,12 @@ const weeks = [...new Set(terms.map((t) => t.week))].sort((a, b) => a - b);
 
 <ContentLayout
   title="Glossary"
-  description="Every term this course introduces, with the week that introduces it. The course specifies its own vocabulary, and reuses each term exactly."
+  description="Course terms, grouped by the week that introduces them."
   {...siteConfig}
 >
   <p>
-    Over twelve weeks, a deliberately mixed class builds a shared vocabulary for
-    a protocol nobody documented. This is that vocabulary, as a reference. Each
-    term keeps the meaning it had in the week that introduced it, and later
-    weeks reuse it rather than re-coining it.
+    Use these definitions throughout the course. Each week’s heading links
+    back to the lecture that introduced the terms.
   </p>
   {
     weeks.map((week) => {

@@ -14,6 +14,6 @@ checked:
   on: "2026-09-16"
 ---
 
-A meta-analysis of 175 studies and 26,006 participants on the forgiveness of a single offender by a single victim, testing 22 constructs. Among the notably sized effects: intent (*r* = −.49), state empathy (*r* = .51), apology (*r* = .42) and state anger (*r* = −.41). Gender was non-significant (*r* = .01) and age negligible (*r* = .06), which disposes of two folk theories at once.
+A meta-analysis of 175 studies and 26,006 participants on the forgiveness of a single offender by a single victim, testing 22 constructs. Among the notably sized effects: intent (*r* = −.49), state empathy (*r* = .51), apology (*r* = .42) and state anger (*r* = −.41). Gender was non-significant (*r* = .01) and age negligible (*r* = .06).
 
-The finding week 5 leans on hardest is this: situational constructs accounted for greater variance in forgiveness than victims' dispositions. The week had been asserting that repair is error handling rather than a matter of character, and that the receiving side is a protocol rather than a personality. This is the evidence for it — what you do and say after an offence matters more than who the other person happens to be. The anger effect also sits beside Kirchhoff et al.'s finding that an apology's completeness works *through* anger reduction, from an independent direction.
+Situational constructs accounted for greater variance in forgiveness than victims' dispositions. Week 5 uses this to focus on what happens during repair, rather than treating forgiveness as a fixed trait of the person receiving the apology. The anger effect also sits beside Kirchhoff et al.'s finding that an apology's completeness works *through* anger reduction, from an independent direction.

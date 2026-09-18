@@ -29,8 +29,8 @@ related:
 
 > Pick one social subroutine that nobody documented, and document it.
 
-Week 1 specified the opening handshake in an hour. Your job is to do the same
-for a subroutine of your choice, properly. Treat it as an undocumented API: a
+Week 1 specified the opening handshake. Do the same for a subroutine of your
+choice. Treat it as an undocumented API: a
 system everyone calls, that nobody wrote a reference for.
 
 Good subroutines are small and frequent. Some that work well: leaving a

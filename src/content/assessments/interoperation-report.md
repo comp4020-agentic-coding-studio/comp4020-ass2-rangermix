@@ -41,18 +41,16 @@ Then each of you, separately, reports what happened.
 
 ## What a strong response does
 
-It takes week 11 seriously: **the fix is bilateral**. A report in which one
+**The fix is bilateral.** A report in which one
 partner conceded everything describes conversion, not interoperation, and
 should say so plainly if that's what happened. That can still be a strong
 report, if it's honest about it.
 
 It reports **disagreement as data**. If you and your partner remember the
-concessions differently, the difference is the most interesting part of the
-report. Don't resolve it; describe it.
+concessions differently, describe the difference in the report rather than
+settling on one account.
 
 It uses the course's **terms exactly**: payload, timeout, rate limit, mismatch.
-A report that invents its own vocabulary for things the course already named
-is doing the harder version of the task.
 
 ## What you submit
 

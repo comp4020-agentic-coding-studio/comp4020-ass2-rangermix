@@ -42,8 +42,6 @@ didn't agree to be in this lab.
 ## What leaves the room
 
 Your log, and the pooled tally, which goes up on the course page on Friday.
-If the branch signals from the lecture didn't hold up, that is a result: the
-signals are the course's working rules, and a working rule is there to be
-tested.
+If the lecture's branch signals didn't hold up, record where they failed.
 
 Keep the log. Next week it becomes your first field note.

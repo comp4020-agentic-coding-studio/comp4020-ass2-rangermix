@@ -31,16 +31,14 @@ hand to a partner.
 
 ## Why a partner reads your notes
 
-The asleep test is easy to apply to someone else's sentence and hard to apply
-to your own. An impression feels like an observation from the inside. That is
-week 2's lecture happening at the scale of one notebook.
+A partner may catch an impression you have written as an observation. Ask
+them to point to the words that describe what happened.
 
-Partners are assigned by the tutor to mix the room. You'll swap with someone
-whose notes read differently from yours. That difference is the point, and
-it's the start of the shared vocabulary this class builds towards in week 11.
+Partners are assigned by the tutor to mix the room. Compare what each of you
+recorded and what you inferred; keep any differences to revisit in week 11.
 
 ## What leaves the room
 
 A page of notes that passes the asleep test, and one written-down rule. Test
-the rule this week, and Sunday's journal entry writes itself: what happened,
-the rule, the test, the rule now.
+the rule this week, then use the result in Sunday's journal entry: what
+happened, the rule, the test, the rule now.

@@ -14,6 +14,6 @@ checked:
 
 Keltner, Gruenfeld and Anderson proposed independent effects: elevated power activates approach, reduced power activates inhibition. This published comment argues that the studies behind it <span data-quoted>have permitted examining the opposite effects but not the specific effects of high and low power</span> — that is, the designs can show high and low power differing, but cannot establish that each half of the proposal does what it claims. The comment then sets out designs and analytic strategies that would permit the evaluation.
 
-OI-3 was labelled "contested" on the strength of there being a published criticism somewhere. This is it, and reading it changes what the label means. The objection is not that the account is false. It is that **the specification, as written, is not yet testable by the evidence offered for it** — and here is the experiment that would settle it.
+This is the objection behind OI-3's “contested” label: the evidence offered does not distinguish the proposed effects from a weaker account. The comment sets out ways to test that distinction.
 
-That is the best erratum in this course's reading list, and week 12 teaches it as the model for the course's own. An honest known-issue names the claim, says what evidence would decide it, and stays open until somebody runs that test. E‑1 through E‑5 are written to that standard, and if they aren't, this is the thing to measure them against.
+Week 12 uses this as a model for errata E‑1 through E‑5: name the claim, say what evidence would decide it, and leave it open until that test has been run.

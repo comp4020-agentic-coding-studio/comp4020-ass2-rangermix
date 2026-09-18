@@ -1,6 +1,6 @@
 ---
 title: "Romantic Intimacy in Autism: A Qualitative Analysis"
-description: "Both groups named the same things as making intimacy possible. What differed was the obstacle, and it has a name this course already uses."
+description: "Both groups named similar enablers of intimacy; autistic participants also described uncertainty about relationships and communication."
 authors:
   - "Sala, G."
   - "Hooley, M."
@@ -18,6 +18,6 @@ Thirty-one autistic and twenty-six non-autistic participants answered survey que
 
 The enablers came out the same for both groups: communication, sharing and similarity, respect and safety for self and other, and working on the relationship. So did one barrier — conflict, within a person and between people. What the authors report as specific to the autistic participants is **uncertainty** about relationships and communication. Their conclusion: similar notions of intimacy, different challenges in experiencing it.
 
-OI-1 previously rested on an inventory of how people say they signal romantic interest, measured in the general population. This is the source that makes the open issue honest, and its finding points somewhere useful. Uncertainty is not a new problem requiring new machinery. Week 3 says an envelope marks a place where the sender doesn't know the answer. Week 9 says the rate limit is the move for when you can't predict the other person's next step. The named obstacle in OI-1 is the one the course spent two weeks on.
+For OI-1, the reported uncertainty gives a connection to weeks 3 and 9. It does not establish that the course's decoder or rate-limit model resolves difficulties in romantic relationships.
 
 Note the abstract's opening clause, which states the clinical framing the authors are writing within. This course cites the findings and does not adopt the framing — the same decision week 2 made about the thin-slice study.

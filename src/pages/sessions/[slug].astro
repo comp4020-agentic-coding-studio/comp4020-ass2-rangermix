@@ -27,8 +27,7 @@ const { Content } = await render(session);
     <Content />
   </article>
   <SpecList spec={session.data.spec} heading="What you leave the lab with">
-    Each line is something you can check before you walk out. None of them
-    needs a teacher to confirm it.
+    Check these before you leave the lab.
   </SpecList>
   <TeachingTeam teachers={session.data.teachers} />
   <RelatedContent entry={session} collections={graphCollections} />

@@ -44,9 +44,7 @@ part of the protocol to look for, every lab gives you practice looking, and
 every Sunday you turn one real exchange into a rule you can test.
 
 It starts in week 2 and runs to week 12: eleven submissions, each worth 3%.
-**Your best ten count**, so one week is yours to drop. That's deliberate. A
-course that teaches masking as a budget, and then punishes one overspent week,
-isn't taking its own week 6 seriously.
+**Your best ten count**, so one week is yours to drop.
 
 ## What an entry looks like
 
@@ -71,8 +69,9 @@ A short example, from week 4's material:
 > Thursday actually good for you? Totally fine if not." Reply: "Honestly Monday
 > is better."
 >
-> **The rule now.** Held, with an addition: the pause means *not in front of
-> the group*. Ask again, privately, with an explicit exit.
+> **The rule now.** Revised: a delayed yes is a reason to check availability
+> again, with an explicit exit. This test does not tell me whether being in
+> front of the group caused the pause.
 
 ## What you submit
 
@@ -81,9 +80,7 @@ much as you need: **fifty words or five thousand are both fine**. There is no
 word limit and no minimum.
 
 **Grammar, spelling and presentation are not marked.** Talk your observations
-through with an AI as much as you like. The writing must be yours, and that is
-exactly why the format is unconstrained: a fixed word count is what makes
-generated text convenient to submit.
+through with an AI as much as you like. The writing must be yours.
 
 ## When it's due
 

@@ -32,9 +32,8 @@ screen.
 ## What to notice
 
 Watch for a payload that arrives intact in one person's envelope and gets lost
-in someone else's. If it happens, that is the room finding out that the envelopes aren't
-shared. People wrap differently, and decoders are tuned to their own style of
-wrapping. Keep hold of that: it's week 11's argument, arriving early.
+in someone else's. If it happens, compare the wording: which part changed the
+decoder's reading? Keep both versions to revisit in week 11.
 
 Write down the costs from the bare round honestly. For some people, saying
 "I think your plan won't work" out loud costs almost nothing. For others it

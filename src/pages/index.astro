@@ -59,8 +59,8 @@ const parts: { name: string; summary: string; weeks: CollectionEntry<"lectures">
     it on purpose.
   </p>
   <p>
-    It is a systems course, and it is sincere. Every week ends with scripts you
-    can say, timings you can check, and lines you can test yourself against.
+    Every week ends with scripts you can say, timings you can check, and lines
+    you can test yourself against.
   </p>
 
   <h2>Who it is for</h2>
@@ -79,13 +79,13 @@ const parts: { name: string; summary: string; weeks: CollectionEntry<"lectures">
 
   <h2>What you'll do</h2>
   <p>
-    Every week runs the same loop. A lecture writes a part of the protocol down,
-    a lab tests that writing in the room, and a journal entry checks it against
-    a real exchange of your own — which is where the next week starts.
+    A lecture writes a part of the protocol down, and a lab tests that writing
+    in the room. From week 2, a weekly journal entry checks it against a real
+    exchange of your own.
   </p>
   <StateMachine
     seed="home weekly loop"
-    caption="The week, which runs eleven times. The journal entry is the edge back: what you tested on Sunday is what the next lecture is arguing with."
+    caption="From week 2: lecture, lab and journal. An observation can send you back to revise the rule."
     states={["Tue lecture", "Thu lab", "Sun journal"]}
     transitions={[
       { from: 0, to: 1, label: "test it in the room" },
@@ -124,8 +124,8 @@ const parts: { name: string; summary: string; weeks: CollectionEntry<"lectures">
     {courseMeta.learningOutcomes?.map((outcome) => <li>{outcome}</li>)}
   </ol>
   <p>
-    Not on the list, on purpose: becoming indistinguishable from anybody. The
-    outcome is fluency plus choice. You'll be able to run a part of the protocol
+    The outcome is fluency plus choice, without having to become
+    indistinguishable from anybody. You'll be able to run a part of the protocol
     when it's worth the cost, and decline it knowing what declining costs.
   </p>
 
@@ -144,7 +144,7 @@ const parts: { name: string; summary: string; weeks: CollectionEntry<"lectures">
       <p>Four tasks, what each is worth, and every deadline.</p>
     </Card>
     <Card title="Readings" href="/readings/">
-      <p>{readingCount} sources, each checked against the source itself.</p>
+      <p>{readingCount} sources, with notes on what was checked.</p>
     </Card>
     <Card title="Glossary" href="/glossary/">
       <p>The vocabulary the class builds, and the week each term arrives.</p>

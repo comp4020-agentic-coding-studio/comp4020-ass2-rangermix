@@ -28,7 +28,7 @@ export const terms: Term[] = [
     term: "handshake",
     week: 1,
     definition:
-      "The opening exchange that confirms a connection is up before anything else is said. “How are you?” / “Good, you?” is the flagship.",
+      "An opening exchange that confirms a connection is up before anything else is said. In the corridor version: “How are you?” / “Good, you?”",
   },
   {
     term: "token",
@@ -46,7 +46,7 @@ export const terms: Term[] = [
     term: "background expectancies",
     week: 2,
     definition:
-      "Garfinkel's term for the unstated assumptions an ordinary situation runs on. They show only when breached, which is why the protocol's fluent runners can't state it.",
+      "Garfinkel's term for the unstated assumptions an ordinary situation runs on. Breaching them can make them visible.",
   },
   {
     term: "double empathy problem",
@@ -104,13 +104,13 @@ export const terms: Term[] = [
     term: "timeout",
     week: 4,
     definition:
-      "The point at which a listener stops waiting and starts inferring meaning from a gap. Not a hard number; by 700 ms a no is more likely than a yes, and listeners have learned it.",
+      "The point at which a listener starts inferring meaning from a gap. In the telephone calls studied by Kendrick and Torreira, rejections outnumbered acceptances after gaps of 700 ms or more. This is a pattern, not a rule for decoding any one pause.",
   },
   {
     term: "hold token",
     week: 4,
     definition:
-      "A sound or phrase that fills a gap to mean “still here, thinking”: “hm, let me think about that.” A standing hold token, said once, resets the timeout for a whole relationship.",
+      "A sound or phrase that fills a gap to mean “still here, thinking”: “hm, let me think about that.” A standing hold token explains in advance how to read your pauses; it is a recommendation to try, not a tested result.",
   },
   {
     term: "repair",
@@ -164,13 +164,13 @@ export const terms: Term[] = [
     term: "overload",
     week: 7,
     definition:
-      "Input arriving faster than it can be processed. Recovered from in hours. The course's distinction, not a research definition.",
+      "Input arriving faster than it can be processed. Week 7 places it on a short-term planning scale; that is not a recovery deadline or a research definition.",
   },
   {
     term: "shutdown",
     week: 7,
     definition:
-      "Output stopping: words are hard to find, messages go unanswered. Recovered from in a day or so. The course's distinction, not a research definition.",
+      "Output stopping: words are hard to find, messages go unanswered. Week 7 uses this as a planning label, not a recovery deadline or a research definition.",
   },
   {
     term: "autistic burnout",
@@ -194,7 +194,7 @@ export const terms: Term[] = [
     term: "register",
     week: 8,
     definition:
-      "How formal or casual a message is. Institutions run on an undocumented register, and how casual an email was explained a large share of how instructors judged the student.",
+      "How formal or casual a message is. In the 2009 US study used in week 8, casual email wording explained a large share of how instructors judged the student.",
   },
   {
     term: "specimen",
@@ -242,7 +242,7 @@ export const terms: Term[] = [
     term: "anticipated stigma",
     week: 10,
     definition:
-      "What you expect would happen if people knew. Distinct from the effort of concealing, and the thing that predicted distress across thirteen concealable identities.",
+      "What you expect would happen if people knew. Distinct from the effort of concealing; one of four predictors of distress in the study covering thirteen concealable identities.",
   },
   {
     term: "the five audiences",
@@ -254,13 +254,13 @@ export const terms: Term[] = [
     term: "partial disclosure",
     week: 10,
     definition:
-      "Disclosing a need without the label: “I process written instructions much better than verbal ones.” It changes one thing the other person knows, and nothing else.",
+      "Disclosing a need without the label: “I process written instructions much better than verbal ones.” You state the need without naming a diagnosis. The course’s synthesis, not a tested intervention.",
   },
   {
     term: "the timing trap",
     week: 10,
     definition:
-      "A disclosure that arrives after a problem gets heard as an explanation of it, and an explanation after a problem sounds like an excuse. The way out is early, low-stakes disclosure of needs.",
+      "A disclosure after a problem can be heard as an excuse. The course suggests stating a need early as one option, before a problem needs explaining.",
   },
   {
     term: "irreversibility",

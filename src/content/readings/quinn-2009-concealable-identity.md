@@ -15,8 +15,6 @@ checked:
 
 Three hundred people holding thirteen different concealable stigmatised identities, and then a second sample of 235. Four things predicted psychological distress: how much stigma a person **anticipated**, how **central** the identity was to their sense of themselves, how **salient** it was day to day, and how strongly the thing is **culturally devalued**. In the second study, anticipated stigma and cultural stigma were related directly to self-reported health outcomes.
 
-Every other reading in week 10 prices telling. This one prices the other state, and finds it isn't free.
+Anticipated stigma means **what you expect would happen if people knew**. It is distinct from the effort of concealment or whether you have disclosed. Students keeping the same thing to themselves can anticipate different reactions from the people around them.
 
-Read what the predictor actually is, because it is easy to misremember. It is not the effort of concealment, and it is not whether you have disclosed. It is **what you expect would happen if people knew**. Two students keeping the same thing to themselves, at the same cost in effort, are not carrying the same weight — and what separates them is a belief about the people around them.
-
-That belief is something an environment produces. Which means a department where disclosure is ordinary and adjustments are unremarkable is changing the number for students who never disclose anything at all. Week 6's ledger gains a line item nobody had named, and week 10's decision stops being a list of reasons to be careful with nothing on the other side of the page.
+Week 10 uses anticipated stigma when considering the costs of both disclosure and concealment. For institutions, it prompts a question: what makes students expect disclosure to be costly, and what can the institution change?

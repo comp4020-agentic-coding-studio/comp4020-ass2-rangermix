@@ -12,7 +12,7 @@ spec:
 ---
 
 Tuesday gave you three repair initiators and an apology template. Today you
-use both until they come out without planning.
+practise both with a partner who checks what they heard.
 
 ## Before the lab
 
@@ -40,5 +40,5 @@ unmechanical version is made of.
 
 ## What leaves the room
 
-A tally of your repair initiators, and a note of the apology part you left
-out. That part is your journal rule for Sunday.
+A tally of your repair initiators, and a note of any apology parts you left
+out. Choose one part to test in Sunday's journal.

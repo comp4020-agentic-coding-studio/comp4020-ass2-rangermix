@@ -119,8 +119,7 @@ const journalCount = deadlines.filter((d) => d.title === journalTitle).length;
   <p>
     A timetable usually gives you a room, a start time, and nothing else. It
     does not say whether 14:00 means 14:00, whether you may leave at the break,
-    or which of the two doors is the one people use. Those rules exist. Nobody
-    writes them down, and you are expected to have worked them out by week two.
+    or which of the two doors is the one people use.
   </p>
   <p>This is the version with the rest of it written down.</p>
 
@@ -130,7 +129,7 @@ const journalCount = deadlines.filter((d) => d.title === journalTitle).length;
       <tbody>
         <tr>
           <th scope="row">Code</th>
-          <td>{courseMeta.code}, called NT 101 by everyone who takes it</td>
+          <td>{courseMeta.code}, NT 101 on campus</td>
         </tr>
         <tr>
           <th scope="row">Session</th>
@@ -193,20 +192,16 @@ const journalCount = deadlines.filter((d) => d.title === journalTitle).length;
     </table>
   </div>
   <p>
-    The gaps between the three are the point. Tuesday writes a part of the
-    protocol down; you get two days to watch for it in the wild; Thursday tests
+    Tuesday writes a part of the protocol down; you get two days to watch for it in the wild; Thursday tests
     the writing in the room; and you get three more days to catch it happening
-    to you before the journal entry is due. Then the next lecture argues with
-    what you found.
+    to you before the journal entry is due. Use what you find to revise the rule.
   </p>
 
   <h2>What a timetable doesn't usually say</h2>
   <ol class="tt-clauses">
     <li>
-      <strong>14:00 means 14:00.</strong> Some courses run an unwritten five or
-      ten minutes of grace at the start. This one doesn't, because a convention
-      nobody states costs whoever wasn't told it: they either sit alone for ten
-      minutes or walk in late in front of everyone.
+      <strong>14:00 means 14:00.</strong> There is no unwritten five- or
+      ten-minute grace period.
     </li>
     <li>
       <strong>The lecture breaks at 15:00 for ten minutes.</strong> It's on a
@@ -217,7 +212,7 @@ const journalCount = deadlines.filter((d) => d.title === journalTitle).length;
       <strong>You can leave and come back.</strong> No explanation, no apology,
       no catching anyone's eye on the way out. Use the door at the back; the one
       by the lectern puts you in front of the room. Theatre 1's back row and
-      both aisle ends are kept clear, so leaving costs you nothing but the walk.
+      both aisle ends are kept clear.
     </li>
     <li>
       <strong>Lectures are recorded and captioned</strong>, and go up by
@@ -331,8 +326,7 @@ const journalCount = deadlines.filter((d) => d.title === journalTitle).length;
   <p>
     {longDay(midSemesterBreak.from)} to {longDay(midSemesterBreak.to)}: no
     lecture, no lab, no deadline. Week {midSemesterBreak.afterWeek} hands you a
-    runbook for overload and recovery on the Tuesday before it starts, which is
-    not an accident.
+    runbook for overload and recovery on the Tuesday before it starts.
   </p>
 
   <h3>Public holidays</h3>
@@ -349,8 +343,7 @@ const journalCount = deadlines.filter((d) => d.title === journalTitle).length;
   </p>
   <p>
     One journal deadline, Sunday 28 March, is Easter Sunday. It stays where it
-    is, and the journal drops your lowest week, so a Sunday you spend somewhere
-    else is already paid for.
+    is. The journal drops your lowest of eleven marks.
   </p>
 
   <h2>Deadlines</h2>

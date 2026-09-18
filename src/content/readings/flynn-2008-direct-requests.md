@@ -13,4 +13,4 @@ checked:
   on: "2026-09-15"
 ---
 
-Across six studies, people underestimated by as much as half how often others agreed to a direct request for help. The reason: help-seekers weigh what saying yes costs the helper and forget that saying no is socially costly too. Week 8 turns this into its first rule of institutional protocol: ask, in one sentence, because your estimate of the odds is wrong in your disfavour.
+Across six studies, people underestimated by as much as half how often others agreed to a direct request for help. The reason: help-seekers weigh what saying yes costs the helper and forget that saying no is socially costly too. Week 8 uses this to suggest making the request, in one sentence, even when you expect a refusal.

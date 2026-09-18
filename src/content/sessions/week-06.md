@@ -37,10 +37,9 @@ except you, and your tutor if you ask them to.
 
 ## What to look for on the board
 
-Look for subroutines that cost almost everyone almost nothing, and for any that
-split a table between a zero and a five. The splits, if the room has them, are week 6's argument happening in
-front of you: different implementations, same output, different price. They're
-also why "just make eye contact" is advice that costs its giver nothing.
+Look for subroutines with similar ratings and any that split a table between
+a zero and a five. What would "just make eye contact" ask of each person at
+that table?
 
 ## What leaves the room
 

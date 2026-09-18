@@ -11,9 +11,9 @@ spec:
   - "You and your Interoperation Report partner have marked each draft clause from week 9 as held, revised, or dropped, with a reason for each."
 ---
 
-Nobody discloses anything real in this lab. Every disclosure in the room
-belongs to a character on a card. That's a rule, not a suggestion. It exists
-so that practising the mechanics costs nothing you'd have to take back.
+Nobody discloses anything real in this lab. Every disclosure belongs to a
+character on a card, so you can practise without giving the room information
+about yourself.
 
 ## Before the lab
 
@@ -40,7 +40,6 @@ spec requires you to share anything about yourself.
 ## What leaves the room
 
 Two draft sentences for a character, receiving practice, and a revised draft
-protocol. If you do decide to say a need-without-label sentence of your own
-this week, the Field Journal is where it goes: what you said, to whom, what came
-back. That's your decision. The course only makes sure you have the sentence
-ready.
+protocol. If you choose to say a need-without-label sentence of your own this
+week, you can use it for the Field Journal: what you said, to whom, what came
+back.

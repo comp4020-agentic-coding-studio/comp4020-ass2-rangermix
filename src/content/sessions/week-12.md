@@ -17,14 +17,13 @@ tutors in the room.
 
 ## Before the lab
 
-Bring your Field Journal. Eleven weeks of entries are the raw material for
-either route.
+Bring your Field Journal. Its entries are the raw material for either route.
 
 ## Run sheet
 
 | Time | What happens |
 | --- | --- |
-| 0:00--0:10 | **Choose a route.** Read back through your journal. Which entries keep returning to the same subroutine? That's often an experiment. Which keep returning to a cost? That's often a document. Tell a tutor your choice. |
+| 0:00--0:10 | **Choose a route.** Read back through your journal. A recurring subroutine could give you a parameter to test; recurring costs could guide your Personal Protocol Document. Tell a tutor your choice. |
 | 0:10--0:35 | **Experiment track: ethics review.** Pairs of experimenters review each other's proposed parameter against the four questions below. **Document track: three headings.** Write one line under each heading, using at least two entries from your journal. |
 | 0:35--0:50 | Swap tracks for feedback: an experimenter reads a document's three lines; a document writer reads an experiment's ethics answers. Fresh eyes on the other route. |
 | 0:50--1:00 | Write the first paragraph of your capstone before you leave. Any paragraph. It's easier to revise one than to start one. |

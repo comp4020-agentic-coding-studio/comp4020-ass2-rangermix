@@ -21,4 +21,4 @@ checked:
   on: "2026-09-15"
 ---
 
-A community-based participatory study characterised autistic burnout as chronic exhaustion, loss of skills and reduced tolerance to stimulus. Its cause was cumulative load with no way to get relief. What participants associated with recovery was acceptance and support, time off or lower expectations, and doing things in an autistic way, including unmasking. The authors draw the link week 7 draws: teaching people to mask has a downstream cost.
+A community-based participatory study characterised autistic burnout as chronic exhaustion, loss of skills and reduced tolerance to stimulus. The study linked this to cumulative load with no way to get relief. What participants associated with recovery was acceptance and support, time off or lower expectations, and doing things in an autistic way, including unmasking. The authors draw the link week 7 draws: teaching people to mask has a downstream cost.

@@ -13,4 +13,4 @@ checked:
   on: "2026-09-15"
 ---
 
-Observers watching short videos rated autistic adults more positively when the diagnosis was accurately given than when it was withheld or wrong, and raters who knew more about autism rated them more favourably. It is the strongest “disclose” evidence week 10 presents, and it comes from observers rating strangers, which is exactly the limitation the next reading raises.
+Observers watching short videos rated autistic adults more positively when the diagnosis was accurately given than when it was withheld or wrong, and raters who knew more about autism rated them more favourably. These are observers rating strangers. Week 10 reads the result alongside accounts from people deciding whether to disclose.

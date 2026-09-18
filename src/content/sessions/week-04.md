@@ -37,6 +37,5 @@ theirs; that line is the lab's third spec.
 
 ## What leaves the room
 
-A results table, and probably a surprise about your own ratings. Some people
-find the delay moves their rating a lot; some find it doesn't move at all.
-Both are data about implementations, not about who is right.
+A results table showing which delays changed your ratings and whether a hold
+token helped. If your ratings did not change, record that too.
