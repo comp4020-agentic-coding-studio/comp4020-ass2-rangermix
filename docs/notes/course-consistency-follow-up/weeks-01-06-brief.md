@@ -1,0 +1,5 @@
+# Weeks 1–6 implementation
+
+Read the shared brief and the full `weeks-01-06.md` and timing reports. Own lectures, sessions and decks for weeks 01–06; own reading annotations cited by these lectures except the shared `milton-2012-double-empathy` (agent for later weeks owns it). Resolve C1 by coordinating with the assessment agent through a file note (they own the journal), and implement all other C/M/R findings in your files. Also handle Garfinkel and Fehr description limitations from the cross-course report. Root owns glossary and diagram component changes through the shared-content agent; list exact requested adjustments in your result.
+
+Prepare each week's final question and 50-minute lab, fill missing prompt banks, and develop the meaningful lecture cases enough for the simple model in the shared brief. Do not add break slides; root will place them. Keep page/deck content aligned and avoid new research claims. Write `weeks-01-06-result.md` in this directory, with each prior finding's disposition and your local verification. Do not run concurrent whole-site builds; root owns those.

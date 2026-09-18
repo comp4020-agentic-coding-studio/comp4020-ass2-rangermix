@@ -1,0 +1,9 @@
+# Shared content implementation
+
+Read the shared brief and all prior content reports. Own `src/content/assessments/`, `src/data/terms.ts`, `src/components/sketch/DepthLadder.astro`, and `docs/research/week-*.md`. Root owns course-design, timetable, tests and timing model; weekly agents own all readings and weekly pages. Fix the Field Journal example so it includes a real second episode rather than merely clarifying the first. Keep weights, deadlines and protected clauses unchanged. Align assessment completion paths with either running or declining and contextual field-experiment ethics.
+
+Fix glossary/diagram rule limits (especially voluntary disclosure escalation with holding/pass always available) and use one consistent recovery-ledger format with context and explicit pressure, including a sensible switching-row treatment. Check other glossary terms against the review findings; do not expand empirical claims.
+
+Reconcile the research reviews' teaching interpretations with already checked evidence and live qualifications: Bradley time spent is not recovery hours; Sprecher role effects don't validate ±1; Quinn predictors don't demonstrate costs of concealment or adjustment-policy effects; Sonnentag is a planning vocabulary not works-for-everyone; Flynn does not prove every student's estimate wrong; Alkhaldi does not eliminate category differences; Moskowitz abstract was checked. Also align early-week interview predictions, Hinds debiasing claim scope and Fehr explained-variance scope. Preserve accurate historical verification records, append a dated correction note if useful, and do not claim newly verified full papers. Read weekly agents' result files when available and coordinate through brief/result files.
+
+Write `shared-content-result.md` in this directory with finding disposition and changed files. No git mutations or whole-site builds.
