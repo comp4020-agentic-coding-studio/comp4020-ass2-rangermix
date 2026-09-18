@@ -105,4 +105,3 @@ rendered integration check; compilation alone does not prove visual fit.
   timing changes, break-slide insertion, shared specs and final browser checks.
 - The previous editorial comparison and applied-source audit remain historical
   snapshots. This pass does not regenerate them from changed source.
-

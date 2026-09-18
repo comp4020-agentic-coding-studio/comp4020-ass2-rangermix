@@ -126,3 +126,16 @@ Representative inspected screenshots show the [break](browser/break.png),
 These checks establish local build and rendering, not actual classroom
 performance. They were completed overnight on 18–19 September 2026. Remote CI
 is separate: the user's unfinished PROCESS.md remains outside this work.
+
+## Deployed checkpoint
+
+Source checkpoint **c263733** was committed and pushed to `main`.
+Its [remote run](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/actions/runs/35354108475)
+passed **Build and run the spec** and the complete **deploy** job, including
+the online check. Direct [HTTP checks](browser/deployed-http.json) then confirmed
+the new timetable, week 4 exercise, week 12 discussion and SVG icon on Pages.
+
+The workflow's process-evidence step still rejects the placeholder references
+`a1b2c3d` and `e4f5a6b` in the committed PROCESS.md. The two later secret/key
+scan steps were consequently skipped. This is not an all-green CI claim;
+PROCESS.md remains the user's separate unfinished work.
