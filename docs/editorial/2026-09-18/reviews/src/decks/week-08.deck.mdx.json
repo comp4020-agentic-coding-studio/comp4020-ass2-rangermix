@@ -1,0 +1,154 @@
+{
+  "path": "src/decks/week-08.deck.mdx",
+  "category": "Slides and speaker notes",
+  "sha256_before": "29c8ada7fb316f05e560952e0e9ba62aeb152b8ddf6a655975b955aa377585eb",
+  "status": "edited",
+  "review_note": "Keep specimens, clause tables, practical activities and the institution’s responsibilities. Qualify personal predictions, remove invented classroom patterns, and make the course’s conventions explicit rather than universal.",
+  "edits": [
+    {
+      "line": 76,
+      "before": "An inbox is a queue with a person at the end of it, and everything in this week is really about **queue position**.\n\nA message that is quick to answer gets answered. One that needs a decision first gets postponed --- not refused.\n\n```notes\n- Frame the whole week as reducing the cost of replying to you. It reframes \"politeness\" as engineering, which is this course's move.",
+      "after": "An inbox is a queue with a person at the end of it.\n\nUse the subject line to show **what needs an answer** before they open the message.\n\n```notes\n- Ask what the recipient needs to know to answer the request. Do not promise that a well-formatted email gets a prompt reply.",
+      "reason": "Keep the queue image while replacing an unsupported reply guarantee and commentary about the course’s cleverness."
+    },
+    {
+      "line": 86,
+      "before": "## Your estimate of a yes is wrong",
+      "after": "## Estimating a yes",
+      "reason": "The study challenges estimates in its sample; the slide cannot declare each reader’s estimate wrong."
+    },
+    {
+      "line": 88,
+      "before": "People underestimate how likely others are to say yes to a direct request for help --- by as much as **50%**.\n\nBecause the asker thinks about what saying yes costs the helper, and forgets that **saying no is socially costly too**.",
+      "after": "In these studies, people underestimated how likely others were to say yes to a direct request for help --- by as much as **50%**.\n\nThey focused on the cost of saying yes and underestimated the social cost of **saying no**.",
+      "reason": "Keep the reported effect and explanation tied to the studies."
+    },
+    {
+      "line": 94,
+      "before": "<MarginNote label=\"Probability estimate\">Wrong, and wrong in your disfavour.</MarginNote>",
+      "after": "<MarginNote label=\"Probability estimate\">What would a yes cost them? What would a no cost them?</MarginNote>",
+      "reason": "Align the marginal prompt with the lecture’s question rather than a personal verdict."
+    },
+    {
+      "line": 100,
+      "before": "If you have ever decided not to ask because it felt like an imposition ---\n\nthat calculation was **wrong by up to half**, and wrong in the direction that cost you the thing you needed.",
+      "after": "If asking feels like an imposition, consider **both costs**:\n\nwhat saying yes would ask of them, and what saying no might cost them.",
+      "reason": "Do not apply a sample-level result as a correction factor to every reader’s past decision."
+    },
+    {
+      "line": 110,
+      "before": "## But that's not the fear\n\n\"They'll say no\" is not what keeps the email in drafts.\n\n**\"They'll think less of me for asking\"** is.\n\n```notes\n- Ask the room which of the two stopped them last time. It is rarely the first one.\n- Nobody drafts an email six times because they think the answer will be no.",
+      "after": "## Another reason to leave it in drafts\n\n**\"They'll think less of me for asking.\"**\n\n```notes\n- Ask which concern stopped them last time: refusal, being judged, or something else. Do not assume one is more common.",
+      "reason": "Introduce the second concern without declaring what all students fear or inventing their drafting habits."
+    },
+    {
+      "line": 133,
+      "before": "- So both estimates that stop you are wrong, and wrong in the same direction.",
+      "after": "- Keep the claim within these experiments. It cannot settle how a particular tutor will respond.",
+      "reason": "Preserve the attributed research quotation above while removing the universal reassurance."
+    },
+    {
+      "line": 162,
+      "before": "- That shape is the week's premise. The work is often not the hard part.\n- The hard part is the undocumented layer around it: the email, the office door, the group chat. Everyone meets it; nobody was handed it in writing.",
+      "after": "- The email, office door and group chat can add demands around the academic work. Ask which conventions those settings leave unstated.",
+      "reason": "Keep the institutional problem without assuming academic work is easy or written guidance never exists."
+    },
+    {
+      "line": 182,
+      "before": "- Read it twice. It changes what the rest of this lecture is.",
+      "after": "- Connect the barrier to the recommendations on the next slides.",
+      "reason": "Replace a cue demanding a revelation with the substantive link to institutional responsibility."
+    },
+    {
+      "line": 222,
+      "before": "The scripts are what works this semester.\n\nThey are not a verdict that the system is right to need them.",
+      "after": "Use the scripts where they help.\n\nNeeding them does not make the system right to require them.",
+      "reason": "Keep the structural critique while avoiding a blanket promise about the templates."
+    },
+    {
+      "line": 241,
+      "before": "- Question 3 is what this week is really about, and it is the thing Davies and Bagnall's staff were describing from the other end.\n- Don't collect answers to 3. Just let the room sit with having written one.",
+      "after": "- Keep the answers private. They provide context for the lab's test of the email specification.",
+      "reason": "Preserve privacy and an activity purpose without announcing a predetermined emotional landing."
+    },
+    {
+      "line": 266,
+      "before": "## What a tutor's inbox rewards\n\nThe wording below is a template. The **clauses** are the thing to learn --- they survive when the wording changes, and they work in any institution you meet after this one.",
+      "after": "## Wording and clauses\n\nThe wording is a template. Test the **clauses** in the lab, and check the recipient's requirements before using them elsewhere.",
+      "reason": "Do not promise that one institution’s conventions work in every institution."
+    },
+    {
+      "line": 291,
+      "before": "- An email with three requests gets the easiest one answered. Send three emails.",
+      "after": "- Separate requests make it easier to check which question a reply answered. The course's rule is one request per email.",
+      "reason": "Keep the convention while avoiding an invented rule about tutor behaviour."
+    },
+    {
+      "line": 302,
+      "before": "It turns your request from an open-ended obligation into a scheduled one --- which is the difference between a thing someone can plan and a thing they postpone.",
+      "after": "It gives the recipient a date to plan around, and a reason for that date.",
+      "reason": "The practical benefit needs no binary promise about whether a message will be postponed."
+    },
+    {
+      "line": 334,
+      "before": "It answers the question the reader was about to ask you, and it proves the request isn't laziness --- which is the suspicion that makes people slow to reply.\n\n```notes\n- This clause costs one sentence and changes the reply time more than politeness does.",
+      "after": "It shows the recipient where you have already looked, so they can start from there.\n\n```notes\n- Use the specimen: repeating the brief would not answer Alex's question, because it leaves text-based subroutines unspecified.",
+      "reason": "Remove mind-reading, the laziness judgement and an unsupported comparison of reply-time effects."
+    },
+    {
+      "line": 361,
+      "before": "- Some of the room have been over-explaining to institutions their whole lives. Say this one gently and clearly.",
+      "after": "- Keep the distinction clear: the requested adjustment and the personal history are different information.",
+      "reason": "Give a concrete teaching direction without inventing students’ histories."
+    },
+    {
+      "line": 383,
+      "before": "- Reply time is the one that prevents the most damage. \"ASAP\" is unfalsifiable, so nobody can be held to it and everybody resents it.",
+      "after": "- Ask whether everyone could tell when \"ASAP\" had been missed. Compare it with \"within a day on weekdays\".",
+      "reason": "Use the checkable example without predicting resentment or ranking which clause prevents the most damage."
+    },
+    {
+      "line": 406,
+      "before": "An email with three requests gets the easiest one answered.\n\nSend three emails.\n\n```notes\n- This is the clause that does the most work and the one people break most often. Give it its own slide and its own silence.",
+      "after": "Separate requests let you check which question a reply answered.\n\nSend separate emails for separate requests.\n\n```notes\n- Ask how they would notice that a three-request email had received only a partial answer.",
+      "reason": "Keep the one-request rule without unsupported frequency and response claims."
+    },
+    {
+      "line": 416,
+      "before": "## The clause that saves groups",
+      "after": "## Agree what silence means",
+      "reason": "Give the clause’s practical purpose without promising it saves groups."
+    },
+    {
+      "line": 420,
+      "before": "Without it, silence gets read through whatever each member already fears --- and week 4 already told you what an unexplained gap gets read as.",
+      "after": "Without an agreement, the others have to guess what the silence means.",
+      "reason": "Avoid diagnosing the group’s fears; state the information problem."
+    },
+    {
+      "line": 425,
+      "before": "- This is the single highest-value line in any group agreement, and almost no group writes it.",
+      "after": "- Check that the clause says both what the absent person sends and what the others agree to do.",
+      "reason": "Replace an unsupported superlative and prevalence claim with a conformance check."
+    },
+    {
+      "line": 438,
+      "before": "- The debrief: which request did they keep? Usually not the one they most needed answered.",
+      "after": "- Ask which request they kept and why. Was it the one they most needed answered?",
+      "reason": "Let the exercise answer its own question."
+    },
+    {
+      "line": 454,
+      "before": "- And it gives you an exit: at five minutes, \"that's everything, thanks\". Most people's difficulty with office hours is leaving, not arriving.",
+      "after": "- The time estimate also gives an exit: at five minutes, \"that's everything, thanks\".",
+      "reason": "Keep the usable exit line without claiming where most people struggle."
+    },
+    {
+      "line": 462,
+      "before": "- **ask for a date**, not for sympathy\n- **how long it will take** --- the office-hours move people skip\n- **going quiet** --- the clause that saves groups",
+      "after": "- **ask for a date** --- make the requested extension specific\n- **how long it will take** --- the office-hours time estimate\n- **going quiet** --- agree what silence means",
+      "reason": "Keep the vocabulary recap practical, remove the disparaging sympathy contrast and unsupported claims about students and groups."
+    }
+  ],
+  "sha256_after": "3fc36f21ab5bd093df944d916bdbf6d4a8976d058086a3f8d1f57cdb76e64efa"
+}

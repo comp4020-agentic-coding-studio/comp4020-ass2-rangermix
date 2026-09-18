@@ -1,0 +1,9 @@
+{
+  "path": "src/content/readings/rifai-2022-rapport-markers.md",
+  "category": "Readings",
+  "sha256_before": "341df943eac6aefa9ed3c4edb504425b86ae83c6c1b773e1ed670956bbcfd767",
+  "status": "retained",
+  "review_note": "Retain the implementation-specific result and practical implication; the contrast is the actual finding.",
+  "edits": [],
+  "sha256_after": "341df943eac6aefa9ed3c4edb504425b86ae83c6c1b773e1ed670956bbcfd767"
+}

@@ -1,0 +1,9 @@
+{
+  "path": "src/components/sketch/TimingLine.astro",
+  "category": "Components and diagram copy",
+  "sha256_before": "902c611812525abc17256cfc2842fdcd95f692a8ac87c16ad1a35e58945bbba0",
+  "status": "retained",
+  "review_note": "Retain ms and the accessible timing connectors. Numbers, labels, notes and captions are supplied by the reviewed week 4 content.",
+  "edits": [],
+  "sha256_after": "902c611812525abc17256cfc2842fdcd95f692a8ac87c16ad1a35e58945bbba0"
+}

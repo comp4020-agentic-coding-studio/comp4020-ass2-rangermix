@@ -1,0 +1,9 @@
+{
+  "path": "src/components/PeopleGrid.astro",
+  "category": "Components and diagram copy",
+  "sha256_before": "7cce385183fb80c917985d217e0b8e33a9843f544fb822b7ae2ea0011cb6c16e",
+  "status": "retained",
+  "review_note": "Retain the plain role labels and imported profile descriptions and alt text. The component adds no rhetorical prose.",
+  "edits": [],
+  "sha256_after": "7cce385183fb80c917985d217e0b8e33a9843f544fb822b7ae2ea0011cb6c16e"
+}

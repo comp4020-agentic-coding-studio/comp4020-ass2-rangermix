@@ -1,0 +1,16 @@
+{
+  "path": "src/content/readings/roberts-2011-silence-valence.md",
+  "category": "Readings",
+  "sha256_before": "4d4ea5e43d09e15d9859fd88ff2c9b40f7f3704c973527d692a5d4359991a166",
+  "status": "edited",
+  "review_note": "Keep all timings and language groups; replace a superlative with the concrete qualification of the model.",
+  "edits": [
+    {
+      "line": 17,
+      "before": "which is the finding week 4 needs most:",
+      "after": "which qualifies week 4's timeout model:",
+      "reason": "Name what the result changes rather than rank its importance."
+    }
+  ],
+  "sha256_after": "3631bf673a0772521175171f39b11ccfaff5c4f9f6598dc8bbca75fdbfc6ffa1"
+}

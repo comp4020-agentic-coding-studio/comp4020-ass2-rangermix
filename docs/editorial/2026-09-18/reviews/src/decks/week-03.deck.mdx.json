@@ -1,0 +1,136 @@
+{
+  "path": "src/decks/week-03.deck.mdx",
+  "category": "Slides and speaker notes",
+  "sha256_before": "84fb8c513112e64b664be491a7344c707cfda6010445ea5f7a93dd9468ffb9f6",
+  "status": "edited",
+  "review_note": "Align slides and notes with the lecture: keep the protocol jokes and scripts, remove assigned student reactions, and make decoding examples provisional. Preserve all slide boundaries and exercise timings.",
+  "edits": [
+    {
+      "line": 38,
+      "before": "If you've answered with a day and a time and watched the other face do something complicated, you know.\n\nIf you've never once wondered, you know too --- and you couldn't say how.",
+      "after": "Answer with a day and a time, and the other person's face may do something complicated.\n\nThe line can be an invitation or a way to say you'd like to stay on friendly terms.",
+      "reason": "Keep the awkward coffee example without assuming the audience's knowledge or ability to explain it."
+    },
+    {
+      "line": 43,
+      "before": "- Both halves of the room have the same information here and only one of them can state it. That asymmetry is the week.",
+      "after": "- Ask what would help distinguish an invitation from a friendly sign-off.",
+      "reason": "Replace a scripted claim about the room with a question that exposes the ambiguity."
+    },
+    {
+      "line": 104,
+      "before": "- Ask the room for the payload before you reveal it. Someone will get it, and someone won't, and that's the week.",
+      "after": "- Ask the room for possible payloads before revealing this one.",
+      "reason": "Do not predict success and failure or treat the worked interpretation as the only possible answer."
+    },
+    {
+      "line": 150,
+      "before": "An envelope marks a place where the sender didn't know the answer.\n\n<MarginNote label=\"Diagnostic\">Find the uncertainty and you've found the payload.</MarginNote>",
+      "after": "A hint can protect the sender from a refusal --- or leave an understood request off the record.\n\n<MarginNote label=\"Diagnostic\">Ask what can be declined or left unsaid.</MarginNote>",
+      "reason": "Keep both strategic-speaker cases visible: a hint can manage uncertainty or avoid putting a mutually understood request on the record."
+    },
+    {
+      "line": 155,
+      "before": "- This is the week's most portable line. Stop asking \"why are they being like this\" and ask what they are not sure of.",
+      "after": "- Ask what the sender is unsure of, or what either person can decline or leave off the record.",
+      "reason": "Keep the diagnostic questions without ranking the line, inventing the audience's complaint or treating uncertainty as the only reason for a hint."
+    },
+    {
+      "line": 181,
+      "before": "A hint you both understood perfectly is still **not a thing either of you said**.",
+      "after": "The **request itself remains unsaid**, even when both of you understood it.",
+      "reason": "Align with the lecture's distinction between the spoken hint and the request left off the record."
+    },
+    {
+      "line": 196,
+      "before": "**Two minutes.** Compare with the pair beside you. Disagreements mark lines doing two jobs.",
+      "after": "**Two minutes.** Compare with the pair beside you. Write down both possible payloads where you disagree.",
+      "reason": "Align the activity with the lecture and leave disagreement open to investigation."
+    },
+    {
+      "line": 258,
+      "before": "- Everything up to here could be taught as instructions for the person who missed it. This is the slide that stops that.",
+      "after": "- Ask what the result requires of the sender when a hint is missed.",
+      "reason": "Replace commentary on the slide's moral purpose with the practical question it supports."
+    },
+    {
+      "line": 271,
+      "before": "- This is week 2's curse of expertise arriving at the level of one sentence.",
+      "after": "- Compare this sender-side error with week 2's discussion of expertise; keep the two experiments distinct.",
+      "reason": "Preserve the cross-week comparison without presenting the findings as the same mechanism."
+    },
+    {
+      "line": 278,
+      "before": "**If you send envelopes:** your estimate of how clear that was is biased in a measured direction, and knowing it doesn't make you a good judge. Send the second one plainer.",
+      "after": "**If you send envelopes:** check what the listener understood. If needed, send the second one plainer.",
+      "reason": "Match the lecture's usable instruction and remove the untested claim about knowing the result."
+    },
+    {
+      "line": 280,
+      "before": "**If you miss them:** a missed hint is a two-sided event with a documented sender-side error in it.",
+      "after": "**If you miss them:** the sender may have overestimated how clear they were.",
+      "reason": "Do not turn the experimental tendency into a guaranteed explanation of every missed hint."
+    },
+    {
+      "line": 300,
+      "before": "- But notice which way the surprise ran, and that they printed it. That is a functioning specification process, and it is why the result is worth more than the expectation before it.",
+      "after": "- Distinguish the authors' prediction from their reported result.",
+      "reason": "Keep the factual distinction without turning it into praise of a functioning specification process."
+    },
+    {
+      "line": 314,
+      "before": "- Some will find the bare version unsendable. That reaction is data, and week 6 gives it a price.",
+      "after": "- If the bare version feels unsendable, have students record why and keep the note for week 6.",
+      "reason": "Allow the response to emerge from the exercise rather than forecasting it."
+    },
+    {
+      "line": 328,
+      "before": "- Under this protocol, they will. That's the reassuring half: the sender retries.",
+      "after": "- Offer the rule as a limit on decoding effort, not a guarantee that the sender will retry.",
+      "reason": "Remove reassurance that depends on an unsupported prediction of someone else's behaviour."
+    },
+    {
+      "line": 358,
+      "before": "3. **Payload:** Tuesday is bad, and they don't want to be the one who blocks it.",
+      "after": "3. **Possible payload:** Tuesday is bad, and they don't want to be the one who blocks it.",
+      "reason": "Keep the worked example while marking an inferred intention as provisional, consistent with the over-decoding section."
+    },
+    {
+      "line": 363,
+      "before": "- Step 2 is the one they skip. Assuming co-operation is what makes the inference possible at all -- that is Grice's whole move.",
+      "after": "- Pause at step 2: the worked interpretation assumes co-operation. Ask whether the face-value reading also works.",
+      "reason": "Replace an invented student omission with a check on the example's assumption."
+    },
+    {
+      "line": 377,
+      "before": "- The third part is the one that does the work. Without it the question reads as a test of their sincerity.",
+      "after": "- Point out the practical reason for asking: whether to put a meeting in the calendar.",
+      "reason": "Keep the script's concrete purpose without guaranteeing how the listener would read a shorter version."
+    },
+    {
+      "line": 401,
+      "before": "The cost is **asymmetric**. An hour of your thinking; nothing of theirs. Which is exactly why nobody tells you you're doing it.",
+      "after": "You may spend time decoding a hint the speaker never meant to send. They may have no reason to notice.",
+      "reason": "Replace invented costs and certainty about others' awareness with the same possible failure mode."
+    },
+    {
+      "line": 405,
+      "before": "- If they needed more, they will send a second envelope. Under this protocol, they reliably do.",
+      "after": "- Leave room for the sender to clarify; do not promise that they will.",
+      "reason": "Match the lecture's removal of the unsupported reliable-retry claim."
+    },
+    {
+      "line": 417,
+      "before": "- If the face-value reading works and nothing was expected, that is the over-decode -- an hour of your thinking and nothing of theirs, which is why it goes unnoticed.",
+      "after": "- If the face-value reading works and nothing was expected, ask how much time went into decoding it and whether the other person had any reason to notice.",
+      "reason": "Align the audit with the lecture's open observations rather than supplying a cost and explanation in advance."
+    },
+    {
+      "line": 429,
+      "before": "Plus: an envelope marks the sender's uncertainty, and the sender is a biased judge of its clarity.",
+      "after": "Plus: an envelope can manage uncertainty or leave a request off the record. Senders can overestimate how clear they were.",
+      "reason": "Align the recap with the higher-order-deniability case and the bounded sender-bias result."
+    }
+  ],
+  "sha256_after": "c76f643597a1d1442c54a10f7ed75dcd9268fa60abfa18f2e0d8ee1941f7727f"
+}

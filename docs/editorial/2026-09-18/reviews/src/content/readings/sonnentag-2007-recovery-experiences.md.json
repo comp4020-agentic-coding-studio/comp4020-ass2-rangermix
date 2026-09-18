@@ -1,0 +1,16 @@
+{
+  "path": "src/content/readings/sonnentag-2007-recovery-experiences.md",
+  "category": "Readings",
+  "sha256_before": "a46f391b23654e1e4c9c0713c3d3e35928dfea6c9e3db9cdce546f91f6314534",
+  "status": "edited",
+  "review_note": "Keep the work-stress boundary and four experiences; remove the guarantee of universal usefulness.",
+  "edits": [
+    {
+      "line": 16,
+      "before": ", which works for everyone in the room.",
+      "after": ".",
+      "reason": "Do not guarantee that a planning checklist works for every student."
+    }
+  ],
+  "sha256_after": "3d62c04ec14c02a39dfe039bf5d936d379af9c843f7ae8518832db3d4fa4e53a"
+}

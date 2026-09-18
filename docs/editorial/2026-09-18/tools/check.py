@@ -24,6 +24,9 @@ def frontmatter_fields(text):
 
 def check(complete=False, collect=False):
     manifest = json.loads((OUT / 'manifest.json').read_text())
+    inventory = {str(path.relative_to(ROOT)) for path in (ROOT / 'src').rglob('*')
+                 if path.suffix in {'.md', '.mdx', '.astro', '.ts'}}
+    assert inventory == {item['path'] for item in manifest['files']}, 'Text inventory changed'
     counts = {'pending': 0, 'edited': 0, 'retained': 0, 'edits': 0}
     for i, item in enumerate(manifest['files']):
         path = item['path']
@@ -35,6 +38,7 @@ def check(complete=False, collect=False):
             continue
         record = json.loads(record_path.read_text())
         assert record['path'] == path and record['review_note'].strip(), path
+        assert record['sha256_before'] == digest(original), f'Original record hash: {path}'
         rebuilt = original
         for edit in record['edits']:
             before, after = edit['before'], edit['after']
@@ -52,7 +56,9 @@ def check(complete=False, collect=False):
                 if key not in {'description', 'spec'}:
                     assert before_fields.get(key) == after_fields.get(key), f'Protected metadata {key}: {path}'
         for pattern in [r'<span\s+data-quoted[^>]*>[\s\S]*?</span>', r'<cite\b[^>]*>[\s\S]*?</cite>']:
-            assert re.findall(pattern, original) == re.findall(pattern, draft), f'Marked quotation changed: {path}'
+            quoted_before = [re.sub(r'\s+', ' ', value) for value in re.findall(pattern, original)]
+            quoted_after = [re.sub(r'\s+', ' ', value) for value in re.findall(pattern, draft)]
+            assert quoted_before == quoted_after, f'Marked quotation changed: {path}'
         if path.startswith('src/content/lectures/'):
             assert re.findall(r'^## .+$', original, re.M) == re.findall(r'^## .+$', draft, re.M), f'Numbered sections changed: {path}'
         if path == 'src/content/lectures/week-10.mdx':
@@ -62,11 +68,19 @@ def check(complete=False, collect=False):
             assert 'No diagnosis is required, and none is accepted as evidence.' in draft
         if path.startswith('src/decks/'):
             assert len(re.findall(r'^---$', original, re.M)) == len(re.findall(r'^---$', draft, re.M)), f'Slide count changed: {path}'
+            assert len(re.findall(r'^```notes$', original, re.M)) == len(re.findall(r'^```notes$', draft, re.M)), f'Speaker-note structure changed: {path}'
+        if path == 'src/decks/week-10.deck.mdx':
+            def protected_spoken_text(text):
+                text = re.sub(r'```notes\n[\s\S]*?```', '', text)
+                return text[text.index('Here is the part nobody warns you about.'):text.index('Right. Mechanics.') + len('Right. Mechanics.')]
+            assert protected_spoken_text(original) == protected_spoken_text(draft), 'Week 10 spoken register break changed'
         counts[record['status']] += 1
         counts['edits'] += len(record['edits'])
         manifest['files'][i] = record
     if complete:
         assert counts['pending'] == 0, f'Unreviewed files: {counts["pending"]}'
+    for item in manifest.get('additional_review', []):
+        assert hashlib.sha256((ROOT / item['path']).read_bytes()).hexdigest() == item['sha256'], f'Additional reviewed asset changed: {item["path"]}'
     manifest['status'] = 'Complete draft; not applied' if not counts['pending'] else 'In progress'
     if collect:
         temporary = OUT / 'manifest.tmp'

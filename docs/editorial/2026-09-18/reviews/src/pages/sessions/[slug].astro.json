@@ -1,0 +1,16 @@
+{
+  "path": "src/pages/sessions/[slug].astro",
+  "category": "Site pages",
+  "sha256_before": "7e31379c144965dcc7a9f4f5c7e888fe9ff9aa6748e1ff26f3058178c4a87ae9",
+  "status": "edited",
+  "review_note": "Keep the lab layout and completion checks. Remove a guarantee that none of the checks requires assistance.",
+  "edits": [
+    {
+      "line": 30,
+      "before": "    Each line is something you can check before you walk out. None of them\n    needs a teacher to confirm it.",
+      "after": "    Check these before you leave the lab.",
+      "reason": "The heading and criteria already explain what to do; students may still need a teacher’s help."
+    }
+  ],
+  "sha256_after": "f8dd3b90beb4c81ac67aa64ccd029d52b0552c8c8648b48cbab72b632d16ffc4"
+}

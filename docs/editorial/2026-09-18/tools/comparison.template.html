@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; font-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>SLOP1562 · Editorial draft comparison</title>
+  <style>
+    :root{color-scheme:light;--paper:#f5f4ef;--surface:#fffefa;--ink:#252b2a;--muted:#5c6561;--line:#d6dad2;--accent:#205c50;--accent-light:#e7efe8;--old:#f8ddd6;--new:#d9eddf;--focus:#925521;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-synthesis:none}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-size:15px;line-height:1.55}button,input,select{font:inherit;color:inherit}button,select{cursor:pointer}button:disabled{cursor:default;opacity:.45}button{background:var(--surface);border:1px solid var(--line);border-radius:7px;padding:.5rem .8rem}button:hover:not(:disabled){border-color:var(--accent);background:var(--accent-light)}:focus-visible{outline:3px solid var(--focus);outline-offset:3px}a{color:var(--accent)}h1,h2,h3,p{margin:0}h1{font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:clamp(1.75rem,3.2vw,2.6rem);line-height:1.15;letter-spacing:-.025em}h2{font-size:1.2rem;line-height:1.3}h3{font-size:1rem}.mono,code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}.skip-link{position:fixed;top:8px;left:8px;transform:translateY(-150%);z-index:10;background:white;padding:.6rem}.skip-link:focus{transform:none}.shell{max-width:1720px;margin:0 auto;padding:30px clamp(14px,3vw,48px) 60px;min-width:0}.intro{padding-bottom:23px;border-bottom:1px solid var(--line)}.eyebrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px;color:var(--muted);font-size:.79rem;letter-spacing:.055em;text-transform:uppercase}.draft-badge{background:#f0e2c6;color:#604621;padding:3px 8px;border-radius:4px;font-weight:700}.intro-description{margin-top:12px;max-width:78ch;color:var(--muted)}.stats{margin-top:14px;display:flex;gap:8px 20px;flex-wrap:wrap;font-size:.85rem}.stats strong{font-size:1rem}.baseline{margin-top:9px;color:var(--muted);font-size:.78rem;overflow-wrap:anywhere}.layout{display:grid;grid-template-columns:280px minmax(0,1fr);gap:28px;margin-top:24px;align-items:start}.file-browser{min-width:0;position:sticky;top:16px}.file-browser>summary{font-weight:650;padding:12px;cursor:pointer;background:var(--surface);border:1px solid var(--line);border-radius:8px}.browser-title{font-size:.9rem;letter-spacing:.015em;margin-bottom:14px}.filters{display:grid;gap:11px}label{display:block;font-weight:600;font-size:.78rem;margin-bottom:4px}.filters input,.filters select{display:block;width:100%;min-width:0;border:1px solid #b6beb4;background:var(--surface);border-radius:6px;padding:8px 9px;font-size:.86rem;min-height:40px}.filter-pair{display:grid;gap:10px}.filter-meta{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:13px 0 7px;color:var(--muted);font-size:.76rem}.text-button{padding:2px 0;border:none;background:transparent;text-decoration:underline;font-size:.76rem}.file-list{list-style:none;padding:0;margin:0;max-height:calc(100vh - 390px);min-height:180px;overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable;border-top:1px solid var(--line)}.file-list li{border-bottom:1px solid var(--line)}.file-button{display:block;width:100%;text-align:left;border:0;border-radius:0;background:transparent;padding:11px 9px}.file-button[aria-current="true"]{background:var(--accent-light);box-shadow:inset 3px 0 var(--accent)}.file-name{display:block;font-weight:650;font-size:.84rem;overflow-wrap:anywhere}.file-parent{display:block;color:var(--muted);font-size:.68rem;overflow-wrap:anywhere;margin-top:2px}.file-status{display:block;color:var(--accent);font-size:.71rem;margin-top:4px}.empty-list{padding:16px 9px;color:var(--muted);font-size:.87rem}.policy{margin-top:16px;font-size:.8rem}.policy summary{cursor:pointer;font-weight:650}.policy-text{white-space:pre-wrap;font:inherit;margin:10px 0 0;line-height:1.65;max-height:45vh;overflow:auto;overflow-wrap:anywhere;padding-right:6px}main{min-width:0}.file-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}.file-path{font-size:.75rem;color:var(--muted);overflow-wrap:anywhere;margin-top:6px}.category{font-size:.73rem;color:var(--accent);margin-bottom:7px;letter-spacing:.04em;text-transform:uppercase}.navigation{display:flex;gap:7px;flex-shrink:0}.navigation button{font-size:.8rem;min-height:40px}.review-note{margin-top:18px;padding:14px 17px;border-left:3px solid #8f9f8e;background:#eeefe8;font-size:.91rem;overflow-wrap:anywhere}.note-label{font-size:.7rem;display:block;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}.toolbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin:22px 0 16px}.mode-buttons{display:flex;gap:4px;padding:3px;background:#e8ebe4;border-radius:8px;max-width:100%}.mode-buttons button{font-size:.79rem;border-color:transparent;background:transparent;padding:7px 10px}.mode-buttons button[aria-pressed="true"]{background:var(--surface);border-color:var(--line);box-shadow:0 1px 2px #0000000a}.legend{font-size:.74rem;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap}.legend span{display:flex;align-items:center;gap:5px}.swatch{display:inline-block;width:13px;height:13px;border-radius:2px}.swatch.old{background:var(--old);border:1px solid #c49180}.swatch.new{background:var(--new);border:1px solid #88ab92}.view-caption{font-size:.76rem;color:var(--muted);margin:0 0 14px}.change{margin-bottom:22px;border:1px solid var(--line);border-radius:9px;background:var(--surface);overflow:hidden;min-width:0}.change-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 16px;border-bottom:1px solid var(--line);background:#f0f1eb}.change-heading h3{font-size:.82rem;font-weight:650}.line-ref{font-size:.73rem;color:var(--muted);white-space:nowrap}.comparison-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.passage-side{min-width:0;padding:15px 17px 18px}.passage-side+.passage-side{border-left:1px solid var(--line)}.column-label{font-size:.71rem;text-transform:uppercase;font-weight:700;letter-spacing:.055em;color:var(--muted);margin-bottom:10px}.passage{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.89rem;line-height:1.75}.passage mark{color:inherit;border-radius:2px;padding:1px 0}.passage mark.removed{background:var(--old)}.passage mark.added{background:var(--new)}.no-text{font-style:italic;color:var(--muted);font-size:.85rem}.reason{border-top:1px solid var(--line);padding:12px 17px;color:#47534c;font-size:.82rem;line-height:1.65;overflow-wrap:anywhere}.reason strong{font-weight:650;color:var(--ink)}.full-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;align-items:start}.full-side{min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:8px;overflow:hidden}.full-side h3{padding:12px 14px;font-size:.77rem;text-transform:uppercase;letter-spacing:.04em;border-bottom:1px solid var(--line);background:#f0f1eb}.source-lines{margin:0;padding:12px 0;max-height:76vh;overflow:auto;font-size:.75rem;line-height:1.65;tab-size:2;scrollbar-gutter:stable}.source-line{display:grid;grid-template-columns:3.7em minmax(0,1fr);min-width:0}.line-number{user-select:none;color:#818980;text-align:right;padding:0 1em 0 .4em;border-right:1px solid #e6e8e0}.line-text{display:block;white-space:pre-wrap;overflow-wrap:anywhere;padding:0 12px 0 10px;min-width:0}.notice{padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-radius:8px;margin-bottom:16px;font-size:.88rem;overflow-wrap:anywhere}.pending{color:#704614;background:#faf0d8;border-color:#e1c896}.screen-reader{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}footer{margin-top:28px;padding-top:16px;border-top:1px solid var(--line);font-size:.75rem;color:var(--muted)}[hidden]{display:none!important}
+    @media(min-width:901px){.file-browser>summary{display:none}}
+    @media(max-width:1150px) and (min-width:901px){.layout{grid-template-columns:238px minmax(0,1fr);gap:20px}.navigation{flex-direction:column;gap:4px}}
+    @media(max-width:900px){.shell{padding-top:20px}.layout{grid-template-columns:minmax(0,1fr);gap:20px}.file-browser{position:static}.browser-body{padding:16px 14px;background:var(--surface);border:1px solid var(--line);border-top:0;border-radius:0 0 8px 8px}.file-browser[open]>summary{border-radius:8px 8px 0 0}.browser-title{display:none}.filter-pair{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.file-list{max-height:260px;min-height:0}.policy{margin-top:12px}.policy-text{max-height:260px}.intro-description{font-size:.88rem}.stats{gap:6px 14px}.file-top{gap:12px}.navigation{flex-direction:row}}
+    @media(max-width:600px){.comparison-pair,.full-pair{grid-template-columns:minmax(0,1fr)}.passage-side+.passage-side{border-left:0;border-top:1px solid var(--line)}.full-pair{gap:16px}.file-top{flex-direction:column}.navigation{width:100%;justify-content:space-between}.navigation button{padding:7px 12px}.toolbar{margin-top:17px;gap:11px}.passage-side{padding:13px 14px}.reason{padding:12px 14px}.review-note{padding:12px 14px}.source-lines{max-height:65vh}.stats{font-size:.77rem}.stats strong{font-size:.89rem}.baseline{font-size:.7rem}.change-heading{padding:10px 14px}.filter-pair{grid-template-columns:minmax(0,1fr)}.legend{font-size:.71rem}}
+    @media print{body{background:white}.shell{padding:0}.layout{display:block}.file-browser,.navigation,.toolbar,.skip-link{display:none!important}.source-lines{max-height:none;overflow:visible}.change{break-inside:avoid}.comparison-pair,.full-pair{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.passage-side+.passage-side{border-left:1px solid var(--line);border-top:0}.passage mark{print-color-adjust:exact}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#review">Skip to comparison</a>
+  <div class="shell">
+    <header class="intro">
+      <div class="eyebrow"><span class="draft-badge">Draft only</span><span>SLOP1562 · 18 September 2026</span></div>
+      <h1>The course, before and after</h1>
+      <p class="intro-description">An editorial proposal: keep the honest voice and engineering satire; cut repeated declarations, unsupported predictions and explanations of the joke. <strong>These edits have not been applied. The live course source is unchanged.</strong></p>
+      <div class="stats" id="stats"></div>
+      <p class="baseline" id="baseline"></p>
+    </header>
+    <noscript><p class="notice">This offline comparison needs JavaScript to switch between files. Full drafts and exact review records are also available in the adjacent draft/ and reviews/ folders.</p></noscript>
+    <div id="pending-notice" class="notice pending" hidden></div>
+    <div class="layout">
+      <details class="file-browser" id="browser" open>
+        <summary id="browser-summary">Browse course files</summary>
+        <div class="browser-body">
+          <h2 class="browser-title">Browse the review</h2>
+          <div class="filters">
+            <div><label for="search">Search files and course text</label><input id="search" type="search" placeholder="A phrase, week or file name" autocomplete="off" spellcheck="false"></div>
+            <div class="filter-pair">
+              <div><label for="category">Category</label><select id="category"><option value="all">All categories</option></select></div>
+              <div><label for="status">Review status</label><select id="status"><option value="all">Edited and retained</option><option value="edited">Edited</option><option value="retained">Retained</option></select></div>
+            </div>
+          </div>
+          <div class="filter-meta"><span id="result-count" role="status"></span><button class="text-button" id="clear-filters" type="button">Clear filters</button></div>
+          <ul class="file-list" id="file-list" aria-label="Course files"></ul>
+          <details class="policy"><summary>Editorial policy</summary><pre class="policy-text" id="policy"></pre></details>
+        </div>
+      </details>
+      <main id="review" tabindex="-1">
+        <div id="empty-review" class="notice" hidden>No files match these filters. Clear or change a filter to continue.</div>
+        <div id="selected-review">
+          <div class="file-top">
+            <div><p class="category" id="selected-category"></p><h2 id="file-heading" tabindex="-1"></h2><p class="file-path mono" id="file-path"></p></div>
+            <nav class="navigation" aria-label="Review files"><button id="previous" type="button">← Previous file</button><button id="next" type="button">Next file →</button></nav>
+          </div>
+          <p class="review-note"><span class="note-label">Editorial decision</span><span id="review-note"></span></p>
+          <div class="toolbar">
+            <div class="mode-buttons" role="group" aria-label="Comparison view"><button id="passages-mode" type="button" aria-pressed="true">Changed passages</button><button id="full-mode" type="button" aria-pressed="false">Full files</button></div>
+            <div class="legend" id="legend" aria-label="Word highlight legend"><span><i class="swatch old" aria-hidden="true"></i>Original words changed</span><span><i class="swatch new" aria-hidden="true"></i>Draft words changed</span></div>
+          </div>
+          <p class="view-caption" id="view-caption"></p>
+          <div id="comparison"></div>
+          <p class="screen-reader" role="status" aria-live="polite" id="selection-status"></p>
+        </div>
+      </main>
+    </div>
+    <footer>This file works offline. Search includes complete original and draft text and editorial reasons. Source markup is shown literally; nothing in the course files is executed. This review assesses writing, not AI authorship.</footer>
+  </div>
+  <script id="review-data" type="application/json">__REVIEW_DATA__</script>
+  <script>
+    "use strict";
+    (() => {
+      const data = JSON.parse(document.getElementById("review-data").textContent);
+      const byId = id => document.getElementById(id);
+      const make = (tag, className, text) => {const el=document.createElement(tag);if(className)el.className=className;if(text!==undefined)el.textContent=text;return el;};
+      const files = data.files;
+      const categoryOrder = ["Lectures", "Labs", "Slide decks", "Pages", "Readings", "Assessments", "People", "Course metadata, glossary and shared copy", "Components and diagram copy"];
+      const categoryRank = name => {const index=categoryOrder.indexOf(name);return index<0?categoryOrder.length:index;};
+      files.sort((a,b)=>categoryRank(a.category)-categoryRank(b.category)||a.category.localeCompare(b.category)||a.path.localeCompare(b.path,undefined,{numeric:true}));
+      files.forEach(file=>file.searchText=[file.path,file.category,file.original,file.draft,file.review_note,...file.edits.map(edit=>edit.reason)].join("\n").toLocaleLowerCase());
+      const categories=[...new Set(files.map(file=>file.category))];
+      categories.forEach(category=>{const option=make("option",null,category);option.value=category;byId("category").append(option);});
+      if(data.counts.pending){const option=make("option",null,"Pending");option.value="pending";byId("status").append(option);byId("status").options[0].textContent="All review states";byId("pending-notice").hidden=false;byId("pending-notice").textContent=`Development preview: ${data.counts.pending} files are still pending review. This is not the final comparison.`;}
+      [[files.length,"files accounted for"],[data.counts.edited||0,"files with proposals"],[data.counts.retained||0,"files retained"],[data.edit_count,"passage proposals"]].forEach(([count,label])=>{const item=make("span");item.append(make("strong",null,String(count)),document.createTextNode(` ${label}`));byId("stats").append(item);});
+      byId("baseline").textContent=`Original: Git baseline ${data.baseline} · Live source verified unchanged when this comparison was generated.`;
+      byId("browser-summary").textContent=`Browse ${files.length} course files`;
+      byId("policy").textContent=data.policy;
+      const narrow=window.matchMedia("(max-width: 900px)");
+      byId("browser").open=!narrow.matches;
+      narrow.addEventListener("change",()=>{byId("browser").open=!narrow.matches;});
+      let filtered=files, selected=null, mode="passages", searchTimer;
+      const statusText=file=>file.status==="edited"?`${file.edits.length} proposal${file.edits.length===1?"":"s"}`:file.status==="retained"?"Retained after review":"Pending review";
+      const initialPath=(()=>{try{return decodeURIComponent(location.hash.slice(1));}catch{return "";}})();
+      selected=files.find(file=>file.path===initialPath)||files.find(file=>file.path==="src/content/lectures/week-01.mdx")||files.find(file=>file.status==="edited")||files[0];
+      function renderList(){
+        const list=byId("file-list");list.replaceChildren();
+        byId("result-count").textContent=`${filtered.length} of ${files.length} files`;
+        if(!filtered.length){list.append(make("li","empty-list","No matching files."));return;}
+        const fragment=document.createDocumentFragment();
+        filtered.forEach(file=>{
+          const li=make("li"),button=make("button","file-button");button.type="button";button.dataset.path=file.path;button.setAttribute("aria-current",String(file===selected));
+          button.append(make("span","file-name",file.path.split("/").at(-1)),make("span","file-parent mono",file.path.substring(0,file.path.lastIndexOf("/"))),make("span","file-status",statusText(file)));
+          button.addEventListener("click",()=>{selectFile(file);if(narrow.matches){byId("browser").open=false;byId("file-heading").focus();}});li.append(button);fragment.append(li);
+        });list.append(fragment);
+      }
+      function renderPassages(file){
+        const fragment=document.createDocumentFragment();
+        file.edits.forEach((edit,index)=>{
+          const article=make("article","change");const heading=make("div","change-heading");heading.append(make("h3",null,`Proposal ${index+1}`),make("span","line-ref",`Original line ${edit.line}`));article.append(heading);
+          const pair=make("div","comparison-pair");
+          [["Original",edit.beforeSpans,"removed"],["Draft proposal",edit.afterSpans,"added"]].forEach(([label,spans,changeClass])=>{
+            const side=make("section","passage-side");side.append(make("h3","column-label",label));
+            if(!spans.length){side.append(make("p","no-text",label==="Draft proposal"?"Passage removed; no replacement text.":"No original text."));}
+            else {const passage=make("div","passage");spans.forEach(([text,changed])=>passage.append(changed?make("mark",changeClass,text):document.createTextNode(text)));side.append(passage);}
+            pair.append(side);
+          });article.append(pair);const reason=make("p","reason");reason.append(make("strong",null,"Why: "),document.createTextNode(edit.reason));article.append(reason);fragment.append(article);
+        });byId("comparison").append(fragment);
+      }
+      function renderFull(file){
+        if(file.status==="retained")byId("comparison").append(make("p","notice","Retained after review. The original and draft below are identical."));
+        if(file.status==="pending")byId("comparison").append(make("p","notice pending","This file is present for coverage but has not yet received an editorial review."));
+        const pair=make("div","full-pair");
+        [["Original",file.original],["Draft proposal",file.draft]].forEach(([label,text])=>{
+          const side=make("section","full-side");side.append(make("h3",null,label));const pre=make("pre","source-lines");pre.tabIndex=0;pre.setAttribute("aria-label",`${label} full text; scroll to read all lines`);const code=make("code");
+          text.split("\n").forEach((line,index)=>{const row=make("span","source-line");const number=make("span","line-number",String(index+1));number.setAttribute("aria-hidden","true");row.append(number,make("span","line-text",line||"\u200b"));code.append(row);});pre.append(code);side.append(pre);pair.append(side);
+        });byId("comparison").append(pair);
+      }
+      function renderReview(){
+        byId("selected-review").hidden=!selected;byId("empty-review").hidden=Boolean(selected);if(!selected)return;
+        if(!selected.edits.length)mode="full";
+        byId("selected-category").textContent=`${selected.category} · ${statusText(selected)}`;
+        byId("file-heading").textContent=selected.path.split("/").at(-1);byId("file-path").textContent=selected.path;byId("review-note").textContent=selected.review_note;
+        const index=filtered.indexOf(selected);byId("previous").disabled=index<=0;byId("next").disabled=index<0||index>=filtered.length-1;
+        byId("passages-mode").disabled=!selected.edits.length;byId("passages-mode").setAttribute("aria-pressed",String(mode==="passages"));byId("full-mode").setAttribute("aria-pressed",String(mode==="full"));byId("legend").hidden=mode!=="passages";
+        byId("view-caption").textContent=mode==="passages"?"Exact recorded passages. Colour marks changed words; reasons and line numbers refer to the original file.":"Complete source text, including markup and speaker notes. Each column can be scrolled and read independently.";
+        byId("comparison").replaceChildren();if(mode==="passages")renderPassages(selected);else renderFull(selected);
+        byId("selection-status").textContent=`${selected.path}. ${statusText(selected)}. ${mode==="full"?"Full files":"Changed passages"}.`;
+        document.title=`${selected.path.split("/").at(-1)} · SLOP1562 editorial draft`;
+      }
+      function selectFile(file){
+        selected=file;renderList();renderReview();
+        if(file){try{history.replaceState(null,"",`#${encodeURIComponent(file.path)}`);}catch{/* File browsing works without URL state. */}}
+      }
+      function applyFilters(){
+        const query=byId("search").value.trim().toLocaleLowerCase(),category=byId("category").value,status=byId("status").value;
+        filtered=files.filter(file=>(!query||file.searchText.includes(query))&&(category==="all"||file.category===category)&&(status==="all"||file.status===status));
+        if(!filtered.includes(selected))selected=filtered[0]||null;renderList();renderReview();
+      }
+      byId("search").addEventListener("input",()=>{clearTimeout(searchTimer);searchTimer=setTimeout(applyFilters,120);});
+      byId("category").addEventListener("change",applyFilters);byId("status").addEventListener("change",applyFilters);
+      byId("clear-filters").addEventListener("click",()=>{byId("search").value="";byId("category").value="all";byId("status").value="all";applyFilters();});
+      byId("previous").addEventListener("click",()=>{const index=filtered.indexOf(selected);if(index>0)selectFile(filtered[index-1]);});
+      byId("next").addEventListener("click",()=>{const index=filtered.indexOf(selected);if(index<filtered.length-1)selectFile(filtered[index+1]);});
+      byId("passages-mode").addEventListener("click",()=>{mode="passages";renderReview();});byId("full-mode").addEventListener("click",()=>{mode="full";renderReview();});
+      selectFile(selected);
+    })();
+  </script>
+</body>
+</html>

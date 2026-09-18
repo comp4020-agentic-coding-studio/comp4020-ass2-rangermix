@@ -1,0 +1,16 @@
+{
+  "path": "src/content/sessions/week-03.md",
+  "category": "Sessions",
+  "sha256_before": "4bb8051d80b9f8e96734bd7fa1864070ebd59bf7c0f9241073d7fe1fde28e526",
+  "status": "edited",
+  "review_note": "Keep the relay, scoring, costs and timings. Let the group investigate differing envelopes instead of treating the activity as a predetermined demonstration of week 11.",
+  "edits": [
+    {
+      "line": 34,
+      "before": "Watch for a payload that arrives intact in one person's envelope and gets lost\nin someone else's. If it happens, that is the room finding out that the envelopes aren't\nshared. People wrap differently, and decoders are tuned to their own style of\nwrapping. Keep hold of that: it's week 11's argument, arriving early.",
+      "after": "Watch for a payload that arrives intact in one person's envelope and gets lost\nin someone else's. If it happens, compare the wording: which part changed the\ndecoder's reading? Keep both versions to revisit in week 11.",
+      "reason": "Preserve the concrete comparison and cross-week connection without announcing what the room has proved."
+    }
+  ],
+  "sha256_after": "aedeef49d5f0fcedb2f0c867513922de2ac4498d1a344329acd6057661952414"
+}

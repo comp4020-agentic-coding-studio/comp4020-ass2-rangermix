@@ -1,0 +1,9 @@
+{
+  "path": "src/components/sketch/Register.astro",
+  "category": "Components and diagram copy",
+  "sha256_before": "ed591c7be355d7f6030124b174557ac8e54271b8cb84c98f4f24a2458219377a",
+  "status": "retained",
+  "review_note": "Retain the accessible status connector and data-driven issue labels. The register’s substantive text is supplied by the reviewed week 12 content.",
+  "edits": [],
+  "sha256_after": "ed591c7be355d7f6030124b174557ac8e54271b8cb84c98f4f24a2458219377a"
+}

@@ -1,0 +1,28 @@
+{
+  "path": "src/content/readings/keysar-2002-overestimation.md",
+  "category": "Readings",
+  "sha256_before": "9fa810cb7a29ef929bc0bfaf36acca5e9bddf5fdfb27e972bf260419251b881d",
+  "status": "edited",
+  "review_note": "State the speaker/overhearer comparison directly and shorten its teaching connection.",
+  "edits": [
+    {
+      "line": 3,
+      "before": "The person who sent the hint is the worst judge of whether it was clear, and the experiment shows it is the sending that causes the error.",
+      "after": "Speakers overestimated how clearly they had conveyed an intention; informed overhearers did not show the same bias.",
+      "reason": "Describe the comparison actually reported instead of ranking all possible judges."
+    },
+    {
+      "line": 16,
+      "before": "The control is what makes this a mechanism rather than a mood — **overhearers who knew the speaker's intention did not systematically overestimate**.",
+      "after": "**Overhearers who knew the speaker's intention did not systematically overestimate**.",
+      "reason": "Keep the control result without the decorative mechanism-versus-mood contrast."
+    },
+    {
+      "line": 20,
+      "before": "Week 3 could be taught entirely as instructions for the person who missed the hint. This reading is why it isn't. When an envelope doesn't arrive, the sender's confidence that it was obvious is the specific thing this experiment measured and found unreliable. It is week 2's curse of expertise arriving at the level of a single sentence: fluency with your own meaning is not evidence about how it landed, and the person best placed to know is not you.",
+      "after": "Week 3 uses this when asking senders to check how a hint landed. Confidence in the intended meaning does not tell the sender what the other person understood.",
+      "reason": "The study already explains the mechanism. Give its teaching use without another account of why the course takes both sides."
+    }
+  ],
+  "sha256_after": "6895f16b1f26f31d88aa848a429a4dd02ca537cd7dc5734a36e6a680ca6520e0"
+}

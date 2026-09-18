@@ -1,0 +1,16 @@
+{
+  "path": "src/content/assessments/protocol-specification.md",
+  "category": "Assessments",
+  "sha256_before": "50331263a4f52ed76a7387ab4774922feeeb394a81b3a7a2021adbc0bf05ef8f",
+  "status": "edited",
+  "review_note": "Keep the API framing, examples, known-issues joke and precise submission requirements. Remove an unnecessary claim about how long week 1 took and a vague instruction to do it properly.",
+  "edits": [
+    {
+      "line": 32,
+      "before": "Week 1 specified the opening handshake in an hour. Your job is to do the same\nfor a subroutine of your choice, properly.",
+      "after": "Week 1 specified the opening handshake. Do the same for a subroutine of your\nchoice.",
+      "reason": "The link to week 1 is useful; the invented duration and properly add no testable standard."
+    }
+  ],
+  "sha256_after": "850cacf10e23a2c196da87b2776f995f31fc749292344236d41401a9baa32562"
+}

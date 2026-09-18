@@ -1,0 +1,58 @@
+{
+  "path": "src/pages/timetable/index.astro",
+  "category": "Site pages",
+  "sha256_before": "2888b7046bb62542758a631817a3df62767df2d3837a2b37dc03895baa6e940f",
+  "status": "edited",
+  "review_note": "Retain the undocumented-room-rules joke and every date, venue, access arrangement and deadline. Remove repeated explanations of deliberate design and guarantees about student costs.",
+  "edits": [
+    {
+      "line": 122,
+      "before": "    or which of the two doors is the one people use. Those rules exist. Nobody\n    writes them down, and you are expected to have worked them out by week two.",
+      "after": "    or which of the two doors is the one people use.",
+      "reason": "The specific examples establish the documentation problem; the punchline below can follow without a second explanation."
+    },
+    {
+      "line": 133,
+      "before": "called NT 101 by everyone who takes it",
+      "after": "NT 101 on campus",
+      "reason": "Retain the informal course name without making a claim about every student."
+    },
+    {
+      "line": 196,
+      "before": "    The gaps between the three are the point. Tuesday writes a part of the\n    protocol down;",
+      "after": "    Tuesday writes a part of the protocol down;",
+      "reason": "Let the concrete weekly sequence explain the gaps without announcing its significance first."
+    },
+    {
+      "line": 199,
+      "before": "    to you before the journal entry is due. Then the next lecture argues with\n    what you found.",
+      "after": "    to you before the journal entry is due. Use what you find to revise the rule.",
+      "reason": "Match the homepage’s observation-and-revision loop without promising how the next lecture will respond."
+    },
+    {
+      "line": 206,
+      "before": "<strong>14:00 means 14:00.</strong> Some courses run an unwritten five or\n      ten minutes of grace at the start. This one doesn't, because a convention\n      nobody states costs whoever wasn't told it: they either sit alone for ten\n      minutes or walk in late in front of everyone.",
+      "after": "<strong>14:00 means 14:00.</strong> There is no unwritten five- or\n      ten-minute grace period.",
+      "reason": "The exact start convention is the actionable information; the page’s opening already makes the satire."
+    },
+    {
+      "line": 220,
+      "before": "      both aisle ends are kept clear, so leaving costs you nothing but the walk.",
+      "after": "      both aisle ends are kept clear.",
+      "reason": "Preserve the access arrangement without promising that leaving has no other cost for any student."
+    },
+    {
+      "line": 334,
+      "before": "    runbook for overload and recovery on the Tuesday before it starts, which is\n    not an accident.",
+      "after": "    runbook for overload and recovery on the Tuesday before it starts.",
+      "reason": "The placement is clear without a reminder that the author planned it."
+    },
+    {
+      "line": 352,
+      "before": "    is, and the journal drops your lowest week, so a Sunday you spend somewhere\n    else is already paid for.",
+      "after": "    is. The journal drops your lowest of eleven marks.",
+      "reason": "State the existing deadline and dropped-mark rule without assuming a student’s spare week has not already been used."
+    }
+  ],
+  "sha256_after": "c940089dc228dfabcc06dedc85f635e0cdfd097af4c13ba45495bace55208444"
+}

@@ -1,0 +1,28 @@
+{
+  "path": "src/content/readings/nisbett-1977-telling-more.md",
+  "category": "Readings",
+  "sha256_before": "f8e7717b781c2e6f5935b88b7e43557e5b06be3b65d3797547719acda4f83e37",
+  "status": "edited",
+  "review_note": "Preserve marked quotations and the concrete interview example while narrowing categorical claims about introspection.",
+  "edits": [
+    {
+      "line": 16,
+      "before": "The paper's proposal is the part week 2 uses: when people report on their own mental processes they aren't introspecting at all. They are producing",
+      "after": "The paper proposes that these reports draw on",
+      "reason": "Keep the proposal tied to the higher-order processes just named, rather than making a universal claim about all introspection."
+    },
+    {
+      "line": 18,
+      "before": "Garfinkel explains why the protocol is undocumented: it's background, and background is invisible. This explains what happens when you ask anyway. You get an answer. It is fluent, confident and constructed. That is not evasion and it is not a poor memory — the report was never introspective to begin with, so a better-motivated interviewee would produce the same thing.",
+      "after": "For week 2's interviews, a fluent explanation of a convention can be a plausible theory of it. The interviewee does not have to be evasive for the account to be mistaken.",
+      "reason": "Remove a theatrical sequence and claims about every interviewee's mental process; retain the methodological warning."
+    },
+    {
+      "line": 20,
+      "before": "The abstract's last sentence is the one to read twice, because it is the method. Reports *will* sometimes be accurate:",
+      "after": "The authors also describe when reports can be accurate:",
+      "reason": "Introduce the qualification directly."
+    }
+  ],
+  "sha256_after": "057e6735d5442b3121fa8a7c37f381f94e1ee55f47f9b0e2c7072802a03aa891"
+}

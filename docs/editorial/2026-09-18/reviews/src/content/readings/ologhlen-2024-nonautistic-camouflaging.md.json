@@ -1,0 +1,16 @@
+{
+  "path": "src/content/readings/ologhlen-2024-nonautistic-camouflaging.md",
+  "category": "Readings",
+  "sha256_before": "b7b7ded49e741b1ae407d0993f9923a8bc7c9b918ad9370efbc74cab458735de",
+  "status": "edited",
+  "review_note": "Keep the reported association and inclusion of non-autistic accounts; remove a prediction about most students.",
+  "edits": [
+    {
+      "line": 16,
+      "before": "The course takes the finding, not the paper's framing of competence: masking is a practice most of the room runs, at costs that differ by implementation. That is what makes the week 6 ledger a whole-class exercise.",
+      "after": "Week 6 includes these accounts alongside those of autistic participants when introducing the ledger. It does not adopt the paper's framing of competence.",
+      "reason": "Retain the whole-class relevance without asserting what most people in this particular room do."
+    }
+  ],
+  "sha256_after": "dac74a9dbeef066ce885668eec7b4abcdc1621993b359bab43f8bf8cbc6e89d9"
+}

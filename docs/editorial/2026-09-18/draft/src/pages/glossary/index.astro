@@ -1,0 +1,80 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getPublishedCollection } from "astro-course-university/content";
+import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import { withBase } from "astro-theme-university/url";
+import { terms } from "../../data/terms";
+import { siteConfig } from "../../site-config";
+
+const lectures = await getPublishedCollection("lectures");
+const lectureFor = new Map<number, CollectionEntry<"lectures">>(lectures.map((l) => [l.data.week, l]));
+const weeks = [...new Set(terms.map((t) => t.week))].sort((a, b) => a - b);
+---
+
+<ContentLayout
+  title="Glossary"
+  description="Course terms, grouped by the week that introduces them."
+  {...siteConfig}
+>
+  <p>
+    Use these definitions throughout the course. Each week’s heading links
+    back to the lecture that introduced the terms.
+  </p>
+  {
+    weeks.map((week) => {
+      const lecture = lectureFor.get(week);
+      return (
+        <section class="glossary-week" aria-labelledby={`glossary-week-${week}`}>
+          <h2 id={`glossary-week-${week}`}>
+            {lecture ? (
+              <a href={withBase(`/lectures/${lecture.id}/`)}>
+                Week {week}: {lecture.data.title}
+              </a>
+            ) : (
+              `Week ${week}`
+            )}
+          </h2>
+          <dl>
+            {terms
+              .filter((t) => t.week === week)
+              .map((t) => (
+                <>
+                  <dt>{t.term}</dt>
+                  <dd>{t.definition}</dd>
+                </>
+              ))}
+          </dl>
+        </section>
+      );
+    })
+  }
+</ContentLayout>
+
+<style>
+  .glossary-week dl {
+    display: grid;
+    grid-template-columns: minmax(8rem, 13rem) 1fr;
+    gap: 0.6rem 1.5rem;
+  }
+
+  .glossary-week dt {
+    font-family: var(--at-font-mono);
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+
+  .glossary-week dd {
+    margin: 0;
+  }
+
+  @media (max-width: 36rem) {
+    .glossary-week dl {
+      grid-template-columns: 1fr;
+      gap: 0.15rem;
+    }
+
+    .glossary-week dd {
+      margin-block-end: 0.8rem;
+    }
+  }
+</style>

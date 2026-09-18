@@ -1,0 +1,9 @@
+{
+  "path": "src/pages/people/[slug].astro",
+  "category": "Site pages",
+  "sha256_before": "4a99ab2ac184e0d5fbb8b528b87fe96d6dfdcf27d5e46acf486eaf836f517d92",
+  "status": "retained",
+  "review_note": "Retain the functional role, email and office-hour labels and profile rendering.",
+  "edits": [],
+  "sha256_after": "4a99ab2ac184e0d5fbb8b528b87fe96d6dfdcf27d5e46acf486eaf836f517d92"
+}

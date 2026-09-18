@@ -1,0 +1,22 @@
+{
+  "path": "src/pages/glossary/index.astro",
+  "category": "Site pages",
+  "sha256_before": "d3a1f48d1d582a980c448cd6c2fcdb9685383a32b016c3c89937c72d8e3db32e",
+  "status": "edited",
+  "review_note": "Keep all generated terms and links. The introductory text only needs to explain how to use this reference.",
+  "edits": [
+    {
+      "line": 16,
+      "before": "Every term this course introduces, with the week that introduces it. The course specifies its own vocabulary, and reuses each term exactly.",
+      "after": "Course terms, grouped by the week that introduces them.",
+      "reason": "Remove a repeated claim about the course’s own consistency from the page description."
+    },
+    {
+      "line": 20,
+      "before": "    Over twelve weeks, a deliberately mixed class builds a shared vocabulary for\n    a protocol nobody documented. This is that vocabulary, as a reference. Each\n    term keeps the meaning it had in the week that introduced it, and later\n    weeks reuse it rather than re-coining it.",
+      "after": "    Use these definitions throughout the course. Each week’s heading links\n    back to the lecture that introduced the terms.",
+      "reason": "Retain the instruction to use consistent definitions and make the navigation explicit; omit the repeated course premise."
+    }
+  ],
+  "sha256_after": "8a23e9b341c918db6d1f43fc0d770322de67733a73110fca6d4c3684ce63610c"
+}

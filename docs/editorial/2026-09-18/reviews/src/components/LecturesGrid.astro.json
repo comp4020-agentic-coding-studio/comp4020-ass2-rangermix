@@ -1,0 +1,9 @@
+{
+  "path": "src/components/LecturesGrid.astro",
+  "category": "Components and diagram copy",
+  "sha256_before": "0d745350b21b57200c49f1d7281b231dd46a866aa1716b23a5b064701b417c1d",
+  "status": "retained",
+  "review_note": "Retain the week and date labels. Lecture titles and descriptions are supplied by the separately reviewed lecture files.",
+  "edits": [],
+  "sha256_after": "0d745350b21b57200c49f1d7281b231dd46a866aa1716b23a5b064701b417c1d"
+}

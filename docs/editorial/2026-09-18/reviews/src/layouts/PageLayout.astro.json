@@ -1,0 +1,9 @@
+{
+  "path": "src/layouts/PageLayout.astro",
+  "category": "Course metadata, glossary and shared copy",
+  "sha256_before": "d79cffd8213f4787bab8d5cd7b5fd90309e1872f796d955ee4575f363bc65687",
+  "status": "retained",
+  "review_note": "Retain unchanged: a layout wrapper with no authored student prose.",
+  "edits": [],
+  "sha256_after": "d79cffd8213f4787bab8d5cd7b5fd90309e1872f796d955ee4575f363bc65687"
+}

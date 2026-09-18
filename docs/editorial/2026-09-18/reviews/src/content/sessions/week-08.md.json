@@ -1,0 +1,22 @@
+{
+  "path": "src/content/sessions/week-08.md",
+  "category": "Sessions",
+  "sha256_before": "2a6486e5f5a41dad0dff7c9eef27a697e4681033ffdf78f00114e9f13058bb5d",
+  "status": "edited",
+  "review_note": "Keep the timed conformance exercise, exception policy and all message requirements. Make the closing instruction work for a student whose email passed every clause.",
+  "edits": [
+    {
+      "line": 14,
+      "before": "Tuesday's specimens are a specification. A specification you can't test isn't\none, so today the room runs the tests.",
+      "after": "Today you run Tuesday's seven-clause email specification against three\nmessages.",
+      "reason": "Start with the activity instead of another maxim about what counts as a specification."
+    },
+    {
+      "line": 41,
+      "before": "Three messages that pass their tests, and a clause you now know you tend to\nbreak. Your journal rule for Sunday is how that clause got broken in a real\nemail, and what came back.",
+      "after": "Three messages that pass their tests, with any exceptions explained. For\nSunday's journal, check one clause against a real email and the reply it got.\nDid the clause help, or did the exchange give you a reason to revise it?",
+      "reason": "Keep a clause-based journal test without assuming everyone has a habitual failure or must find a broken clause."
+    }
+  ],
+  "sha256_after": "659ab760a6447131368edc42d3e5a331c123e299d50c0ebe7c7829a28368f04a"
+}

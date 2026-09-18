@@ -1,0 +1,96 @@
+---
+// A hand-drawn timeline in milliseconds: what the gap before a reply is, and
+// what a listener has learned to make of it. Marks are points on the axis;
+// bands are stretches of it. Every mark carries its source in the prose around
+// it, so the drawing never states a number the page doesn't cite.
+import { arrow, box, line, rng } from "../../lib/sketch";
+
+interface Mark {
+  at: number;
+  label: string;
+  note?: string;
+  gold?: boolean;
+}
+
+interface Band {
+  from: number;
+  to: number;
+  label: string;
+}
+
+interface Props {
+  max: number;
+  marks: Mark[];
+  bands?: Band[];
+  caption: string;
+  seed?: string;
+}
+
+const { max, marks, bands = [], caption, seed = caption } = Astro.props;
+const r = rng(seed);
+
+const width = 520;
+const left = 24;
+const right = width - 28;
+const axisY = 150;
+const x = (ms: number) => left + ((right - left) * ms) / max;
+
+const axis = arrow(left - 6, axisY, right + 18, axisY, r);
+const ticks = Array.from({ length: Math.floor(max / 500) + 1 }, (_, i) => i * 500).map((ms) => ({
+  ms,
+  d: line(x(ms), axisY - 6, x(ms), axisY + 6, r, 0.3),
+}));
+const drawnBands = bands.map((b) => ({ ...b, d: box(x(b.from), axisY - 34, x(b.to) - x(b.from), 22, r) }));
+const drawnMarks = marks.map((m, i) => ({
+  ...m,
+  d: line(x(m.at), axisY - 4, x(m.at), axisY - 70 - (i % 2) * 34, r, 0.5),
+  labelY: axisY - 76 - (i % 2) * 34,
+}));
+const height = 205;
+const id = `timing-${Math.abs([...seed].reduce((h, c) => (h * 31 + c.charCodeAt(0)) | 0, 7)).toString(36)}`;
+---
+
+<figure class="sketch timing" aria-labelledby={`${id}-caption`}>
+  <svg viewBox={`0 0 ${width} ${height}`} style={`max-width: ${width}px`} role="img" aria-labelledby={`${id}-title`} aria-describedby={`${id}-marks`}>
+    <title id={`${id}-title`}>{caption}</title>
+    {drawnBands.map((b) => <path class="graphite" d={b.d} />)}
+    {
+      drawnBands.map((b) => (
+        <text class="timing" x={(x(b.from) + x(b.to)) / 2} y={axisY - 19} text-anchor="middle">
+          {b.label}
+        </text>
+      ))
+    }
+    <path class="ink" d={axis.shaft} />
+    <path class="ink" d={axis.head} />
+    {ticks.map((t) => <path class="ink" d={t.d} />)}
+    {
+      ticks.map((t) => (
+        <text class="timing" x={x(t.ms)} y={axisY + 24} text-anchor="middle">
+          {t.ms === 0 ? "0" : `${t.ms}`}
+        </text>
+      ))
+    }
+    <text class="timing" x={right + 12} y={axisY + 44} text-anchor="end">ms</text>
+    {
+      drawnMarks.map((m) => (
+        <g>
+          <path class={m.gold ? "gold" : "ink"} d={m.d} />
+          <text class="label" x={x(m.at) + 6} y={m.labelY} text-anchor="start">
+            {m.label}
+          </text>
+          {m.note && (
+            <text class="note" x={x(m.at) + 6} y={m.labelY + 20} text-anchor="start">
+              {m.note}
+            </text>
+          )}
+        </g>
+      ))
+    }
+  </svg>
+  <ul class="visually-hidden" id={`${id}-marks`}>
+    {marks.map((m) => <li>{m.at} ms: {m.label}{m.note ? `, ${m.note}` : ""}</li>)}
+    {bands.map((b) => <li>{b.from} to {b.to} ms: {b.label}</li>)}
+  </ul>
+  <figcaption id={`${id}-caption`}>{caption}</figcaption>
+</figure>

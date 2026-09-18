@@ -1,0 +1,16 @@
+{
+  "path": "src/content/readings/pearson-2021-masking-stigma.md",
+  "category": "Readings",
+  "sha256_before": "cea3d918f7e0394dbd034dad37695729e137d68771f158ca97fce5181d10868d",
+  "status": "edited",
+  "review_note": "Keep the pressure argument; remove the unnecessary and internally inconsistent budget maxim.",
+  "edits": [
+    {
+      "line": 16,
+      "before": "A budget is only a budget if you get to decide how to spend it, so the ledger records the pressure as well as the price.",
+      "after": "The ledger therefore records the pressure as well as the price.",
+      "reason": "The preceding account already explains constrained choice. Cut a tidy maxim that also conflicts with week 6's account of budgets under pressure."
+    }
+  ],
+  "sha256_after": "7ba6080a94e5c277532dfc68ce8f1da4d4282690f72d15081c75bb9c4d2d71b3"
+}

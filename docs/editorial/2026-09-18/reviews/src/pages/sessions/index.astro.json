@@ -1,0 +1,9 @@
+{
+  "path": "src/pages/sessions/index.astro",
+  "category": "Site pages",
+  "sha256_before": "5a4f9d282e58904f74bf121419b0189f274cb6467ecd29d6048bdb8a707dec5b",
+  "status": "retained",
+  "review_note": "Retain the lab times, run-sheet explanation and navigation. The lecture/lab distinction is useful here.",
+  "edits": [],
+  "sha256_after": "5a4f9d282e58904f74bf121419b0189f274cb6467ecd29d6048bdb8a707dec5b"
+}

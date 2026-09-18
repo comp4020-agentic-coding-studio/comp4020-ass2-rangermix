@@ -1,0 +1,28 @@
+{
+  "path": "src/content/readings/lee-2010-strategic-speaker.md",
+  "category": "Readings",
+  "sha256_before": "312d7560d1fbc657371b00173c9d9860082e866f2377f64dd885313f8fe8b6ce",
+  "status": "edited",
+  "review_note": "Retain both uncertainty and known-willingness motives; remove a final rule that excludes the latter.",
+  "edits": [
+    {
+      "line": 16,
+      "before": "The paradigm case in the abstract is deliberately unsocial, which is why it teaches so fast: bribing a policeman who may be corrupt or honest. A veiled bribe can be taken up by the corrupt one and ignored by the honest one, and the speaker survives either way.",
+      "after": "The abstract's example is bribing a policeman who may be corrupt or honest. In the model, a veiled bribe can be taken up by the corrupt one or passed over by the honest one.",
+      "reason": "Remove an invented prediction about teaching speed and frame the example as a model rather than a guarantee."
+    },
+    {
+      "line": 18,
+      "before": "Then the part that extends week 3's own account. **Even when the hearer's willingness is known**,",
+      "after": "**Even when the hearer's willingness is known**,",
+      "reason": "Move straight to the substantive qualification."
+    },
+    {
+      "line": 20,
+      "before": "Read as a diagnostic rather than an explanation, this is the most useful sentence in the week. An envelope marks a place where **the sender is not sure of the answer**. Where the answer is certain and safe, the protocol tends to go direct. So the question to ask of an ambiguous line is not \"why are they being like this\" but \"what are they not sure of?\" — and the answer is usually visible.",
+      "after": "For week 3, ask what the wording lets either person decline or leave off the record. Uncertainty about the answer is one possibility; the known-willingness case above is another reason to stay indirect.",
+      "reason": "The original closing rule contradicted the preceding known-willingness case. Preserve both motives and remove the superlative and unsupported “usually”."
+    }
+  ],
+  "sha256_after": "08dad77be4f0c3644a02b2213a82511a2ad100d527e262c7499b4e2ea2e956a8"
+}

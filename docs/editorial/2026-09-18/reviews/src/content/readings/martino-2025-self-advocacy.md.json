@@ -1,0 +1,28 @@
+{
+  "path": "src/content/readings/martino-2025-self-advocacy.md",
+  "category": "Readings",
+  "sha256_before": "07926b5cd0e40e6cd37fa36fb0e0270ceebdf0e0587a6f6c25f33f94dcc78770",
+  "status": "edited",
+  "review_note": "Preserve association language and institutional criticism; cut self-praise and an unnecessary retrospective justification.",
+  "edits": [
+    {
+      "line": 3,
+      "before": "Self-advocacy is associated with better educational and employment outcomes --- which is why week 8 teaches it, and why week 8 refuses to stop there.",
+      "after": "A mini-review of associations between self-advocacy, self-determination and outcomes for autistic adolescents and young adults.",
+      "reason": "Let the description identify the reading rather than advertise the course's principled response."
+    },
+    {
+      "line": 17,
+      "before": "The hedge in that phrasing is the authors' own and the week keeps it: these are associations reported in a short review, not a demonstrated effect of teaching anybody to write an email.",
+      "after": "These are associations reported in a short review, not a demonstrated effect of teaching somebody to write an email.",
+      "reason": "Preserve the limit without praising the course for reproducing it."
+    },
+    {
+      "line": 19,
+      "before": "Week 8 uses this to justify spending an hour on institutional scripts at all. Asking well is associated with outcomes that matter, so the skill is worth having. Read beside Davies & Bagnall, though, it sets up the week's real position: self-advocacy helps the person doing it, *and* a system that works only for students who can do it has pushed its own cost onto them.",
+      "after": "Read beside Davies & Bagnall in week 8: teach the script, and ask why access to support depends on the student knowing how to ask.",
+      "reason": "Keep the institutional criticism and practical implication in one sentence."
+    }
+  ],
+  "sha256_after": "cb5715fee3a7654c2dd2117baaecfdd64cdd54bf0f6290c7a0c9ccd696232b0f"
+}

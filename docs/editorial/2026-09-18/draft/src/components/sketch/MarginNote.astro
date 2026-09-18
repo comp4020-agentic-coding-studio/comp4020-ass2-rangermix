@@ -1,0 +1,14 @@
+---
+// A note in the margin, in the hand: the aside a reviewer pencils beside a
+// clause. It must still make sense read inline, because at phone width that is
+// where it sits.
+interface Props {
+  label?: string;
+}
+
+const { label = "Margin note" } = Astro.props;
+---
+
+<aside class="margin-note" aria-label={label}>
+  <slot />
+</aside>

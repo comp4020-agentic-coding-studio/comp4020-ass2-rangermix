@@ -1,0 +1,210 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getPublishedCollection } from "astro-course-university/content";
+import Card from "astro-theme-university/components/Card.astro";
+import CardGrid from "astro-theme-university/components/CardGrid.astro";
+import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import { withBase } from "astro-theme-university/url";
+import SequenceDiagram from "../components/sketch/SequenceDiagram.astro";
+import StateMachine from "../components/sketch/StateMachine.astro";
+import { courseMeta } from "../course-config";
+import { labMeeting, lectureMeeting } from "../data/timetable";
+import { sessionLabels, siteConfig } from "../site-config";
+
+const lectures = (await getPublishedCollection("lectures")).sort((a, b) => a.data.week - b.data.week);
+const readingCount = (await getPublishedCollection("readings")).length;
+const parts: { name: string; summary: string; weeks: CollectionEntry<"lectures">[] }[] = [
+  { name: "I. Read the protocol", summary: "Write down what everyone runs and nobody describes.", weeks: lectures.slice(0, 4) },
+  { name: "II. Implement selectively", summary: "Run parts of it on purpose, and count what they cost.", weeks: lectures.slice(4, 7) },
+  { name: "III. Negotiate", summary: "Institutions, closeness, disclosure, and other implementations.", weeks: lectures.slice(7, 11) },
+  { name: "IV. Horizon", summary: "What the course leaves out, and where to read further.", weeks: lectures.slice(11) },
+];
+---
+
+<ContentLayout
+  title={`${courseMeta.code}: ${courseMeta.title}`}
+  description={courseMeta.description}
+  {...siteConfig}
+>
+  <p class="home-meta">
+    On campus it's NT 101. {courseMeta.session}, {courseMeta.year}. Lectures
+    {` ${lectureMeeting.day} ${lectureMeeting.start}–${lectureMeeting.end}`}, labs
+    {` ${labMeeting.day} ${labMeeting.start}–${labMeeting.end}`}, on
+    the <a href={withBase("/timetable/")}>timetable</a>.
+  </p>
+
+  <div class="home-hero">
+    <blockquote class="home-thesis">
+      <p>The protocol is undocumented, not obvious; a minority implementation is not a broken one.</p>
+    </blockquote>
+    <SequenceDiagram
+      actors={["A", "B"]}
+      seed="home handshake"
+      caption="The opening handshake, as week 1 specifies it. The reply is a token, not an answer."
+      messages={[
+        { from: 0, to: 1, label: "How are you?" },
+        { from: 1, to: 0, label: "Good, you?", note: "not a status report", gold: true },
+        { from: 0, to: 1, label: "Yeah, good." },
+      ]}
+    />
+  </div>
+
+  <h2>What this course is</h2>
+  <p>
+    The social protocol of the neurotypical majority is a large, undocumented,
+    inconsistently implemented legacy system. The people who run it can't
+    describe it, and none of them designed it. For twelve weeks, SLOP1562
+    reverse-engineers it: a specification of the handshake, the hint, the pause,
+    the apology and the email to your tutor, so that anyone can interoperate with
+    it on purpose.
+  </p>
+  <p>
+    Every week ends with scripts you can say, timings you can check, and lines
+    you can test yourself against.
+  </p>
+
+  <h2>Who it is for</h2>
+  <p>
+    Anyone who wants the protocol written down. Autistic and otherwise
+    divergent students, who were never handed the implicit version. And students
+    who run the protocol fluently and couldn't describe a line of it, which is a
+    reason to enrol in its own right. The class is mixed on purpose; week 11
+    explains why that matters.
+  </p>
+  <p>
+    Nobody is here because something is wrong with them. Entry is by three
+    references from people who know you well. <strong>No diagnosis is required,
+    and none is accepted as evidence.</strong> The <a href={withBase("/policies/")}>policies page</a> has the details.
+  </p>
+
+  <h2>What you'll do</h2>
+  <p>
+    A lecture writes a part of the protocol down, and a lab tests that writing
+    in the room. From week 2, a weekly journal entry checks it against a real
+    exchange of your own.
+  </p>
+  <StateMachine
+    seed="home weekly loop"
+    caption="From week 2: lecture, lab and journal. An observation can send you back to revise the rule."
+    states={["Tue lecture", "Thu lab", "Sun journal"]}
+    transitions={[
+      { from: 0, to: 1, label: "test it in the room" },
+      { from: 1, to: 2, label: "one real exchange" },
+      { from: 2, to: 0, label: "revise", gold: true },
+    ]}
+  />
+  <p>And three pieces of work that draw on the loop:</p>
+  <ul>
+    <li>In week 6, a <strong>Protocol Specification</strong> of one subroutine, with conformance tests.</li>
+    <li>Over weeks 9 to 11, an <strong>Interoperation Report</strong>, negotiated with a partner.</li>
+    <li>To finish, a <strong>Personal Protocol Document</strong> or a <strong>Field Experiment</strong>.</li>
+  </ul>
+
+  <h2>The twelve weeks</h2>
+  <div class="home-parts">
+    {
+      parts.map((part) => (
+        <section aria-label={part.name}>
+          <h3>{part.name}</h3>
+          <p>{part.summary}</p>
+          <ol>
+            {part.weeks.map((lecture) => (
+              <li value={lecture.data.week}>
+                <a href={withBase(`/lectures/${lecture.id}/`)}>{lecture.data.title}</a>
+              </li>
+            ))}
+          </ol>
+        </section>
+      ))
+    }
+  </div>
+
+  <h2>What you'll leave able to do</h2>
+  <ol class="home-outcomes">
+    {courseMeta.learningOutcomes?.map((outcome) => <li>{outcome}</li>)}
+  </ol>
+  <p>
+    The outcome is fluency plus choice, without having to become
+    indistinguishable from anybody. You'll be able to run a part of the protocol
+    when it's worth the cost, and decline it knowing what declining costs.
+  </p>
+
+  <h2>Where to go next</h2>
+  <CardGrid columns={2}>
+    <Card title="Week 1" href="/lectures/week-01/">
+      <p>Start where the course does: "how are you?", specified.</p>
+    </Card>
+    <Card title="Timetable" href="/timetable/">
+      <p>Where to be, when, and the room rules nobody writes down.</p>
+    </Card>
+    <Card title={sessionLabels.plural} href="/sessions/">
+      <p>Twelve Thursdays, each with a run sheet and timings.</p>
+    </Card>
+    <Card title="Assessment" href="/assessments/">
+      <p>Four tasks, what each is worth, and every deadline.</p>
+    </Card>
+    <Card title="Readings" href="/readings/">
+      <p>{readingCount} sources, with notes on what was checked.</p>
+    </Card>
+    <Card title="Glossary" href="/glossary/">
+      <p>The vocabulary the class builds, and the week each term arrives.</p>
+    </Card>
+    <Card title="People" href="/people/">
+      <p>Who teaches the course, and who to ask about what.</p>
+    </Card>
+  </CardGrid>
+</ContentLayout>
+
+<style>
+  .home-meta {
+    color: var(--at-text-secondary);
+    font-family: var(--at-font-mono);
+    font-size: var(--at-font-size-sm);
+  }
+
+  .home-hero {
+    margin-block: var(--at-spacing-xl) var(--at-spacing-2xl);
+  }
+
+  .home-thesis {
+    margin: 0 0 var(--at-spacing-md);
+    max-width: 34rem;
+    color: var(--at-heading);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.35;
+  }
+
+  .home-thesis::before {
+    display: none;
+  }
+
+  .home-thesis p {
+    margin: 0;
+  }
+
+  .home-parts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--at-spacing-md) var(--at-spacing-xl);
+  }
+
+  @media (min-width: 48rem) {
+    .home-parts {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .home-parts h3 {
+    margin-block-end: 0.2rem;
+  }
+
+  .home-parts p {
+    margin-block: 0 0.4rem;
+    color: var(--at-text-secondary);
+  }
+
+  .home-outcomes li {
+    margin-block: 0.4rem;
+  }
+</style>

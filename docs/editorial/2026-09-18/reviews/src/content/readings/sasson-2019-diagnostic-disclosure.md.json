@@ -1,0 +1,16 @@
+{
+  "path": "src/content/readings/sasson-2019-diagnostic-disclosure.md",
+  "category": "Readings",
+  "sha256_before": "3e402e8ccd755ee74527f555e902037f61c890da7f1cc3b5490e37b87a2d7702",
+  "status": "edited",
+  "review_note": "Keep the finding and observer-perspective limit without ranking it as an instruction to disclose.",
+  "edits": [
+    {
+      "line": 16,
+      "before": "It is the strongest “disclose” evidence week 10 presents, and it comes from observers rating strangers, which is exactly the limitation the next reading raises.",
+      "after": "These are observers rating strangers. Week 10 reads the result alongside accounts from people deciding whether to disclose.",
+      "reason": "Keep the difference in perspective without ranking the evidence or treating the result as an instruction to disclose."
+    }
+  ],
+  "sha256_after": "5f74ccda018a0ff7e6370be73f5d4efb9ede2b0d40281bb33b5f2a52f47a24ba"
+}

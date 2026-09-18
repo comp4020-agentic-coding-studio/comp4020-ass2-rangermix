@@ -1,0 +1,28 @@
+{
+  "path": "src/content/readings/huang-2017-question-asking.md",
+  "category": "Readings",
+  "sha256_before": "ba940c8859113a4298803d1033b59cb08d75e14c8b451a35710943923e0bc3be",
+  "status": "edited",
+  "review_note": "Keep the correction, critique and reply, including the maintenance-record joke; remove universal claims and repeated vindication.",
+  "edits": [
+    {
+      "line": 3,
+      "before": "Follow-up questions make people like you, they work through perceived responsiveness, and nobody expects them to.",
+      "after": "In three studies, people who asked more questions were better liked; perceived responsiveness helped explain the effect.",
+      "reason": "Replace universal promises and “nobody” with the scope of the reported studies."
+    },
+    {
+      "line": 21,
+      "before": "So the protocol contains an effective, cheap, teachable move that its own fluent users do not know they benefit from. That is the course's argument arriving from the research side rather than the satirical one, and it is why this reading sits in the week about pacing: the follow-up question is how you take a turn without escalating.",
+      "after": "Week 9 uses the follow-up question as a way to take a turn without escalating disclosure.",
+      "reason": "Keep the practical connection; cut the paragraph announcing that research confirms the satire."
+    },
+    {
+      "line": 23,
+      "before": " A finding with a correction notice, an objection and an answer is better documented than anything else this course studies.",
+      "after": "",
+      "reason": "The maintenance-record joke already opens the paragraph. End on the instruction to read the exchange instead of another superlative."
+    }
+  ],
+  "sha256_after": "15da663c0acf8f334ddc328f9028801560aec5fb4f64d50c0c2d1b08ec957be0"
+}

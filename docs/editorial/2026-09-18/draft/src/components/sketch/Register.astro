@@ -1,0 +1,118 @@
+---
+// An open-issues register, drawn: the page at the back of a standards document
+// where the authors list what they know they haven't solved, each with a
+// status stamped beside it.
+//
+// Week 12 makes this argument in prose across three subsections. The register
+// is the artefact that argument is imitating, and seeing all three issues on
+// one sheet with their statuses is what a reader takes away from an RFC's last
+// page. The stamp is rotated because a stamp always is.
+import { box, line, rng } from "../../lib/sketch";
+
+export interface Issue {
+  id: string;
+  title: string;
+  status: string;
+  /** A status that isn't merely open --- drawn in the accent. */
+  contested?: boolean;
+}
+
+interface Props {
+  issues: Issue[];
+  heading?: string;
+  caption: string;
+  seed?: string;
+}
+
+const { issues, heading, caption, seed = caption } = Astro.props;
+const r = rng(seed);
+
+const width = 520;
+const sheetX = 22;
+const sheetW = width - sheetX * 2;
+const rowH = 72;
+const top = heading ? 52 : 24;
+const sheetH = issues.length * rowH + 18;
+
+const sheet = box(sheetX, top, sheetW, sheetH, r);
+
+const stampH = 40;
+const stampRight = sheetX + sheetW - 22;
+// The stamp is cut to fit its word: the monospace inside it is 15px, so a
+// fixed box clipped the longer statuses.
+const stampWidth = (status: string) => Math.max(104, status.length * 9.2 + 26);
+const widestStamp = Math.max(...issues.map((issue) => stampWidth(issue.status)));
+
+const rows = issues.map((issue, i) => {
+  const rowTop = top + 14 + i * rowH;
+  const centreY = rowTop + stampH / 2;
+  const w = stampWidth(issue.status);
+  const x = stampRight - w;
+  return {
+    ...issue,
+    baseline: rowTop + 26,
+    stampX: x,
+    stampW: w,
+    stampD: box(x, rowTop, w, stampH, r),
+    stampTextY: centreY + 5,
+    // A stamp is never quite square to the page.
+    tilt: `rotate(${(r() * 5 - 2.5).toFixed(1)} ${x + w / 2} ${centreY})`,
+    // The rule stops short of the stamps, so it never runs behind one.
+    rule:
+      i === issues.length - 1
+        ? null
+        : line(sheetX + 16, rowTop + rowH - 18, stampRight - widestStamp - 16, rowTop + rowH - 18, r, 0.4),
+  };
+});
+
+const height = top + sheetH + 26;
+const id = `reg-${Math.abs([...seed].reduce((h, c) => (h * 31 + c.charCodeAt(0)) | 0, 7)).toString(36)}`;
+---
+
+<figure class="sketch register" aria-labelledby={`${id}-caption`}>
+  <svg
+    viewBox={`0 0 ${width} ${height}`}
+    style={`max-width: ${width}px`}
+    role="img"
+    aria-labelledby={`${id}-title`}
+    aria-describedby={`${id}-issues`}
+  >
+    <title id={`${id}-title`}>{caption}</title>
+    {heading && <text class="note" x={sheetX} y={top - 16}>{heading}</text>}
+    <path class="ink" d={sheet} />
+    {
+      rows.map((row) => (
+        <g>
+          <text class="timing" x={sheetX + 18} y={row.baseline}>
+            {row.id}
+          </text>
+          <text class="doc-line" x={sheetX + 76} y={row.baseline}>
+            {row.title}
+          </text>
+          <g transform={row.tilt}>
+            <path class={row.contested ? "gold" : "graphite"} d={row.stampD} />
+            <text
+              class={row.contested ? "doc-line-gold" : "doc-line"}
+              x={row.stampX + row.stampW / 2}
+              y={row.stampTextY}
+              text-anchor="middle"
+            >
+              {row.status}
+            </text>
+          </g>
+          {row.rule && <path class="graphite" d={row.rule} />}
+        </g>
+      ))
+    }
+  </svg>
+  <ul class="visually-hidden" id={`${id}-issues`}>
+    {
+      issues.map((issue) => (
+        <li>
+          {issue.id}, {issue.title}: status {issue.status}.
+        </li>
+      ))
+    }
+  </ul>
+  <figcaption id={`${id}-caption`}>{caption}</figcaption>
+</figure>

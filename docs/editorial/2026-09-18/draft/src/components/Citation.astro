@@ -1,0 +1,32 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { withBase } from "astro-theme-university/url";
+
+interface Props {
+  reading: CollectionEntry<"readings">;
+  /** Link the title to the reading's own page. */
+  link?: boolean;
+}
+
+const { reading, link = false } = Astro.props;
+const { authors, year, title, venue } = reading.data;
+
+const names =
+  authors.length > 6
+    ? `${authors[0]} et al.`
+    : authors.length === 1
+      ? authors[0]
+      : `${authors.slice(0, -1).join(", ")} & ${authors.at(-1)}`;
+// A title that ends in its own punctuation doesn't take a full stop after it.
+const stop = /[?!.]$/.test(title) ? "" : ".";
+---
+
+<span class="citation">
+  {names} ({year}).{" "}
+  {link ? (
+    <a href={withBase(`/readings/${reading.id}/`)}><cite>{title}</cite></a>
+  ) : (
+    <cite>{title}</cite>
+  )}{stop}{" "}
+  <span class="citation-venue">{venue}</span>.
+</span>

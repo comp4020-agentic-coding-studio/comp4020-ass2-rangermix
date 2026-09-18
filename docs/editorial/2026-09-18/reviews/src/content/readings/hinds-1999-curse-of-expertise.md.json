@@ -1,0 +1,28 @@
+{
+  "path": "src/content/readings/hinds-1999-curse-of-expertise.md",
+  "category": "Readings",
+  "sha256_before": "fffc13c4a1387c94a52284be3b3cb0956c428249b7306b8f3b136367663eee5c",
+  "status": "edited",
+  "review_note": "Retain the technical-task result, intervention resistance and intermediate group; qualify the teaching extrapolation.",
+  "edits": [
+    {
+      "line": 15,
+      "before": "The part that makes this a finding rather than a platitude: the participants were **resistant to debiasing techniques** aimed at that underestimation.",
+      "after": "The participants were **resistant to debiasing techniques** aimed at that underestimation.",
+      "reason": "The result needs no claim that it rises above a platitude."
+    },
+    {
+      "line": 15,
+      "before": "And a third result, easy to skip: people with an **intermediate** level of expertise predicted more accurately than the experts did.",
+      "after": "People with an **intermediate** level of expertise predicted more accurately than the experts did.",
+      "reason": "Remove the prediction about what readers will skip."
+    },
+    {
+      "line": 19,
+      "before": "Two things follow, one for each side of the room. \"It's obvious\" is not evidence that something is easy; it is evidence about the speaker's fluency, which is exactly the variable that spoils the estimate. And the best person to ask is often not the most fluent one in the room but whoever learned it recently enough to remember the seams. The task Hinds timed was technical, not conversational, and the week takes the shape of her result without claiming anybody measured a tutorial.",
+      "after": "For week 2, try asking someone who still remembers learning the convention. This is a teaching suggestion: Hinds timed a technical task, not a conversation. A fluent speaker's “it's obvious” need not be a reliable estimate of what learning it will cost you.",
+      "reason": "Remove the recurring two-things formula and the unsupported claim about who is usually best to ask; retain the teaching suggestion and study boundary."
+    }
+  ],
+  "sha256_after": "2649c2fcbd6cbba8b415ccdbb10fd200799b78486a3683a1af7876e842af7dc6"
+}

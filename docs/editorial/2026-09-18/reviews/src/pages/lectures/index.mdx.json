@@ -1,0 +1,9 @@
+{
+  "path": "src/pages/lectures/index.mdx",
+  "category": "Site pages",
+  "sha256_before": "e08c94746f17b05bb65a2b65b4df6b55dd99bea5637fec336ee3877273396333",
+  "status": "retained",
+  "review_note": "Retain the lecture schedule, link guidance and glossary direction; all help students navigate.",
+  "edits": [],
+  "sha256_after": "e08c94746f17b05bb65a2b65b4df6b55dd99bea5637fec336ee3877273396333"
+}

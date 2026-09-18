@@ -1,0 +1,124 @@
+{
+  "path": "src/content/lectures/week-03.mdx",
+  "category": "Lectures",
+  "sha256_before": "d3a63c34c7b2c5b7123c6da5434a50cf6b608a50481ebe33a3bd92ea63e94a5c",
+  "status": "edited",
+  "review_note": "Keep the coffee opener, envelope metaphor, decoder and deniability jokes. Remove confident readings of the students or other speakers, redundant claims of significance, and promises that a sender will always retry.",
+  "edits": [
+    {
+      "line": 14,
+      "before": "  - \"Given an envelope somebody sent you, you can name what the sender was uncertain about.\"",
+      "after": "  - \"Given an envelope somebody sent you, you can suggest what the sender is uncertain about or wants to leave off the record.\"",
+      "reason": "Bring the self-check into agreement with the retained higher-order-deniability case, where willingness is already known."
+    },
+    {
+      "line": 30,
+      "before": "Is that a request to schedule coffee? If you've ever replied \"sure, Thursday\nat 10?\" and watched the other person's face do something complicated, you\nalready know the answer. If you've never once wondered, you already know it\ntoo, and you couldn't say how.\n\nThis week gives you the how.",
+      "after": "Is that a request to schedule coffee? If you've replied \"sure, Thursday at\n10?\" and watched the other person's face do something complicated, you've\nencountered the problem. The same line can be an invitation or a way to say\nyou'd like to stay on friendly terms.",
+      "reason": "Keep the specific awkward moment; do not assume what either group of readers knows or can explain."
+    },
+    {
+      "line": 125,
+      "before": "  An envelope marks a place where the sender didn't know the answer. Find the\n  uncertainty and you've found the payload.",
+      "after": "  Ask what the sender is unsure of --- or what the hint lets either of you\n  leave unsaid.",
+      "reason": "Do not make uncertainty the only explanation after the lecture also teaches indirectness when the answer is known."
+    },
+    {
+      "line": 129,
+      "before": "That converts into something you can actually use. Stop asking \"why are they\nbeing like this\" and ask **what is this person not sure of?**",
+      "after": "Ask **what is this person not sure of?** The next section adds a second\nquestion: **what are they keeping off the record?**",
+      "reason": "Give the diagnostic questions directly and include the known-willingness case that follows, without assigning a complaint to the reader."
+    },
+    {
+      "line": 139,
+      "before": "Notice what's in the right column. It's a list of things the sender is\nexposed on. The envelope isn't decoration; it is the sender protecting\nthemselves from an answer they can't predict.",
+      "after": "In each example, the sender risks an answer they can't predict. The envelope\ngives them a way to retreat.",
+      "reason": "Explain the table once, with a concrete function, instead of another instruction to notice the point."
+    },
+    {
+      "line": 150,
+      "before": "A hint that both of you understood perfectly is still not a thing either of you\nsaid. It cannot be quoted, repeated, or held up later.",
+      "after": "Even when both of you understand it, the request itself remains unsaid. The\nsender can dispute what the hint meant.",
+      "reason": "Distinguish the unsaid request from the spoken hint, which can of course be quoted; preserve the deniability point without an absolute guarantee."
+    },
+    {
+      "line": 163,
+      "before": "**Two minutes.** Compare with the pair next to you. Where you disagree, you\nhave found a line that does two different jobs, which is the interesting case.",
+      "after": "**Two minutes.** Compare with the pair next to you. Where you disagree, write\ndown both possible payloads.",
+      "reason": "A disagreement is something to investigate, not proof that both readings are right; retain the activity and timing."
+    },
+    {
+      "line": 207,
+      "before": "A whole industry teaches the previous two sections as instructions for one\nperson: the one who missed it. Before you accept that job, here is what happens\nwhen you measure the other end.\n\n",
+      "after": "",
+      "reason": "The section heading and experiment introduce the sender's role without an unsupported claim about an entire industry."
+    },
+    {
+      "line": 216,
+      "before": "The control is the part that matters. **Overhearers** who had been told the\nspeaker's intention did *not* make the same error.",
+      "after": "**Overhearers** who had been told the speaker's intention did *not* make the\nsame error.",
+      "reason": "Present the relevant comparison without telling the reader it is the only part that matters."
+    },
+    {
+      "line": 232,
+      "before": "This is week 2's curse of expertise, arriving at the level of a single\nsentence. Fluency with your own meaning tells you nothing reliable about how it\nlanded, and the person worst placed to judge the clarity of a hint is the\nperson who sent it.",
+      "after": "Ask the listener what they understood. The sender's confidence cannot tell\nyou that.",
+      "reason": "Turn the practical implication into a check, without equating two different studies or adding an untested worst-judge ranking."
+    },
+    {
+      "line": 237,
+      "before": "Two things follow, and they go to opposite sides of the room.\n\n",
+      "after": "",
+      "reason": "The following paragraphs already address senders and listeners; remove the repeated two-things formula."
+    },
+    {
+      "line": 239,
+      "before": "If you send envelopes: your estimate of how clear that was is biased, in a\nmeasured direction, and knowing this does not make you a good judge of it. When\nit matters, send a second one that is plainer, and don't treat having to as a\nfailure on their part.",
+      "after": "If you send envelopes: when it matters, check what the listener understood.\nSend a second one that is plainer if needed, and don't treat having to as a\nfailure on their part.",
+      "reason": "Retain the bilateral responsibility and action; remove a claim about the effect of knowing the result that this experiment is not described as testing."
+    },
+    {
+      "line": 244,
+      "before": "If you miss them: a missed envelope is a two-sided event with a documented\nsender-side error in it. You can hold that and still want the decoder. Wanting\nto get better at something is not an admission that the whole problem was\nyours.",
+      "after": "If you miss them: the sender may have overestimated how clear they were. You\ncan question the hint and still want the decoder. Wanting to get better at\nsomething is not an admission that the whole problem was yours.",
+      "reason": "Keep shared responsibility and the permission to learn without assigning the experiment's sender-side error to every missed hint."
+    },
+    {
+      "line": 264,
+      "before": "Hold that at its real width. One inference type. One experiment. Two matched\ngroups. It is not a general verdict on pragmatics, and this course isn't\noffering it as one.",
+      "after": "One experiment tested one inference type in two matched groups. It does not\nsettle wider questions about pragmatics.",
+      "reason": "Keep the research boundary in ordinary prose, without the repeated fragment-and-verdict cadence."
+    },
+    {
+      "line": 268,
+      "before": "But notice which way the surprise ran. The people who designed the study\nexpected a difference, said so in print, and reported that they didn't find it\n--- which is the behaviour of a functioning specification process, and the\nreason to trust the result more than the expectation that preceded it.\n\n",
+      "after": "",
+      "reason": "The preceding paragraphs already state prediction and result. Cut the added moral about what makes scholarship trustworthy."
+    },
+    {
+      "line": 284,
+      "before": "Some of you will find the bare version unsendable. That reaction is data. Week\n6 gives it a name and a price.",
+      "after": "If the bare version feels unsendable, write down why. Return to that cost in\nweek 6.",
+      "reason": "Leave students free to report their actual response while preserving the cost-accounting connection."
+    },
+    {
+      "line": 296,
+      "before": "words at face value, and let the speaker send a second, clearer envelope if\nthey need to. Under this protocol, they will.",
+      "after": "words at face value, and let the speaker send a second, clearer envelope if\nthey need to.",
+      "reason": "Keep the boundary on decoding effort without guaranteeing another person's response."
+    },
+    {
+      "line": 308,
+      "before": "If the face-value reading works and nothing was expected of you, that is the\nover-decode. It costs you an hour of thinking and the other person nothing,\nwhich is exactly why it goes unnoticed.",
+      "after": "If the face-value reading works and nothing was expected of you, you may have\nover-decoded. Note how much time you spent on it, and whether the other person\nhad any reason to notice.",
+      "reason": "Replace an invented one-hour cost and guaranteed explanation with observations the student can actually make."
+    },
+    {
+      "line": 315,
+      "before": "all four are in the glossary and all four come back. Plus two findings you will\nreuse: an envelope marks the sender's uncertainty, and the sender is a biased\njudge of its clarity.",
+      "after": "all four are in the glossary and all four come back. An envelope can manage\nuncertainty or leave a request off the record. Senders can overestimate how\nclear they were.",
+      "reason": "Make the recap include both strategic-speaker cases and avoid universalising the experimental sender-bias finding."
+    }
+  ],
+  "sha256_after": "6e78e68627633972a794c29aa1667b63c701cf3db1c1fec7b16c48c950780d8c"
+}

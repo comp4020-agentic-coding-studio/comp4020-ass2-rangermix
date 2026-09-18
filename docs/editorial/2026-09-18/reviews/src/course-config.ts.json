@@ -1,0 +1,9 @@
+{
+  "path": "src/course-config.ts",
+  "category": "Course metadata, glossary and shared copy",
+  "sha256_before": "3374e750e08b5961e63966d45643aaac754035226fe74f05a0b972cec864ce50",
+  "status": "retained",
+  "review_note": "Retain the catalogue description’s maintainer joke and the concrete fluency-and-choice outcomes. Their parallel form states distinct capabilities; changing them for variety would weaken the course identity or alter requirements.",
+  "edits": [],
+  "sha256_after": "3374e750e08b5961e63966d45643aaac754035226fe74f05a0b972cec864ce50"
+}

@@ -1,0 +1,16 @@
+{
+  "path": "src/pages/lectures/[slug].astro",
+  "category": "Site pages",
+  "sha256_before": "18ebcd28c6487426501a20085a024eeb163d19b72ede3d5c9b76c7334eb47b06",
+  "status": "edited",
+  "review_note": "Keep the weekly page structure and self-check heading. Make the journal connection a useful prompt instead of assuming every entry must begin with a failed check.",
+  "edits": [
+    {
+      "line": 40,
+      "before": "    Lines you can check on yourself, without asking anyone. If one is still\n    false by Sunday, that is your next journal entry.",
+      "after": "    Use these checks to choose what to practise or investigate in your next\n    journal entry.",
+      "reason": "Some checks involve other people, and an entry may study a successful exchange. Preserve the prompt without adding a failure-only journal rule."
+    }
+  ],
+  "sha256_after": "9604c5484f156a9048b4bf82e087b4667e251b9a762b13582f05c498034cc0e4"
+}

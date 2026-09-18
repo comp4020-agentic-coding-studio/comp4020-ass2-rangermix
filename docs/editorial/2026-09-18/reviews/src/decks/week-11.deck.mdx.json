@@ -1,0 +1,112 @@
+{
+  "path": "src/decks/week-11.deck.mdx",
+  "category": "Slides and speaker notes",
+  "sha256_before": "e2fecdb15a995a896e1ced1ad3ba02ec7805af4baa957e8e5c11d1ed4c91a5b9",
+  "status": "edited",
+  "review_note": "Retain the study sequence, diagrams, contrast table and negotiation activities. Shorten stage directions that predeclare a thesis or a student reaction, and align the worked-classroom claim with the lecture’s explicitly untested proposal.",
+  "edits": [
+    {
+      "line": 90,
+      "before": "- Their reactions differed. They were not reduced. That distinction is the week in miniature.",
+      "after": "- Their reactions differed. They were not reduced.",
+      "reason": "Keep the research distinction; remove the claim that it encapsulates the whole week."
+    },
+    {
+      "line": 118,
+      "before": "- Name the gap before filling it. They have been carrying both claims for nine weeks without a bridge.",
+      "after": "- Ask how the two claims might be linked before showing the next study.",
+      "reason": "Offer a teaching move instead of narrating what students have supposedly been carrying in their heads."
+    },
+    {
+      "line": 144,
+      "before": "- Read the last clause twice. The judgement is not attached to a category: a hard-to-read neurotypical target got the same treatment.\n- That is the double empathy problem with a correlation coefficient on it.\n- And the authors' own hedge, which we keep: other interpretations of the correlation are also possible. It stays correlational.",
+      "after": "- Explain “independent of target diagnosis” without treating it as evidence that diagnosis had no relationship to the ratings; the study also reports a group difference.\n- Keep the authors’ qualification: other interpretations of the correlation are also possible. This is correlational.",
+      "reason": "Keep the statistical term and its limit without a theatrical instruction or a second declaration that the result proves the theory. Integration: Carry the lecture’s statistical boundary into the presenter instructions."
+    },
+    {
+      "line": 205,
+      "before": "- Sit with it for a second before the next slide, because the next slide is the whole week.",
+      "after": "- Pause before showing the next result.",
+      "reason": "Preserve pacing without declaring another slide to be the whole week."
+    },
+    {
+      "line": 216,
+      "before": "- So the rating and the withdrawal come apart. One is shared; the other is not. Whatever \"awkward\" measures, it is not what decides whether somebody wants to see you again.",
+      "after": "- The rating and the interest in meeting again came apart for the autistic participants in this study.",
+      "reason": "Keep the inference within the study’s sample, matching the edited lecture."
+    },
+    {
+      "line": 229,
+      "before": "- Two methods, two literatures, one shape. This is the strongest argument in the course for interoperation over conversion.\n",
+      "after": "",
+      "reason": "The preceding note already makes the specific cross-study connection."
+    },
+    {
+      "line": 239,
+      "before": "- Not a sentimental objection. The evidence keeps locating the variance in the link, and the instruction keeps being aimed at a node.",
+      "after": "- The evidence also locates variation in the link between people.",
+      "reason": "Keep the engineering metaphor without the defensive claim about sentiment."
+    },
+    {
+      "line": 246,
+      "before": "**Four minutes.** One thing about how you talk that changes depending on who you're with. Then the hard half: **how would you know if you were wrong?** What would you observe?",
+      "after": "**Four minutes.** One thing about how you talk that changes depending on who you're with. Then write the test: **how would you know if you were wrong?** What would you observe?",
+      "reason": "Match the lecture’s instruction without predicting difficulty."
+    },
+    {
+      "line": 248,
+      "before": "**Three minutes, in pairs.** Read out only the *test*. Check each other's tests are runnable --- week 2's rule, at the last week of content.",
+      "after": "**Three minutes, in pairs.** Read out only the *test*. Check each other's tests are runnable.",
+      "reason": "Keep the task and cut the announcement of the course arc."
+    },
+    {
+      "line": 253,
+      "before": "- That last minute is the week's point, and it is the first clause of their bilateral protocol.",
+      "after": "- Ask what they would need to agree with the other person before running the test.",
+      "reason": "Make the negotiation step concrete instead of announcing the week’s point."
+    },
+    {
+      "line": 284,
+      "before": "Every box a different make of machine. None of them was replaced to join.",
+      "after": "Different makes of computer on one network.",
+      "reason": "The image visibly repeats models such as PDP-11. Describe the variety it shows without claiming every box is unique or that no machine was ever replaced."
+    },
+    {
+      "line": 309,
+      "before": "- The left column is where their first drafts will land on Thursday, so show it now rather than marking it later.",
+      "after": "- If a draft resembles the left column, ask the pair to add a scope and a check.",
+      "reason": "Replace an invented classroom prediction with a conditional response to an observable draft."
+    },
+    {
+      "line": 324,
+      "before": "- A week that ends with \"and this is the thesis\" owes the room its limits, out loud, before the thesis.",
+      "after": "- State that the class’s own shared-vocabulary proposal is untested; the partnership labs let students try it.",
+      "reason": "Use the limitation slide to state the missing limit rather than praise the course for having a limitations slide."
+    },
+    {
+      "line": 375,
+      "before": "- That was the argument all along. Point at the glossary: it's the record.",
+      "after": "- Point to the glossary, then ask which terms helped partners state and revise their clauses.",
+      "reason": "Invite students to assess the vocabulary instead of declaring the classroom demonstration a success."
+    },
+    {
+      "line": 391,
+      "before": "One clause is a real protocol. Five is Thursday's job.",
+      "after": "One clause is a real protocol. Draft the rest on Thursday.",
+      "reason": "Align the exercise instruction with the unchanged minimum of four in the lab and report."
+    },
+    {
+      "line": 403,
+      "before": "- The term arrives late and has to carry the whole course, so spend a minute on what it is not.",
+      "after": "- Check these three distinctions before students finish their clauses.",
+      "reason": "Keep the delivery instruction without a claim about how much conceptual weight the term carries."
+    },
+    {
+      "line": 415,
+      "before": "Next week: open issues, errata, and where to read further. The course tells you what it doesn't know.",
+      "after": "Next week: open issues, errata, and where to read further.",
+      "reason": "Let the transition’s concrete list speak for itself."
+    }
+  ],
+  "sha256_after": "b2bcd5076936251faebdd9371ed3aa7d042a29a3e29ec790c11ec170a57de062"
+}

@@ -1,0 +1,22 @@
+{
+  "path": "src/content/readings/moskowitz-2004-power-comment.md",
+  "category": "Readings",
+  "sha256_before": "3f38d38cdf576e69c42c82f9d2665e20bc9bc23dbbd3172a41c169763b40b738",
+  "status": "edited",
+  "review_note": "Keep the exact criticism and testability standard; remove drafting history and claims of being the best erratum.",
+  "edits": [
+    {
+      "line": 17,
+      "before": "OI-3 was labelled \"contested\" on the strength of there being a published criticism somewhere. This is it, and reading it changes what the label means. The objection is not that the account is false. It is that **the specification, as written, is not yet testable by the evidence offered for it** — and here is the experiment that would settle it.",
+      "after": "This is the objection behind OI-3's “contested” label: the evidence offered does not distinguish the proposed effects from a weaker account. The comment sets out ways to test that distinction.",
+      "reason": "Replace course-drafting history with the actual reason for the label."
+    },
+    {
+      "line": 19,
+      "before": "That is the best erratum in this course's reading list, and week 12 teaches it as the model for the course's own. An honest known-issue names the claim, says what evidence would decide it, and stays open until somebody runs that test. E‑1 through E‑5 are written to that standard, and if they aren't, this is the thing to measure them against.",
+      "after": "Week 12 uses this as a model for errata E‑1 through E‑5: name the claim, say what evidence would decide it, and leave it open until that test has been run.",
+      "reason": "Keep the usable standard and cross-reference; remove the superlative and assurance of the course's honesty."
+    }
+  ],
+  "sha256_after": "280f0f27f8f17946e805906e068bb9ef013953f509bc9fba4a3ad530026049b6"
+}

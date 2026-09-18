@@ -1,0 +1,9 @@
+{
+  "path": "src/content.config.ts",
+  "category": "Course metadata, glossary and shared copy",
+  "sha256_before": "e80da932fd1e8faa35b97295ec63097af15c1c37dcd82bffa76a5ea354daa08b",
+  "status": "retained",
+  "review_note": "Retain schema and validation messages. This file defines data contracts and author-facing errors, not authored student prose; code and comments are outside the requested copy edit.",
+  "edits": [],
+  "sha256_after": "e80da932fd1e8faa35b97295ec63097af15c1c37dcd82bffa76a5ea354daa08b"
+}

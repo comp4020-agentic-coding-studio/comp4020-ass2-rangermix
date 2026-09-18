@@ -1,0 +1,82 @@
+{
+  "path": "src/content/lectures/week-07.mdx",
+  "category": "Lectures",
+  "sha256_before": "ef06539e562b1c99c8d37aa09efe172906011b401a7b7bbf7413bf4f9167ec36",
+  "status": "edited",
+  "review_note": "Keep the quiet practical runbook, saved messages, recovery checklist and direct support information. Remove narration about the course’s intentions and unsupported predictions; mark the timetable of states as a planning model rather than a recovery deadline.",
+  "edits": [
+    {
+      "line": 28,
+      "before": "This lecture is the last one before a two-week break, and that is on purpose.\nWeek 6 kept the books. This week is about what happens when the books don't\nbalance for long enough, and the break is when you'll have the room to use\nwhat's here.\n\nIt's also the week where the protocol framing is most useful, because a\nrunbook is a real engineering tool: decisions made in advance, by the version\nof you who can make them, for the version of you who can't.",
+      "after": "Week 6 kept the books. This week is about what happens when they don't\nbalance for long enough. Before the two-week break, you'll write a runbook:\ndecisions made in advance, by the version of you who can make them, for the\nversion of you who can't.",
+      "reason": "Keep the budget-to-runbook transition without announcing that the timetable and metaphor are clever design decisions."
+    },
+    {
+      "line": 49,
+      "before": "Overload and shutdown are recovered from in hours or a day. Burnout isn't,\nand the difference matters for what you do.",
+      "after": "These are planning time scales, not recovery deadlines. The table separates\nan immediate demand for quiet from a load that has been accumulating for weeks.",
+      "reason": "Do not turn the course’s illustrative time scales into an unsupported promise about how quickly a person will recover."
+    },
+    {
+      "line": 54,
+      "before": "Say it here rather than in week 12's errata, because you need the correction\nbefore you write a runbook.\n\n",
+      "after": "",
+      "reason": "The heading already introduces the limitation; remove the announcement of where the course has decided to teach it."
+    },
+    {
+      "line": 62,
+      "before": "So *shutdown* is not the course's coinage, which is reassuring. But the three\nscales are an **incomplete map**, and two things that happen to people are\nmissing from it. Phung and colleagues interviewed **eight autistic children and\nyouth** and found BIMS described as a multi-faceted experience with\n**emotional, cognitive and physical** components, and one **often misunderstood\nby the people around them**.",
+      "after": "The three scales are an **incomplete map**. Phung and colleagues interviewed\n**eight autistic children and youth** and found BIMS described as a\nmulti-faceted experience with **emotional, cognitive and physical** components,\nand one **often misunderstood by the people around them**.",
+      "reason": "Keep the study and the model’s limitation; remove relief about the course having guessed a term correctly."
+    },
+    {
+      "line": 69,
+      "before": "Eight young people is a small study and it is not about adults, so nothing here\nis a claim about how common any of this is. What it does establish is that a\nrunbook addressing mood alone would miss most of what is happening, and that\nyour runbook should have room for a state this course didn't name.",
+      "after": "Eight young people is a small study and it is not about adults, so nothing here\nis a claim about how common any of this is. Use the emotional, cognitive and\nphysical components as prompts for your runbook, and leave room for a state\nthis course didn't name.",
+      "reason": "Keep the sample limits and practical prompts without claiming the study measures how much a mood-only runbook would miss."
+    },
+    {
+      "line": 75,
+      "before": "  The map has four territories. This course drew three.",
+      "after": "  Two named states are missing from this map.",
+      "reason": "The course’s three rows and BIMS are overlapping lists, not three of the same four territories."
+    },
+    {
+      "line": 118,
+      "before": "Two things follow, and the second one is uncomfortable.\n\nThe sensory load is real, it differs between groups in the same room, and it\ncan be compared. That is what makes it a parameter rather than a mood.\n\nAnd the setting they studied is one this lecture is about to tell you to\ncontact. Hold that until §6.",
+      "after": "The study compares reported sensory discomfort in a specific setting. That\nsetting is also one this lecture is about to tell you to contact. Hold that until §6.",
+      "reason": "Replace the repeated dramatic signpost with the actual connection, and avoid implying the questionnaire observed both groups in the same room."
+    },
+    {
+      "line": 136,
+      "before": "Most people find their earliest sign is invisible to everyone but them. That is\nexactly why it goes in a runbook rather than being left to be spotted.",
+      "after": "If the sign would be hard for someone else to notice, write down how you\ncould tell them when it appears.",
+      "reason": "Turn a predicted classroom finding into a useful conditional instruction."
+    },
+    {
+      "line": 141,
+      "before": "The whole room will need the break for something. In occupational health\nresearch, Sonnentag and Fritz separated four kinds of **recovery experience** from work\n(Sonnentag & Fritz, 2007):",
+      "after": "In occupational health research, Sonnentag and Fritz separated four kinds of\n**recovery experience** from work (Sonnentag & Fritz, 2007):",
+      "reason": "Introduce the checklist without claiming to know what everyone needs from the break."
+    },
+    {
+      "line": 164,
+      "before": "  caption=\"Mission Control during Apollo 13's return, April 1970. The room is improvising, and it is doing so on top of procedures written months earlier by people who were not tired. That is what a runbook buys: not the absence of a crisis, but decisions you do not have to make during one.\"",
+      "after": "  caption=\"Mission Control during Apollo 13's return, April 1970. Flight plans and open documents cover the consoles. A runbook keeps earlier decisions available when you need them.\"",
+      "reason": "Retain the image’s documented context and visible papers; remove invented detail about when its procedures were written and how rested their authors were."
+    },
+    {
+      "line": 180,
+      "before": "The **what gets dropped** section is the one people skip, and it's the one the\nburnout research supports most directly. A runbook that only adds recovery\nactivities to a full week hasn't changed the load.",
+      "after": "Fill in **what gets dropped** before adding recovery activities. A runbook\nthat only adds things to a full week hasn't changed the load.",
+      "reason": "Give the practical instruction without claiming to know which section people usually omit."
+    },
+    {
+      "line": 208,
+      "before": "One honest word about the services first. Strömberg et al. found autistic\nadults reporting more sensory discomfort and feeling more misunderstood in",
+      "after": "Strömberg et al. found autistic adults reporting more sensory discomfort and\nfeeling more misunderstood in",
+      "reason": "Trust the direct account of the study without announcing that the course is being honest."
+    }
+  ],
+  "sha256_after": "bc6706b60f42e131d5cc76320d28e522411cab692d0f75a05a2cf82451ef968e"
+}

@@ -1,0 +1,16 @@
+{
+  "path": "src/content/sessions/week-09.md",
+  "category": "Sessions",
+  "sha256_before": "39a8a5aa12b4713b34bbaa04b78b7e290f3916969981cc10b95ef7116a9cad38",
+  "status": "edited",
+  "review_note": "Keep the partner exercise, pass rule, three clauses and private reflection. State the lab’s level-2 ceiling as a consent and scope rule, not a universal timetable for intimacy.",
+  "edits": [
+    {
+      "line": 29,
+      "before": "No card in this room goes above level 2. Level 3 and 4 conversations are for\npeople who've put the hours in, and a lab partnership hasn't yet.",
+      "after": "No card in this room goes above level 2. You have been assigned a lab\npartner, not agreed to discuss your family or health.",
+      "reason": "Preserve the exercise’s ceiling and dry tone without imposing a universal minimum time before deeper conversation."
+    }
+  ],
+  "sha256_after": "703b1ad24d23b720624a7f7140add5e133059f26fa738f9adbb824b52e1370a6"
+}

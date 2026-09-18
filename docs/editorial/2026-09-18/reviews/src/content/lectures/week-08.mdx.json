@@ -1,0 +1,106 @@
+{
+  "path": "src/content/lectures/week-08.mdx",
+  "category": "Lectures",
+  "sha256_before": "ce2edc766b025829a78a2465656dfa238a03177cc45819d262aae569f49acb38",
+  "status": "edited",
+  "review_note": "Keep the institutional deadpan, studies, seven-clause specimen and practical requests. Stop telling individual students that their fears are necessarily wrong, and separate tested findings from the course’s own email conventions.",
+  "edits": [
+    {
+      "line": 15,
+      "before": "  - \"You can name the two wrong estimates that keep an email in drafts, and say which one was yours the last time.\"",
+      "after": "  - \"You can name the two estimates the research challenges, and compare them with what stopped your last ask.\"",
+      "reason": "Keep the self-check about both estimates without requiring the reader to declare a justified concern wrong."
+    },
+    {
+      "line": 57,
+      "before": "The other half of institutional protocol is whether you ask at all. People\nunderestimate how likely others are to say yes to a direct request for help,\nby **as much as 50%**. The reason: someone deciding whether to ask thinks about\nwhat saying yes costs the helper, and forgets that saying no is socially costly\ntoo (Flynn & Lake, 2008).",
+      "after": "The other half of institutional protocol is whether you ask at all. In\nFlynn and Lake's studies, people underestimated how likely others were to say\nyes to a direct request for help, by **as much as 50%**. The askers focused on\nwhat saying yes cost the helper and underestimated the social cost of saying\nno (Flynn & Lake, 2008).",
+      "reason": "Keep the result and proposed mechanism tied to the studies rather than asserting that every reader underestimates their own chances."
+    },
+    {
+      "line": 64,
+      "before": "  Your estimate of the odds is wrong, and wrong in your disfavour.",
+      "after": "  What would a yes cost them? What would a no cost them?",
+      "reason": "Make the marginal note a usable prompt rather than a verdict about the student’s judgement."
+    },
+    {
+      "line": 67,
+      "before": "A clear, answerable request is the easiest kind of request to say yes to.",
+      "after": "Make the request specific enough to answer.",
+      "reason": "Keep the instruction without claiming a universal ranking of requests."
+    },
+    {
+      "line": 71,
+      "before": "That covers *they will say no*. It doesn't cover the one that actually keeps\nthe email in drafts, which is **they will think less of me for asking**.",
+      "after": "Another concern can keep an email in drafts: **they will think less of me\nfor asking**.",
+      "reason": "Introduce the second concern without diagnosing what really stops the reader."
+    },
+    {
+      "line": 79,
+      "before": "So both of the estimates that stop you are wrong, and wrong in the same\ndirection. You are overestimating the chance of a no, and you are wrong about\nwhat asking makes you look like.",
+      "after": "Before leaving the email in drafts, separate those predictions: *will they\nsay no?* and *will they think less of me?* What evidence do you have for each?",
+      "reason": "Let the reader reconsider their own situation without converting group results into a guaranteed personal outcome."
+    },
+    {
+      "line": 89,
+      "before": "| the person asked was an **expert** | ask whoever actually knows, which is usually not the friend in the seat next to you |",
+      "after": "| the person asked was an **expert** | ask whoever has the relevant knowledge |",
+      "reason": "Remove an unsupported aside dismissing a classmate’s expertise."
+    },
+    {
+      "line": 105,
+      "before": "reported academic strengths (Gurbuz et al., 2019). The shape of that finding is\nthe week's premise. The work is often not the hard part. The hard part is the\nundocumented layer around it: the email, the office door, the group chat.\n\nEveryone meets that layer. Some people arrived already fluent in it, from\nfamily or school. Nobody was handed it in writing. So here it is.",
+      "after": "reported academic strengths (Gurbuz et al., 2019). The email, the office door\nand the group chat can add demands around the academic work. Some of their\nconventions are learned from family or school; the course writes them down.",
+      "reason": "Keep the practical problem without claiming all academic work is easy, everyone met the same layer, or nobody has ever received written guidance."
+    },
+    {
+      "line": 114,
+      "before": "Before the scripts, one thing you should hear from the other side of the desk.\n\n",
+      "after": "",
+      "reason": "The section heading and staff interview already establish the change in perspective."
+    },
+    {
+      "line": 130,
+      "before": "Read that twice, because it changes what the rest of this lecture is.\n\n",
+      "after": "",
+      "reason": "Let the staff’s admission land without instructing the reader how significant to find it."
+    },
+    {
+      "line": 132,
+      "before": "Everything after this section is a set of scripts for asking well. They work,\nand they are worth having, and self-advocacy is associated with educational and\nemployment outcomes --- though the review reporting that calls them\n\"encouraging associations\" rather than a proven effect, and so does this course\n(Martino et al., 2025).",
+      "after": "The scripts below make requests specific. A review links self-advocacy with\neducational and employment outcomes, but calls these \"encouraging associations\", not a proven effect of teaching these scripts (Martino et al.,\n2025).",
+      "reason": "Preserve the review’s hedge without claiming the course’s own templates have already been shown to work."
+    },
+    {
+      "line": 145,
+      "before": "So hold both. The scripts below are what works this semester, in this building,\nwith this system. They are not a verdict that the system is right to need\nthem. The authors note their study heard from staff only, and that autistic\nstudents would give a fuller picture.",
+      "after": "Use the scripts where they help. Needing them does not make the system right\nto require them. The authors note that their study heard from staff only, and\nthat autistic students would give a fuller picture.",
+      "reason": "Keep the critique of institutional responsibility without promising the scripts work for every student here."
+    },
+    {
+      "line": 159,
+      "before": "Keep the answers. Question 3 is the one this week is really about, and the one\nDavies and Bagnall's staff were describing from the other end.",
+      "after": "Keep the answers for the lab, where you'll test the email specification.",
+      "reason": "Give a reason to retain the activity’s output instead of announcing what the week is really about."
+    },
+    {
+      "line": 164,
+      "before": "The course's specification, in seven clauses. The wording is a template; the\nclauses are what a tutor's inbox rewards.",
+      "after": "The course's specification, in seven clauses. Use the wording as a template;\ntest the clauses in the lab.",
+      "reason": "Identify the course’s convention without pretending an inbox guarantees a reward for compliance."
+    },
+    {
+      "line": 193,
+      "before": "Clause 4 does the most work. An email with three requests gets the easiest one\nanswered. Send three emails.",
+      "after": "Clause 4 makes it possible to check whether the reply answered your question.\nSend separate emails for separate requests.",
+      "reason": "Keep the one-request rule while removing an unsupported claim about which request tutors always answer."
+    },
+    {
+      "line": 246,
+      "before": "The last line is the one that saves groups. Without it, silence gets read\nthrough whatever each member already fears.",
+      "after": "Agree what silence means before someone goes quiet. Otherwise the group has\nto guess.",
+      "reason": "Keep the practical reason for the going-quiet clause without claiming it saves every group or diagnosing every member’s fears."
+    }
+  ],
+  "sha256_after": "e8bd30bfd8a7f786ba6f4d2dece4c3dd00225ca5cbca6bb6f1543010251f70ce"
+}

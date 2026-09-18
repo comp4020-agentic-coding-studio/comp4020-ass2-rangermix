@@ -1,0 +1,9 @@
+{
+  "path": "src/content/sessions/week-07.md",
+  "category": "Sessions",
+  "sha256_before": "35eb8ee5e96b457234ea0283b5a40a2a84de2476daf90637a818b94048bb17a7",
+  "status": "retained",
+  "review_note": "Retain the full lab. Its room details, optional sharing, permission to write elsewhere, partial-runbook fallback and corrected deadlines are concrete and humane. The catch-up-work joke earns its place and needs no added explanation.",
+  "edits": [],
+  "sha256_after": "35eb8ee5e96b457234ea0283b5a40a2a84de2476daf90637a818b94048bb17a7"
+}

@@ -1,0 +1,9 @@
+{
+  "path": "src/components/sketch/Chain.astro",
+  "category": "Components and diagram copy",
+  "sha256_before": "053868c6b856737a6bc67554f9b0090e2b2dca9af0b2d3fa53e304bfafad01d4",
+  "status": "retained",
+  "review_note": "Retain the short story-retelling annotation and accessible chain description. They explain the depicted method directly, while captions and group labels are supplied by the lecture and deck.",
+  "edits": [],
+  "sha256_after": "053868c6b856737a6bc67554f9b0090e2b2dca9af0b2d3fa53e304bfafad01d4"
+}

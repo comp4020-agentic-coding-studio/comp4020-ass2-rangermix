@@ -36,6 +36,18 @@
       "reason": "The next two paragraphs already address the two audiences; remove a repeated lecture formula."
     },
     {
+      "line": 128,
+      "before": "If you run the protocol fluently: \"it's obvious\" is not evidence that a thing is\neasy. It is evidence about you. It is a report on your own fluency, which is\nprecisely the variable that spoils the estimate --- and being warned, as you\nhave now been, does not reliably fix it.",
+      "after": "If you run the protocol fluently: \"it's obvious\" describes your experience.\nAsk which step the other person is trying to learn before estimating how much\ntime or effort they will need.",
+      "reason": "Keep the implication for fluent students without treating a technical-task finding as a measurement of their social estimates or response to this lecture."
+    },
+    {
+      "line": 133,
+      "before": "If you don't: the most fluent person is not your best source. Hinds found\n**intermediate** expertise predicted more accurately than expert. The classmate\nwho worked out the tutorial protocol last year remembers the seams. The one who\nnever had to work it out has nothing to remember.",
+      "after": "If you don't: Hinds suggests **intermediate** expertise may improve estimates\nof novice performance. The course's teaching suggestion is to ask a classmate\nwho learned the tutorial protocol recently which steps they had to work out.",
+      "reason": "Match the research record's qualified suggestion and identify the recent-learner recommendation as a teaching application, not a measured social result."
+    },
+    {
       "line": 176,
       "before": "Style was judged before substance. That will matter more than anything else\nin how you take notes.",
       "after": "Record what was said and done before judging how it came across.",
@@ -102,5 +114,5 @@
       "reason": "Preserve every submission rule and cut a repeated explanation of the absence of a word count."
     }
   ],
-  "sha256_after": "fa2cd182b66dade0687299e419be2c34af2f530d3c3a8fd24ed368eb9c45b3e2"
+  "sha256_after": "8efdae5dbfd0b85c6c416c26eb1ff832bdbd4181f41af6eb1ad9c05d49e9ee89"
 }

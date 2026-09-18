@@ -1,0 +1,9 @@
+{
+  "path": "src/lib/sketch.ts",
+  "category": "Course metadata, glossary and shared copy",
+  "sha256_before": "3939c08950feef53f0874d2bca29651bed50e75209f6406cf28a5e4d78aa5217",
+  "status": "retained",
+  "review_note": "Retain unchanged: SVG geometry helpers with no authored student prose. Source comments are outside this review’s student-copy scope.",
+  "edits": [],
+  "sha256_after": "3939c08950feef53f0874d2bca29651bed50e75209f6406cf28a5e4d78aa5217"
+}

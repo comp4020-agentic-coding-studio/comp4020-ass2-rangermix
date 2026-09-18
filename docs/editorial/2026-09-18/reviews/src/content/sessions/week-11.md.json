@@ -1,0 +1,16 @@
+{
+  "path": "src/content/sessions/week-11.md",
+  "category": "Sessions",
+  "sha256_before": "18a763b75c103d76535baaf1e8f5cd6e14bf643b99469490119cb54862c86178",
+  "status": "edited",
+  "review_note": "Keep the negotiation procedure, separate accounts, vocabulary audit and deadline. Remove the claim that the course knows which paragraph of an unwritten report will be most interesting.",
+  "edits": [
+    {
+      "line": 27,
+      "before": "| 0:35--0:40 | Now compare. Where do your two accounts of who conceded what disagree? Note it; don't resolve it. It's the most interesting paragraph in your report. |",
+      "after": "| 0:35--0:40 | Now compare. Where do your two accounts of who conceded what disagree? Note it; don't resolve it. Report both accounts. |",
+      "reason": "Keep the useful instruction to retain disagreement without predicting the quality of the student’s eventual report."
+    }
+  ],
+  "sha256_after": "9b08b6c6427c221491369542c258f0058a94e5d68685b42b0b94c9b2bc237515"
+}

@@ -1,0 +1,160 @@
+{
+  "path": "src/decks/week-12.deck.mdx",
+  "category": "Slides and speaker notes",
+  "sha256_before": "5b94c14ca14a567fb4da41c211ce1d5b76383e3dce89f410b306e1ee0cbc3140",
+  "status": "edited",
+  "review_note": "Align the final deck and notes with the lecture’s shorter explanations. Preserve the open-issues and errata structure, quotations, slide order, timings and assessment rules; flag the remaining repeated closing slides and substantive ethics questions separately.",
+  "edits": [
+    {
+      "line": 42,
+      "before": "- That's the honest reason, and it's why this week sketches rather than teaches. Say it as a limitation, not as modesty.",
+      "after": "- State the scope limits before introducing the three issues.",
+      "reason": "Give a delivery instruction instead of certifying honesty and explaining how modest the course should sound."
+    },
+    {
+      "line": 59,
+      "before": "- This is the slide the course has been building towards: a register, stamped, with the course's own name on it.",
+      "after": "- Keep the three issue numbers visible as you introduce them.",
+      "reason": "Use the note for orientation rather than another declaration of culmination."
+    },
+    {
+      "line": 88,
+      "before": "- Until this, OI-1 rested entirely on an inventory of how people say they flirt, in the general population. That was not good enough for an open issue with this much at stake.",
+      "after": "- Distinguish the intimacy study from the self-reported flirting inventory.",
+      "reason": "Retain the distinction between sources without narrating the course’s research history or praising the correction."
+    },
+    {
+      "line": 113,
+      "before": "The hardest open issue in the course needs **no vocabulary this course hasn't already built.**",
+      "after": "Two places to start with OI-1.",
+      "reason": "Do not declare that two earlier concepts supply everything needed for the open issue."
+    },
+    {
+      "line": 116,
+      "before": "- That is a better argument for how the twelve weeks are arranged than anything I could assert about romance.\n",
+      "after": "",
+      "reason": "The slide already makes the cross-week connections; remove the praise of the course’s structure."
+    },
+    {
+      "line": 147,
+      "before": "- We taught it so they could interoperate. Nothing in the material stops it being used the other way, and saying so is the only honest position available.",
+      "after": "- Ask how using the same technique to make a sale would change its purpose.",
+      "reason": "Use the existing sale example to expose the ethical question instead of announcing the only honest teaching position."
+    },
+    {
+      "line": 154,
+      "before": "Route two varies a protocol parameter on people who never agreed to be in a study. That is the design, and it is why the reflection carries 35%.",
+      "after": "Route two varies a protocol parameter on people who never agreed to be in a study. The reflection carries 35%: account for what you do to them.",
+      "reason": "Keep the marked requirement and its concrete purpose without a defensive declaration about the design."
+    },
+    {
+      "line": 164,
+      "before": "- Question 1 is the one they will push against. Garfinkel breached expectancies on purpose and it worked -- and he was studying strangers he would never see again.\n- They are varying a parameter on flatmates and tutors. Different consent, different aftermath. \"Less eye contact than usual\" is ordinary; \"none at all\" is a breach.",
+      "after": "- Garfinkel’s method deliberately breached expectancies. This experiment keeps variations inside ordinary behaviour; students may be working with people they will see again.\n- The course’s current rule is: \"less eye contact than usual\" is ordinary; \"none at all\" is a breach.",
+      "reason": "Remove the predicted classroom dispute and unverified description of Garfinkel’s participants; retain and separately flag the existing eye-contact rule."
+    },
+    {
+      "line": 176,
+      "before": "**One minute.** Whose parameter failed a question? Hands up. Failing here costs nothing; failing on Thursday costs a redesign.",
+      "after": "**One minute.** Whose parameter failed a question? Hands up. Use the failed question to revise it before Thursday.",
+      "reason": "Match the lecture’s practical next step instead of repeating a polished cost contrast."
+    },
+    {
+      "line": 203,
+      "before": "The slide before says the account \"has drawn published criticism\".\n\nThat is exactly the sort of thing a specification should not be allowed to say without a number attached.\n\nSo: **Moskowitz (2004), Psychological Review 111(3), 808--811.**",
+      "after": "Which claim can the existing studies test: that high and low power differ, or how each affects behaviour?\n\n**Moskowitz (2004), Psychological Review 111(3), 808--811.**",
+      "reason": "Replace a staged correction of the previous slide with the methodological question the cited comment raises."
+    },
+    {
+      "line": 210,
+      "before": "- Catch myself doing it, out loud. A vague gesture at a controversy is the documentation failure this whole course is about.",
+      "after": "- Keep the comment beside the proposal as you explain what it challenges.",
+      "reason": "The presenter should explain the criticism rather than perform discovering a lapse written into the deck."
+    },
+    {
+      "line": 239,
+      "before": "- Best-formed known issue on the whole reading list, and the model for the next slide but one.",
+      "after": "- Use the comment’s format for the errata exercise: claim, evidence limit, test.",
+      "reason": "Keep the reusable form without ranking the paper against an entire reading list."
+    },
+    {
+      "line": 275,
+      "before": "The register isn't finished and was never meant to be.\n\n",
+      "after": "",
+      "reason": "The E-6 activity already makes the invitation to add entries explicit."
+    },
+    {
+      "line": 284,
+      "before": "- If they are stuck, send them to the \"the course's own observation\" line at the foot of each week's research review. Every entry there is a candidate, and they are listed for exactly this.",
+      "after": "- If they are stuck, send them to the \"the course's own observation\" line at the foot of each week's research review. Each entry is a candidate.",
+      "reason": "Keep the useful fallback and cut the claim that the documentation was designed for this exact moment."
+    },
+    {
+      "line": 297,
+      "before": "- The reason to say this in the last week rather than never is that they are about to write a capstone using both.",
+      "after": "- Ask students to identify where their capstone relies on either model.",
+      "reason": "Turn commentary on the lecture’s timing into an application of the stated limitation."
+    },
+    {
+      "line": 310,
+      "before": "Every entry point comes with what it can't tell you. That is the format, not a disclaimer.",
+      "after": "Each reading comes with its limit.",
+      "reason": "The direct description fits the table without another rhetorical contrast."
+    },
+    {
+      "line": 313,
+      "before": "- If they take one habit out of this course, make it this one: find out what the source cannot tell you before you quote what it can.",
+      "after": "- Ask what each source does not establish before students use it in a capstone.",
+      "reason": "Keep the source-use instruction without another final-life-lesson cadence."
+    },
+    {
+      "line": 323,
+      "before": "It would be easier to write, easier to assess, and it is the outcome this course was built to refuse.",
+      "after": "That is not this course’s outcome.",
+      "reason": "Keep the refusal without claiming that the alternative would be easier to write or assess."
+    },
+    {
+      "line": 328,
+      "before": "- Say it plainly and once. They will have met the other version -- in a programme, a clinic, a well-meaning relative -- and they should be able to name the difference.",
+      "after": "- Say it plainly and once. Do not assume everyone in the room has encountered a corrective programme or clinic.",
+      "reason": "Remove an invented shared personal history and make the presenter’s mixed-classroom obligation explicit."
+    },
+    {
+      "line": 344,
+      "before": "- Walk it and name the artefact each part produced. They have built six or seven documents this semester and mostly have not noticed.",
+      "after": "- Walk it and name the artefact each part produced.",
+      "reason": "Keep the recap instruction without a claim about what students have failed to notice."
+    },
+    {
+      "line": 357,
+      "before": "- Then the point: a deliberately mixed room negotiated this, one week at a time, and it lets both halves talk about the same exchange in the same terms. That was the argument, and the glossary is its record.",
+      "after": "- Point to the glossary. Ask which terms helped partners describe the same exchange and where the terms fell short.",
+      "reason": "Invite evaluation of the shared vocabulary rather than declaring that the course has proved its argument."
+    },
+    {
+      "line": 390,
+      "before": "- This is the last thing the room hears in a lecture. Don't rush it, and don't add to it.",
+      "after": "- Pause before moving to the capstone exercise.",
+      "reason": "The deck still has an exercise and several slides after this; preserve deliberate pacing without announcing a false ending."
+    },
+    {
+      "line": 405,
+      "before": "- They arrive at the clinic with something instead of a blank page. That is the entire purpose of these nine minutes.",
+      "after": "- Keep the paragraph for Thursday’s clinic.",
+      "reason": "Give the continuity instruction without explaining the purpose again."
+    },
+    {
+      "line": 412,
+      "before": "Three open issues. Five errata. That is the honest state of a twelve-week specification of something nobody had written down.",
+      "after": "Three open issues. Five errata.",
+      "reason": "Let the following comparison carry the final satire without another certification of honesty."
+    },
+    {
+      "line": 425,
+      "before": "Due **Sunday 13 June, 23:59** --- two weeks after teaching ends, on purpose. Two routes, equal weight:",
+      "after": "Due **Sunday 13 June, 23:59** --- two weeks after teaching ends. Two routes, equal weight:",
+      "reason": "Keep the deadline and interval without the repeated announcement of intentional design."
+    }
+  ],
+  "sha256_after": "5707df97d6b2f22128cd22542b1ae96052164e45f31220437cb4d9b32d2ebf5a"
+}

@@ -1,0 +1,28 @@
+{
+  "path": "src/content/readings/quinn-2009-concealable-identity.md",
+  "category": "Readings",
+  "sha256_before": "20a4bfa44b933ede0376c5f70a299eed789256fc775b054b416e9979f7e1b0a5",
+  "status": "edited",
+  "review_note": "Preserve sample sizes and predictors; distinguish the course's institutional question from a tested intervention.",
+  "edits": [
+    {
+      "line": 18,
+      "before": "Every other reading in week 10 prices telling. This one prices the other state, and finds it isn't free.\n\n",
+      "after": "",
+      "reason": "The remaining paragraphs explain how this reading enters the disclosure decision without a sweeping comparison to all other readings."
+    },
+    {
+      "line": 20,
+      "before": "Read what the predictor actually is, because it is easy to misremember. It is not the effort of concealment, and it is not whether you have disclosed. It is **what you expect would happen if people knew**. Two students keeping the same thing to themselves, at the same cost in effort, are not carrying the same weight — and what separates them is a belief about the people around them.",
+      "after": "Anticipated stigma means **what you expect would happen if people knew**. It is distinct from the effort of concealment or whether you have disclosed. Students keeping the same thing to themselves can anticipate different reactions from the people around them.",
+      "reason": "State the distinction without predicting the reader's mistake or assigning an exact psychological cost to a hypothetical pair."
+    },
+    {
+      "line": 22,
+      "before": "That belief is something an environment produces. Which means a department where disclosure is ordinary and adjustments are unremarkable is changing the number for students who never disclose anything at all. Week 6's ledger gains a line item nobody had named, and week 10's decision stops being a list of reasons to be careful with nothing on the other side of the page.",
+      "after": "Week 10 uses anticipated stigma when considering the costs of both disclosure and concealment. For institutions, it prompts a question: what makes students expect disclosure to be costly, and what can the institution change?",
+      "reason": "Replace a claimed causal institutional effect with an explicit question; preserve the criticism without making the study prove an intervention."
+    }
+  ],
+  "sha256_after": "0d7a4cd47d7ee688c3737aaa8069cfd365467c51c845df67b47b876ac79236f1"
+}

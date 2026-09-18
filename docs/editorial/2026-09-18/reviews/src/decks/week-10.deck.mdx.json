@@ -48,10 +48,28 @@
       "reason": "Give the presenter the distinction directly without presuming a reader error."
     },
     {
+      "line": 119,
+      "before": "\n- Two people keeping the same thing to themselves, at the same effort, are not carrying the same weight.",
+      "after": "",
+      "reason": "Remove the same unsupported comparison removed from the lecture."
+    },
+    {
+      "line": 125,
+      "before": "## Which makes it a property of the room",
+      "after": "## What could a department change?",
+      "reason": "Frame the institutional inference as an open question, matching the lecture."
+    },
+    {
+      "line": 127,
+      "before": "Anticipated stigma is a **belief about the people around you**. Environments produce those.\n\nA department where adjustments are unremarkable lowers the cost **for students who never disclose anything at all.**",
+      "after": "Could making adjustments routine lower anticipated stigma **for students who never disclose anything at all?**",
+      "reason": "Retain the institutional question without claiming a demonstrated causal intervention."
+    },
+    {
       "line": 132,
       "before": "- Tie it back to week 8: the support staff said the fix was structural. This is the measurement underneath their recommendation.\n- It is also the one claim in this week that is not about what the student should do.",
-      "after": "- Connect this interpretation to week 8’s discussion of structural changes.",
-      "reason": "Remove an announcement of the lesson’s virtue and retain the useful cross-reference; the causal interpretation is flagged separately."
+      "after": "- This is a proposal to test, not an intervention examined by Quinn and Chaudoir. Connect it to week 8’s discussion of structural changes.",
+      "reason": "Remove an announcement of the lesson’s virtue and retain the useful cross-reference; the causal interpretation is flagged separately. Integration: Give the presenter the evidence limit explicitly."
     },
     {
       "line": 149,
@@ -82,6 +100,30 @@
       "before": "- The dashed slip is the whole idea: it is not in the envelope, and nothing in what you sent says one is missing.",
       "after": "- Point to the dashed slip: the speaker has left the diagnosis out of the envelope.",
       "reason": "Explain the drawing without promising control over the recipient’s inferences."
+    },
+    {
+      "line": 273,
+      "before": "a disclosure that arrives after a problem gets heard as an explanation *of* the problem.",
+      "after": "a disclosure that arrives after a problem can be heard as an explanation *of* the problem.",
+      "reason": "Match the lecture’s conditional timing observation."
+    },
+    {
+      "line": 275,
+      "before": "And an explanation after a problem sounds like an excuse, whether or not it is one.",
+      "after": "An explanation can be mistaken for an excuse.",
+      "reason": "Retain the practical risk without predicting every listener’s response."
+    },
+    {
+      "line": 277,
+      "before": "Sent before the error, it's configuration. Sent after, it's an excuse.",
+      "after": "Before the error, it may be read as configuration. After, as an excuse.",
+      "reason": "Match the conditional marginal note in the lecture."
+    },
+    {
+      "line": 281,
+      "before": "## So: early, low-stakes, needs only",
+      "after": "## One option: needs before problems",
+      "reason": "Early disclosure is an option and need not be low-stakes for every person."
     },
     {
       "line": 285,
@@ -126,5 +168,5 @@
       "reason": "The transition works without another declaration of the course’s significance."
     }
   ],
-  "sha256_after": "667827d34c07a1ee71b4702461a59051107bfc4dcedc75ddcf672e6731b51ad0"
+  "sha256_after": "adc221aac71ed0c74020b38908e43a29c2aa5b638e4153cea65b37658644e7d4"
 }

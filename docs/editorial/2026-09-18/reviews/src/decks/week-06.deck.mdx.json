@@ -1,0 +1,136 @@
+{
+  "path": "src/decks/week-06.deck.mdx",
+  "category": "Slides and speaker notes",
+  "sha256_before": "f199bfa3894ee00e228e2d01c1d3676bbc3251e24006fef2d817b9749a6578e4",
+  "status": "edited",
+  "review_note": "Align with the lecture’s distinction between research and the recovery-hours estimate. Keep the ledger and short spending-rule slides; remove repeated self-praise and invented predictions from speaker notes.",
+  "edits": [
+    {
+      "line": 34,
+      "before": "Part II starts here. **You now know enough to run parts of it on purpose** --- which means the question stops being \"how does this work\" and becomes \"what does running it cost me\".",
+      "after": "This week asks what those subroutines cost you to run.",
+      "reason": "Make the transition concise and avoid claiming that Part II begins in week 6 when repair already began that phase."
+    },
+    {
+      "line": 37,
+      "before": "- This is the hinge of the whole course. Mark it as one.",
+      "after": "- Ask them to keep one subroutine from the opening in mind as the ledger takes shape.",
+      "reason": "Replace a demand to emphasise the course’s structure with a useful teaching cue."
+    },
+    {
+      "line": 69,
+      "before": "- That last line is theirs, not the course's, and it is blunter than anything this course would presume to write.\n- This is why there is no version of this lecture that tells them to stop.",
+      "after": "- Keep the attribution clear: access and protection are benefits reported by participants.",
+      "reason": "Let the quoted evidence stand and avoid restating the stance announced two slides earlier."
+    },
+    {
+      "line": 86,
+      "before": "- We read the abstract, so don't name the three factors. Say that out loud again --- they should be sick of hearing it by week 6, which is the point.",
+      "after": "- We read the abstract, so don't name the three factors. State that limit.",
+      "reason": "Preserve the evidence boundary without making student frustration part of the teaching objective."
+    },
+    {
+      "line": 118,
+      "before": "- The masking/compensation split matters: hiding and performing are different work and cost differently. Most people in the room do more of one than the other.\n- Ask which they do more of. Don't collect answers; just let them notice.",
+      "after": "- Ask whether they recognise hiding a response, performing an expected one, or both. Does either cost them more? Keep answers private.",
+      "reason": "Ask about the room’s experience without predicting its distribution or costs."
+    },
+    {
+      "line": 148,
+      "before": "- This ledger is denominated in recovery hours. That was a guess when it was written. It is the right axis.\n- Be honest that the course got lucky here, and that the guess is now a citation.",
+      "after": "- Recovery hours remain a planning device. Time spent camouflaging and time needed to recover are different quantities; the study gives no conversion between them.",
+      "reason": "Align with the lecture and remove the unsupported claim that a citation validates the ledger’s unit."
+    },
+    {
+      "line": 184,
+      "before": "Their lay summary goes further than this course ever has: reducing the pressure to camouflage \"could benefit everyone in society\".",
+      "after": "Their lay summary adds that reducing the pressure to camouflage \"could benefit everyone in society\".",
+      "reason": "Keep the authors’ claim without making the course’s bravery the subject."
+    },
+    {
+      "line": 189,
+      "before": "- That is the pressure column, sourced. And the last line is the mixed-room thesis in the authors' words rather than the course's.",
+      "after": "- Connect the reported pressure to the ledger: chosen, expected or enforced.",
+      "reason": "Use the note to connect evidence to an action instead of congratulating the thesis."
+    },
+    {
+      "line": 203,
+      "before": "- Most pairs disagree on the cost of the same subroutine by a factor of two or more.\n- That disagreement IS the week. Land the debrief on it rather than on anyone's number being right.",
+      "after": "- Ask how close the estimates were and what might account for any difference. Do not treat agreement or disagreement as the expected result.",
+      "reason": "Align the debrief with the lecture’s open question and remove a fabricated numerical result."
+    },
+    {
+      "line": 232,
+      "before": "- So the whole room runs some managed performance. What differs is the price.\n- Same subroutine, one whole tutorial of eye contact: almost nothing for one person, the rest of the afternoon for another. Neither price is the correct one.",
+      "after": "- Managed performance occurs across diagnostic groups; do not assume a particular cost from someone's diagnosis.\n- Eye contact is an example: it might cost one person almost nothing and another the rest of the afternoon. The lab asks for their own estimates.",
+      "reason": "Keep the mixed-room comparison as an example rather than a prediction about every student."
+    },
+    {
+      "line": 244,
+      "before": "That is about as direct as evidence for this section gets.\n\n",
+      "after": "",
+      "reason": "Cut the narrator’s endorsement after the research result."
+    },
+    {
+      "line": 247,
+      "before": "- Deliberate callback, and the reason that slide was parked rather than spent.",
+      "after": "- Refer back to the earlier CAT-Q slide if anyone needs the sample or measurement details.",
+      "reason": "Replace commentary about the slide’s clever construction with a practical teaching cue."
+    },
+    {
+      "line": 289,
+      "before": "The ledger's job is to turn a thing that happens to you into a thing you decide.",
+      "after": "The pressure column records where that choice is constrained.",
+      "reason": "Avoid promising full control immediately after teaching that choice can be constrained."
+    },
+    {
+      "line": 313,
+      "before": "A day you can **see coming** is cheaper than one you meet cold.\n\n```notes\n- This is the cheapest intervention in the whole course and almost nobody does it.",
+      "after": "Use the estimate to decide **what can move** before the day starts.\n\n```notes\n- Use a timetable example: which optional commitment could move if the estimate exceeds the time available?",
+      "reason": "Give a concrete use for planning instead of promising lower costs or inventing how few students plan."
+    },
+    {
+      "line": 344,
+      "before": "- Some people will find the decline is cheaper than the run. That is the useful outcome and it surprises them.\n- Others will find it genuinely isn't, and that is not a failure --- it is a priced decision, which is the whole skill.",
+      "after": "- Compare the two estimates without rewarding either choice. Ask what each option buys and what pressure limits the choice.",
+      "reason": "Do not script the students’ reactions or imply that declining is the desirable result."
+    },
+    {
+      "line": 369,
+      "before": "- This follows straight from Cage & Troxell-Whitman. It is also the least obvious advice in the week.",
+      "after": "- This is a planning option prompted by the switching association, not an intervention tested by that study.",
+      "reason": "Keep the advice’s research connection at the strength the study supports."
+    },
+    {
+      "line": 389,
+      "before": "- Say this before the assignment slide, or half the room will hand in a ledger that performs frugality.",
+      "after": "- Remind them that a low total does not earn a better mark.",
+      "reason": "Retain the useful assessment clarification without inventing a reaction from half the class."
+    },
+    {
+      "line": 398,
+      "before": "A row from the ledger you just wrote is the best possible candidate: you already know what it costs and what it buys.\n\n```notes\n- Point at their own sheet. Half the room has already chosen without realising.",
+      "after": "A row from the ledger is one possible candidate: you have already considered what it costs and what it buys.\n\n```notes\n- Invite them to check whether a row gives them a subroutine they can specify and test.",
+      "reason": "Avoid overselling one route or claiming to know which students have already chosen."
+    },
+    {
+      "line": 410,
+      "before": "- **recovery hours** --- the planning unit, and the axis the research points at",
+      "after": "- **recovery hours** --- the course's planning unit, estimated from your own experience",
+      "reason": "Keep the vocabulary recap consistent with the distinction between exposure time and recovery time."
+    },
+    {
+      "line": 422,
+      "before": "Sustained eye contact for one whole tutorial:\n\n- almost nothing for one person\n- the rest of the afternoon for another\n\n**Neither price is the correct one.** Different implementations pay different amounts for the same output.\n\nThursday's lab measures exactly that, across the room.\n\n```notes\n- This is the sentence the week exists to make sayable. Slow down.",
+      "after": "Sustained eye contact for one whole tutorial might cost:\n\n- almost nothing for one person\n- the rest of the afternoon for another\n\n**Neither person's estimate sets the price for the other.**\n\nThursday's lab compares your estimates.\n\n```notes\n- Keep this as an example. Let the lab establish which costs vary in this room.",
+      "reason": "Present the contrast as an example, and let the lab find its own results."
+    },
+    {
+      "line": 444,
+      "before": "- Point at the ledger they just built. The assignment is already half-started.",
+      "after": "- Point at the ledger as one source of possible subroutines.",
+      "reason": "Do not imply that the full specification and conformance tests are already half complete."
+    }
+  ],
+  "sha256_after": "555633cfd9d3b9fe6f73be192732c5193de3418ab56abc28a87461a0524fddfb"
+}

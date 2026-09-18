@@ -1,0 +1,9 @@
+{
+  "path": "src/pages/people/index.mdx",
+  "category": "Site pages",
+  "sha256_before": "40f83c98dc79c786410778538dfbdc85cea826dafc2368b3fcbb1fe53fae8e4b",
+  "status": "retained",
+  "review_note": "Retain the short introduction and generated staff list.",
+  "edits": [],
+  "sha256_after": "40f83c98dc79c786410778538dfbdc85cea826dafc2368b3fcbb1fe53fae8e4b"
+}

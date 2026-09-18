@@ -1,0 +1,9 @@
+{
+  "path": "src/components/Citation.astro",
+  "category": "Components and diagram copy",
+  "sha256_before": "db56eeff73afbf4034953605a7f5401a5bd97dd2bcb921fb0f4d2e2a50533dbf",
+  "status": "retained",
+  "review_note": "Retain bibliographic rendering and connective punctuation. Titles, authors and venue data come from the reviewed reading records; no independent student prose is authored here.",
+  "edits": [],
+  "sha256_after": "db56eeff73afbf4034953605a7f5401a5bd97dd2bcb921fb0f4d2e2a50533dbf"
+}

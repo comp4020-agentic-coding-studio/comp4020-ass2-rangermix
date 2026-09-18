@@ -1,0 +1,52 @@
+{
+  "path": "src/pages/policies/index.mdx",
+  "category": "Site pages",
+  "sha256_before": "58b3202f80355c368db9ddd748db858fca79c0ddc3027a608d2f45f98db7757e",
+  "status": "edited",
+  "review_note": "Keep the no-diagnosis clause verbatim and preserve every entry, extension, adjustment, observation, AI and grading rule. Replace self-congratulation and unsupported reassurance with the actual policy.",
+  "edits": [
+    {
+      "line": 18,
+      "before": "one attests either that you would genuinely benefit from this course, or that\nyou're genuinely interested in how human relationships and communication work.",
+      "after": "one attests either that you would benefit from this course, or that you're\ninterested in how human relationships and communication work.",
+      "reason": "The reference already attests the claim; repeating genuinely makes no additional requirement clear."
+    },
+    {
+      "line": 23,
+      "before": "That clause is the course's position in one line. The class is mixed by\ndesign: people who were never handed the protocol, and people who run it\nfluently and can't describe it. Both kinds of reference get you in, and the\nreference doesn't ask which kind you are.",
+      "after": "Both kinds of reference count. You do not have to say whether the protocol\ncomes easily to you.",
+      "reason": "Keep the practical consequence of the entry rule without explaining the virtue of the sentence above it."
+    },
+    {
+      "line": 29,
+      "before": "\nThe course teaches a budget in week 6, so it runs its deadlines like one.\n",
+      "after": "",
+      "reason": "The extension rules can stand without a statement that they vindicate the curriculum."
+    },
+    {
+      "line": 38,
+      "before": "- **The Field Journal** has no extensions, because it doesn't need them: your\n  lowest of eleven submissions is dropped.",
+      "after": "- **The Field Journal** has no extensions. Your lowest of eleven submissions\n  is dropped.",
+      "reason": "State the rule and safeguard without deciding that no student could need an extension."
+    },
+    {
+      "line": 71,
+      "before": "Emails get answered fastest with the course code and the request in the subject\nline:",
+      "after": "Use the course code and the request in the email subject line:",
+      "reason": "Give the routing instruction without an unverified comparison of reply speeds."
+    },
+    {
+      "line": 93,
+      "before": "That's why the Field Journal has no word count. A fixed length is what makes\ngenerated text convenient, and a journal entry that is fifty words of your own\nis worth more than five hundred that aren't.",
+      "after": "The Field Journal has no word limit or minimum.",
+      "reason": "Keep the length policy without claiming that word counts explain AI misuse or turning the authorship rule into a slogan."
+    },
+    {
+      "line": 115,
+      "before": "own observation as a finding. The course holds itself to the same rule: every\nreading lists what it was checked against.",
+      "after": "own observation as a finding. Each reading lists what it was checked against.",
+      "reason": "Retain where readers can inspect the evidence; remove the course praising itself for meeting the rule."
+    }
+  ],
+  "sha256_after": "d10937c3dd001bc41cd30b222d542e6783e609f2857e5d95a602f9725a2ebe20"
+}

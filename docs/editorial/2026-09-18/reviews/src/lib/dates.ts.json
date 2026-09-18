@@ -1,0 +1,9 @@
+{
+  "path": "src/lib/dates.ts",
+  "category": "Course metadata, glossary and shared copy",
+  "sha256_before": "e5d4bca5f0e26f4b1b95f5016ae1db692fe40688ff04150de38fda57fc83602d",
+  "status": "retained",
+  "review_note": "Retain unchanged: date-formatting code with no authored student prose.",
+  "edits": [],
+  "sha256_after": "e5d4bca5f0e26f4b1b95f5016ae1db692fe40688ff04150de38fda57fc83602d"
+}

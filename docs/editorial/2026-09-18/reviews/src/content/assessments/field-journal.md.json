@@ -1,0 +1,28 @@
+{
+  "path": "src/content/assessments/field-journal.md",
+  "category": "Assessments",
+  "sha256_before": "31d84782eebcccf360ba16a9907571d863b452925539967a1c1c2ca45d82657f",
+  "status": "edited",
+  "review_note": "Keep the four-part method, worked entry, unrestricted length and marking rules. Cut the brief praising its own policy and the unsupported claim that word limits cause AI submissions.",
+  "edits": [
+    {
+      "line": 47,
+      "before": "**Your best ten count**, so one week is yours to drop. That's deliberate. A\ncourse that teaches masking as a budget, and then punishes one overspent week,\nisn't taking its own week 6 seriously.",
+      "after": "**Your best ten count**, so one week is yours to drop.",
+      "reason": "The drop rule is useful; announcing that it proves the course takes itself seriously adds no instruction."
+    },
+    {
+      "line": 74,
+      "before": "> **The rule now.** Held, with an addition: the pause means *not in front of\n> the group*. Ask again, privately, with an explicit exit.",
+      "after": "> **The rule now.** Revised: a delayed yes is a reason to check availability\n> again, with an explicit exit. This test does not tell me whether being in\n> front of the group caused the pause.",
+      "reason": "The fictional test establishes a different preferred day, not why the person paused. Model a revision that reports that limit instead of treating the audience explanation as confirmed."
+    },
+    {
+      "line": 84,
+      "before": "through with an AI as much as you like. The writing must be yours, and that is\nexactly why the format is unconstrained: a fixed word count is what makes\ngenerated text convenient to submit.",
+      "after": "through with an AI as much as you like. The writing must be yours.",
+      "reason": "Keep the AI permission and authorship requirement without an unsupported general explanation of generated submissions."
+    }
+  ],
+  "sha256_after": "236bd6973bc39b864e8d528d293c5e86d215299b17271bede0839a57395eb974"
+}

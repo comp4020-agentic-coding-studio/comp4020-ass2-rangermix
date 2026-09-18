@@ -1,0 +1,9 @@
+{
+  "path": "src/components/TeachingTeam.astro",
+  "category": "Components and diagram copy",
+  "sha256_before": "b521b422773bf86702bcaa5d66d4f79ac6417c2c9e269095835e137331dbdb1d",
+  "status": "retained",
+  "review_note": "Retain Teaching team and the staff-role labels. Names come from the people collection; the wording is functional and concise.",
+  "edits": [],
+  "sha256_after": "b521b422773bf86702bcaa5d66d4f79ac6417c2c9e269095835e137331dbdb1d"
+}

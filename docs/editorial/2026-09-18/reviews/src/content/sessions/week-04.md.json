@@ -1,0 +1,16 @@
+{
+  "path": "src/content/sessions/week-04.md",
+  "category": "Sessions",
+  "sha256_before": "452002d11f1ed932074eb121cdcaebfe663d77f5ef36c5d3733de0fbd3fd4499",
+  "status": "edited",
+  "review_note": "Retain the full experimental run sheet and its limitations. Leave the students' ratings open instead of predicting surprise.",
+  "edits": [
+    {
+      "line": 40,
+      "before": "A results table, and probably a surprise about your own ratings. Some people\nfind the delay moves their rating a lot; some find it doesn't move at all.\nBoth are data about implementations, not about who is right.",
+      "after": "A results table showing which delays changed your ratings and whether a hold\ntoken helped. If your ratings did not change, record that too.",
+      "reason": "Specify the record the student leaves with, without predicting their reaction or the room's results."
+    }
+  ],
+  "sha256_after": "8b9381db91eca6d421e747225159f954ab8aa001db689225dda897f9b3f22e4f"
+}

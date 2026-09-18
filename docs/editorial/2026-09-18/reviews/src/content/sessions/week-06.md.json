@@ -1,0 +1,16 @@
+{
+  "path": "src/content/sessions/week-06.md",
+  "category": "Sessions",
+  "sha256_before": "9e68b33c0afd9a437ba3ebdfbc211e60009234e69230dad62709fafd62478eb3",
+  "status": "edited",
+  "review_note": "Keep the private ledger, group ratings, timed run sheet and planned decline. Let the observed range of costs stand without declaring that the class has demonstrated the thesis.",
+  "edits": [
+    {
+      "line": 40,
+      "before": "Look for subroutines that cost almost everyone almost nothing, and for any that\nsplit a table between a zero and a five. The splits, if the room has them, are week 6's argument happening in\nfront of you: different implementations, same output, different price. They're\nalso why \"just make eye contact\" is advice that costs its giver nothing.",
+      "after": "Look for subroutines with similar ratings and any that split a table between\na zero and a five. What would \"just make eye contact\" ask of each person at\nthat table?",
+      "reason": "Keep the pointed example while asking the class to inspect its results instead of announcing the argument they must demonstrate."
+    }
+  ],
+  "sha256_after": "de35e91f8112a2d52bb1059874888e90066006008f06573efb87dec80aacf5a8"
+}

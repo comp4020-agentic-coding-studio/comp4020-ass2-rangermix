@@ -1,0 +1,22 @@
+{
+  "path": "src/content/sessions/week-12.md",
+  "category": "Sessions",
+  "sha256_before": "19635ae3867c59b8aa0bf28ac7757cada63d6728e35af040ccf019824dd5648c",
+  "status": "edited",
+  "review_note": "Retain the clinic’s practical tone, ethics questions, deadpan reminder and submission dates. Avoid assuming every student has eleven entries already or treating route selection as a predicted pattern.",
+  "edits": [
+    {
+      "line": 20,
+      "before": "Bring your Field Journal. Eleven weeks of entries are the raw material for\neither route.",
+      "after": "Bring your Field Journal. Its entries are the raw material for either route.",
+      "reason": "The final weekly submission is still ahead, and students may have skipped a redeemable week; the material, not a completed count, is required."
+    },
+    {
+      "line": 27,
+      "before": "| 0:00--0:10 | **Choose a route.** Read back through your journal. Which entries keep returning to the same subroutine? That's often an experiment. Which keep returning to a cost? That's often a document. Tell a tutor your choice. |",
+      "after": "| 0:00--0:10 | **Choose a route.** Read back through your journal. A recurring subroutine could give you a parameter to test; recurring costs could guide your Personal Protocol Document. Tell a tutor your choice. |",
+      "reason": "Frame the suggested routes as options rather than undocumented patterns in what students usually write."
+    }
+  ],
+  "sha256_after": "b72fb4fbe1d2a2d718be819a16ce17927b60533ce4f4c028bce91b1ae1a56d55"
+}

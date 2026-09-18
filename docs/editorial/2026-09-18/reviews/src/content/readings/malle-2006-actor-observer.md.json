@@ -1,0 +1,22 @@
+{
+  "path": "src/content/readings/malle-2006-actor-observer.md",
+  "category": "Readings",
+  "sha256_before": "52e984992d63c6eb628b6d0f153ad3c62af6fb57576423862a068d4b8a8f6430",
+  "status": "edited",
+  "review_note": "Preserve effect sizes and conditions; remove course-vindication history and the assumption that all field notes record failure.",
+  "edits": [
+    {
+      "line": 17,
+      "before": "This reading is here because of what week 2 was about to do with it. The asleep test wants a justification, and the actor–observer asymmetry is the obvious one lying around: of course a note about someone else drifts to character, that's a documented bias. It isn't, at the size the story implies, and a course that asks students to check claims has to check the one that would have been most convenient for it.",
+      "after": "Week 2 does not use a blanket actor–observer bias to justify the asleep test. The test is the course's own rule of thumb: a rule about an exchange can be tested in another exchange; a verdict about a person is harder to check.",
+      "reason": "Replace retrospective self-praise with the current rationale for the teaching tool."
+    },
+    {
+      "line": 19,
+      "before": "So the asleep test stays, labelled as the course's own rule of thumb, argued for on the grounds that a rule about an exchange is testable next week and a verdict about a person is not. And one piece of Malle does survive into the week, sharpened rather than discarded: the asymmetry was there for negative events. You write a field note when something didn't go smoothly. The single condition under which the effect appears is the condition your journal entries are written in.",
+      "after": "The result for negative events is relevant when a journal entry records a conflict or a failed exchange. It does not mean every entry needs to concern one, and negative events were not the only condition in which the review found an asymmetry.",
+      "reason": "Remove an invented requirement that all journal entries concern failure and the incorrect simplification to a single study condition."
+    }
+  ],
+  "sha256_after": "95aa519c0914c6986c02ccd442bcf4fd789f98f841ce69f3a56593473077d0b9"
+}

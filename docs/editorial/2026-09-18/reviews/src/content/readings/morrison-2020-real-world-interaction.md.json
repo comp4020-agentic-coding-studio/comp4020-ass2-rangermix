@@ -1,0 +1,34 @@
+{
+  "path": "src/content/readings/morrison-2020-real-world-interaction.md",
+  "category": "Readings",
+  "sha256_before": "49148473bd28d997ad5b4d311850f8b078833ee4b5dbc2d56e79d4421c77814e",
+  "status": "edited",
+  "review_note": "Keep the unwelcome findings and marked quotation; remove instructions on their emotional significance and superlatives.",
+  "edits": [
+    {
+      "line": 20,
+      "before": " Not a video clip and not a vignette: an actual conversation, with both people's judgements recorded.",
+      "after": "",
+      "reason": "The preceding methods description already establishes this."
+    },
+    {
+      "line": 22,
+      "before": "The first result is bleak and this course says so plainly. Autistic adults were rated",
+      "after": "Autistic adults were rated",
+      "reason": "Do not instruct the reader how to feel or praise the course for stating the result."
+    },
+    {
+      "line": 24,
+      "before": "The second result is why the week exists. **Only",
+      "after": "**Only",
+      "reason": "The result needs no claim that it justifies a whole week."
+    },
+    {
+      "line": 26,
+      "before": "So the rating and the withdrawal come apart, and only one of them is shared. And that disclosure measure is the most useful number in the week: how much a person opens up is not a fixed property of that person. It moves with who they are sitting opposite. Week 9 met the same claim from an entirely different literature, when Kluger and Malloy argued that a large share of the variance in question-asking belongs to the particular pair rather than the person. Two methods, two fields, one shape — which is the best reason this course has to prefer interoperation to conversion.",
+      "after": "Week 11 distinguishes an unfavourable rating from a decision not to meet again. It also uses the disclosure result to ask what changes with the partner. Week 9 raises a related question through Kluger and Malloy's argument that much of the variance in question-asking belongs to the particular pair rather than the person.",
+      "reason": "Keep the two useful connections without collapsing different studies into a triumphant single argument."
+    }
+  ],
+  "sha256_after": "82424408cc72258002449ffa37cced78394d298377dc6d4ee8579372143553ac"
+}

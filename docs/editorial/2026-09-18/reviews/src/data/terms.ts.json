@@ -1,0 +1,70 @@
+{
+  "path": "src/data/terms.ts",
+  "category": "Course metadata, glossary and shared copy",
+  "sha256_before": "67faf2fd68b5886e4660d13be1ff1dabe9a2aebee4df09794671318c1fa7d3b6",
+  "status": "edited",
+  "review_note": "Retain the glossary’s concise technical contrasts and course vocabulary. Align a few definitions with the weekly draft’s local examples, untested recommendations and planning limits; remove guarantees about listeners, disclosure and recovery.",
+  "edits": [
+    {
+      "line": 31,
+      "before": "The opening exchange that confirms a connection is up before anything else is said. “How are you?” / “Good, you?” is the flagship.",
+      "after": "An opening exchange that confirms a connection is up before anything else is said. In the corridor version: “How are you?” / “Good, you?”",
+      "reason": "Use the concrete local example from week 1 instead of calling it the flagship or implying it defines every greeting."
+    },
+    {
+      "line": 49,
+      "before": "Garfinkel's term for the unstated assumptions an ordinary situation runs on. They show only when breached, which is why the protocol's fluent runners can't state it.",
+      "after": "Garfinkel's term for the unstated assumptions an ordinary situation runs on. Breaching them can make them visible.",
+      "reason": "Retain the documented method without claiming that breaching is the only way expectations become visible or that no fluent speaker can state them."
+    },
+    {
+      "line": 107,
+      "before": "The point at which a listener stops waiting and starts inferring meaning from a gap. Not a hard number; by 700 ms a no is more likely than a yes, and listeners have learned it.",
+      "after": "The point at which a listener starts inferring meaning from a gap. In the telephone calls studied by Kendrick and Torreira, rejections outnumbered acceptances after gaps of 700 ms or more. This is a pattern, not a rule for decoding any one pause.",
+      "reason": "Carry the lecture’s study setting into this standalone reference; do not turn the observed pattern into a universal decoder."
+    },
+    {
+      "line": 113,
+      "before": "A sound or phrase that fills a gap to mean “still here, thinking”: “hm, let me think about that.” A standing hold token, said once, resets the timeout for a whole relationship.",
+      "after": "A sound or phrase that fills a gap to mean “still here, thinking”: “hm, let me think about that.” A standing hold token explains in advance how to read your pauses; it is a recommendation to try, not a tested result.",
+      "reason": "Match the edited week 4 lecture: a standing token gives context, rather than guaranteeing that one utterance resets a whole relationship."
+    },
+    {
+      "line": 167,
+      "before": "Input arriving faster than it can be processed. Recovered from in hours. The course's distinction, not a research definition.",
+      "after": "Input arriving faster than it can be processed. Week 7 places it on a short-term planning scale; that is not a recovery deadline or a research definition.",
+      "reason": "Match week 7’s explicit planning-only scope instead of turning its heuristic into a promised recovery time."
+    },
+    {
+      "line": 173,
+      "before": "Output stopping: words are hard to find, messages go unanswered. Recovered from in a day or so. The course's distinction, not a research definition.",
+      "after": "Output stopping: words are hard to find, messages go unanswered. Week 7 uses this as a planning label, not a recovery deadline or a research definition.",
+      "reason": "Preserve the course’s working description while removing a recovery prediction its research record does not establish."
+    },
+    {
+      "line": 197,
+      "before": "How formal or casual a message is. Institutions run on an undocumented register, and how casual an email was explained a large share of how instructors judged the student.",
+      "after": "How formal or casual a message is. In the 2009 US study used in week 8, casual email wording explained a large share of how instructors judged the student.",
+      "reason": "Keep the empirical example within the study’s stated date and setting rather than presenting it as a timeless fact about institutions."
+    },
+    {
+      "line": 245,
+      "before": "What you expect would happen if people knew. Distinct from the effort of concealing, and the thing that predicted distress across thirteen concealable identities.",
+      "after": "What you expect would happen if people knew. Distinct from the effort of concealing; one of four predictors of distress in the study covering thirteen concealable identities.",
+      "reason": "Match the lecture and reading’s four predictors rather than making anticipated stigma sound like the sole measured explanation."
+    },
+    {
+      "line": 257,
+      "before": "Disclosing a need without the label: “I process written instructions much better than verbal ones.” It changes one thing the other person knows, and nothing else.",
+      "after": "Disclosing a need without the label: “I process written instructions much better than verbal ones.” You state the need without naming a diagnosis. The course’s synthesis, not a tested intervention.",
+      "reason": "Match the edited lecture and E-4; stating a need does not guarantee control over every inference the listener makes."
+    },
+    {
+      "line": 263,
+      "before": "A disclosure that arrives after a problem gets heard as an explanation of it, and an explanation after a problem sounds like an excuse. The way out is early, low-stakes disclosure of needs.",
+      "after": "A disclosure after a problem can be heard as an excuse. The course suggests stating a need early as one option, before a problem needs explaining.",
+      "reason": "Retain the course’s timing observation and option without treating every reception as inevitable or promising universally low stakes."
+    }
+  ],
+  "sha256_after": "eafa1a1b69e4baaa59d8aab9b717b102344765acafd4cfaf6166934a375d4950"
+}

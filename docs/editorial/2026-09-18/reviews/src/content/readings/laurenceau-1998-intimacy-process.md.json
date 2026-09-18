@@ -1,0 +1,16 @@
+{
+  "path": "src/content/readings/laurenceau-1998-intimacy-process.md",
+  "category": "Readings",
+  "sha256_before": "4bbdc68d3aab24f8d6044a58ffdac4a8f3d5fe04b7bbe85e949d758af74f5729",
+  "status": "edited",
+  "review_note": "Keep diary method and partial mediation; shorten the explanation of how responsiveness qualifies the depth scale.",
+  "edits": [
+    {
+      "line": 19,
+      "before": "Week 9's depth scale says how far a turn goes. It has no field for whether the turn landed, and this is the paper that says the missing field is where the work happens: the same disclosure, received two different ways, is two different interactions. The emotion-over-facts result is the one that changes the advice. A step up the scale need not mean a more private subject — it can be the subject you were already on, with how you felt about it attached. That is a cheaper move than the scale implies, and it is available to someone who would rather not hand over a more private fact.",
+      "after": "Week 9's depth scale does not record responsiveness. This paper is one reason to check how a disclosure was received as well as how private it was. A step up need not introduce a more private subject: it can add how you felt about the subject you were already discussing.",
+      "reason": "Keep the missing dimension and concrete alternative; remove repeated declarations of significance and the unmeasured claim that the move is cheaper."
+    }
+  ],
+  "sha256_after": "53bb598a5b4527a106e7e009d6c5b9fdd4d7cee0283c7d3ba608f0d1df2fa0a3"
+}

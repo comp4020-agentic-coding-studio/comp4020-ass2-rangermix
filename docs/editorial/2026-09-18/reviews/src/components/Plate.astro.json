@@ -1,0 +1,9 @@
+{
+  "path": "src/components/Plate.astro",
+  "category": "Components and diagram copy",
+  "sha256_before": "ade9086a2f5a75f3e84c13505486782d77bd83cdf03dd2e89c24779bb6091ba0",
+  "status": "retained",
+  "review_note": "Retain the short attribution connector and provenance rendering. Individual captions and alt text are authored at the call sites and reviewed there; implementation comments are outside student-copy scope.",
+  "edits": [],
+  "sha256_after": "ade9086a2f5a75f3e84c13505486782d77bd83cdf03dd2e89c24779bb6091ba0"
+}

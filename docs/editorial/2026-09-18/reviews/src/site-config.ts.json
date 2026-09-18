@@ -1,0 +1,9 @@
+{
+  "path": "src/site-config.ts",
+  "category": "Course metadata, glossary and shared copy",
+  "sha256_before": "5538cd3734fc5b8d380f76114c68a25e86ae2f7949afb9aba6e58e1ab63a026f",
+  "status": "retained",
+  "review_note": "Retain brand, navigation labels, licence and social-image alt text. The alt text describes the actual diagram and reproduces its caption; navigation names are fixed by the review brief.",
+  "edits": [],
+  "sha256_after": "5538cd3734fc5b8d380f76114c68a25e86ae2f7949afb9aba6e58e1ab63a026f"
+}

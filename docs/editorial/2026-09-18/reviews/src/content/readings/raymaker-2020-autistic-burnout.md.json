@@ -1,0 +1,16 @@
+{
+  "path": "src/content/readings/raymaker-2020-autistic-burnout.md",
+  "category": "Readings",
+  "sha256_before": "0433f2e8cdc66ccacdf5265bdbbb8cb014429b7f469c77ea0082b987fb5add78",
+  "status": "edited",
+  "review_note": "Retain the participatory account and recovery associations; qualify a categorical cause statement.",
+  "edits": [
+    {
+      "line": 24,
+      "before": "Its cause was cumulative load with no way to get relief.",
+      "after": "The study linked this to cumulative load with no way to get relief.",
+      "reason": "Keep the reported link without presenting a qualitative account as an established single cause."
+    }
+  ],
+  "sha256_after": "34d19a248edd56b678eeb55b0e5f114a78d1bbcf97cc1584678c9903607fcce0"
+}

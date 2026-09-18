@@ -1,0 +1,16 @@
+{
+  "path": "src/content/readings/sprecher-2013-disclosure-role.md",
+  "category": "Readings",
+  "sha256_before": "4ca17c475bdcb1de38e5e167e72e2bbbaaf96a3c54c741e77e83cbdb207fd73e",
+  "status": "edited",
+  "review_note": "Preserve the experimental role swap; distinguish it from validation of the course's numerical rule.",
+  "edits": [
+    {
+      "line": 19,
+      "before": "Week 9 had been asserting two things this study tests. First, that listening is a move rather than a pause between moves — the listeners were the ones whose liking went up, which is Collins and Miller's third effect produced experimentally rather than meta-analysed. Second, and more useful, that the course's plus-or-minus-one rule is about *both* people stepping. Here is what a one-sided exchange produces: an asymmetry in how the two people feel about it. And here is what fixes it: taking the other turn. The rate limit is not politeness. It is the mechanism by which two people end up in the same conversation.",
+      "after": "Week 9 uses the role swap to discuss reciprocity: the two participants' impressions changed when each had taken both turns. It is a reason to attend to who gets to disclose and who gets to listen. The study does not test the course's plus-or-minus-one rule.",
+      "reason": "Keep the teaching use without claiming the study tests the course's numerical model or proves a universal repair."
+    }
+  ],
+  "sha256_after": "27d04af8bb9a52947dd6d1a254b023170675fb79c44cda7401df90e9016aeed0"
+}

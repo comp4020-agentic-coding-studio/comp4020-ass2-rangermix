@@ -1,0 +1,9 @@
+{
+  "path": "src/pages/submissions/index.md",
+  "category": "Site pages",
+  "sha256_before": "dd1e0fab279a87f98623a157bf8d5a9a54b161ae1eeeb296fea5a556ab4f79e6",
+  "status": "retained",
+  "review_note": "Retain the explicit prototype status, lack of uploads and step-by-step hand-in guidance. These operational limits should remain conspicuous.",
+  "edits": [],
+  "sha256_after": "dd1e0fab279a87f98623a157bf8d5a9a54b161ae1eeeb296fea5a556ab4f79e6"
+}

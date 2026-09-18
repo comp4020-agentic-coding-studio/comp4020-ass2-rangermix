@@ -42,6 +42,18 @@
       "reason": "Keep the reported result and cut the explanation of why it is a finding."
     },
     {
+      "line": 146,
+      "before": "- To the fluent half of the room: it is a report on your own fluency, which is the variable that spoils the estimate -- and you have now been warned, which Hinds says does not reliably fix it.\n- To the other half: this is why the answer \"you just know\" is not a brush-off. It is the honest output of a broken instrument.",
+      "after": "- Ask fluent runners which step the other person is trying to learn before estimating time or effort.\n- An answer such as \"you just know\" does not provide the steps. Ask for a recent example.",
+      "reason": "Keep guidance for both audiences without applying the experiment to every student or describing their introspection as a broken instrument."
+    },
+    {
+      "line": 154,
+      "before": "Hinds found **intermediate** expertise predicted more accurately than expert.\n\nThe classmate who worked out the tutorial last year **remembers the seams**. The one who never had to has nothing to remember.",
+      "after": "Hinds suggests **intermediate** expertise may improve estimates of novice performance.\n\nA teaching suggestion: ask someone who learned the tutorial protocol recently which steps they had to work out.",
+      "reason": "Align with the lecture and reading annotation: the study suggests a teaching strategy but did not test social guides."
+    },
+    {
       "line": 159,
       "before": "- This is an argument about how the room is arranged, not a compliment to anyone in it.\n- It is also why the labs are mixed on purpose. Week 11 is where that pays off.",
       "after": "- Ask who has learned this protocol recently and which steps they had to work out.\n- The labs bring different experiences together; return to the comparison in week 11.",
@@ -126,5 +138,5 @@
       "reason": "Preserve the useful attribution boundary without another statement of the course's consistency."
     }
   ],
-  "sha256_after": "0ee69f13d255259e71bef3e4021c3df60b4877f88d2c0df2f4d341e13fd437de"
+  "sha256_after": "ce73f3ad0f299d69d3f3e1dd70dd6e00a0c862a48af3ccf4d868d8fcc3f57e7f"
 }

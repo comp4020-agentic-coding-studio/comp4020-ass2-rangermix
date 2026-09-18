@@ -1,0 +1,9 @@
+{
+  "path": "src/components/sketch/SequenceDiagram.astro",
+  "category": "Components and diagram copy",
+  "sha256_before": "bd941d5ff3bcd7dafd93f4ed6f6cccd7579474c5a65f86ebaedf653a3125b3e4",
+  "status": "retained",
+  "review_note": "Retain the sideways-scroll label and expected-but-unsaid annotation. They explain navigation and the dashed-arrow convention without editorial excess.",
+  "edits": [],
+  "sha256_after": "bd941d5ff3bcd7dafd93f4ed6f6cccd7579474c5a65f86ebaedf653a3125b3e4"
+}

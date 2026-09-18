@@ -1,0 +1,443 @@
+---
+title: "NT 101, Week 3: Payload and Envelope"
+description: "The week 3 lecture deck: the spec the protocol claims to follow, the exception its author filed himself, and how to decode an envelope from either end."
+---
+
+import MarginNote from "../components/sketch/MarginNote.astro";
+import Envelope from "../components/sketch/Envelope.astro";
+
+{/* _class: banner */}
+
+# Payload and Envelope
+
+Week 3. Indirect speech, and the spec that breaks itself on purpose.
+
+```notes
+- Open with the sentence, not the theory. Say it flatly and wait: "We should get coffee sometime."
+- Ask who has replied "sure, Thursday at 10?" Don't make it a show of hands if the room is tense; just leave the pause.
+```
+
+---
+
+## Where we were
+
+Week 1: the handshake, written down. Week 2: why nobody had written it down, and how to take a note without diagnosing anyone.
+
+This week: the protocol says things **without saying them**, and we build the decoder.
+
+```notes
+- Reuse week 2's vocabulary out loud: background expectancies, the field note, the asleep test. The terms compound all semester.
+```
+
+---
+
+## "We should get coffee sometime."
+
+A request to schedule coffee?
+
+Answer with a day and a time, and the other person's face may do something complicated.
+
+The line can be an invitation or a way to say you'd like to stay on friendly terms.
+
+```notes
+- Ask what would help distinguish an invitation from a friendly sign-off.
+```
+
+---
+
+## There is a published spec
+
+Grice's Cooperative Principle, and four categories of maxim under it.
+
+| Category | The maxim, in short |
+| --- | --- |
+| Quantity | as informative as required, no more |
+| Quality | don't say what you believe false |
+| Relation | be relevant |
+| Manner | be perspicuous |
+
+<span class="source">Grice (1975), Syntax and Semantics 3, 41–58</span>
+
+```notes
+- Read it as a spec and the protocol fails it constantly. "We should get coffee sometime" has no time, no place, no commitment.
+```
+
+---
+
+## The author filed the bug himself
+
+Alongside the maxims, Grice notes others --- "such as 'Be polite'" --- that also generate meaning beyond what is said.
+
+And that stating the maxims as though talk existed to exchange information is "too narrow".
+
+<MarginNote label="Known issue">The author of the specification filed the bug report in the same paragraph.</MarginNote>
+
+```notes
+- So: a published spec, plus a known exception the author flagged. Politeness is allowed to override the other four.
+- Nobody told you which one wins. That's the documentation problem, exactly.
+```
+
+---
+
+{/* _class: impact */}
+
+Payload: what the speaker needs you to understand or do.
+
+Envelope: how it's wrapped, and the maxim those words bend to get there.
+
+```notes
+- These two terms run to week 12. Introduce them once, here, and use them exactly.
+```
+
+---
+
+<Envelope
+  utterance={["“We should get coffee", "sometime.”"]}
+  annotation="bends Quantity: no time, no place"
+  payload={["I'd like us to be", "on friendly terms."]}
+  seed="deck week 3 envelope"
+  caption="The opening line, opened."
+/>
+
+```notes
+- Point at the two faces: the hand is what was said, the monospace is what it meant.
+- Ask the room for possible payloads before revealing this one.
+```
+
+---
+
+## Why anyone sends an envelope
+
+- **Plausible deniability** --- a cooperative listener accepts, an unwilling one declines, and neither has to name a refusal
+- Talk does **two jobs**: carries information, and negotiates the relationship
+- An explicit statement becomes **common knowledge**; a hint never does
+
+<span class="source">Pinker, Nowak & Lee (2008), Proceedings of the National Academy of Sciences 105(3)</span>
+
+```notes
+- The third one is why "we both knew" and "you said it" are different events under this protocol.
+```
+
+---
+
+## "To be polite" doesn't predict anything
+
+True, and nearly useless. It doesn't tell you **when** to expect an envelope.
+
+```notes
+- This is the gap in the account we have given so far. Name it before filling it.
+```
+
+---
+
+## The strategic speaker
+
+Indirect when the speaker is **uncertain whether the hearer is cooperative or antagonistic**.
+
+The paradigm case: **bribing a policeman** who may be corrupt or honest. A veiled bribe is taken up by one and ignored by the other.
+
+<span class="source">Lee & Pinker (2010), Psychological Review 117(3)</span>
+
+```notes
+- Use their example, not a social one. A clean two-outcome case teaches the shape faster, and it is deliberately unsocial, which stops it becoming a lesson in manners.
+- Ordinary life has the same payoff structure with emotional penalties instead of legal ones.
+```
+
+---
+
+{/* _class: impact */}
+
+A hint can protect the sender from a refusal --- or leave an understood request off the record.
+
+<MarginNote label="Diagnostic">Ask what can be declined or left unsaid.</MarginNote>
+
+```notes
+- Ask what the sender is unsure of, or what either person can decline or leave off the record.
+```
+
+---
+
+## What the sender doesn't know
+
+| The envelope | What they're not sure of |
+| --- | --- |
+| "We should get coffee sometime." | whether you want to be friends |
+| "No worries if not!" | whether the favour is too big to ask |
+| "Are you around this weekend at all?" | whether you're free, and whether you'd want to |
+| "I don't know if this is useful, but---" | whether the group wants their idea |
+
+The right column is a list of things the sender is **exposed on**.
+
+```notes
+- The envelope is not decoration. It is the sender protecting themselves from an answer they cannot predict.
+```
+
+---
+
+## Even when you both know
+
+Indirectness still buys **higher-order deniability**: preempting <span data-quoted>certainty, gossip, and common knowledge of the request</span>.
+
+The **request itself remains unsaid**, even when both of you understood it.
+
+<span class="source">Lee & Pinker (2010)</span>
+
+```notes
+- This is why "we both knew" and "you said it" are different events.
+- Worth saying plainly: under this protocol, "nothing was ever asked of you" can be literally true and completely false at once.
+```
+
+---
+
+## In the room: find the uncertainty (8 min)
+
+**Four minutes, in pairs.** Four lines on the board. For each: *what does the sender not know?*
+
+**Two minutes.** Compare with the pair beside you. Write down both possible payloads where you disagree.
+
+**Two minutes, the room.** One line, argued out loud.
+
+```notes
+- There is no key at the back. If there were, the protocol would be documented and we would not be here. Say that.
+```
+
+---
+
+## The decoder
+
+| Utterance | Maxim bent | Payload |
+| --- | --- | --- |
+| "We should get coffee sometime." | Quantity: no time, no place | I'd like us to be on friendly terms. |
+| "No worries if not!" | Quality: there may well be worries | I'd like this, and here's a painless exit. |
+| "Is it cold in here?" | Relation: temperature, asked of a person | Could the window be closed? |
+| "Interesting idea." | Quantity: no content | I'm not convinced. |
+| "Just circling back on this." | Quantity: no new information | This is late. |
+
+These are the course's entries, not a research table. Test them in the lab.
+
+```notes
+- Take one column at a time down the table, not one row. The maxim column is the transferable part.
+```
+
+---
+
+## Decoding from both ends
+
+**If you decode by reading the words**: it's a lookup until it isn't. When the stakes matter, ask for the payload --- and take the blame for the ambiguity.
+
+> "Do you mean coffee as a plan, or as a nice thing to say? Either's fine. I just want to know whether to put it in my calendar."
+
+**If you decode without noticing**: your exercise runs the other way. Send one payload bare, and notice what it costs you.
+
+```notes
+- Say the script out loud, at speed, so they hear that it's sayable. It is four seconds long.
+- Speak to both halves in turn, and don't rank them.
+```
+
+---
+
+## Sending it bare is always valid
+
+It also changes the relationship a little, because it creates common knowledge where a hint wouldn't.
+
+That's a cost, not a mistake. Sometimes it's worth paying.
+
+You can lower it by naming the choice: *"I'm going to be literal, because I'd rather not get this wrong."*
+
+---
+
+## Who's actually wrong when a hint misses?
+
+People said **deliberately ambiguous sentences**, trying to convey one specific intention, then estimated whether the addressee understood.
+
+They **overestimated, consistently.**
+
+<span class="source">Keysar & Henly (2002), Psychological Science 13(3)</span>
+
+```notes
+- Ask what the result requires of the sender when a hint is missed.
+```
+
+---
+
+## And the control
+
+**Overhearers** who knew the speaker's intention did **not** overestimate.
+
+So it isn't a general fact about watching a conversation. It comes from **having been the one who spoke**.
+
+```notes
+- The authors: a speaker monitoring their own utterance is not an unbiased observer. They underestimate their own ambiguity and overestimate their own disambiguating cues.
+- Compare this sender-side error with week 2's discussion of expertise; keep the two experiments distinct.
+```
+
+---
+
+## Both sides of the room
+
+**If you send envelopes:** check what the listener understood. If needed, send the second one plainer.
+
+**If you miss them:** the sender may have overestimated how clear they were.
+
+```notes
+- And the second half, said carefully: wanting the decoder anyway is not an admission that the whole problem was yours.
+```
+
+---
+
+## But is the decoder missing?
+
+From "John or Mary will come", most listeners infer **not both** --- though the words permit both.
+
+The authors **predicted** autistic participants would make fewer of these inferences.
+
+Result, in their words: <span data-quoted>contrary to expectations</span>. **No group difference.**
+
+<span class="source">Chevallier, Wilson, Happé & Noveck (2010), JADD 40(9)</span>
+
+```notes
+- Hold it at its real width. One inference type, one experiment, two matched groups. Not a verdict on pragmatics.
+- Distinguish the authors' prediction from their reported result.
+```
+
+---
+
+## In the room: send it twice (7 min)
+
+**Three minutes.** A real request you want this week, written as an envelope. Wrap it properly.
+
+**Two minutes.** The same request **bare**. No softening, no exit ramp.
+
+**Two minutes, in pairs.** Swap; your partner reads only the envelope and writes the payload. Then show them the bare one.
+
+```notes
+- If the bare version feels unsendable, have students record why and keep the note for week 6.
+```
+
+---
+
+## Over-decoding
+
+Sometimes "is it cold in here?" is a question about the temperature.
+
+Treating every sentence as a hint is as nonconforming as treating none as one, and more tiring.
+
+**The rule of thumb:** decode when a maxim is *visibly* bent and you're plainly expected to do something. Otherwise take the words at face value --- and let them send a second, clearer envelope.
+
+```notes
+- Offer the rule as a limit on decoding effort, not a guarantee that the sender will retry.
+```
+
+---
+
+## Which maxim, and where to look
+
+| Maxim bent | Where the payload usually is |
+| --- | --- |
+| **Quantity** (too little) | something they don't want on the record |
+| **Quantity** (too much) | the detail they're justifying |
+| **Quality** (obviously untrue) | the opposite, or a feeling |
+| **Relation** (off topic) | a request about the situation you're both in |
+| **Manner** (vague on purpose) | something with a cost attached to naming it |
+
+Not a lookup for every sentence. A place to start when one is visibly bent.
+
+```notes
+- The decoder table two slides ago gives examples. This gives the rule underneath them, which is what they need when the sentence is not on the list.
+- These rows are ours. Test them in the journal; that is what the journal is for.
+```
+
+---
+
+## One decode, end to end
+
+> A group chat. You propose Tuesday. Someone replies: **"Tuesday could work!"**
+
+1. **Maxim bent:** Quantity --- "could" where a yes or no would do.
+2. **Cooperative?** Assume yes. Why would a cooperative person be vague here?
+3. **Possible payload:** Tuesday is bad, and they don't want to be the one who blocks it.
+4. **Expected response:** offer a second option. "Tuesday or Thursday --- either fine with me."
+
+```notes
+- Walk it slowly. This is the procedure; everything else this week is worked examples of it.
+- Pause at step 2: the worked interpretation assumes co-operation. Ask whether the face-value reading also works.
+```
+
+---
+
+## Asking for the payload
+
+You can just ask. It isn't an accusation if you take the blame for the ambiguity:
+
+> "Do you mean coffee as a plan, or as a nice thing to say? Either's fine. I just want to know whether to put it in my calendar."
+
+Three parts: **name both readings**, **say both are acceptable**, **give a practical reason for asking**.
+
+```notes
+- Point out the practical reason for asking: whether to put a meeting in the calendar.
+- Say plainly: this is a script anyone can use, and the fluent half of the room uses versions of it too.
+```
+
+---
+
+## The reply that renegotiates
+
+A bare reply to an envelope is **valid**. It also creates common knowledge that the hint deliberately avoided.
+
+That's a cost, not a mistake. Sometimes it's the right one to pay.
+
+You can lower it by announcing it: *"I'm going to be literal, because I'd rather not get this wrong."*
+
+```notes
+- Announcing directness is the hold token from week 4, arriving early. Flag that it comes back.
+```
+
+---
+
+## Over-decoding: who pays
+
+Treating every sentence as an envelope is as nonconforming as treating none as one --- and more tiring.
+
+You may spend time decoding a hint the speaker never meant to send. They may have no reason to notice.
+
+```notes
+- The rule: decode when a maxim is visibly bent and you are plainly expected to act. Otherwise take the words at face value.
+- Leave room for the sender to clarify; do not promise that they will.
+```
+
+---
+
+## In the room: the over-decoding audit (6 min)
+
+**Three minutes.** Two times this week you suspected an envelope. For each: was a maxim *visibly* bent, and were you *plainly* expected to act?
+
+**Three minutes, in pairs.** Read one out. Your partner says only whether the face-value reading also works.
+
+```notes
+- If the face-value reading works and nothing was expected, ask how much time went into decoding it and whether the other person had any reason to notice.
+```
+
+---
+
+## What this week added to the vocabulary
+
+- **payload** --- what the speaker needs you to understand or do
+- **envelope** --- how it's wrapped, and the maxim it bends
+- **plausible deniability** --- what the wrapping buys the sender
+- **over-decoding** --- finding an envelope where nothing was inside
+
+Plus: an envelope can manage uncertainty or leave a request off the record. Senders can overestimate how clear they were.
+
+Next week: the gaps between turns, and what each length of silence gets read as.
+
+---
+
+{/* _class: centered */}
+
+## Check yourself against this week
+
+Can you name the maxim a line bends, and say its payload in plain words?
+
+Can you ask for a payload without implying evasion?
+
+Can you give an example of over-decoding?

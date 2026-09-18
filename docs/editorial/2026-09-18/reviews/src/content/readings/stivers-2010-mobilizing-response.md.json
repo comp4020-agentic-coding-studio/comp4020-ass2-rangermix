@@ -1,0 +1,16 @@
+{
+  "path": "src/content/readings/stivers-2010-mobilizing-response.md",
+  "category": "Readings",
+  "sha256_before": "3589d87cdd8d037a1636a58096c150feb15ab6ea1e806fb38c2194cddf5f8fb0",
+  "status": "edited",
+  "review_note": "Keep the graded-obligation account and dial metaphor; remove the account of an earlier course draft.",
+  "edits": [
+    {
+      "line": 16,
+      "before": "Week 1 needs this because the course had been asserting that the opening obliges a reply while naming *conditional relevance* it could not define.",
+      "after": "Week 1 uses this gradient to distinguish how strongly different openings invite a reply.",
+      "reason": "Replace drafting history with the current teaching use; keep the dial metaphor that follows."
+    }
+  ],
+  "sha256_after": "06668551f00795488d473a92ef5a36974095a41d86982833d592ce3fdc4750fa"
+}

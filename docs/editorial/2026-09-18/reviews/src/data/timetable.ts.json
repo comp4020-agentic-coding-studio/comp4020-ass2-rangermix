@@ -1,0 +1,9 @@
+{
+  "path": "src/data/timetable.ts",
+  "category": "Course metadata, glossary and shared copy",
+  "sha256_before": "494737677eb0184a1695da945106b3158ab15e7603ab8cd81a4688478a011484",
+  "status": "retained",
+  "review_note": "Retain all room, day, meeting, holiday and time labels. These are factual data and short functional wording; explanatory comments are not student prose.",
+  "edits": [],
+  "sha256_after": "494737677eb0184a1695da945106b3158ab15e7603ab8cd81a4688478a011484"
+}

@@ -1,0 +1,29 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getRelatedEntries } from "astro-course-university/content";
+import Citation from "./Citation.astro";
+
+interface Props {
+  lecture: CollectionEntry<"lectures">;
+}
+
+const { lecture } = Astro.props;
+const readings = (await getRelatedEntries(lecture, ["readings"])) as CollectionEntry<"readings">[];
+readings.sort((a, b) => a.data.year - b.data.year || a.data.title.localeCompare(b.data.title));
+---
+
+{
+  readings.length > 0 && (
+    <section class="week-readings" aria-labelledby="week-readings">
+      <h2 id="week-readings">Readings</h2>
+      <ul>
+        {readings.map((reading) => (
+          <li>
+            <Citation reading={reading} link />
+            <p>{reading.data.description}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
+}

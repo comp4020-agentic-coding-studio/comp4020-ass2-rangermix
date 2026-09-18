@@ -1,0 +1,22 @@
+{
+  "path": "src/content/assessments/personal-protocol-document.md",
+  "category": "Assessments",
+  "sha256_before": "80f6e04096dbbc315c16503aeac6a747befeb45ecbe1250fcc36b3bdbe79ff20",
+  "status": "edited",
+  "review_note": "Keep both routes, specific examples, the ethics warning and every criterion. The brief can start with the choice rather than repeat the course mission.",
+  "edits": [
+    {
+      "line": 25,
+      "before": "The course has been building towards this for twelve weeks. Its outcome was\nnever that you become indistinguishable from anyone. It was **fluency plus\nchoice**. The capstone is where you exercise the choice, in one of two ways.\nBoth routes carry the same weight.",
+      "after": "Choose one of the two routes below. Both carry the same weight.",
+      "reason": "The route descriptions already explain the choice; the course mission is stated on the home page and in the closing lecture."
+    },
+    {
+      "line": 73,
+      "before": "Canberra time: two weeks after teaching ends, on\npurpose. Week 12's lab is the clinic for both routes.",
+      "after": "Canberra time: two weeks after teaching ends.\nWeek 12's lab is the clinic for both routes.",
+      "reason": "Keep the useful interval without announcing that the deadline was intentional."
+    }
+  ],
+  "sha256_after": "a249e055c0e9b9b12bf14a911e6a97cccbb94c4236553e392f4f710b6aeb7fa0"
+}

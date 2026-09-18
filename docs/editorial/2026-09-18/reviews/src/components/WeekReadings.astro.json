@@ -1,0 +1,9 @@
+{
+  "path": "src/components/WeekReadings.astro",
+  "category": "Components and diagram copy",
+  "sha256_before": "d8c5449e329b073dc87432147cb80bcb7abaaf42b517c8e6227287c67f6b0dc7",
+  "status": "retained",
+  "review_note": "Retain Readings and the data-driven citation list. Reading descriptions are reviewed in their own records.",
+  "edits": [],
+  "sha256_after": "d8c5449e329b073dc87432147cb80bcb7abaaf42b517c8e6227287c67f6b0dc7"
+}

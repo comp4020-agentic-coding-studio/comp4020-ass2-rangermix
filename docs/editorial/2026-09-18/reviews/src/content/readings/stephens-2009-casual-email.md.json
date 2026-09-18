@@ -1,0 +1,9 @@
+{
+  "path": "src/content/readings/stephens-2009-casual-email.md",
+  "category": "Readings",
+  "sha256_before": "1a38c2941cc06582734ed2a63cb2b3e728846a2452ab9794e8a8464125000c01",
+  "status": "retained",
+  "review_note": "Retain exact reported variance, concrete email examples and the explicit date/location limit.",
+  "edits": [],
+  "sha256_after": "1a38c2941cc06582734ed2a63cb2b3e728846a2452ab9794e8a8464125000c01"
+}

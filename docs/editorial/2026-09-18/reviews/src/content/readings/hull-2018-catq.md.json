@@ -1,0 +1,16 @@
+{
+  "path": "src/content/readings/hull-2018-catq.md",
+  "category": "Readings",
+  "sha256_before": "03e029d7f8437dbfeca3c03c6fcd62276541192008694a487079162fd17d5c0c",
+  "status": "edited",
+  "review_note": "Keep the instrument statistics and measurement-invariance finding; avoid converting them into a claim about everyone present.",
+  "edits": [
+    {
+      "line": 23,
+      "before": "Week 6 uses it for one thing above all: the measurement invariance analyses demonstrated equivalent factor structures **across diagnostic group as well as gender**. The same instrument measures the same construct the same way whether or not the respondent is autistic — which is the evidence for the week's claim that everyone in the room keeps a ledger and what differs is the price. The week does not name the three factors, because the abstract does not.",
+      "after": "The measurement invariance analyses demonstrated equivalent factor structures **across diagnostic group as well as gender**. Week 6 uses this when discussing camouflaging across groups. The week does not name the three factors, because the abstract does not.",
+      "reason": "Keep the measured result and evidence limit; remove the leap from group measurement to a claim about every person in the room."
+    }
+  ],
+  "sha256_after": "22e637b322cafe8577932af3f3ba07df89e7fdb03f0e100de454eadb8d3ef612"
+}

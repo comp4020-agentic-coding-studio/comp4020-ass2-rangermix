@@ -1,0 +1,166 @@
+{
+  "path": "src/content/lectures/week-11.mdx",
+  "category": "Lectures",
+  "sha256_before": "320442abb20ccf87b0a3a9c468c76deac89f83c7400546d87701cf47e99a8c4f",
+  "status": "edited",
+  "review_note": "Keep the chain evidence, bilateral worked example, technical deadpan and explicit evidence limits. Remove repeated declarations that each result is the week’s thesis, and treat the class’s protocol as something to test rather than a success already demonstrated.",
+  "edits": [
+    {
+      "line": 3,
+      "before": "description: \"When two implementations meet, the loss happens between them, not inside either one. So the fix is bilateral, and this class has been demonstrating it since week 1.\"",
+      "after": "description: \"When two implementations meet, the loss happens between them, not inside either one. Evidence on the mismatch, and a bilateral protocol to try with your partner.\"",
+      "reason": "Describe the work students will do without claiming that the class has already demonstrated success."
+    },
+    {
+      "line": 14,
+      "before": "You can say what readability correlated with in Alkhaldi et al., and why “independent of diagnosis” is the important part.",
+      "after": "You can say what readability correlated with in Alkhaldi et al., and what “independent of diagnosis” does and does not establish.",
+      "reason": "Ask for a bounded interpretation of the result instead of requiring agreement about which part matters most."
+    },
+    {
+      "line": 61,
+      "before": "Read the table as an engineer would. Information survived **within** either\nimplementation. It degraded fastest **across** them.",
+      "after": "Information survived **within** either implementation. It degraded fastest\n**across** them.",
+      "reason": "Let the engineering comparison emerge from the table and packet-loss note instead of instructing the reader how to regard them."
+    },
+    {
+      "line": 91,
+      "before": "Two claims are now on the table and nothing joins them. Week 2: style is judged\nin seconds, before content. This week: autistic people's reactions are misread\nrather than missing. Why would the first follow from the second?",
+      "after": "Week 2: style is judged in seconds, before content. This week: autistic\npeople's reactions are misread rather than missing. Could the two be linked?",
+      "reason": "Ask the research question without a staged announcement that the course is about to supply a missing connection."
+    },
+    {
+      "line": 101,
+      "before": "(Study 1) or told (Study 2). Then the result the week turns on:",
+      "after": "(Study 1) or told (Study 2):",
+      "reason": "The highlighted result does not need another announcement of its importance."
+    },
+    {
+      "line": 106,
+      "before": "Read that last clause twice. The unfavourable judgement was not attached to a\ncategory of person. It tracked **how readable that particular person was to\nthat particular perceiver**, and a hard-to-read neurotypical target got the\nsame treatment.",
+      "after": "Readability and diagnosis are separate parts of the reported result. The\ncorrelation is not evidence that diagnosis had no relationship to the ratings.",
+      "reason": "Remove the theatrical reading instruction; the statistical interpretation is retained for a separate evidence check. Integration: Remove an interpretation not entailed by the stated correlation and inconsistent with the group difference reported immediately above."
+    },
+    {
+      "line": 116,
+      "before": "That is the double empathy problem with a correlation coefficient attached.\nAnd the authors are careful in a way worth copying: they write that perceivers\n*might* rate people unfavourably because they find them hard to read,\n<span data-quoted>though other interpretations of the correlation are also\npossible</span>. This is correlational. It stays correlational here.",
+      "after": "The authors write that perceivers *might* rate people unfavourably because\nthey find them hard to read, <span data-quoted>though other interpretations of\nthe correlation are also possible</span>. This is correlational.",
+      "reason": "Keep the authors’ qualification verbatim without praising either the paper or the course for retaining it."
+    },
+    {
+      "line": 164,
+      "before": "Which brings the course to its thesis.\n\n",
+      "after": "",
+      "reason": "The next section should present the conversation study without announcing another culmination."
+    },
+    {
+      "line": 168,
+      "before": "Everything so far is clips, chains and ratings. Morrison and colleagues ran the\nquestion as an actual conversation.",
+      "after": "Morrison and colleagues studied the question in an actual conversation.",
+      "reason": "Introduce the change of method directly; the preceding evidence also includes qualitative accounts."
+    },
+    {
+      "line": 176,
+      "before": "The first result is bleak, and this course isn't going to soften it. Autistic\nadults were rated <span data-quoted>more awkward, less attractive, and less\nsocially warm</span> --- **by autistic and non-autistic partners alike**. The\njudgement travelled across both groups.",
+      "after": "Autistic adults were rated <span data-quoted>more awkward, less attractive, and\nless socially warm</span> --- **by autistic and non-autistic partners alike**.",
+      "reason": "Keep the difficult finding and attributed language without advertising the course’s willingness to say it."
+    },
+    {
+      "line": 181,
+      "before": "Here is the second result.\n\n",
+      "after": "",
+      "reason": "The following highlighted finding already provides the contrast."
+    },
+    {
+      "line": 190,
+      "before": "So the rating and the withdrawal come apart. One is shared; the other isn't.\nWhatever \"awkward\" is measuring, it is not what decides whether somebody wants\nto see you again --- for one half of the room.",
+      "after": "The rating and the interest in meeting again came apart for the autistic\nparticipants in this study.",
+      "reason": "Keep the distinction tied to the reported sample rather than treating half the current classroom as identical to it."
+    },
+    {
+      "line": 196,
+      "before": "It's the disclosure one, and it is easy to read past.\n\n",
+      "after": "",
+      "reason": "Begin with the finding instead of saying readers are likely to overlook it."
+    },
+    {
+      "line": 205,
+      "before": "person. Two fields, two methods, one shape.",
+      "after": "person.",
+      "reason": "The concrete comparison already connects the studies; cut the ornamental three-part conclusion."
+    },
+    {
+      "line": 207,
+      "before": "Which is why \"work on your social skills\" is the wrong instruction, and not for\na sentimental reason. It addresses one endpoint of a two-endpoint problem, and\nthe evidence keeps locating the variance in the link.",
+      "after": "\"Work on your social skills\" addresses one endpoint of a two-endpoint\nproblem. The evidence also locates variation in the link.",
+      "reason": "Keep the engineering objection without the pre-emptive defence against sentiment or a stronger all-purpose verdict."
+    },
+    {
+      "line": 217,
+      "before": "Then the hard half: **how would you know if you were wrong about that?** What\nwould you have to observe?",
+      "after": "Then write the test: **how would you know if you were wrong about that?** What\nwould you have to observe?",
+      "reason": "Specify the task rather than deciding which part will be hard for the student."
+    },
+    {
+      "line": 220,
+      "before": "**Three minutes, in pairs.** Read out only the second part --- the test, not\nthe thing. You are checking whether each other's tests are runnable, which is\nweek 2's rule arriving at the last week of content.",
+      "after": "**Three minutes, in pairs.** Read out only the second part --- the test, not\nthe thing. Check whether each other's tests are runnable.",
+      "reason": "Keep the activity and remove a second explanation of its place in the course arc."
+    },
+    {
+      "line": 224,
+      "before": "**One minute.** Anyone whose test needs the other person's cooperation to run:\nsay so. That is this week's whole point, and it's the first clause of your\nbilateral protocol.",
+      "after": "**One minute.** Anyone whose test needs the other person's cooperation to run:\nsay so, and name what you would need to agree with them.",
+      "reason": "Turn an announcement of the whole week’s point into the concrete negotiation the activity needs."
+    },
+    {
+      "line": 230,
+      "before": "A week that ends with \"and this is the thesis\" owes you its limits before the\nthesis, not after.\n\n",
+      "after": "",
+      "reason": "Present the limitations directly without commending the course for including them."
+    },
+    {
+      "line": 233,
+      "before": "The qualitative work is **12 people**. The diffusion chains are **72**. The\nconversation study is **125**. Those are respectable numbers for their designs\nand they are not large.",
+      "after": "The qualitative work is **12 people**. The diffusion chains are **72**. The\nconversation study is **125**.",
+      "reason": "Keep the sample sizes and remove an unsupported evaluative gloss on what counts as respectable."
+    },
+    {
+      "line": 242,
+      "before": "And the largest claim in this section --- that a mixed room with eleven weeks\nof shared vocabulary interoperates better than one without --- is **not a\ntested finding**. It is this course's thesis, demonstrated in this room. Week\n12 keeps a register of everything here the course made up, and the depth scale\nfrom week 9 is still item E-3 on it.",
+      "after": "The claim that a mixed room with eleven weeks of shared vocabulary\ninteroperates better than one without is **not a tested finding**. It is this\ncourse's proposal; the partnership labs let you try it. Week 12 records this\ncourse's untested models, including week 9's depth scale as item E-3.",
+      "reason": "Do not claim an unmeasured classroom demonstration immediately after admitting that the finding is untested."
+    },
+    {
+      "line": 264,
+      "before": "Every box is a different make of computer, and none of them was replaced to join. They interoperated: an agreed protocol at the boundary, and each machine kept its own architecture behind it.",
+      "after": "Different makes of computer on one network. The interoperation analogy: agree a protocol at the boundary without requiring identical machines.",
+      "reason": "The image visibly repeats models such as PDP-11. Describe the variety it shows without claiming every box is unique or that no machine was ever replaced."
+    },
+    {
+      "line": 306,
+      "before": "That was the argument all along, and the course's glossary is its record. The\nfix for a mismatch is bilateral. You don't have to take that on trust; you've\nbeen using it since week 2.",
+      "after": "The glossary records that vocabulary. Your Interoperation Report asks which\nparts of the shared protocol held, and which you had to revise.",
+      "reason": "Let students report whether the approach worked instead of telling them the course has already proved itself."
+    },
+    {
+      "line": 323,
+      "before": "One clause is a real protocol. Five is Thursday's job.",
+      "after": "One clause is a real protocol. Draft the rest on Thursday.",
+      "reason": "The actual lab and report require at least four clauses. Keep the short exercise distinct without adding a conflicting count."
+    },
+    {
+      "line": 327,
+      "before": "Three things it gets mistaken for, since the term arrives late and has to carry\nthe whole course:\n\n",
+      "after": "",
+      "reason": "The three distinctions stand under their own heading without another declaration that they carry the course."
+    },
+    {
+      "line": 346,
+      "before": "Next week: the open issues, the errata, and where to read further. The course\ntells you what it doesn't know.",
+      "after": "Next week: the open issues, the errata, and where to read further.",
+      "reason": "The list already says what the final week covers."
+    }
+  ],
+  "sha256_after": "a6b73647dd482d69c77299b1fded9371c326e2a6dd2a3590be333f49253e4e02"
+}

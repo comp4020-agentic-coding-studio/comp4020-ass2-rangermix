@@ -12,6 +12,12 @@
       "reason": "Describe the material a reader can use instead of advertising the forthcoming change of register."
     },
     {
+      "line": 16,
+      "before": "You can say one thing a department could change that would lower the cost for students who never disclose anything.",
+      "after": "You can propose one thing a department could change that might lower the cost for students who never disclose anything.",
+      "reason": "Align the self-check with a proposal to test, not an intervention established by the cited studies."
+    },
+    {
       "line": 33,
       "before": "the first in your family at university. The mechanics this week work for all of\nthem, because the evidence behind them does.",
       "after": "the first in your family at university. This week draws on research about\nseveral concealable identities, alongside studies of autistic disclosure.",
@@ -42,16 +48,16 @@
       "reason": "Name the specific predictor directly instead of announcing an obvious reader mistake."
     },
     {
-      "line": 94,
-      "before": "Two things follow.\n\nFirst, two people keeping the same thing to themselves, at the same cost in\neffort, are not carrying the same weight. What separates them is a belief about\nthe people around them.",
-      "after": "Two people keeping the same thing to themselves, at the same cost in effort,\nare not carrying the same weight. What separates them is a belief about the\npeople around them.",
-      "reason": "Remove a repeated course-wide signposting formula while retaining this interpretation for the separate evidence review."
+      "line": 93,
+      "before": "\nTwo things follow.\n\nFirst, two people keeping the same thing to themselves, at the same cost in\neffort, are not carrying the same weight. What separates them is a belief about\nthe people around them.\n",
+      "after": "",
+      "reason": "Remove a repeated course-wide signposting formula while retaining this interpretation for the separate evidence review. Integration: The predictor does not establish this controlled comparison between two people. The definition and ledger application above are sufficient."
     },
     {
       "line": 100,
       "before": "Second, that belief is something an **environment produces**. Which means a\ndepartment where disclosure is ordinary and adjustments are unremarkable is\nlowering a cost **for students who never disclose anything at all**. Hold on to\nthat when week 8's support staff say the fix is structural. This is the\nmeasurement under their recommendation.",
-      "after": "That belief is something an **environment produces**. Which means a department\nwhere disclosure is ordinary and adjustments are unremarkable is lowering a\ncost **for students who never disclose anything at all**.",
-      "reason": "Remove the closing announcement of the course’s argument; the causal interpretation itself needs a separate evidence check."
+      "after": "This suggests a question for a department: could making adjustments routine\nlower anticipated stigma, including for students who never disclose? That is\na proposal to test; these studies did not test a department’s adjustment policy.",
+      "reason": "Remove the closing announcement of the course’s argument; the causal interpretation itself needs a separate evidence check. Integration: Separate the course’s institutional proposal from the studies of predictors and associations. The draft reading annotation makes the same distinction."
     },
     {
       "line": 108,
@@ -90,6 +96,18 @@
       "reason": "Let the drawing carry the metaphor without promising what its recipient can or cannot infer."
     },
     {
+      "line": 241,
+      "before": "A disclosure that arrives after a problem gets heard as an explanation of the\nproblem. An explanation after a problem sounds like an excuse, whether or not\nit is one.",
+      "after": "A disclosure that arrives after a problem can be heard as an explanation of\nthe problem, and an explanation can be mistaken for an excuse.",
+      "reason": "Keep the course’s timing observation conditional, consistent with the optional advice and glossary."
+    },
+    {
+      "line": 246,
+      "before": "Same payload. Sent before the error, it's configuration. Sent after, it's an\n  excuse.",
+      "after": "Same payload. Before the error, it may be read as configuration. After, as\n  an excuse.",
+      "reason": "Preserve the sequencing joke without making the listener’s response inevitable."
+    },
+    {
       "line": 250,
       "before": "The way out is **low-stakes early disclosure of needs**, before anything goes\nwrong: the first group meeting, the first week of a job. \"Before we start: I\nwork best with things in writing\" costs almost nothing in week 1, and a great\ndeal to say for the first time in week 8.",
       "after": "One option is **early disclosure of needs**: at the first group meeting or in\nthe first week of a job. \"Before we start: I work best with things in writing.\"\nYou can make it part of the working arrangements before a problem needs\nexplaining.",
@@ -126,5 +144,5 @@
       "reason": "Keep the useful transition and clarify which labs are ending without announcing the course’s grand conclusion."
     }
   ],
-  "sha256_after": "97f3e41f39265480d818857219b29b7328aad13c807ca9953d792558e5af7c14"
+  "sha256_after": "fe42a5269511985269da6cec93de182251131188bf7b8193366b44e2ceb20d52"
 }

@@ -1,0 +1,166 @@
+{
+  "path": "src/decks/week-05.deck.mdx",
+  "category": "Slides and speaker notes",
+  "sha256_before": "6269411ce7c9c49808e6e661854d068b20dd7d4d169faaa67e02d1097b11ae9c",
+  "status": "edited",
+  "review_note": "Keep the repair and apology demonstrations, brief satire and explicit correction. Align frequency wording with week 4, identify the cost table as a proposal, and remove predicted student errors and self-congratulation from notes.",
+  "edits": [
+    {
+      "line": 3,
+      "before": "description: \"The week 5 lecture deck: repair as steady-state traffic, the three initiators, “huh?” as a word, and an apology template the evidence made this course correct.\"",
+      "after": "description: \"The week 5 lecture deck: repair as steady-state traffic, the three initiators, “huh?” as a word, and the corrected apology template.\"",
+      "reason": "Describe the deck without advertising the course's willingness to correct itself before the correction is shown."
+    },
+    {
+      "line": 83,
+      "before": "- This is the reframe the week turns on. Let it sit before moving to the table.",
+      "after": "- Pause before moving to the table.",
+      "reason": "Keep the delivery cue and remove the repeated declaration of a turning point."
+    },
+    {
+      "line": 110,
+      "before": "Repairs faster than \"what?\", and shows the speaker exactly which part you caught.",
+      "after": "Shows the speaker exactly which part you caught.",
+      "reason": "Match the revised lecture: the example identifies the trouble, while the study measures time to initiate repair rather than total repair duration."
+    },
+    {
+      "line": 113,
+      "before": "- This is the week's first sincere instruction and the one to actually practise.",
+      "after": "- Have students say the example aloud.",
+      "reason": "Replace a claim of sincerity with the practice it introduces."
+    },
+    {
+      "line": 118,
+      "before": "## And \"faster\" is literal",
+      "after": "## When repair begins",
+      "reason": "Name the quantity measured in the following study without repeating the removed faster-repair claim."
+    },
+    {
+      "line": 124,
+      "before": "Most repair initiations came after gaps of about **700 ms**.",
+      "after": "The most frequent gap before a repair initiation was about **700 ms**.",
+      "reason": "Match the lecture and week 4's record of a most-frequent interval, rather than asserting that most cases shared it."
+    },
+    {
+      "line": 154,
+      "before": "- So if \"sorry, what?\" makes you wince, you're embarrassed by a universal feature of human language.",
+      "after": "- \"Sorry, what?\" is a repair request.",
+      "reason": "Keep the function of the phrase without diagnosing the audience's emotional response."
+    },
+    {
+      "line": 162,
+      "before": "  caption=\"Repair as a state machine. Most loops take one pass.\"",
+      "after": "  caption=\"Repair as a state machine: initiate, repair, carry on.\"",
+      "reason": "Describe the diagram without an unsupported success-frequency claim."
+    },
+    {
+      "line": 174,
+      "before": "- The step people skip is the last one.",
+      "after": "- Point out the last step: accept the repair, then carry on.",
+      "reason": "Show the move to practise without asserting a typical omission."
+    },
+    {
+      "line": 199,
+      "before": "- Debrief on the ones that took more than one turn. Usually the mumble was at the start of the sentence.",
+      "after": "- Debrief on the ones that took more than one turn. Did the mumble's position make a difference?",
+      "reason": "Let the drill test an explanation instead of assigning it a customary result."
+    },
+    {
+      "line": 208,
+      "before": "It means the cheapest repair is the one that never needs you to speak. Which is why the 700 ms gap exists at all.",
+      "after": "Leaving a gap can give the speaker time to repair the problem without a prompt.",
+      "reason": "Keep one documented use of the gap without claiming it is the sole reason that gap exists."
+    },
+    {
+      "line": 211,
+      "before": "- Tie the three findings together here: self-repair preferred, initiations slow, delay makes room. They are one mechanism seen three ways.",
+      "after": "- Compare the three findings: who repairs the trouble, how long the gap is, and what the gap can allow.",
+      "reason": "Keep the synthesis while avoiding an untested assertion that the three findings establish one mechanism."
+    },
+    {
+      "line": 225,
+      "before": "The course's table, from the sources' findings. Read the right-hand column downwards.",
+      "after": "The course's proposed cost table. Test the turn counts in the repair drill.",
+      "reason": "Distinguish the proposed turn counts from the cited findings; the research notes do not establish these exact counts."
+    },
+    {
+      "line": 229,
+      "before": "- The last row is the one nobody teaches, and it is free.",
+      "after": "- The last row needs no spoken repair request; it still depends on the speaker noticing the trouble.",
+      "reason": "Keep what differs about silence without claiming nobody teaches it or that it guarantees a free repair."
+    },
+    {
+      "line": 257,
+      "before": "- So a fuller apology isn't a performance of sincerity. It does a job: it brings the anger down, and forgiveness follows that.",
+      "after": "- Keep the claim tied to the vignette scenarios and the reported role of anger reduction.",
+      "reason": "Match the lecture's removal of the sincerity claim and guaranteed progression to forgiveness."
+    },
+    {
+      "line": 274,
+      "before": "- Read the fourth one twice, then stop. The next slide is the course eating its own words.",
+      "after": "- Read the fourth one twice, then stop.",
+      "reason": "The next slide states the correction plainly; it does not need its own announcement."
+    },
+    {
+      "line": 286,
+      "before": "- Say it plainly. Do not soften it, and do not skip it --- a course that publishes errata in week 12 has to be able to do this in week 5.",
+      "after": "- State the correction before introducing the revised template.",
+      "reason": "Keep the teacher's instruction without another explanation of the course's consistency."
+    },
+    {
+      "line": 307,
+      "before": "- The explanation is now in, with two constraints that are the course's own and were the real objection all along.",
+      "after": "- The explanation is now in, with two constraints that are the course's own.",
+      "reason": "Keep ownership of the constraints without defending the earlier blanket exclusion."
+    },
+    {
+      "line": 318,
+      "before": "An explanation that arrives first, or runs long, is heard as an excuse --- which is a claim about how it lands, not about your honesty.",
+      "after": "An explanation that arrives first, or runs long, can be heard as an excuse.",
+      "reason": "Match the lecture's bounded description of a possible listener response."
+    },
+    {
+      "line": 363,
+      "before": "The situation beats the disposition. Which is to say: it's a protocol.",
+      "after": "The situation belongs in the bug report.",
+      "reason": "Match the lecture’s revised marginal joke and avoid turning explained variance into a definition."
+    },
+    {
+      "line": 366,
+      "before": "What you do and say after an error matters more than who the other person happens to be.",
+      "after": "Use the comparison as a reason to examine the situation, not to rank causes for a particular apology.",
+      "reason": "Keep the presenter’s practical application within the population-level result."
+    },
+    {
+      "line": 367,
+      "before": "- This is the evidence for the claim this week used to assert and couldn't support. Nobody has to be a naturally graceful apologiser.",
+      "after": "- Separate the association from a guarantee: an apology can matter without ensuring forgiveness.",
+      "reason": "Avoid repeating the course's correction history or converting a study association into a promise about every person."
+    },
+    {
+      "line": 389,
+      "before": "- Nobody reads the whole thing out. Say that twice --- the exercise fails if people write a safe one.",
+      "after": "- Say clearly that only the cost line is shared; nobody reads the whole apology out.",
+      "reason": "Keep the privacy condition without labelling students' protective responses a failed exercise."
+    },
+    {
+      "line": 402,
+      "before": "- Everyone assumes this one is a matter of character. It isn't. It's error handling, with a spec --- and now, with a meta-analysis.",
+      "after": "- Say both acceptance scripts aloud, including the option to ask for time.",
+      "reason": "End on usable choices rather than a universal claim about belief and another announcement of the course's evidence."
+    },
+    {
+      "line": 411,
+      "before": "- the **one-turn accept** --- the step people skip",
+      "after": "- the **one-turn accept** --- acknowledge the repair and carry on",
+      "reason": "Define the term by the action, without a prediction of failure."
+    },
+    {
+      "line": 416,
+      "before": "- Point at the glossary. Terms get introduced once and reused exactly; this is that promise being kept in public.",
+      "after": "- Point students to the three glossary entries.",
+      "reason": "Retain the navigation cue without praising the course for meeting its own promise."
+    }
+  ],
+  "sha256_after": "0353142f75e3db7465fa7ee450adaa58feb8cef5d6ae7690a93017a6c782579e"
+}

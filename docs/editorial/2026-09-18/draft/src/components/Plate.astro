@@ -1,0 +1,94 @@
+---
+// A photographic plate, with its provenance printed underneath.
+//
+// The drawings on this site are the course's own hand. A plate is the
+// opposite: someone else's document, of a protocol somebody actually wrote
+// down. Both belong here, and the difference has to be visible --- so a plate
+// is framed and its source line names the archive, the date and the licence,
+// the way a citation names a journal.
+//
+// An image is a claim too. Nothing is hotlinked: every file is fetched with
+// scripts/commons.py, committed here, and recorded in
+// docs/notes/image-provenance.md with what its licence field actually said.
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+interface Props {
+  src: ImageMetadata;
+  /** What is in the picture, for anyone who can't see it. */
+  alt: string;
+  /** Why this picture is on this page. */
+  caption: string;
+  /** The archive's own title for the file. */
+  title: string;
+  /** Link to the source record, not to the file. */
+  href: string;
+  /** Exactly what the source's licence field says. */
+  licence: string;
+  /** Required by an attribution licence; the record's own credit. */
+  author?: string;
+  /** Date of the original, where the record gives one. */
+  date?: string;
+  widths?: number[];
+  /** Layout hint for which generated width to fetch. The default describes the
+   *  article column. A deck is a 1280px slide scaled to fill the screen, so a
+   *  plate on a slide is displayed far wider than 34rem and must say so, or the
+   *  browser fetches the column-sized bitmap and stretches it on the projector. */
+  sizes?: string;
+}
+
+const {
+  src,
+  alt,
+  caption,
+  title,
+  href,
+  licence,
+  author,
+  date,
+  widths = [520, 780, 1040],
+  sizes = "(min-width: 60rem) 34rem, 92vw",
+} = Astro.props;
+---
+
+<figure class="plate">
+  <Image src={src} alt={alt} widths={widths} sizes={sizes} loading="lazy" />
+  <figcaption>
+    {caption}
+    <span class="plate-source">
+      <a href={href} rel="noopener">{title}</a>{author ? `, by ${author}` : ""}{date ? `, ${date}` : ""} — {licence}
+    </span>
+  </figcaption>
+</figure>
+
+<style>
+  .plate {
+    margin-block: var(--at-spacing-xl);
+    margin-inline: 0;
+  }
+
+  /* A plate sits in the same frame the drawings do, so a photograph reads as
+     another figure in the document rather than an illustration dropped on top
+     of it. The frame is the hand-drawn one from protocol.css. */
+  .plate :global(img) {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1.5px solid var(--nt-graphite);
+    /* Archive scans are warm; at night a hard white frame glares. */
+    background: var(--at-surface, transparent);
+  }
+
+  .plate figcaption {
+    margin-block-start: var(--at-spacing-sm);
+    color: var(--at-text-secondary);
+    font-size: var(--at-font-size-sm);
+  }
+
+  .plate-source {
+    display: block;
+    margin-block-start: 0.35rem;
+    font-family: var(--nt-mono);
+    font-size: 0.82em;
+  }
+</style>

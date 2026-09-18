@@ -1,0 +1,22 @@
+{
+  "path": "src/pages/readings/index.astro",
+  "category": "Site pages",
+  "sha256_before": "8d9ce3ccb5903d308bf3f252da2fecc28c0ad9b2f70b0a86046a5ec844982e47",
+  "status": "edited",
+  "review_note": "Retain the scattered-literature framing and verification trail. Make the list explain its contents without certifying the course’s integrity.",
+  "edits": [
+    {
+      "line": 30,
+      "before": "Where the course's claims come from, week by week. Every entry was checked against the source itself before it went on this list.",
+      "after": "Where the course's claims come from, week by week, with a record of what was checked.",
+      "reason": "Point to the recorded scope of verification instead of treating full-text and abstract checks as interchangeable."
+    },
+    {
+      "line": 38,
+      "before": "    says why it is here, and records what it was checked against, because a\n    course that complains about missing documentation does not get to invent\n    its own.",
+      "after": "    says why it is here and records what it was checked against.",
+      "reason": "The verification record does the useful work; the extra moral about the course explains the joke and praises the author."
+    }
+  ],
+  "sha256_after": "c5be7ee9e5a63177a38c843c5f27f4f6be7c64e32ed7353724e439359ac6abe7"
+}

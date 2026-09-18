@@ -1,0 +1,9 @@
+{
+  "path": "src/components/sketch/MarginNote.astro",
+  "category": "Components and diagram copy",
+  "sha256_before": "22451b25efc1be68f40d178a4960fc66ff11dbcfa7444f2a70f7635637ee28b2",
+  "status": "retained",
+  "review_note": "Retain the default Margin note accessibility label. The actual note text is supplied by each reviewed caller.",
+  "edits": [],
+  "sha256_after": "22451b25efc1be68f40d178a4960fc66ff11dbcfa7444f2a70f7635637ee28b2"
+}

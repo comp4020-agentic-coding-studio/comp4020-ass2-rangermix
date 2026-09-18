@@ -1,0 +1,148 @@
+{
+  "path": "src/content/lectures/week-12.mdx",
+  "category": "Lectures",
+  "sha256_before": "7ad982115420d28a89258b13d38ab0be9e0b08ed71591d8da4be7f2f03290a75",
+  "status": "edited",
+  "review_note": "Keep the open-issues device, errata, research caveats, capstone requirements and final satirical close. Cut explanations of the course’s own honesty, remove unverified classroom predictions, and make the reading-limit and capstone instructions direct.",
+  "edits": [
+    {
+      "line": 33,
+      "before": "Three parts of the protocol are left out of scope on purpose. Each gets an\nissue number, a reason, the reading where its documentation starts, and a\nquestion you could take into your capstone.",
+      "after": "Three parts of the protocol are left out of scope. Each gets an issue number,\na reason, the reading where its documentation starts, and a question you\ncould take into your capstone.",
+      "reason": "The list already shows that the omission is deliberate; remove the recurring announcement of intention."
+    },
+    {
+      "line": 43,
+      "before": "questions the course isn't equipped to settle for you. That's the honest\nreason, and the reason week 12 sketches rather than teaches.",
+      "after": "questions the course isn't equipped to settle for you.",
+      "reason": "The actual scope limitations are enough; remove the sentence certifying the course’s honesty."
+    },
+    {
+      "line": 90,
+      "before": "  Same destination. Different obstacle. And the obstacle already has two weeks\n  of this course pointed at it.",
+      "after": "  Same destination. Different obstacle.",
+      "reason": "Keep the compact comparison and let the next paragraph identify the earlier weeks."
+    },
+    {
+      "line": 94,
+      "before": "Look at where that obstacle sends you. **Uncertainty** is what week 3 said an\nenvelope marks --- a place where the sender doesn't know the answer. It is what\nweek 9's rate limit is for --- moving when you can't predict the other person's\nnext step. OI-1 is a hard open issue, and it does not turn out to need\nvocabulary this course hasn't already built. That is a better argument for how\nthe twelve weeks are arranged than anything the course could assert about\nromance.",
+      "after": "**Uncertainty** points back to week 3's envelope --- where the sender doesn't\nknow the answer --- and week 9's rate limit, for moving when you can't predict\nthe other person's next step. Those give you two places to start with OI-1.",
+      "reason": "Retain the useful connections without claiming the course has supplied all the vocabulary romance needs or praising its own structure."
+    },
+    {
+      "line": 125,
+      "before": "**The course's reading of it.** Everything in weeks 1--11 can be used to\npersuade. This course taught it so you could interoperate, and it's why the\nField Experiment's ethics reflection is graded, not an appendix.",
+      "after": "**The course's reading of it.** The decoder reads an envelope; it also writes\none. The rate limit paces closeness; it can also pace a sale.",
+      "reason": "Use the deck’s existing concrete examples of persuasive use instead of announcing the course’s virtuous intention."
+    },
+    {
+      "line": 129,
+      "before": "**And the reason the reflection carries marks.** Route two of the capstone\nvaries a protocol parameter on people who never agreed to be in a study. That\nis not a flaw in the design; it *is* the design, and it is why the ethics\nreflection is worth 35% rather than sitting in an appendix.",
+      "after": "**And the reason the reflection carries marks.** Route two of the capstone\nvaries a protocol parameter on people who never agreed to be in a study. The\nethics reflection is worth 35%: you must account for what you do to them.",
+      "reason": "Keep the marked component and its concrete purpose without a defensive contrast or a second appendix refrain."
+    },
+    {
+      "line": 134,
+      "before": "Thursday's lab reviews every proposed parameter against four questions, and\nthey are worth having in your head before you arrive:",
+      "after": "Thursday's lab reviews every proposed parameter against four questions:",
+      "reason": "The instruction to prepare is already clear from the named lab and checklist."
+    },
+    {
+      "line": 143,
+      "before": "The first is the one students argue with, and the argument is worth having.\nGarfinkel breached expectancies deliberately and learned a great deal doing it.\nHe was also studying strangers he would never meet again. You are varying a\nparameter on your flatmate and your tutor, which is a different consent and a\ndifferent aftermath. \"Less eye contact than usual\" is inside the range of\nordinary behaviour. \"None at all\" is a breach, and a breach is Garfinkel's\nmethod, not this course's.",
+      "after": "Garfinkel's method deliberately breached expectancies. This experiment keeps\nvariations inside ordinary behaviour; you may be working with a flatmate or\ntutor you will see again. \"Less eye contact than usual\" is inside the range of\nordinary behaviour. \"None at all\" is a breach, and a breach is Garfinkel's\nmethod, not this course's.",
+      "reason": "Remove a predicted student argument and the unverified claim that Garfinkel studied only strangers he would never meet again. The existing eye-contact rule is retained and flagged for substantive review."
+    },
+    {
+      "line": 160,
+      "before": "**One minute.** Hands up if your parameter failed a question. Failing it here\ncosts you nothing. Failing it on Thursday costs you a redesign.",
+      "after": "**One minute.** Hands up if your parameter failed a question. Use the failed\nquestion to revise it before Thursday.",
+      "reason": "Replace a rehearsed cost contrast with the next practical step."
+    },
+    {
+      "line": 179,
+      "before": "**And here is the criticism, in full.** The paragraph above says the account\n\"has drawn published criticism\", which is precisely the sort of gesture a\nspecification should not be allowed to make. So, specifically: Moskowitz\npublished a comment in the same journal a year later. The objection is **not** that the proposal is false. It is that the",
+      "after": "**The criticism.** Moskowitz published a comment in the same journal a year\nlater. The objection is **not** that the proposal is false. It is that the",
+      "reason": "Present the criticism without staging a correction of the previous paragraph, and do not call an abstract-based summary the criticism in full."
+    },
+    {
+      "line": 189,
+      "before": "Read that as an engineer and it is the best-formed known issue on this entire\nreading list. It names the claim. It says exactly what the current evidence can\nand cannot distinguish. It specifies the test that would close it. And it was\npublished next to the thing it criticises, under a name, where anyone can find\nit.",
+      "after": "The comment gives us a format for an erratum: name the claim, say what the\nevidence cannot distinguish, and specify the test that would close it.",
+      "reason": "Keep the usable format; remove the superlative and the explanation of why the reader should admire it."
+    },
+    {
+      "line": 235,
+      "before": "The register is not finished and was never meant to be.\n\n",
+      "after": "",
+      "reason": "The E-6 activity itself invites additions to the register."
+    },
+    {
+      "line": 247,
+      "before": "If you can't find a claim to file against, look at the \"the course's own\nobservation\" line at the foot of each week's research review. Every one of\nthose is a candidate, and they are listed there precisely so that this exercise\nis possible.",
+      "after": "If you can't find a claim to file against, look at the \"the course's own\nobservation\" line at the foot of each week's research review. Each is a\ncandidate.",
+      "reason": "Keep the fallback route without announcing that the course anticipated this exercise."
+    },
+    {
+      "line": 254,
+      "before": "Two of the five above are load-bearing, in the sense that a lot of this course\nleans on them, and that is exactly why they are on the list.",
+      "after": "Pay particular attention to E-3 and E-2 when you use them in your capstone.",
+      "reason": "Replace an explanation of the course’s internal design with the reason the reader needs these two entries."
+    },
+    {
+      "line": 267,
+      "before": "The reason to say this in the last week, rather than never, is that you are\nabout to write a capstone using both of them.\n\n",
+      "after": "",
+      "reason": "The preceding instruction now makes the capstone connection directly."
+    },
+    {
+      "line": 272,
+      "before": "Each open issue's entry point, with what it cannot tell you. The second column\nis the format, not a disclaimer.",
+      "after": "Each entry pairs a reading with its limit.",
+      "reason": "Describe the actual table without the rhetorical disclaimer contrast or the incorrect reference to its second column."
+    },
+    {
+      "line": 281,
+      "before": "One model belongs on that table and isn't on it. Petty and Cacioppo's\nelaboration likelihood model is the standard entry point for persuasion, and\nthis course could not retrieve a text to check it against, so it is not cited.\nThat is the rule the course has applied to itself all semester, applied one\nlast time where it costs something.",
+      "after": "Petty and Cacioppo's elaboration likelihood model is a standard entry point\nfor persuasion. We could not retrieve a text to check it against, so it is\nnot cited here.",
+      "reason": "Keep the missing-source record without a performance of how costly it was to apply the citation rule."
+    },
+    {
+      "line": 287,
+      "before": "If you take a single habit out of these twelve weeks, make it the second\ncolumn: find out what a source cannot tell you before you quote what it can.",
+      "after": "Before using a source in your capstone, check what it does not establish.",
+      "reason": "Make the source-use instruction concrete and remove the incorrect column reference and graduation-style sign-off."
+    },
+    {
+      "line": 292,
+      "before": "There is a version of this material that ends with *pass as one of them*. It\nwould have been easier to write and easier to mark, and it is the outcome this\ncourse was built to refuse.",
+      "after": "There is a version of this material that ends with *pass as one of them*.\nThat is not this course's outcome.",
+      "reason": "Preserve the course’s refusal without an unverifiable claim about how easy the alternative would have been to write and mark."
+    },
+    {
+      "line": 296,
+      "before": "You will have met that version somewhere --- a programme, a clinic, a\nwell-meaning relative --- and you should be able to name the difference now.\nA convention is not a condition.",
+      "after": "A convention is not a condition.",
+      "reason": "Do not assign every student a history of corrective programmes, clinics or relatives."
+    },
+    {
+      "line": 322,
+      "before": "Due **Sunday 13 June, 23:59**, two weeks after teaching ends, on purpose. Two\nroutes, equal weight:",
+      "after": "Due **Sunday 13 June, 23:59**, two weeks after teaching ends. Two routes,\nequal weight:",
+      "reason": "Keep the date and interval without another announcement that the schedule was deliberate."
+    },
+    {
+      "line": 335,
+      "before": "Thursday's lab is the clinic. This is the ten minutes before it, so that you\narrive with something rather than a blank page.",
+      "after": "Use these nine minutes to prepare a first paragraph for Thursday's clinic.",
+      "reason": "State the purpose once and match the activity’s unchanged two-plus-five-plus-two-minute timing."
+    },
+    {
+      "line": 355,
+      "before": "The register above has three open issues and five errata, and that is the\nhonest state of a twelve-week specification of something nobody had written\ndown.",
+      "after": "The register above leaves three open issues and five errata.",
+      "reason": "Let the final comparison with the undocumented protocol carry the satire without certifying the course’s honesty again."
+    }
+  ],
+  "sha256_after": "49537c72d899fccb643d14830d3c9863ec471494eda4fe76d262fc1dc6ddbdb8"
+}

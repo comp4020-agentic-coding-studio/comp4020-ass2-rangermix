@@ -1,0 +1,106 @@
+{
+  "path": "src/content/lectures/week-04.mdx",
+  "category": "Lectures",
+  "sha256_before": "f3edb11ee5e5e226d274b13ef418b6e7f9989c2dbcfa7886d80e9ad7373cb20f",
+  "status": "edited",
+  "review_note": "Keep the timing evidence, configuration metaphor, silence-as-patience line and usable scripts. Remove forecasts of classroom results and universal assurances about listeners; present hold tokens as proposals to try.",
+  "edits": [
+    {
+      "line": 54,
+      "before": "  caption=\"A manual exchange, Montreal, in the late 1890s. Forty operators connecting calls in parallel, each holding one conversation's timing in their head. The room has one supervisor and no clock that anyone is watching.\"",
+      "after": "  caption=\"A manual exchange, Montreal, in the late 1890s. Operators at two banks of switchboards; one supervisor in the aisle.\"",
+      "reason": "Describe the pictured arrangement without attributing thoughts or attention to the operators."
+    },
+    {
+      "line": 61,
+      "before": "The exchange above is the analogy, and the joke is that it is the easier\nsystem. Its operators were trained, paid and given a manual. The protocol in\nyour tutorial runs the same trick with none of those.",
+      "after": "At least the exchange had a supervisor. Your tutorial is expected to route\nits own traffic.",
+      "reason": "Let the comparison carry the joke; remove the explanation of the joke and unverified details about these operators' training and manuals."
+    },
+    {
+      "line": 80,
+      "before": "Kendrick puts the ordinary transition at a **range of about 100--300 ms**, and\nadds the warning this course keeps having to repeat: that estimate of central\ntendency \"hides a wealth of complex variation\", because things like the type of\nturn being responded to move the timing (Kendrick, 2015). So treat every number\nin this lecture as a middle, not a rule. Week 12's errata says the same thing\nabout the timeout, and now you know whose finding it is.",
+      "after": "Kendrick puts the ordinary transition at a **range of about 100--300 ms**, and\nwarns that this estimate of central tendency \"hides a wealth of complex\nvariation\": the type of turn being answered can change the timing (Kendrick,\n2015). Treat these figures as typical values, not deadlines for a reply. Week\n12's errata returns to this limit.",
+      "reason": "Keep the range, quotation and caveat while removing commentary on how often the course has to repeat itself."
+    },
+    {
+      "line": 109,
+      "before": "Listeners have learned the pattern. They aren't being unfair; they're right,\non average. Across thousands of conversations, a long gap has usually come\nbefore a refusal, so a long gap is heard as one on its way.",
+      "after": "That pattern gives a listener a reason to hear a long gap as reluctance. It\ndoes not tell them what a particular pause means.",
+      "reason": "Tie the explanation to the study just described, without inventing thousands of observations or certifying every listener's inference."
+    },
+    {
+      "line": 116,
+      "before": "more likely than a yes\". Past that, the inference runs whether or not anyone\ndecides to run it.",
+      "after": "more likely than a yes\".",
+      "reason": "Keep the stated research summary without extending it to an unavoidable mental process in every listener."
+    },
+    {
+      "line": 144,
+      "before": "Two results, and the week turns on the second one.\n\n",
+      "after": "",
+      "reason": "The following First and Second labels already structure the results; omit the announcement of the week's turning point."
+    },
+    {
+      "line": 159,
+      "before": "So the timeout is real, and it is **calibrated**. Every listener is running a\nthreshold they learned from the people around them, and applying it to whoever\nis in front of them. That is the mechanism behind the next section, and it is\nwhy the next section is not a complaint about unfairness.",
+      "after": "A listener brings their own timing expectations to the conversation. The\nperson answering may have learned a different pace.",
+      "reason": "Keep the practical implication of local calibration without universalising the result or explaining what the next section is not."
+    },
+    {
+      "line": 166,
+      "before": "A statistical inference misfires on everyone it wasn't built from. A long gap\nmight mean reluctance. It might also mean:",
+      "after": "A long gap might mean reluctance. It might also mean:",
+      "reason": "Remove an overgeneralised statistical maxim; the concrete list already supplies the possible misreadings."
+    },
+    {
+      "line": 174,
+      "before": "None of those is a no, and the listener's timeout reads all of them as one.\nIf you're the fast one in a conversation, the course's instruction is the\nweek's only rule aimed at listeners: **before you conclude, ask.** \"No\npressure either way. Is that a yes?\" costs one turn.",
+      "after": "Those pauses can be mistaken for a no. If you're the fast one in a\nconversation, **before you conclude, ask.** \"No pressure either way. Is that\na yes?\" costs one turn.",
+      "reason": "Give the script directly and describe a possible misreading rather than asserting that all listeners make it."
+    },
+    {
+      "line": 179,
+      "before": "And note what Roberts et al. licenses you to say to yourself. Your threshold\nis not the correct one; it is **yours**, learned locally, and there are whole\ncountries of people whose is set elsewhere. The person pausing in front of you\nis not running your configuration.\n\n",
+      "after": "",
+      "reason": "The calibration paragraph and checking script already make this point. Remove the repeated lesson and the leap from group averages to whole countries."
+    },
+    {
+      "line": 193,
+      "before": "Most rooms find the guesses are ordered correctly and the absolute numbers are\nbadly wrong. That is the point: you are a good comparator and a terrible\nclock, which is exactly the instrument the protocol runs on.",
+      "after": "Compare the order of the gaps with their measured lengths. Were you better\nat ranking them than estimating milliseconds?",
+      "reason": "Let the stopwatch exercise measure the class's performance rather than inventing a customary result."
+    },
+    {
+      "line": 209,
+      "before": "And here is the part worth carrying out of this room. Kendrick's analysis of\nwhat happens in those gaps suggests the extra time is being **used**: to catch",
+      "after": "Kendrick's analysis of what happens in those gaps suggests the extra time is\nbeing **used**: to catch",
+      "reason": "The finding can introduce itself; cut a repeated declaration of what is worth remembering."
+    },
+    {
+      "line": 225,
+      "before": "If you need more time than the clock gives, the protocol has a documented way\nto take it, even though nobody documented it: fill the gap with a sound that\nmeans *I'm still here, and I'm thinking*. The gap the listener would have read\nis no longer empty.",
+      "after": "If you need more time than the clock gives, fill the gap with a sound that\nmeans *I'm still here, and I'm thinking*. The gap the listener would have read\nis no longer empty.",
+      "reason": "Keep the usable explanation without the contradictory documented-but-undocumented setup."
+    },
+    {
+      "line": 230,
+      "before": "The scripts are the course's. The reason they work is Kendrick and Torreira's:\nwhat gets read is the empty gap, and a hold token fills it.",
+      "after": "The scripts are the course's proposals: filling the gap gives the listener\nsomething besides silence to interpret. Try them in Thursday's lab.",
+      "reason": "Distinguish proposed scripts from the cited timing study; the lab is where students test whether a token helps."
+    },
+    {
+      "line": 240,
+      "before": "A **standing hold token** resets the clock for a whole relationship. Said once,\nearly and without apology, \"I sometimes take a second to answer. A pause from\nme isn't a no\" tells the other person to switch their timeout off. That is the\ncourse's recommendation, not a tested finding. Week 11 is about why it tends\nto work better between people who have agreed on it.",
+      "after": "A **standing hold token** makes the request in advance. Said once, early and\nwithout apology, \"I sometimes take a second to answer. A pause from me isn't\na no\" gives the other person context for your pauses. This is the course's\nrecommendation, not a tested finding. Week 11 returns to it as part of a shared\nprotocol.",
+      "reason": "Keep the script, recommendation and evidence limit without promising that one sentence resets a whole relationship."
+    },
+    {
+      "line": 255,
+      "before": "Whoever says one of those first has made a small, cheap move that most\nlisteners register as considerate. Week 5 covers repair properly. This is the\npreview.",
+      "after": "Use whichever fits your speech, then leave the turn to the other person.\nWeek 5 covers repair.",
+      "reason": "Remove an unsupported most-listeners claim and assumed low cost; give the action that completes the script."
+    }
+  ],
+  "sha256_after": "de7bc8d78c994bdab655ea5799c546e8de5620155390a7997c938d5bec337baf"
+}

@@ -1,0 +1,112 @@
+{
+  "path": "src/decks/week-04.deck.mdx",
+  "category": "Slides and speaker notes",
+  "sha256_before": "f1b61e07a09603e7f9764a5ac16373663c1bde6e72735b90a167a6a9ef01654e",
+  "status": "edited",
+  "review_note": "Retain timing diagrams, figures and exercises. Align hold-token claims with the lecture's status as proposals, keep the stopwatch debrief open, and remove self-praise from teacher notes.",
+  "edits": [
+    {
+      "line": 46,
+      "before": "- Deliberate callback. The vocabulary has to compound or it isn't a course.",
+      "after": "- Recall week 1's dial and the role of turn design.",
+      "reason": "Keep the cross-week teaching cue without a declaration of what qualifies as a course."
+    },
+    {
+      "line": 73,
+      "before": "- Forty operators connecting calls in parallel, each holding one conversation's timing in their head. One supervisor. No clock anyone is watching.\n- And here's the joke: this is the EASIER system. These operators were trained, paid and given a manual. The protocol in your tutorial does the same trick with none of those.",
+      "after": "- Point out the two banks of switchboards and the supervisor in the aisle.\n- At least the exchange had a supervisor. Your tutorial is expected to route its own traffic.",
+      "reason": "Align with the revised caption and analogy without attributing mental states or unverified training details to the pictured operators."
+    },
+    {
+      "line": 116,
+      "before": "- Treat every number in this lecture as a middle, not a rule. Week 12's errata says exactly this about the timeout; now they know whose finding it is.",
+      "after": "- Treat these figures as typical values, not deadlines for a reply. Return to this limit in week 12's errata.",
+      "reason": "Keep the practical caveat and cross-reference; cut the added commentary about students' knowledge."
+    },
+    {
+      "line": 156,
+      "before": "Across thousands of conversations, a long gap has usually come before a refusal.\n\nSo a long gap gets heard as one on its way. Listeners are **right, on average.**",
+      "after": "The recorded pattern gives listeners a reason to hear a long gap as reluctance.\n\nIt does not tell them what a **particular pause** means.",
+      "reason": "Match the lecture's bounded explanation without inventing a sample or certifying every listener's inference."
+    },
+    {
+      "line": 161,
+      "before": "- This matters for the tone of the whole week. Nobody is the villain. The inference is sound and it still lands on the wrong people.",
+      "after": "- Distinguish a pattern in recorded replies from a conclusion about the person answering you.",
+      "reason": "Give the teacher a concrete distinction to explain instead of directing the course's moral tone."
+    },
+    {
+      "line": 236,
+      "before": "- This is the strongest evidence in the course for its own argument. Say that out loud.",
+      "after": "- Ask what a listener could check before interpreting a particular pause.",
+      "reason": "Cut explicit self-praise and use the result to introduce the practical check."
+    },
+    {
+      "line": 252,
+      "before": "- Most rooms find the ordering is right and the absolute numbers are badly wrong.\n- That's the point, and it's the debrief: you are a good comparator and a terrible clock. That is the instrument the protocol runs on.",
+      "after": "- Compare the order of the gaps with their measured lengths.\n- Ask whether ranking the gaps was easier than estimating milliseconds; take the room's results as they are.",
+      "reason": "Align the debrief with the open exercise rather than supplying a supposedly typical classroom result."
+    },
+    {
+      "line": 268,
+      "before": "- None of those is a no, and the timeout reads all of them as one.\n- A statistical inference misfires on everyone it wasn't built from.",
+      "after": "- Each is a possible reason for a pause that could be mistaken for a no.",
+      "reason": "Keep the possible misreadings without a universal claim about listeners or statistical inference."
+    },
+    {
+      "line": 288,
+      "before": "Your threshold is not the correct one. It's **yours** --- learned locally.\n\nThere are whole countries of people whose threshold is set somewhere else.\n\nThe person pausing in front of you is **not running your configuration**.",
+      "after": "The three language groups differed **on average**.\n\nA pause that sounds long to you may not sound long to someone else.",
+      "reason": "Keep the calibration lesson at the level of the reported group averages instead of assigning one setting to an entire country."
+    },
+    {
+      "line": 295,
+      "before": "- Deliver this to the half of the room that has been read as reluctant their whole life. It is the most useful sentence in the week.",
+      "after": "- Ask how a listener might check the meaning of a pause.",
+      "reason": "Do not prescribe the audience's life history or rank the usefulness of the line."
+    },
+    {
+      "line": 304,
+      "before": "Those moves are themselves slow: most came after gaps of about **700 ms**. The turn whose job is flagging trouble does *not* obey the fast rule.",
+      "after": "Those moves are themselves slow: the most frequent came after gaps of about **700 ms**. The turn whose job is flagging trouble does *not* obey the fast rule.",
+      "reason": "Align the slide with the lecture and research record: a most-frequent interval does not mean a majority of all moves."
+    },
+    {
+      "line": 347,
+      "before": "- The scripts are the course's. The reason they work is Kendrick and Torreira's: what gets read is the EMPTY gap.",
+      "after": "- These scripts are the course's proposals. Filling the gap gives the listener something besides silence to interpret; Thursday's lab tests whether it helps.",
+      "reason": "Do not present the proposed scripts as an intervention verified by the timing study."
+    },
+    {
+      "line": 372,
+      "before": "- Insist on out loud. The whole failure mode is that people know the script and have never heard it in their own voice.\n- Go round and listen. \"Mm\" is the one people skip and the one that works in a seminar.",
+      "after": "- Practise out loud so students can hear how the scripts sound in their own voices.\n- Go round and listen. Include the shortest token, \"Mm\", as well as full sentences.",
+      "reason": "Keep the vocal practice without predicting which script students omit or guaranteeing where it works."
+    },
+    {
+      "line": 384,
+      "before": "That resets the clock for a whole relationship.\n\nThe course's recommendation, not a tested finding. Week 11 is why it works better between people who agreed on it.",
+      "after": "That gives the other person context for your pauses.\n\nThe course's recommendation, not a tested finding. Week 11 returns to it as part of a shared protocol.",
+      "reason": "Keep the recommendation and research boundary while removing the promise of a relationship-wide reset."
+    },
+    {
+      "line": 396,
+      "before": "Cheap, and most listeners register it as considerate. Week 5 does repair properly.",
+      "after": "Use whichever fits your speech, then leave the turn to the other person. Week 5 covers repair.",
+      "reason": "Match the lecture: remove assumed cost and audience response, and give the concrete follow-through."
+    },
+    {
+      "line": 402,
+      "before": "Measure real gaps in paired talk. Then try the hold token on someone who doesn't know you're doing it.",
+      "after": "Rate yeses after different delays, then repeat with a hold token. Compare the results.",
+      "reason": "Align the slide with the disclosed two-round lab; it does not ask students to run a covert test."
+    },
+    {
+      "line": 405,
+      "before": "- Remind them the lab has a run sheet and a seated version. Nothing is sprung.",
+      "after": "- Point students to the lab's run sheet before they start.",
+      "reason": "Keep the useful preparation cue without claiming a separate seated version that the lab page does not specify."
+    }
+  ],
+  "sha256_after": "005928c0216416bf6d0243e16c1ee08083bd2ae968141f783fa5ba3dac5f959c"
+}

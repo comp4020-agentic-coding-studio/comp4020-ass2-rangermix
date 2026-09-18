@@ -1,0 +1,106 @@
+{
+  "path": "src/content/lectures/week-05.mdx",
+  "category": "Lectures",
+  "sha256_before": "ac392f85ab90b291ac0690715b403dd94aeccc1bd6d7759d60e6291170f02f73",
+  "status": "edited",
+  "review_note": "Keep the repair examples, uptime joke, apology scripts and candid correction of the earlier template. Cut repeated claims about the course's integrity and unsupported assumptions about what people skip or feel.",
+  "edits": [
+    {
+      "line": 3,
+      "before": "description: \"Misunderstanding happens about once every 1.4 minutes, in every language anyone has checked. The protocol has a subroutine for it, and a separate one for offence.\"",
+      "after": "description: \"A twelve-language study found a listener signalling trouble about once every 1.4 minutes. The protocol has a subroutine for it, and a separate one for offence.\"",
+      "reason": "Keep the reported frequency while limiting the description to the study actually cited, rather than all languages anyone has checked."
+    },
+    {
+      "line": 80,
+      "before": "That is the week's first sincere instruction. When you've half-understood,\n**say the part you got**.",
+      "after": "When you've half-understood, **say the part you got**.",
+      "reason": "Give the instruction without announcing the course's sincerity."
+    },
+    {
+      "line": 82,
+      "before": "Friday?\" repairs faster than \"what?\", and it shows the speaker exactly which\npart you did catch.",
+      "after": "Friday?\" shows the speaker exactly which part you did catch.",
+      "reason": "The cited study times repair initiation, not total repair duration. Keep the useful script without claiming that it finishes faster."
+    },
+    {
+      "line": 85,
+      "before": "The word *faster* there is literal. Kendrick timed 169 other-initiations of\nrepair:",
+      "after": "Kendrick timed how soon 169 other-initiations of repair began:",
+      "reason": "State the measured quantity instead of using it to validate a different timing claim."
+    },
+    {
+      "line": 88,
+      "before": "corrected an error arrived **without delay** (Kendrick, 2015). Most repair\ninitiations came after gaps of about **700 ms** --- so the move that flags",
+      "after": "corrected an error arrived **without delay** (Kendrick, 2015). The most\nfrequent gap before a repair initiation was about **700 ms** --- so the move that flags",
+      "reason": "Align this reuse of the finding with week 4's more precise research record: the most-frequent gap is not a claim that most cases had that gap."
+    },
+    {
+      "line": 106,
+      "before": "If \"sorry, what?\" makes you wince, you are embarrassed by a universal feature\nof human language. The \"sorry\" is optional.",
+      "after": "\"Sorry, what?\" is a repair request. The \"sorry\" is optional.",
+      "reason": "Keep the useful permission and deadpan final line without diagnosing the reader's embarrassment."
+    },
+    {
+      "line": 115,
+      "before": "  caption=\"Repair as a state machine. Most loops take one pass: an initiator, a fix, and the conversation carries on.\"",
+      "after": "  caption=\"Repair as a state machine: an initiator, a fix, and a return to the conversation.\"",
+      "reason": "Describe the diagram without an unsupported claim about how often a single pass succeeds."
+    },
+    {
+      "line": 125,
+      "before": "The step people skip is the last one. A repair is accepted in **one turn**\n(\"got it\", \"ah, next Thursday\") and the conversation carries on.",
+      "after": "Accept a repair in **one turn** (\"got it\", \"ah, next Thursday\") and carry on.",
+      "reason": "Make the course's recommendation explicit instead of presenting it as a universal rule that people fail to follow."
+    },
+    {
+      "line": 150,
+      "before": "(Kirchhoff et al., 2012). So a fuller apology isn't a performance of\nsincerity. It is doing a job: it brings the anger down, and forgiveness\nfollows that.",
+      "after": "(Kirchhoff et al., 2012).",
+      "reason": "The reported mediation is already stated; cut the extra claim about sincerity and the simplified promise that forgiveness follows."
+    },
+    {
+      "line": 177,
+      "before": "constraints that are the course's own and were the real objection all along:\nit goes **after** the ownership, never before, and it stays **shorter than the\napology**. An explanation that arrives first, or runs long, is heard as an\nexcuse --- which is a claim about how it lands, not about honesty.",
+      "after": "constraints that are the course's own: it goes **after** the ownership, never\nbefore, and it stays **shorter than the apology**. An explanation that arrives\nfirst, or runs long, can be heard as an excuse.",
+      "reason": "Keep the template's stated constraints; remove defensive rewriting of the course's earlier position and a guaranteed listener response."
+    },
+    {
+      "line": 189,
+      "before": "A caveat worth saying out loud: Kirchhoff et al. is two vignette studies in\nGermany.",
+      "after": "Kirchhoff et al. report two vignette studies in Germany.",
+      "reason": "State the study boundary without another announcement that the point deserves emphasis."
+    },
+    {
+      "line": 201,
+      "before": "The result this week leans on hardest is the next one. **Situational\nconstructs accounted for greater variance in forgiveness than victims'\ndispositions.** What you do and say after an error matters more than who the\nother person happens to be.",
+      "after": "**Situational constructs accounted for greater variance in forgiveness than\nvictims' dispositions.** That gives us a reason to examine the situation\ninstead of treating forgiveness as a fixed trait.",
+      "reason": "Let the result stand without ranking its importance to the course. Integration: A variance comparison does not establish this ranking for a particular apology. Make the practical application an inference rather than a universal prediction."
+    },
+    {
+      "line": 206,
+      "before": "Two folk theories also die in that abstract: the effect of **gender was\nnon-significant** (*r* = .01) and the effect of **age was negligible**\n(*r* = .06).",
+      "after": "In the same analysis, the effect of **gender was non-significant**\n(*r* = .01) and the effect of **age was negligible** (*r* = .06).",
+      "reason": "Keep the reported effects and values; avoid treating a non-significant estimate as the death of a theory."
+    },
+    {
+      "line": 211,
+      "before": "The situation beats the disposition. Which is to say: it's a protocol.",
+      "after": "The situation belongs in the bug report.",
+      "reason": "Keep the engineering deadpan without declaring that a correlation makes forgiveness a protocol."
+    },
+    {
+      "line": 214,
+      "before": "This is the evidence for the claim at the bottom of this page, which earlier\nversions asserted and could not support. Nobody has to be a naturally\nforgiving person, or a naturally graceful apologiser. The parts are the parts,\nand they work on the anger rather than on your character.\n\n",
+      "after": "",
+      "reason": "The cited result and practical scripts already support the teaching point; cut a repeated history of the course's improvement and an absolute claim about personality."
+    },
+    {
+      "line": 228,
+      "before": "\nThe subroutine this course is named for, in a way, is the one nobody documents\nbecause everyone assumes it's a matter of character. It isn't. It's error\nhandling, with a spec, and now you have it.\n",
+      "after": "",
+      "reason": "End on the usable receiving scripts instead of restating the course thesis and assuming what everyone believes."
+    }
+  ],
+  "sha256_after": "dd9f7b5d320897db2954236cda87bbb0e8da7cb64fd3cf613cb9260ddac81ff6"
+}

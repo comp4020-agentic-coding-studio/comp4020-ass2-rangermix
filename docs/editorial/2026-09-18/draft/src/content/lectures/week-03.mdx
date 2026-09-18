@@ -1,0 +1,301 @@
+---
+title: "Payload and Envelope"
+description: "Indirect speech, hints and implicature: a protocol that breaks its own published maxims on purpose, and calls it politeness."
+week: 3
+date: 2027-03-09
+teachers:
+  - wren-aldous-kemp
+slides: /decks/week-03/
+spec:
+  - "For any line in §5’s decoder, you can name the maxim it bends and say its payload out loud in plain words."
+  - "You can ask someone for the payload of an ambiguous invitation without implying they were being evasive."
+  - "You can explain, using plausible deniability, why a hint can cost the listener less than a direct request."
+  - "You can give an example of over-decoding: treating a sentence as an envelope when there was nothing inside it."
+  - "Given an envelope somebody sent you, you can suggest what the sender is uncertain about or wants to leave off the record."
+  - "You can say why the sender of a hint is a poor judge of whether it was clear, and cite the experiment that shows it."
+related:
+  - sessions/week-03
+  - readings/grice-1975-logic-conversation
+  - readings/pinker-2008-indirect-speech
+  - readings/lee-2010-strategic-speaker
+  - readings/keysar-2002-overestimation
+  - readings/chevallier-2010-scalar-inferences
+---
+
+import MarginNote from "../../components/sketch/MarginNote.astro";
+import Envelope from "../../components/sketch/Envelope.astro";
+
+"We should get coffee sometime."
+
+Is that a request to schedule coffee? If you've replied "sure, Thursday at
+10?" and watched the other person's face do something complicated, you've
+encountered the problem. The same line can be an invitation or a way to say
+you'd like to stay on friendly terms.
+
+## The specification the protocol claims to follow
+
+The closest thing the protocol has to published documentation was written by
+the philosopher Paul Grice. He proposed a Cooperative Principle: make your
+contribution "such as is required, at the stage at which it occurs, by the
+accepted purpose or direction of the talk exchange". Under it sit four
+categories of maxim (Grice, 1975):
+
+| Category | The maxims, in Grice's words |
+| --- | --- |
+| Quantity | "Make your contribution as informative as is required (for the current purposes of the exchange)." "Do not make your contribution more informative than is required." |
+| Quality | "Do not say what you believe to be false." "Do not say that for which you lack adequate evidence." |
+| Relation | "Be relevant." |
+| Manner | "Be perspicuous": avoid obscurity, avoid ambiguity, be brief, be orderly. |
+
+Read that as a spec, and the majority's protocol fails it constantly. "We
+should get coffee sometime" gives no time, no place and no commitment. It is
+less informative than it would need to be if it were a plan.
+
+Grice saw this coming. In the same passage, he notes that there are other
+maxims, "such as 'Be polite'", that also generate meaning beyond what is
+said. And he says that stating his maxims as though talk existed to exchange
+information is "too narrow".
+
+<MarginNote label="Known issue">
+  The author of the specification filed the bug report in the same paragraph.
+</MarginNote>
+
+So the protocol has a published spec, and a known exception the author flagged
+himself: politeness is allowed to override the other four. Nobody told you
+which one wins.
+
+## Payload and envelope
+
+Two terms for the rest of the semester.
+
+- The **payload** is what the speaker needs you to understand or do.
+- The **envelope** is how it's wrapped: the words chosen instead of the
+  payload, and the maxim those words bend to get there.
+
+Grice ties his maxims to what he calls *conversational implicature*: meaning
+that gets across without being said. The course's working version is this.
+When a sentence visibly bends a maxim, assume the speaker is still being
+cooperative, and ask why a cooperative person would bend that one. The answer
+is usually the payload.
+
+<Envelope
+  utterance={["“We should get coffee", "sometime.”"]}
+  annotation="bends Quantity: no time, no place"
+  payload={["I'd like us to be", "on friendly terms."]}
+  caption="One line, opened. The words are the envelope; underneath is the maxim they bend to get the payload across."
+/>
+
+## Why anyone sends an envelope
+
+If the payload is the point, why not send it bare?
+
+Pinker, Nowak and Lee give three reasons (Pinker et al., 2008). First, an
+indirect request offers **plausible deniability**: a cooperative listener can
+accept it, and an unwilling one can decline without either of you having to
+acknowledge a refusal. Second, talk does two jobs at once. It carries
+information, and it negotiates what kind of relationship two people have. A
+bare request can renegotiate the relationship when all you wanted was the
+salt. Third, an explicit statement becomes common knowledge between you, in a
+way a hint never does, even when both of you knew exactly what was meant.
+
+That last reason is why "we both knew" and "you said it" are different events
+under this protocol.
+
+## When does an envelope appear?
+
+"People are indirect to be polite" is true and nearly useless. It doesn't tell
+you when to expect one.
+
+Lee and Pinker built a model that does. Their **strategic speaker** goes
+indirect when they are
+<span data-quoted>uncertain of whether the hearer is cooperative or
+antagonistic</span> (Lee & Pinker, 2010). Their worked case is deliberately
+unsocial, which is why it's easy to see: **bribing a policeman who might be
+corrupt or honest.** A veiled offer can be taken up by the first and ignored by
+the second. The briber survives either outcome. A direct offer is only safe if
+you already know which officer you're talking to.
+
+Ordinary life has the same shape with emotional penalties instead of legal
+ones, whenever what you want is quietly ruled out by the kind of relationship
+you're in.
+
+<MarginNote label="Diagnostic">
+  Ask what the sender is unsure of --- or what the hint lets either of you
+  leave unsaid.
+</MarginNote>
+
+Ask **what is this person not sure of?** The next section adds a second
+question: **what are they keeping off the record?**
+
+| The envelope | What the sender doesn't know |
+| --- | --- |
+| "We should get coffee sometime." | whether you want to be friends with them |
+| "No worries if not!" | whether the favour is too big to ask |
+| "Are you around this weekend at all?" | whether you're free, and whether you'd want to |
+| "I don't know if this is useful, but---" | whether the group wants their idea |
+
+In each example, the sender risks an answer they can't predict. The envelope
+gives them a way to retreat.
+
+### The part that still works when you both know
+
+Here's the clause that makes the model more than politeness in a lab coat.
+**Even when the hearer's willingness is known**, Lee and Pinker argue,
+indirectness still buys something: a higher-order deniability that preempts
+<span data-quoted>certainty, gossip, and common knowledge of the request</span>.
+
+Even when both of you understand it, the request itself remains unsaid. The
+sender can dispute what the hint meant.
+
+That is why "we both knew" and "you said it" are different events under this
+protocol, and it is worth knowing for the moments when someone insists that
+nothing was ever asked of you. Under this protocol, that can be literally true
+and completely false at the same time.
+
+### In the room --- find the uncertainty (8 min)
+
+**Four minutes, in pairs.** Four lines are on the board. For each, write down
+one sentence: *what does the sender not know?*
+
+**Two minutes.** Compare with the pair next to you. Where you disagree, write
+down both possible payloads.
+
+**Two minutes, the room.** One line, argued out loud.
+
+There isn't a key at the back. If there were, the protocol would be
+documented, and we would not be here.
+
+## The decoder
+
+Worked examples, each checked against the principle above. The entries are the
+course's, not a research table; test them in the lab and in your journal.
+
+| Utterance | Maxim bent | Payload | Expected response |
+| --- | --- | --- | --- |
+| "We should get coffee sometime." | Quantity: no time, no place | I'd like us to be on friendly terms. | "Yes, definitely." No calendar required. |
+| "No worries if not!" | Quality: there may well be worries | I'd like this, and I'm giving you a painless exit. | Do it, or decline with thanks, quickly. |
+| "Is it cold in here?" | Relation: a question about temperature, asked of a person | Could the window be closed? | "Want me to shut the window?" |
+| "Interesting idea." (in a meeting) | Quantity: no content | I'm not convinced. | "What would it need to work for you?" |
+| "I'll let you go." | Relation: framed as a favour to you | I'd like to end this call. | "Okay, talk soon." |
+| "Just circling back on this." (email) | Quantity: no new information | This is late. | A date, or the thing. |
+
+## Decoding from both ends
+
+**If you decode by reading the words**, the table is a lookup until the
+pattern becomes automatic, and it may never need to. When a sentence might be
+an envelope and the stakes matter, ask for the payload. Asking isn't an
+accusation if you take the blame for the ambiguity:
+
+> "Do you mean coffee as a plan, or as a nice thing to say? Either's fine. I
+> just want to know whether to put it in my calendar."
+
+**If you decode without noticing**, the table is you, slowed down. Your
+exercise this week runs the other way: send one payload bare, to someone who
+would rather have it that way, and notice what it costs you to do it.
+
+Sending a payload bare is always valid. Under Pinker et al.'s account, it also
+changes the relationship a little, because it creates common knowledge where
+a hint wouldn't. That is a cost, not a mistake. Sometimes it's worth paying.
+You can lower it by saying you're choosing directness: "I'm going to be
+literal, because I'd rather not get this wrong."
+
+## Who is actually wrong when a hint misses
+
+Keysar and Henly had people say **deliberately ambiguous sentences** while
+trying to convey one specific intention, then asked them to estimate whether
+the addressee had got it. They **overestimated, consistently**: they expected to
+be understood more often than they were (Keysar & Henly, 2002).
+
+**Overhearers** who had been told the speaker's intention did *not* make the
+same error. So the overestimation isn't
+a general fact about watching a conversation. It comes from having been the one
+who spoke.
+
+The authors' explanation: a speaker monitoring their own utterance
+<span data-quoted>does not act as an unbiased observer</span>. They
+underestimate how ambiguous their sentence was, and overestimate how much their
+own extra cues made the intention clear. The abstract calls this a systematic
+source of miscommunication in ordinary conversation.
+
+<MarginNote label="Sender-side fault">
+  The sender's confidence that it was obvious is the thing the experiment
+  measured. It did not hold up.
+</MarginNote>
+
+Ask the listener what they understood. The sender's confidence cannot tell
+you that.
+
+If you send envelopes: when it matters, check what the listener understood.
+Send a second one that is plainer if needed, and don't treat having to as a
+failure on their part.
+
+If you miss them: the sender may have overestimated how clear they were. You
+can question the hint and still want the decoder. Wanting to get better at
+something is not an admission that the whole problem was yours.
+
+### But is the decoder missing?
+
+A fair question to ask at this point, if you've been told all your life that you
+don't get hints: is this the part that's absent?
+
+Chevallier, Wilson, Happé and Noveck tested one well-studied inference. From
+"John or Mary will come", most listeners infer that not both will --- although
+the words permit both. They **predicted**, on the basis of the existing
+literature and its <span data-quoted>reported pragmatic deficits</span>, that
+autistic participants would make fewer of these inferences than matched
+controls.
+
+They report the result as <span data-quoted>contrary to expectations</span>:
+performance did not differ between the groups (Chevallier et al., 2010).
+
+One experiment tested one inference type in two matched groups. It does not
+settle wider questions about pragmatics.
+
+### In the room --- send it twice (7 min)
+
+**Three minutes, alone.** Write one real request you want from someone this
+week, as an envelope. Wrap it properly.
+
+**Two minutes.** Underneath, write the same request bare. No softening, no
+"no worries if not", no exit ramp.
+
+**Two minutes, in pairs.** Swap and read only the *envelope*. Your partner
+writes what they think the payload is. Then you show them the bare version.
+
+If the bare version feels unsendable, write down why. Return to that cost in
+week 6.
+
+## Over-decoding
+
+The failure the table doesn't show is hearing an envelope where there's
+nothing inside. "Is it cold in here?" is sometimes just a question about the
+temperature. Treating every sentence as a hint is as nonconforming as
+treating none as one, and more tiring.
+
+The course's rule of thumb: decode when a maxim is *visibly* bent, and the
+listener is plainly expected to do something about it. Otherwise, take the
+words at face value, and let the speaker send a second, clearer envelope if
+they need to.
+
+### In the room --- the over-decoding audit (6 min)
+
+**Three minutes, alone.** Write down two times this week you suspected a
+sentence was an envelope. For each, answer: was a maxim *visibly* bent, and
+were you *plainly* expected to do something?
+
+**Three minutes, in pairs.** Read one out. Your partner's only job is to say
+whether the face-value reading also works.
+
+If the face-value reading works and nothing was expected of you, you may have
+over-decoded. Note how much time you spent on it, and whether the other person
+had any reason to notice.
+
+## What this week added to the vocabulary
+
+**Payload**, **envelope**, **plausible deniability** and **over-decoding** ---
+all four are in the glossary and all four come back. An envelope can manage
+uncertainty or leave a request off the record. Senders can overestimate how
+clear they were.
+
+Next week: the gaps between turns, and what each length of silence gets read
+as.

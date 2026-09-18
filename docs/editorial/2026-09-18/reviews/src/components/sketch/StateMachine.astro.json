@@ -1,0 +1,9 @@
+{
+  "path": "src/components/sketch/StateMachine.astro",
+  "category": "Components and diagram copy",
+  "sha256_before": "deee637325d9c13cf7a64481a522cd4b285a05e2dcd29fe2bea2eeef8fdd10c3",
+  "status": "retained",
+  "review_note": "Retain the accessible From/to transition description. States, labels and captions are supplied by the reviewed lecture and deck files.",
+  "edits": [],
+  "sha256_after": "deee637325d9c13cf7a64481a522cd4b285a05e2dcd29fe2bea2eeef8fdd10c3"
+}

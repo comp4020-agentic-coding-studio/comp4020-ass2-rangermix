@@ -1,0 +1,107 @@
+---
+// The week 9 depth scale as a ladder, with the step-one-at-a-time rule drawn
+// around it.
+//
+// The scale itself is a table on the page and reads fine as one. What a table
+// can't show is the rule: match their last level, plus or minus one. Here the
+// rung they are on is marked, and the window you may step into is drawn around
+// it, so the rule is a shape rather than a sentence to remember.
+//
+// The rungs carry no examples on purpose. The table above the drawing already
+// has them, and a second copy inside the picture crowded the window note off
+// the top of it.
+import { dashed, line, rng } from "../../lib/sketch";
+
+export interface Level {
+  label: string;
+}
+
+interface Props {
+  levels: Level[];
+  /** The level the other person's last turn was at. */
+  at: number;
+  windowNote: string;
+  caption: string;
+  seed?: string;
+}
+
+const { levels, at, windowNote, caption, seed = caption } = Astro.props;
+const r = rng(seed);
+
+const width = 520;
+const railLeft = 62;
+const railRight = 118;
+const rungGap = 58;
+const top = 54;
+const top_ = levels.length - 1;
+const yOf = (level: number) => top + (top_ - level) * rungGap;
+
+const rails = [
+  line(railLeft, yOf(top_) - 22, railLeft, yOf(0) + 22, r),
+  line(railRight, yOf(top_) - 22, railRight, yOf(0) + 22, r),
+].join(" ");
+
+const rungs = levels.map((level, n) => ({
+  ...level,
+  n,
+  y: yOf(n),
+  d: line(railLeft, yOf(n), railRight, yOf(n), r),
+  gold: n === at,
+}));
+
+// The window is the rung they are on and one step either side of it, clamped
+// to the scale: you cannot step below 0 or above the top.
+const lowest = Math.max(0, at - 1);
+const highest = Math.min(top_, at + 1);
+const winTop = yOf(highest) - 26;
+const winBottom = yOf(lowest) + 26;
+const win = [
+  dashed(railLeft - 22, winTop, width - 16, winTop, r),
+  dashed(width - 16, winTop, width - 16, winBottom, r),
+  dashed(width - 16, winBottom, railLeft - 22, winBottom, r),
+  dashed(railLeft - 22, winBottom, railLeft - 22, winTop, r),
+].join(" ");
+
+const height = yOf(0) + 54;
+const id = `ladder-${Math.abs([...seed].reduce((h, c) => (h * 31 + c.charCodeAt(0)) | 0, 7)).toString(36)}`;
+---
+
+<figure class="sketch depth-ladder" aria-labelledby={`${id}-caption`}>
+  <svg
+    viewBox={`0 0 ${width} ${height}`}
+    style={`max-width: ${width}px`}
+    role="img"
+    aria-labelledby={`${id}-title`}
+    aria-describedby={`${id}-levels`}
+  >
+    <title id={`${id}-title`}>{caption}</title>
+    <path class="graphite" d={win} />
+    <text class="note" x={width - 16} y={winTop - 10} text-anchor="end">{windowNote}</text>
+    <path class="ink" d={rails} />
+    {
+      rungs.map((rung) => (
+        <g>
+          <path class={rung.gold ? "gold" : "ink"} d={rung.d} />
+          <text class="timing" x={railLeft - 34} y={rung.y + 5} text-anchor="end">
+            {rung.n}
+          </text>
+          <text class={rung.gold ? "doc-line-gold" : "doc-line"} x={railRight + 22} y={rung.y + 5}>
+            {rung.label}
+          </text>
+        </g>
+      ))
+    }
+  </svg>
+  <ol class="visually-hidden" id={`${id}-levels`} reversed>
+    {
+      [...rungs].reverse().map((rung) => (
+        <li>
+          Level {rung.n}: {rung.label}
+          {rung.gold ? " (the level their last turn was at)" : ""}
+          {!rung.gold && rung.n >= lowest && rung.n <= highest ? " (inside the window)" : ""}
+        </li>
+      ))
+    }
+  </ol>
+  <figcaption id={`${id}-caption`}>{caption}</figcaption>
+</figure>

@@ -1,0 +1,80 @@
+---
+import { render } from "astro:content";
+import { getPublishedCollection } from "astro-course-university/content";
+import RelatedContent from "astro-course-university/components/RelatedContent.astro";
+import SpecList from "astro-course-university/components/SpecList.astro";
+import Callout from "astro-theme-university/components/Callout.astro";
+import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import { withBase } from "astro-theme-university/url";
+import MarkingModel from "../../components/MarkingModel.astro";
+import { formatDueDay, formatDueTime, submissionsOf } from "../../lib/submissions";
+import { graphCollections, siteConfig } from "../../site-config";
+
+export async function getStaticPaths() {
+  const assessments = await getPublishedCollection("assessments");
+  return assessments.map((assessment) => ({
+    params: { slug: assessment.id },
+    props: { assessment },
+  }));
+}
+
+const { assessment } = Astro.props;
+const { Content } = await render(assessment);
+const submissions = submissionsOf(assessment.data);
+const due = assessment.data.due;
+---
+
+<ContentLayout
+  title={assessment.data.title}
+  description={assessment.data.description}
+  {...siteConfig}
+>
+  {
+    assessment.data.draft && (
+      <Callout type="warning">
+        <p>
+          <strong>Draft.</strong> This brief is still being finalised and may change.
+        </p>
+      </Callout>
+    )
+  }
+  <p class="week-meta">
+    <strong>Weight:</strong> {assessment.data.weight}%.{" "}
+    {
+      submissions.length > 0 ? (
+        <>
+          <strong>Turned in:</strong> weekly, {submissions.length} times
+        </>
+      ) : (
+        <>
+          <strong>Due:</strong> {formatDueDay(due)}, {formatDueTime(due)} Canberra time
+        </>
+      )
+    }
+  </p>
+  <p>
+    <a href={withBase("/submissions/")}>Submission instructions</a>: the hand-in
+    process and whether uploads are available.
+  </p>
+  {
+    submissions.length > 0 && (
+      <section class="submission-schedule" aria-labelledby="schedule">
+        <h2 id="schedule">When each submission is due</h2>
+        <p>At {formatDueTime(submissions[0])} Canberra time, on each of these Sundays:</p>
+        <ol>
+          {submissions.map((date) => (
+            <li>
+              <time datetime={date.toISOString()}>{formatDueDay(date)}</time>
+            </li>
+          ))}
+        </ol>
+      </section>
+    )
+  }
+  <Content />
+  <SpecList spec={assessment.data.spec}>
+    These are the checks a marker uses. Work through them before you submit.
+  </SpecList>
+  {assessment.data.marking && <MarkingModel marking={assessment.data.marking} />}
+  <RelatedContent entry={assessment} collections={graphCollections} />
+</ContentLayout>

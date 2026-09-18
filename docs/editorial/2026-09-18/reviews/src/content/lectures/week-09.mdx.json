@@ -1,0 +1,118 @@
+{
+  "path": "src/content/lectures/week-09.mdx",
+  "category": "Lectures",
+  "sha256_before": "f05c4da4f413d6507932e14fcdb2d9e2f95a0b9f815454d6808b40a48f417ba2",
+  "status": "edited",
+  "review_note": "Keep the café queue, depth ladder, follow-up questions, hold token and published-research changelog. Remove universal friendship deadlines and claims that a role-switching study validates the invented ±1 rule. Keep emotional disclosure voluntary rather than calling it privacy-free.",
+  "edits": [
+    {
+      "line": 29,
+      "before": "You've had three good conversations with someone from your lab. Really good\nones. And yet it isn't a friendship, and you can't tell what's missing.",
+      "after": "Suppose you've had three good conversations with someone from your lab.\nReally good ones. And yet it doesn't feel like a friendship, and you can't\ntell what's missing.",
+      "reason": "Mark the opening as a scenario rather than telling the reader what their relationship is."
+    },
+    {
+      "line": 45,
+      "before": "We couldn't read the full paper, only its abstract, so this page quotes no\nhour counts from it. The finding that matters doesn't need any: **the protocol\nexpects hours before depth**. Three great conversations are three hours, not a\nfriendship yet. That isn't a verdict on the conversations. It's the clock.",
+      "after": "We couldn't read the full paper, only its abstract, so this page quotes no\nhour counts from it. It gives no timetable for your particular friendship.\nIf three good conversations have left you wanting more, another chance to\nspend time together is a place to start.",
+      "reason": "Keep the evidence limit and practical suggestion without inventing conversation durations or a minimum friendship threshold."
+    },
+    {
+      "line": 51,
+      "before": "  Friendship is provisioned in hours. There is no way to buy it in one large\n  conversation.",
+      "after": "  A good conversation is an opening. Leave room for another.",
+      "reason": "Preserve a brief marginal observation without asserting a universal limit on how friendship begins."
+    },
+    {
+      "line": 65,
+      "before": "The third is the easiest to miss. Receiving someone's disclosure well builds\ncloseness too, on their side. Listening is a move, not a pause between moves.",
+      "after": "The third gives the listener a role too: the other person is disclosing to\nyou. Listening is a move, not a pause between moves.",
+      "reason": "Keep the useful punchline without claiming which result readers most often miss."
+    },
+    {
+      "line": 73,
+      "before": "Sprecher, Treger and Wondra ran that third effect as an experiment. Pairs of",
+      "after": "Sprecher, Treger and Wondra asked how the two roles affect liking. Pairs of",
+      "reason": "The role-comparison study is a related question, not a direct experimental restatement of the third meta-analytic association."
+    },
+    {
+      "line": 82,
+      "before": "Then the sentence this whole week rests on:\n\n",
+      "after": "",
+      "reason": "Let the reported result stand without declaring that the whole week depends on it."
+    },
+    {
+      "line": 87,
+      "before": "  One-sided exchange, asymmetric result. Both sides step, and it resolves.",
+      "after": "  In this task, swapping roles removed the difference between them.",
+      "reason": "Keep the role-switching result scoped to the task rather than guaranteeing that any asymmetry resolves."
+    },
+    {
+      "line": 90,
+      "before": "Read that as a protocol result. A one-sided exchange doesn't fail --- it leaves\nthe two people **feeling differently about the same conversation**. What fixes\nit is not saying more, or saying less. It is **taking the other turn.**\n\nThat is the evidence under the rule in §4, which until now this course\njustified by reasoning about cost. The rate limit isn't politeness. It is the\nmechanism by which two people end up in the same conversation.",
+      "after": "In this task, the difference between assigned roles disappeared after both\npeople had listened and disclosed. That is part of the evidence under the rule\nin §4: pay attention to both sides of the exchange. It does not validate the\ncourse's five levels or its plus-or-minus-one window.",
+      "reason": "Retain the role-switching finding and section reference without presenting them as validation of the invented depth scale."
+    },
+    {
+      "line": 143,
+      "before": "That's why the café-queue divorce landed strangely. It went from level 0 to\nlevel 3 in one turn, with no step from the listener in between. And it's why\nthree conversations at level 1 don't become a friendship. Nobody stepped.",
+      "after": "In the café-queue example, the model marks a jump from level 0 to level 3,\nwith no step from the listener in between. For the three good conversations,\nit gives you a question: did either person offer anything beyond level 1?",
+      "reason": "Use the model to examine the scenarios without treating it as a complete diagnosis of a relationship."
+    },
+    {
+      "line": 182,
+      "before": "nothing about whether the person you said it to came away feeling heard. That\nturns out to be where most of the work is.",
+      "after": "nothing about whether the person you said it to came away feeling heard.",
+      "reason": "The model’s limitation is clear without an unsupported ranking of where most work happens."
+    },
+    {
+      "line": 191,
+      "before": "  An event-contingent diary. Filled in after the interaction, not at the end of\n  the week. Your Field Journal is this method.",
+      "after": "  An event-contingent diary: filled in after each interaction. Your Field\n  Journal can borrow that timing without recording every exchange.",
+      "reason": "Preserve the useful method connection without equating the course’s weekly sampled journal with the study’s immediate record of every interaction."
+    },
+    {
+      "line": 195,
+      "before": "Intimacy in a single interaction came out as **both people's disclosure**, with\n**perceived partner responsiveness** as a partial mediator. Not what was said.\nWhether the person who said it thought they had been received.",
+      "after": "The findings linked intimacy in a single interaction to **both people's\ndisclosure**, with **perceived partner responsiveness** as a partial mediator.\nWhat was shared and how the partner seemed to receive it both mattered.",
+      "reason": "Keep the research result while removing a dramatic contrast that incorrectly dismisses disclosure content."
+    },
+    {
+      "line": 217,
+      "before": "The left column is level 2 by subject and lands like level 0. The right column\nis the same information, one rung higher, at no extra cost in privacy. If you\nhave ever been told you give people information and not much else, that is the\ncolumn to practise --- and notice that the fix is *additive*. Nothing in the\nleft column was wrong.",
+      "after": "The subject stays the same; the right column adds what it means to the\nspeaker. That feeling may itself be private. Use the extra clause when you\nwant to share it, and leave it out when you don't.",
+      "reason": "Keep the usable distinction without promising a fixed effect or treating emotional disclosure as free of privacy costs."
+    },
+    {
+      "line": 225,
+      "before": "There is a documented, cheap, repeatable way to be liked more in a\nconversation, and the people who benefit from it do not know they are.\n\n",
+      "after": "",
+      "reason": "Start with the study instead of an advertisement promising a cheap way to be liked."
+    },
+    {
+      "line": 246,
+      "before": "The follow-up is the cheapest turn in this entire week. It costs you no\ndisclosure at all. It is a way to take your turn --- which §4 says you have to\ndo --- **without** stepping up a level, which is exactly what you want when the\nother person has just gone to level 3 in a café queue and you are not going\nthere with them.",
+      "after": "A follow-up lets you take a turn --- which §4 says to make room for ---\n**without** disclosing something of your own. It is one option when the other\nperson has gone to level 3 in a café queue and you do not want to match that\ndepth.",
+      "reason": "Keep the practical alternative and reference without ranking its cost for everyone or telling the reader exactly what they want."
+    },
+    {
+      "line": 257,
+      "before": "  An effective move, available to everyone, that its own users don't know they\n  are running. This course in one sentence.",
+      "after": "  A move whose effect the participants did not anticipate.",
+      "reason": "Keep the research’s unexpected result without declaring it a summary of the course or universally available at no cost."
+    },
+    {
+      "line": 277,
+      "before": "Here is something the social protocol has never had, and this paper does.\n\n",
+      "after": "",
+      "reason": "Save the comparison for the earned erratum punchline at the end of the section."
+    },
+    {
+      "line": 293,
+      "before": "It takes three things from the argument, and you should too:",
+      "after": "For this week's practice, keep three points in view:",
+      "reason": "Replace the instruction to adopt the course’s judgement with the practical scope of the discussion."
+    }
+  ],
+  "sha256_after": "25c195671127cc19163d5799cf4b6c40c328d8bda7034f376ceffbb8ac4fdf3e"
+}

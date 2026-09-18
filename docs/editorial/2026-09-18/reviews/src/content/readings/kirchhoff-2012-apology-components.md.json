@@ -1,0 +1,28 @@
+{
+  "path": "src/content/readings/kirchhoff-2012-apology-components.md",
+  "category": "Readings",
+  "sha256_before": "c032da93285710e4ff902d2b70b090511be7d36c8df92f91f44f34d6f87922ff",
+  "status": "edited",
+  "review_note": "Remove retrospective course history; keep all reported elements, mediation and study-setting limits.",
+  "edits": [
+    {
+      "line": 3,
+      "before": " One of the four elements that mattered is the one this course had told you to leave out.",
+      "after": "",
+      "reason": "Remove drafting history from the student-facing description."
+    },
+    {
+      "line": 17,
+      "before": " — a mechanism week 5 previously had none of.",
+      "after": ".",
+      "reason": "Keep the finding; remove course-development history."
+    },
+    {
+      "line": 19,
+      "before": "That last one is why this reading changed the course rather than decorating it. Week 5's template had no explicit statement of apology at all, and told students to keep explanation out. The template now carries both, with the explanation placed after the ownership and kept shorter than it — which is the course's actual objection, stated precisely instead of as a ban. Two vignette studies in one country is not the last word, and the week says so.",
+      "after": "Week 5's template includes an explicit apology and a short explanation after the ownership. The evidence here comes from two vignette studies in one country.",
+      "reason": "Describe the current template and the evidence boundary; remove the story of the course improving itself."
+    }
+  ],
+  "sha256_after": "c58cb3d34a1aa24de8e8bbfd3ddf542bed4d3091368cbe0d25a7ef1d7d331325"
+}

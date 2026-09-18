@@ -1,0 +1,9 @@
+{
+  "path": "src/components/sketch/Form.astro",
+  "category": "Components and diagram copy",
+  "sha256_before": "25644af21ed4577828b3f9d1795fd2faa5d463eac336442ccd2527a452b27d17",
+  "status": "retained",
+  "review_note": "Retain the component unchanged. All visible headings, hints and captions are supplied by reviewed course content; the component adds no authored explanatory prose.",
+  "edits": [],
+  "sha256_after": "25644af21ed4577828b3f9d1795fd2faa5d463eac336442ccd2527a452b27d17"
+}

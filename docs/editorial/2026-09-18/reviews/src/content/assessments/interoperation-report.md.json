@@ -1,0 +1,28 @@
+{
+  "path": "src/content/assessments/interoperation-report.md",
+  "category": "Assessments",
+  "sha256_before": "871d834b0a49000433076431a4765e9336a515bbc9fc809b8daf3c8815dd54c4",
+  "status": "edited",
+  "review_note": "Retain the mixed partnership, bilateral concessions, independent reports and all requirements. Make the criteria direct rather than praising compliance with the course philosophy.",
+  "edits": [
+    {
+      "line": 44,
+      "before": "It takes week 11 seriously: **the fix is bilateral**.",
+      "after": "**The fix is bilateral.**",
+      "reason": "State the criterion directly; taking a week seriously is not a separate quality of the report."
+    },
+    {
+      "line": 50,
+      "before": "concessions differently, the difference is the most interesting part of the\nreport. Don't resolve it; describe it.",
+      "after": "concessions differently, describe the difference in the report rather than\nsettling on one account.",
+      "reason": "Keep the instruction to report disagreement without declaring in advance that it must be the most interesting evidence."
+    },
+    {
+      "line": 53,
+      "before": "It uses the course's **terms exactly**: payload, timeout, rate limit, mismatch.\nA report that invents its own vocabulary for things the course already named\nis doing the harder version of the task.",
+      "after": "It uses the course's **terms exactly**: payload, timeout, rate limit, mismatch.",
+      "reason": "The exact-vocabulary requirement is clear without an extra judgement about the student who deviates."
+    }
+  ],
+  "sha256_after": "c6d7f9aa362df462770fc1614d0b28ed1b578954b89a097b9f27eba785782ec2"
+}

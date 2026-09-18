@@ -1,0 +1,9 @@
+{
+  "path": "src/content/readings/levinson-2015-timing-turn-taking.md",
+  "category": "Readings",
+  "sha256_before": "3580ae15e0c66371f6e8cc6f01b4f80a63d49112667125274ac7bbd6dbb36222",
+  "status": "retained",
+  "review_note": "Retain the timing contrast and short protocol-clock joke; both explain the processing mismatch.",
+  "edits": [],
+  "sha256_after": "3580ae15e0c66371f6e8cc6f01b4f80a63d49112667125274ac7bbd6dbb36222"
+}

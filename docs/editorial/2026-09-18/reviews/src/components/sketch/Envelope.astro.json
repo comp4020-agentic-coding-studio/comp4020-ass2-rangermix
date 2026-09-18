@@ -1,0 +1,9 @@
+{
+  "path": "src/components/sketch/Envelope.astro",
+  "category": "Components and diagram copy",
+  "sha256_before": "877fca2d1f195669136fcdeda58e279423ae1c5ddc5ef242625e458991d342ae",
+  "status": "retained",
+  "review_note": "Retain opens to, the short unsent-slip note, and accessible labels. Their envelope metaphor identifies what the speaker sends or withholds; it does not add the stronger inference guarantee removed from week 10’s caption.",
+  "edits": [],
+  "sha256_after": "877fca2d1f195669136fcdeda58e279423ae1c5ddc5ef242625e458991d342ae"
+}

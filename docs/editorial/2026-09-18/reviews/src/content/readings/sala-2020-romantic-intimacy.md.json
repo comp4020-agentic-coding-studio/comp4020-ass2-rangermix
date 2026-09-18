@@ -1,0 +1,22 @@
+{
+  "path": "src/content/readings/sala-2020-romantic-intimacy.md",
+  "category": "Readings",
+  "sha256_before": "d53b94d4826166057e3bb90eaf478230ad3714356851947f90b54ae31f43008d",
+  "status": "edited",
+  "review_note": "Preserve findings and framing boundary; remove course history and a suggestion that familiar models solve the open issue.",
+  "edits": [
+    {
+      "line": 3,
+      "before": "Both groups named the same things as making intimacy possible. What differed was the obstacle, and it has a name this course already uses.",
+      "after": "Both groups named similar enablers of intimacy; autistic participants also described uncertainty about relationships and communication.",
+      "reason": "Remove the teaser and state the specific finding."
+    },
+    {
+      "line": 21,
+      "before": "OI-1 previously rested on an inventory of how people say they signal romantic interest, measured in the general population. This is the source that makes the open issue honest, and its finding points somewhere useful. Uncertainty is not a new problem requiring new machinery. Week 3 says an envelope marks a place where the sender doesn't know the answer. Week 9 says the rate limit is the move for when you can't predict the other person's next step. The named obstacle in OI-1 is the one the course spent two weeks on.",
+      "after": "For OI-1, the reported uncertainty gives a connection to weeks 3 and 9. It does not establish that the course's decoder or rate-limit model resolves difficulties in romantic relationships.",
+      "reason": "Remove drafting history and a claim of sufficient machinery; make the cross-reference without promising that the course has solved the reported problem."
+    }
+  ],
+  "sha256_after": "7d5f3ab4f5b620487660695d56128010c29a4b74109b55a7f22054a0a05c3bb6"
+}

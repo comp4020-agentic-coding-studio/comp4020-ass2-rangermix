@@ -1,0 +1,239 @@
+---
+title: "Latency and Turn-Taking"
+description: "The gap before a reply is measured in milliseconds, and listeners have learned what long ones usually mean. An undocumented timeout, documented."
+week: 4
+date: 2027-03-16
+teachers:
+  - tamsin-oyelaran-hart
+slides: /decks/week-04/
+spec:
+  - "You can say roughly how long an ordinary gap between turns is, and roughly where a longer gap starts to be heard as reluctance."
+  - "You have a hold token in your own words, and have used it at least once this week."
+  - "When someone pauses before answering you, you can hold off reading the pause as a no, and ask instead."
+  - "You can explain why listeners read a delay as refusal without saying they are being unfair."
+  - "You can say what stayed the same and what differed across the three language groups in §4, and why that matters to someone whose gaps run long."
+  - "You can name one thing a speaker might be doing by leaving a longer gap, other than refusing."
+related:
+  - sessions/week-04
+  - readings/kendrick-2015-repair-timing
+  - readings/roberts-2011-silence-valence
+  - readings/sacks-1974-turn-taking
+  - readings/stivers-2009-turn-taking-universals
+  - readings/levinson-2015-timing-turn-taking
+  - readings/kendrick-2015-timing-preference
+---
+
+import TimingLine from "../../components/sketch/TimingLine.astro";
+import SequenceDiagram from "../../components/sketch/SequenceDiagram.astro";
+import MarginNote from "../../components/sketch/MarginNote.astro";
+import Plate from "../../components/Plate.astro";
+import exchange from "../../assets/images/sourced/exchange-montreal-1897.jpg";
+
+"Want to come to the thing on Friday?"
+
+A pause. "…Yeah, maybe."
+
+The person who asked has already heard "no". Not because of "maybe", which
+came last, but because of the pause, which came first. This week is about that
+pause: how long the protocol allows, what a longer one means, and what to do
+when you need more time than the protocol gives.
+
+## A system with no referee
+
+Nobody hands out turns in a conversation. There is no chair, no queue and no
+published order, and yet everyone keeps time. Sacks, Schegloff and Jefferson
+described turn-taking as **locally managed** and **party-administered**: the
+people talking run it themselves, turn by turn (Sacks et al., 1974).
+
+A distributed system with no coordinator and no documentation still has to
+agree on timing. It does, remarkably precisely.
+
+<Plate
+  src={exchange}
+  alt="A long hall in a Montreal telephone exchange in the late 1890s. Two facing banks of switchboards run the length of the room, with about twenty operators at each, headsets on, reaching up into the jackfields. One supervisor sits at a desk in the aisle between them."
+  caption="A manual exchange, Montreal, in the late 1890s. Operators at two banks of switchboards; one supervisor in the aisle."
+  title="Telephone exchange Montreal, Cassell & Co."
+  href="https://commons.wikimedia.org/wiki/File:Telephone_exchange_Montreal_QE3_33.jpg"
+  licence="public domain"
+  date="between 1897 and 1899"
+/>
+
+At least the exchange had a supervisor. Your tutorial is expected to route
+its own traffic.
+
+## The clock
+
+Across ten languages, from major world languages to small indigenous
+communities, conversations avoid overlapping talk and keep the silence between
+turns short. Average gaps differed between languages, but every language's
+average fell within 250 ms of the cross-language mean (Stivers et al., 2009).
+The authors suggest that people are sensitive enough to these small tempo
+differences to experience them as large differences in style.
+
+How short is short? A typical gap between turns is **of the order of 200 ms**.
+Planning and producing even a short utterance takes **over 600 ms**. The two
+numbers can only both be true if listeners start preparing their reply *before*
+the speaker finishes, by predicting where the turn will end (Levinson &
+Torreira, 2015).
+
+Kendrick puts the ordinary transition at a **range of about 100--300 ms**, and
+warns that this estimate of central tendency "hides a wealth of complex
+variation": the type of turn being answered can change the timing (Kendrick,
+2015). Treat these figures as typical values, not deadlines for a reply. Week
+12's errata returns to this limit.
+
+<TimingLine
+  max={1500}
+  caption="The gap before a reply, in milliseconds. Numbers from Levinson & Torreira (2015) and Kendrick & Torreira (2015); the timeout band is the course's name for where the inference begins."
+  bands={[{ from: 700, to: 1500, label: "timeout: a no is more likely" }]}
+  marks={[
+    { at: 200, label: "ordinary gap", note: "about 200 ms", gold: true },
+    { at: 600, label: "planning a reply", note: "over 600 ms" },
+  ]}
+/>
+
+So the protocol's clock assumes you started composing your answer while the
+question was still being asked. Anyone who waits to hear the whole question
+before thinking about it is, by that clock, already late.
+
+## The undocumented timeout
+
+Here is why a pause sounds like no. Kendrick and Torreira measured replies in
+telephone calls. Most acceptances and rejections came at similar speeds. But
+once a gap reached **700 ms or more**, rejections clearly outnumbered
+acceptances, and even small departures from a normal gap made a plain "yes"
+less likely (Kendrick & Torreira, 2015).
+
+That pattern gives a listener a reason to hear a long gap as reluctance. It
+does not tell them what a particular pause means.
+
+The course calls this the **timeout**: the point at which a listener stops
+simply waiting and starts inferring meaning from the gap. It isn't a hard
+number. The research supports "about 200 ms is ordinary, and by 700 ms a no is
+more likely than a yes".
+
+<SequenceDiagram
+  actors={["Asker", "Responder"]}
+  caption="The same “yes”, heard differently. Top: inside the ordinary gap. Bottom: past the timeout, where the listener is already preparing for a no."
+  messages={[
+    { from: 0, to: 1, label: "Coming on Friday?" },
+    { from: 1, to: 0, label: "Yes!", timing: "~200 ms", note: "heard: yes" },
+    { from: 0, to: 1, label: "Coming on Friday?" },
+    { from: 1, to: 0, label: "…yes.", timing: "1.5 s", note: "heard: a reluctant yes", gold: true },
+  ]}
+/>
+
+## The inference is general. The calibration is local.
+
+Kendrick and Torreira watched real calls and found that long gaps tend to come
+before rejections. That is an observation. Roberts, Margutti and Takano did
+the other experiment: they **set** the gap and measured what listeners
+concluded from it (Roberts et al., 2011).
+
+Telephone conversations, modelled on a real call between friends, were
+manipulated so the reply came after **0 ms, 600 ms or 1200 ms**. Each version
+was crossed with two kinds of turn to respond to --- a request and an
+assessment. Native speakers of **American English, Italian and Japanese**,
+each in their own country, rated how willing the replier seemed to comply or
+to agree.
+
+**First:** ratings of willingness **fell significantly as the silence got
+longer, in every one of the three language groups.** Reading a pause as
+reluctance is not an English-speaker's quirk. It appears to be what listeners
+generally do.
+
+**Second:** the groups' **means differed significantly** from each other ---
+different expectations for agreement. The direction of the effect was shared.
+The amount was not.
+
+<MarginNote label="Configuration">
+  Same inference everywhere. Different threshold on every install.
+</MarginNote>
+
+A listener brings their own timing expectations to the conversation. The
+person answering may have learned a different pace.
+
+## Who the timeout misfires on
+
+A long gap might mean reluctance. It might also mean:
+
+- the person is translating from another language;
+- they were taught to consider a question before answering it;
+- they process spoken language at their own pace and need the whole sentence;
+- they're choosing between two answers that are both yes.
+
+Those pauses can be mistaken for a no. If you're the fast one in a
+conversation, **before you conclude, ask.** "No pressure either way. Is that
+a yes?" costs one turn.
+
+### In the room --- guess the gap (7 min)
+
+Get a stopwatch on your phone. In threes: one person asks an ordinary
+question, one answers after a deliberate pause, and the third times the gap
+and writes down what the pause *read as* before looking at the number.
+
+Do it four times, and change who pauses. Then compare the guesses with the
+times.
+
+Compare the order of the gaps with their measured lengths. Were you better
+at ranking them than estimating milliseconds?
+
+## A gap can be given, not only read
+
+So far the gap is something that happens to you and gets misread. Kendrick's
+study of **169 other-initiations of repair** --- the moves people make to flag
+that they didn't catch something --- shows the other half.
+
+Those moves are themselves slow. The most frequent came after gaps of about
+**700 ms**, which is to say the turn whose job is flagging trouble does *not*
+obey the fast-transition rule. Within them, initiations that pointed at the
+specific trouble came after **shorter** gaps than vague ones, and the rare ones
+that straight-up corrected an error came **without delay** (Kendrick, 2015).
+
+Kendrick's analysis of what happens in those gaps suggests the extra time is
+being **used**: to catch
+up on a turn you only half-registered, to produce a facial signal --- and
+**to give the other person the chance to fix it themselves.**
+
+<MarginNote label="Read the other way">
+  Some of the silence aimed at you is patience.
+</MarginNote>
+
+That is a courtesy with a cost, and it is invisible if you have been taught
+that all silence is judgement. Some of the pauses in your conversations are
+someone waiting to see whether you want to take the sentence back before they
+have to say anything about it. Week 5 is what happens next.
+
+## Hold tokens
+
+If you need more time than the clock gives, fill the gap with a sound that
+means *I'm still here, and I'm thinking*. The gap the listener would have read
+is no longer empty.
+
+The scripts are the course's proposals: filling the gap gives the listener
+something besides silence to interpret. Try them in Thursday's lab.
+
+| Situation | Hold token |
+| --- | --- |
+| A question you want to think about | "Hm, let me think about that." |
+| An invitation you're keen on but need to check | "Oh, nice. Let me just check my week." |
+| A hard question in a tutorial | "Good question. Give me a second." |
+| Anything, when you know you'll take a while | "Mm." |
+
+A **standing hold token** makes the request in advance. Said once, early and
+without apology, "I sometimes take a second to answer. A pause from me isn't
+a no" gives the other person context for your pauses. This is the course's
+recommendation, not a tested finding. Week 11 returns to it as part of a shared
+protocol.
+
+## When turns collide
+
+The protocol avoids overlap, but it happens. When two people start at once,
+one of them stops, and a quick repair puts the conversation back:
+
+- "Sorry, go ahead."
+- "No, you go."
+- "You first. Mine can wait."
+
+Use whichever fits your speech, then leave the turn to the other person.
+Week 5 covers repair.

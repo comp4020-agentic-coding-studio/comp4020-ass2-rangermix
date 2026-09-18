@@ -1,0 +1,9 @@
+{
+  "path": "src/components/sketch/DepthLadder.astro",
+  "category": "Components and diagram copy",
+  "sha256_before": "acb6bffdd0ce3191b09bb779bf9af26a9b9eddaac86ba17d2c9f632677a57296",
+  "status": "retained",
+  "review_note": "Retain the accessible level and window labels. These precisely describe the course’s diagram rather than adding claims about the model’s validity.",
+  "edits": [],
+  "sha256_after": "acb6bffdd0ce3191b09bb779bf9af26a9b9eddaac86ba17d2c9f632677a57296"
+}

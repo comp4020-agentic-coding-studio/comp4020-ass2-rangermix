@@ -1,0 +1,9 @@
+{
+  "path": "src/components/AssessmentsGrid.astro",
+  "category": "Components and diagram copy",
+  "sha256_before": "26eb67173e775a764d100691f68ad557b2c03a9c33c5f74fa0b76da117f72ba5",
+  "status": "retained",
+  "review_note": "Retain the concise weekly, due-date, weight and draft labels. Assessment titles and descriptions are supplied by separately reviewed content; no authored explanatory prose needs editing here.",
+  "edits": [],
+  "sha256_after": "26eb67173e775a764d100691f68ad557b2c03a9c33c5f74fa0b76da117f72ba5"
+}

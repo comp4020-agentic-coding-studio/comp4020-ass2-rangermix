@@ -1,0 +1,16 @@
+{
+  "path": "src/pages/assessments/[slug].astro",
+  "category": "Site pages",
+  "sha256_before": "9c1f3a9025d9e11c416215889c212fc723d3af8f16b2843d95a187a7151729e6",
+  "status": "edited",
+  "review_note": "Keep the dates, draft warning, submission link and rendered marking model. Simplify the recurring introduction to assessment checks.",
+  "edits": [
+    {
+      "line": 76,
+      "before": "    The brief above leaves room for your own response. These lines don't: they\n    are what a marker checks, and you can check each one yourself before you\n    submit.",
+      "after": "    These are the checks a marker uses. Work through them before you submit.",
+      "reason": "A direct instruction is easier to use across all four briefs than a repeated contrast explaining its own format."
+    }
+  ],
+  "sha256_after": "21a510b68c59fd32fdb6af0f42ea5491d22238e526136c5ae532f0322b93da4e"
+}

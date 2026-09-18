@@ -1,0 +1,72 @@
+{
+  "date": "2026-09-18",
+  "baseline": "2209428d55d3c47ce405dd81b67ab3d0b991a8ac",
+  "status": "Draft only; not applied",
+  "files": 157,
+  "edited_files": 79,
+  "retained_files": 78,
+  "recorded_edits": 594,
+  "source_preservation": "All source hashes unchanged; edit replay and protected-content checks pass",
+  "live_check": {
+    "command": "pnpm check",
+    "tests_passed": 425,
+    "test_files_passed": 10,
+    "pages": 125
+  },
+  "draft_check": {
+    "command": "pnpm check",
+    "tests_passed": 425,
+    "test_files_passed": 10,
+    "pages": 125,
+    "reported_accessibility_violations": 0,
+    "broken_links": 0,
+    "deck_structural_violations": 0,
+    "dependencies": "Separate install from frozen lockfile in baseline checkout; draft/src overlaid on src; tests unchanged"
+  },
+  "timing": {
+    "command": "pnpm check:timing",
+    "weeks_more_than_10_minutes_short": 0,
+    "qualification": "Repository estimate; no delivery rehearsal"
+  },
+  "viewer": {
+    "viewports": [
+      "1440x1080",
+      "390x844",
+      "844x390"
+    ],
+    "files": 157,
+    "checks": [
+      "offline initial load",
+      "initial selected lecture",
+      "word highlights",
+      "previous and next",
+      "category filter",
+      "search across original text",
+      "full-file source is inert",
+      "retained files are identical",
+      "empty search",
+      "clear filters",
+      "phone stacked columns",
+      "landscape paired columns",
+      "no horizontal document overflow",
+      "mobile file picker and selection"
+    ],
+    "consoleErrors": [],
+    "networkRequests": []
+  },
+  "viewer_additional_checks": [
+    "Keyboard skip link and focus order",
+    "Source and metadata markup rendered inert",
+    "Desktop and phone screenshots visually inspected"
+  ],
+  "unrelated_files": "User PROCESS.md and existing patch hashes unchanged",
+  "limits": [
+    "Editorial review uses the existing research record, not fresh verification of each paper",
+    "Substantive open decisions are recorded in reports/integration.md"
+  ],
+  "artifacts": {
+    "manifest.json": "3dd5b438afbb80aab307284d3ecb9322f5551bff2dcc1fd553158b8259a8898f",
+    "comparison.html": "5a8969b6dd77ef086299205191679b2ee010fe16e5c5032bdf48a91028731a3f",
+    "POLICY.md": "b19ef692a7ca07f48e6f5d973d28ee2cef6d5646d34e5bd26bce00b526df6118"
+  }
+}

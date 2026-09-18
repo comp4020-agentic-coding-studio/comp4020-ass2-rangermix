@@ -1,0 +1,22 @@
+{
+  "path": "src/content/readings/phung-2021-bims.md",
+  "category": "Readings",
+  "sha256_before": "b8b809c75dd61c1edb57557047b3fdcdbabdff4e4de82a83d077266fd8b1c8e9",
+  "status": "edited",
+  "review_note": "Keep named phenomena and population boundary; describe the incomplete model without narrating its revision history.",
+  "edits": [
+    {
+      "line": 3,
+      "before": "Four named phenomena, not one --- and the course's three time scales turn out to be missing two of them.",
+      "after": "Eight autistic children and youth describe burnout, inertia, meltdown and shutdown, including experiences outside the course's planning model.",
+      "reason": "Identify the reading and its scope directly rather than announcing a correction to the course."
+    },
+    {
+      "line": 20,
+      "before": "Week 7 cites this for the thing it gets wrong on its own. The lecture separates overload, shutdown and burnout, and says openly that only burnout has a research definition behind it. This paper shows that **shutdown is a named phenomenon in the literature**, not the course's coinage — and that the literature names two more the course's taxonomy omits entirely, **inertia** and **meltdown**. The sample is eight children and youth, so nothing here is a claim about adults or about prevalence; what it supports is that the course's three scales are an incomplete map, and the week now says so.",
+      "after": "Week 7's planning model separates overload, shutdown and burnout. This paper discusses **shutdown** and also names **inertia** and **meltdown**, which the model omits. The sample is eight children and youth; this annotation makes no claim about adults or prevalence. The course's three time scales are an incomplete map.",
+      "reason": "Keep the omitted phenomena and population boundary; remove the narrative of the course confessing and correcting itself."
+    }
+  ],
+  "sha256_after": "34f59f6792024c04e9793eb2ef51ef70b8c422756b8105683a16bd8563c63229"
+}

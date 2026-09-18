@@ -1,0 +1,425 @@
+---
+title: "NT 101, Week 11: Interoperation, Not Conversion"
+description: "The week 11 lecture deck: the diffusion-chain evidence, misreading in both directions, implementation-specific rapport, and the bilateral protocol."
+---
+
+import MarginNote from "../components/sketch/MarginNote.astro";
+import Chain from "../components/sketch/Chain.astro";
+import Plate from "../components/Plate.astro";
+import arpanet from "../assets/images/sourced/arpanet-map-1977.png";
+
+{/* _class: banner */}
+
+# Interoperation, Not Conversion
+
+Week 11. In week 2 the double empathy problem was a theory. This week is the evidence.
+
+```notes
+- Milton (2012): when two people of different implementations misunderstand each other, the misunderstanding is mutual.
+- Today: what the measurements say, and what to do with them.
+```
+
+---
+
+## Where we were
+
+Week 2 gave you the double empathy problem as a **theory**. Weeks 9 and 10 gave you pacing and disclosure.
+
+This week: the evidence for week 2, and what two people do about it.
+
+```notes
+- Point out that this is the last week of content. Week 12 is open issues and further reading.
+- The terms they need in this hour: implementation, mismatch, ledger, rate limit, anticipated stigma.
+```
+
+---
+
+## Diffusion chains
+
+Eight people. The first hears a story and retells it to the second, who retells it to the third, down the chain.
+
+Some chains all autistic. Some all non-autistic. Some mixed.
+
+<span class="source">Crompton, Ropar et al. (2020), Autism 24(7)</span>
+
+---
+
+<Chain
+  seed="deck week 11 diffusion chains"
+  caption="The method. The only thing that changes between chains is who is in them."
+  chains={[
+    { label: "all autistic", members: ["A", "A", "A", "A", "A", "A", "A", "A"] },
+    { label: "all non-autistic", members: ["N", "N", "N", "N", "N", "N", "N", "N"] },
+    { label: "mixed: both, in one chain", members: ["", "", "", "", "", "", "", ""], gold: true },
+  ]}
+/>
+
+```notes
+- The mixed chain's seats are blank on purpose: the order people sat in isn't a detail this course checked.
+- Results on the next slide, not in the picture.
+```
+
+---
+
+## Where the loss happens
+
+| Chain | Detail retained | Rapport |
+| --- | --- | --- |
+| All autistic | no significant difference from non-autistic chains | higher than mixed |
+| All non-autistic | no significant difference from autistic chains | higher than mixed |
+| Mixed | **declined significantly more steeply** | lower |
+
+<MarginNote label="Root cause">Packet loss at the boundary between two implementations. Neither endpoint is faulty.</MarginNote>
+
+```notes
+- Read it as an engineer would: information survived within either implementation and degraded fastest across them.
+- And the decisive bit: if autistic people simply lacked the ability to share information, the all-autistic chains would have done worst. They didn't.
+```
+
+---
+
+## Misreading runs both ways
+
+People filmed reacting to events; non-autistic observers guessed which event.
+
+Observers were **less accurate for autistic people** --- yet autistic people were rated **just as expressive** for most events, and their reactions were described differently.
+
+<span class="source">Sheppard et al. (2016), Journal of Autism and Developmental Disorders 46(4)</span>
+
+```notes
+- Their reactions differed. They were not reduced.
+```
+
+---
+
+## Same judgement, different consequence
+
+Ask autistic observers too: autistic and non-autistic raters made **similar** trait judgements of autistic adults.
+
+The difference was what came next --- for autistic raters, those judgements **didn't reduce their interest in interacting**.
+
+<span class="source">DeBrabander et al. (2019), Autism in Adulthood 1(4)</span>
+
+```notes
+- So both implementations notice the difference. What varies is whether the difference counts against someone.
+```
+
+---
+
+## Why does misreading become disliking?
+
+Week 2: style is judged in seconds, before content.
+
+This week: autistic people's reactions are **misread**, not missing.
+
+Nothing yet joins the two.
+
+```notes
+- Ask how the two claims might be linked before showing the next study.
+```
+
+---
+
+## Score the videos for readability
+
+Sheppard's videoed targets, scored for **how readable** they were. New neurotypical perceivers rated them.
+
+Neurotypical targets rated more favourably --- whether the greeting's details were **concealed** (Study 1) or **disclosed** (Study 2).
+
+<span class="source">Alkhaldi, Sheppard & Mitchell (2019), JADD 49(10)</span>
+
+```notes
+- The concealed/disclosed manipulation matters: it rules out the easy benign explanation that perceivers were just confused about the situation.
+```
+
+---
+
+{/* _class: impact */}
+
+Readability correlated with favourability --- r = .58 and r = .63 --- independent of target diagnosis.
+
+<MarginNote label="Two parties">A property of a reading, not of a face.</MarginNote>
+
+```notes
+- Explain “independent of target diagnosis” without treating it as evidence that diagnosis had no relationship to the ratings; the study also reports a group difference.
+- Keep the authors’ qualification: other interpretations of the correlation are also possible. This is correlational.
+```
+
+---
+
+## In the room: readable to whom? (7 min)
+
+**Three minutes.** One person you find easy to read, one you find hard. Write one concrete **behaviour** each. The asleep test applies.
+
+**Three minutes, in pairs.** Swap. Would your partner's "easy" behaviours be easy for *you*?
+
+**One minute.** Hands up if anything on their easy list was on your hard list.
+
+```notes
+- Whatever the count, it is a finding about this room and no other. Say that.
+- The point of any disagreement: "hard to read" needs a second half. Hard to read by whom.
+```
+
+---
+
+## Rapport signals are implementation-specific
+
+Back to the diffusion-chain videos, coding **mutual gaze** and **backchannelling** --- the "mm-hm", the nod.
+
+In mixed pairs, less of both went with lower rapport.
+
+In autistic pairs, **less backchannelling went with higher rapport**.
+
+<span class="source">Rifai et al. (2022), Autism in Adulthood 4(1)</span>
+
+```notes
+- So the visible signs that someone is engaged are part of an implementation, not a universal readout.
+- A listener who never says "mm-hm" may be the most engaged person in the room. One who says it constantly may be running a week 6 subroutine.
+```
+
+---
+
+## Five minutes with a stranger
+
+Not clips. Not vignettes. **125 people**, put into pairs --- both autistic, both non-autistic, or mixed.
+
+Five minutes of unstructured conversation with someone they'd never met, then both rate it.
+
+<span class="source">Morrison et al. (2020), Autism 24(5)</span>
+
+```notes
+- Everything up to here has been ratings of recordings. This is the question run as an actual conversation, with both people's judgements collected.
+```
+
+---
+
+## The bleak half
+
+Autistic adults were rated <span data-quoted>more awkward, less attractive, and less socially warm</span> ---
+
+by autistic **and** non-autistic partners alike.
+
+```notes
+- Do not soften this and do not rush past it. The judgement travelled across both groups.
+- Pause before showing the next result.
+```
+
+---
+
+{/* _class: impact */}
+
+Only the non-autistic adults' interest in meeting again followed that judgement.
+
+```notes
+- Autistic participants trended the other way -- towards preferring other autistic partners.
+- The rating and the interest in meeting again came apart for the autistic participants in this study.
+```
+
+---
+
+## And the number that matters most
+
+Autistic participants reported **disclosing more about themselves** to autistic than to non-autistic partners.
+
+**How much a person opens up is not a fixed property of that person.** It moved with who they sat opposite --- in five minutes, with a stranger.
+
+```notes
+- They have met this claim before, from a different field: week 9, Kluger and Malloy, a third of the variance in question-asking belonging to the pair rather than the person.
+```
+
+---
+
+{/* _class: impact */}
+
+"Work on your social skills" addresses one endpoint of a two-endpoint problem.
+
+```notes
+- The evidence also locates variation in the link between people.
+```
+
+---
+
+## In the room: the pairing effect (8 min)
+
+**Four minutes.** One thing about how you talk that changes depending on who you're with. Then write the test: **how would you know if you were wrong?** What would you observe?
+
+**Three minutes, in pairs.** Read out only the *test*. Check each other's tests are runnable.
+
+**One minute.** Anyone whose test needs the other person's cooperation: say so.
+
+```notes
+- Ask what they would need to agree with the other person before running the test.
+```
+
+---
+
+## Who pays for the mismatch
+
+12 autistic adults on time with neurotypical friends and family: being in a minority, and **conforming to what the other people were used to** in order to spend time with them.
+
+With autistic people: belonging, and being able to be themselves.
+
+<span class="source">Crompton, Hallett et al. (2020), Autism 24(6)</span>
+
+Over years, the majority's misreadings push towards isolation --- which damages mental health, and costs everyone else what those people would have contributed.
+
+<span class="source">Mitchell, Sheppard & Cassidy (2021), British Journal of Developmental Psychology 39(1)</span>
+
+---
+
+{/* _class: impact */}
+
+The loss happens between two implementations.
+
+So the fix is bilateral.
+
+---
+
+<Plate
+  sizes="50vw"
+  src={arpanet}
+  alt="A drafted logical map of the ARPANET from March 1977: dozens of labelled boxes for machines of many different makes --- PDP-10, PDP-11, IBM 360 and 370, Honeywell H6180, Univac 1108 --- joined by lines, with satellite circuits reaching to Hawaii, to NORSAR in Norway, and to London. A note at the foot reads that no claim can be made for the map's accuracy."
+  caption="The ARPANET, March 1977. Different makes of computer on one network."
+  title="Arpanet logical map, March 1977"
+  href="https://commons.wikimedia.org/wiki/File:Arpanet_logical_map,_march_1977.png"
+  licence="public domain"
+  date="March 1977"
+/>
+
+```notes
+- Read the makes out: PDP-10, IBM 360, Honeywell, Univac. Nothing here was converted. They agreed a protocol at the boundary and each kept its own architecture behind it.
+- And point at the foot of the map: it documents its own unreliability. Which is more than the social protocol manages.
+```
+
+---
+
+## A clause that won't work
+
+| Weak clause | Why | Fixed |
+| --- | --- | --- |
+| "Alex will be more direct." | no scope, no check, no end | "Alex puts requests in the doc as questions." |
+| "Sam will try to contribute more." | a verdict wearing a clause | "Sam says 'sounds good' out loud when agreeing." |
+| "We'll communicate better." | nobody conceded anything | pick one behaviour each, and a way to check it |
+
+The test is week 2's: could someone who wasn't there run it, and find out whether it held?
+
+```notes
+- If a draft resembles the left column, ask the pair to add a scope and a check.
+- "Try to" in a clause means nobody will know whether it happened.
+```
+
+---
+
+## What this week's evidence doesn't settle
+
+The qualitative work is **12 people**. The chains are **72**. The conversation study is **125**.
+
+The mixed chain's seating order isn't a detail this course checked, so the drawing leaves those seats blank.
+
+And Alkhaldi et al. is **correlational** --- its authors say so.
+
+```notes
+- State that the class’s own shared-vocabulary proposal is untested; the partnership labs let students try it.
+- Week 12's errata register picks all of this up, and E-3 is still the depth scale.
+```
+
+---
+
+## Conversion against interoperation
+
+| Question | Conversion | Interoperation |
+| --- | --- | --- |
+| Who changes | one side, entirely | both sides, partly |
+| Scope | everywhere, indefinitely | this exchange, this relationship |
+| When it breaks | silently, blamed on oneself | out loud, with an agreed signal |
+| What it costs | the week 6 ledger, for one person | a few clauses each |
+
+```notes
+- Conversion is the default, and the pressure to convert falls on the minority --- week 6's pressure column.
+- It goes the other way too: telling a colleague to "just be direct" and expecting them to rebuild their implementation for you.
+```
+
+---
+
+## The bilateral protocol
+
+Alex backchannels constantly, hints, answers fast. Sam answers slowly, speaks directly, rarely says "mm-hm".
+
+| # | Clause | Who concedes |
+| --- | --- | --- |
+| 1 | Sam can answer by message within 24 hours, not on the spot | Alex: immediacy |
+| 2 | Alex puts requests in writing, stated directly | Alex: the envelope |
+| 3 | Silence isn't disagreement; either can say "still thinking" | both: the timeout |
+| 4 | Sam says "sounds good" out loud when agreeing | Sam: one token |
+| 5 | Either can say **"mismatch"**, with no explanation owed | both |
+
+```notes
+- Clause 5 makes the others safe. It turns a mismatch from something one person privately blames themselves for into a word both agreed to say.
+- Every clause has a check in the report: did any question go unanswered past a day, did either of us read a silence as a no.
+```
+
+---
+
+## This room is the worked example
+
+Eleven weeks. A deliberately mixed class, building vocabulary:
+
+*payload* · *timeout* · *repair initiator* · *rate limit* · *ledger* · *mismatch*
+
+Not anyone's native implementation. A shared protocol, negotiated one week at a time.
+
+```notes
+- It lets people who run the majority protocol fluently and people who never got it handed to them talk about the same exchange in the same terms.
+- Point to the glossary, then ask which terms helped partners state and revise their clauses.
+```
+
+---
+
+## In the room: one clause each (9 min)
+
+Your Interoperation Report partner is in this room.
+
+**Three minutes.** Separately: one thing the other does that costs you something. A **behaviour**, not a verdict.
+
+**Four minutes.** Together: turn both into one clause --- what each side will do, and how either checks it next week.
+
+**Two minutes.** Agree your mismatch word.
+
+```notes
+- One clause is a real protocol. Draft the rest on Thursday. Do not let them try to write the whole document here.
+```
+
+---
+
+## What interoperation is not
+
+- **Not meeting in the middle.** Clauses needn't be symmetrical. One side may concede four things and the other one.
+- **Not permanent.** Scoped to a relationship and a situation, and renegotiable --- saying so is what makes it safe to agree now.
+- **Not a promise that it works.** Every clause is a hypothesis; clause 5 exists because some will be wrong.
+
+```notes
+- Check these three distinctions before students finish their clauses.
+- A protocol with no way to report a fault is week 1's problem all over again.
+```
+
+---
+
+## What this week added to the vocabulary
+
+- **interoperation** --- two implementations agreeing a protocol for the exchange at hand
+- **conversion** --- one implementation replacing itself
+- the **bilateral protocol** --- the clauses, and the mismatch word
+
+Next week: open issues, errata, and where to read further.
+
+---
+
+{/* _class: centered */}
+
+## Check yourself against this week
+
+Can you describe the diffusion-chain result, and say where the information was lost?
+
+Does your draft protocol have a clause each partner conceded, and a way to flag a mismatch?
+
+Can you separate interoperation from conversion with an example from your own semester?

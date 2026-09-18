@@ -1,0 +1,9 @@
+{
+  "path": "src/pages/404.md",
+  "category": "Site pages",
+  "sha256_before": "43089c9ae6dca6564fd8ab44b5f66c6085172b699b3707ccdfe77813bbdeb22f",
+  "status": "retained",
+  "review_note": "Retain the brief protocol joke and recovery links; both serve this error page.",
+  "edits": [],
+  "sha256_after": "43089c9ae6dca6564fd8ab44b5f66c6085172b699b3707ccdfe77813bbdeb22f"
+}

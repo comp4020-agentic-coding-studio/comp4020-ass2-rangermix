@@ -1,0 +1,9 @@
+{
+  "path": "src/pages/assessments/index.mdx",
+  "category": "Site pages",
+  "sha256_before": "a68ac21d5bc6c602f4b2c7ddae9424f4462e5df61132ee9efeb96e3c5489d8b4",
+  "status": "retained",
+  "review_note": "Retain the concise assessment overview and factual marking and submission guidance.",
+  "edits": [],
+  "sha256_after": "a68ac21d5bc6c602f4b2c7ddae9424f4462e5df61132ee9efeb96e3c5489d8b4"
+}

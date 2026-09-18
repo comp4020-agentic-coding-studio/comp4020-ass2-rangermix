@@ -1,0 +1,70 @@
+{
+  "path": "src/content/lectures/week-06.mdx",
+  "category": "Lectures",
+  "sha256_before": "75310760df96c3bdebd6795d9670a5d45f79bff0eaa58f3065f18705db8be10a",
+  "status": "edited",
+  "review_note": "Keep the concrete Tuesday, ledger, pressure column and permission to choose. Cut repeated declarations of the course’s stance and turn predicted classroom results into questions. Distinguish the recovery-hours planning device from research on time spent camouflaging.",
+  "edits": [
+    {
+      "line": 53,
+      "before": "You don't have to take that on the course's word. Bradley, Shaw, Baron-Cohen\nand Cassidy surveyed **277 autistic adults**, in a survey designed in\npartnership with autistic adults, and one of the three themes they found was\n**\"positive aspects of camouflaging\"**: greater **access to social spaces**,\nand **protection from harm**. Their summary of it is blunter than anything\nthis course would presume to write --- camouflaging was \"seen as necessary to\nsurvive in a world designed for the neurotypical majority\" (Bradley et al.,\n2021).\n\nThat is why there is no version of this lecture that tells you to stop.",
+      "after": "Bradley, Shaw, Baron-Cohen and Cassidy surveyed **277 autistic adults**, in a\nsurvey designed in partnership with autistic adults. One of the three themes\nwas **\"positive aspects of camouflaging\"**: greater **access to social\nspaces**, and **protection from harm**. Camouflaging was \"seen as necessary to\nsurvive in a world designed for the neurotypical majority\" (Bradley et al.,\n2021).",
+      "reason": "Let the participants’ account carry the point; the previous paragraph already states the course’s position."
+    },
+    {
+      "line": 97,
+      "before": "But the *unit* is not arbitrary, and this is the one place where the course got\nlucky. Bradley et al. asked their participants about the **frequency and the\nlength of time** they spent camouflaging, and their conclusion names the axis:",
+      "after": "Bradley et al. asked their participants about the **frequency and the\nlength of time** they spent camouflaging. Their conclusion names the axis:",
+      "reason": "Remove the course’s story about getting lucky and introduce the finding directly."
+    },
+    {
+      "line": 105,
+      "before": "This ledger is denominated in **recovery hours**. That was a guess when it was\nwritten. It is the right axis.",
+      "after": "The ledger uses **recovery hours** to help plan the time you may need\nalongside those demands. That remains a course planning device: time spent\ncamouflaging and time needed to recover are different quantities. This study\ndoes not give a conversion between them.",
+      "reason": "Do not present a study of time spent camouflaging as validation of a recovery-time measure; retain the ledger and its stated planning status."
+    },
+    {
+      "line": 108,
+      "before": "The switching finding is the one to hold on to. Changing how much you mask,\nbetween the tutorial and the corridor, or between home and work, carries its own\ncharge. That goes in the ledger as a separate line.",
+      "after": "Give switching its own line in the ledger. Estimate what changing how much\nyou mask costs you between the tutorial and the corridor, or between home and\nwork.",
+      "reason": "Give the practical instruction without announcing the finding’s importance or turning an association into a fixed individual charge."
+    },
+    {
+      "line": 124,
+      "before": "2021). And their lay summary goes further than this course ever has: reducing\nthe pressure to camouflage \"could benefit everyone in society\".",
+      "after": "2021). Their lay summary adds that reducing the pressure to camouflage\n\"could benefit everyone in society\".",
+      "reason": "Keep the attributed conclusion; remove the comparison with how far the course has dared to go."
+    },
+    {
+      "line": 148,
+      "before": "measures the same construct, the same way, in people who aren't autistic. That\nis about as direct as evidence for this section gets.",
+      "after": "measures the same construct, the same way, in people who aren't autistic.",
+      "reason": "The evidence can end with the result, without an endorsement from the narrator."
+    },
+    {
+      "line": 151,
+      "before": "So the whole room runs some managed performance. What differs is the price.\nThe same subroutine, sustained eye contact for a whole tutorial, costs one\nperson almost nothing and another person the rest of their afternoon. The lab\nmeasures exactly that. Neither price is the correct one. Different\nimplementations pay different amounts for the same output.",
+      "after": "Managed performance occurs across diagnostic groups. Its cost can differ:\nsustained eye contact for a whole tutorial might cost one person almost nothing\nand another the rest of their afternoon. In the lab you'll compare your own\nestimates. Neither person's estimate sets the price for the other.",
+      "reason": "Keep the mixed-room argument and concrete example without predicting what every person does or what the lab will prove."
+    },
+    {
+      "line": 169,
+      "before": "Most pairs find they disagree on the cost of the same subroutine by a factor of\ntwo or more. That disagreement is the week.",
+      "after": "How close were your estimates? If they differed, what might account for the\ndifference?",
+      "reason": "Replace invented classroom results with questions the activity can actually answer."
+    },
+    {
+      "line": 176,
+      "before": "back to baseline. It's a guess, and it gets better with practice.",
+      "after": "back to baseline. Revise the estimate against what recovery actually took.",
+      "reason": "Turn a promise of improvement into a concrete instruction for using the ledger."
+    },
+    {
+      "line": 196,
+      "before": "   spend. A day you can see coming is cheaper than one you meet cold.",
+      "after": "   spend. Use the estimate to decide what can move before the day starts.",
+      "reason": "Keep advance budgeting while avoiding an unsupported promise that anticipation lowers the cost."
+    }
+  ],
+  "sha256_after": "764778718a206d58bf98ddf0ec6230853c677152de58d78d18178cac9092854c"
+}

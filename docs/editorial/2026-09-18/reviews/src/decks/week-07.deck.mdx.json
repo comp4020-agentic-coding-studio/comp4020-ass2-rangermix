@@ -1,0 +1,166 @@
+{
+  "path": "src/decks/week-07.deck.mdx",
+  "category": "Slides and speaker notes",
+  "sha256_before": "a5b8b77fe70433b7088bf01dafb6e4f98f99f3e11a9c367d88cf9c6627ea7cbc",
+  "status": "edited",
+  "review_note": "Keep the runbook structure, practical scripts, quiet teaching directions and support slide. Align the limits of the course’s model with the lecture; cut repeated declarations of significance and classroom predictions.",
+  "edits": [
+    {
+      "line": 12,
+      "before": "Week 7: overload, shutdown, recovery. The last lecture before the break, on purpose.",
+      "after": "Week 7: overload, shutdown, recovery. A runbook before the break.",
+      "reason": "State the useful timing without announcing intentionality."
+    },
+    {
+      "line": 16,
+      "before": "- The break is when they'll have room to use what's here. Say that up front.",
+      "after": "- Thursday's lab is time to write the runbook and plan the break.",
+      "reason": "Point to the scheduled work without assuming the break gives every student free capacity."
+    },
+    {
+      "line": 21,
+      "before": "## Why the framing earns its place here",
+      "after": "## A runbook",
+      "reason": "Introduce the tool rather than asking the slide to prove the course’s metaphor has earned its place."
+    },
+    {
+      "line": 28,
+      "before": "- This is the week where the protocol framing is most useful rather than most clever. Don't oversell it; just use it.",
+      "after": "- Use the example of a saved absence message: one decision made before the difficult day.",
+      "reason": "Replace self-assessment of the framing with a concrete example."
+    },
+    {
+      "line": 35,
+      "before": "Week 6 gave you a ledger and a unit. Recovery hours, and the finding that **time spent** is the damaging axis.",
+      "after": "Week 6 gave you a ledger. **Recovery hours** are its planning unit; the research finding concerns **time spent camouflaging**.",
+      "reason": "Keep the recap consistent with week 6’s distinction between recovery time and exposure time."
+    },
+    {
+      "line": 40,
+      "before": "- And say why this lecture sits immediately before the break. It is not an accident of timetabling.",
+      "after": "- Ask them to bring their week 6 ledger to Thursday's runbook workshop.",
+      "reason": "Replace another announcement of deliberate scheduling with the preparation students can use."
+    },
+    {
+      "line": 56,
+      "before": "- Overload and shutdown recover in hours or a day. Burnout doesn't, and the difference decides what you do.",
+      "after": "- These are planning time scales, not recovery deadlines. The table distinguishes immediate load from load that has accumulated for weeks.",
+      "reason": "Align the note with the lecture’s limited model rather than giving an unsupported recovery promise."
+    },
+    {
+      "line": 71,
+      "before": "<MarginNote label=\"Errata, early\">The map has four territories. This course drew three.</MarginNote>",
+      "after": "<MarginNote label=\"Errata, early\">Two named states are missing from this map.</MarginNote>",
+      "reason": "BIMS and the course’s three rows are overlapping lists, not three entries from one four-entry list."
+    },
+    {
+      "line": 75,
+      "before": "- The good news: shutdown is not the course's coinage. The bad news is the other two.",
+      "after": "- Leave room in the runbook for states beyond the course's three rows.",
+      "reason": "Turn commentary about the course’s omissions into a useful instruction."
+    },
+    {
+      "line": 92,
+      "before": "- What it does establish: a runbook that addresses mood alone would miss most of what is happening.",
+      "after": "- Use the emotional, cognitive and physical components as prompts; do not present the three course rows as exhaustive.",
+      "reason": "Keep the practical application without claiming a measured proportion of experience would be missed."
+    },
+    {
+      "line": 104,
+      "before": "- That sequence is the week's quiet point: the people living it had the description first, and the literature caught up.",
+      "after": "- Keep the sequence clear: community descriptions preceded these research definitions.",
+      "reason": "Keep the historical point without telling the lecturer which revelation the week is engineered to deliver."
+    },
+    {
+      "line": 118,
+      "before": "- Community-based participatory approach. The definition came from the people it describes, which is the point.",
+      "after": "- Name the community-based participatory approach when introducing the definition.",
+      "reason": "Retain the method without appending another announcement of significance."
+    },
+    {
+      "line": 147,
+      "before": "- Their authors note the danger of teaching autistic people to mask. This course takes that seriously.",
+      "after": "- Their authors note the danger of teaching autistic people to mask.",
+      "reason": "The course’s claim to take the warning seriously adds no evidence or instruction."
+    },
+    {
+      "line": 161,
+      "before": "- So the load is real, it differs between groups in the same room, and it can be compared. That makes it a parameter, not a mood.",
+      "after": "- This is a comparison of reported discomfort in Swedish health care settings; do not imply that the questionnaire observed everyone in the same room.",
+      "reason": "Preserve the study’s setting and method rather than presenting it as a controlled room comparison."
+    },
+    {
+      "line": 176,
+      "before": "- Most people find their earliest sign is invisible to everyone but them.\n- That is exactly why it goes in a runbook instead of being left to be spotted. Land the debrief there.",
+      "after": "- If a sign would be hard for others to notice, ask what the student could tell them when it appears. Do not assume the room will share one answer.",
+      "reason": "Let the activity discover visibility rather than prescribing a result."
+    },
+    {
+      "line": 192,
+      "before": "- It is a planning checklist, and the whole room needs the break for something. One slide each.",
+      "after": "- Use the four experiences as a planning checklist. One slide each.",
+      "reason": "Keep the teaching instruction without assuming each student’s circumstances."
+    },
+    {
+      "line": 204,
+      "before": "- The hardest of the four for most students, and the one a phone defeats.",
+      "after": "- Ask which phone notifications bring work back into the break, and whether any could be turned off.",
+      "reason": "Replace unsupported rankings with an actionable question about detachment."
+    },
+    {
+      "line": 236,
+      "before": "- This is the one a family Christmas removes, and it is worth naming so nobody thinks they failed at resting.",
+      "after": "- A family visit can fill a calendar with obligations even without coursework. Use it as an example of limited control over time.",
+      "reason": "Keep the recognisable example without asserting that every family Christmas removes control."
+    },
+    {
+      "line": 249,
+      "before": "A resolution is a decision you make **while** you are struggling. That is the worst possible time to make one.\n\nA runbook is a decision made **in advance**, by the version of you with the most capacity, for the version with the least.",
+      "after": "Trying to decide what to drop **while** you are struggling adds another decision to the load.\n\nA runbook records those decisions **in advance**, when you have more capacity.",
+      "reason": "Replace a false definition of resolutions and a superlative with the actual benefit of preparing a runbook."
+    },
+    {
+      "line": 254,
+      "before": "- This distinction is the whole reason the week uses an engineering artefact rather than a wellbeing one.",
+      "after": "- Point forward to the six sections: each removes a decision from the difficult day.",
+      "reason": "Explain how the tool works instead of defending the genre of the lesson."
+    },
+    {
+      "line": 259,
+      "before": "## Six sections, and the one that matters",
+      "after": "## Six sections",
+      "reason": "Avoid ranking five required sections as though only the highlighted one matters."
+    },
+    {
+      "line": 320,
+      "before": "## The section people skip",
+      "after": "## What gets dropped",
+      "reason": "Remove the unsupported frequency claim from the slide heading."
+    },
+    {
+      "line": 322,
+      "before": "**What gets dropped.** And it's the one the burnout research supports most directly.",
+      "after": "Fill in **what gets dropped** before adding recovery activities.",
+      "reason": "Match the lecture’s practical instruction without over-ranking the evidence."
+    },
+    {
+      "line": 339,
+      "before": "- That is the fix recommended by the people who have it, and it is the single most important sentence in the week.",
+      "after": "- Link this instruction to participants' reports of time off and reduced expectations.",
+      "reason": "Keep the source connection and cut the repeated declaration of what matters most."
+    },
+    {
+      "line": 354,
+      "before": "- The delete-one-sentence step is the exercise. Everyone writes too much the first time.",
+      "after": "- The deletion tests which information the recipient needs. Ask what changed when that sentence came out.",
+      "reason": "Preserve the exercise without pretending every first draft is too long."
+    },
+    {
+      "line": 411,
+      "before": "- **overload · shutdown · burnout** --- three of the four named phenomena",
+      "after": "- **overload · shutdown · burnout** --- the course's three time scales",
+      "reason": "Overload is not one of the four BIMS terms; keep the two models distinct in the recap."
+    }
+  ],
+  "sha256_after": "f1bd9326ddb1507cdc264f45a1dd4acfeed409ff73f829343440702fcc5882c4"
+}

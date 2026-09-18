@@ -1,0 +1,9 @@
+{
+  "path": "src/components/SessionsGrid.astro",
+  "category": "Components and diagram copy",
+  "sha256_before": "837fb21119f501c51612d7cd54fc67baa77dd7d43e98ecb22d59463f4c7c8888",
+  "status": "retained",
+  "review_note": "Retain the direct week and date labels. Lab descriptions and titles come from the separately reviewed session files.",
+  "edits": [],
+  "sha256_after": "837fb21119f501c51612d7cd54fc67baa77dd7d43e98ecb22d59463f4c7c8888"
+}

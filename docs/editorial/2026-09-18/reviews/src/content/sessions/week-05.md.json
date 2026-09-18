@@ -1,0 +1,22 @@
+{
+  "path": "src/content/sessions/week-05.md",
+  "category": "Sessions",
+  "sha256_before": "a6808b8fa8f577ef7e1d48809247ec1f3bb1c8345e6370d2ca3a8a99b3a925ec",
+  "status": "edited",
+  "review_note": "Retain the low-stakes drills, protected practice and concrete scores. Remove the promise of automatic fluency and allow an honest record when no template part was omitted.",
+  "edits": [
+    {
+      "line": 14,
+      "before": "Tuesday gave you three repair initiators and an apology template. Today you\nuse both until they come out without planning.",
+      "after": "Tuesday gave you three repair initiators and an apology template. Today you\npractise both with a partner who checks what they heard.",
+      "reason": "Describe the activity without promising that one session makes the scripts automatic."
+    },
+    {
+      "line": 43,
+      "before": "A tally of your repair initiators, and a note of the apology part you left\nout. That part is your journal rule for Sunday.",
+      "after": "A tally of your repair initiators, and a note of any apology parts you left\nout. Choose one part to test in Sunday's journal.",
+      "reason": "Do not require students to report an omission that may not have happened; preserve the journal task."
+    }
+  ],
+  "sha256_after": "568273486c78978e4cc6196c0c21e1c60d3035dcda9f3454460bf7763dff5592"
+}

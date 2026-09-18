@@ -1,0 +1,9 @@
+{
+  "path": "src/pages/readings/[slug].astro",
+  "category": "Site pages",
+  "sha256_before": "f844f958e0e9d41a02c16d05b4c0a591f61b5e0c7dbb88e1d7801f3da20b172e",
+  "status": "retained",
+  "review_note": "Retain the citation, source-kind and verification labels and the links to weeks using the reading; the page adds no editorial padding.",
+  "edits": [],
+  "sha256_after": "f844f958e0e9d41a02c16d05b4c0a591f61b5e0c7dbb88e1d7801f3da20b172e"
+}

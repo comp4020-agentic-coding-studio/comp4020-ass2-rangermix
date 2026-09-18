@@ -1,0 +1,40 @@
+{
+  "path": "src/pages/index.astro",
+  "category": "Site pages",
+  "sha256_before": "5fd4cef77c1371b49676a5c55499fa47a7d5574ebf773ca155dc396e16819f30",
+  "status": "edited",
+  "review_note": "Retain the governing sentence, legacy-system satire, mixed classroom and concrete overview. Cut declarations of sincerity and align the journal loop with its stated week-2 start.",
+  "edits": [
+    {
+      "line": 62,
+      "before": "    It is a systems course, and it is sincere. Every week ends with scripts you\n    can say, timings you can check, and lines you can test yourself against.",
+      "after": "    Every week ends with scripts you can say, timings you can check, and lines\n    you can test yourself against.",
+      "reason": "The scripts and checks demonstrate the teaching purpose without a claim of sincerity."
+    },
+    {
+      "line": 82,
+      "before": "    Every week runs the same loop. A lecture writes a part of the protocol down,\n    a lab tests that writing in the room, and a journal entry checks it against\n    a real exchange of your own — which is where the next week starts.",
+      "after": "    A lecture writes a part of the protocol down, and a lab tests that writing\n    in the room. From week 2, a weekly journal entry checks it against a real\n    exchange of your own.",
+      "reason": "Make the existing week-2 journal start explicit and avoid promising that every next lecture begins with each student’s findings."
+    },
+    {
+      "line": 88,
+      "before": "caption=\"The week, which runs eleven times. The journal entry is the edge back: what you tested on Sunday is what the next lecture is arguing with.\"",
+      "after": "caption=\"From week 2: lecture, lab and journal. An observation can send you back to revise the rule.\"",
+      "reason": "Describe the loop without repeating the paragraph or scripting the next lecture’s reaction."
+    },
+    {
+      "line": 127,
+      "before": "    Not on the list, on purpose: becoming indistinguishable from anybody. The\n    outcome is fluency plus choice.",
+      "after": "    The outcome is fluency plus choice, without having to become\n    indistinguishable from anybody.",
+      "reason": "Preserve the essential aim while removing the announcement that the omission was deliberate."
+    },
+    {
+      "line": 147,
+      "before": "{readingCount} sources, each checked against the source itself.",
+      "after": "{readingCount} sources, with notes on what was checked.",
+      "reason": "The entries distinguish full-text, abstract and other checks; the card should point readers to that record rather than flatten those limits."
+    }
+  ],
+  "sha256_after": "3e994455367b9c85726f4bd19add0e177631e70c5ceedf19c0bfec5bd180f946"
+}

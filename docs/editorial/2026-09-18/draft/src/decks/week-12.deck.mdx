@@ -1,0 +1,437 @@
+---
+title: "NT 101, Week 12: Advanced Topics and Further Study"
+description: "The week 12 lecture deck: three open issues logged rather than taught, the course's own errata, and the capstone's two routes."
+---
+
+import MarginNote from "../components/sketch/MarginNote.astro";
+import Register from "../components/sketch/Register.astro";
+
+{/* _class: banner */}
+
+# Open Issues
+
+Week 12. Advanced topics, logged rather than taught.
+
+```notes
+- Standards documents end with the problems the authors know about and decided not to solve in this version. So does this course.
+```
+
+---
+
+## Where we were
+
+Eleven weeks of specification. Last week, the thesis: the fix for a mismatch is bilateral.
+
+Today: what this course **didn't** document, what it got wrong, and what you do next.
+
+```notes
+- This is the last hour of content. Say so, and say that a standards document ends with open issues rather than a summary.
+```
+
+---
+
+## Why three things are out of scope
+
+Each one runs on top of **everything** the course documented --- handshakes, envelopes, timing, repair, masking, disclosure, rate limits --- all at once.
+
+Each is high-stakes enough that a first-year course would teach it badly in one week.
+
+And in each, running the protocol *on purpose* raises questions this course can't settle for you.
+
+```notes
+- State the scope limits before introducing the three issues.
+```
+
+---
+
+<Register
+  heading="SLOP1562 --- open issues at end of semester"
+  seed="deck week 12 open issues"
+  caption="Three issues, none closed, one still being argued about."
+  issues={[
+    { id: "OI-1", title: "Romance", status: "OPEN" },
+    { id: "OI-2", title: "Persuasion", status: "OPEN" },
+    { id: "OI-3", title: "Power", status: "OPEN / CONTESTED", contested: true },
+  ]}
+/>
+
+```notes
+- Keep the three issue numbers visible as you introduce them.
+```
+
+---
+
+## OI-1: Romance
+
+**Status:** open. **Out of scope because:** every earlier week at once, with the highest cost of error.
+
+Five styles of communicating romantic interest --- traditional, physical, sincere, playful, polite --- from over five thousand adults. Physical, sincere and playful correlated with more dating success.
+
+<span class="source">Hall et al. (2010), Communication Quarterly 58(4)</span>
+
+```notes
+- The inventory measures how people say they signal interest, not what receivers understand. That gap matters.
+- The course's inference, not the paper's: if there are five styles, "I can't tell when someone's flirting" is sometimes a style mismatch. Week 3's decoder handles sincere well and playful badly.
+```
+
+---
+
+## OI-1, asked of the people concerned
+
+31 autistic and 26 non-autistic people, on what makes intimacy possible and what blocks it.
+
+**Enablers, named by both:** communication; sharing and similarity; respect and safety for self and other; working on the relationship.
+
+<span class="source">Sala, Hooley & Stokes (2020), JADD 50(11)</span>
+
+```notes
+- Distinguish the intimacy study from the self-reported flirting inventory.
+- Both groups also named conflict as a barrier -- within a person and between people.
+```
+
+---
+
+{/* _class: impact */}
+
+What the autistic participants specifically named was uncertainty.
+
+<MarginNote label="No new machinery">Same destination. Different obstacle.</MarginNote>
+
+```notes
+- Uncertainty about relationships and about communication. The authors' conclusion: similar notions of intimacy, different challenges reaching it.
+- Now ask the room where they have met uncertainty before in this course, and wait.
+```
+
+---
+
+## Which points backwards, not forwards
+
+**Week 3:** an envelope marks a place where the sender doesn't know the answer.
+
+**Week 9:** the rate limit is the move for when you can't predict their next step.
+
+Two places to start with OI-1.
+
+```notes
+- And note the paper's opening clause states the clinical framing its authors write inside. We take the findings and leave the framing, same as week 2's thin-slice study.
+```
+
+---
+
+## OI-2: Persuasion
+
+**Status:** open. **Out of scope because:** the protocol used deliberately to move someone, where the ethics are the hard part.
+
+Research on compliance organised around three goals people already pursue: seeing things **accurately**, keeping their **relationships**, feeling good about **themselves**.
+
+Much of the influence described is subtle, indirect, and outside the target's awareness.
+
+<span class="source">Cialdini & Goldstein (2004), Annual Review of Psychology 55</span>
+
+<MarginNote label="Security note">A protocol that works outside awareness is, by definition, an attack surface.</MarginNote>
+
+```notes
+- Everything in weeks 1 to 11 can be used to persuade. This course taught it so they could interoperate.
+- That's why the Field Experiment's ethics reflection is graded, not an appendix.
+```
+
+---
+
+{/* _class: impact */}
+
+Everything in weeks 1 to 11 can be used to persuade.
+
+```notes
+- The decoder reads an envelope; it also writes one. The rate limit paces closeness; it also paces a sale.
+- Ask how using the same technique to make a sale would change its purpose.
+```
+
+---
+
+## So the ethics reflection is graded
+
+Route two varies a protocol parameter on people who never agreed to be in a study. The reflection carries 35%: account for what you do to them.
+
+Thursday's lab reviews every parameter against **the four questions**:
+
+1. **Is it ordinary?** Would it pass as something people do anyway?
+2. **Who is it on?** And why is that group appropriate?
+3. **What could it cost them?** Specifically --- and how would you notice?
+4. **What stops it?** When do you stop varying and repair?
+
+```notes
+- Garfinkel’s method deliberately breached expectancies. This experiment keeps variations inside ordinary behaviour; students may be working with people they will see again.
+- The course’s current rule is: "less eye contact than usual" is ordinary; "none at all" is a breach.
+```
+
+---
+
+## In the room: check your parameter (7 min)
+
+**Three minutes, alone.** Write the parameter you'd vary, as a number or a behaviour.
+
+**Three minutes, in pairs.** Your partner runs the four questions against it, out loud, in order.
+
+**One minute.** Whose parameter failed a question? Hands up. Use the failed question to revise it before Thursday.
+
+```notes
+- Watch for failures on question 1. "I'll stop making eye contact entirely" is outside the range of ordinary behaviour; "less than usual" is inside it.
+- Route-one students run the same check on somebody else's, because reading a design is how you learn to write one.
+```
+
+---
+
+## OI-3: Power
+
+**Status:** open, and **contested**. **Out of scope because:** it changes every other parameter, and the research is still arguing.
+
+Elevated power activates **approach**: more positive affect, more automatic processing, more disinhibited behaviour.
+
+Reduced power activates **inhibition**: more attention to threat and to **other people's interests**, more controlled processing.
+
+<span class="source">Keltner, Gruenfeld & Anderson (2003), Psychological Review 110(2)</span>
+
+```notes
+- The account has drawn published criticism. Treat it as a proposal, not a settled result, and say so.
+```
+
+---
+
+## "Contested" is a gesture
+
+Which claim can the existing studies test: that high and low power differ, or how each affects behaviour?
+
+**Moskowitz (2004), Psychological Review 111(3), 808--811.**
+
+```notes
+- Keep the comment beside the proposal as you explain what it challenges.
+```
+
+---
+
+## What the objection actually is
+
+**Not** "the proposal is false."
+
+The studies <span data-quoted>have permitted examining the opposite effects but not the specific effects of high and low power</span>.
+
+They can show high and low power differing. Not that **each half** does what it separately claims.
+
+And the comment sets out the designs that **would** settle it.
+
+```notes
+- Read as an engineer: it names the claim, says what the evidence cannot distinguish, and specifies the test that would close it.
+- Published next to the thing it criticises, under a name, where anyone can find it.
+```
+
+---
+
+{/* _class: impact */}
+
+An erratum that names the test it would take to close it.
+
+<MarginNote label="The standard">Measure ours against this.</MarginNote>
+
+```notes
+- Use the comment’s format for the errata exercise: claim, evidence limit, test.
+- Also say the gap: the authors revisited the theory years later and we could not retrieve an abstract, so it is not cited. OI-3 cannot currently tell you how the argument came out. That is part of the open issue.
+```
+
+---
+
+{/* _class: impact */}
+
+If that proposal holds even partly: whoever holds less power runs more of the protocol.
+
+```notes
+- They attend more to the other person, inhibit more, and pay week 6's costs more often.
+- Week 11's finding that conversion falls on the minority is the same shape. The connection is the course's; the proposal is theirs.
+```
+
+---
+
+## Errata
+
+| # | Model | Known issue |
+| --- | --- | --- |
+| E-1 | The timeout (wk 4) | not a hard number; "by about 700 ms a no is more likely", nothing sharper |
+| E-2 | Recovery hours (wk 6) | a planning unit, not a measured price |
+| E-3 | The depth scale (wk 9) | the course's model; the levels haven't been tested as levels |
+| E-4 | Partial disclosure (wk 10) | a synthesis, not a tested intervention |
+| E-5 | The branch signals (wk 1) | working rules, checked only in this course's labs |
+
+```notes
+- A specification that publishes no known issues is either very new or not being honest.
+- Each row is a testable question for a journal entry or a capstone.
+```
+
+---
+
+## In the room: write E-6 (8 min)
+
+**Four minutes, in pairs.** A claim this course made that isn't E-1 to E-5. Write it with three parts: the **model**, what the evidence **can't distinguish**, the **test** that would close it.
+
+**Three minutes.** Swap. Their only job: is that test runnable by a person, this year, without a grant?
+
+**One minute.** The ones that pass go on the board, numbered.
+
+```notes
+- If they are stuck, send them to the "the course's own observation" line at the foot of each week's research review. Each entry is a candidate.
+```
+
+---
+
+## The two you should trust least
+
+**E-3, the depth scale.** Five levels somebody invented, used to teach a rule, drawn as a ladder, given a spec line. If the levels are wrong, the rule survives in some form and the drawing doesn't.
+
+**E-2, recovery hours.** The unit of week 6's whole ledger. Nobody has priced masking.
+
+```notes
+- Keep the ledger anyway: a wrong unit used consistently still shows which weeks cost more than others. But do not report it to anyone as a measurement.
+- Ask students to identify where their capstone relies on either model.
+```
+
+---
+
+## Three places to start reading
+
+| Issue | Start here | And its limit |
+| --- | --- | --- |
+| OI-1 Romance | Hall et al. (2010); Sala et al. (2020) | self-reported style; a qualitative sample of 57 |
+| OI-2 Persuasion | Cialdini & Goldstein (2004) | a review of 1997--2002, not a manual |
+| OI-3 Power | Keltner et al. (2003), **with** Moskowitz (2004) | read the comment beside the paper, not after it |
+
+Each reading comes with its limit.
+
+```notes
+- Ask what each source does not establish before students use it in a capstone.
+- Petty and Cacioppo's model belongs on this table and is not on it, because we could not retrieve a text to check. Say so.
+```
+
+---
+
+## What this course refused to teach you
+
+There is a version of this material that ends with **pass as one of them**.
+
+That is not this course’s outcome.
+
+A convention is not a condition. This course specified one.
+
+```notes
+- Say it plainly and once. Do not assume everyone in the room has encountered a corrective programme or clinic.
+- The joke was never at anyone in this room. It was at a protocol nobody documented and everybody insists is self-evident.
+```
+
+---
+
+## Twelve weeks, four parts
+
+| Part | Weeks | What you were doing |
+| --- | --- | --- |
+| **Read** the protocol | 1--4 | handshake, why nobody wrote it down, envelopes, the clock |
+| **Implement** selectively | 5--7 | repair, masking as a budget, a runbook for when it runs out |
+| **Negotiate** with it | 8--11 | institutions, closeness, disclosure, other implementations |
+| **Horizon** | 12 | this hour |
+
+```notes
+- Walk it and name the artefact each part produced.
+```
+
+---
+
+## The vocabulary you built
+
+*protocol, implementation, handshake, token, background expectancies, double empathy problem, field note, asleep test, payload, envelope, plausible deniability, over-decoding, latency, timeout, hold token, repair, repair initiator, subroutine, masking, ledger, recovery hours, switching charge, budget, overload, shutdown, runbook, register, specimen, disclosure, depth scale, rate limit, responsiveness, follow-up question, step-down, anticipated stigma, the five audiences, partial disclosure, timing trap, interoperation, conversion.*
+
+None of it is anybody's native implementation.
+
+```notes
+- Do not read the list. Put it up and let them look at it.
+- Point to the glossary. Ask which terms helped partners describe the same exchange and where the terms fell short.
+```
+
+---
+
+{/* _class: impact */}
+
+The outcome was never that you become indistinguishable from anyone.
+
+```notes
+- Fluency plus choice. Read the protocol, run a part of it when it is worth the cost, decline a part of it knowing what declining costs.
+- Say the word "choice" last and then stop.
+```
+
+---
+
+## What the course documented
+
+- **Read** the protocol --- the handshake, why nobody wrote it down, envelopes, the clock
+- **Implement** selectively --- repair, masking as a budget, a runbook
+- **Negotiate** with it --- institutions, closeness, disclosure, other implementations
+- **Horizon** --- this page
+
+---
+
+{/* _class: impact */}
+
+The outcome was never that you become indistinguishable from anyone.
+
+Fluency plus choice.
+
+```notes
+- Read the protocol, run a part when it's worth the cost, decline a part knowing what declining costs.
+- Pause before moving to the capstone exercise.
+```
+
+---
+
+## In the room: pick your route (9 min)
+
+**Two minutes.** Which route. Just the name.
+
+**Five minutes.** The first paragraph. Route one: one subroutine you run, one you decline, the cost of each. Route two: the one parameter you'd vary --- a number or a behaviour, not an intention.
+
+**Two minutes, in pairs.** Read it out. One question only. Route one: *what does that cost you?* Route two: *would somebody notice they were in your experiment?*
+
+```notes
+- If the answer to the second is yes, the parameter is outside the range of ordinary behaviour. That is a redesign for Thursday, not a problem with their ethics.
+- Keep the paragraph for Thursday’s clinic.
+```
+
+---
+
+## One thing before you go
+
+Three open issues. Five errata.
+
+The protocol you've been studying has **neither**. No issue numbers. No errata. No version. No comment published beside it a year later.
+
+```notes
+- It is not maintained and it is not documented, and its fluent users will tell you with complete sincerity that it is obvious.
+- They now have twelve weeks of evidence that it isn't, and the vocabulary to say so precisely. What they do with it was never this course's to decide.
+```
+
+---
+
+## The capstone
+
+Due **Sunday 13 June, 23:59** --- two weeks after teaching ends. Two routes, equal weight:
+
+- **Personal Protocol Document.** What you run, what you decline, what you need from others, with the costs attached.
+- **Neurotypical Interaction Field Experiment.** Vary one parameter deliberately, record what comes back, report it straight, with a graded ethics reflection.
+
+Thursday's lab is the clinic for both.
+
+---
+
+{/* _class: centered */}
+
+## Check yourself against this week
+
+For each open issue: the reading where its documentation starts, and one reason it's out of scope?
+
+Have you chosen your route and written its first paragraph?
+
+Can you name an entry in the errata and say how you'd test it?

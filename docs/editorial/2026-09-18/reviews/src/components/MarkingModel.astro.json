@@ -1,0 +1,9 @@
+{
+  "path": "src/components/MarkingModel.astro",
+  "category": "Components and diagram copy",
+  "sha256_before": "fdf1e4acd6e6f9f3eafe5df64910874369a547dd8c5bd16f9731ad84482ce24d",
+  "status": "retained",
+  "review_note": "Retain How it is marked, Criterion and Weight. These are direct interface labels; the marking descriptions and requirements belong to the assessment records.",
+  "edits": [],
+  "sha256_after": "fdf1e4acd6e6f9f3eafe5df64910874369a547dd8c5bd16f9731ad84482ce24d"
+}
