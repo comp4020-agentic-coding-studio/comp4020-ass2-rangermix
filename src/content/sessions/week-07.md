@@ -54,5 +54,6 @@ never gets started.
 ## What leaves the room
 
 A runbook, three saved messages, and a two-week plan whose first day is
-blank. No Field Journal entry is due over the break. The next one is Sunday
-2 May.
+blank. Your week 7 Field Journal entry is still due **Sunday 11 April, 23:59**.
+Nothing is due during the break. The first entry after it is due **Sunday
+2 May, 23:59**. All the dates are on the [journal page](/assessments/field-journal/).

@@ -214,6 +214,13 @@ corporate diagram loses the argument, and pure whimsy loses the rigour.
   URL, API path and ref all agree. Renaming means renaming all four.
 - Never hand-write a root-absolute `href` in an `.astro` file; it breaks on the
   deployed base path. Use markdown links or the theme's components.
+- After adding or moving a lecture section, check every numbered reference in
+  its prose and self-checks. `spec/student-instructions.test.ts` matches each
+  reference to its intended heading; add the destination there when adding a
+  reference. A valid number can still point to the wrong section.
+- Give each ordinary page a visible main heading. `heroTitle` alone renders
+  nothing without a hero image; an image-free Markdown page needs its own
+  `# Heading`.
 - Never edit generated JSON under `dist/`.
 - Commit in steps that a reader can follow, with messages saying why, not what.
 - Commit and push as you work, straight to `main` unless the user asks for a
