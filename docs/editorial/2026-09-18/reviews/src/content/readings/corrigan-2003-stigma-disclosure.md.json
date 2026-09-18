@@ -1,0 +1,22 @@
+{
+  "path": "src/content/readings/corrigan-2003-stigma-disclosure.md",
+  "category": "Readings",
+  "sha256_before": "343595b314f767228a6d94b0967f651055c0f2d5595720820f5af3db7c213fe3",
+  "status": "edited",
+  "review_note": "Shorten the course connection and preserve the abstract-only and population limits without claims about shared machinery.",
+  "edits": [
+    {
+      "line": 18,
+      "before": "Week 10 cites it for the structural point and nothing more: disclosure is a set of levels rather than an on switch. That is the premise underneath the five audiences and underneath partial disclosure, and it is worth knowing that it isn't this course's invention — the shape was described decades ago, in a different literature, about different people.",
+      "after": "Week 10 uses the idea of levels of disclosure when distinguishing audiences and teaching partial disclosure.",
+      "reason": "The source is already identified; remove repeated assurances that the course did not invent the idea."
+    },
+    {
+      "line": 20,
+      "before": "Two limits, stated rather than glossed. Only the abstract was read, so the levels themselves are not reproduced here or in the lecture; the course names that they exist and teaches its own cut. And the population is people with psychiatric diagnoses, which is not the same population as autistic students, even though a great deal of the disclosure machinery turns out to be shared. Read across, not straight through.",
+      "after": "Only the abstract was read, so its levels are not reproduced here or in the lecture; the course teaches its own working model. The paper concerns psychiatric diagnoses. Its population and findings should not be treated as interchangeable with those of autism studies.",
+      "reason": "Keep both limits plainly. Remove self-congratulation about stating them and a broad claim about shared machinery."
+    }
+  ],
+  "sha256_after": "e22c21149a06828305bb7772e18c7076c4a62e0ca086e20ddcc26d3bbd31fb44"
+}

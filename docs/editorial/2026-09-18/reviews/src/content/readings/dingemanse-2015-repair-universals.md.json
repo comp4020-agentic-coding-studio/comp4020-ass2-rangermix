@@ -1,0 +1,9 @@
+{
+  "path": "src/content/readings/dingemanse-2015-repair-universals.md",
+  "category": "Readings",
+  "sha256_before": "34a40c5304f8561b60c7c58a17367bd0d5317c491e462db9703f8dc4227487bc",
+  "status": "retained",
+  "review_note": "Retain: timings and repair choices are concrete and the final instruction follows them.",
+  "edits": [],
+  "sha256_after": "34a40c5304f8561b60c7c58a17367bd0d5317c491e462db9703f8dc4227487bc"
+}

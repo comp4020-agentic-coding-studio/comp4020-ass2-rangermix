@@ -1,0 +1,22 @@
+{
+  "path": "src/content/readings/alkhaldi-2019-readability.md",
+  "category": "Readings",
+  "sha256_before": "a7b7b29b97a1a301e6ec8849e182edf7ea404652147a58a424efcbe9504699b9",
+  "status": "edited",
+  "review_note": "Retain the coefficients and explicit correlation caveat; remove a second, categorical explanation of why this is the whole argument.",
+  "edits": [
+    {
+      "line": 17,
+      "before": "And the finding week 11 is built on: **readability correlated with favourability, r = .58 and r = .63, independent of target diagnosis.**",
+      "after": "**Readability correlated with favourability, r = .58 and r = .63, independent of target diagnosis.**",
+      "reason": "State the result without announcing its importance to the course."
+    },
+    {
+      "line": 21,
+      "before": "That \"independent of diagnosis\" is the whole argument. The judgement isn't attached to a category of person. It attaches to a property of a reading — and a reading has two parties in it, one of whom is doing the reading. Which is the double empathy problem with a correlation coefficient on it.\n\n",
+      "after": "",
+      "reason": "The preceding paragraph already connects readability to judgement. Remove the second, more categorical interpretation and keep the authors' correlation caveat."
+    }
+  ],
+  "sha256_after": "a348b2d5325be9cc904dbd4ff3767877218de51976d5641cba363dbe02cce81a"
+}

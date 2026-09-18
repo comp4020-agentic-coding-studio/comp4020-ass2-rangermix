@@ -1,0 +1,16 @@
+{
+  "path": "src/content/readings/flynn-2008-direct-requests.md",
+  "category": "Readings",
+  "sha256_before": "a63850f0bc86a6e4cc98c8747d47effed2d4f1c2036688b7b85e5363d9cc10e3",
+  "status": "edited",
+  "review_note": "Keep study findings; change the final advice so it does not pronounce every reader's estimate wrong.",
+  "edits": [
+    {
+      "line": 16,
+      "before": "Week 8 turns this into its first rule of institutional protocol: ask, in one sentence, because your estimate of the odds is wrong in your disfavour.",
+      "after": "Week 8 uses this to suggest making the request, in one sentence, even when you expect a refusal.",
+      "reason": "Keep actionable advice without diagnosing the reader's estimate."
+    }
+  ],
+  "sha256_after": "293c5db56103460a5411f55e89d1658a47d97e4a2d2113327e5f170b803e5fad"
+}

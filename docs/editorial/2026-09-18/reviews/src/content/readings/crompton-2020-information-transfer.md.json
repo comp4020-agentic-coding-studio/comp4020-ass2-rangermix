@@ -1,0 +1,9 @@
+{
+  "path": "src/content/readings/crompton-2020-information-transfer.md",
+  "category": "Readings",
+  "sha256_before": "054cceed9e86ea239108cacb0880bcffa2e01f2624498e08934c89539e38532c",
+  "status": "retained",
+  "review_note": "Retain: the between-implementations contrast explains the experiment rather than decorating it.",
+  "edits": [],
+  "sha256_after": "054cceed9e86ea239108cacb0880bcffa2e01f2624498e08934c89539e38532c"
+}

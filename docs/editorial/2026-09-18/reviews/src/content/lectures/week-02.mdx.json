@@ -1,0 +1,106 @@
+{
+  "path": "src/content/lectures/week-02.mdx",
+  "category": "Lectures",
+  "sha256_before": "a9fec3a2ce658f97ef1e0cd0a71a9c40a3933cfc9ff448c63136e3b5e67e9e06",
+  "status": "edited",
+  "review_note": "Keep the maintenance jokes, study boundaries, worked field notes and practical exercises. Cut self-commentary and predictions about what the class must find; make journal guidance apply to successful exchanges too.",
+  "edits": [
+    {
+      "line": 57,
+      "before": "This is the mechanism behind the course's governing sentence. The protocol\nis **undocumented because it is background**, not because it is obvious.\n\"Obvious\" is what background feels like from the inside.",
+      "after": "The protocol is **undocumented because it is background**, not because it is\nobvious. \"Obvious\" is what background feels like from the inside.",
+      "reason": "Keep the explanation and punchline without announcing how they serve the course thesis."
+    },
+    {
+      "line": 61,
+      "before": "The course adds one observation of its own. Garfinkel breached expectancies on\npurpose, to study them. Anyone whose implementation differs\nfrom the majority's runs a small, unplanned version of the experiment every\nday, and watches the same repair work happen around them.",
+      "after": "The course adds an observation of its own. Garfinkel breached expectancies on\npurpose, to study them. When your implementation differs from the majority's,\na mismatch can expose an expectancy without your having set out to test it.",
+      "reason": "Preserve the course's explicit distinction between research and its own observation; do not assign a daily experience to every divergent reader."
+    },
+    {
+      "line": 105,
+      "before": "The right-hand column points at something salient that happened seconds ago.\nThe left invites the person to theorise about people in general, and they will,\nat length, and it won't be the rule.",
+      "after": "The right-hand column points at something salient that happened seconds ago.\nThe left asks for a general explanation. Check either answer against actual\nexchanges.",
+      "reason": "Replace a guaranteed prediction of interview behaviour with the observation-and-test method the course teaches."
+    },
+    {
+      "line": 120,
+      "before": "prediction** --- underestimating what the novice was in for. And the part that\nmakes it a finding rather than a saying: the participants were **resistant to\ndebiasing techniques** aimed at exactly that underestimation (Hinds, 1999).",
+      "after": "prediction** --- underestimating what the novice was in for. The participants\nwere also **resistant to debiasing techniques** aimed at that underestimation\n(Hinds, 1999).",
+      "reason": "Retain the reported result without claiming that this feature is what makes research a finding."
+    },
+    {
+      "line": 126,
+      "before": "Two things follow, one for each half of this room.\n\n",
+      "after": "",
+      "reason": "The next two paragraphs already address the two audiences; remove a repeated lecture formula."
+    },
+    {
+      "line": 176,
+      "before": "Style was judged before substance. That will matter more than anything else\nin how you take notes.",
+      "after": "Record what was said and done before judging how it came across.",
+      "reason": "Turn an unsupported ranking of importance into the note-taking instruction it introduces."
+    },
+    {
+      "line": 193,
+      "before": "and still find parts of your own life hard. Both are true in this room.",
+      "after": "and still find parts of your own life hard.",
+      "reason": "Keep the inclusive qualification without speaking for the experiences of everyone in the room."
+    },
+    {
+      "line": 225,
+      "before": "The format above is a shape. Here is one filled in, so you know what you are\naiming at:",
+      "after": "A worked example:",
+      "reason": "The example supplies the explanation; the introduction need not explain what examples do."
+    },
+    {
+      "line": 242,
+      "before": "Two things to notice. The first box is longer than the other three together.\nAnd the last one names what the rule has *not* been tested against --- which is\nthe clause that turns an opinion into a specification, and the clause first\nentries leave out.",
+      "after": "The last box names a limit: the rule has *not* been tested with a tutor who\ndoesn't already know the class. Include what remains untested in your own entry.",
+      "reason": "Keep the concrete lesson and remove a repeated maxim plus an unsupported prediction about first submissions."
+    },
+    {
+      "line": 249,
+      "before": "Here is where a lecture would normally reach for a bias to justify the rule.\nThe obvious one is the **actor--observer asymmetry**: people explain their own\nbehaviour by the situation and other people's by the person. You were in a\nhurry; he is rude. It is famous, it is in every textbook, and it would make the\nasleep test sound inevitable.",
+      "after": "The **actor--observer asymmetry** offers an appealing justification: people\nexplain their own behaviour by the situation and other people's by the person.\nYou were in a hurry; he is rude. It would make the asleep test sound inevitable.",
+      "reason": "Keep the memorable example and the argument to be tested; remove claims about what all textbooks and other lectures do."
+    },
+    {
+      "line": 265,
+      "before": "That paragraph is doing two jobs. It is honest about where a rule came from,\nwhich is the whole argument of this course applied to itself. And it is a\nworked example of the thing you will do all semester --- check the claim that\nwould have been most convenient for you, first.\n\n",
+      "after": "",
+      "reason": "The adjacent errata note already gives the useful instruction. Cut the paragraph praising the course's own honesty."
+    },
+    {
+      "line": 275,
+      "before": "One piece of Malle does survive, and it is sharper than the thing it replaced.\nThe asymmetry **held for negative events**, and reversed for positive ones. You\nwrite a field note when something didn't go smoothly. The single condition under\nwhich the effect shows up is the condition your journal entries are written in.",
+      "after": "Malle also found that the asymmetry **held for negative events**, and reversed\nfor positive ones. If your entry concerns an exchange that went badly, check\nwhether you have described the other person's actions or judged their character.",
+      "reason": "Retain the recorded result but remove the unsupported claims that negative events are its only condition and that all journal entries concern failed exchanges."
+    },
+    {
+      "line": 298,
+      "before": "Neither rewrite excuses anyone. Both are *more useful*, because a rule about an\nexchange is something you can test next week, and a verdict about a person is\nnot.",
+      "after": "Neither rewrite excuses anyone. Both give you a rule to test in another\nexchange.",
+      "reason": "Keep the accountability point; the preceding section has already explained why an exchange can be tested."
+    },
+    {
+      "line": 307,
+      "before": "Three of them are deliberately borderline. When the room splits, we stop and\nyou argue it out --- that is the useful part, and the reason this is not a\nworksheet.",
+      "after": "Three of them are deliberately borderline. If the room splits, we stop and\ncompare the reasons.",
+      "reason": "Leave the exercise open to the class's actual response, without declaring which part will be useful."
+    },
+    {
+      "line": 325,
+      "before": "The rule you infer is the part students most often leave as a verdict wearing\nnew clothes. Three that look like rules and aren't, with what they become:",
+      "after": "A verdict can wear a rule's clothes. Three examples, with rewrites:",
+      "reason": "Keep the image while removing an unsupported claim about what students most often do."
+    },
+    {
+      "line": 341,
+      "before": "presentation are not marked. Talk it through with an AI if that helps; the\nwriting has to be yours, which is exactly why there is no word count to fill.",
+      "after": "presentation are not marked. Talk it through with an AI if that helps; the\nwriting has to be yours.",
+      "reason": "Preserve every submission rule and cut a repeated explanation of the absence of a word count."
+    }
+  ],
+  "sha256_after": "fa2cd182b66dade0687299e419be2c34af2f530d3c3a8fd24ed368eb9c45b3e2"
+}

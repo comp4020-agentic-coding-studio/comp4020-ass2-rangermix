@@ -1,0 +1,130 @@
+{
+  "path": "src/decks/week-02.deck.mdx",
+  "category": "Slides and speaker notes",
+  "sha256_before": "65061f3dd8851ef36d8dbb646dd9bdcfa94ef566d2b7ed7f43a08ac859959baf",
+  "status": "edited",
+  "review_note": "Keep slide structure, study results, field-note examples and the maintenance jokes. Align the notes with the lecture edits and stop scripting student agreement or mistakes.",
+  "edits": [
+    {
+      "line": 23,
+      "before": "Week 1: we wrote the handshake down. Six lines, one branch nobody takes.",
+      "after": "Week 1: we wrote the handshake down. Six lines and a branch for a real answer.",
+      "reason": "Describe the existing branch without claiming nobody ever takes it."
+    },
+    {
+      "line": 51,
+      "before": "- The course's own observation: anyone whose implementation differs runs a small breach every day, unplanned.",
+      "after": "- The course's own observation: a mismatch can expose an expectancy without anyone setting out to test it.",
+      "reason": "Align the speaker note with the lecture's removal of a universal daily-experience claim."
+    },
+    {
+      "line": 63,
+      "before": "- Set this up as an experiment they can run at dinner. Ask a fluent user why they did something social. You will not get silence.",
+      "after": "- Suggest an experiment they can run at dinner: ask a fluent user why they did something social and record the answer.",
+      "reason": "Keep the experiment open instead of supplying its result in advance."
+    },
+    {
+      "line": 90,
+      "before": "- Which is why interviewing your way to the protocol does not work, and why this course observes instead.",
+      "after": "- Check the answer against observed exchanges. The next slide explains when reports can be accurate.",
+      "reason": "The original declares interviewing ineffective immediately before teaching an interview technique; make the transition support the stated evidence limit."
+    },
+    {
+      "line": 106,
+      "before": "- The left column invites them to theorise about people in general. They will, at length, and it will not be the rule.",
+      "after": "- The left column asks for a general explanation. Check either answer against actual exchanges.",
+      "reason": "Match the revised lecture and remove the guaranteed prediction about interviewees."
+    },
+    {
+      "line": 135,
+      "before": "- Being told about the bias did not repair the estimate. That is what makes it a finding rather than a saying.",
+      "after": "- Being told about the bias did not repair the estimate.",
+      "reason": "Keep the reported result and cut the explanation of why it is a finding."
+    },
+    {
+      "line": 159,
+      "before": "- This is an argument about how the room is arranged, not a compliment to anyone in it.\n- It is also why the labs are mixed on purpose. Week 11 is where that pays off.",
+      "after": "- Ask who has learned this protocol recently and which steps they had to work out.\n- The labs bring different experiences together; return to the comparison in week 11.",
+      "reason": "Replace self-commentary with a question that can test the proposed teaching connection."
+    },
+    {
+      "line": 203,
+      "before": "Famous. In every textbook. It would make the next rule sound inevitable.",
+      "after": "It would make the next rule sound inevitable.",
+      "reason": "Retain the setup for checking a convenient claim without the sweeping textbook assertion."
+    },
+    {
+      "line": 206,
+      "before": "- Set it up sincerely. Let them nod along, because they have all heard it.",
+      "after": "- Ask whether they have encountered this explanation before.",
+      "reason": "Do not script agreement or assume the whole class shares the same prior reading."
+    },
+    {
+      "line": 221,
+      "before": "- Nisbett is an author on the 1977 paper we just used and on the 1971 hypothesis we are now declining to use. That is what an argued literature looks like.",
+      "after": "- Nisbett is an author on both the 1977 paper we just used and the 1971 hypothesis we are now declining to use.",
+      "reason": "The bibliographic contrast carries the point without a closing declaration of what proper scholarship looks like."
+    },
+    {
+      "line": 232,
+      "before": "- This slide is the course applied to itself. Check the claim that would have been most convenient for you, first.",
+      "after": "- Check the claim that would have been most convenient for you, first.",
+      "reason": "Keep the useful research instruction and cut the praise of the course itself."
+    },
+    {
+      "line": 241,
+      "before": "You write a field note when something **didn't go smoothly**.\n\nThe one condition where the effect appears is the condition your journal is written in.",
+      "after": "If an exchange **didn't go smoothly**, check your note for judgements of the other person's character.",
+      "reason": "Align with the revised lecture: journal entries need not concern failure, and negative valence is not established here as the only condition."
+    },
+    {
+      "line": 246,
+      "before": "- Sharper than the thing it replaced, and narrower. That trade is the whole method.",
+      "after": "- Keep the claim limited to the reported conditions; do not generalise it to every field note.",
+      "reason": "Replace an abstract statement of methodological virtue with a concrete limit for the teacher to maintain."
+    },
+    {
+      "line": 311,
+      "before": "- Say this plainly, because the slogan version gets repeated without it and a student will meet the slogan version this week.",
+      "after": "- Distinguish a mutual misunderstanding from a claim that neither person has any difficulty.",
+      "reason": "Retain the important distinction without forecasting what a student will encounter this week."
+    },
+    {
+      "line": 325,
+      "before": "- For the fluent half of the room: this is a result about what you do in the first few seconds, and it is the most actionable thing in the week for you.",
+      "after": "- Ask the fluent runners to examine their first impressions before treating them as evidence about the other person.",
+      "reason": "Do not attribute the study participants' behaviour to every fluent student or rank what they will find useful."
+    },
+    {
+      "line": 356,
+      "before": "- Point at \"untested with\". Naming the limit is what makes it a specification rather than an opinion, and it is the clause first entries leave out.",
+      "after": "- Point at \"untested with\". Ask students to name what remains untested in their own entries.",
+      "reason": "Keep the specific teaching cue and remove a repeated maxim plus a prediction of student omissions."
+    },
+    {
+      "line": 368,
+      "before": "- Three are deliberately borderline. When the room splits, stop and let them argue. That is the useful part.\n- Do not resolve all three. Leaving one open is honest and it gets written up in somebody's journal.",
+      "after": "- Three are deliberately borderline. If the room splits, stop and compare the reasons.\n- Do not resolve all three. Students can keep an unresolved case for their journal.",
+      "reason": "Preserve the discussion and unresolved case without prescribing the class's reaction or praising the exercise's honesty."
+    },
+    {
+      "line": 381,
+      "before": "- Nobody reads these out. Say that before they start writing, or they will write a safe one.",
+      "after": "- Nobody reads these out. Say that before they start writing.",
+      "reason": "Retain the privacy instruction without assuming how students would otherwise respond."
+    },
+    {
+      "line": 398,
+      "before": "- The left column is where their first entries will land. Say so now, so that seeing it in their own writing is recognition rather than failure.",
+      "after": "- Have students compare a sentence from their own entry with both columns.",
+      "reason": "Replace an invented forecast of student mistakes with an actual comparison."
+    },
+    {
+      "line": 413,
+      "before": "- Point at the third one. A course about undocumented rules marks which of its own rules are homemade.",
+      "after": "- Point at the third one: the asleep test is the course's rule of thumb, not a finding attributed to Milton or Sasson.",
+      "reason": "Preserve the useful attribution boundary without another statement of the course's consistency."
+    }
+  ],
+  "sha256_after": "0ee69f13d255259e71bef3e4021c3df60b4877f88d2c0df2f4d341e13fd437de"
+}

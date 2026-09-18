@@ -1,0 +1,16 @@
+{
+  "path": "src/content/readings/chevallier-2010-scalar-inferences.md",
+  "category": "Readings",
+  "sha256_before": "2095140ad4e745a402fbd0c389b65be2569b41b06741cf3183b7a4e0b6de3b2a",
+  "status": "edited",
+  "review_note": "Keep the counterexample and narrow scope; cut the unsubstantiated claim about imbalance across the literature.",
+  "edits": [
+    {
+      "line": 22,
+      "before": "It is not a general verdict on pragmatics and the week doesn't offer it as one. What it does do is put the question where week 2's double empathy problem already put it — a mismatch has two sides, and the side that assumes it sent a clear signal has not been tested nearly as often.",
+      "after": "It is not a general verdict on pragmatics.",
+      "reason": "The preceding text makes the course connection. Cut a repeated thesis and an unsupported comparison of how often each side has been studied."
+    }
+  ],
+  "sha256_after": "5a25c0af79831d590a52e8326d030de4f4f6057e47bc5eb551ae59f6ca10d020"
+}

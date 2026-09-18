@@ -1,0 +1,22 @@
+{
+  "path": "src/content/readings/fehr-2010-forgiveness-meta.md",
+  "category": "Readings",
+  "sha256_before": "06eb498cff9ab24494372e4be815e4835fa6b7890354c106b6ae81c16a5f4863",
+  "status": "edited",
+  "review_note": "Keep statistics and comparison; remove folk-theory triumphalism and retrospective claims of vindication.",
+  "edits": [
+    {
+      "line": 17,
+      "before": "Gender was non-significant (*r* = .01) and age negligible (*r* = .06), which disposes of two folk theories at once.",
+      "after": "Gender was non-significant (*r* = .01) and age negligible (*r* = .06).",
+      "reason": "The effect sizes are useful; the verdict on two unspecified folk theories overstates what has been established."
+    },
+    {
+      "line": 19,
+      "before": "The finding week 5 leans on hardest is this: situational constructs accounted for greater variance in forgiveness than victims' dispositions. The week had been asserting that repair is error handling rather than a matter of character, and that the receiving side is a protocol rather than a personality. This is the evidence for it — what you do and say after an offence matters more than who the other person happens to be.",
+      "after": "Situational constructs accounted for greater variance in forgiveness than victims' dispositions. Week 5 uses this to focus on what happens during repair, rather than treating forgiveness as a fixed trait of the person receiving the apology.",
+      "reason": "State the finding and its teaching use without narrating how research vindicated an earlier course assertion."
+    }
+  ],
+  "sha256_after": "a2382925d9aedd193aae4e31cae7a875ba4f765ecad30288f1b9c8104def7856"
+}

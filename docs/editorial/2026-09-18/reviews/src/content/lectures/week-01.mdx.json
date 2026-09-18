@@ -1,0 +1,76 @@
+{
+  "path": "src/content/lectures/week-01.mdx",
+  "category": "Lectures",
+  "sha256_before": "2c48daa1348b66f11accfd49fc7ce4c3e3260b71fd4c2987a626083312dcce67",
+  "status": "edited",
+  "review_note": "Keep the opening, RFC clauses, signal-code comparison and mixed-classroom argument. Remove narrator commentary and assumptions about the reader; retain the practical scope limits.",
+  "edits": [
+    {
+      "line": 32,
+      "before": "Everyone in this room has run that exchange thousands of times. Some of you\nrun it without a thought and couldn't state one rule it follows.",
+      "after": "Some of you run that exchange without a thought and couldn't state one rule\nit follows.",
+      "reason": "Do not invent a shared history for everyone in the room."
+    },
+    {
+      "line": 50,
+      "before": "Two things follow, and both matter on day one.\n\n",
+      "after": "",
+      "reason": "The two following paragraphs already explain the consequences; cut the repeated signposting formula."
+    },
+    {
+      "line": 75,
+      "before": "So the rules are not unknowable. Researchers have been writing them down for\nover fifty years. They were written for other researchers, in a register\nnobody outside the field reads, and then everyone went on behaving as if the\nrules were self-evident. This is the engineering scandal the course is named\nfor. The protocol has documentation. It was never shipped to the users.",
+      "after": "Researchers have been writing these rules down for over fifty years, for\nother researchers. The protocol has documentation. It was never shipped to\nthe users.",
+      "reason": "Keep the deadpan punchline; remove the explanation of why it is an engineering scandal and the sweeping claim about readership."
+    },
+    {
+      "line": 119,
+      "before": "We read his abstract, not the paper, so this page does not list the six. The\nmove is what matters here, and you will use it every week: **if you cannot say\nwhat would count as an instance, you cannot check any claim you make about\nit.** That is the difference between a specification and an opinion.",
+      "after": "We read his abstract, not the paper, so this page does not list the six.\n**Before testing a claim about greetings, say what would count as a greeting.**",
+      "reason": "Keep the evidence limit and usable method; remove the announcement of its significance and the closing maxim."
+    },
+    {
+      "line": 135,
+      "before": "Hold that against everything in the next section. The corridor handshake\ncarries no information and is not a real question. That is a fact about **this\nprotocol**, in this kind of setting, and not a fact about greeting. Somewhere\nelse, the same slot in the same sequence is used to ask something and to get an\nanswer. The majority's version is a local implementation, and it is the one\nthis building runs.",
+      "after": "The next section specifies **one local convention**: the handshake between\nacquaintances passing in a corridor. Elsewhere, the same place in an exchange\ncan be used to ask a question and get an answer.",
+      "reason": "State the scope once, without turning a local working example into a universal claim about the building."
+    },
+    {
+      "line": 208,
+      "before": "The branch is sometimes worth taking. The course's position is that you\nshould be able to see it while you're standing at the fork.",
+      "after": "The branch is sometimes worth taking. Learn to see the fork while you're\nstanding at it.",
+      "reason": "Preserve the image and the choice; remove the announcement of the course's position."
+    },
+    {
+      "line": 225,
+      "before": "Everything above assumes something the course has not yet earned: that the\nopening **obliges** you to respond. Schegloff has a term in the\nneighbourhood --- *conditional relevance* --- but this course only read his\nabstract, so it will not define his term for you.",
+      "after": "Why does an opening make a reply **expected**? Schegloff names *conditional\nrelevance*, but we read only his abstract, so we will not define the term\nfrom that source.",
+      "reason": "Ask the substantive question directly while retaining the evidence boundary."
+    },
+    {
+      "line": 248,
+      "before": "**If replies are hard for you**, notice that you have been treating every\nopening as maximum obligation. Some are. Many are turned down low: a nod\nanswers a nod, and a person already walking away has mobilised almost nothing.\nYou are allowed to match the level you were given.",
+      "after": "**If replies are hard for you**, you can match the level you were given. A\nnod can answer a nod; a person already walking away may not be inviting a\nconversation.",
+      "reason": "Avoid telling readers what they have been doing or feeling; give the practical option."
+    },
+    {
+      "line": 268,
+      "before": "Then swap, and each name **what you changed** --- not how it felt. Position,\nwording, timing, body. That list is the week's real artefact, and it is the\nthing week 4 measures in milliseconds.",
+      "after": "Then swap, and each name **what you changed** --- not how it felt. Position,\nwording, timing, body. Keep the list for week 4's work on timing.",
+      "reason": "Retain the activity and useful cross-reference; remove the claim that this is the week's real artefact."
+    },
+    {
+      "line": 280,
+      "before": "It is obvious to you\nbecause you've run it ten thousand times, not because it is simple.",
+      "after": "Familiarity can make the rules\nhard to see.",
+      "reason": "Remove an invented count and a second polished contrast after the reader has already seen the mechanism."
+    },
+    {
+      "line": 298,
+      "before": "\nEvery week ends with lines you can check yourself against, and this one ends\nbelow.\n",
+      "after": "",
+      "reason": "The self-check component immediately follows; the prose does not need to announce its own ending."
+    }
+  ],
+  "sha256_after": "e4883f753616d75ffacfbbb7465ad88dee578a8755772ea489623dabd0f75dce"
+}

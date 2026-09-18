@@ -1,0 +1,28 @@
+{
+  "path": "src/content/sessions/week-02.md",
+  "category": "Sessions",
+  "sha256_before": "1ce19897f5a2c199870b26b60dc6d9671334b9ceac1b6d4031e01a1d6f0daf05",
+  "status": "edited",
+  "review_note": "Keep the complete run sheet and peer review method; replace predictions about partners and effortless writing with concrete instructions.",
+  "edits": [
+    {
+      "line": 34,
+      "before": "The asleep test is easy to apply to someone else's sentence and hard to apply\nto your own. An impression feels like an observation from the inside. That is\nweek 2's lecture happening at the scale of one notebook.",
+      "after": "A partner may catch an impression you have written as an observation. Ask\nthem to point to the words that describe what happened.",
+      "reason": "State what the partner can check without predicting which version of the task everyone will find easy."
+    },
+    {
+      "line": 38,
+      "before": "Partners are assigned by the tutor to mix the room. You'll swap with someone\nwhose notes read differently from yours. That difference is the point, and\nit's the start of the shared vocabulary this class builds towards in week 11.",
+      "after": "Partners are assigned by the tutor to mix the room. Compare what each of you\nrecorded and what you inferred; keep any differences to revisit in week 11.",
+      "reason": "Preserve the mixed-classroom design and cross-week link without guaranteeing a difference or announcing the point."
+    },
+    {
+      "line": 44,
+      "before": "A page of notes that passes the asleep test, and one written-down rule. Test\nthe rule this week, and Sunday's journal entry writes itself: what happened,\nthe rule, the test, the rule now.",
+      "after": "A page of notes that passes the asleep test, and one written-down rule. Test\nthe rule this week, then use the result in Sunday's journal entry: what\nhappened, the rule, the test, the rule now.",
+      "reason": "Keep the deliverable and four-part format without promising that the writing will be effortless."
+    }
+  ],
+  "sha256_after": "9dcea64a83ff6c353825d7ea93b0ab06f9fdfe0fefd6395a4c48f83990d6208c"
+}

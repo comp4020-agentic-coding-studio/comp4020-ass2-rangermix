@@ -1,0 +1,16 @@
+{
+  "path": "src/content/sessions/week-01.md",
+  "category": "Sessions",
+  "sha256_before": "0163ba3d207977324a987c3d50182454020dc07fb3bee0502dfd0372a3bb0e26",
+  "status": "edited",
+  "review_note": "Retain the concrete capture exercise, access option and privacy rules. Tighten only the explanation after the result.",
+  "edits": [
+    {
+      "line": 45,
+      "before": "If the branch signals from the lecture didn't hold up, that is a result: the\nsignals are the course's working rules, and a working rule is there to be\ntested.",
+      "after": "If the lecture's branch signals didn't hold up, record where they failed.",
+      "reason": "Give the student the next action instead of explaining again that working rules are testable."
+    }
+  ],
+  "sha256_after": "15ed82fbbba398185f0271f95e4ed71cae6555f0154a1c5d03b9c3d655e475e8"
+}

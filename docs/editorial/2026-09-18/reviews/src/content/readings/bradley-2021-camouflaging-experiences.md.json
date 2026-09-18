@@ -1,0 +1,22 @@
+{
+  "path": "src/content/readings/bradley-2021-camouflaging-experiences.md",
+  "category": "Readings",
+  "sha256_before": "aa1a0afb168c66792a172c04fb7e35992ff3972355b5e6fc583990ee0a194aef",
+  "status": "edited",
+  "review_note": "Retain the reported themes and quotation; separate masking duration from recovery time and remove the course-vindication narrative.",
+  "edits": [
+    {
+      "line": 3,
+      "before": "277 autistic adults on what camouflaging costs and what it buys --- and the finding that what damages people most is the amount of time they spend doing it.",
+      "after": "277 autistic adults on the costs and benefits of camouflaging, and the time they spend doing it.",
+      "reason": "The original summary turns a qualified conclusion into a definitive ranking of damage."
+    },
+    {
+      "line": 20,
+      "before": "Two sentences from the abstract do most of the work for week 6. “Time spent camouflaging is what seems to be most damaging” — the course's ledger had already priced masking in *recovery hours*, so it guessed the right axis and can now cite it rather than assert it. And the reason given for needing so much time is society's lack of awareness and acceptance, which is the ledger's pressure column with a source behind it. The paper's own lay summary says reducing the pressure to camouflage would benefit everyone in society, which is the course's mixed-room claim in the authors' words rather than the course's.",
+      "after": "The abstract concludes: “Time spent camouflaging is what seems to be most damaging”. Week 6 uses these accounts to discuss cost and pressure. Its *recovery hours* remain a planning device; time spent camouflaging does not establish a measure of time needed to recover. Participants identified society's lack of awareness and acceptance as a reason they needed to camouflage. The authors' lay summary also argues for reducing that pressure.",
+      "reason": "Remove the story of the course guessing correctly. Distinguish the study's duration from the course's recovery estimate, while preserving the quotation."
+    }
+  ],
+  "sha256_after": "2b803827f8c4d91dc333847ed673d0eecc9432895d9cb6fe948fa9f8c26e7797"
+}

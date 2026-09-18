@@ -1,0 +1,130 @@
+{
+  "path": "src/content/lectures/week-10.mdx",
+  "category": "Lectures",
+  "sha256_before": "e3c2b2594ad54d8dfbce3121d2a791b414cb938f24e39792e2f15573b3f3fb18",
+  "status": "edited",
+  "review_note": "Keep the five audiences, practical scripts, study results and protected register break. Remove self-praise, let the scripts carry the teaching, and avoid promising that partial disclosure always succeeds or costs little.",
+  "edits": [
+    {
+      "line": 3,
+      "before": "description: \"Whether to tell people, when, which people, and at what cost. Five audiences, a need without a label, a timing trap, and the one part of this course that is not a protocol.\"",
+      "after": "description: \"Whether to tell people, when, which people, and at what cost. Five audiences, needs without labels, and the timing trap.\"",
+      "reason": "Describe the material a reader can use instead of advertising the forthcoming change of register."
+    },
+    {
+      "line": 33,
+      "before": "the first in your family at university. The mechanics this week work for all of\nthem, because the evidence behind them does.",
+      "after": "the first in your family at university. This week draws on research about\nseveral concealable identities, alongside studies of autistic disclosure.",
+      "reason": "Describe the scope of the sources without promising that the course’s untested scripts work for every listed situation."
+    },
+    {
+      "line": 36,
+      "before": "This is the week the course is most careful, and it's also the week with the\nmost practical scripts. Both of those are on purpose.\n\n",
+      "after": "",
+      "reason": "The explanations and scripts can demonstrate care without a paragraph praising their own intentions."
+    },
+    {
+      "line": 66,
+      "before": "So the observers in a lab say \"tell people\". The people deciding whether to\ntell say \"it's complicated\". Those aren't contradictory findings. They're\ndifferent vantage points on the same transaction, and this course won't pick\none for you.",
+      "after": "A favourable first impression does not settle whether disclosure will help\nsomeone at work. These studies ask different people, in different settings,\nabout different consequences.",
+      "reason": "Keep the distinction between study designs without putting recommendations into the participants’ mouths."
+    },
+    {
+      "line": 73,
+      "before": "Everything above prices **telling**. Before the decision can be a real one,\nsomebody has to price the other state, because a list of reasons to be careful\nis not a decision aid --- it is a thumb on one side of the scale.",
+      "after": "Before deciding, put **not telling** in the ledger too.",
+      "reason": "State the practical next step once; the following study supplies the reason for it."
+    },
+    {
+      "line": 85,
+      "before": "Read the predictor carefully, because the obvious misreading is right there.\nIt is **not** the effort of concealing, and it is not whether you have told\nanyone. It is **what you expect would happen if people knew**.",
+      "after": "The predictor **anticipated stigma** is what you expect would happen if people\nknew. It is not the effort of concealing, or whether you have told anyone.",
+      "reason": "Name the specific predictor directly instead of announcing an obvious reader mistake."
+    },
+    {
+      "line": 94,
+      "before": "Two things follow.\n\nFirst, two people keeping the same thing to themselves, at the same cost in\neffort, are not carrying the same weight. What separates them is a belief about\nthe people around them.",
+      "after": "Two people keeping the same thing to themselves, at the same cost in effort,\nare not carrying the same weight. What separates them is a belief about the\npeople around them.",
+      "reason": "Remove a repeated course-wide signposting formula while retaining this interpretation for the separate evidence review."
+    },
+    {
+      "line": 100,
+      "before": "Second, that belief is something an **environment produces**. Which means a\ndepartment where disclosure is ordinary and adjustments are unremarkable is\nlowering a cost **for students who never disclose anything at all**. Hold on to\nthat when week 8's support staff say the fix is structural. This is the\nmeasurement under their recommendation.",
+      "after": "That belief is something an **environment produces**. Which means a department\nwhere disclosure is ordinary and adjustments are unremarkable is lowering a\ncost **for students who never disclose anything at all**.",
+      "reason": "Remove the closing announcement of the course’s argument; the causal interpretation itself needs a separate evidence check."
+    },
+    {
+      "line": 108,
+      "before": "One more structural point, and it isn't this course's invention.\n\n",
+      "after": "",
+      "reason": "The citation that follows already attributes the idea."
+    },
+    {
+      "line": 117,
+      "before": "We read the abstract and not the paper, so we are not going to reproduce their\nlevels; the cut this week teaches is our own, and the next section sets it out.\nWhat the citation earns is the shape: **disclosure has levels rather than an on\nswitch**, and that was described decades ago, in a different literature, about\ndifferent people. Read across to it, not straight through it --- a psychiatric\ndiagnosis is not an autism diagnosis and the populations are not\ninterchangeable. The machinery, it turns out, is largely shared.",
+      "after": "We read the abstract, not the paper, so we will not reproduce their levels.\nThe five audiences and partial-disclosure scripts below are the course's own.\nThe paper gives us the idea of **levels rather than an on switch**; its\npopulation is people with psychiatric diagnoses, not autistic students.",
+      "reason": "Retain the evidence boundary and population distinction without the rhetorical account of what the citation earns or the unsupported claim of shared machinery."
+    },
+    {
+      "line": 197,
+      "before": "Nobody reads either one out. The show of hands is the whole result, and it is\nthe reason the next section exists.",
+      "after": "Nobody reads either sentence out. We collect only the show of hands.",
+      "reason": "Keep the privacy instruction; do not explain the lesson’s own structure."
+    },
+    {
+      "line": 202,
+      "before": "This is the week's most useful idea: **you can disclose a need without the\nlabel.**",
+      "after": "**You can disclose a need without the label.**",
+      "reason": "The example can establish usefulness without a superlative introduction."
+    },
+    {
+      "line": 208,
+      "before": "That sentence gets the adjustment. It changes exactly one piece of what the\nother person knows (Chaudoir and Fisher's third route) and nothing else. The\nrest stays yours to share later, or not at all. Partial disclosure is the\ncourse's synthesis, not a tested intervention.",
+      "after": "That sentence asks for an adjustment without naming a diagnosis. It uses\nChaudoir and Fisher's third route: changing what the other person knows. You\nchoose whether to share the rest. Partial disclosure is the course's\nsynthesis, not a tested intervention.",
+      "reason": "A request cannot guarantee an adjustment or control every inference; keep the useful mechanism and its existing evidence limit."
+    },
+    {
+      "line": 218,
+      "before": "  caption=\"Week 3's envelope, addressed on purpose. The need goes; the label is not in the envelope, and the reader has no way to tell one is missing.\"",
+      "after": "  caption=\"Week 3's envelope. The need goes; the label stays out.\"",
+      "reason": "Let the drawing carry the metaphor without promising what its recipient can or cannot infer."
+    },
+    {
+      "line": 250,
+      "before": "The way out is **low-stakes early disclosure of needs**, before anything goes\nwrong: the first group meeting, the first week of a job. \"Before we start: I\nwork best with things in writing\" costs almost nothing in week 1, and a great\ndeal to say for the first time in week 8.",
+      "after": "One option is **early disclosure of needs**: at the first group meeting or in\nthe first week of a job. \"Before we start: I work best with things in writing.\"\nYou can make it part of the working arrangements before a problem needs\nexplaining.",
+      "reason": "Offer the existing script without claiming that early disclosure costs almost nothing for everyone."
+    },
+    {
+      "line": 257,
+      "before": "Everyone in the room will be on this side of it at some point. The protocol for receiving\nis short:",
+      "after": "If someone discloses to you:",
+      "reason": "Start the receiving instructions without predicting every reader’s future."
+    },
+    {
+      "line": 274,
+      "before": "The scripts above are the good case. Here is the other one, because a week that\nonly rehearses the good case is not preparing you for anything.\n\nA disclosure can be received badly in three ordinary ways, and each has a\none-turn answer:",
+      "after": "Here are three ways a disclosure can be received badly, with an answer you\ncan try:",
+      "reason": "Introduce the table directly and leave out praise of the course for including difficult cases."
+    },
+    {
+      "line": 289,
+      "before": "None of these is a good outcome and no sentence makes it one. They are there so\nthat you have something to say, because the hardest part of a bad reception is\nstanding there with nothing.",
+      "after": "These sentences cannot undo what happened. They give you something to say\nwithout having to compose it on the spot.",
+      "reason": "Keep the practical limit without declaring which part of a bad reception is hardest for the reader."
+    },
+    {
+      "line": 298,
+      "before": "And **anticipated stigma**, which is what you expect would happen if people\nknew, and the thing the evidence says is carrying the weight.",
+      "after": "And **anticipated stigma** --- what you expect would happen if people knew.",
+      "reason": "The vocabulary recap needs the definition; the study and its four predictors have already been presented."
+    },
+    {
+      "line": 301,
+      "before": "Next week, the last of the three lab sessions, and the argument this whole\ncourse has been building towards: interoperation, not conversion.",
+      "after": "Next week: interoperation, not conversion, and the last of the three\npartnership lab sessions.",
+      "reason": "Keep the useful transition and clarify which labs are ending without announcing the course’s grand conclusion."
+    }
+  ],
+  "sha256_after": "97f3e41f39265480d818857219b29b7328aad13c807ca9953d792558e5af7c14"
+}

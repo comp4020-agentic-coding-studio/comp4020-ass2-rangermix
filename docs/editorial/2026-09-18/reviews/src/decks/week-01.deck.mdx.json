@@ -1,0 +1,82 @@
+{
+  "path": "src/decks/week-01.deck.mdx",
+  "category": "Slides and speaker notes",
+  "sha256_before": "f9388157935274c9161fae3a767f4d17559f9dabecfaea48606b01db8b03d3a6",
+  "status": "edited",
+  "review_note": "Keep short impact slides and deliberate teaching repetition. Align scope and reader-address changes with the lecture; simplify speaker notes that explain the course's virtue.",
+  "edits": [
+    {
+      "line": 29,
+      "before": "- Pause here. Let the room notice that everyone already knows this, and nobody was told.",
+      "after": "- Pause here before showing a possible reply.",
+      "reason": "Preserve the pause without assuming every student already knows the convention."
+    },
+    {
+      "line": 41,
+      "before": "- Read it twice. It is the whole argument and it is on every page of the site.",
+      "after": "- Read it twice, pausing between the two clauses.",
+      "reason": "Keep the delivery instruction and remove the promotional explanation."
+    },
+    {
+      "line": 79,
+      "before": "- The run sheet promise matters to a lot of people in this room. Make it explicitly.",
+      "after": "- Say that the lab run sheets are available in advance.",
+      "reason": "Replace a prediction about the room with the information students need."
+    },
+    {
+      "line": 118,
+      "before": "- This is the engineering scandal the course is named for.\n- Researchers have been writing the rules down for over fifty years, for other researchers, in a register nobody outside the field reads.",
+      "after": "- Researchers have been writing the rules down for over fifty years, for other researchers.",
+      "reason": "The slide already carries the joke; the notes need only the supporting context."
+    },
+    {
+      "line": 158,
+      "before": "- We read the abstract, not the paper. Do not list the six; say so out loud, because the room should see the course obeying its own citation rule.",
+      "after": "- We read the abstract, not the paper. Say so; do not list the six.",
+      "reason": "Retain honest attribution without directing the teacher to perform the course's integrity."
+    },
+    {
+      "line": 185,
+      "before": "- The finding that survives is the one that matters here.\n",
+      "after": "",
+      "reason": "The slide states the finding; this note adds only emphasis."
+    },
+    {
+      "line": 298,
+      "before": "The course's position is not \"don't take it\".\n\nIt is that you should be able to **see the fork while you're standing at it**.",
+      "after": "**See the fork while you're standing at it.**\n\nThen decide whether this is the conversation you want to start.",
+      "reason": "Keep the fork image and agency while removing institutional self-commentary."
+    },
+    {
+      "line": 326,
+      "before": "Everything so far assumes the opening **obliges** you. The course hasn't earned that yet.",
+      "after": "Why does an opening make a reply **expected**?",
+      "reason": "Align with the lecture's direct question."
+    },
+    {
+      "line": 331,
+      "before": "- This is the honest gap, and the room should watch you close it rather than paper over it.",
+      "after": "- Name the evidence gap before introducing Stivers and Rossano.",
+      "reason": "Turn a claim about honesty into a concrete teaching instruction."
+    },
+    {
+      "line": 374,
+      "before": "**If replies are hard for you:** you may have been treating every opening as maximum obligation. Many are turned down low. A nod answers a nod. You can match the level you were given.",
+      "after": "**If replies are hard for you:** you can match the level you were given. A nod can answer a nod; a person already walking away may not be inviting a conversation.",
+      "reason": "Carry through the lecture's removal of assumptions about the reader."
+    },
+    {
+      "line": 395,
+      "before": "- Collect the changes on the board: position, wording, timing, body. That list is the week's real artefact, and week 4 measures it in milliseconds.",
+      "after": "- Collect the changes on the board: position, wording, timing, body. Keep the list for week 4's work on timing.",
+      "reason": "Keep the board work and cross-reference; cut the repeated declaration of significance."
+    },
+    {
+      "line": 402,
+      "before": "If you run the handshake without effort, the spec read as the obvious. That's because you've run it ten thousand times, not because it's simple.",
+      "after": "If you run the handshake without effort, familiarity can make its rules hard to see.",
+      "reason": "Remove the invented count and align the slide with the lecture."
+    }
+  ],
+  "sha256_after": "996159cbb7499c1901d2b976fe50f68d6463174490eb46f7322bff9cf86c7f5f"
+}

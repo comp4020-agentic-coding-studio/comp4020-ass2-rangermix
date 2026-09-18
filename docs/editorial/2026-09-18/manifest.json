@@ -1,0 +1,2026 @@
+{
+  "baseline": "2209428d55d3c47ce405dd81b67ab3d0b991a8ac",
+  "date": "2026-09-18",
+  "status": "In progress",
+  "files": [
+    {
+      "path": "src/components/AssessmentsGrid.astro",
+      "category": "Components and diagram copy",
+      "sha256_before": "26eb67173e775a764d100691f68ad557b2c03a9c33c5f74fa0b76da117f72ba5",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/components/Citation.astro",
+      "category": "Components and diagram copy",
+      "sha256_before": "db56eeff73afbf4034953605a7f5401a5bd97dd2bcb921fb0f4d2e2a50533dbf",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/components/LecturesGrid.astro",
+      "category": "Components and diagram copy",
+      "sha256_before": "0d745350b21b57200c49f1d7281b231dd46a866aa1716b23a5b064701b417c1d",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/components/MarkingModel.astro",
+      "category": "Components and diagram copy",
+      "sha256_before": "fdf1e4acd6e6f9f3eafe5df64910874369a547dd8c5bd16f9731ad84482ce24d",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/components/PeopleGrid.astro",
+      "category": "Components and diagram copy",
+      "sha256_before": "7cce385183fb80c917985d217e0b8e33a9843f544fb822b7ae2ea0011cb6c16e",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/components/Plate.astro",
+      "category": "Components and diagram copy",
+      "sha256_before": "ade9086a2f5a75f3e84c13505486782d77bd83cdf03dd2e89c24779bb6091ba0",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/components/SessionsGrid.astro",
+      "category": "Components and diagram copy",
+      "sha256_before": "837fb21119f501c51612d7cd54fc67baa77dd7d43e98ecb22d59463f4c7c8888",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/components/TeachingTeam.astro",
+      "category": "Components and diagram copy",
+      "sha256_before": "b521b422773bf86702bcaa5d66d4f79ac6417c2c9e269095835e137331dbdb1d",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/components/WeekReadings.astro",
+      "category": "Components and diagram copy",
+      "sha256_before": "d8c5449e329b073dc87432147cb80bcb7abaaf42b517c8e6227287c67f6b0dc7",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/components/sketch/Chain.astro",
+      "category": "Components and diagram copy",
+      "sha256_before": "053868c6b856737a6bc67554f9b0090e2b2dca9af0b2d3fa53e304bfafad01d4",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/components/sketch/DepthLadder.astro",
+      "category": "Components and diagram copy",
+      "sha256_before": "acb6bffdd0ce3191b09bb779bf9af26a9b9eddaac86ba17d2c9f632677a57296",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/components/sketch/Envelope.astro",
+      "category": "Components and diagram copy",
+      "sha256_before": "877fca2d1f195669136fcdeda58e279423ae1c5ddc5ef242625e458991d342ae",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/components/sketch/Form.astro",
+      "category": "Components and diagram copy",
+      "sha256_before": "25644af21ed4577828b3f9d1795fd2faa5d463eac336442ccd2527a452b27d17",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/components/sketch/MarginNote.astro",
+      "category": "Components and diagram copy",
+      "sha256_before": "22451b25efc1be68f40d178a4960fc66ff11dbcfa7444f2a70f7635637ee28b2",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/components/sketch/Register.astro",
+      "category": "Components and diagram copy",
+      "sha256_before": "ed591c7be355d7f6030124b174557ac8e54271b8cb84c98f4f24a2458219377a",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/components/sketch/SequenceDiagram.astro",
+      "category": "Components and diagram copy",
+      "sha256_before": "bd941d5ff3bcd7dafd93f4ed6f6cccd7579474c5a65f86ebaedf653a3125b3e4",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/components/sketch/StateMachine.astro",
+      "category": "Components and diagram copy",
+      "sha256_before": "deee637325d9c13cf7a64481a522cd4b285a05e2dcd29fe2bea2eeef8fdd10c3",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/components/sketch/TimingLine.astro",
+      "category": "Components and diagram copy",
+      "sha256_before": "902c611812525abc17256cfc2842fdcd95f692a8ac87c16ad1a35e58945bbba0",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/assessments/field-journal.md",
+      "category": "Assessments",
+      "sha256_before": "31d84782eebcccf360ba16a9907571d863b452925539967a1c1c2ca45d82657f",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/assessments/interoperation-report.md",
+      "category": "Assessments",
+      "sha256_before": "871d834b0a49000433076431a4765e9336a515bbc9fc809b8daf3c8815dd54c4",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/assessments/personal-protocol-document.md",
+      "category": "Assessments",
+      "sha256_before": "80f6e04096dbbc315c16503aeac6a747befeb45ecbe1250fcc36b3bdbe79ff20",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/assessments/protocol-specification.md",
+      "category": "Assessments",
+      "sha256_before": "50331263a4f52ed76a7387ab4774922feeeb394a81b3a7a2021adbc0bf05ef8f",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/lectures/week-01.mdx",
+      "category": "Lectures",
+      "sha256_before": "2c48daa1348b66f11accfd49fc7ce4c3e3260b71fd4c2987a626083312dcce67",
+      "status": "edited",
+      "review_note": "Keep the opening, RFC clauses, signal-code comparison and mixed-classroom argument. Remove narrator commentary and assumptions about the reader; retain the practical scope limits.",
+      "edits": [
+        {
+          "line": 32,
+          "before": "Everyone in this room has run that exchange thousands of times. Some of you\nrun it without a thought and couldn't state one rule it follows.",
+          "after": "Some of you run that exchange without a thought and couldn't state one rule\nit follows.",
+          "reason": "Do not invent a shared history for everyone in the room."
+        },
+        {
+          "line": 50,
+          "before": "Two things follow, and both matter on day one.\n\n",
+          "after": "",
+          "reason": "The two following paragraphs already explain the consequences; cut the repeated signposting formula."
+        },
+        {
+          "line": 75,
+          "before": "So the rules are not unknowable. Researchers have been writing them down for\nover fifty years. They were written for other researchers, in a register\nnobody outside the field reads, and then everyone went on behaving as if the\nrules were self-evident. This is the engineering scandal the course is named\nfor. The protocol has documentation. It was never shipped to the users.",
+          "after": "Researchers have been writing these rules down for over fifty years, for\nother researchers. The protocol has documentation. It was never shipped to\nthe users.",
+          "reason": "Keep the deadpan punchline; remove the explanation of why it is an engineering scandal and the sweeping claim about readership."
+        },
+        {
+          "line": 119,
+          "before": "We read his abstract, not the paper, so this page does not list the six. The\nmove is what matters here, and you will use it every week: **if you cannot say\nwhat would count as an instance, you cannot check any claim you make about\nit.** That is the difference between a specification and an opinion.",
+          "after": "We read his abstract, not the paper, so this page does not list the six.\n**Before testing a claim about greetings, say what would count as a greeting.**",
+          "reason": "Keep the evidence limit and usable method; remove the announcement of its significance and the closing maxim."
+        },
+        {
+          "line": 135,
+          "before": "Hold that against everything in the next section. The corridor handshake\ncarries no information and is not a real question. That is a fact about **this\nprotocol**, in this kind of setting, and not a fact about greeting. Somewhere\nelse, the same slot in the same sequence is used to ask something and to get an\nanswer. The majority's version is a local implementation, and it is the one\nthis building runs.",
+          "after": "The next section specifies **one local convention**: the handshake between\nacquaintances passing in a corridor. Elsewhere, the same place in an exchange\ncan be used to ask a question and get an answer.",
+          "reason": "State the scope once, without turning a local working example into a universal claim about the building."
+        },
+        {
+          "line": 208,
+          "before": "The branch is sometimes worth taking. The course's position is that you\nshould be able to see it while you're standing at the fork.",
+          "after": "The branch is sometimes worth taking. Learn to see the fork while you're\nstanding at it.",
+          "reason": "Preserve the image and the choice; remove the announcement of the course's position."
+        },
+        {
+          "line": 225,
+          "before": "Everything above assumes something the course has not yet earned: that the\nopening **obliges** you to respond. Schegloff has a term in the\nneighbourhood --- *conditional relevance* --- but this course only read his\nabstract, so it will not define his term for you.",
+          "after": "Why does an opening make a reply **expected**? Schegloff names *conditional\nrelevance*, but we read only his abstract, so we will not define the term\nfrom that source.",
+          "reason": "Ask the substantive question directly while retaining the evidence boundary."
+        },
+        {
+          "line": 248,
+          "before": "**If replies are hard for you**, notice that you have been treating every\nopening as maximum obligation. Some are. Many are turned down low: a nod\nanswers a nod, and a person already walking away has mobilised almost nothing.\nYou are allowed to match the level you were given.",
+          "after": "**If replies are hard for you**, you can match the level you were given. A\nnod can answer a nod; a person already walking away may not be inviting a\nconversation.",
+          "reason": "Avoid telling readers what they have been doing or feeling; give the practical option."
+        },
+        {
+          "line": 268,
+          "before": "Then swap, and each name **what you changed** --- not how it felt. Position,\nwording, timing, body. That list is the week's real artefact, and it is the\nthing week 4 measures in milliseconds.",
+          "after": "Then swap, and each name **what you changed** --- not how it felt. Position,\nwording, timing, body. Keep the list for week 4's work on timing.",
+          "reason": "Retain the activity and useful cross-reference; remove the claim that this is the week's real artefact."
+        },
+        {
+          "line": 280,
+          "before": "It is obvious to you\nbecause you've run it ten thousand times, not because it is simple.",
+          "after": "Familiarity can make the rules\nhard to see.",
+          "reason": "Remove an invented count and a second polished contrast after the reader has already seen the mechanism."
+        },
+        {
+          "line": 298,
+          "before": "\nEvery week ends with lines you can check yourself against, and this one ends\nbelow.\n",
+          "after": "",
+          "reason": "The self-check component immediately follows; the prose does not need to announce its own ending."
+        }
+      ],
+      "sha256_after": "e4883f753616d75ffacfbbb7465ad88dee578a8755772ea489623dabd0f75dce"
+    },
+    {
+      "path": "src/content/lectures/week-02.mdx",
+      "category": "Lectures",
+      "sha256_before": "a9fec3a2ce658f97ef1e0cd0a71a9c40a3933cfc9ff448c63136e3b5e67e9e06",
+      "status": "edited",
+      "review_note": "Keep the maintenance jokes, study boundaries, worked field notes and practical exercises. Cut self-commentary and predictions about what the class must find; make journal guidance apply to successful exchanges too.",
+      "edits": [
+        {
+          "line": 57,
+          "before": "This is the mechanism behind the course's governing sentence. The protocol\nis **undocumented because it is background**, not because it is obvious.\n\"Obvious\" is what background feels like from the inside.",
+          "after": "The protocol is **undocumented because it is background**, not because it is\nobvious. \"Obvious\" is what background feels like from the inside.",
+          "reason": "Keep the explanation and punchline without announcing how they serve the course thesis."
+        },
+        {
+          "line": 61,
+          "before": "The course adds one observation of its own. Garfinkel breached expectancies on\npurpose, to study them. Anyone whose implementation differs\nfrom the majority's runs a small, unplanned version of the experiment every\nday, and watches the same repair work happen around them.",
+          "after": "The course adds an observation of its own. Garfinkel breached expectancies on\npurpose, to study them. When your implementation differs from the majority's,\na mismatch can expose an expectancy without your having set out to test it.",
+          "reason": "Preserve the course's explicit distinction between research and its own observation; do not assign a daily experience to every divergent reader."
+        },
+        {
+          "line": 105,
+          "before": "The right-hand column points at something salient that happened seconds ago.\nThe left invites the person to theorise about people in general, and they will,\nat length, and it won't be the rule.",
+          "after": "The right-hand column points at something salient that happened seconds ago.\nThe left asks for a general explanation. Check either answer against actual\nexchanges.",
+          "reason": "Replace a guaranteed prediction of interview behaviour with the observation-and-test method the course teaches."
+        },
+        {
+          "line": 120,
+          "before": "prediction** --- underestimating what the novice was in for. And the part that\nmakes it a finding rather than a saying: the participants were **resistant to\ndebiasing techniques** aimed at exactly that underestimation (Hinds, 1999).",
+          "after": "prediction** --- underestimating what the novice was in for. The participants\nwere also **resistant to debiasing techniques** aimed at that underestimation\n(Hinds, 1999).",
+          "reason": "Retain the reported result without claiming that this feature is what makes research a finding."
+        },
+        {
+          "line": 126,
+          "before": "Two things follow, one for each half of this room.\n\n",
+          "after": "",
+          "reason": "The next two paragraphs already address the two audiences; remove a repeated lecture formula."
+        },
+        {
+          "line": 176,
+          "before": "Style was judged before substance. That will matter more than anything else\nin how you take notes.",
+          "after": "Record what was said and done before judging how it came across.",
+          "reason": "Turn an unsupported ranking of importance into the note-taking instruction it introduces."
+        },
+        {
+          "line": 193,
+          "before": "and still find parts of your own life hard. Both are true in this room.",
+          "after": "and still find parts of your own life hard.",
+          "reason": "Keep the inclusive qualification without speaking for the experiences of everyone in the room."
+        },
+        {
+          "line": 225,
+          "before": "The format above is a shape. Here is one filled in, so you know what you are\naiming at:",
+          "after": "A worked example:",
+          "reason": "The example supplies the explanation; the introduction need not explain what examples do."
+        },
+        {
+          "line": 242,
+          "before": "Two things to notice. The first box is longer than the other three together.\nAnd the last one names what the rule has *not* been tested against --- which is\nthe clause that turns an opinion into a specification, and the clause first\nentries leave out.",
+          "after": "The last box names a limit: the rule has *not* been tested with a tutor who\ndoesn't already know the class. Include what remains untested in your own entry.",
+          "reason": "Keep the concrete lesson and remove a repeated maxim plus an unsupported prediction about first submissions."
+        },
+        {
+          "line": 249,
+          "before": "Here is where a lecture would normally reach for a bias to justify the rule.\nThe obvious one is the **actor--observer asymmetry**: people explain their own\nbehaviour by the situation and other people's by the person. You were in a\nhurry; he is rude. It is famous, it is in every textbook, and it would make the\nasleep test sound inevitable.",
+          "after": "The **actor--observer asymmetry** offers an appealing justification: people\nexplain their own behaviour by the situation and other people's by the person.\nYou were in a hurry; he is rude. It would make the asleep test sound inevitable.",
+          "reason": "Keep the memorable example and the argument to be tested; remove claims about what all textbooks and other lectures do."
+        },
+        {
+          "line": 265,
+          "before": "That paragraph is doing two jobs. It is honest about where a rule came from,\nwhich is the whole argument of this course applied to itself. And it is a\nworked example of the thing you will do all semester --- check the claim that\nwould have been most convenient for you, first.\n\n",
+          "after": "",
+          "reason": "The adjacent errata note already gives the useful instruction. Cut the paragraph praising the course's own honesty."
+        },
+        {
+          "line": 275,
+          "before": "One piece of Malle does survive, and it is sharper than the thing it replaced.\nThe asymmetry **held for negative events**, and reversed for positive ones. You\nwrite a field note when something didn't go smoothly. The single condition under\nwhich the effect shows up is the condition your journal entries are written in.",
+          "after": "Malle also found that the asymmetry **held for negative events**, and reversed\nfor positive ones. If your entry concerns an exchange that went badly, check\nwhether you have described the other person's actions or judged their character.",
+          "reason": "Retain the recorded result but remove the unsupported claims that negative events are its only condition and that all journal entries concern failed exchanges."
+        },
+        {
+          "line": 298,
+          "before": "Neither rewrite excuses anyone. Both are *more useful*, because a rule about an\nexchange is something you can test next week, and a verdict about a person is\nnot.",
+          "after": "Neither rewrite excuses anyone. Both give you a rule to test in another\nexchange.",
+          "reason": "Keep the accountability point; the preceding section has already explained why an exchange can be tested."
+        },
+        {
+          "line": 307,
+          "before": "Three of them are deliberately borderline. When the room splits, we stop and\nyou argue it out --- that is the useful part, and the reason this is not a\nworksheet.",
+          "after": "Three of them are deliberately borderline. If the room splits, we stop and\ncompare the reasons.",
+          "reason": "Leave the exercise open to the class's actual response, without declaring which part will be useful."
+        },
+        {
+          "line": 325,
+          "before": "The rule you infer is the part students most often leave as a verdict wearing\nnew clothes. Three that look like rules and aren't, with what they become:",
+          "after": "A verdict can wear a rule's clothes. Three examples, with rewrites:",
+          "reason": "Keep the image while removing an unsupported claim about what students most often do."
+        },
+        {
+          "line": 341,
+          "before": "presentation are not marked. Talk it through with an AI if that helps; the\nwriting has to be yours, which is exactly why there is no word count to fill.",
+          "after": "presentation are not marked. Talk it through with an AI if that helps; the\nwriting has to be yours.",
+          "reason": "Preserve every submission rule and cut a repeated explanation of the absence of a word count."
+        }
+      ],
+      "sha256_after": "fa2cd182b66dade0687299e419be2c34af2f530d3c3a8fd24ed368eb9c45b3e2"
+    },
+    {
+      "path": "src/content/lectures/week-03.mdx",
+      "category": "Lectures",
+      "sha256_before": "d3a63c34c7b2c5b7123c6da5434a50cf6b608a50481ebe33a3bd92ea63e94a5c",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/lectures/week-04.mdx",
+      "category": "Lectures",
+      "sha256_before": "f3edb11ee5e5e226d274b13ef418b6e7f9989c2dbcfa7886d80e9ad7373cb20f",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/lectures/week-05.mdx",
+      "category": "Lectures",
+      "sha256_before": "ac392f85ab90b291ac0690715b403dd94aeccc1bd6d7759d60e6291170f02f73",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/lectures/week-06.mdx",
+      "category": "Lectures",
+      "sha256_before": "75310760df96c3bdebd6795d9670a5d45f79bff0eaa58f3065f18705db8be10a",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/lectures/week-07.mdx",
+      "category": "Lectures",
+      "sha256_before": "ef06539e562b1c99c8d37aa09efe172906011b401a7b7bbf7413bf4f9167ec36",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/lectures/week-08.mdx",
+      "category": "Lectures",
+      "sha256_before": "ce2edc766b025829a78a2465656dfa238a03177cc45819d262aae569f49acb38",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/lectures/week-09.mdx",
+      "category": "Lectures",
+      "sha256_before": "f05c4da4f413d6507932e14fcdb2d9e2f95a0b9f815454d6808b40a48f417ba2",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/lectures/week-10.mdx",
+      "category": "Lectures",
+      "sha256_before": "e3c2b2594ad54d8dfbce3121d2a791b414cb938f24e39792e2f15573b3f3fb18",
+      "status": "edited",
+      "review_note": "Keep the five audiences, practical scripts, study results and protected register break. Remove self-praise, let the scripts carry the teaching, and avoid promising that partial disclosure always succeeds or costs little.",
+      "edits": [
+        {
+          "line": 3,
+          "before": "description: \"Whether to tell people, when, which people, and at what cost. Five audiences, a need without a label, a timing trap, and the one part of this course that is not a protocol.\"",
+          "after": "description: \"Whether to tell people, when, which people, and at what cost. Five audiences, needs without labels, and the timing trap.\"",
+          "reason": "Describe the material a reader can use instead of advertising the forthcoming change of register."
+        },
+        {
+          "line": 33,
+          "before": "the first in your family at university. The mechanics this week work for all of\nthem, because the evidence behind them does.",
+          "after": "the first in your family at university. This week draws on research about\nseveral concealable identities, alongside studies of autistic disclosure.",
+          "reason": "Describe the scope of the sources without promising that the course’s untested scripts work for every listed situation."
+        },
+        {
+          "line": 36,
+          "before": "This is the week the course is most careful, and it's also the week with the\nmost practical scripts. Both of those are on purpose.\n\n",
+          "after": "",
+          "reason": "The explanations and scripts can demonstrate care without a paragraph praising their own intentions."
+        },
+        {
+          "line": 66,
+          "before": "So the observers in a lab say \"tell people\". The people deciding whether to\ntell say \"it's complicated\". Those aren't contradictory findings. They're\ndifferent vantage points on the same transaction, and this course won't pick\none for you.",
+          "after": "A favourable first impression does not settle whether disclosure will help\nsomeone at work. These studies ask different people, in different settings,\nabout different consequences.",
+          "reason": "Keep the distinction between study designs without putting recommendations into the participants’ mouths."
+        },
+        {
+          "line": 73,
+          "before": "Everything above prices **telling**. Before the decision can be a real one,\nsomebody has to price the other state, because a list of reasons to be careful\nis not a decision aid --- it is a thumb on one side of the scale.",
+          "after": "Before deciding, put **not telling** in the ledger too.",
+          "reason": "State the practical next step once; the following study supplies the reason for it."
+        },
+        {
+          "line": 85,
+          "before": "Read the predictor carefully, because the obvious misreading is right there.\nIt is **not** the effort of concealing, and it is not whether you have told\nanyone. It is **what you expect would happen if people knew**.",
+          "after": "The predictor **anticipated stigma** is what you expect would happen if people\nknew. It is not the effort of concealing, or whether you have told anyone.",
+          "reason": "Name the specific predictor directly instead of announcing an obvious reader mistake."
+        },
+        {
+          "line": 94,
+          "before": "Two things follow.\n\nFirst, two people keeping the same thing to themselves, at the same cost in\neffort, are not carrying the same weight. What separates them is a belief about\nthe people around them.",
+          "after": "Two people keeping the same thing to themselves, at the same cost in effort,\nare not carrying the same weight. What separates them is a belief about the\npeople around them.",
+          "reason": "Remove a repeated course-wide signposting formula while retaining this interpretation for the separate evidence review."
+        },
+        {
+          "line": 100,
+          "before": "Second, that belief is something an **environment produces**. Which means a\ndepartment where disclosure is ordinary and adjustments are unremarkable is\nlowering a cost **for students who never disclose anything at all**. Hold on to\nthat when week 8's support staff say the fix is structural. This is the\nmeasurement under their recommendation.",
+          "after": "That belief is something an **environment produces**. Which means a department\nwhere disclosure is ordinary and adjustments are unremarkable is lowering a\ncost **for students who never disclose anything at all**.",
+          "reason": "Remove the closing announcement of the course’s argument; the causal interpretation itself needs a separate evidence check."
+        },
+        {
+          "line": 108,
+          "before": "One more structural point, and it isn't this course's invention.\n\n",
+          "after": "",
+          "reason": "The citation that follows already attributes the idea."
+        },
+        {
+          "line": 117,
+          "before": "We read the abstract and not the paper, so we are not going to reproduce their\nlevels; the cut this week teaches is our own, and the next section sets it out.\nWhat the citation earns is the shape: **disclosure has levels rather than an on\nswitch**, and that was described decades ago, in a different literature, about\ndifferent people. Read across to it, not straight through it --- a psychiatric\ndiagnosis is not an autism diagnosis and the populations are not\ninterchangeable. The machinery, it turns out, is largely shared.",
+          "after": "We read the abstract, not the paper, so we will not reproduce their levels.\nThe five audiences and partial-disclosure scripts below are the course's own.\nThe paper gives us the idea of **levels rather than an on switch**; its\npopulation is people with psychiatric diagnoses, not autistic students.",
+          "reason": "Retain the evidence boundary and population distinction without the rhetorical account of what the citation earns or the unsupported claim of shared machinery."
+        },
+        {
+          "line": 197,
+          "before": "Nobody reads either one out. The show of hands is the whole result, and it is\nthe reason the next section exists.",
+          "after": "Nobody reads either sentence out. We collect only the show of hands.",
+          "reason": "Keep the privacy instruction; do not explain the lesson’s own structure."
+        },
+        {
+          "line": 202,
+          "before": "This is the week's most useful idea: **you can disclose a need without the\nlabel.**",
+          "after": "**You can disclose a need without the label.**",
+          "reason": "The example can establish usefulness without a superlative introduction."
+        },
+        {
+          "line": 208,
+          "before": "That sentence gets the adjustment. It changes exactly one piece of what the\nother person knows (Chaudoir and Fisher's third route) and nothing else. The\nrest stays yours to share later, or not at all. Partial disclosure is the\ncourse's synthesis, not a tested intervention.",
+          "after": "That sentence asks for an adjustment without naming a diagnosis. It uses\nChaudoir and Fisher's third route: changing what the other person knows. You\nchoose whether to share the rest. Partial disclosure is the course's\nsynthesis, not a tested intervention.",
+          "reason": "A request cannot guarantee an adjustment or control every inference; keep the useful mechanism and its existing evidence limit."
+        },
+        {
+          "line": 218,
+          "before": "  caption=\"Week 3's envelope, addressed on purpose. The need goes; the label is not in the envelope, and the reader has no way to tell one is missing.\"",
+          "after": "  caption=\"Week 3's envelope. The need goes; the label stays out.\"",
+          "reason": "Let the drawing carry the metaphor without promising what its recipient can or cannot infer."
+        },
+        {
+          "line": 250,
+          "before": "The way out is **low-stakes early disclosure of needs**, before anything goes\nwrong: the first group meeting, the first week of a job. \"Before we start: I\nwork best with things in writing\" costs almost nothing in week 1, and a great\ndeal to say for the first time in week 8.",
+          "after": "One option is **early disclosure of needs**: at the first group meeting or in\nthe first week of a job. \"Before we start: I work best with things in writing.\"\nYou can make it part of the working arrangements before a problem needs\nexplaining.",
+          "reason": "Offer the existing script without claiming that early disclosure costs almost nothing for everyone."
+        },
+        {
+          "line": 257,
+          "before": "Everyone in the room will be on this side of it at some point. The protocol for receiving\nis short:",
+          "after": "If someone discloses to you:",
+          "reason": "Start the receiving instructions without predicting every reader’s future."
+        },
+        {
+          "line": 274,
+          "before": "The scripts above are the good case. Here is the other one, because a week that\nonly rehearses the good case is not preparing you for anything.\n\nA disclosure can be received badly in three ordinary ways, and each has a\none-turn answer:",
+          "after": "Here are three ways a disclosure can be received badly, with an answer you\ncan try:",
+          "reason": "Introduce the table directly and leave out praise of the course for including difficult cases."
+        },
+        {
+          "line": 289,
+          "before": "None of these is a good outcome and no sentence makes it one. They are there so\nthat you have something to say, because the hardest part of a bad reception is\nstanding there with nothing.",
+          "after": "These sentences cannot undo what happened. They give you something to say\nwithout having to compose it on the spot.",
+          "reason": "Keep the practical limit without declaring which part of a bad reception is hardest for the reader."
+        },
+        {
+          "line": 298,
+          "before": "And **anticipated stigma**, which is what you expect would happen if people\nknew, and the thing the evidence says is carrying the weight.",
+          "after": "And **anticipated stigma** --- what you expect would happen if people knew.",
+          "reason": "The vocabulary recap needs the definition; the study and its four predictors have already been presented."
+        },
+        {
+          "line": 301,
+          "before": "Next week, the last of the three lab sessions, and the argument this whole\ncourse has been building towards: interoperation, not conversion.",
+          "after": "Next week: interoperation, not conversion, and the last of the three\npartnership lab sessions.",
+          "reason": "Keep the useful transition and clarify which labs are ending without announcing the course’s grand conclusion."
+        }
+      ],
+      "sha256_after": "97f3e41f39265480d818857219b29b7328aad13c807ca9953d792558e5af7c14"
+    },
+    {
+      "path": "src/content/lectures/week-11.mdx",
+      "category": "Lectures",
+      "sha256_before": "320442abb20ccf87b0a3a9c468c76deac89f83c7400546d87701cf47e99a8c4f",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/lectures/week-12.mdx",
+      "category": "Lectures",
+      "sha256_before": "7ad982115420d28a89258b13d38ab0be9e0b08ed71591d8da4be7f2f03290a75",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/people/jonah-paskett.md",
+      "category": "People",
+      "sha256_before": "ef8308e5c3eb5391f0c792371f06f3ac1703112f8266a30b60daa40fe9a8ae14",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/people/tamsin-oyelaran-hart.md",
+      "category": "People",
+      "sha256_before": "0bd766f4b929e7075c12d96dca56221a5188d5e0308a3ffd2794a8645de41a22",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/people/wren-aldous-kemp.md",
+      "category": "People",
+      "sha256_before": "c2571decacb7a06f7569b52335ffb2ab83664554b413927eeba88061583d1511",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/alkhaldi-2019-readability.md",
+      "category": "Readings",
+      "sha256_before": "a7b7b29b97a1a301e6ec8849e182edf7ea404652147a58a424efcbe9504699b9",
+      "status": "edited",
+      "review_note": "Retain the coefficients and explicit correlation caveat; remove a second, categorical explanation of why this is the whole argument.",
+      "edits": [
+        {
+          "line": 17,
+          "before": "And the finding week 11 is built on: **readability correlated with favourability, r = .58 and r = .63, independent of target diagnosis.**",
+          "after": "**Readability correlated with favourability, r = .58 and r = .63, independent of target diagnosis.**",
+          "reason": "State the result without announcing its importance to the course."
+        },
+        {
+          "line": 21,
+          "before": "That \"independent of diagnosis\" is the whole argument. The judgement isn't attached to a category of person. It attaches to a property of a reading — and a reading has two parties in it, one of whom is doing the reading. Which is the double empathy problem with a correlation coefficient on it.\n\n",
+          "after": "",
+          "reason": "The preceding paragraph already connects readability to judgement. Remove the second, more categorical interpretation and keep the authors' correlation caveat."
+        }
+      ],
+      "sha256_after": "a348b2d5325be9cc904dbd4ff3767877218de51976d5641cba363dbe02cce81a"
+    },
+    {
+      "path": "src/content/readings/aron-1997-generating-closeness.md",
+      "category": "Readings",
+      "sha256_before": "3ea7d80f7ee0dbc8d4b8613079533f21397a8699e7833852b245030c25276ae6",
+      "status": "retained",
+      "review_note": "Retain: a compact account of the experiment with a useful warning against treating its speed as everyday advice.",
+      "edits": [],
+      "sha256_after": "3ea7d80f7ee0dbc8d4b8613079533f21397a8699e7833852b245030c25276ae6"
+    },
+    {
+      "path": "src/content/readings/bradley-2021-camouflaging-experiences.md",
+      "category": "Readings",
+      "sha256_before": "aa1a0afb168c66792a172c04fb7e35992ff3972355b5e6fc583990ee0a194aef",
+      "status": "edited",
+      "review_note": "Retain the reported themes and quotation; separate masking duration from recovery time and remove the course-vindication narrative.",
+      "edits": [
+        {
+          "line": 3,
+          "before": "277 autistic adults on what camouflaging costs and what it buys --- and the finding that what damages people most is the amount of time they spend doing it.",
+          "after": "277 autistic adults on the costs and benefits of camouflaging, and the time they spend doing it.",
+          "reason": "The original summary turns a qualified conclusion into a definitive ranking of damage."
+        },
+        {
+          "line": 20,
+          "before": "Two sentences from the abstract do most of the work for week 6. “Time spent camouflaging is what seems to be most damaging” — the course's ledger had already priced masking in *recovery hours*, so it guessed the right axis and can now cite it rather than assert it. And the reason given for needing so much time is society's lack of awareness and acceptance, which is the ledger's pressure column with a source behind it. The paper's own lay summary says reducing the pressure to camouflage would benefit everyone in society, which is the course's mixed-room claim in the authors' words rather than the course's.",
+          "after": "The abstract concludes: “Time spent camouflaging is what seems to be most damaging”. Week 6 uses these accounts to discuss cost and pressure. Its *recovery hours* remain a planning device; time spent camouflaging does not establish a measure of time needed to recover. Participants identified society's lack of awareness and acceptance as a reason they needed to camouflage. The authors' lay summary also argues for reducing that pressure.",
+          "reason": "Remove the story of the course guessing correctly. Distinguish the study's duration from the course's recovery estimate, while preserving the quotation."
+        }
+      ],
+      "sha256_after": "2b803827f8c4d91dc333847ed673d0eecc9432895d9cb6fe948fa9f8c26e7797"
+    },
+    {
+      "path": "src/content/readings/brooks-2015-seeking-advice.md",
+      "category": "Readings",
+      "sha256_before": "208a6a191882676be3d7ca77fa044c9728907f29f72a8d682c899176600ad227",
+      "status": "edited",
+      "review_note": "Qualify the descriptive summary and reader-directed claims; keep moderators, practical examples and the setting limit.",
+      "edits": [
+        {
+          "line": 3,
+          "before": "People don't ask because they think asking makes them look worse. It makes them look better, and the paper says the fear is misplaced in those words.",
+          "after": "In these experiments, people who asked for advice were judged more competent; task difficulty and whom they asked affected the result.",
+          "reason": "Scope the result to the experiments instead of promising that asking always improves an impression."
+        },
+        {
+          "line": 19,
+          "before": "Flynn and Lake, earlier in the same week, answer one of the two fears that keep an email in drafts — *they will say no*. This answers the other, which is usually the louder one: *they will think less of me for asking.* Both estimates run the same direction, and both are wrong the same way.",
+          "after": "Week 8 pairs this with Flynn and Lake for two worries that can keep an email in drafts: *will they say no?* and *will they think less of me for asking?* The studies examine different judgements; neither predicts the reply to a particular email.",
+          "reason": "Remove the unsupported ranking of fears and the claim that every reader's estimate is wrong."
+        },
+        {
+          "line": 21,
+          "before": "The three moderators are the useful part, because they are the week's only advice about **choosing who to write to** rather than how to format the message.",
+          "after": "The moderators help with **choosing who to write to**.",
+          "reason": "Remove the superlative and course bookkeeping; keep the practical connection."
+        },
+        {
+          "line": 21,
+          "before": "Note the setting: these are experiments on perceived competence in work and decision-making tasks, not a study of tutors, and the week says so rather than implying somebody measured a lecturer.",
+          "after": "These are experiments on perceived competence in work and decision-making tasks, not a study of university tutors.",
+          "reason": "Keep the research limit without praising the course for stating it."
+        }
+      ],
+      "sha256_after": "44b7fc29dfaf1865ffcce0adaa4b696c3d590de844934906bd5276958395564c"
+    },
+    {
+      "path": "src/content/readings/cage-2019-camouflaging-costs.md",
+      "category": "Readings",
+      "sha256_before": "0a14ceb840e1c3bc0713fc8767b6119ef780edb7cf18420d5cb8e4aa66fc3d6f",
+      "status": "retained",
+      "review_note": "Retain: concise study summary, association wording and a specific link to the switching line in the ledger.",
+      "edits": [],
+      "sha256_after": "0a14ceb840e1c3bc0713fc8767b6119ef780edb7cf18420d5cb8e4aa66fc3d6f"
+    },
+    {
+      "path": "src/content/readings/chaudoir-2010-disclosure-processes.md",
+      "category": "Readings",
+      "sha256_before": "5f999d3f8582d254581594c4b0f19ea8caabd31001c473a2aa0de974542344c0",
+      "status": "retained",
+      "review_note": "Retain: three distinct model pathways and a clear link to partial disclosure; the list is substantive.",
+      "edits": [],
+      "sha256_after": "5f999d3f8582d254581594c4b0f19ea8caabd31001c473a2aa0de974542344c0"
+    },
+    {
+      "path": "src/content/readings/chevallier-2010-scalar-inferences.md",
+      "category": "Readings",
+      "sha256_before": "2095140ad4e745a402fbd0c389b65be2569b41b06741cf3183b7a4e0b6de3b2a",
+      "status": "edited",
+      "review_note": "Keep the counterexample and narrow scope; cut the unsubstantiated claim about imbalance across the literature.",
+      "edits": [
+        {
+          "line": 22,
+          "before": "It is not a general verdict on pragmatics and the week doesn't offer it as one. What it does do is put the question where week 2's double empathy problem already put it — a mismatch has two sides, and the side that assumes it sent a clear signal has not been tested nearly as often.",
+          "after": "It is not a general verdict on pragmatics.",
+          "reason": "The preceding text makes the course connection. Cut a repeated thesis and an unsupported comparison of how often each side has been studied."
+        }
+      ],
+      "sha256_after": "5a25c0af79831d590a52e8326d030de4f4f6057e47bc5eb551ae59f6ca10d020"
+    },
+    {
+      "path": "src/content/readings/cialdini-2004-social-influence.md",
+      "category": "Readings",
+      "sha256_before": "96169d346596b8a8df1a147a2d495dd18c626c990c928be4461a8f28aaa2c4e1",
+      "status": "retained",
+      "review_note": "Retain: the three goals belong to the review and the course link is short.",
+      "edits": [],
+      "sha256_after": "96169d346596b8a8df1a147a2d495dd18c626c990c928be4461a8f28aaa2c4e1"
+    },
+    {
+      "path": "src/content/readings/collins-1994-disclosure-liking.md",
+      "category": "Readings",
+      "sha256_before": "d1f9a5c4422ed1c15d186fe6ef838d247bba9bd34d88e79a8aff097ba6cded2b",
+      "status": "retained",
+      "review_note": "Retain: the three effects are genuinely distinct, and the annotation already states dependence on disclosure and setting.",
+      "edits": [],
+      "sha256_after": "d1f9a5c4422ed1c15d186fe6ef838d247bba9bd34d88e79a8aff097ba6cded2b"
+    },
+    {
+      "path": "src/content/readings/corrigan-2003-stigma-disclosure.md",
+      "category": "Readings",
+      "sha256_before": "343595b314f767228a6d94b0967f651055c0f2d5595720820f5af3db7c213fe3",
+      "status": "edited",
+      "review_note": "Shorten the course connection and preserve the abstract-only and population limits without claims about shared machinery.",
+      "edits": [
+        {
+          "line": 18,
+          "before": "Week 10 cites it for the structural point and nothing more: disclosure is a set of levels rather than an on switch. That is the premise underneath the five audiences and underneath partial disclosure, and it is worth knowing that it isn't this course's invention — the shape was described decades ago, in a different literature, about different people.",
+          "after": "Week 10 uses the idea of levels of disclosure when distinguishing audiences and teaching partial disclosure.",
+          "reason": "The source is already identified; remove repeated assurances that the course did not invent the idea."
+        },
+        {
+          "line": 20,
+          "before": "Two limits, stated rather than glossed. Only the abstract was read, so the levels themselves are not reproduced here or in the lecture; the course names that they exist and teaches its own cut. And the population is people with psychiatric diagnoses, which is not the same population as autistic students, even though a great deal of the disclosure machinery turns out to be shared. Read across, not straight through.",
+          "after": "Only the abstract was read, so its levels are not reproduced here or in the lecture; the course teaches its own working model. The paper concerns psychiatric diagnoses. Its population and findings should not be treated as interchangeable with those of autism studies.",
+          "reason": "Keep both limits plainly. Remove self-congratulation about stating them and a broad claim about shared machinery."
+        }
+      ],
+      "sha256_after": "e22c21149a06828305bb7772e18c7076c4a62e0ca086e20ddcc26d3bbd31fb44"
+    },
+    {
+      "path": "src/content/readings/coupland-1992-how-are-you.md",
+      "category": "Readings",
+      "sha256_before": "5983e7cbcf2f81f58d09989bc2eba5e93685b9b680956434440e045506952c96",
+      "status": "retained",
+      "review_note": "Retain: the medical-interview setting gives the greeting example its useful complication.",
+      "edits": [],
+      "sha256_after": "5983e7cbcf2f81f58d09989bc2eba5e93685b9b680956434440e045506952c96"
+    },
+    {
+      "path": "src/content/readings/crompton-2020-autistic-relationships.md",
+      "category": "Readings",
+      "sha256_before": "f064acdcfc37e764e93abc554cdbcf630341d54cfbea2529fcf4641ebd83645b",
+      "status": "retained",
+      "review_note": "Retain: reported participant experiences and the pointed question of who adapts are specific and brief.",
+      "edits": [],
+      "sha256_after": "f064acdcfc37e764e93abc554cdbcf630341d54cfbea2529fcf4641ebd83645b"
+    },
+    {
+      "path": "src/content/readings/crompton-2020-information-transfer.md",
+      "category": "Readings",
+      "sha256_before": "054cceed9e86ea239108cacb0880bcffa2e01f2624498e08934c89539e38532c",
+      "status": "retained",
+      "review_note": "Retain: the between-implementations contrast explains the experiment rather than decorating it.",
+      "edits": [],
+      "sha256_after": "054cceed9e86ea239108cacb0880bcffa2e01f2624498e08934c89539e38532c"
+    },
+    {
+      "path": "src/content/readings/davies-2024-transition-support.md",
+      "category": "Readings",
+      "sha256_before": "4172e8111fbee5b1acc705d65aad90531ace6626dc7fb24506ad3ca43cb161d5",
+      "status": "retained",
+      "review_note": "Retain: the longer annotation earns its length by distinguishing staff perspectives, institutional responsibility and study limitations.",
+      "edits": [],
+      "sha256_after": "4172e8111fbee5b1acc705d65aad90531ace6626dc7fb24506ad3ca43cb161d5"
+    },
+    {
+      "path": "src/content/readings/debrabander-2019-first-impressions.md",
+      "category": "Readings",
+      "sha256_before": "21163eb2ea059a24b1431ff4a11da5b785833a43e57da40ddd93a977795d8ab0",
+      "status": "retained",
+      "review_note": "Retain: a useful complication of the course argument, stated plainly.",
+      "edits": [],
+      "sha256_after": "21163eb2ea059a24b1431ff4a11da5b785833a43e57da40ddd93a977795d8ab0"
+    },
+    {
+      "path": "src/content/readings/dingemanse-2013-huh.md",
+      "category": "Readings",
+      "sha256_before": "5f6d9b766831a9ed392876f04de32cbdab88b7243ecc2ae419bbe472b56aeed4",
+      "status": "retained",
+      "review_note": "Retain: the final line is a pointed consequence of the reading and keeps the course's deadpan reassurance.",
+      "edits": [],
+      "sha256_after": "5f6d9b766831a9ed392876f04de32cbdab88b7243ecc2ae419bbe472b56aeed4"
+    },
+    {
+      "path": "src/content/readings/dingemanse-2015-repair-universals.md",
+      "category": "Readings",
+      "sha256_before": "34a40c5304f8561b60c7c58a17367bd0d5317c491e462db9703f8dc4227487bc",
+      "status": "retained",
+      "review_note": "Retain: timings and repair choices are concrete and the final instruction follows them.",
+      "edits": [],
+      "sha256_after": "34a40c5304f8561b60c7c58a17367bd0d5317c491e462db9703f8dc4227487bc"
+    },
+    {
+      "path": "src/content/readings/duranti-1997-greeting-universals.md",
+      "category": "Readings",
+      "sha256_before": "448ba7ed74c7865b2c2efa67722716fcdb71f65904e34f173d7683aa8d4b5d59",
+      "status": "retained",
+      "review_note": "Retain: the scope distinction is needed for the week 1 handshake and the annotation names its two teaching uses.",
+      "edits": [],
+      "sha256_after": "448ba7ed74c7865b2c2efa67722716fcdb71f65904e34f173d7683aa8d4b5d59"
+    },
+    {
+      "path": "src/content/readings/fehr-2010-forgiveness-meta.md",
+      "category": "Readings",
+      "sha256_before": "06eb498cff9ab24494372e4be815e4835fa6b7890354c106b6ae81c16a5f4863",
+      "status": "edited",
+      "review_note": "Keep statistics and comparison; remove folk-theory triumphalism and retrospective claims of vindication.",
+      "edits": [
+        {
+          "line": 17,
+          "before": "Gender was non-significant (*r* = .01) and age negligible (*r* = .06), which disposes of two folk theories at once.",
+          "after": "Gender was non-significant (*r* = .01) and age negligible (*r* = .06).",
+          "reason": "The effect sizes are useful; the verdict on two unspecified folk theories overstates what has been established."
+        },
+        {
+          "line": 19,
+          "before": "The finding week 5 leans on hardest is this: situational constructs accounted for greater variance in forgiveness than victims' dispositions. The week had been asserting that repair is error handling rather than a matter of character, and that the receiving side is a protocol rather than a personality. This is the evidence for it — what you do and say after an offence matters more than who the other person happens to be.",
+          "after": "Situational constructs accounted for greater variance in forgiveness than victims' dispositions. Week 5 uses this to focus on what happens during repair, rather than treating forgiveness as a fixed trait of the person receiving the apology.",
+          "reason": "State the finding and its teaching use without narrating how research vindicated an earlier course assertion."
+        }
+      ],
+      "sha256_after": "a2382925d9aedd193aae4e31cae7a875ba4f765ecad30288f1b9c8104def7856"
+    },
+    {
+      "path": "src/content/readings/flynn-2008-direct-requests.md",
+      "category": "Readings",
+      "sha256_before": "a63850f0bc86a6e4cc98c8747d47effed2d4f1c2036688b7b85e5363d9cc10e3",
+      "status": "edited",
+      "review_note": "Keep study findings; change the final advice so it does not pronounce every reader's estimate wrong.",
+      "edits": [
+        {
+          "line": 16,
+          "before": "Week 8 turns this into its first rule of institutional protocol: ask, in one sentence, because your estimate of the odds is wrong in your disfavour.",
+          "after": "Week 8 uses this to suggest making the request, in one sentence, even when you expect a refusal.",
+          "reason": "Keep actionable advice without diagnosing the reader's estimate."
+        }
+      ],
+      "sha256_after": "293c5db56103460a5411f55e89d1658a47d97e4a2d2113327e5f170b803e5fad"
+    },
+    {
+      "path": "src/content/readings/garfinkel-1964-routine-grounds.md",
+      "category": "Readings",
+      "sha256_before": "efe23779cc2c79a1b808b0ed571bf4302bc232a51938f8a761d5f5f19d24ed56",
+      "status": "retained",
+      "review_note": "Retain: the background-versus-obvious contrast states the actual mechanism; provenance is useful.",
+      "edits": [],
+      "sha256_after": "efe23779cc2c79a1b808b0ed571bf4302bc232a51938f8a761d5f5f19d24ed56"
+    },
+    {
+      "path": "src/content/readings/grice-1975-logic-conversation.md",
+      "category": "Readings",
+      "sha256_before": "696bc657beadb4e3dbeef1111b5f1dedc1a01a083beaf15c245b611b10b35d4a",
+      "status": "retained",
+      "review_note": "Retain: the politeness aside does the satirical and explanatory work; checked page range stays exact.",
+      "edits": [],
+      "sha256_after": "696bc657beadb4e3dbeef1111b5f1dedc1a01a083beaf15c245b611b10b35d4a"
+    },
+    {
+      "path": "src/content/readings/gurbuz-2019-autistic-students.md",
+      "category": "Readings",
+      "sha256_before": "7a3427cd891be509ec50c9e3ffd426a6ed719c8dae0e315821a4514ccf85e4a4",
+      "status": "retained",
+      "review_note": "Retain: short population-specific summary and a clear institutional connection.",
+      "edits": [],
+      "sha256_after": "7a3427cd891be509ec50c9e3ffd426a6ed719c8dae0e315821a4514ccf85e4a4"
+    },
+    {
+      "path": "src/content/readings/hall-2010-flirting-styles.md",
+      "category": "Readings",
+      "sha256_before": "ff9972146282c4e307995eb15f61e457382af766032ca6673ad6d2b82ea01ada",
+      "status": "retained",
+      "review_note": "Retain: distinguishes self-reported styles from reception and explains why multiple dialects matter.",
+      "edits": [],
+      "sha256_after": "ff9972146282c4e307995eb15f61e457382af766032ca6673ad6d2b82ea01ada"
+    },
+    {
+      "path": "src/content/readings/hall-2019-hours-friendship.md",
+      "category": "Readings",
+      "sha256_before": "c6a09aea97df136396b4982ea5204e3cac8d6e80dc095cfb707f281de6379001",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/higgins-2021-burnout-definition.md",
+      "category": "Readings",
+      "sha256_before": "16ce749c9e8874703683deed74fc6db9cead3ec44c7680224660ffd727fc9673",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/hinds-1999-curse-of-expertise.md",
+      "category": "Readings",
+      "sha256_before": "fffc13c4a1387c94a52284be3b3cb0956c428249b7306b8f3b136367663eee5c",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/hochschild-2012-managed-heart.md",
+      "category": "Readings",
+      "sha256_before": "96716f0ccdfabb719e359ff05f5bc12be3ac729dc748fe06f4569c471d242008",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/huang-2017-question-asking.md",
+      "category": "Readings",
+      "sha256_before": "ba940c8859113a4298803d1033b59cb08d75e14c8b451a35710943923e0bc3be",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/hull-2017-camouflaging.md",
+      "category": "Readings",
+      "sha256_before": "84214722876595c1bed2c56355f1ab4d963291b059e4aa737c8f6e8111b5e2a7",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/hull-2018-catq.md",
+      "category": "Readings",
+      "sha256_before": "03e029d7f8437dbfeca3c03c6fcd62276541192008694a487079162fd17d5c0c",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/kapp-2013-autism-neurodiversity.md",
+      "category": "Readings",
+      "sha256_before": "ccfcb1d7c1993b585b5ab8f6abbee829954aba48ea2a4ca8cf84eda29794bc83",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/keltner-2003-power-approach-inhibition.md",
+      "category": "Readings",
+      "sha256_before": "9c8029fc1cbd642da805c4567650a3f97aa83b73d37eaae9c1d8bb8b117656ae",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/kendrick-2015-repair-timing.md",
+      "category": "Readings",
+      "sha256_before": "ccfae1c4e5e83b7e6c585019c49ca27911512f233942b352892322abd55364ba",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/kendrick-2015-timing-preference.md",
+      "category": "Readings",
+      "sha256_before": "1773b114f396a4d0ff3e56f6c6f7ad9ab1e1f147e9661fb589e724477f3ab4bb",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/keysar-2002-overestimation.md",
+      "category": "Readings",
+      "sha256_before": "9fa810cb7a29ef929bc0bfaf36acca5e9bddf5fdfb27e972bf260419251b881d",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/kirchhoff-2012-apology-components.md",
+      "category": "Readings",
+      "sha256_before": "c032da93285710e4ff902d2b70b090511be7d36c8df92f91f44f34d6f87922ff",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/laurenceau-1998-intimacy-process.md",
+      "category": "Readings",
+      "sha256_before": "4bbdc68d3aab24f8d6044a58ffdac4a8f3d5fe04b7bbe85e949d758af74f5729",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/lee-2010-strategic-speaker.md",
+      "category": "Readings",
+      "sha256_before": "312d7560d1fbc657371b00173c9d9860082e866f2377f64dd885313f8fe8b6ce",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/levinson-2015-timing-turn-taking.md",
+      "category": "Readings",
+      "sha256_before": "3580ae15e0c66371f6e8cc6f01b4f80a63d49112667125274ac7bbd6dbb36222",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/lewicki-2016-apologies.md",
+      "category": "Readings",
+      "sha256_before": "bc265724fc9f03b914c8d84cd899999b0fc2db487ecf2041ec9f08636201f0c9",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/malle-2006-actor-observer.md",
+      "category": "Readings",
+      "sha256_before": "52e984992d63c6eb628b6d0f153ad3c62af6fb57576423862a068d4b8a8f6430",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/martino-2025-self-advocacy.md",
+      "category": "Readings",
+      "sha256_before": "07926b5cd0e40e6cd37fa36fb0e0270ceebdf0e0587a6f6c25f33f94dcc78770",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/milton-2012-double-empathy.md",
+      "category": "Readings",
+      "sha256_before": "a6f3003153cdad76f1f20fe6d62317d1074408324ea438ab4e251bccf35a306d",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/mitchell-2021-double-empathy-development.md",
+      "category": "Readings",
+      "sha256_before": "619c2123c90df68b2925468f5e4bdcf2e581de0daab441d33cd0f000c5bf4ba0",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/morrison-2020-real-world-interaction.md",
+      "category": "Readings",
+      "sha256_before": "49148473bd28d997ad5b4d311850f8b078833ee4b5dbc2d56e79d4421c77814e",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/moskowitz-2004-power-comment.md",
+      "category": "Readings",
+      "sha256_before": "3f38d38cdf576e69c42c82f9d2665e20bc9bc23dbbd3172a41c169763b40b738",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/nisbett-1977-telling-more.md",
+      "category": "Readings",
+      "sha256_before": "f8e7717b781c2e6f5935b88b7e43557e5b06be3b65d3797547719acda4f83e37",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/ologhlen-2024-nonautistic-camouflaging.md",
+      "category": "Readings",
+      "sha256_before": "b7b7ded49e741b1ae407d0993f9923a8bc7c9b918ad9370efbc74cab458735de",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/pearson-2021-masking-stigma.md",
+      "category": "Readings",
+      "sha256_before": "cea3d918f7e0394dbd034dad37695729e137d68771f158ca97fce5181d10868d",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/phung-2021-bims.md",
+      "category": "Readings",
+      "sha256_before": "b8b809c75dd61c1edb57557047b3fdcdbabdff4e4de82a83d077266fd8b1c8e9",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/pinker-2008-indirect-speech.md",
+      "category": "Readings",
+      "sha256_before": "4d7428b482c6e253b23dd7f7b1da8409c08063cea677c8a6877c84272edd2639",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/quinn-2009-concealable-identity.md",
+      "category": "Readings",
+      "sha256_before": "20a4bfa44b933ede0376c5f70a299eed789256fc775b054b416e9979f7e1b0a5",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/raymaker-2020-autistic-burnout.md",
+      "category": "Readings",
+      "sha256_before": "0433f2e8cdc66ccacdf5265bdbbb8cb014429b7f469c77ea0082b987fb5add78",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/rifai-2022-rapport-markers.md",
+      "category": "Readings",
+      "sha256_before": "341df943eac6aefa9ed3c4edb504425b86ae83c6c1b773e1ed670956bbcfd767",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/roberts-2011-silence-valence.md",
+      "category": "Readings",
+      "sha256_before": "4d4ea5e43d09e15d9859fd88ff2c9b40f7f3704c973527d692a5d4359991a166",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/romualdez-2021-workplace-disclosure.md",
+      "category": "Readings",
+      "sha256_before": "3fa620739c8eb3c52867f39a23ee70192042cc8409d906dc5a30e7e43c503b5c",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/sacks-1974-turn-taking.md",
+      "category": "Readings",
+      "sha256_before": "3120df6c641edd5f976a4d21b5f3f6b1e3f3c3e669ecb66806b1443f10d0e89c",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/sala-2020-romantic-intimacy.md",
+      "category": "Readings",
+      "sha256_before": "d53b94d4826166057e3bb90eaf478230ad3714356851947f90b54ae31f43008d",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/sasson-2017-thin-slices.md",
+      "category": "Readings",
+      "sha256_before": "8edb3bd4fae51a1ebae23316a0145a692d537c65ba96de07214ecafba4930a1c",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/sasson-2019-diagnostic-disclosure.md",
+      "category": "Readings",
+      "sha256_before": "3e402e8ccd755ee74527f555e902037f61c890da7f1cc3b5490e37b87a2d7702",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/schegloff-1968-openings.md",
+      "category": "Readings",
+      "sha256_before": "9a1030ebb433c475b029b592ae0c7d810caefa35e56e0c0018592f11cac3c78f",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/schegloff-1977-self-repair.md",
+      "category": "Readings",
+      "sha256_before": "ead05017d13f02b09531820b5c8e9f9789466be6b2311b02db7388dea3159c49",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/sheppard-2016-reading-minds.md",
+      "category": "Readings",
+      "sha256_before": "330ca0e2b9ed4771d0eda0e407b608544aaa4dee1bd32b69619befd2f874974a",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/sonnentag-2007-recovery-experiences.md",
+      "category": "Readings",
+      "sha256_before": "a46f391b23654e1e4c9c0713c3d3e35928dfea6c9e3db9cdce546f91f6314534",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/sprecher-2013-disclosure-role.md",
+      "category": "Readings",
+      "sha256_before": "4ca17c475bdcb1de38e5e167e72e2bbbaaf96a3c54c741e77e83cbdb207fd73e",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/stephens-2009-casual-email.md",
+      "category": "Readings",
+      "sha256_before": "1a38c2941cc06582734ed2a63cb2b3e728846a2452ab9794e8a8464125000c01",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/stivers-2009-turn-taking-universals.md",
+      "category": "Readings",
+      "sha256_before": "2ace26a4f9a680881a11636e984bf88c18540b17aa9ce192a376b098f1f47f0a",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/stivers-2010-mobilizing-response.md",
+      "category": "Readings",
+      "sha256_before": "3589d87cdd8d037a1636a58096c150feb15ab6ea1e806fb38c2194cddf5f8fb0",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/stromberg-2022-sensory-overload.md",
+      "category": "Readings",
+      "sha256_before": "a685823399e9f38b27217f076bc8c3b59ca76c8a3c3dddbbdd7d0027d0d4edbe",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/readings/thompson-hodgetts-2020-disclosure-review.md",
+      "category": "Readings",
+      "sha256_before": "2ad886c21da8dd6332f425eb847b347e15dd273eea9a8bf1b5db30f6b986c3e4",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/sessions/week-01.md",
+      "category": "Sessions",
+      "sha256_before": "0163ba3d207977324a987c3d50182454020dc07fb3bee0502dfd0372a3bb0e26",
+      "status": "edited",
+      "review_note": "Retain the concrete capture exercise, access option and privacy rules. Tighten only the explanation after the result.",
+      "edits": [
+        {
+          "line": 45,
+          "before": "If the branch signals from the lecture didn't hold up, that is a result: the\nsignals are the course's working rules, and a working rule is there to be\ntested.",
+          "after": "If the lecture's branch signals didn't hold up, record where they failed.",
+          "reason": "Give the student the next action instead of explaining again that working rules are testable."
+        }
+      ],
+      "sha256_after": "15ed82fbbba398185f0271f95e4ed71cae6555f0154a1c5d03b9c3d655e475e8"
+    },
+    {
+      "path": "src/content/sessions/week-02.md",
+      "category": "Sessions",
+      "sha256_before": "1ce19897f5a2c199870b26b60dc6d9671334b9ceac1b6d4031e01a1d6f0daf05",
+      "status": "edited",
+      "review_note": "Keep the complete run sheet and peer review method; replace predictions about partners and effortless writing with concrete instructions.",
+      "edits": [
+        {
+          "line": 34,
+          "before": "The asleep test is easy to apply to someone else's sentence and hard to apply\nto your own. An impression feels like an observation from the inside. That is\nweek 2's lecture happening at the scale of one notebook.",
+          "after": "A partner may catch an impression you have written as an observation. Ask\nthem to point to the words that describe what happened.",
+          "reason": "State what the partner can check without predicting which version of the task everyone will find easy."
+        },
+        {
+          "line": 38,
+          "before": "Partners are assigned by the tutor to mix the room. You'll swap with someone\nwhose notes read differently from yours. That difference is the point, and\nit's the start of the shared vocabulary this class builds towards in week 11.",
+          "after": "Partners are assigned by the tutor to mix the room. Compare what each of you\nrecorded and what you inferred; keep any differences to revisit in week 11.",
+          "reason": "Preserve the mixed-classroom design and cross-week link without guaranteeing a difference or announcing the point."
+        },
+        {
+          "line": 44,
+          "before": "A page of notes that passes the asleep test, and one written-down rule. Test\nthe rule this week, and Sunday's journal entry writes itself: what happened,\nthe rule, the test, the rule now.",
+          "after": "A page of notes that passes the asleep test, and one written-down rule. Test\nthe rule this week, then use the result in Sunday's journal entry: what\nhappened, the rule, the test, the rule now.",
+          "reason": "Keep the deliverable and four-part format without promising that the writing will be effortless."
+        }
+      ],
+      "sha256_after": "9dcea64a83ff6c353825d7ea93b0ab06f9fdfe0fefd6395a4c48f83990d6208c"
+    },
+    {
+      "path": "src/content/sessions/week-03.md",
+      "category": "Sessions",
+      "sha256_before": "4bb8051d80b9f8e96734bd7fa1864070ebd59bf7c0f9241073d7fe1fde28e526",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/sessions/week-04.md",
+      "category": "Sessions",
+      "sha256_before": "452002d11f1ed932074eb121cdcaebfe663d77f5ef36c5d3733de0fbd3fd4499",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/sessions/week-05.md",
+      "category": "Sessions",
+      "sha256_before": "a6808b8fa8f577ef7e1d48809247ec1f3bb1c8345e6370d2ca3a8a99b3a925ec",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/sessions/week-06.md",
+      "category": "Sessions",
+      "sha256_before": "9e68b33c0afd9a437ba3ebdfbc211e60009234e69230dad62709fafd62478eb3",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/sessions/week-07.md",
+      "category": "Sessions",
+      "sha256_before": "35eb8ee5e96b457234ea0283b5a40a2a84de2476daf90637a818b94048bb17a7",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/sessions/week-08.md",
+      "category": "Sessions",
+      "sha256_before": "2a6486e5f5a41dad0dff7c9eef27a697e4681033ffdf78f00114e9f13058bb5d",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/sessions/week-09.md",
+      "category": "Sessions",
+      "sha256_before": "39a8a5aa12b4713b34bbaa04b78b7e290f3916969981cc10b95ef7116a9cad38",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/sessions/week-10.md",
+      "category": "Sessions",
+      "sha256_before": "d4e151743fdc4fdb439cfeda7ffb5d54ba51383619da56ad7df7f9e397c360a6",
+      "status": "edited",
+      "review_note": "Keep the fictional-character rule, opt-out, run sheet and assessment work. Tighten two lines that explain intentions after the practical instruction is already clear.",
+      "edits": [
+        {
+          "line": 14,
+          "before": "Nobody discloses anything real in this lab. Every disclosure in the room\nbelongs to a character on a card. That's a rule, not a suggestion. It exists\nso that practising the mechanics costs nothing you'd have to take back.",
+          "after": "Nobody discloses anything real in this lab. Every disclosure belongs to a\ncharacter on a card, so you can practise without giving the room information\nabout yourself.",
+          "reason": "Keep the mandatory fiction boundary and its concrete purpose without escalating it through a second emphatic declaration."
+        },
+        {
+          "line": 42,
+          "before": "Two draft sentences for a character, receiving practice, and a revised draft\nprotocol. If you do decide to say a need-without-label sentence of your own\nthis week, the Field Journal is where it goes: what you said, to whom, what came\nback. That's your decision. The course only makes sure you have the sentence\nready.",
+          "after": "Two draft sentences for a character, receiving practice, and a revised draft\nprotocol. If you choose to say a need-without-label sentence of your own this\nweek, you can use it for the Field Journal: what you said, to whom, what came\nback.",
+          "reason": "The conditional already preserves choice; remove the repeated reassurance about what the course provides."
+        }
+      ],
+      "sha256_after": "a2508f9aaaf9d7cf71eb1d751f0aa7bb9fe2c66527f4216fcbbdbb359253b285"
+    },
+    {
+      "path": "src/content/sessions/week-11.md",
+      "category": "Sessions",
+      "sha256_before": "18a763b75c103d76535baaf1e8f5cd6e14bf643b99469490119cb54862c86178",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content/sessions/week-12.md",
+      "category": "Sessions",
+      "sha256_before": "19635ae3867c59b8aa0bf28ac7757cada63d6728e35af040ccf019824dd5648c",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/content.config.ts",
+      "category": "Course metadata, glossary and shared copy",
+      "sha256_before": "e80da932fd1e8faa35b97295ec63097af15c1c37dcd82bffa76a5ea354daa08b",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/course-config.ts",
+      "category": "Course metadata, glossary and shared copy",
+      "sha256_before": "3374e750e08b5961e63966d45643aaac754035226fe74f05a0b972cec864ce50",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/data/terms.ts",
+      "category": "Course metadata, glossary and shared copy",
+      "sha256_before": "67faf2fd68b5886e4660d13be1ff1dabe9a2aebee4df09794671318c1fa7d3b6",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/data/timetable.ts",
+      "category": "Course metadata, glossary and shared copy",
+      "sha256_before": "494737677eb0184a1695da945106b3158ab15e7603ab8cd81a4688478a011484",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/decks/week-01.deck.mdx",
+      "category": "Slides and speaker notes",
+      "sha256_before": "f9388157935274c9161fae3a767f4d17559f9dabecfaea48606b01db8b03d3a6",
+      "status": "edited",
+      "review_note": "Keep short impact slides and deliberate teaching repetition. Align scope and reader-address changes with the lecture; simplify speaker notes that explain the course's virtue.",
+      "edits": [
+        {
+          "line": 29,
+          "before": "- Pause here. Let the room notice that everyone already knows this, and nobody was told.",
+          "after": "- Pause here before showing a possible reply.",
+          "reason": "Preserve the pause without assuming every student already knows the convention."
+        },
+        {
+          "line": 41,
+          "before": "- Read it twice. It is the whole argument and it is on every page of the site.",
+          "after": "- Read it twice, pausing between the two clauses.",
+          "reason": "Keep the delivery instruction and remove the promotional explanation."
+        },
+        {
+          "line": 79,
+          "before": "- The run sheet promise matters to a lot of people in this room. Make it explicitly.",
+          "after": "- Say that the lab run sheets are available in advance.",
+          "reason": "Replace a prediction about the room with the information students need."
+        },
+        {
+          "line": 118,
+          "before": "- This is the engineering scandal the course is named for.\n- Researchers have been writing the rules down for over fifty years, for other researchers, in a register nobody outside the field reads.",
+          "after": "- Researchers have been writing the rules down for over fifty years, for other researchers.",
+          "reason": "The slide already carries the joke; the notes need only the supporting context."
+        },
+        {
+          "line": 158,
+          "before": "- We read the abstract, not the paper. Do not list the six; say so out loud, because the room should see the course obeying its own citation rule.",
+          "after": "- We read the abstract, not the paper. Say so; do not list the six.",
+          "reason": "Retain honest attribution without directing the teacher to perform the course's integrity."
+        },
+        {
+          "line": 185,
+          "before": "- The finding that survives is the one that matters here.\n",
+          "after": "",
+          "reason": "The slide states the finding; this note adds only emphasis."
+        },
+        {
+          "line": 298,
+          "before": "The course's position is not \"don't take it\".\n\nIt is that you should be able to **see the fork while you're standing at it**.",
+          "after": "**See the fork while you're standing at it.**\n\nThen decide whether this is the conversation you want to start.",
+          "reason": "Keep the fork image and agency while removing institutional self-commentary."
+        },
+        {
+          "line": 326,
+          "before": "Everything so far assumes the opening **obliges** you. The course hasn't earned that yet.",
+          "after": "Why does an opening make a reply **expected**?",
+          "reason": "Align with the lecture's direct question."
+        },
+        {
+          "line": 331,
+          "before": "- This is the honest gap, and the room should watch you close it rather than paper over it.",
+          "after": "- Name the evidence gap before introducing Stivers and Rossano.",
+          "reason": "Turn a claim about honesty into a concrete teaching instruction."
+        },
+        {
+          "line": 374,
+          "before": "**If replies are hard for you:** you may have been treating every opening as maximum obligation. Many are turned down low. A nod answers a nod. You can match the level you were given.",
+          "after": "**If replies are hard for you:** you can match the level you were given. A nod can answer a nod; a person already walking away may not be inviting a conversation.",
+          "reason": "Carry through the lecture's removal of assumptions about the reader."
+        },
+        {
+          "line": 395,
+          "before": "- Collect the changes on the board: position, wording, timing, body. That list is the week's real artefact, and week 4 measures it in milliseconds.",
+          "after": "- Collect the changes on the board: position, wording, timing, body. Keep the list for week 4's work on timing.",
+          "reason": "Keep the board work and cross-reference; cut the repeated declaration of significance."
+        },
+        {
+          "line": 402,
+          "before": "If you run the handshake without effort, the spec read as the obvious. That's because you've run it ten thousand times, not because it's simple.",
+          "after": "If you run the handshake without effort, familiarity can make its rules hard to see.",
+          "reason": "Remove the invented count and align the slide with the lecture."
+        }
+      ],
+      "sha256_after": "996159cbb7499c1901d2b976fe50f68d6463174490eb46f7322bff9cf86c7f5f"
+    },
+    {
+      "path": "src/decks/week-02.deck.mdx",
+      "category": "Slides and speaker notes",
+      "sha256_before": "65061f3dd8851ef36d8dbb646dd9bdcfa94ef566d2b7ed7f43a08ac859959baf",
+      "status": "edited",
+      "review_note": "Keep slide structure, study results, field-note examples and the maintenance jokes. Align the notes with the lecture edits and stop scripting student agreement or mistakes.",
+      "edits": [
+        {
+          "line": 23,
+          "before": "Week 1: we wrote the handshake down. Six lines, one branch nobody takes.",
+          "after": "Week 1: we wrote the handshake down. Six lines and a branch for a real answer.",
+          "reason": "Describe the existing branch without claiming nobody ever takes it."
+        },
+        {
+          "line": 51,
+          "before": "- The course's own observation: anyone whose implementation differs runs a small breach every day, unplanned.",
+          "after": "- The course's own observation: a mismatch can expose an expectancy without anyone setting out to test it.",
+          "reason": "Align the speaker note with the lecture's removal of a universal daily-experience claim."
+        },
+        {
+          "line": 63,
+          "before": "- Set this up as an experiment they can run at dinner. Ask a fluent user why they did something social. You will not get silence.",
+          "after": "- Suggest an experiment they can run at dinner: ask a fluent user why they did something social and record the answer.",
+          "reason": "Keep the experiment open instead of supplying its result in advance."
+        },
+        {
+          "line": 90,
+          "before": "- Which is why interviewing your way to the protocol does not work, and why this course observes instead.",
+          "after": "- Check the answer against observed exchanges. The next slide explains when reports can be accurate.",
+          "reason": "The original declares interviewing ineffective immediately before teaching an interview technique; make the transition support the stated evidence limit."
+        },
+        {
+          "line": 106,
+          "before": "- The left column invites them to theorise about people in general. They will, at length, and it will not be the rule.",
+          "after": "- The left column asks for a general explanation. Check either answer against actual exchanges.",
+          "reason": "Match the revised lecture and remove the guaranteed prediction about interviewees."
+        },
+        {
+          "line": 135,
+          "before": "- Being told about the bias did not repair the estimate. That is what makes it a finding rather than a saying.",
+          "after": "- Being told about the bias did not repair the estimate.",
+          "reason": "Keep the reported result and cut the explanation of why it is a finding."
+        },
+        {
+          "line": 159,
+          "before": "- This is an argument about how the room is arranged, not a compliment to anyone in it.\n- It is also why the labs are mixed on purpose. Week 11 is where that pays off.",
+          "after": "- Ask who has learned this protocol recently and which steps they had to work out.\n- The labs bring different experiences together; return to the comparison in week 11.",
+          "reason": "Replace self-commentary with a question that can test the proposed teaching connection."
+        },
+        {
+          "line": 203,
+          "before": "Famous. In every textbook. It would make the next rule sound inevitable.",
+          "after": "It would make the next rule sound inevitable.",
+          "reason": "Retain the setup for checking a convenient claim without the sweeping textbook assertion."
+        },
+        {
+          "line": 206,
+          "before": "- Set it up sincerely. Let them nod along, because they have all heard it.",
+          "after": "- Ask whether they have encountered this explanation before.",
+          "reason": "Do not script agreement or assume the whole class shares the same prior reading."
+        },
+        {
+          "line": 221,
+          "before": "- Nisbett is an author on the 1977 paper we just used and on the 1971 hypothesis we are now declining to use. That is what an argued literature looks like.",
+          "after": "- Nisbett is an author on both the 1977 paper we just used and the 1971 hypothesis we are now declining to use.",
+          "reason": "The bibliographic contrast carries the point without a closing declaration of what proper scholarship looks like."
+        },
+        {
+          "line": 232,
+          "before": "- This slide is the course applied to itself. Check the claim that would have been most convenient for you, first.",
+          "after": "- Check the claim that would have been most convenient for you, first.",
+          "reason": "Keep the useful research instruction and cut the praise of the course itself."
+        },
+        {
+          "line": 241,
+          "before": "You write a field note when something **didn't go smoothly**.\n\nThe one condition where the effect appears is the condition your journal is written in.",
+          "after": "If an exchange **didn't go smoothly**, check your note for judgements of the other person's character.",
+          "reason": "Align with the revised lecture: journal entries need not concern failure, and negative valence is not established here as the only condition."
+        },
+        {
+          "line": 246,
+          "before": "- Sharper than the thing it replaced, and narrower. That trade is the whole method.",
+          "after": "- Keep the claim limited to the reported conditions; do not generalise it to every field note.",
+          "reason": "Replace an abstract statement of methodological virtue with a concrete limit for the teacher to maintain."
+        },
+        {
+          "line": 311,
+          "before": "- Say this plainly, because the slogan version gets repeated without it and a student will meet the slogan version this week.",
+          "after": "- Distinguish a mutual misunderstanding from a claim that neither person has any difficulty.",
+          "reason": "Retain the important distinction without forecasting what a student will encounter this week."
+        },
+        {
+          "line": 325,
+          "before": "- For the fluent half of the room: this is a result about what you do in the first few seconds, and it is the most actionable thing in the week for you.",
+          "after": "- Ask the fluent runners to examine their first impressions before treating them as evidence about the other person.",
+          "reason": "Do not attribute the study participants' behaviour to every fluent student or rank what they will find useful."
+        },
+        {
+          "line": 356,
+          "before": "- Point at \"untested with\". Naming the limit is what makes it a specification rather than an opinion, and it is the clause first entries leave out.",
+          "after": "- Point at \"untested with\". Ask students to name what remains untested in their own entries.",
+          "reason": "Keep the specific teaching cue and remove a repeated maxim plus a prediction of student omissions."
+        },
+        {
+          "line": 368,
+          "before": "- Three are deliberately borderline. When the room splits, stop and let them argue. That is the useful part.\n- Do not resolve all three. Leaving one open is honest and it gets written up in somebody's journal.",
+          "after": "- Three are deliberately borderline. If the room splits, stop and compare the reasons.\n- Do not resolve all three. Students can keep an unresolved case for their journal.",
+          "reason": "Preserve the discussion and unresolved case without prescribing the class's reaction or praising the exercise's honesty."
+        },
+        {
+          "line": 381,
+          "before": "- Nobody reads these out. Say that before they start writing, or they will write a safe one.",
+          "after": "- Nobody reads these out. Say that before they start writing.",
+          "reason": "Retain the privacy instruction without assuming how students would otherwise respond."
+        },
+        {
+          "line": 398,
+          "before": "- The left column is where their first entries will land. Say so now, so that seeing it in their own writing is recognition rather than failure.",
+          "after": "- Have students compare a sentence from their own entry with both columns.",
+          "reason": "Replace an invented forecast of student mistakes with an actual comparison."
+        },
+        {
+          "line": 413,
+          "before": "- Point at the third one. A course about undocumented rules marks which of its own rules are homemade.",
+          "after": "- Point at the third one: the asleep test is the course's rule of thumb, not a finding attributed to Milton or Sasson.",
+          "reason": "Preserve the useful attribution boundary without another statement of the course's consistency."
+        }
+      ],
+      "sha256_after": "0ee69f13d255259e71bef3e4021c3df60b4877f88d2c0df2f4d341e13fd437de"
+    },
+    {
+      "path": "src/decks/week-03.deck.mdx",
+      "category": "Slides and speaker notes",
+      "sha256_before": "84fb8c513112e64b664be491a7344c707cfda6010445ea5f7a93dd9468ffb9f6",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/decks/week-04.deck.mdx",
+      "category": "Slides and speaker notes",
+      "sha256_before": "f1b61e07a09603e7f9764a5ac16373663c1bde6e72735b90a167a6a9ef01654e",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/decks/week-05.deck.mdx",
+      "category": "Slides and speaker notes",
+      "sha256_before": "6269411ce7c9c49808e6e661854d068b20dd7d4d169faaa67e02d1097b11ae9c",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/decks/week-06.deck.mdx",
+      "category": "Slides and speaker notes",
+      "sha256_before": "f199bfa3894ee00e228e2d01c1d3676bbc3251e24006fef2d817b9749a6578e4",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/decks/week-07.deck.mdx",
+      "category": "Slides and speaker notes",
+      "sha256_before": "a5b8b77fe70433b7088bf01dafb6e4f98f99f3e11a9c367d88cf9c6627ea7cbc",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/decks/week-08.deck.mdx",
+      "category": "Slides and speaker notes",
+      "sha256_before": "29c8ada7fb316f05e560952e0e9ba62aeb152b8ddf6a655975b955aa377585eb",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/decks/week-09.deck.mdx",
+      "category": "Slides and speaker notes",
+      "sha256_before": "837e4b5c9b3e1d34373ec4f1e05028082953ed967cbff1944e48fece94f65c66",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/decks/week-10.deck.mdx",
+      "category": "Slides and speaker notes",
+      "sha256_before": "f0c3a4cca197b73cae7339416ae6be4dfe4c81b19f381385c396d3d76fd3c069",
+      "status": "edited",
+      "review_note": "Align the deck and presenter notes with the edited lecture. Keep the entire spoken register break and its snap-back unchanged, alongside the tables, activities and study results.",
+      "edits": [
+        {
+          "line": 16,
+          "before": "- The week the course is most careful, and the week with the most practical scripts. Both on purpose.",
+          "after": "- Introduce the five audiences and the choice to state a need without a label.",
+          "reason": "Replace self-praise in the opening delivery note with a concrete introduction."
+        },
+        {
+          "line": 27,
+          "before": "The mechanics work for all of them, because the evidence behind them does.",
+          "after": "Research on several concealable identities, alongside autism-specific studies.",
+          "reason": "Match the lecture’s source scope without promising that the scripts work for every situation."
+        },
+        {
+          "line": 66,
+          "before": "- So observers in a lab say \"tell people\". The people deciding whether to tell say \"it's complicated\".\n- Not contradictory. Different vantage points on the same transaction. This course won't pick one for them.",
+          "after": "- A favourable first impression does not settle whether disclosure will help at work. The studies ask different people about different consequences.",
+          "reason": "Do not turn study participants’ ratings into advice to disclose."
+        },
+        {
+          "line": 86,
+          "before": "A list of reasons to be careful is not a decision aid. It is a thumb on one side of the scale.\n\nSo: what does **not** telling cost?",
+          "after": "What does **not** telling cost?",
+          "reason": "Let the ledger question lead into the study without another polished contrast."
+        },
+        {
+          "line": 91,
+          "before": "- Say this plainly. A week that only catalogues the risk of disclosing has decided for them while claiming not to.",
+          "after": "- Ask students to keep both telling and not telling in the ledger.",
+          "reason": "Give a teaching action rather than praise the lesson for avoiding bias."
+        },
+        {
+          "line": 107,
+          "before": "- Thirteen different identities, not one. This is a general finding about concealable things, which is why it belongs in a week that opened by saying the mechanics work for all of them.",
+          "after": "- The sample spans thirteen concealable identities. Keep that scope distinct from the autism-specific studies.",
+          "reason": "Retain the sample’s breadth without extrapolating to every concealable identity."
+        },
+        {
+          "line": 119,
+          "before": "- The obvious misreading is right there, so say the right one twice.",
+          "after": "- Name the predictor: anticipated stigma, not the effort of concealing.",
+          "reason": "Give the presenter the distinction directly without presuming a reader error."
+        },
+        {
+          "line": 132,
+          "before": "- Tie it back to week 8: the support staff said the fix was structural. This is the measurement underneath their recommendation.\n- It is also the one claim in this week that is not about what the student should do.",
+          "after": "- Connect this interpretation to week 8’s discussion of structural changes.",
+          "reason": "Remove an announcement of the lesson’s virtue and retain the useful cross-reference; the causal interpretation is flagged separately."
+        },
+        {
+          "line": 149,
+          "before": "- Say before they start that nothing gets read out. Otherwise they write a safe one.",
+          "after": "- Say before they start that nothing gets read out.",
+          "reason": "The privacy instruction stands without predicting what every student would otherwise write."
+        },
+        {
+          "line": 180,
+          "before": "- Slow down and mean it. This is the course putting the tool down, and a room can tell when it happens.",
+          "after": "- Slow down. Leave the examples time to register.",
+          "reason": "Preserve the deliberate delivery shift without claiming what the room will feel; none of the protected spoken text changes."
+        },
+        {
+          "line": 229,
+          "before": "- The week's most useful and least-taught idea. Say it once, plainly, then show it.",
+          "after": "- Say it once, then show the example.",
+          "reason": "Remove two unsupported superlatives while retaining the delivery instruction."
+        },
+        {
+          "line": 245,
+          "before": "- That first sentence gets the adjustment and changes exactly one piece of what they know. The rest stays theirs.",
+          "after": "- The first sentence asks for an adjustment without naming a diagnosis. The speaker chooses whether to share the rest.",
+          "reason": "Match the lecture’s distinction between requesting an adjustment and guaranteeing one."
+        },
+        {
+          "line": 262,
+          "before": "- The dashed slip is the whole idea: it is not in the envelope, and nothing in what you sent says one is missing.",
+          "after": "- Point to the dashed slip: the speaker has left the diagnosis out of the envelope.",
+          "reason": "Explain the drawing without promising control over the recipient’s inferences."
+        },
+        {
+          "line": 285,
+          "before": "Costs almost nothing in week 1.\n\nCosts a great deal to say for the first time in week 8.",
+          "after": "An option at the first group meeting or in the first week of a job: make the need part of the working arrangements before a problem needs explaining.",
+          "reason": "Remove the unmeasured universal cost claim while preserving the early-disclosure option."
+        },
+        {
+          "line": 300,
+          "before": "- Everyone in the room will be on this side of it at some point.\n",
+          "after": "",
+          "reason": "The receiving procedure does not need a prediction about everyone in the room."
+        },
+        {
+          "line": 316,
+          "before": "- Nobody reads either out. The show of hands is the whole result, and it is why the next section exists.",
+          "after": "- Nobody reads either sentence out. Collect only the show of hands.",
+          "reason": "Keep the activity boundary and cut commentary about the lesson’s structure."
+        },
+        {
+          "line": 363,
+          "before": "- Reviewers writing down the prior their own field was running on, in the paper. That is the thing this entire course says nobody does.\n- So the honest position for us is not \"disclose\" or \"don't\". It is: here are both columns, and it is your call.",
+          "after": "- Return to both ledger columns. The decision stays with the person disclosing.",
+          "reason": "The slide already states the review’s finding; the notes need not celebrate its resemblance to the course’s thesis."
+        },
+        {
+          "line": 379,
+          "before": "- This is the one audience where asking first costs nothing at all, which is why it is the one to practise on.",
+          "after": "- Rehearse the question before deciding what information to share.",
+          "reason": "Do not promise that contacting disability services is cost-free for everyone."
+        },
+        {
+          "line": 395,
+          "before": "- Everybody in this room will be on the receiving side at some point, probably sooner than the other side.\n- Watch for the re-reading coming up in their answers. If it does, that is the useful discovery, and it lands better from them than from me.",
+          "after": "- Listen for re-reading in the answers. If it appears, ask the pair to try the response again without it.",
+          "reason": "Replace predictions about students’ lives and reactions with an observable teaching action."
+        },
+        {
+          "line": 408,
+          "before": "Next week: interoperation, not conversion. The argument the whole course has been building to.",
+          "after": "Next week: interoperation, not conversion.",
+          "reason": "The transition works without another declaration of the course’s significance."
+        }
+      ],
+      "sha256_after": "667827d34c07a1ee71b4702461a59051107bfc4dcedc75ddcf672e6731b51ad0"
+    },
+    {
+      "path": "src/decks/week-11.deck.mdx",
+      "category": "Slides and speaker notes",
+      "sha256_before": "e2fecdb15a995a896e1ced1ad3ba02ec7805af4baa957e8e5c11d1ed4c91a5b9",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/decks/week-12.deck.mdx",
+      "category": "Slides and speaker notes",
+      "sha256_before": "5b94c14ca14a567fb4da41c211ce1d5b76383e3dce89f410b306e1ee0cbc3140",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/layouts/PageLayout.astro",
+      "category": "Course metadata, glossary and shared copy",
+      "sha256_before": "d79cffd8213f4787bab8d5cd7b5fd90309e1872f796d955ee4575f363bc65687",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/lib/dates.ts",
+      "category": "Course metadata, glossary and shared copy",
+      "sha256_before": "e5d4bca5f0e26f4b1b95f5016ae1db692fe40688ff04150de38fda57fc83602d",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/lib/sketch.ts",
+      "category": "Course metadata, glossary and shared copy",
+      "sha256_before": "3939c08950feef53f0874d2bca29651bed50e75209f6406cf28a5e4d78aa5217",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/lib/submissions.ts",
+      "category": "Course metadata, glossary and shared copy",
+      "sha256_before": "4a5ab79d33ae7f4f16f60078757fb88284fa0a6751ba5457d7d194d60e070fbd",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/pages/404.md",
+      "category": "Site pages",
+      "sha256_before": "43089c9ae6dca6564fd8ab44b5f66c6085172b699b3707ccdfe77813bbdeb22f",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/pages/assessments/[slug].astro",
+      "category": "Site pages",
+      "sha256_before": "9c1f3a9025d9e11c416215889c212fc723d3af8f16b2843d95a187a7151729e6",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/pages/assessments/index.mdx",
+      "category": "Site pages",
+      "sha256_before": "a68ac21d5bc6c602f4b2c7ddae9424f4462e5df61132ee9efeb96e3c5489d8b4",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/pages/glossary/index.astro",
+      "category": "Site pages",
+      "sha256_before": "d3a1f48d1d582a980c448cd6c2fcdb9685383a32b016c3c89937c72d8e3db32e",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/pages/index.astro",
+      "category": "Site pages",
+      "sha256_before": "5fd4cef77c1371b49676a5c55499fa47a7d5574ebf773ca155dc396e16819f30",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/pages/lectures/[slug].astro",
+      "category": "Site pages",
+      "sha256_before": "18ebcd28c6487426501a20085a024eeb163d19b72ede3d5c9b76c7334eb47b06",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/pages/lectures/index.mdx",
+      "category": "Site pages",
+      "sha256_before": "e08c94746f17b05bb65a2b65b4df6b55dd99bea5637fec336ee3877273396333",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/pages/people/[slug].astro",
+      "category": "Site pages",
+      "sha256_before": "4a99ab2ac184e0d5fbb8b528b87fe96d6dfdcf27d5e46acf486eaf836f517d92",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/pages/people/index.mdx",
+      "category": "Site pages",
+      "sha256_before": "40f83c98dc79c786410778538dfbdc85cea826dafc2368b3fcbb1fe53fae8e4b",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/pages/policies/index.mdx",
+      "category": "Site pages",
+      "sha256_before": "58b3202f80355c368db9ddd748db858fca79c0ddc3027a608d2f45f98db7757e",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/pages/readings/[slug].astro",
+      "category": "Site pages",
+      "sha256_before": "f844f958e0e9d41a02c16d05b4c0a591f61b5e0c7dbb88e1d7801f3da20b172e",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/pages/readings/index.astro",
+      "category": "Site pages",
+      "sha256_before": "8d9ce3ccb5903d308bf3f252da2fecc28c0ad9b2f70b0a86046a5ec844982e47",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/pages/sessions/[slug].astro",
+      "category": "Site pages",
+      "sha256_before": "7e31379c144965dcc7a9f4f5c7e888fe9ff9aa6748e1ff26f3058178c4a87ae9",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/pages/sessions/index.astro",
+      "category": "Site pages",
+      "sha256_before": "5a4f9d282e58904f74bf121419b0189f274cb6467ecd29d6048bdb8a707dec5b",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/pages/submissions/index.md",
+      "category": "Site pages",
+      "sha256_before": "dd1e0fab279a87f98623a157bf8d5a9a54b161ae1eeeb296fea5a556ab4f79e6",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/pages/timetable/index.astro",
+      "category": "Site pages",
+      "sha256_before": "2888b7046bb62542758a631817a3df62767df2d3837a2b37dc03895baa6e940f",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    },
+    {
+      "path": "src/site-config.ts",
+      "category": "Course metadata, glossary and shared copy",
+      "sha256_before": "5538cd3734fc5b8d380f76114c68a25e86ae2f7949afb9aba6e58e1ab63a026f",
+      "status": "pending",
+      "review_note": "",
+      "edits": []
+    }
+  ]
+}

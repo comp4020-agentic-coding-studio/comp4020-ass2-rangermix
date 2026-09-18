@@ -1,0 +1,22 @@
+{
+  "path": "src/content/sessions/week-10.md",
+  "category": "Sessions",
+  "sha256_before": "d4e151743fdc4fdb439cfeda7ffb5d54ba51383619da56ad7df7f9e397c360a6",
+  "status": "edited",
+  "review_note": "Keep the fictional-character rule, opt-out, run sheet and assessment work. Tighten two lines that explain intentions after the practical instruction is already clear.",
+  "edits": [
+    {
+      "line": 14,
+      "before": "Nobody discloses anything real in this lab. Every disclosure in the room\nbelongs to a character on a card. That's a rule, not a suggestion. It exists\nso that practising the mechanics costs nothing you'd have to take back.",
+      "after": "Nobody discloses anything real in this lab. Every disclosure belongs to a\ncharacter on a card, so you can practise without giving the room information\nabout yourself.",
+      "reason": "Keep the mandatory fiction boundary and its concrete purpose without escalating it through a second emphatic declaration."
+    },
+    {
+      "line": 42,
+      "before": "Two draft sentences for a character, receiving practice, and a revised draft\nprotocol. If you do decide to say a need-without-label sentence of your own\nthis week, the Field Journal is where it goes: what you said, to whom, what came\nback. That's your decision. The course only makes sure you have the sentence\nready.",
+      "after": "Two draft sentences for a character, receiving practice, and a revised draft\nprotocol. If you choose to say a need-without-label sentence of your own this\nweek, you can use it for the Field Journal: what you said, to whom, what came\nback.",
+      "reason": "The conditional already preserves choice; remove the repeated reassurance about what the course provides."
+    }
+  ],
+  "sha256_after": "a2508f9aaaf9d7cf71eb1d751f0aa7bb9fe2c66527f4216fcbbdbb359253b285"
+}

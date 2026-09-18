@@ -1,0 +1,130 @@
+{
+  "path": "src/decks/week-10.deck.mdx",
+  "category": "Slides and speaker notes",
+  "sha256_before": "f0c3a4cca197b73cae7339416ae6be4dfe4c81b19f381385c396d3d76fd3c069",
+  "status": "edited",
+  "review_note": "Align the deck and presenter notes with the edited lecture. Keep the entire spoken register break and its snap-back unchanged, alongside the tables, activities and study results.",
+  "edits": [
+    {
+      "line": 16,
+      "before": "- The week the course is most careful, and the week with the most practical scripts. Both on purpose.",
+      "after": "- Introduce the five audiences and the choice to state a need without a label.",
+      "reason": "Replace self-praise in the opening delivery note with a concrete introduction."
+    },
+    {
+      "line": 27,
+      "before": "The mechanics work for all of them, because the evidence behind them does.",
+      "after": "Research on several concealable identities, alongside autism-specific studies.",
+      "reason": "Match the lecture’s source scope without promising that the scripts work for every situation."
+    },
+    {
+      "line": 66,
+      "before": "- So observers in a lab say \"tell people\". The people deciding whether to tell say \"it's complicated\".\n- Not contradictory. Different vantage points on the same transaction. This course won't pick one for them.",
+      "after": "- A favourable first impression does not settle whether disclosure will help at work. The studies ask different people about different consequences.",
+      "reason": "Do not turn study participants’ ratings into advice to disclose."
+    },
+    {
+      "line": 86,
+      "before": "A list of reasons to be careful is not a decision aid. It is a thumb on one side of the scale.\n\nSo: what does **not** telling cost?",
+      "after": "What does **not** telling cost?",
+      "reason": "Let the ledger question lead into the study without another polished contrast."
+    },
+    {
+      "line": 91,
+      "before": "- Say this plainly. A week that only catalogues the risk of disclosing has decided for them while claiming not to.",
+      "after": "- Ask students to keep both telling and not telling in the ledger.",
+      "reason": "Give a teaching action rather than praise the lesson for avoiding bias."
+    },
+    {
+      "line": 107,
+      "before": "- Thirteen different identities, not one. This is a general finding about concealable things, which is why it belongs in a week that opened by saying the mechanics work for all of them.",
+      "after": "- The sample spans thirteen concealable identities. Keep that scope distinct from the autism-specific studies.",
+      "reason": "Retain the sample’s breadth without extrapolating to every concealable identity."
+    },
+    {
+      "line": 119,
+      "before": "- The obvious misreading is right there, so say the right one twice.",
+      "after": "- Name the predictor: anticipated stigma, not the effort of concealing.",
+      "reason": "Give the presenter the distinction directly without presuming a reader error."
+    },
+    {
+      "line": 132,
+      "before": "- Tie it back to week 8: the support staff said the fix was structural. This is the measurement underneath their recommendation.\n- It is also the one claim in this week that is not about what the student should do.",
+      "after": "- Connect this interpretation to week 8’s discussion of structural changes.",
+      "reason": "Remove an announcement of the lesson’s virtue and retain the useful cross-reference; the causal interpretation is flagged separately."
+    },
+    {
+      "line": 149,
+      "before": "- Say before they start that nothing gets read out. Otherwise they write a safe one.",
+      "after": "- Say before they start that nothing gets read out.",
+      "reason": "The privacy instruction stands without predicting what every student would otherwise write."
+    },
+    {
+      "line": 180,
+      "before": "- Slow down and mean it. This is the course putting the tool down, and a room can tell when it happens.",
+      "after": "- Slow down. Leave the examples time to register.",
+      "reason": "Preserve the deliberate delivery shift without claiming what the room will feel; none of the protected spoken text changes."
+    },
+    {
+      "line": 229,
+      "before": "- The week's most useful and least-taught idea. Say it once, plainly, then show it.",
+      "after": "- Say it once, then show the example.",
+      "reason": "Remove two unsupported superlatives while retaining the delivery instruction."
+    },
+    {
+      "line": 245,
+      "before": "- That first sentence gets the adjustment and changes exactly one piece of what they know. The rest stays theirs.",
+      "after": "- The first sentence asks for an adjustment without naming a diagnosis. The speaker chooses whether to share the rest.",
+      "reason": "Match the lecture’s distinction between requesting an adjustment and guaranteeing one."
+    },
+    {
+      "line": 262,
+      "before": "- The dashed slip is the whole idea: it is not in the envelope, and nothing in what you sent says one is missing.",
+      "after": "- Point to the dashed slip: the speaker has left the diagnosis out of the envelope.",
+      "reason": "Explain the drawing without promising control over the recipient’s inferences."
+    },
+    {
+      "line": 285,
+      "before": "Costs almost nothing in week 1.\n\nCosts a great deal to say for the first time in week 8.",
+      "after": "An option at the first group meeting or in the first week of a job: make the need part of the working arrangements before a problem needs explaining.",
+      "reason": "Remove the unmeasured universal cost claim while preserving the early-disclosure option."
+    },
+    {
+      "line": 300,
+      "before": "- Everyone in the room will be on this side of it at some point.\n",
+      "after": "",
+      "reason": "The receiving procedure does not need a prediction about everyone in the room."
+    },
+    {
+      "line": 316,
+      "before": "- Nobody reads either out. The show of hands is the whole result, and it is why the next section exists.",
+      "after": "- Nobody reads either sentence out. Collect only the show of hands.",
+      "reason": "Keep the activity boundary and cut commentary about the lesson’s structure."
+    },
+    {
+      "line": 363,
+      "before": "- Reviewers writing down the prior their own field was running on, in the paper. That is the thing this entire course says nobody does.\n- So the honest position for us is not \"disclose\" or \"don't\". It is: here are both columns, and it is your call.",
+      "after": "- Return to both ledger columns. The decision stays with the person disclosing.",
+      "reason": "The slide already states the review’s finding; the notes need not celebrate its resemblance to the course’s thesis."
+    },
+    {
+      "line": 379,
+      "before": "- This is the one audience where asking first costs nothing at all, which is why it is the one to practise on.",
+      "after": "- Rehearse the question before deciding what information to share.",
+      "reason": "Do not promise that contacting disability services is cost-free for everyone."
+    },
+    {
+      "line": 395,
+      "before": "- Everybody in this room will be on the receiving side at some point, probably sooner than the other side.\n- Watch for the re-reading coming up in their answers. If it does, that is the useful discovery, and it lands better from them than from me.",
+      "after": "- Listen for re-reading in the answers. If it appears, ask the pair to try the response again without it.",
+      "reason": "Replace predictions about students’ lives and reactions with an observable teaching action."
+    },
+    {
+      "line": 408,
+      "before": "Next week: interoperation, not conversion. The argument the whole course has been building to.",
+      "after": "Next week: interoperation, not conversion.",
+      "reason": "The transition works without another declaration of the course’s significance."
+    }
+  ],
+  "sha256_after": "667827d34c07a1ee71b4702461a59051107bfc4dcedc75ddcf672e6731b51ad0"
+}

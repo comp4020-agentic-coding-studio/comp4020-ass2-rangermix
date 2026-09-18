@@ -1,0 +1,34 @@
+{
+  "path": "src/content/readings/brooks-2015-seeking-advice.md",
+  "category": "Readings",
+  "sha256_before": "208a6a191882676be3d7ca77fa044c9728907f29f72a8d682c899176600ad227",
+  "status": "edited",
+  "review_note": "Qualify the descriptive summary and reader-directed claims; keep moderators, practical examples and the setting limit.",
+  "edits": [
+    {
+      "line": 3,
+      "before": "People don't ask because they think asking makes them look worse. It makes them look better, and the paper says the fear is misplaced in those words.",
+      "after": "In these experiments, people who asked for advice were judged more competent; task difficulty and whom they asked affected the result.",
+      "reason": "Scope the result to the experiments instead of promising that asking always improves an impression."
+    },
+    {
+      "line": 19,
+      "before": "Flynn and Lake, earlier in the same week, answer one of the two fears that keep an email in drafts — *they will say no*. This answers the other, which is usually the louder one: *they will think less of me for asking.* Both estimates run the same direction, and both are wrong the same way.",
+      "after": "Week 8 pairs this with Flynn and Lake for two worries that can keep an email in drafts: *will they say no?* and *will they think less of me for asking?* The studies examine different judgements; neither predicts the reply to a particular email.",
+      "reason": "Remove the unsupported ranking of fears and the claim that every reader's estimate is wrong."
+    },
+    {
+      "line": 21,
+      "before": "The three moderators are the useful part, because they are the week's only advice about **choosing who to write to** rather than how to format the message.",
+      "after": "The moderators help with **choosing who to write to**.",
+      "reason": "Remove the superlative and course bookkeeping; keep the practical connection."
+    },
+    {
+      "line": 21,
+      "before": "Note the setting: these are experiments on perceived competence in work and decision-making tasks, not a study of tutors, and the week says so rather than implying somebody measured a lecturer.",
+      "after": "These are experiments on perceived competence in work and decision-making tasks, not a study of university tutors.",
+      "reason": "Keep the research limit without praising the course for stating it."
+    }
+  ],
+  "sha256_after": "44b7fc29dfaf1865ffcce0adaa4b696c3d590de844934906bd5276958395564c"
+}
