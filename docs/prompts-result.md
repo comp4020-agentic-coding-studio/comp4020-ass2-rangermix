@@ -1174,12 +1174,51 @@ eye twice, the nav count is now a spec check.
 
 Minutes aren't affected: nothing here changed a lecture or a deck.
 
+*Sent 2026-09-18 13:49:16 AEST*
+
+> merge the timetable commits to main then update
+
+**Result --- merged, not rebased.** `main` had moved again, by three commits
+that relogged the design, handoff and first build sessions. They touch one
+file, this one, which the branch had also changed, so the branch no longer
+fast-forwarded.
+
+Rebasing would have given `main` a straight line, and was the wrong call here:
+the hashes of these commits are already cited in this file and in
+`docs/notes/process-evidence.md`, and rebasing rewrites them. `pnpm
+check:evidence` fails on a cited commit that doesn't exist, so a rebase would
+have turned every citation red and asked the log to chase its own hashes a
+second time. Merging keeps `55928a1` and the rest meaning what they say.
+
+`main`'s version of this file was taken as the base --- it had renumbered the
+sections and rewritten the header --- and the timetable section was re-applied
+onto it as section 8, with its cross-references pointed at `main`'s section 5.
+The merge is `d037f8d`.
+
+**Checked after the push**, on `main` and then on the deployed site:
+
+- `pnpm check` exited 0 on the merged tree: 402 tests, no accessibility
+  violations across 124 pages, no broken links. `pnpm check:timing`: 0 of 12
+  weeks short.
+- CI run `35304837189`: build, spec and deploy all pass, and the workflow's own
+  "Verify the deployed site is online" step passed.
+- `/timetable/` serves 200 on the deployed site, its navigation reads
+  Timetable, Lectures, Labs, Readings, Assessment, Policies, and `/people/`
+  still serves 200 after losing its nav slot.
+- The one red step is `check:evidence`, failing on `PROCESS.md`'s two template
+  hashes, exactly as it did on the two runs before this one. It is the
+  student's own file, and no agent writes it.
+
+The branches `worktree-timetable-page` and `timetable-on-main` hold nothing
+that isn't now on `main`.
+
 | Commit | What it did |
 | --- | --- |
 | [`55928a1`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/55928a1) | `/timetable/`, `src/data/timetable.ts`, `spec/timetable.test.ts`; times on the home, lecture and lab pages; design doc settles where and when |
 | [`4bd5203`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/4bd5203) | Evidence log row for the timetable decision |
 | [`a9dbb61`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/a9dbb61) | Design doc ties the two-hour slot to `pnpm check:timing` |
 | [`0deedfc`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/0deedfc) | People's nav slot to the timetable; nav held at six by a spec check |
+| [`d037f8d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/d037f8d) | Merge onto `main`; the timetable log refiled as section 8 |
 
 This edit's own commit is the next one in `git log`.
 
@@ -1202,7 +1241,8 @@ This edit's own commit is the next one in `git log`.
 - **Timetable:** `/timetable/`, first of six navigation items. Its 8 spec tests
   pass, part of 402 in `pnpm check`.
 - **Plates:** 4, all public domain or CC BY-SA, with provenance recorded.
-- **CI:** the build, spec and deploy jobs pass. `check:evidence` still fails,
-  now only because `PROCESS.md` cites the template's example hashes `a1b2c3d`
-  and `e4f5a6b`. It goes green when those citations are replaced with real
-  commits --- the tables above are there for that.
+- **CI:** the build, spec and deploy jobs pass, re-checked on run `35304837189`
+  for `d037f8d`, the merge that put the timetable on `main`. `check:evidence`
+  still fails, now only because `PROCESS.md` cites the template's example
+  hashes `a1b2c3d` and `e4f5a6b`. It goes green when those citations are
+  replaced with real commits --- the tables above are there for that.
