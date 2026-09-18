@@ -1,7 +1,7 @@
 {
   "baseline": "2209428d55d3c47ce405dd81b67ab3d0b991a8ac",
   "date": "2026-09-18",
-  "status": "Complete draft; not applied",
+  "status": "Applied editorial snapshot",
   "files": [
     {
       "path": "src/components/AssessmentsGrid.astro",

@@ -1,6 +1,8 @@
 # Course editorial draft — 18 September 2026
 
-**Draft only. No live course text has been changed.** The original is commit
+**Applied after approval on 18 September 2026**, in commit `53a4403`. This
+package preserves the before-and-after snapshot; later changes to the course
+are separate. The original is commit
 `2209428d55d3c47ce405dd81b67ab3d0b991a8ac`.
 
 Open [the side-by-side comparison](comparison.html) in a browser. It contains
@@ -10,7 +12,8 @@ Retained files are included too. Markdown, MDX and speaker notes are displayed
 as text so the comparison shows the exact proposed wording.
 
 The complete proposed files are under [draft/src](draft/src), with the same
-paths as the course. Nothing in this package applies those files to `src/`.
+paths as the course. The reviewed revision was copied to `src/` after approval. See
+[application.json](application.json) and the [subsequent review](../../reviews/2026-09-18-applied/README.md).
 
 ## Editorial judgement
 
@@ -75,17 +78,17 @@ comparison records those changes explicitly.
 From the repository root:
 
 ```sh
-python3 docs/editorial/2026-09-18/tools/check.py --complete
-python3 docs/editorial/2026-09-18/tools/build_comparison.py
+python3 docs/editorial/2026-09-18/tools/check.py --complete --archive
+python3 docs/editorial/2026-09-18/tools/build_comparison.py --archive
 ```
 
-The checker verifies complete coverage, unchanged live-source hashes, exact
+In archive mode the checker verifies complete coverage, Git-baseline hashes, exact
 reconstruction of every draft from its recorded edits, protected metadata and
 quotations, the week 10 register break and slide structure. The comparison
 embeds the original text from the baseline and the complete proposed text;
 it does not need the site, a server or external libraries.
 
-## Validation
+## Validation before application
 
 - **Exact-source check:** all 157 files accounted for; live sources unchanged;
   every draft reconstructs from its recorded replacements; protected passages,

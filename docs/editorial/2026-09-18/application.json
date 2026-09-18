@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-18",
+  "commit": "53a4403d71374399ad23d98e39898d6633e4403f",
+  "status": "Applied after user approval",
+  "changed_files": 79,
+  "verified_files": 157,
+  "recorded_edits": 594,
+  "source_match": "All 157 live text files matched their reviewed draft hashes immediately after application.",
+  "checks": {
+    "command": "pnpm check",
+    "tests_passed": 425,
+    "pages_built": 125
+  },
+  "review": "../../reviews/2026-09-18-applied/README.md"
+}

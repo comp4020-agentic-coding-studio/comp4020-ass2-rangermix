@@ -19,9 +19,9 @@
   <a class="skip-link" href="#review">Skip to comparison</a>
   <div class="shell">
     <header class="intro">
-      <div class="eyebrow"><span class="draft-badge">Draft only</span><span>SLOP1562 · 18 September 2026</span></div>
+      <div class="eyebrow"><span class="draft-badge" id="application-badge">Editorial snapshot</span><span>SLOP1562 · 18 September 2026</span></div>
       <h1>The course, before and after</h1>
-      <p class="intro-description">An editorial proposal: keep the honest voice and engineering satire; cut repeated declarations, unsupported predictions and explanations of the joke. <strong>These edits have not been applied. The live course source is unchanged.</strong></p>
+      <p class="intro-description">An editorial review: keep the honest voice and engineering satire; cut repeated declarations, unsupported predictions and explanations of the joke. <strong id="application-status"></strong></p>
       <div class="stats" id="stats"></div>
       <p class="baseline" id="baseline"></p>
     </header>
@@ -80,7 +80,10 @@
       categories.forEach(category=>{const option=make("option",null,category);option.value=category;byId("category").append(option);});
       if(data.counts.pending){const option=make("option",null,"Pending");option.value="pending";byId("status").append(option);byId("status").options[0].textContent="All review states";byId("pending-notice").hidden=false;byId("pending-notice").textContent=`Development preview: ${data.counts.pending} files are still pending review. This is not the final comparison.`;}
       [[files.length,"files accounted for"],[data.counts.edited||0,"files with proposals"],[data.counts.retained||0,"files retained"],[data.edit_count,"passage proposals"]].forEach(([count,label])=>{const item=make("span");item.append(make("strong",null,String(count)),document.createTextNode(` ${label}`));byId("stats").append(item);});
-      byId("baseline").textContent=`Original: Git baseline ${data.baseline} · Live source verified unchanged when this comparison was generated.`;
+      const afterLabel=data.application?"Applied revision":"Draft proposal";
+      byId("application-badge").textContent=data.application?"Applied snapshot":"Draft only";
+      byId("application-status").textContent=data.application?`Applied on ${data.application.date} in commit ${data.application.commit.slice(0,7)}. This comparison preserves the reviewed versions; later course changes are recorded in Git.`:data.archive?"This is a preserved proposal; it does not show the current live course.":"These edits have not been applied. The live course source is unchanged.";
+      byId("baseline").textContent=`Original: Git baseline ${data.baseline} · ${data.archive?"Historical source and proposal hashes verified.":"Live source verified unchanged when this comparison was generated."}`;
       byId("browser-summary").textContent=`Browse ${files.length} course files`;
       byId("policy").textContent=data.policy;
       const narrow=window.matchMedia("(max-width: 900px)");
@@ -106,9 +109,9 @@
         file.edits.forEach((edit,index)=>{
           const article=make("article","change");const heading=make("div","change-heading");heading.append(make("h3",null,`Proposal ${index+1}`),make("span","line-ref",`Original line ${edit.line}`));article.append(heading);
           const pair=make("div","comparison-pair");
-          [["Original",edit.beforeSpans,"removed"],["Draft proposal",edit.afterSpans,"added"]].forEach(([label,spans,changeClass])=>{
+          [["Original",edit.beforeSpans,"removed"],[afterLabel,edit.afterSpans,"added"]].forEach(([label,spans,changeClass])=>{
             const side=make("section","passage-side");side.append(make("h3","column-label",label));
-            if(!spans.length){side.append(make("p","no-text",label==="Draft proposal"?"Passage removed; no replacement text.":"No original text."));}
+            if(!spans.length){side.append(make("p","no-text",changeClass==="added"?"Passage removed; no replacement text.":"No original text."));}
             else {const passage=make("div","passage");spans.forEach(([text,changed])=>passage.append(changed?make("mark",changeClass,text):document.createTextNode(text)));side.append(passage);}
             pair.append(side);
           });article.append(pair);const reason=make("p","reason");reason.append(make("strong",null,"Why: "),document.createTextNode(edit.reason));article.append(reason);fragment.append(article);
@@ -118,7 +121,7 @@
         if(file.status==="retained")byId("comparison").append(make("p","notice","Retained after review. The original and draft below are identical."));
         if(file.status==="pending")byId("comparison").append(make("p","notice pending","This file is present for coverage but has not yet received an editorial review."));
         const pair=make("div","full-pair");
-        [["Original",file.original],["Draft proposal",file.draft]].forEach(([label,text])=>{
+        [["Original",file.original],[afterLabel,file.draft]].forEach(([label,text])=>{
           const side=make("section","full-side");side.append(make("h3",null,label));const pre=make("pre","source-lines");pre.tabIndex=0;pre.setAttribute("aria-label",`${label} full text; scroll to read all lines`);const code=make("code");
           text.split("\n").forEach((line,index)=>{const row=make("span","source-line");const number=make("span","line-number",String(index+1));number.setAttribute("aria-hidden","true");row.append(number,make("span","line-text",line||"\u200b"));code.append(row);});pre.append(code);side.append(pre);pair.append(side);
         });byId("comparison").append(pair);

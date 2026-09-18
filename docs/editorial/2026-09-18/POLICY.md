@@ -1,7 +1,8 @@
 # Editorial draft policy
 
 This is a proposal for the course at commit `2209428d55d3c47ce405dd81b67ab3d0b991a8ac`.
-The live source files are not being edited. Drafts mirror their paths under
+This policy governed the proposal before its approval and application in
+`53a4403`. The preserved drafts mirror their paths under
 `draft/`; the comparison records the exact original passage, proposed wording
 and reason for each edit.
 

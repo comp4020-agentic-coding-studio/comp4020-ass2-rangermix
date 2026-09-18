@@ -43,7 +43,7 @@ open.
   arrangement costs every student nothing. The homepage now states that the
   journal begins in week 2.
 
-These are proposals in the editorial package only. The work does not claim a
+These proposals were applied after approval in `53a4403`. The work does not claim a
 fresh verification of the papers: it narrows wording to the findings already
 recorded in the repository and makes the course's inferences visible.
 

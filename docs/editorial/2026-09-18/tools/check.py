@@ -1,9 +1,10 @@
-"""Verify the proposal records, draft reconstruction and unchanged live sources."""
+"""Verify proposal records against live originals or the archived Git baseline."""
 from pathlib import Path
 import argparse
 import hashlib
 import json
 import re
+import subprocess
 
 OUT = Path(__file__).resolve().parents[1]
 ROOT = OUT.parents[2]
@@ -22,16 +23,18 @@ def frontmatter_fields(text):
             for i, m in enumerate(starts)}
 
 
-def check(complete=False, collect=False):
+def check(complete=False, collect=False, archive=False):
     manifest = json.loads((OUT / 'manifest.json').read_text())
-    inventory = {str(path.relative_to(ROOT)) for path in (ROOT / 'src').rglob('*')
-                 if path.suffix in {'.md', '.mdx', '.astro', '.ts'}}
+    paths = (subprocess.check_output(['git', 'ls-tree', '-r', '--name-only', manifest['baseline'], '--', 'src'], cwd=ROOT).decode().splitlines()
+             if archive else [str(path.relative_to(ROOT)) for path in (ROOT / 'src').rglob('*')])
+    inventory = {path for path in paths if Path(path).suffix in {'.md', '.mdx', '.astro', '.ts'}}
     assert inventory == {item['path'] for item in manifest['files']}, 'Text inventory changed'
     counts = {'pending': 0, 'edited': 0, 'retained': 0, 'edits': 0}
     for i, item in enumerate(manifest['files']):
         path = item['path']
-        original = (ROOT / path).read_text()
-        assert digest(original) == item['sha256_before'], f'LIVE SOURCE CHANGED: {path}'
+        original = (subprocess.check_output(['git', 'show', f'{manifest["baseline"]}:{path}'], cwd=ROOT).decode()
+                    if archive else (ROOT / path).read_text())
+        assert digest(original) == item['sha256_before'], f'{"BASELINE" if archive else "LIVE SOURCE"} CHANGED: {path}'
         record_path = OUT / 'reviews' / (path + '.json')
         if not record_path.exists():
             counts['pending'] += 1
@@ -80,13 +83,17 @@ def check(complete=False, collect=False):
     if complete:
         assert counts['pending'] == 0, f'Unreviewed files: {counts["pending"]}'
     for item in manifest.get('additional_review', []):
-        assert hashlib.sha256((ROOT / item['path']).read_bytes()).hexdigest() == item['sha256'], f'Additional reviewed asset changed: {item["path"]}'
-    manifest['status'] = 'Complete draft; not applied' if not counts['pending'] else 'In progress'
+        data = (subprocess.check_output(['git', 'show', f'{manifest["baseline"]}:{item["path"]}'], cwd=ROOT)
+                if archive else (ROOT / item['path']).read_bytes())
+        assert hashlib.sha256(data).hexdigest() == item['sha256'], f'Additional reviewed asset changed: {item["path"]}'
+    manifest['status'] = ('Applied editorial snapshot' if (OUT / 'application.json').exists()
+                          else 'Complete draft; not applied') if not counts['pending'] else 'In progress'
     if collect:
         temporary = OUT / 'manifest.tmp'
         temporary.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + '\n')
         temporary.replace(OUT / 'manifest.json')
-    print(json.dumps({'files': len(manifest['files']), **counts, 'live_source_hashes': 'unchanged'}, indent=2))
+    verification = {'git_baseline_hashes': 'verified; current live text not constrained'} if archive else {'live_source_hashes': 'unchanged'}
+    print(json.dumps({'files': len(manifest['files']), **counts, **verification}, indent=2))
     return manifest
 
 
@@ -94,5 +101,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--complete', action='store_true')
     parser.add_argument('--collect', action='store_true')
+    parser.add_argument('--archive', action='store_true', help='Validate the preserved proposal against its Git baseline after application')
     args = parser.parse_args()
-    check(args.complete, args.collect)
+    check(args.complete, args.collect, args.archive)

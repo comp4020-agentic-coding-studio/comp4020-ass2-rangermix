@@ -1,0 +1,308 @@
+{
+  "sourceCommit": "53a4403",
+  "slotMinutes": 120,
+  "breakMinutes": 10,
+  "contentTargetMinutes": 105,
+  "qualification": "Repository model, with a separately calculated title-restored column. Not observed delivery time or a complete lecture run sheet.",
+  "weeks": [
+    {
+      "week": "week-01",
+      "slides": 31,
+      "deckMinutes": 81.9,
+      "exerciseMinutes": 14,
+      "lectureWords": 1786,
+      "lectureMinutes": 12.8,
+      "totalMinutes": 95.9,
+      "shortfall": 9.1,
+      "byKind": {
+        "content": 18,
+        "impact": 6,
+        "table": 2,
+        "exercise": 2,
+        "diagram": 1,
+        "quote": 1,
+        "centered": 1
+      },
+      "omittedTitle": {
+        "kind": "banner",
+        "noteLines": 2,
+        "modelMinutes": 1.8
+      },
+      "titleRestoredModelMinutes": 97.7,
+      "titleRestoredShortfall": 7.3
+    },
+    {
+      "week": "week-02",
+      "slides": 31,
+      "deckMinutes": 81.1,
+      "exerciseMinutes": 24,
+      "lectureWords": 2205,
+      "lectureMinutes": 15.8,
+      "totalMinutes": 105.1,
+      "shortfall": -0.1,
+      "byKind": {
+        "content": 17,
+        "impact": 4,
+        "table": 4,
+        "exercise": 3,
+        "diagram": 1,
+        "hand": 1,
+        "centered": 1
+      },
+      "omittedTitle": {
+        "kind": "banner",
+        "noteLines": 1,
+        "modelMinutes": 1.4
+      },
+      "titleRestoredModelMinutes": 106.5,
+      "titleRestoredShortfall": -1.5
+    },
+    {
+      "week": "week-03",
+      "slides": 30,
+      "deckMinutes": 82,
+      "exerciseMinutes": 21,
+      "lectureWords": 2018,
+      "lectureMinutes": 14.4,
+      "totalMinutes": 103,
+      "shortfall": 2,
+      "byKind": {
+        "content": 19,
+        "table": 4,
+        "impact": 2,
+        "diagram": 1,
+        "exercise": 3,
+        "centered": 1
+      },
+      "omittedTitle": {
+        "kind": "banner",
+        "noteLines": 2,
+        "modelMinutes": 1.8
+      },
+      "titleRestoredModelMinutes": 104.8,
+      "titleRestoredShortfall": 0.2
+    },
+    {
+      "week": "week-04",
+      "slides": 30,
+      "deckMinutes": 80.9,
+      "exerciseMinutes": 15,
+      "lectureWords": 1294,
+      "lectureMinutes": 9.2,
+      "totalMinutes": 95.9,
+      "shortfall": 9.1,
+      "byKind": {
+        "content": 19,
+        "diagram": 3,
+        "table": 2,
+        "impact": 3,
+        "exercise": 2,
+        "centered": 1
+      },
+      "omittedTitle": {
+        "kind": "banner",
+        "noteLines": 2,
+        "modelMinutes": 1.8
+      },
+      "titleRestoredModelMinutes": 97.7,
+      "titleRestoredShortfall": 7.3
+    },
+    {
+      "week": "week-05",
+      "slides": 30,
+      "deckMinutes": 79.2,
+      "exerciseMinutes": 18,
+      "lectureWords": 1200,
+      "lectureMinutes": 8.6,
+      "totalMinutes": 97.2,
+      "shortfall": 7.8,
+      "byKind": {
+        "content": 19,
+        "impact": 4,
+        "table": 3,
+        "diagram": 1,
+        "exercise": 2,
+        "centered": 1
+      },
+      "omittedTitle": {
+        "kind": "banner",
+        "noteLines": 2,
+        "modelMinutes": 1.8
+      },
+      "titleRestoredModelMinutes": 99,
+      "titleRestoredShortfall": 6
+    },
+    {
+      "week": "week-06",
+      "slides": 31,
+      "deckMinutes": 83.4,
+      "exerciseMinutes": 15,
+      "lectureWords": 1426,
+      "lectureMinutes": 10.2,
+      "totalMinutes": 98.4,
+      "shortfall": 6.6,
+      "byKind": {
+        "content": 24,
+        "impact": 2,
+        "table": 2,
+        "exercise": 2,
+        "centered": 1
+      },
+      "omittedTitle": {
+        "kind": "banner",
+        "noteLines": 1,
+        "modelMinutes": 1.4
+      },
+      "titleRestoredModelMinutes": 99.8,
+      "titleRestoredShortfall": 5.2
+    },
+    {
+      "week": "week-07",
+      "slides": 31,
+      "deckMinutes": 82,
+      "exerciseMinutes": 14,
+      "lectureWords": 1264,
+      "lectureMinutes": 9,
+      "totalMinutes": 96,
+      "shortfall": 9,
+      "byKind": {
+        "content": 23,
+        "table": 2,
+        "impact": 3,
+        "exercise": 2,
+        "centered": 1
+      },
+      "omittedTitle": {
+        "kind": "banner",
+        "noteLines": 2,
+        "modelMinutes": 1.8
+      },
+      "titleRestoredModelMinutes": 97.8,
+      "titleRestoredShortfall": 7.2
+    },
+    {
+      "week": "week-08",
+      "slides": 33,
+      "deckMinutes": 86.1,
+      "exerciseMinutes": 17,
+      "lectureWords": 1462,
+      "lectureMinutes": 10.4,
+      "totalMinutes": 103.1,
+      "shortfall": 1.9,
+      "byKind": {
+        "content": 26,
+        "table": 2,
+        "impact": 1,
+        "exercise": 3,
+        "centered": 1
+      },
+      "omittedTitle": {
+        "kind": "banner",
+        "noteLines": 1,
+        "modelMinutes": 1.4
+      },
+      "titleRestoredModelMinutes": 104.5,
+      "titleRestoredShortfall": 0.5
+    },
+    {
+      "week": "week-09",
+      "slides": 33,
+      "deckMinutes": 87,
+      "exerciseMinutes": 17,
+      "lectureWords": 1926,
+      "lectureMinutes": 13.8,
+      "totalMinutes": 104,
+      "shortfall": 1,
+      "byKind": {
+        "content": 21,
+        "impact": 6,
+        "table": 2,
+        "diagram": 1,
+        "exercise": 2,
+        "centered": 1
+      },
+      "omittedTitle": {
+        "kind": "banner",
+        "noteLines": 1,
+        "modelMinutes": 1.4
+      },
+      "titleRestoredModelMinutes": 105.4,
+      "titleRestoredShortfall": -0.4
+    },
+    {
+      "week": "week-10",
+      "slides": 30,
+      "deckMinutes": 78.7,
+      "exerciseMinutes": 21,
+      "lectureWords": 1731,
+      "lectureMinutes": 12.4,
+      "totalMinutes": 99.7,
+      "shortfall": 5.3,
+      "byKind": {
+        "content": 20,
+        "impact": 2,
+        "exercise": 3,
+        "table": 3,
+        "diagram": 1,
+        "centered": 1
+      },
+      "omittedTitle": {
+        "kind": "banner",
+        "noteLines": 1,
+        "modelMinutes": 1.4
+      },
+      "titleRestoredModelMinutes": 101.1,
+      "titleRestoredShortfall": 3.9
+    },
+    {
+      "week": "week-11",
+      "slides": 29,
+      "deckMinutes": 78.5,
+      "exerciseMinutes": 24,
+      "lectureWords": 1932,
+      "lectureMinutes": 13.8,
+      "totalMinutes": 102.5,
+      "shortfall": 2.5,
+      "byKind": {
+        "content": 15,
+        "diagram": 2,
+        "table": 4,
+        "impact": 4,
+        "exercise": 3,
+        "centered": 1
+      },
+      "omittedTitle": {
+        "kind": "banner",
+        "noteLines": 2,
+        "modelMinutes": 1.8
+      },
+      "titleRestoredModelMinutes": 104.3,
+      "titleRestoredShortfall": 0.7
+    },
+    {
+      "week": "week-12",
+      "slides": 30,
+      "deckMinutes": 79.9,
+      "exerciseMinutes": 24,
+      "lectureWords": 2183,
+      "lectureMinutes": 15.6,
+      "totalMinutes": 103.9,
+      "shortfall": 1.1,
+      "byKind": {
+        "content": 16,
+        "diagram": 1,
+        "impact": 6,
+        "exercise": 3,
+        "table": 3,
+        "centered": 1
+      },
+      "omittedTitle": {
+        "kind": "banner",
+        "noteLines": 1,
+        "modelMinutes": 1.4
+      },
+      "titleRestoredModelMinutes": 105.3,
+      "titleRestoredShortfall": -0.3
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "date": "2026-09-18",
   "baseline": "2209428d55d3c47ce405dd81b67ab3d0b991a8ac",
-  "status": "Draft only; not applied",
+  "status": "Historical verification before application; see application.json",
   "files": 157,
   "edited_files": 79,
   "retained_files": 78,
@@ -64,9 +64,14 @@
     "Editorial review uses the existing research record, not fresh verification of each paper",
     "Substantive open decisions are recorded in reports/integration.md"
   ],
-  "artifacts": {
+  "artifacts_before_application": {
     "manifest.json": "3dd5b438afbb80aab307284d3ecb9322f5551bff2dcc1fd553158b8259a8898f",
     "comparison.html": "5a8969b6dd77ef086299205191679b2ee010fe16e5c5032bdf48a91028731a3f",
     "POLICY.md": "b19ef692a7ca07f48e6f5d973d28ee2cef6d5646d34e5bd26bce00b526df6118"
+  },
+  "current_archive_artifacts": {
+    "manifest.json": "6da7f9524ea485aa8f848224917580beea8d67a490ffbc43c60b41e3b7210e72",
+    "comparison.html": "260dea8c97006fdb9fce759b9d1af8f1819d381e453feb531873f1bff3500b20",
+    "POLICY.md": "56d758bcf10b682bd15f0d6adb11c49023eed1c977f4aea1587db38caa02b8c2"
   }
 }

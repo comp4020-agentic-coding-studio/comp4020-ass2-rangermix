@@ -49,7 +49,7 @@ def word_spans(before: str, after: str) -> tuple[list, list]:
     return a, b
 
 
-def build(allow_pending: bool) -> Path:
+def build(allow_pending: bool, archive: bool = False) -> Path:
     manifest = json.loads((PACKAGE / "manifest.json").read_text())
     baseline = manifest["baseline"]
     if not re.fullmatch(r"[0-9a-f]{40}", baseline):
@@ -69,7 +69,7 @@ def build(allow_pending: bool) -> Path:
         ).stdout.decode("utf-8")
         if digest(original) != entry["sha256_before"]:
             raise ValueError(f"Baseline hash does not match manifest: {path}")
-        if (ROOT / path).read_text() != original:
+        if not archive and (ROOT / path).read_text() != original:
             raise ValueError(f"Live source changed from baseline: {path}")
 
         draft = (PACKAGE / "draft" / path).read_text()
@@ -116,6 +116,8 @@ def build(allow_pending: bool) -> Path:
         "baseline": baseline, "date": manifest["date"], "files": files,
         "policy": (PACKAGE / "POLICY.md").read_text(),
         "counts": dict(counts), "edit_count": sum(len(item["edits"]) for item in files),
+        "archive": archive,
+        "application": json.loads((PACKAGE / "application.json").read_text()) if (PACKAGE / "application.json").exists() else None,
     }
     # JSON is data, never markup. In particular, a source </script> cannot end
     # the inert data block. The browser also renders every source via textContent.
@@ -130,16 +132,18 @@ def build(allow_pending: bool) -> Path:
     output.write_text(template.replace("__REVIEW_DATA__", encoded))
     print(f"Built {output.relative_to(ROOT)}: {len(files)} files, {counts['edited']} edited, "
           f"{counts['retained']} retained, {counts['pending']} pending, "
-          f"{payload['edit_count']} recorded proposals; live source matches {baseline[:7]}.")
+          f"{payload['edit_count']} recorded proposals; "
+          f"{'archived Git baseline verified' if archive else 'live source matches baseline'} {baseline[:7]}.")
     return output
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--allow-pending", action="store_true", help="Development only: include unfinished reviews")
+    parser.add_argument("--archive", action="store_true", help="Rebuild the historical comparison after applying the draft")
     args = parser.parse_args()
     try:
-        build(args.allow_pending)
+        build(args.allow_pending, args.archive)
     except (OSError, ValueError, KeyError, subprocess.CalledProcessError) as exc:
         print(f"Comparison build failed: {exc}", file=sys.stderr)
         sys.exit(1)
