@@ -75,5 +75,25 @@ also permits the deck stylesheet to set the intended 25.2-pixel caption size,
 rather than inheriting the 36-pixel slide body size. All 50 checks were repeated
 after these corrections.
 
-The user's `PROCESS.md` and existing patch remain unchanged. Deployment and
-remote check results will be recorded after the source checkpoint is pushed.
+The user's `PROCESS.md` and existing patch remain unchanged, checked against
+their starting SHA-256 hashes.
+
+## Deployment and remote verification
+
+Source checkpoint **f45deb92abb0894bd4d610dedef18c57f11b701d** was pushed to
+`main`. [GitHub Actions run 35421334978](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/actions/runs/35421334978)
+successfully built and deployed it, and its **Build and run the spec** step
+passed. The published site is
+[the course home page](https://comp4020-agentic-coding-studio.github.io/comp4020-ass2-rangermix/).
+
+All **50 browser checks** were then repeated against the public deployment:
+the same page and deck viewports, successful WebP decoding, matching captions
+and alt text, no clipped new figures, keyboard navigation and the home-to-lecture
+link. No browser console errors or failed HTTP responses were observed. The
+published week 3 phone view was inspected visually as well.
+
+The workflow as a whole is **not green**: its separate process-evidence step
+still rejects the placeholder commit references `a1b2c3d` and `e4f5a6b` in the
+unchanged `PROCESS.md`. The later secret and course-key scan steps were skipped
+after that failure. This is not a failure of the image build or deployment,
+and those skipped scans are not claimed as passed.
