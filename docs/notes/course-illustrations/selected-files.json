@@ -1,0 +1,106 @@
+[
+  {
+    "id": "home",
+    "file": "src/assets/images/illustrations/home.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3707999,
+    "sha256": "6d03ff6a5fe43a8c1423bbb8b9bd6c14b034aa7d0fe99f396bbccb9f5ffaaef0"
+  },
+  {
+    "id": "week-01",
+    "file": "src/assets/images/illustrations/week-01.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3691408,
+    "sha256": "818197feedd8d511a1426a08010ec907ff7287ad03cc607c974d7fe3f1f15329"
+  },
+  {
+    "id": "week-02",
+    "file": "src/assets/images/illustrations/week-02.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3544633,
+    "sha256": "a08f5c881d7a199281a0cd3711d4aa27071c91ed0238dbf3cecf847543987b3a"
+  },
+  {
+    "id": "week-03",
+    "file": "src/assets/images/illustrations/week-03.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3861912,
+    "sha256": "4ed597d8fd3146f6edfe6f58f05cfb44b862a2622d3352b8452c04d273fc8625"
+  },
+  {
+    "id": "week-04",
+    "file": "src/assets/images/illustrations/week-04.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3763308,
+    "sha256": "08c348fd38c4e275c93d03bc0952d17beeb2416c97c6ac7dc6fd104e8ae496b0"
+  },
+  {
+    "id": "week-05",
+    "file": "src/assets/images/illustrations/week-05.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3483074,
+    "sha256": "89aa0bb3b81eef53b52360f8dd60a86b31e09f757913d80362d7d2d549bcfca1"
+  },
+  {
+    "id": "week-06",
+    "file": "src/assets/images/illustrations/week-06.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3500656,
+    "sha256": "c7e57d7f8ef2f0f2213065086be6e4017f675b490349a770b5e8a09bd0c894e2"
+  },
+  {
+    "id": "week-07",
+    "file": "src/assets/images/illustrations/week-07.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3482159,
+    "sha256": "c9c01d7452caaa474f855ecf86557410f6c98718c70e2d9a0771851b21145abe"
+  },
+  {
+    "id": "week-08",
+    "file": "src/assets/images/illustrations/week-08.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3280571,
+    "sha256": "1e9be73ae84efe8158115ead40b1aa5a711a9b4212a8696d329bca4245b247e6"
+  },
+  {
+    "id": "week-09",
+    "file": "src/assets/images/illustrations/week-09.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3708401,
+    "sha256": "27489063bb116c57d48e703e5886a007f4c9a928736189edd0399a5a92fbb71f"
+  },
+  {
+    "id": "week-10",
+    "file": "src/assets/images/illustrations/week-10.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3638084,
+    "sha256": "70c720ab15110e676e92fcdd2bc2ccb737cc691fb36a09d5d06fa5fe3b78260e"
+  },
+  {
+    "id": "week-11",
+    "file": "src/assets/images/illustrations/week-11.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 3592235,
+    "sha256": "42e3239b7bc916efbf1aea3cb0f4f414dbe618d146eae55f195bfb1ad8c17e69"
+  },
+  {
+    "id": "week-12",
+    "file": "src/assets/images/illustrations/week-12.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 4046693,
+    "sha256": "31792f58aa5baeef80e91486adbd6f6675a5a7a4b4098d9d6ec5eeb6b27818f1"
+  }
+]

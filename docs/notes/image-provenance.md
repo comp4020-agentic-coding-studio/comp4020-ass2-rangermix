@@ -1,10 +1,11 @@
 # Image provenance
 
-Every photograph on this site, where it came from, and exactly what its source
-record said about reuse. An image is a claim like any other: the archive is its
-citation and the licence field is its permission, so both get written down.
+The site's archive images and generated illustrations, with their origins
+kept distinct. For archive material, the source record and its reuse terms
+are written down. Generated scenes are labelled as fictional and have their
+prompts recorded below; they are not evidence of an observed exchange.
 
-Nothing is hotlinked. Each file is fetched with `scripts/commons.py`, committed
+Nothing is hotlinked. Each archive file is fetched with `scripts/commons.py`, committed
 under `src/assets/images/sourced/`, and rendered by `src/components/Plate.astro`,
 which prints the source line under the picture where a reader can see it.
 
@@ -37,7 +38,45 @@ author is named in that line as the licence requires. It is also a modern
 drawing of an old code rather than a historical scan, and the caption dates it
 accordingly.
 
-## Anything not clearly free
+## Generated course illustrations
+
+Thirteen original images were generated on **19 September 2026** with the
+built-in image-generation tool for this repository. No stock photo, archive
+image, artist reference or internet meme was supplied to the generator.
+They are fictional editorial scenarios and visual metaphors, not photographs
+or reproductions of research materials. No public-domain or Creative Commons
+status is asserted for them.
+
+The originals are committed under `src/assets/images/illustrations/`.
+`CourseIllustration.astro` labels each as a fictional scene and renders
+responsive WebP versions through Astro. Alt text describes the visible action;
+the separate HTML caption supplies dialogue or the joke. The hero is eager
+loaded, and the lecture/deck images are lazy loaded.
+
+| File | Shared use | Subject |
+| --- | --- | --- |
+| `home.png` | Home | The help desk's impressive, empty manual |
+| `week-01.png` | Week 1 lecture and deck | A passing greeting and time to answer |
+| `week-02.png` | Week 2 lecture and deck | An exchange before its interpretation |
+| `week-03.png` | Week 3 lecture and deck | Checking a hint beside an open window |
+| `week-04.png` | Week 4 lecture and deck | A diary check and a hold token |
+| `week-05.png` | Week 5 lecture and deck | The cost of a wrong-room message |
+| `week-06.png` | Week 6 lecture and deck | Small demands competing for calendar space |
+| `week-07.png` | Week 7 lecture and deck | Removing an optional commitment |
+| `week-08.png` | Week 8 lecture and deck | One email request beside institutional paperwork |
+| `week-09.png` | Week 9 lecture and deck | Passing on a topic in a café queue |
+| `week-10.png` | Week 10 lecture and deck | Rae's request, with the response still unknown |
+| `week-11.png` | Week 11 lecture and deck | Both partners editing the agreement |
+| `week-12.png` | Week 12 lecture and deck | A usable manual with corrections still open |
+
+The exact request for each image is the `commonPrompt` followed by that row's
+`scene` in [the prompt set](course-illustrations/prompts.json).
+[The selected-file manifest](course-illustrations/selected-files.json) records
+dimensions and SHA-256 hashes. All thirteen were inspected individually before
+integration; no image was cropped, retouched or composited after generation.
+The build performs resizing and format conversion for delivery.
+
+## Archive material not clearly free
 
 None so far. If one is ever added, it goes in this table with its real status
 written plainly --- `licence not verified`, or `likely in copyright` --- and

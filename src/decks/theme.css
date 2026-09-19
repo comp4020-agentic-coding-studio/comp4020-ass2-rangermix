@@ -51,6 +51,28 @@
   text-align: center;
 }
 
+/* Scenario art keeps its full composition. Reserve room for a heading and
+   the HTML caption rather than cropping either to fill the slide. */
+.reveal .course-illustration {
+  margin: 0.5rem auto 0;
+}
+
+.reveal .course-illustration img {
+  width: auto !important;
+  max-width: 100% !important;
+  height: 440px !important;
+  object-fit: contain;
+  margin-inline: auto;
+}
+
+.reveal .course-illustration figcaption {
+  max-width: 48em;
+  margin-inline: auto;
+  font-size: 0.7em;
+  line-height: 1.4;
+  text-align: center;
+}
+
 /* Margin notes can't float into a margin a slide doesn't have. */
 .reveal .margin-note {
   float: none;

@@ -218,9 +218,9 @@
   margin: 0;
 }
 
-/* At desktop the note leaves the column for the margin beside the paragraph
-   it follows, where a reviewer's pencil would put it. */
-@media (min-width: 75rem) {
+/* Float only when the centred article and its side gutter leave room for the
+   whole note. At ordinary laptop widths, keep the note in the text column. */
+@media (min-width: 100rem) {
   .margin-note {
     float: inline-end;
     clear: inline-end;

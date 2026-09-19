@@ -1,0 +1,72 @@
+{
+  "generator": "Built-in image_gen tool",
+  "date": "2026-09-19",
+  "commonPrompt": "Create one original landscape editorial illustration, 1536 by 1024, for a fictional university course about undocumented social conventions. Art direction: a dry, observant newspaper cartoon drawn with irregular black fountain-pen strokes, fine loose crosshatching, warm ivory paper (#f4efdf), restrained flat ochre-gold (#c6a04b), with a very small amount of muted grey-green. A human hand is visible in the line quality; avoid polished vector clip-art, glossy 3D, photorealism, gradients, decorative filler and generic motivational imagery. Compose a single readable scene (unless the scene explicitly requests two panels), with a clear visual idea, distinct ordinary adult people and believable anatomy. University life, understated expressions, no hero/villain coding and no clinical or neurotype stereotypes. Keep essential action in the central 85% with breathing room. Draw NO lettering, words, speech bubbles, captions, logos, watermarks, numbers or fake handwriting: any necessary caption will be HTML outside the image. Papers and screens may show sparse abstract rules/boxes only. The image is an invented scenario or metaphor, never a depiction of a research study. Scene: ",
+  "images": [
+    {
+      "id": "home",
+      "file": "src/assets/images/illustrations/home.png",
+      "scene": "At an old university service counter, a student and a helpful clerk look together at an enormous open ring binder whose pages are completely blank. Behind the clerk are shelves full of tidy reference binders with blank spines. Another student waits with a small stack of forms. The desk is functional and slightly absurd; nobody is embarrassed or foolish. The joke is the impressive administrative apparatus and the missing instructions. Medium-wide three-quarter composition, binder prominent in the foreground, people warmly observed."
+    },
+    {
+      "id": "week-01",
+      "file": "src/assets/images/illustrations/week-01.png",
+      "scene": "A two-panel editorial diptych with one thin hand-drawn vertical divider and no labels. The SAME two adult students appear in both panels, one with short dark curly hair and an ochre jacket, the other with light straight hair and a grey-green cardigan. Left: they pass in opposite directions in a campus corridor, exchange a small friendly wave and keep walking; one carries a book. Right: they have stopped and are seated on a quiet campus bench, turned towards each other, giving the conversation time. No sadness, no diagnosis, no suggestion one kind of conversation is superior. Clear contrast in setting and pace, same respectful faces."
+    },
+    {
+      "id": "week-02",
+      "file": "src/assets/images/illustrations/week-02.png",
+      "scene": "Over-the-shoulder view of a student making a field note after a tutorial. In the midground a tutor at a table turns toward a small group of three adult students, one with a raised hand. In the foreground the observer's open notebook has four large ruled boxes, the first holding a simple small sketch of the tutor addressing the group and the remaining boxes mostly empty. The pen pauses above an empty box. Nothing reveals thoughts or assigns personality labels. The scene distinguishes what can be seen from what is still to be inferred. No spy imagery; an ordinary open class, no camera."
+    },
+    {
+      "id": "week-03",
+      "file": "src/assets/images/illustrations/week-03.png",
+      "scene": "Two adult students work at a library table beside a visibly open casement window. A breeze lifts the corner of a loose sheet. The student farther from the window pulls an ochre cardigan closer and glances toward the window; the other turns from their notebook, hand resting near the window latch but has not closed it yet. The moment is an unanswered question, not mind-reading. Outside is a simple autumn campus tree. Quiet gentle visual comedy in a draught carrying the message that nobody has actually said. No arrows or speech bubbles."
+    },
+    {
+      "id": "week-04",
+      "file": "src/assets/images/illustrations/week-04.png",
+      "scene": "Two adult friends stand at a campus café counter. One has just asked something and waits comfortably holding a takeaway cup. The other is calmly checking an open small weekly diary, one finger on its blank ruled calendar grid and the other hand lightly raised to signal a moment. Their postures show an ordinary unhurried pause, not embarrassment or impatience. An oversized wall clock in the background has hands and plain tick marks but no numbers; it provides a restrained comic echo of the course's concern with timing. Ochre diary, black pen work."
+    },
+    {
+      "id": "week-05",
+      "file": "src/assets/images/illustrations/week-05.png",
+      "scene": "Two adult classmates stand at the foot of a university stairwell. The first holds a phone showing a simple abstract map with a room marker and gestures apologetically toward the stairs. The second has a backpack and looks toward the route they now need to take. Two flights of stairs rise clearly behind them. Nobody is angry or mocked; the first person is taking responsibility and will walk with the other. The visual joke is that a corrected message has not removed the stairs. Keep the phone secondary and geometry of stairs plausible, no signs or text."
+    },
+    {
+      "id": "week-06",
+      "file": "src/assets/images/illustrations/week-06.png",
+      "scene": "A slightly absurd overhead editorial still life: a large paper weekly planner on a desk, its grid without numbers or words, is already almost full of small ochre appointment cards. Three different adult hands from three edges each try to place one more little card into the same tiny remaining square. A pencil and mug sit outside the planner. All individual cards look modest; together they visibly cannot fit. No people in distress, no batteries or diagnostic symbols, no personal failing. Strong composition, simple clean shapes, hand-drawn line texture."
+    },
+    {
+      "id": "week-07",
+      "file": "src/assets/images/illustrations/week-07.png",
+      "scene": "A quiet overhead desk scene, paired visually with a calendar but peaceful. An adult hand lifts one ochre appointment card off a paper planner, leaving a clear large empty space. A closed laptop is pushed to the far edge; a mug, a small plant and a simple folded note are nearby. A comfortable empty chair is partly visible. The empty space is the subject. This is an illustration of reducing demands, not a guaranteed cure and not a joke about burnout. Restrained, dignified, spacious, soft ink hatching, no clocks, no text."
+    },
+    {
+      "id": "week-08",
+      "file": "src/assets/images/illustrations/week-08.png",
+      "scene": "A student at a university desk is composing a short email on a laptop: the screen shows one compact block of abstract horizontal rules and a single small outlined question-mark-free button, no readable text. Beside the laptop towers an absurd but physically plausible stack of institutional binders, forms and stamped envelopes; blank spines, no lettering. The student looks matter-of-fact and capable. The comic contrast is one small request versus a mountain of procedure. A tiny ochre desk lamp lights the keyboard, clean side view with plenty of paper background."
+    },
+    {
+      "id": "week-09",
+      "file": "src/assets/images/illustrations/week-09.png",
+      "scene": "Two adult friends stand side by side in a campus coffee queue. One makes a small open-palm 'let's leave that' gesture at waist height; the other accepts it with a relaxed nod and gestures toward the pastry display. Both remain comfortably engaged, no rejection or distress. The topic has changed and the queue is still moving. In the background a café worker and two cups, loosely suggested. Warm everyday scene, ochre clothing accents, no hearts, no thought bubbles, no caricatured emotions."
+    },
+    {
+      "id": "week-10",
+      "file": "src/assets/images/illustrations/week-10.png",
+      "scene": "A calm workplace conversation viewed from the side. Rae, an adult in simple ochre work clothes, indicates a blank notepad with a pen while asking a supervisor for something in writing. The supervisor listens, hands resting on the table; do NOT depict them handing over a completed checklist or agreeing, because the outcome is unknown. Rae's plain closed personal folder remains inside an open tote by the chair, away from the supervisor, with no lock or medical symbols. Emphasize the modest concrete request and the boundary around personal information. Respectful, quiet, no joke at Rae's expense."
+    },
+    {
+      "id": "week-11",
+      "file": "src/assets/images/illustrations/week-11.png",
+      "scene": "Two adult students sit across the corner of a library table, both actively revising ONE shared sheet of paper. Each has their own pen: one ochre pen and one dark pen. The sheet shows a few simple ruled rows and two different small correction marks, not lettering. One student points to a row while the other makes a change, with a second pen poised to contribute. Their separate notebooks remain on their respective sides. Equal visual weight, ordinary distinct people, collaborative but not cheesy smiling. The practical visual point: both sides get a pen."
+    },
+    {
+      "id": "week-12",
+      "file": "src/assets/images/illustrations/week-12.png",
+      "scene": "An editor's workbench holds a thick open manual in a ring binder, visibly useful and much handled, with sparse ruled pages, handwritten-looking correction strokes but absolutely NO legible or fake words. Several ochre paper tabs protrude. One replacement page and a few unresolved small sticky notes lie beside it. A hand with a pen is still revising a clause, while a finished closed copy sits ready nearby. No triumph or checkmark finale. The quiet joke is publication with known issues: a working document, not a flawless monument. Warm ivory space, black crosshatching, carefully readable objects."
+    }
+  ]
+}

@@ -1,5 +1,12 @@
 # Decks for weeks 3--12, and the illustration pass
 
+**Historical note, updated 19 September 2026:** the no-raster direction below
+describes the original pass. The user's subsequent request for more scenarios
+and visual jokes supersedes that restriction. The diagrams and archive plates
+remain; thirteen original generated illustrations now accompany them. See
+`course-illustrations/` and `image-provenance.md` for prompts, provenance and
+verification of the added work.
+
 Working state for two jobs the original plan (`implementation-plan.md`, tasks
 18--19) scoped small and the user asked to widen:
 

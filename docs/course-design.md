@@ -307,6 +307,17 @@ documents may accompany them when they explain a concrete comparison; source
 and licence records live in `docs/notes/image-provenance.md`. The satire is
 aimed at the protocol, never the student.
 
+Original scenario illustrations also accompany the home page and every week,
+following the user's 19 September request for more related imagery. These are
+AI-generated editorial drawings in ink, warm paper and restrained ochre, with
+captions written as HTML. They show invented campus exchanges and visual jokes
+about administrative procedure; they do not depict research participants or
+establish a finding. Each week's page and deck share one asset, alt text and
+caption through `CourseIllustration.astro` and `src/data/illustrations.ts`.
+The diagrams still explain mechanisms; the scenes supply a setting and people.
+Prompts, selected-file hashes and checks live in
+`docs/notes/course-illustrations/`. The week 10 register break has no added art.
+
 `pnpm check:evidence` rejects the starter artwork, so the hero and social card
 must be replaced or deliberately removed.
 

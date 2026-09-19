@@ -7,6 +7,7 @@ import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import { withBase } from "astro-theme-university/url";
 import SequenceDiagram from "../components/sketch/SequenceDiagram.astro";
 import StateMachine from "../components/sketch/StateMachine.astro";
+import CourseIllustration from "../components/CourseIllustration.astro";
 import { courseMeta } from "../course-config";
 import { labMeeting, lectureMeeting } from "../data/timetable";
 import { sessionLabels, siteConfig } from "../site-config";
@@ -37,16 +38,7 @@ const parts: { name: string; summary: string; weeks: CollectionEntry<"lectures">
     <blockquote class="home-thesis">
       <p>The protocol is undocumented, not obvious; a minority implementation is not a broken one.</p>
     </blockquote>
-    <SequenceDiagram
-      actors={["A", "B"]}
-      seed="home handshake"
-      caption="The opening handshake, as week 1 specifies it. The reply is a token, not an answer."
-      messages={[
-        { from: 0, to: 1, label: "How are you?" },
-        { from: 1, to: 0, label: "Good, you?", note: "not a status report", gold: true },
-        { from: 0, to: 1, label: "Yeah, good." },
-      ]}
-    />
+    <CourseIllustration id="home" surface="hero" />
   </div>
 
   <h2>What this course is</h2>
@@ -62,6 +54,17 @@ const parts: { name: string; summary: string; weeks: CollectionEntry<"lectures">
     Every week ends with scripts you can say, timings you can check, and lines
     you can test yourself against.
   </p>
+
+  <SequenceDiagram
+    actors={["A", "B"]}
+    seed="home handshake"
+    caption="The opening handshake, as week 1 specifies it. The reply is a token, not an answer."
+    messages={[
+      { from: 0, to: 1, label: "How are you?" },
+      { from: 1, to: 0, label: "Good, you?", note: "not a status report", gold: true },
+      { from: 0, to: 1, label: "Yeah, good." },
+    ]}
+  />
 
   <h2>Who it is for</h2>
   <p>

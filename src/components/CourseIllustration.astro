@@ -1,0 +1,58 @@
+---
+import { Image } from "astro:assets";
+import { illustrations, type IllustrationId } from "../data/illustrations";
+
+interface Props {
+  id: IllustrationId;
+  surface?: "page" | "deck" | "hero";
+}
+
+const { id, surface = "page" } = Astro.props;
+const { src, alt, caption } = illustrations[id];
+const sizes = surface === "deck"
+  ? "(min-aspect-ratio: 16/9) 92vh, 52vw"
+  : "(min-width: 60rem) 48rem, 92vw";
+---
+
+<figure class="course-illustration" data-illustration={id}>
+  <Image
+    src={src}
+    alt={alt}
+    widths={[480, 768, 1024, 1536].filter((width) => width <= src.width)}
+    sizes={sizes}
+    format="webp"
+    quality={82}
+    loading={surface === "hero" ? "eager" : "lazy"}
+    fetchpriority={surface === "hero" ? "high" : undefined}
+    decoding="async"
+  />
+  <figcaption><span class="illustration-label">Fictional scene.</span> {caption}</figcaption>
+</figure>
+
+<style>
+  .course-illustration {
+    margin: var(--at-spacing-xl) 0;
+  }
+
+  .course-illustration :global(img) {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* The theme lets bare mobile images bleed past the article. This figure
+       keeps the whole composition aligned with its caption. */
+    margin-inline: 0;
+    border: 1.5px solid var(--nt-graphite);
+  }
+
+  .course-illustration :global(figcaption) {
+    margin-block-start: var(--at-spacing-sm);
+    color: var(--at-text-secondary);
+    font-size: var(--at-font-size-sm);
+    line-height: 1.5;
+  }
+
+  .illustration-label {
+    font-family: var(--nt-mono);
+    font-size: 0.85em;
+  }
+</style>
