@@ -318,6 +318,17 @@ The diagrams still explain mechanisms; the scenes supply a setting and people.
 Prompts, selected-file hashes and checks live in
 `docs/notes/course-illustrations/`. The week 10 register break has no added art.
 
+The user's follow-up on the same day asks for real web memes and photographs
+as well. Twelve existing images accompany the lecture topics, including
+xkcd comics, licensed lolcat variants, a historical poster and photographs of
+ordinary instructions. The originals keep their colour, lettering and panels;
+the course's captions explain the comparison without turning the image into
+research evidence. `WebImage.astro` and `src/data/web-images.ts` share the page
+and deck presentation, with visible creator, source and licence links. Long
+comics have a text version on the lecture page. Original-file hashes and
+source records live in `docs/notes/web-images/`. This supersedes the original
+no-imported-memes direction in `docs/notes/decks-and-art.md`.
+
 `pnpm check:evidence` rejects the starter artwork, so the hero and social card
 must be replaced or deliberately removed.
 

@@ -1,8 +1,8 @@
 # Image provenance
 
-The site's archive images and generated illustrations, with their origins
-kept distinct. For archive material, the source record and its reuse terms
-are written down. Generated scenes are labelled as fictional and have their
+The site's archive images, web memes and generated illustrations, with their
+origins kept distinct. For sourced material, the source record and its reuse
+terms are written down. Generated scenes are labelled as fictional and have their
 prompts recorded below; they are not evidence of an observed exchange.
 
 Nothing is hotlinked. Each archive file is fetched with `scripts/commons.py`, committed
@@ -76,7 +76,47 @@ dimensions and SHA-256 hashes. All thirteen were inspected individually before
 integration; no image was cropped, retouched or composited after generation.
 The build performs resizing and format conversion for delivery.
 
-## Archive material not clearly free
+## Web memes, comics and photographs — 19 September 2026
+
+The user's follow-up requested real memes and images found through web search,
+while keeping the generated scenes. Twelve existing images now have 25
+placements: one per lecture and deck, plus *Standards* on the home page.
+
+The [source manifest](web-images/sources.json) records original source pages,
+download URLs, creator credits, licence fields, retrieval dates, dimensions,
+byte counts and SHA-256 hashes. The originals are committed unchanged under
+`src/assets/images/web/`. Astro handles responsive resizing, EXIF orientation
+and WebP delivery. Clicking a figure opens its full-size local original.
+
+| Image | Placement | Creator / source | Reuse terms |
+| --- | --- | --- | --- |
+| Pull pictogram on a door | Week 1 | [Alastair Cook / Commons](https://commons.wikimedia.org/wiki/File:Pull_pushpullsigns_com.jpg) | CC BY-SA 3.0 |
+| *Ten Thousand* | Week 2 | [Randall Munroe / xkcd](https://xkcd.com/1053/) | CC BY-NC 2.5 |
+| I can has cheezburger? | Week 3 | [Or Hiltch / Commons](https://commons.wikimedia.org/wiki/File:I_can_has_cheezburger.jpg) | CC BY 2.0 |
+| Pedestrian crossing WAIT sign | Week 4 | [Secretlondon / Commons](https://commons.wikimedia.org/wiki/File:Pedestrian_crossing_WAIT_sign.jpg) | CC BY-SA 4.0 |
+| Rubber duck assisting with debugging | Week 5 | [Tom Morris / Commons](https://commons.wikimedia.org/wiki/File:Rubber_duck_assisting_with_debugging.jpg) | CC BY-SA 3.0 |
+| If not broken, why fix it? | Week 6 | [Doc Tropics; caption by Microchip08 / Commons](https://commons.wikimedia.org/wiki/File:Aalolcat_notbroken.jpg) | CC BY-SA 3.0 |
+| *Keep Calm and Carry On* | Week 7 | [UK Government / Commons](https://commons.wikimedia.org/wiki/File:Keep-calm-and-carry-on-scan.jpg) | Public domain, as recorded by the source |
+| *Email Reply* | Week 8 | [Randall Munroe / xkcd](https://xkcd.com/1873/) | CC BY-NC 2.5 |
+| May I join you? | Week 9 | [Stefano Mortellaro; caption by Iliev / Commons](https://commons.wikimedia.org/wiki/File:Lolcat_May_I_Join_You.jpg) | CC BY 2.0 |
+| Do-not-disturb hanger | Week 10 | [Phrontis / Commons](https://commons.wikimedia.org/wiki/File:SignDoNotDisturb_res.jpg) | CC BY-SA 3.0 |
+| *Standards* | Home and week 11 | [Randall Munroe / xkcd](https://xkcd.com/927/) | CC BY-NC 2.5 |
+| *Wisdom of the Ancients* | Week 12 | [Randall Munroe / xkcd](https://xkcd.com/979/) | CC BY-NC 2.5 |
+
+[xkcd's own reuse page](https://xkcd.com/license.html) permits copying its comics
+noncommercially with attribution and a link back. This is a noncommercial
+student course site. These third-party assets retain their respective terms;
+their inclusion does not relicense them as course-authored work. The three
+lolcats are existing licensed variants, not the original photographs of every
+meme format. None was generated for this site.
+
+`WebImage.astro` and `src/data/web-images.ts` share the alt text, commentary,
+creator, source and linked licence across page and slide. Longer comics have
+expandable text versions on pages. Course captions are commentary, not part
+of the original image. The week 10 protected passage has no inserted images.
+See [the implementation and verification record](web-images/README.md).
+
+## Sourced material with unresolved reuse terms
 
 None so far. If one is ever added, it goes in this table with its real status
 written plainly --- `licence not verified`, or `likely in copyright` --- and

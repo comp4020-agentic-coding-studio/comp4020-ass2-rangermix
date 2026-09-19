@@ -14,7 +14,7 @@ Considered a page of meme links, replacing the generated drawings, and placing o
 | 6 | “If not broken, y iz u fixing?” lolcat | Who requested the change and who benefits |
 | 7 | Scan of the 1939 *Keep Calm and Carry On* poster | An instruction to continue is missing a stopping rule |
 | 8 | xkcd, *Email Reply* | Checking what a message actually asks before paying its social cost |
-| 9 | “I can joeen u too, plz?” lolcat | An invitation leaves room for an answer |
+| 9 | “I can joeen u too, plz?” lolcat | Asking to join leaves room for an answer |
 | 10 | Photograph of a hotel do-not-disturb hanger | A request that does not disclose a reason |
 | 11 | xkcd, *Standards* | A local agreement need not become a universal standard |
 | 12 | xkcd, *Wisdom of the Ancients* | A useful record needs the resolution, not only the problem |

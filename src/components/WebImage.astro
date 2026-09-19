@@ -1,0 +1,83 @@
+---
+import { Image } from "astro:assets";
+import { webImages, type WebImageId } from "../data/web-images";
+
+interface Props {
+  id: WebImageId;
+  surface?: "page" | "deck";
+}
+
+const { id, surface = "page" } = Astro.props;
+const item = webImages[id];
+const { src, alt, caption, title, author, source, licence, licenceUrl } = item;
+const transcript = "transcript" in item ? item.transcript : undefined;
+const narrow = src.width / src.height < 1.2;
+const pageWidth = Math.min(src.width, narrow ? 560 * src.width / src.height : 864);
+const widths = [...new Set([320, 480, 768, 1024, 1600, src.width])]
+  .filter((width) => width <= Math.min(1600, src.width)).sort((a, b) => a - b);
+const sizes = surface === "deck"
+  ? narrow ? "(min-aspect-ratio: 16/9) 80vh, 45vw" : "(min-aspect-ratio: 16/9) 145vh, 82vw"
+  : `(min-width: 60rem) ${Math.round(pageWidth)}px, 92vw`;
+---
+
+<figure class:list={["web-image", { "web-image-narrow": narrow }]} data-web-image={id} style={`--web-image-width: ${pageWidth}px`}>
+  <a class="web-image-link" href={src.src} aria-label={`View full-size image: ${title}`}>
+    <Image src={src} alt={alt} width={Math.min(1600, src.width)} widths={widths} sizes={sizes} format="webp" quality={90} loading="lazy" decoding="async" />
+  </a>
+  <figcaption>
+    <span class="web-image-commentary">{caption}</span>
+    <span class="web-image-credit">
+      <a href={source}>{title}</a> — {author}.{" "}
+      <a href={licenceUrl}>{licence}</a>.
+    </span>
+    {surface === "page" && transcript && (
+      <details class="web-image-transcript">
+        <summary>Read the comic as text</summary>
+        {transcript.map((paragraph) => <p data-quoted>{paragraph}</p>)}
+      </details>
+    )}
+  </figcaption>
+</figure>
+
+<style>
+  .web-image {
+    margin: var(--at-spacing-xl) 0;
+  }
+
+  .web-image-link {
+    display: block;
+    width: min(100%, var(--web-image-width));
+    margin-inline: auto;
+  }
+
+  .web-image-link :global(img) {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border: 1.5px solid var(--nt-graphite);
+  }
+
+  .web-image :global(figcaption) {
+    margin-block-start: var(--at-spacing-sm);
+    color: var(--at-text-secondary);
+    font-size: var(--at-font-size-sm);
+    line-height: 1.5;
+  }
+
+  .web-image-credit {
+    display: block;
+    margin-block-start: 0.5em;
+    font-size: 0.9em;
+  }
+
+  .web-image-transcript {
+    margin-block-start: 0.75em;
+  }
+
+  .web-image-transcript summary {
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+</style>

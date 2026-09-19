@@ -1,0 +1,62 @@
+[
+  {
+    "week": 1,
+    "id": "pull-sign",
+    "heading": "Instructions included"
+  },
+  {
+    "week": 2,
+    "id": "ten-thousand",
+    "heading": "Apparently, everyone knows"
+  },
+  {
+    "week": 3,
+    "id": "cheezburger",
+    "heading": "The payload is lunch"
+  },
+  {
+    "week": 4,
+    "id": "wait-sign",
+    "heading": "A hold token with a light"
+  },
+  {
+    "week": 5,
+    "id": "debugging-duck",
+    "heading": "The duck cannot accept your apology"
+  },
+  {
+    "week": 6,
+    "id": "not-broken",
+    "heading": "Who wants this changed?"
+  },
+  {
+    "week": 7,
+    "id": "keep-calm",
+    "heading": "Where is the stopping rule?"
+  },
+  {
+    "week": 8,
+    "id": "email-reply",
+    "heading": "Does this need a reply?"
+  },
+  {
+    "week": 9,
+    "id": "join-you",
+    "heading": "Leave room for the answer"
+  },
+  {
+    "week": 10,
+    "id": "do-not-disturb",
+    "heading": "The request can stand on its own"
+  },
+  {
+    "week": 11,
+    "id": "standards",
+    "heading": "One more standard"
+  },
+  {
+    "week": 12,
+    "id": "wisdom-of-the-ancients",
+    "heading": "Please include the resolution"
+  }
+]

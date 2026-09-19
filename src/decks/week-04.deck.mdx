@@ -3,6 +3,7 @@ title: "NT 101, Week 4: Latency and Turn-Taking"
 description: "The week 4 lecture deck: the protocol's clock, the timeout nobody published, the experiment that set the gap on purpose, and the hold token."
 ---
 
+import WebImage from "../components/WebImage.astro";
 import CourseIllustration from "../components/CourseIllustration.astro";
 import TimingLine from "../components/sketch/TimingLine.astro";
 import SequenceDiagram from "../components/sketch/SequenceDiagram.astro";
@@ -408,6 +409,16 @@ The gap the listener would have read is no longer empty.
 
 ```notes
 - These scripts are the course's proposals. Filling the gap gives the listener something besides silence to interpret; Thursday's lab tests whether it helps.
+```
+
+---
+
+## A hold token with a light
+
+<WebImage id="wait-sign" surface="deck" />
+
+```notes
+- A visible acknowledgement lets someone distinguish waiting from a lost request. A conversational hold token is an analogy, not a guarantee about how a crossing works or how a person will respond.
 ```
 
 ---
