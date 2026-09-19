@@ -1,4 +1,4 @@
-# Prompts and results --- design and build (13--18 September 2026)
+# Prompts and results --- design, build and review (13--19 September 2026)
 
 A curated record of the sessions that made this course: each prompt as it was
 typed, a trimmed version of what came back, and the commits it produced. It is
@@ -15,17 +15,22 @@ a draft of it.
   and then gives a new instruction, like section 4's, is kept. A slash
   command's clarifying answer is kept when it changed what got built, as
   section 3's `/comp4020:ship` did. A line Claude Code inserts on resume isn't
-  a prompt either.
-- **Timestamps are when each prompt was sent**, read from Claude Code's session
-  transcripts rather than estimated, in Canberra time (AEST, UTC+10; daylight
-  saving hadn't started).
+  a prompt either. Tool inventories and automatically supplied workspace
+  context are also omitted.
+- **Timestamps are those recorded with the prompts**, read from Claude Code's
+  session transcripts for sections 1--8 and the Codex task transcript for
+  section 9, in Canberra time (AEST, UTC+10; daylight saving hadn't started).
 - **Responses are curated** --- cut to the decisions and results, not the tool
   output.
-- **Every hash below comes from `git log`**, not from memory. The work's full
-  range is
+- **Every hash below comes from `git log`**, not from memory. The original
+  build range is
   [`abf69e8...849a75d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/compare/abf69e8...849a75d);
-  this log's own commits follow it. Sections 1 and 2 predate that range.
-- **The work ran across six Claude Code sessions.** Section 1 is the design
+  later logging, timetable and revision commits are linked under their prompts.
+  Sections 1 and 2 predate that range. The GPT-6 changes in section 9 span
+  [`9489688...2b0a84c`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/compare/9489688...2b0a84c),
+  followed by this log update.
+- **Sections 1--8 cover six Claude Code sessions; section 9 covers one Codex
+  session using GPT-6.** Section 1 is the design
   session (`cacd7730`), which settled the course and wrote the harness before
   any of it was built; its own commits never reached `main`, for the reason
   recorded there. Section 2 is the handoff session (`c0104c7d`), which put
@@ -38,8 +43,10 @@ a draft of it.
   were first read back from the commit messages; that session later rewrote
   them from its own transcript (section 7). Section 8 is the timetable session
   (`88d4d4e6`), which ran beside the second build session from 16 September, in
-  a git worktree, and wrote its own section from its transcript. The end state
-  at the bottom was re-checked with the tools, not copied from them.
+  a git worktree, and wrote its own section from its transcript. Section 9 is
+  the GPT-6 review and revision task (`01a0b1d3-da62-7602-9568-f240e06fc248`).
+  The earlier end-state snapshot is retained with its date; the final snapshot
+  reflects the subsequent GPT-6 work and its recorded verification.
 
 ---
 
@@ -1224,7 +1231,7 @@ This edit's own commit is the next one in `git log`.
 
 ---
 
-## End state, as checked when this file was written
+## End state after the Claude work, checked 18 September 2026
 
 - **Decks:** 12 of 12 weeks.
 - **Timing (`pnpm check:timing`):** all twelve weeks 96.0--105.1 minutes; 0 of
@@ -1246,3 +1253,384 @@ This edit's own commit is the next one in `git log`.
   still fails, now only because `PROCESS.md` cites the template's example
   hashes `a1b2c3d` and `e4f5a6b`. It goes green when those citations are
   replaced with real commits --- the tables above are there for that.
+
+---
+
+## 9. Review, editorial revision, schedules and images --- GPT-6
+
+**This part of the work was done by GPT-6 in Codex, not Claude.** It covers
+the eight prompts below in the same task on 18--19 September 2026. The earlier
+Claude record above remains attributed to those sessions. A carried-over
+"For Claude" line in the first follow-up plan is template wording, not the
+identity of the agent that performed this work. Generated artwork used the
+built-in image-generation tool; GPT-6 selected, integrated and checked it.
+
+### Assignment review
+
+*Sent 2026-09-18 10:06:05 AEST*
+
+> [https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/assessments/assignment-2/](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/assessments/assignment-2/) read the assignment description first, then tell me your review of my work of this assignment (this repo, ignoring that PROCESS.md is untouched yet)
+
+**Result.** Read the assignment description and shared rubric, reviewed the
+source and history, and exercised the published site at 1920×1080 and
+390×844. The judgement was a strong submission with an HD-level concept,
+particularly its sustained argument, curriculum progression, practical
+examples, assessments and project-specific harness. That was a review, not a
+predicted mark; `PROCESS.md` was excluded as requested.
+
+The five numbered findings were:
+
+1. Week 1's slide text was about 8.5px at the portrait phone viewport.
+2. Week 7's lab named 2 May as the next journal deadline, omitting 11 April.
+3. Numbered references in weeks 1, 3 and 8 pointed to the wrong sections.
+4. The Lectures, Assessment and People indexes had no visible main heading.
+5. Times, rooms and a submission destination were missing from the reviewed
+   version. The timetable work had not yet been merged.
+
+The review also distinguished citation metadata from evidence for a teaching
+claim: 68 reading records reported abstract checks, two full-text checks and
+one publisher-record check. Some unsupported frequency claims survived. The
+three-reference entry requirement was questioned as a design choice, without
+changing the settled prerequisite.
+
+`pnpm check` passed **393 tests and 123 pages**; all **71 citation metadata
+records** passed `check:readings`. Search, navigation, deck swiping and resizing
+worked in the live browser, with a missing deck favicon noted separately.
+No repository changes were made in this first review.
+
+### Rechecking the merge, fixing instructions, and judging the prose
+
+*Sent 2026-09-18 14:07:08 AEST*
+
+> There was some commits related to timetable left unmerged. I've merged them now.
+>
+> 1. the mobile viewport should be okay if you view in landspace
+> 2. check again see if it is still there
+> 3. check again see if it is still there
+> 4. fix them
+> 5. check again
+>
+> Other than those, how does the language in this course sounds to you? Do they sound like AI slop?
+>
+> For issue 2-5 there should be specs for them as well.
+
+**Result --- recheck and fixes.** The user's merge supplied the timetable's
+times and rooms; GPT-6 did not perform that merge. At 844×390, the sampled
+week 1 body and table text rendered at about 15px and 12px. The layout was
+left unchanged. That established landscape usability for those slides, not
+comfortable reading at the assignment's portrait viewport.
+
+The deadline, four numbered references and absent headings remained. The
+deadline now includes 11 April before the break and 2 May after it; references
+were corrected; explicit headings were added to the three indexes and the
+404 page. New instruction specs reproduced the failures before the fixes.
+
+Submission instructions still had no destination. No LMS address was
+supplied, so a linked `/submissions/` guide explicitly says the static
+prototype cannot accept uploads, then describes the intended hand-in process.
+The timetable now links the extension policy instead of restating a blanket
+rule that conflicted with the journal's exception. Submission specs cover the
+notice and routes from all four briefs, the assessment index and timetable.
+
+The merged baseline had **402 tests**; the first checkpoint passed **415**,
+and the second **425**, building **125 pages**. Browser checks covered the
+affected pages and submission routes at both marking viewports. Both source
+checkpoints deployed. The [follow-up record](plans/2026-09-18-review-follow-up.md)
+preserves the failing cases and verification; [the spec guide](../spec/README.md)
+identifies the coverage for review issues 2--5.
+
+**Result --- language.** Some passages had a noticeable LLM cadence when read
+across several weeks: repeated dramatic signposting, praise of the course's
+own intentions, polished closing maxims and unsupported predictions about
+what students would feel or get wrong. The proposed policy was subtraction:
+let examples and instructions carry the point, and stop when they are done.
+Keep the specific scripts, systems satire, concrete comparisons and week 10's
+deliberate register break. This was an editorial judgement about the prose,
+not a method for detecting its author. No broad prose rewrite was applied yet.
+
+| Commit | What it did |
+| --- | --- |
+| [`a7ba995`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/a7ba995) | Correct deadline, references and visible headings; add instruction specs and harness rules |
+| [`2209428`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/2209428) | Reachable prototype submission guide, consistent extension instructions and submission specs |
+
+### A complete editorial draft, kept separate for review
+
+*Sent 2026-09-18 14:58:46 AEST*
+
+> go through all texts in this course, follow your editorial policy and create a draft and side-by-side comparison of pre and post edit texts. do not edit in place yet. the goal is to keep the honest and satire tone of this course, and reduce LLM caused "AI slop".
+
+**Result.** Reviewed all **157 course source text files**: lectures, labs,
+decks and speaker notes, readings, assessments, staff profiles, pages,
+components and shared copy. The package contains **594 recorded edits in
+79 files**, with **78 retained byte for byte**. Corresponding edits across a
+lecture, deck and notes are separate records, not separate underlying faults.
+
+The [editorial policy](editorial/2026-09-18/POLICY.md), complete draft,
+per-file reasons and [offline side-by-side viewer](editorial/2026-09-18/comparison.html)
+were committed under `docs/editorial/2026-09-18/`. The viewer supports search,
+categories, changed passages and complete before/after files. It includes the
+retained files. Three parallel week-range reviews fed into the integration
+review; shared copy and evidence boundaries were checked across the course.
+
+The revision cut repeated announcements of significance, self-praise and
+invented classroom expectations. Research findings kept their limitations;
+course proposals were identified as proposals. The governing sentence,
+no-diagnosis clause, week 10 passage, attributed quotations, metadata, dates,
+weights, assessment requirements, slide structure and timings were protected.
+Substantive concerns, including competing week 12 ethics rules, were flagged
+for a later decision rather than silently changed in a prose pass.
+
+**Nothing was applied to the course at this stage.** An exact-source checker
+accounted for all files and reconstructed every draft from the recorded edits.
+The original and a separate checkout with the draft overlaid both passed
+**425 tests**; the draft built **125 pages** without reported accessibility,
+link or deck-structure failures. The comparison worked offline at desktop,
+phone portrait and phone landscape sizes. Its then-current timing check
+passed; the later review found limitations in that estimator.
+
+| Commit | What it did |
+| --- | --- |
+| [`97de9c4`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/97de9c4) | Editorial policy, review inventory and first draft proposals |
+| [`ddb9e99`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/ddb9e99) | Complete draft, side-by-side comparison, integration review and validation |
+
+### Applying the approved copy, then reviewing consistency and duration
+
+*Sent 2026-09-18 21:47:43 AEST*
+
+> I've examined some of you changes and they look nice. Apply them, then re-review this course, see if there's any inconsistency across contents, or any lecture missing from the 2 hour target.
+
+**Result --- application.** Applied the reviewed draft to the 79 changed
+source files. All 157 source hashes matched the approved package. The
+comparison became an explicitly dated archive, retaining its original Git
+baseline and exact before/after texts. The applied revision passed **425
+tests**, built **125 pages** and deployed successfully.
+
+**Result --- further review.** The [applied-copy review](reviews/2026-09-18-applied/README.md)
+covered all twelve lecture/lab/deck bundles, shared content, assessments,
+reading annotations and authoring records. It found contradictions that a
+copy pass and existing structural specs did not settle:
+
+- The journal's worked example lacked the rubric's observed second instance.
+- Some rules and self-checks excluded choices the course expressly permits:
+  running or declining, holding disclosure depth, passing or sitting out.
+- Week 4's lab measured perceived willingness, not the rejection/acceptance
+  outcome it claimed to test. Other procedures omitted roles, prompts or the
+  information needed for their comparison.
+- Week 10's ledger mixed expected consequences of disclosure with costs of
+  concealment; week 12 used competing tests for an acceptable experiment.
+- Some reading annotations and research notes retained stronger claims than
+  the revised teaching pages, and some exercises referred to unavailable or
+  inaccurately described material.
+
+All twelve lectures existed. The timing check still passed, but omitted title
+slides sharing a block with imports and assigned time to speaker-note bullets,
+including stage directions. Restoring titles left **nine estimates below the
+old 105-minute content target**; weeks 1, 4 and 7 were the clearest concerns.
+Every deck also lacked the visible ten-minute break promised by the timetable.
+These were estimates and content findings, not observed delivery failures.
+The new findings remained recommendations until the next prompt.
+
+| Commit | What it did |
+| --- | --- |
+| [`53a4403`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/53a4403) | Apply the approved copy and preserve the comparison as an archive |
+| [`65e01e4`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/65e01e4) | Cross-course review, evidence and instruction mismatches, and all twelve timing results |
+
+### A rough schedule for a fictional course, and the consistency fixes
+
+*Sent 2026-09-18 23:18:42 AEST*
+
+> 1. We're not going to actually teach this course so rehearse is not needed. a rough estimation is fine. for example 5 seconds for transition slide and 2 min per regular slide
+> 2. let lecture start at 14:05, break at 14:55-15:05, ends around 15:40, and the rest is contingency - let all slides end with a open-ended discussion question, discuss it if there's time left before 15:55
+> 3. lab should also start 5 min pass and end 5 min early. if 1 hour is not enough we can extend it to 1.5 or 2 hours.
+> 4. you can rewrite some exercises as the discuss question
+> 5. W1–6-M1 - accept both, change the spec.
+> 6. W1–6-M3 - yes they should be only predictions
+> 7. for other issues you found, you can fix them according to your judgement.
+
+**Result --- schedule.** The user's clarification superseded the review's
+recommendation to rehearse. Lectures now start at **14:05**, show a fixed
+**14:55--15:05** break, finish core material around **15:40**, and end with an
+open-ended discussion question for any remaining time before **15:55**. Each
+deck has one final question, mirrored on its lecture page; some exercises
+became optional discussion. Required self-checks do not depend on that period.
+
+The estimator now counts five seconds per title or transition, two minutes
+per ordinary slide and the declared activity duration once. Notes add no time;
+the break and optional discussion are outside the core estimate. The nominal
+core target is **85 minutes**, with a disclosed **75--95-minute planning
+band** and a break boundary within **45--55 estimated content minutes**.
+Those tolerances do not change the printed clock times. After this revision,
+the twelve cores estimated **83.1--86.1 minutes** with no planning failures.
+
+All labs have contiguous **14:05--14:55** run sheets with prepared prompts and
+role rotations. Their required work fit fifty minutes, so no booking was
+extended. Working times and room bookings remain separately stated in the
+timetable, indexes and design record.
+
+**Result --- consistency.** W1--6-M1 was resolved by accepting either running
+or declining a subroutine and changing the spec accordingly. W1--6-M3 now
+labels counterfactual answers as predictions. They cannot stand in for the
+journal's observed second instance. The journal example gained that instance;
+permitted alternatives reached the affected self-checks; the disclosure rule
+allows holding, stepping down or passing; and the capstone's ethics questions
+agree across its brief, lecture and lab.
+
+The other findings were corrected across examples, activities, glossary,
+diagrams, reading annotations and all twelve research reviews. Week 4's task
+now asks the perception question its method can answer. Missing roles and
+prompts were supplied, ledger fields aligned, and inaccessible fallback claims
+made available to students. Existing evidence records were retained without
+claiming newly read papers. Week 10's protected text remained unchanged.
+The [follow-up report](notes/course-consistency-follow-up/README.md) links a
+disposition for every reviewed finding.
+
+**Verification and mistakes caught.** New schedule and consistency specs
+initially failed in 33 cases. The final suite passed **464 tests in 12 files**,
+with **125 pages**, and the historical editorial archive still validated.
+An independent estimator review caught a missing break-position check; its
+regression now rejects a break before or after all teaching. A timetable
+whitespace regression was fixed, and a label test was narrowed after it
+mistook the ordinary phrase "study session" for the course's contact-hour
+label. The missing deck favicon from the initial review was fixed too.
+
+Browser verification covered timetable navigation at desktop and portrait
+phone widths, **48 break/final-question views** at desktop and phone landscape,
+and **27 dense or diagram slide checks** in landscape. Source build/spec
+checks and deployment passed remotely. This establishes the rough model and
+rendering; it does not claim a rehearsal.
+
+| Commit | What it did |
+| --- | --- |
+| [`3157634`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/3157634) | Plan the revised schedule and dispositions for the review findings |
+| [`c263733`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/c263733) | Align teaching, examples, self-checks and timetable; replace the timing model and add regression specs |
+| [`0f11e37`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/0f11e37) | Record deployed schedule, content and icon verification |
+
+### More illustrations throughout the course
+
+*Sent 2026-09-19 13:52:09 AEST*
+
+> add more related images to slides and lecture pages, and home page. they can be a scenario, a meme, or other related things.
+
+**Result.** Added **13 original generated illustrations in 25 placements**:
+one home-page scene and one per week shared between its lecture and deck.
+They depict campus exchanges and administrative jokes in the course's ink,
+warm-paper and ochre palette. The home-page help desk has an impressive empty
+manual. Existing SVG diagrams and archive plates remain.
+
+The shared image component and data keep each page/deck pair's image, alt text
+and caption together. Captions visibly identify a **Fictional scene**. The
+[artwork record](notes/course-illustrations/README.md) preserves exact prompts,
+selected-file hashes and dimensions; the originals are committed and browsers
+receive responsive WebP versions. No art was inserted into week 10's register
+break, and no lecture sections were renumbered.
+
+Each deck gained one ordinary two-minute image slide. Core estimates became
+**85.1--88.1 minutes**, with the break and closing question retained. All
+**464 tests** passed. **50 local checks and the same 50 public-site checks**
+covered the home and twelve lecture pages at desktop/portrait-phone sizes and
+twelve image slides at desktop/landscape-phone sizes. Images, captions,
+navigation and page/deck parity were checked, with a separate dark-mode look.
+
+**Mistakes and existing faults caught by looking.** At 1440px, existing margin
+notes made the document 1477px wide; they now stay inline below 100rem.
+The theme's mobile image margin displaced the new figures, and deck caption
+styles initially inherited oversized text. Both were corrected before the
+final viewport pass. Seven widths were checked for the margin-note fix.
+
+| Commit | What it did |
+| --- | --- |
+| [`15e9dd2`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/15e9dd2) | Plan the thirteen scenes and shared lecture/deck presentation |
+| [`f45deb9`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/f45deb9) | Add the illustrations, captions, provenance and responsive-layout fixes |
+| [`c08d828`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/c08d828) | Record public deployment and fifty live viewport checks |
+
+### Real memes and images from web search as well
+
+*Sent 2026-09-19 14:42:16 AEST*
+
+> the illustrations are nice, but i want more real meme and image from web search
+
+**Result.** Kept the generated scenes and added **12 existing web images in
+25 placements**, covering every lecture and deck plus the home page. The
+selection was four xkcd comics, three existing lolcat variants, the 1939
+*Keep Calm and Carry On* poster and four photographs. The photographs show a
+door's pull pictogram, an illuminated WAIT button, a debugging duck and a
+hotel door hanger. The comics are *Ten Thousand*, *Email Reply*, *Standards*
+and *Wisdom of the Ancients*; *Standards* also appears on the home page.
+
+Each selection supports the week's topic, with satire aimed at undocumented
+expectations and institutions. Originals keep their panels, lettering and
+colour. No new images were generated for this pass. The lolcats are credited
+as the selected variants, not claimed as the first versions of their memes.
+
+Creator, source and licence links appear under every image. Local originals
+are linked at full size; Astro serves responsive derivatives without runtime
+hotlinking. Four comics have expandable HTML text versions on pages, so their
+small lettering is available beyond the scaled slide. Alt text, captions and
+credits are shared by page and deck. The [web-image record](notes/web-images/README.md)
+contains source URLs, reuse terms, hashes, placements and verification.
+The old no-imported-memes direction was explicitly superseded by this request.
+
+Each deck gained a further two-minute slide. Core estimates became
+**87.1--90.1 minutes**, with **49.1--54.1** before the break and zero planning
+failures. All final discussion questions and the protected week 10 passage
+remain. The added figures passed **50 local browser checks**, the retained
+generated images passed another **50 regression checks**, and the new figures
+passed **50 checks against the public deployment**. Full-size links, keyboard
+navigation and comic text toggles also worked. **464 tests** and the
+**125-page** build passed.
+
+**Correction before completion.** A caption described a request to join as an
+invitation. It was changed to "The request has a question mark. Leave room for
+the answer." The image should illustrate what the lesson actually teaches.
+
+| Commit | What it did |
+| --- | --- |
+| [`b2a6d1e`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/b2a6d1e) | Plan topic-specific web memes, photographs and attribution |
+| [`20462dd`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/20462dd) | Add twelve sourced images, visible credits, full-size originals and comic transcripts |
+| [`2b0a84c`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/2b0a84c) | Record the successful public deployment and live image checks |
+
+### Recording this GPT-6 session
+
+*Sent 2026-09-19 17:51:04 AEST*
+
+> read [prompts-result.md](docs/prompts-result.md) and add all from this session, add a note that this part of work is done by GPT-6 instead of Claude.
+
+**Result.** Read the existing log, recovered this task's eight user prompts
+and timestamps from its Codex transcript, and checked the outcomes against
+commit history and the dated review and implementation records. Added this
+section with explicit GPT-6 attribution, extended the title and provenance
+notes, and retained the earlier Claude end state as a historical snapshot.
+All eight quotations and timestamps match the transcript; all fifteen earlier
+session checkpoints are linked. Result links and commit references resolve,
+and sections 1--8 are unchanged. A fresh `pnpm check` passed **464 tests** and
+built **125 pages**. This edit's own commit follows `2b0a84c` in `git log`.
+
+---
+
+## End state after the GPT-6 work, 19 September 2026
+
+- **Editorial revision:** all 157 source text files reviewed; 594 recorded
+  edits across 79 files applied after approval. The comparison remains a
+  historical snapshot; subsequent consistency and image changes are separate.
+- **Teaching:** twelve lectures and decks; lecture start 14:05, break
+  14:55--15:05, core finish around 15:40, optional final discussion by 15:55.
+  All twelve labs work from 14:05 to 14:55 within their one-hour bookings.
+- **Timing:** the agreed rough model now estimates 87.1--90.1 core minutes,
+  with zero planning failures. No rehearsal was requested or performed.
+- **Images:** thirteen generated scenarios and twelve newly sourced web
+  images, alongside the four earlier archive plates and existing diagrams.
+  Source records distinguish generated fiction from third-party originals.
+- **Checks:** 464 tests in 12 files, 125 built pages, and no reported build
+  accessibility, link or deck-structure failures. Viewport counts above refer
+  to the specific pages and slides checked; they are not a claim that every
+  slide is comfortably readable on a portrait phone.
+- **Deployment:** the final source checkpoint `20462dd` passed build/spec and
+  deployment in [run 35423102674](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/actions/runs/35423102674),
+  followed by the fifty live image checks recorded in `2b0a84c`.
+- **Still separate:** the overall workflow remains red on the committed
+  `PROCESS.md` placeholder citations `a1b2c3d` and `e4f5a6b`; later secret/key
+  scans were skipped, not passed. The user's working `PROCESS.md` and existing
+  patch file were left untouched throughout this session. The prerequisite
+  concern from the first review remains a design observation, not an applied
+  change. The research revisions use the recorded evidence; they do not claim
+  a new full-paper audit of all 71 readings.
