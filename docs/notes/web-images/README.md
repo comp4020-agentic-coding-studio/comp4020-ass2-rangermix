@@ -71,4 +71,24 @@ schedule remain. These are rough planning estimates, not rehearsed timings.
 - The unrelated `PROCESS.md` edit and existing patch retain their incoming
   SHA-256 hashes and are excluded from this checkpoint.
 
-Deployment is verified separately after the source checkpoint is pushed.
+## Published verification
+
+Source checkpoint **`20462dda3d767887dcd81e86bceda05b6fdee87c`** was pushed to
+`main`. [GitHub Actions run 35423102674](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/actions/runs/35423102674)
+completed deployment successfully; its build/spec step also passed.
+
+The same **50 browser checks passed against the public Pages site**, with no
+console errors or failed HTTP responses. Every new image, credit and caption
+loaded at both page widths and both slide sizes; text toggles, local original
+image URLs, page/deck parity, the home-to-week-1 link and keyboard navigation
+all passed. These checks exercised the published pages, not a local preview.
+
+The overall workflow remains red solely because the existing `PROCESS.md`
+evidence step cites placeholder commits `a1b2c3d` and `e4f5a6b`. Its subsequent
+secret and course-key scans were skipped. This is not a claim that the entire
+CI workflow passed. The user's in-progress process account was left alone.
+
+Live examples: [home](https://comp4020-agentic-coding-studio.github.io/comp4020-ass2-rangermix/),
+[week 3 meme slide](https://comp4020-agentic-coding-studio.github.io/comp4020-ass2-rangermix/decks/week-03/#/25),
+[week 7 poster slide](https://comp4020-agentic-coding-studio.github.io/comp4020-ass2-rangermix/decks/week-07/#/26),
+[week 11 standards slide](https://comp4020-agentic-coding-studio.github.io/comp4020-ass2-rangermix/decks/week-11/#/27).
