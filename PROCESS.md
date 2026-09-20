@@ -1,41 +1,21 @@
 # Process overview
 
-TBD
-
 ## What I built
 
-One paragraph: the thing, and the idea behind it.
+I built `NT 101 (SLOP1562)`, formally `Undocumented Protocols: Field Methods in Neurotypical Interoperation`. It is an introductory course that I always wanted, explaining the social defaults / patterns / cues that are not taught explicitly. The course treats social conventions as an undocumented system students can understand, negotiate and choose whether and what to run. The course is both sincere and satirical, and I got the idea from my personal experience. Claude Code handled the design and initial build; GPT-6 in Codex handled later review and revision. [`a3035dc`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/a3035dc)
 
 ## How I got here
 
-The account of the process: how the work actually went, and how you knew the
-result was right. Tell it in whatever order makes it clear. A weekly prototype
-needs a paragraph or two; an assignment needs more.
+As usual I started by brainstorming with Claude, but this time with a strong direction already in mind. Originally I wanted a course built for people on the autistic spectrum, but then Claude helped me to clear lots of thoughts and finally I settled on focusing on the `Undocumented Protocols` itself. This choice opens the course to much wider audience with a much clearer teaching goal. The design discussion changed diagnosis-based admission into three references attesting need or interest, opening the class to neurotypical students too. This builds the foundation of the course and was documented in `CLAUDE.md` and `docs/course-design.md` before actually building the contents. [`20f1503`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/20f1503)
 
-Cite the record as you go, as links whose text is the commit hash or range and
-whose target is this repo's commit or compare URL, so a reader clicks straight
-to the evidence:
+I then asked for specs before implementation. What's great about the specs is that it even turns inclusive language requirement into quantifiable tests, and the way it implements it is something out of my knowledge. [`7752322`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/7752322)
 
-- one commit: [`a1b2c3d`](https://github.com/YOUR-ORG/YOUR-REPO/commit/a1b2c3d)
-- a range:
-  [`a1b2c3d...e4f5a6b`](https://github.com/YOUR-ORG/YOUR-REPO/compare/a1b2c3d...e4f5a6b)
+During design I also set the harness of the actual building process: research, review, teaching content, then slides, and alignment with the four part for each week and across the whole course. Claude correctly interpreted the course alignment request as "Research all twelve weeks before writing any of them" and it worked out great. [`dcdfee6`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/dcdfee6)
 
-To pair a prompt with the commit it produced, quote the prompt (curated, not a
-full transcript) next to the citation:
+One thing was missing from the brainstorming earlier - the exact timetable. This become obvious to me when I actually examine the generated contents - without a timetable the course it feels like the course content is missing anchors, and as a student I don't have an intuitive way to understand what's exactly in this course, so I added timetable as a top level page and showing in navigation. This provides a solid anchor for all dates, time and schedule for this course. [`1a67350...d037f8d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/compare/1a67350...d037f8d)
 
-> the prompt, verbatim
+The main building session ended and I started a review process. GPT-6 review found wrong section references and a missed journal deadline. The instructions was corrected and regression specs added. [`a7ba995`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/a7ba995) Sadly Opus 5' language choice is still very AI slop-ish, and the initial review didn't catch it even the agent read the assignment requirements. So I requested a review then a rewrite on the language, a side-by-side editorial draft before application, then approved revisions removing repeated signposting, self-praise and invented classroom expectations while preserving the satire. [`97de9c4...53a4403`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/compare/97de9c4...53a4403)
 
-Screenshots are welcome where one carries the point better than a sentence does.
-Commit the file to this repo and link it with a **relative** path, which is what
-makes it render on GitHub: `![alt text](docs/before.png)`. Images don't count
-towards the word count and don't replace the citation.
+As the language has changed I suspect there's change in content length in slides too which affects lecture length, so I specified a rough model for this course: five seconds per transition, two minutes per ordinary slide, explicit activity times, a visible break and optional closing discussion. Consistency fixes also aligned exercises and self-checks with the choices the course permits, including declining or passing. [`53a4403...c263733`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/compare/53a4403...c263733) I also clarified that I wanted real web memes alongside the generated scenes. The final additions pair images with specific teaching topics, preserve source credits and provide text alternatives for comics. [`20462dd`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/20462dd)
 
-## Before you ship
-
-`pnpm check:evidence` verifies that this comment is gone, that your citations
-resolve to real commits, that a crit week's reflection entry is in
-`reflections/`, and that your `CLAUDE.md` is there. It checks that your account
-is traceable, not that it is good: that is the marker's call.
-
-Images aren't checked: unlike a citation whose SHA doesn't resolve, a broken
-image is visible the moment this file is rendered on GitHub.
+Source record: [prompts and results](docs/prompts-result.md).
