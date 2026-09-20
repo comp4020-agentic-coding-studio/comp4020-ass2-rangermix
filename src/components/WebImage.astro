@@ -30,8 +30,8 @@ const sizes = surface === "deck"
       <a href={source}>{title}</a> — {author}.{" "}
       <a href={licenceUrl}>{licence}</a>.
     </span>
-    {surface === "page" && transcript && (
-      <details class="web-image-transcript">
+    {transcript && (
+      <details class:list={["web-image-transcript", { "deck-reading-only": surface === "deck" }]}>
         <summary>Read the comic as text</summary>
         {transcript.map((paragraph) => <p data-quoted>{paragraph}</p>)}
       </details>

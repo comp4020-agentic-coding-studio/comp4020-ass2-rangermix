@@ -325,7 +325,8 @@ ordinary instructions. The originals keep their colour, lettering and panels;
 the course's captions explain the comparison without turning the image into
 research evidence. `WebImage.astro` and `src/data/web-images.ts` share the page
 and deck presentation, with visible creator, source and licence links. Long
-comics have a text version on the lecture page. Original-file hashes and
+comics have a text version on the lecture page and in portrait deck reading
+view. Original-file hashes and
 source records live in `docs/notes/web-images/`. This supersedes the original
 no-imported-memes direction in `docs/notes/decks-and-art.md`.
 

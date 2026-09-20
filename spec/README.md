@@ -41,6 +41,7 @@ These checks cover the follow-up to the assignment review:
 | `lecture-timing.test.ts` | Imports do not swallow title slides; the rough model counts five-second transitions, two-minute ordinary slides and explicit activities without note inflation; displaced breaks fail the 45–55-minute placement check; both output modes use the same planning rules. |
 | `teaching-schedule.test.ts` | Each lab has a contiguous 50-minute run sheet with its clock times; every deck passes the rough core/break-placement checks, displays the fixed break and ends in an optional discussion question with the 15:55 stop. |
 | `submission.test.ts` | The timetable and all assessment briefs link to a built submission guide; it states that uploads are unavailable, links every task and the help policies, and does not offer a nonfunctional upload form. |
+| `portrait-decks.test.ts` | Every deck links back to its lecture, and comics keep their readable text transcripts in the deck. |
 
 Run `pnpm check` to build the current content before testing it. Running
 Vitest alone reads the last build, which may predate an edit.
@@ -50,3 +51,8 @@ of classroom delivery. The user-approved schedule requires no rehearsal.
 Exercise validity, privacy and whether a worked example demonstrates its
 rubric still require a content review; passing string or structure checks
 does not settle those questions.
+
+Deck changes also require browser checks at 390×844 and 1920×1080: readable
+portrait text, contained table overflow, working transcript disclosures,
+keyboard navigation, and preservation of the current slide across rotation.
+The build's structural checks alone cannot prove these interactions.

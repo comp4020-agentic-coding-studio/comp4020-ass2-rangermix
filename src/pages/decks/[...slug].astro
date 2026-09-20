@@ -1,0 +1,98 @@
+---
+import type { MDXInstance } from "astro";
+import DeckLayout from "astromotion/components/DeckLayout.astro";
+import { withBase } from "astro-theme-university/url";
+import { getPublishedCollection } from "astro-course-university/content";
+
+interface DeckMetadata {
+  title?: string;
+  description?: string;
+  image?: string;
+  published?: boolean;
+}
+
+export async function getStaticPaths() {
+  const lectures = await getPublishedCollection("lectures");
+  const modules = import.meta.glob<MDXInstance<DeckMetadata>>("/src/decks/**/*.deck.mdx", { eager: true });
+  return Object.entries(modules)
+    .filter(([, mod]) => !(import.meta.env.PROD && mod.frontmatter?.published === false))
+    .map(([path, mod]) => {
+      const name = path.replace(/^\/src\/decks\//, "").replace(/\.deck\.mdx$/, "");
+      const slug = name.endsWith("/slides") ? name.slice(0, -7) : name;
+      const lecture = lectures.find((entry) => entry.data.slides?.replace(/\/$/, "") === `/decks/${slug}`);
+      return {
+        params: { slug },
+        props: {
+          Content: mod.Content,
+          frontmatter: mod.frontmatter,
+          lectureUrl: lecture ? withBase(`/lectures/${lecture.id}/`) : withBase("/lectures/"),
+        },
+      };
+    });
+}
+
+const { Content, frontmatter, lectureUrl } = Astro.props;
+---
+
+<DeckLayout title={String(frontmatter.title ?? "Deck")} description={frontmatter.description} image={frontmatter.image}>
+  {/* Pick the view before painting; without JavaScript the reading layout is usable. */}
+  <script is:inline>
+    (() => {
+      // The slide hash owns restoration; a saved document scroll offset from
+      // the other layout would otherwise overwrite it after loading.
+      history.scrollRestoration = "manual";
+      const params = new URLSearchParams(location.search);
+      const presenting = ["print-pdf", "astromotion-export", "receiver"].some((key) => params.has(key));
+      const portrait = matchMedia("(max-width: 700px) and (orientation: portrait)");
+      document.documentElement.dataset.deckView = portrait.matches && !presenting ? "reading" : "slides";
+      if (!presenting) portrait.addEventListener("change", () => {
+        // Reload tears down Reveal's presenter tools as well as its layout.
+        // Both views keep the current slide in the same #/N URL.
+        location.reload();
+      });
+    })();
+  </script>
+  <header class="deck-reader-bar">
+    <a href={lectureUrl}>Back to lecture</a>
+    <span class="deck-reader-position" aria-label="Current slide">Reading view</span>
+  </header>
+  <div class="reveal" role="main">
+    <div class="slides"><Content /></div>
+  </div>
+</DeckLayout>
+
+<script>
+  import { initDeckReader } from "../../decks/reader";
+
+  const params = new URLSearchParams(location.search);
+  document.querySelectorAll(".slides section[data-deck-if]").forEach((slide) => {
+    const condition = slide.getAttribute("data-deck-if");
+    if (condition && !params.has(condition)) slide.remove();
+  });
+
+  if (document.documentElement.dataset.deckView === "reading") {
+    initDeckReader();
+  } else {
+    const [{ default: Reveal }, { default: RevealNotes }, { initWhiteboard }, { initClock }, { initFirstRunHelp }, { keepAwakeInFullscreen }] = await Promise.all([
+      import("reveal.js"),
+      import("reveal.js/plugin/notes"),
+      import("astromotion/src/whiteboard/index.ts"),
+      import("astromotion/src/clock.ts"),
+      import("astromotion/src/first-run-help.ts"),
+      import("astromotion/src/keep-awake.ts"),
+    ]);
+    const deck = new Reveal({
+      width: 1280, height: 720, margin: 0,
+      hash: true, hashOneBasedIndex: true,
+      controls: false, navigationMode: "linear", transition: "none",
+      display: "grid", center: true, viewDistance: 10, maxScale: 4,
+      pdfMaxPagesPerSlide: 1, scrollActivationWidth: 0,
+      plugins: [RevealNotes],
+    });
+    await deck.initialize();
+    initWhiteboard(deck);
+    initClock(deck);
+    initFirstRunHelp(deck);
+    keepAwakeInFullscreen();
+  }
+</script>

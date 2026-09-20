@@ -64,6 +64,8 @@ export default defineConfig({
     // @font-face for the theme's body font, which the deck styles ask for by
     // name.
     astromotion({
+      // Our route reuses the deck layout and adds a reflowing portrait view.
+      injectRoutes: false,
       theme: "./src/decks/theme.css",
       favicon: "/favicon.svg",
       fontVariables: ["--font-public-sans", "--font-roboto-mono", "--font-kalam"],

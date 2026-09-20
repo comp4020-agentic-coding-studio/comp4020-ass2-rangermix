@@ -167,6 +167,13 @@ The normal build compiles every deck and catches invalid MDX or astromotion
 syntax. Nothing checks whether a slide fits or stays legible; that only shows up
 in a browser, at the two marking viewports.
 
+The shared route in `src/pages/decks/[...slug].astro` uses a scrolling reading
+view on portrait screens up to 700px wide. It reuses the same slide content,
+with reflowing text, scrollable tables and expandable diagram/comic transcripts.
+Wider or landscape screens use the existing Reveal presentation. The `#/N`
+slide link preserves your place when resizing switches between the two views;
+print/export and speaker views always use the presentation layout.
+
 A deck is not a content-collection entry, so it has no `related:` edges. Link it
 from its lecture page with a markdown link (`[Slides](/decks/week-01/)`), which
 the build rewrites for the base path.
