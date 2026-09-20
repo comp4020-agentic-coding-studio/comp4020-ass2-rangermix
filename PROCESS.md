@@ -18,4 +18,6 @@ The main building session ended and I started a review process. GPT-6 review fou
 
 As the language has changed I suspect there's change in content length in slides too which affects lecture length, so I specified a rough model for this course: five seconds per transition, two minutes per ordinary slide, explicit activity times, a visible break and optional closing discussion. Consistency fixes also aligned exercises and self-checks with the choices the course permits, including declining or passing. [`53a4403...c263733`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/compare/53a4403...c263733) I also clarified that I wanted real web memes alongside the generated scenes. The final additions pair images with specific teaching topics, preserve source credits and provide text alternatives for comics. [`20462dd`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/20462dd)
 
+The review also found tiny slide text on phones despite passing tests. I approved GPT-6's scrolling portrait view after previewing it; landscape keeps the presentation layout. [`1b4c51c`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-rangermix/commit/1b4c51cc70cd94ecfd1fbe0db9e309c090899169)
+
 Source record: [prompts and results](docs/prompts-result.md).
